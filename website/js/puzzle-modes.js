@@ -154,6 +154,110 @@
     closeMenu(); openLibraryScreen('library');
   }
 
+  // A standalone, shareable special puzzle; it is deliberately not part of
+  // the regular puzzle pool, progression, daily rotation, or race selection.
+  const OPENAEC_SPECIAL_PUZZLE = {
+    id: 'openaec-special-20261030',
+    number: 'OpenAEC',
+    name: 'OpenAEC Special',
+    operator: '−',
+    q1_label: 'As of 30 October 2026, how many contributors were listed in the OpenAEC ecosystem statistics?',
+    q1_answer: 96,
+    q2_label: 'By that date, how many releases had Open PDF Studio published?',
+    q2_answer: 81,
+    q3_label: 'How many OpenAEC repositories used Rust as their primary language on that date?',
+    q3_answer: 15,
+    calculation: '96 − 81 = 15',
+    categories: ['Open-source software', 'Software releases', 'Programming languages'],
+    difficulty: 'hard',
+    source_links: [
+      'https://open-aec.com/statistieken/',
+      'https://github.com/OpenAEC-Foundation/open-pdf-studio/releases',
+    ],
+  };
+
+  function addOpenAecPuzzleImage() {
+    const list = document.getElementById('libraryQuestionList');
+    const firstQuestion = list?.querySelector('.q-block');
+    if (!list || !firstQuestion) return;
+
+    list.classList.add('puzzelfoto-lijst');
+    const figure = document.createElement('figure');
+    figure.className = 'puzzelfoto';
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'daily-photo';
+    button.setAttribute('aria-haspopup', 'dialog');
+    button.setAttribute('aria-controls', 'puzzelFotoDialog');
+    const image = document.createElement('img');
+    image.src = new URL('fotos/assets/openaec-cube.png', document.baseURI).href;
+    image.alt = 'Orange isometric cube illustration';
+    image.width = 132;
+    image.height = 104;
+    image.decoding = 'async';
+    const caption = document.createElement('span');
+    caption.textContent = 'OpenAEC special';
+    button.append(image, caption);
+    button.addEventListener('click', () => {
+      const dialog = document.getElementById('puzzelFotoDialog');
+      if (!dialog) return;
+      const enlarged = dialog.querySelector('img');
+      enlarged.src = image.src;
+      enlarged.alt = image.alt;
+      dialog.querySelector('p').textContent = 'Illustration supplied for the OpenAEC special puzzle.';
+      dialog.showModal();
+    });
+    const credit = document.createElement('figcaption');
+    credit.className = 'daily-photo-credit';
+    credit.textContent = 'Image supplied for this puzzle';
+    figure.append(button, credit);
+    firstQuestion.prepend(figure);
+  }
+
+  function openOpenAecPuzzle() {
+    closeMenu();
+    openLibraryScreen('library');
+    const stats = document.getElementById('libraryStats');
+    const difficulties = document.getElementById('libraryDifficulties');
+    const cards = document.getElementById('libraryCardGrid');
+    const archive = document.getElementById('dailyPuzzleList');
+    const view = document.getElementById('libraryPuzzleView');
+    if (!view) return;
+
+    if (stats) stats.style.display = 'none';
+    if (difficulties) difficulties.style.display = 'none';
+    if (cards) cards.style.display = 'none';
+    if (archive) archive.style.display = 'none';
+    document.getElementById('libraryPageKicker').textContent = 'NETTO · OPENAEC SPECIAL';
+    document.getElementById('libraryTitle').textContent = 'OpenAEC Special';
+    document.getElementById('librarySubtitle').textContent = statsCopy(
+      'Drie OpenAEC-feiten. Eén som.',
+      'Three OpenAEC facts. One equation.'
+    );
+
+    const actions = view.querySelector('.library-actions');
+    if (actions) actions.style.display = 'none';
+    const returnButton = view.querySelector('.bk-overview-button');
+    if (returnButton) {
+      returnButton.textContent = statsCopy('← Naar home', '← Back home');
+      returnButton.onclick = () => goHome();
+    }
+
+    view.style.display = 'block';
+    selectedDifficulty = OPENAEC_SPECIAL_PUZZLE.difficulty;
+    renderPuzzleView(
+      'library',
+      OPENAEC_SPECIAL_PUZZLE,
+      statsCopy('OPENAEC SPECIAL · 1/1', 'OPENAEC SPECIAL · 1/1')
+    );
+    addOpenAecPuzzleImage();
+    const checkButton = document.querySelector('#libraryQuestionList .btn-check');
+    if (checkButton) checkButton.textContent = statsCopy('Controleer mijn score', 'Check my score');
+    document.querySelectorAll('#libraryQuestionList input').forEach(input => {
+      input.placeholder = statsCopy('Jouw antwoord', 'Your answer');
+    });
+  }
+
   // SLAPEND, MET OPZET.
   // openLibrary() wordt nergens aangeroepen: er staat geen knop voor in het
   // menu en ook niet op de startpagina. Dat is niet per ongeluk zo gegroeid en

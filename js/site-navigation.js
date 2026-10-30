@@ -39,7 +39,7 @@
     window.openNavigationDestination = function () {
       const url = new URL(location.href);
       const target = url.searchParams.get('screen');
-      const routes = { daily: () => window.NettoRoutes?.openToday(), archive: () => openDailyPuzzles(), leaderboard: () => openLeaderboardModal(), puzzles: () => openPuzzles(), brain: () => openConnection(), connection: () => openConnection(), race: () => openPuzzleRace(), how: () => openHowItWorks(), submit: () => openSubmitQuestion(), about: () => openAbout() };
+      const routes = { daily: () => window.NettoRoutes?.openToday(), archive: () => openDailyPuzzles(), leaderboard: () => openLeaderboardModal(), puzzles: () => openPuzzles(), brain: () => openConnection(), connection: () => openConnection(), race: () => openPuzzleRace(), openaec: () => openOpenAecPuzzle(), how: () => openHowItWorks(), submit: () => openSubmitQuestion(), about: () => openAbout() };
       if (routes[target]) {
         url.searchParams.delete('screen'); history.replaceState(null, '', url);
         routes[target]();
