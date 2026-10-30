@@ -40,6 +40,7 @@
       if (visible('aboutPanel')) return 'about';
       if (visible('howPanel')) return 'how-to-play';
       if (libraryMode === 'daily') return 'daily-archive';
+      if (visible('libraryPuzzleView') && libraryActivePuzzle?.id === 'openaec-special-20261030') return 'openaec';
       if (visible('libraryPuzzleView') && libraryActivePuzzle?.number)
         return 'puzzles/' + libraryActivePuzzle.number;
       return 'puzzles';
@@ -133,6 +134,7 @@
       return showDaily(TODAY_STR);
     }
     if (route === 'daily-archive') { openDailyPuzzles(); return true; }
+    if (route === 'openaec') { openOpenAecPuzzle(); return true; }
     if (route === 'puzzles') { openPuzzles(); return true; }
     if (route.startsWith('puzzles/')) {
       const number = Number(route.slice(8));
@@ -211,7 +213,7 @@
     const aliases = {
       daily: 'daily', archive: 'daily-archive', leaderboard: 'leaderboard',
       puzzles: 'puzzles', brain: 'connections', connection: 'connections',
-      race: 'race', live: 'live-rounds', how: 'how-to-play', submit: 'submit-question', about: 'about'
+      race: 'race', live: 'live-rounds', openaec: 'openaec', how: 'how-to-play', submit: 'submit-question', about: 'about'
     };
     const legacy = new URLSearchParams(location.search).get('screen');
     if (legacy && aliases[legacy]) {
