@@ -57,36 +57,35 @@
       .answers { grid-template-columns:1fr; }
     }
   </style>
+  <link rel="stylesheet" href="./special.css">
 </head>
 <body>
-  <header class="topbar"><span class="brand">Netto</span><span class="top-label">OpenAEC Special</span></header>
+  <header class="topbar"><a class="back-button" href="../" aria-label="Back to Netto">‹</a><a class="brand" href="../">Netto</a></header>
   <main>
     <section class="sheet" aria-labelledby="title">
-      <p class="eyebrow">Three questions · One connection</p>
-      <h1 id="title">The OpenAEC Special</h1>
-      <p class="intro">Estimate three facts about the OpenAEC ecosystem. Use the equation to refine your guesses.</p>
+      <div class="puzzle-heading"><h1 id="title" class="puzzle-caption">Special puzzle</h1><span class="collab-mark">Netto <span aria-hidden="true">×</span> <strong>OpenAEC</strong></span></div>
       <form id="puzzleForm" novalidate>
         <article class="question with-image">
-          <label for="guess1">As of 30 October 2026, how many contributors were listed in the OpenAEC ecosystem statistics?</label>
+          <label for="guess1">How many contributors are listed in the OpenAEC ecosystem statistics?</label>
           <div class="answer-row"><input id="guess1" type="number" inputmode="numeric" min="1" step="1" placeholder="Your answer" required><span class="unit">contributors</span></div>
           <figure class="photo"><img src="../fotos/assets/openaec-cube.png" alt="Orange isometric cube illustration"></figure>
         </article>
         <div class="connector" aria-hidden="true"><span class="operator">−</span></div>
         <article class="question">
-          <label for="guess2">By that date, how many releases had Open PDF Studio published?</label>
+          <label for="guess2">How many releases has Open PDF Studio published?</label>
           <div class="answer-row"><input id="guess2" type="number" inputmode="numeric" min="1" step="1" placeholder="Your answer" required><span class="unit">releases</span></div>
         </article>
         <div class="connector" aria-hidden="true"><span class="operator equal">=</span></div>
         <article class="question">
-          <label for="guess3">How many OpenAEC repositories used Rust as their primary language on that date?</label>
+          <label for="guess3">How many OpenAEC repositories use Rust as their primary language?</label>
           <div class="answer-row"><input id="guess3" type="number" inputmode="numeric" min="1" step="1" placeholder="Your answer" required><span class="unit">repositories</span></div>
         </article>
         <p class="error" id="error" role="alert" aria-live="polite"></p>
         <button class="submit" type="submit">Check my score</button>
       </form>
       <section class="results" id="results" hidden aria-live="polite"></section>
-      <details><summary>Sources</summary><ul>
-        <li><a href="https://open-aec.com/statistieken/" target="_blank" rel="noopener">OpenAEC ecosystem statistics</a> (checked 30 October 2026)</li>
+      <details><summary>Where do these numbers come from?</summary><ul>
+        <li><a href="https://open-aec.com/statistieken/" target="_blank" rel="noopener">OpenAEC ecosystem statistics</a></li>
         <li><a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases" target="_blank" rel="noopener">Open PDF Studio releases</a></li>
         <li><a href="https://github.com/orgs/OpenAEC-Foundation/repositories?language=rust" target="_blank" rel="noopener">OpenAEC repositories filtered by Rust</a></li>
       </ul></details>
@@ -108,7 +107,7 @@
       const factors = guesses.map((value, index) => Math.max(value / actual[index], actual[index] / value));
       const average = factors.reduce((sum, factor) => sum + factor, 0) / factors.length;
       const results = document.getElementById('results');
-      results.innerHTML = `<h2>Your result: ${average.toFixed(2)}×</h2><p>Average factor — 1.00× is exact.</p><div class="answers">${actual.map((answer, index) => `<div class="answer-result"><span>Question ${index + 1} · ${factors[index].toFixed(2)}×</span><strong>${guesses[index].toLocaleString()} → ${answer.toLocaleString()}</strong></div>`).join('')}</div>`;
+      results.innerHTML = `<div class="result-heading"><div><p class="eyebrow">YOUR CONNECTION</p><h2>${average === 1 ? 'Exactly right.' : 'The numbers are in.'}</h2><p>Average factor · closer to 1.00× is better.</p></div><strong class="result-factor">${average.toFixed(2)}<small>×</small></strong></div><div class="reveal-equation">96 <span>−</span> 81 <span>=</span> 15</div><div class="answers">${actual.map((answer, index) => `<div class="answer-result"><span>QUESTION ${index + 1}<b>${factors[index].toFixed(2)}×</b></span><div class="result-values"><div><span>Your answer</span><strong>${guesses[index].toLocaleString()}</strong></div><div><span>Actual answer</span><strong>${answer.toLocaleString()}</strong></div></div></div>`).join('')}</div>`;
       results.hidden = false;
       results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
