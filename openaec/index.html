@@ -3,15 +3,115 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#292fbd">
-  <title>Netto · OpenAEC Special</title>
+  <meta name="theme-color" content="#2934b8">
+  <title>OpenAEC Special · Netto</title>
   <style>
-    html, body, iframe { width: 100%; height: 100%; margin: 0; border: 0; overflow: hidden; }
-    body { background: #292fbd; }
-    iframe { display: block; }
+    :root { color-scheme: light; --ink:#171a43; --blue:#2934b8; --line:#dfe2f5; --yellow:#ffd84a; --muted:#68708c; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; color:var(--ink); font:500 16px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; background-color:var(--blue); background-image:linear-gradient(#ffffff0b 1px,transparent 1px),linear-gradient(90deg,#ffffff0b 1px,transparent 1px); background-size:36px 36px; }
+    .topbar { height:68px; padding:0 clamp(18px,4vw,56px); display:flex; align-items:center; justify-content:space-between; color:#fff; border-bottom:1px solid #ffffff24; }
+    .brand { font-weight:850; font-size:23px; letter-spacing:-.04em; color:var(--yellow); }
+    .top-label { color:#d8dcff; font-size:12px; font-weight:750; letter-spacing:.16em; text-transform:uppercase; }
+    main { width:min(100% - 32px,980px); margin:clamp(24px,5vh,54px) auto 40px; }
+    .sheet { background:#fff; border-radius:24px; padding:clamp(22px,4vw,44px); box-shadow:0 24px 64px #11144540; }
+    .eyebrow { margin:0 0 9px; color:var(--blue); font-size:12px; font-weight:850; letter-spacing:.18em; text-transform:uppercase; }
+    h1 { margin:0; font-size:clamp(30px,5vw,48px); line-height:1.05; letter-spacing:-.045em; }
+    .intro { margin:12px 0 26px; color:var(--muted); }
+    .question { position:relative; min-height:128px; padding:22px 24px; border:1px solid var(--line); border-radius:17px; box-shadow:0 8px 20px #161a4310; }
+    .question:nth-of-type(1) { background:#f9edf1; }
+    .question:nth-of-type(2) { background:#edf5ec; }
+    .question:nth-of-type(3) { background:#edf0fb; }
+    .question.with-image { padding-right:188px; }
+    .question label { display:block; max-width:650px; margin:0 0 14px; font-size:clamp(16px,2vw,20px); font-weight:700; }
+    .answer-row { display:flex; align-items:center; min-height:48px; overflow:hidden; border:1px solid #dfe2f5; border-radius:10px; background:#fff; }
+    input { width:100%; min-width:0; padding:11px 14px; border:0; outline:0; color:var(--ink); font:600 17px ui-sans-serif,system-ui,sans-serif; }
+    input::placeholder { color:#7b82a0; }
+    .unit { flex:none; padding:0 14px; color:var(--muted); font:700 12px ui-monospace,SFMono-Regular,Consolas,monospace; }
+    .photo { position:absolute; right:22px; top:15px; width:142px; height:112px; display:grid; place-items:center; margin:0; overflow:hidden; border:1px solid #ffffff; border-radius:12px; background:#fff; box-shadow:0 10px 24px #10133b22; }
+    .photo img { width:100%; height:100%; object-fit:contain; }
+    .connector { display:flex; align-items:center; gap:14px; height:54px; }
+    .connector::before,.connector::after { content:""; flex:1; height:1px; background:var(--line); }
+    .operator { width:42px; height:42px; display:grid; place-items:center; color:#fff; background:var(--blue); border-radius:13px; font-size:19px; font-weight:850; box-shadow:0 5px 12px #2934b82e; }
+    .operator.equal { background:var(--ink); }
+    .submit { width:100%; min-height:58px; margin-top:24px; border:0; border-radius:13px; color:var(--ink); background:var(--yellow); font:800 18px ui-sans-serif,system-ui,sans-serif; cursor:pointer; transition:transform .15s,filter .15s; }
+    .submit:hover { transform:translateY(-1px); filter:brightness(1.02); }
+    .error { min-height:22px; margin:10px 0 0; color:#b62935; font-size:14px; font-weight:700; }
+    .results { margin-top:22px; padding:20px; border-radius:15px; background:#f1f3fd; }
+    .results h2 { margin:0 0 6px; font-size:23px; }
+    .results p { margin:5px 0; color:var(--muted); }
+    .answers { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-top:14px; }
+    .answer-result { padding:12px; border:1px solid var(--line); border-radius:11px; background:#fff; }
+    .answer-result span { display:block; color:var(--muted); font-size:12px; }
+    .answer-result strong { display:block; margin-top:3px; font-size:19px; }
+    details { margin-top:22px; color:var(--muted); font-size:13px; }
+    details a { color:var(--blue); }
+    footer { padding:0 16px 24px; color:#d8dcff; text-align:center; font-size:12px; }
+    @media (max-width:600px) {
+      main { width:min(100% - 20px,980px); margin-top:16px; }
+      .sheet { padding:20px 15px; border-radius:18px; }
+      .question { min-height:unset; padding:17px 14px; }
+      .question.with-image { padding-right:14px; padding-bottom:132px; }
+      .photo { top:auto; bottom:12px; left:14px; right:auto; width:126px; height:104px; }
+      .connector { height:46px; }
+      .operator { width:36px; height:36px; }
+      .answers { grid-template-columns:1fr; }
+    }
   </style>
 </head>
 <body>
-  <iframe title="Netto OpenAEC Special puzzle" src="../index.html?screen=openaec"></iframe>
+  <header class="topbar"><span class="brand">Netto</span><span class="top-label">OpenAEC Special</span></header>
+  <main>
+    <section class="sheet" aria-labelledby="title">
+      <p class="eyebrow">Three questions · One connection</p>
+      <h1 id="title">The OpenAEC Special</h1>
+      <p class="intro">Estimate three facts about the OpenAEC ecosystem. Use the equation to refine your guesses.</p>
+      <form id="puzzleForm" novalidate>
+        <article class="question with-image">
+          <label for="guess1">As of 30 October 2026, how many contributors were listed in the OpenAEC ecosystem statistics?</label>
+          <div class="answer-row"><input id="guess1" type="number" inputmode="numeric" min="1" step="1" placeholder="Your answer" required><span class="unit">contributors</span></div>
+          <figure class="photo"><img src="../fotos/assets/openaec-cube.png" alt="Orange isometric cube illustration"></figure>
+        </article>
+        <div class="connector" aria-hidden="true"><span class="operator">−</span></div>
+        <article class="question">
+          <label for="guess2">By that date, how many releases had Open PDF Studio published?</label>
+          <div class="answer-row"><input id="guess2" type="number" inputmode="numeric" min="1" step="1" placeholder="Your answer" required><span class="unit">releases</span></div>
+        </article>
+        <div class="connector" aria-hidden="true"><span class="operator equal">=</span></div>
+        <article class="question">
+          <label for="guess3">How many OpenAEC repositories used Rust as their primary language on that date?</label>
+          <div class="answer-row"><input id="guess3" type="number" inputmode="numeric" min="1" step="1" placeholder="Your answer" required><span class="unit">repositories</span></div>
+        </article>
+        <p class="error" id="error" role="alert" aria-live="polite"></p>
+        <button class="submit" type="submit">Check my score</button>
+      </form>
+      <section class="results" id="results" hidden aria-live="polite"></section>
+      <details><summary>Sources</summary><ul>
+        <li><a href="https://open-aec.com/statistieken/" target="_blank" rel="noopener">OpenAEC ecosystem statistics</a> (checked 30 October 2026)</li>
+        <li><a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases" target="_blank" rel="noopener">Open PDF Studio releases</a></li>
+        <li><a href="https://github.com/orgs/OpenAEC-Foundation/repositories?language=rust" target="_blank" rel="noopener">OpenAEC repositories filtered by Rust</a></li>
+      </ul></details>
+    </section>
+  </main>
+  <footer>Made by B-Force · Netto</footer>
+  <script>
+    const actual = [96, 81, 15];
+    const form = document.getElementById('puzzleForm');
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const guesses = [1, 2, 3].map(index => Number(document.getElementById(`guess${index}`).value));
+      const error = document.getElementById('error');
+      if (guesses.some(value => !Number.isSafeInteger(value) || value <= 0)) {
+        error.textContent = 'Enter a whole number greater than zero for all three questions.';
+        return;
+      }
+      error.textContent = '';
+      const factors = guesses.map((value, index) => Math.max(value / actual[index], actual[index] / value));
+      const average = factors.reduce((sum, factor) => sum + factor, 0) / factors.length;
+      const results = document.getElementById('results');
+      results.innerHTML = `<h2>Your result: ${average.toFixed(2)}×</h2><p>Average factor — 1.00× is exact.</p><div class="answers">${actual.map((answer, index) => `<div class="answer-result"><span>Question ${index + 1} · ${factors[index].toFixed(2)}×</span><strong>${guesses[index].toLocaleString()} → ${answer.toLocaleString()}</strong></div>`).join('')}</div>`;
+      results.hidden = false;
+      results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  </script>
 </body>
 </html>
