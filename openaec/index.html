@@ -84,7 +84,7 @@
         <button class="submit" type="submit">Check my score</button>
       </form>
       <section class="results" id="results" hidden aria-live="polite"></section>
-      <details><summary>Where do these numbers come from?</summary><ul>
+      <details id="sources" hidden><summary>Where do these numbers come from?</summary><ul>
         <li><a href="https://open-aec.com/statistieken/" target="_blank" rel="noopener">OpenAEC ecosystem statistics</a></li>
         <li><a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases" target="_blank" rel="noopener">Open PDF Studio releases</a></li>
         <li><a href="https://github.com/orgs/OpenAEC-Foundation/repositories?language=rust" target="_blank" rel="noopener">OpenAEC repositories filtered by Rust</a></li>
@@ -95,6 +95,40 @@
   <script>
     const actual = [96, 81, 15];
     const form = document.getElementById('puzzleForm');
+    const sources = document.getElementById('sources');
+    const inputs = [1, 2, 3].map(index => document.getElementById(`guess${index}`));
+    let calculatedInput = null;
+    inputs.forEach(input => {
+      input.addEventListener('focus', () => {
+        if (calculatedInput === input) {
+          calculatedInput = null;
+          input.classList.remove('auto-calculated');
+          input.select();
+        }
+      });
+      input.addEventListener('input', () => {
+        if (calculatedInput === input) calculatedInput = null;
+        input.classList.remove('auto-calculated');
+        const target = calculatedInput || inputs.find(field => field.value === '' && field !== document.activeElement);
+        if (!target || target === document.activeElement) return;
+        const index = inputs.indexOf(target);
+        const values = inputs.map(field => field.value === '' ? NaN : Number(field.value));
+        if (values.some((value, position) => position !== index && (!Number.isSafeInteger(value) || value <= 0))) {
+          if (calculatedInput) { target.value = ''; target.classList.remove('auto-calculated'); calculatedInput = null; }
+          return;
+        }
+        const value = index === 0 ? values[1] + values[2] : index === 1 ? values[0] - values[2] : values[0] - values[1];
+        if (Number.isSafeInteger(value) && value > 0) {
+          target.value = String(value);
+          target.classList.add('auto-calculated');
+          calculatedInput = target;
+        } else if (calculatedInput) {
+          target.value = '';
+          target.classList.remove('auto-calculated');
+          calculatedInput = null;
+        }
+      });
+    });
     form.addEventListener('submit', event => {
       event.preventDefault();
       const guesses = [1, 2, 3].map(index => Number(document.getElementById(`guess${index}`).value));
@@ -109,6 +143,8 @@
       const results = document.getElementById('results');
       results.innerHTML = `<div class="result-heading"><div><p class="eyebrow">YOUR CONNECTION</p><h2>${average === 1 ? 'Exactly right.' : 'The numbers are in.'}</h2><p>Average factor · closer to 1.00× is better.</p></div><strong class="result-factor">${average.toFixed(2)}<small>×</small></strong></div><div class="reveal-equation">96 <span>−</span> 81 <span>=</span> 15</div><div class="answers">${actual.map((answer, index) => `<div class="answer-result"><span>QUESTION ${index + 1}<b>${factors[index].toFixed(2)}×</b></span><div class="result-values"><div><span>Your answer</span><strong>${guesses[index].toLocaleString()}</strong></div><div><span>Actual answer</span><strong>${answer.toLocaleString()}</strong></div></div></div>`).join('')}</div>`;
       results.hidden = false;
+      results.appendChild(sources);
+      sources.hidden = false;
       results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
   </script>
