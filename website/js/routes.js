@@ -2,6 +2,13 @@
 (function () {
   const scriptUrl = document.currentScript?.src;
   const base = new URL('../', scriptUrl || location.href);
+  // History navigation changes location.pathname. Keep relative runtime assets
+  // anchored to the app root, just like generated deep-link pages already do.
+  if (!document.querySelector('base[href]')) {
+    const assetBase = document.createElement('base');
+    assetBase.href = base.href;
+    document.head.prepend(assetBase);
+  }
   let restoring = false;
   let pending = false;
   let pendingDailyDate = null;

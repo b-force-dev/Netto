@@ -1789,7 +1789,7 @@
     const eigen = PUZZLE_DATA?.photo;
     const draagbaar = eigen && (typeof nogInDeBank !== 'function'
       || nogInDeBank(PUZZLE_DATA, eigen)) ? eigen : null;
-    const f = draagbaar
+    const f = window.resolveDailyQuestionPhoto?.(PUZZLE_DATA) || draagbaar
       || (typeof fotoUitVraagtekst === 'function' ? fotoUitVraagtekst(PUZZLE_DATA) : null);
     if (!f?.url) return null;
     const nr = Number(f.vraag);
@@ -1802,9 +1802,14 @@
 
   // Alleen de presentatie wisselt: opgeslagen antwoorden blijven aan hun vraag gekoppeld.
   function dailyQuestionOrder() {
-    const foto = PUZZLE_DATA?.image_path ? null : gekoppeldeFoto();
+    const foto = PUZZLE_DATA?.image_path ? { vraag:dailyAssignedPhotoQuestion() } : gekoppeldeFoto();
     return ['+', '×', '*', 'x'].includes(PUZZLE_DATA?.operator) && foto?.vraag === 1
       ? [1, 0, 2] : [0, 1, 2];
+  }
+
+  function dailyAssignedPhotoQuestion() {
+    const index = [1, 2, 3].find(i => PUZZLE_DATA?.image_alt === PUZZLE_DATA?.['q' + i + '_label']);
+    return index || 1;
   }
 
   function renderDailyPhoto() {
@@ -1818,7 +1823,8 @@
     // sfeerfoto-rotatie die nergens over gaat.
     const assigned = PUZZLE_DATA?.image_path;
     const gekoppeld = assigned ? null : gekoppeldeFoto();
-    const rotatie = assigned || gekoppeld || PUZZLE_DATA?.edition ? null : pickDailyPhoto(getActivePuzzleKey());
+    // A Daily photo must belong to one of its questions; never use random decor.
+    const rotatie = null;
     const kaarten = [1, 2, 3].map(i => document.getElementById('g' + i)?.closest('.q-block'));
     const volgorde = dailyQuestionOrder();
     const operator = document.getElementById('operatorBadge')?.closest('.connector');
@@ -1831,7 +1837,8 @@
 
     // De foto blijft naast de bijbehorende vraag, ook bij vraag 1.
     // De bestaande fotokolom houdt het beeld vrij van tekst en andere vragen.
-    const vraagnummer = gekoppeld?.vraag >= 1 && gekoppeld.vraag <= 3 ? gekoppeld.vraag : 1;
+    const vraagnummer = assigned ? dailyAssignedPhotoQuestion()
+      : gekoppeld?.vraag >= 1 && gekoppeld.vraag <= 3 ? gekoppeld.vraag : 1;
     const zichtbaarNummer = volgorde.indexOf(vraagnummer - 1) + 1;
     const fotokaart = kaarten[vraagnummer - 1];
     if (fotokaart) {
@@ -1858,17 +1865,17 @@
     // Alleen ruimte reserveren in de vraag als er ook echt een foto staat.
     // Decoratief beeld: de knop draagt het label, de img blijft leeg zodat
     // schermlezers het niet dubbel voorlezen.
-    photo.setAttribute('aria-label', gekoppeld
+    photo.setAttribute('aria-label', assigned || gekoppeld
       ? statsCopy('Vergroot de foto bij vraag ' + zichtbaarNummer, 'Enlarge the photo for question ' + zichtbaarNummer)
       : statsCopy('Vergroot de voorbeeldfoto', 'Enlarge sample photo'));
-    document.getElementById('dailyPhotoCaption').textContent = gekoppeld
+    document.getElementById('dailyPhotoCaption').textContent = assigned || gekoppeld
       ? statsCopy('Bij vraag ' + zichtbaarNummer + ' ↗', 'With question ' + zichtbaarNummer + ' ↗')
       : statsCopy('Voorbeeldfoto ↗', 'Sample photo ↗');
     // "Het antwoord staat er niet op" stond hier, en dat was niet waar: bij een
     // vraag over de hoogte van een toren helpt een foto van die toren je wel
     // degelijk schatten. Dat is ook precies de bedoeling. Beloof dus niet iets
     // wat het beeld niet waarmaakt, en zeg gewoon waar de foto bij hoort.
-    document.getElementById('dailyPhotoDisclaimer').textContent = gekoppeld
+    document.getElementById('dailyPhotoDisclaimer').textContent = assigned || gekoppeld
       ? statsCopy('Hoort bij vraag ' + zichtbaarNummer + '.',
                   'Belongs to question ' + zichtbaarNummer + '.')
       : statsCopy('Ontwerpvoorbeeld — deze foto is geen hint.', 'Design preview — this photo is not a clue.');
@@ -2438,6 +2445,15 @@
     if (PUZZLE_DATA?.date === TODAY_STR) startDailyCountdown();
     else { const countdown = document.getElementById('dailyCountdown'); if (countdown) countdown.remove(); if (countdownTimer) clearInterval(countdownTimer); }
     renderDailyArchive();
+    if (animate) {
+      const order = dailyQuestionOrder();
+      showAnswerReveal({
+        questions: order.map(index => PUZZLE_DATA['q' + (index + 1) + '_label']),
+        guesses: order.map(index => [g1, g2, g3][index]),
+        answers: order.map(index => [echt.a1, echt.a2, echt.a3][index]),
+        operator: PUZZLE_DATA.operator || '×', factor: avgFactor
+      });
+    }
   }
 
   function renderBadge(elemId, factor, guess, actual) {

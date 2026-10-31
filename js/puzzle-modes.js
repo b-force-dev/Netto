@@ -93,6 +93,10 @@
     werkPuzzelNavigatieBij(prefix, true);
     syncLibraryPlay(active, guesses[0], guesses[1], guesses[2], factor);
     if (prefix === 'library') renderLibraryCards(); else renderCatalogusPuzzles();
+    if (prefix === 'library') showAnswerReveal({
+      questions: [active.q1_label, active.q2_label, active.q3_label],
+      guesses, answers, operator: active.operator || '×', factor
+    });
   }
 
   function renderPuzzleReview(prefix, puzzle, guesses, answers, factor) {
@@ -102,11 +106,11 @@
     summary.className = 'puzzle-review-summary';
     summary.setAttribute('aria-label', statsCopy('Puzzelresultaat', 'Puzzle result'));
     const label = document.createElement('span');
-    label.textContent = statsCopy('Nauwkeurigheid', 'Accuracy');
+    label.textContent = statsCopy('Gemiddelde factor', 'Average factor');
     const score = document.createElement('strong');
-    score.textContent = Math.round(100 / factor) + '%';
+    score.textContent = factor.toFixed(2) + '×';
     const detail = document.createElement('span');
-    detail.textContent = statsCopy('Gemiddelde afwijking: ', 'Average deviation: ') + factor.toFixed(2) + '×';
+    detail.textContent = statsCopy('Dichter bij 1.00× is beter.', 'Closer to 1.00× is better.');
     summary.append(label, score, detail);
     list.appendChild(summary);
     answers.forEach((answer, index) => {

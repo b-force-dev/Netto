@@ -1,0 +1,35 @@
+.answer-reveal { position:fixed; inset:0; width:100%; max-width:none; height:100dvh; max-height:none; margin:0; padding:22px; border:0; background:#252fb6; color:#14163b; overflow:auto; background-image:linear-gradient(#ffffff09 1px,transparent 1px),linear-gradient(90deg,#ffffff09 1px,transparent 1px); background-size:48px 48px; }
+.answer-reveal::backdrop { background:#252fb6; }
+.answer-reveal-sheet { box-sizing:border-box; width:min(100%,850px); min-height:min(720px,calc(100dvh - 44px)); margin:auto; padding:26px 32px; background:#fff; border-radius:24px; box-shadow:0 20px 60px #14163b30; display:flex; flex-direction:column; }
+.answer-reveal-header { margin-bottom:18px; }
+.answer-reveal-header > span,.answer-reveal-score > span { font:600 10px/1.4 ui-monospace,monospace; letter-spacing:.13em; color:#656b7d; }
+.answer-reveal-header h1 { font-size:clamp(22px,3vw,30px); letter-spacing:-.04em; margin:7px 0 0; line-height:1.15; }
+.answer-reveal-question { padding:15px 18px; border:1px solid #e3e4f7; border-radius:13px; background:#f8eef2; }
+.answer-reveal-question:nth-of-type(2) { background:#edf5ef; }
+.answer-reveal-question:nth-of-type(3) { background:#eeeffa; }
+.answer-reveal-question h2 { font-size:15px; font-weight:550; line-height:1.4; margin:0 0 12px; }
+.answer-reveal-values { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.answer-reveal-values > div { min-width:0; }
+.answer-reveal-values span { display:block; font-size:11px; color:#656b7d; margin-bottom:3px; }
+.answer-reveal-values strong { display:block; font-size:clamp(22px,3.5vw,32px); font-weight:700; font-variant-numeric:tabular-nums; line-height:1.2; overflow-wrap:anywhere; }
+.answer-reveal-actual { border-left:1px solid #14163b18; padding-left:20px; }
+.answer-reveal-actual strong { color:#252fb6; }
+.answer-reveal-question:not(.is-revealed):not(.is-revealing) .answer-reveal-actual strong { color:#a3a4ba; }
+.answer-reveal-question.is-revealing .answer-reveal-actual strong { animation:reveal-tick .13s infinite; }
+.answer-reveal-question.is-exact .answer-reveal-actual strong { color:#07835e; }
+.answer-reveal-connector { display:flex; align-items:center; gap:12px; height:34px; }
+.answer-reveal-connector::before,.answer-reveal-connector::after { content:''; height:1px; flex:1; background:#e3e4f7; }
+.answer-reveal-connector span { display:grid; place-items:center; width:28px; height:28px; border-radius:8px; background:#252fb6; color:white; font-weight:700; }
+.answer-reveal-connector:nth-of-type(2) span { background:#14163b; }
+.answer-reveal-footer { margin-top:auto; padding-top:18px; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:110px; }
+.answer-reveal-score { flex:1; }
+.answer-reveal-score strong { display:block; color:#252fb6; font-size:34px; line-height:1.1; margin-top:4px; letter-spacing:-.04em; }
+.answer-reveal-score p { color:#656b7d; font-size:11px; line-height:1.4; margin:5px 0 0; max-width:310px; }
+.answer-reveal-footer button { border:0; border-radius:10px; background:#14163b; color:white; padding:14px 18px; font-family:inherit; font-size:13px; font-weight:600; line-height:1.4; cursor:pointer; }
+.answer-reveal-footer button:disabled { background:#f0f0f7; color:#76788e; cursor:default; }
+.answer-reveal-footer button:focus-visible { outline:3px solid #ffd84a; outline-offset:4px; }
+.answer-reveal-announcement { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+@keyframes reveal-tick { from { transform:translateY(-2px); opacity:.6; } to { transform:translateY(2px); opacity:1; } }
+@media(max-height:760px) and (min-width:650px) { .answer-reveal { padding:14px; } .answer-reveal-sheet { min-height:calc(100dvh - 28px); padding:20px 28px; } .answer-reveal-header { margin-bottom:12px; } .answer-reveal-question { padding:11px 16px; } .answer-reveal-question h2 { margin-bottom:8px; } .answer-reveal-values strong { font-size:26px; } .answer-reveal-footer { min-height:90px; padding-top:12px; } }
+@media(max-width:649px) { .answer-reveal { padding:10px; } .answer-reveal-sheet { padding:20px 16px; border-radius:18px; min-height:calc(100dvh - 20px); } .answer-reveal-question { padding:12px; } .answer-reveal-question h2 { font-size:14px; } .answer-reveal-footer { flex-wrap:wrap; gap:12px; } .answer-reveal-footer button { width:100%; } }
+@media(prefers-reduced-motion:reduce) { .answer-reveal * { animation:none !important; } }

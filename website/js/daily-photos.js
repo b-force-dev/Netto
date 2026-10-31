@@ -38,3 +38,43 @@ window.NETTO_DAILY_PHOTOS = [
 ];
 
 window.NETTO_DAILY_PHOTO_DIR = 'fotos/assets/';
+
+// Resolve by the question itself, including minor editorial wording changes.
+// These explicit subjects cover gaps in the reviewed photo bank. Existing
+// local assets keep today's Titanic and the spider puzzle independent of CDN.
+window.resolveDailyQuestionPhoto = function (puzzle) {
+  const normalize = text => String(text || '').toLowerCase()
+    .replace(/\b(about|approximately|roughly)\b/g, '')
+    .replace(/[’‘]/g, "'").replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+  const local = (file, source, maker, license) => ({
+    url: new URL('fotos/assets/' + file, document.baseURI).href,
+    pagina: source, maker, licentie: license
+  });
+  const explicit = new Map([
+    [normalize('How many lifeboats did the Titanic carry?'), local(
+      'media-011-rms-titanic-3-jpg.jpg',
+      'https://commons.wikimedia.org/wiki/File:RMS_Titanic_3.jpg',
+      'Francis Godolphin Osbourne Stuart', 'Public domain')],
+    [normalize('How many legs does a spider have?'), local(
+      'media-022-xysticus-spec-6890-jpg.jpg',
+      'https://commons.wikimedia.org/wiki/File:Xysticus.spec.6890.jpg',
+      'Olaf Leillinger', 'CC BY-SA 3.0')],
+    [normalize('How many kilometres long is the Panama Canal?'),
+      window.NETTO_FOTOS?.['Hoeveel sluizen heeft het Panamakanaal?']]
+  ]);
+  const data = window.NETTO_REBUILT_PUZZLES || {};
+  const bank = window.NETTO_FOTOS || {};
+  const byQuestion = new Map();
+  for (const review of [data.daily_review, data.library_review]) {
+    for (const [label, metadata] of Object.entries(review || {})) {
+      if (bank[metadata.original || label]) byQuestion.set(normalize(label), bank[metadata.original || label]);
+    }
+  }
+  for (const index of [1, 2, 3]) {
+    const label = puzzle?.['q' + index + '_label'];
+    const key = normalize(label);
+    const photo = explicit.get(key) || byQuestion.get(key);
+    if (photo?.url) return { ...photo, vraag:index };
+  }
+  return null;
+};
