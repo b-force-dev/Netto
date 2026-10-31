@@ -67,7 +67,8 @@ window.resolveDailyQuestionPhoto = function (puzzle) {
   const byQuestion = new Map();
   for (const review of [data.daily_review, data.library_review]) {
     for (const [label, metadata] of Object.entries(review || {})) {
-      if (bank[metadata.original || label]) byQuestion.set(normalize(label), bank[metadata.original || label]);
+      const photo = metadata.photo || bank[metadata.original || label];
+      if (photo) byQuestion.set(normalize(label), photo);
     }
   }
   for (const index of [1, 2, 3]) {

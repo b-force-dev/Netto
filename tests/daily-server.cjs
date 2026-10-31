@@ -1,0 +1,32 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const vm=require('node:vm');
+const assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const c={window:{}};
+vm.runInNewContext(fs.readFileSync(path.join(root,'data/netto_frontend_puzzles.js'),'utf8'),c);
+assert.equal(c.window.NETTO_REBUILT_PUZZLES.daily.length,0);
+assert.equal(Object.keys(c.window.NETTO_REBUILT_PUZZLES.daily_review).length,0);
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+assert.ok(!html.includes('netto_daily_november.js'));
+assert.ok(!html.includes('netto_breinkrakers.js'));
+const core=fs.readFileSync(path.join(root,'js/core.js'),'utf8');
+const start=core.indexOf('  async function requestDailyResult(');
+const end=core.indexOf('\n  function applyDailyResult',start);
+let reply={puzzle_id:'test',guesses:[2,3,5],answers:[2,3,5],factor:1,ranked:false};
+const ctx=vm.createContext({Number,Array,Error,supabaseClient:{rpc:async(name,args)=>{
+  assert.equal(name,'netto_submit_daily');
+  assert.equal(args.p_puzzle_id,'test');
+  assert.ok(!('factor' in args));
+  return {data:reply,error:null};
+}}});
+vm.runInContext(core.slice(start,end),ctx);
+(async()=>{
+  const puzzle={id:'test',serverDaily:true};
+  assert.equal((await ctx.requestDailyResult(puzzle,[2,3,5])).factor,1);
+  reply={...reply,answers:[]};
+  await assert.rejects(ctx.requestDailyResult(puzzle,[2,3,5]),/Invalid Daily result/);
+  reply={...reply,answers:[2,3,5],puzzle_id:'different'};
+  await assert.rejects(ctx.requestDailyResult(puzzle,[2,3,5]),/Invalid Daily result/);
+  console.log('Server-only Daily payload and response validation passed.');
+})().catch(error=>{console.error(error);process.exitCode=1;});

@@ -56,7 +56,7 @@ def routes(data: dict) -> dict[str, str]:
         if connection(puzzle):
             items[f"connections/{number}"] = "index.html"
     # Ook nog niet gepubliceerde dagpuzzels kunnen uit de database komen.
-    first = min(date.fromisoformat(puzzle["date"]) for puzzle in data["daily"])
+    first = min((date.fromisoformat(puzzle["date"]) for puzzle in data["daily"]), default=date(2026, 9, 21))
     last = date.today() + timedelta(days=366)
     day = first
     while day <= last:

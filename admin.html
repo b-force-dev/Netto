@@ -343,9 +343,7 @@
   async function loadComposer() {
     if (!client) { $('composerIntro').textContent = 'Supabase-key ontbreekt in admin.html.'; return; }
     try {
-      const { data, error } = await client.from('puzzles')
-        .select('id, scheduled_date, status, source_library_id, question_1')
-        .order('scheduled_date', { ascending: false }).limit(400);
+      const { data, error } = await client.rpc('netto_admin_daily_schedule');
       if (error) throw error;
       composerUsedLibraryIds = new Set((data || []).map(r => r.source_library_id).filter(Boolean).map(String));
       composerTakenDates = new Set((data || []).map(r => r.scheduled_date).filter(Boolean));

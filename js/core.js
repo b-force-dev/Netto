@@ -136,6 +136,7 @@
       dailySyncAfgerond = true;
       renderHomeDailyPreview();
       window.NettoRoutes?.dailyReady();
+      refreshLeaderboardAfterDailySync();
     }
     bewaakDagwissel();
   });
@@ -380,7 +381,7 @@
   // De statische set loopt aaneengesloten door (nr. 35 = 2026-09-04), dus nieuwe
   // dailies tellen daarop door. Zo blijven nummers stabiel en verschuift de
   // geschiedenis niet als er iets bijkomt.
-  const DAILY_NUMBER_REF = STATIC_DAILIES.find(p => p.date && p.number) || null;
+  const DAILY_NUMBER_REF = { date:'2026-09-21', number:1 };
 
   function dailyNumberForDate(dateStr) {
     if (!DAILY_NUMBER_REF || !dateStr) return null;
@@ -389,17 +390,19 @@
   }
 
   function mapDbDaily(row) {
+    REBUILT_DATA.daily_review ||= {};
+    for (const detail of row.question_details || []) {
+      REBUILT_DATA.daily_review[detail.label] = detail;
+    }
     return normalizeLibraryPuzzle({
-      ...STATIC_DAILIES.find(p => p.id === row.id),
       id: row.id,
+      serverDaily: true,
       operator: row.operator || '×',
       q1_label: row.question_1,
-      q1_answer: row.true_answer_1,
       q2_label: row.question_2,
-      q2_answer: row.true_answer_2,
       q3_label: row.question_3,
-      q3_answer: row.true_answer_3,
       date: row.scheduled_date,
+      categories: (row.question_details || []).map(detail => detail.category).filter(Boolean),
       image_path: row.image_path,
       image_alt: row.image_alt,
       image_caption: row.image_caption,
@@ -466,14 +469,9 @@
     if (!supabaseClient || dailySyncGedaan) return;
     dailySyncGedaan = true;
     try {
-      let query = supabaseClient
-        .from('puzzles')
-        .select('id, question_1, question_2, question_3, operator, true_answer_1, true_answer_2, true_answer_3, scheduled_date, image_path, image_alt, image_caption, image_credit, image_source_url')
-        .eq('status', 'scheduled')
-        .lte('scheduled_date', TODAY_STR);
-      // Oude serverpuzzels mogen de opnieuw beoordeelde reeks niet terugzetten.
-      if (DAILY_EDITION) query = query.eq('daily_edition', DAILY_EDITION);
-      const { data, error } = await query.order('scheduled_date', { ascending: false });
+      const { data, error } = await supabaseClient.rpc('netto_daily_questions', {
+        p_edition: DAILY_EDITION || null
+      });
       // Ontbreekt question_3 nog (migratie niet gedraaid), dan faalt de select
       // en houden we gewoon de statische set aan. Wel loggen: anders is een
       // kapotte query niet te onderscheiden van "nog niets ingepland".
@@ -509,6 +507,8 @@
       dailySyncAfgerond = true;
       window.NettoRoutes?.dailyReady();
       renderHomeDailyPreview();
+    } finally {
+      refreshLeaderboardAfterDailySync();
     }
   }
 
@@ -529,6 +529,7 @@
   let currentUser = null;
   let currentLbTab = 'today';
   let leaderboardSelectedDate = TODAY_STR;
+  let leaderboardFollowLatest = true;
   let leaderboardRequestId = 0;
   let streakCalendarDate = new Date(TODAY_STR.slice(0, 7) + '-01T12:00:00');
   // De Daily Archive gebruikt dezelfde kaart als de puzzel, maar wisselt na
@@ -830,7 +831,14 @@
   }
 
   function getLocalStreak() {
-    return statsTrailingStreak(getDailyStatsEntries().map(entry => entry.date));
+    return statsTrailingStreak(getDailyStatsEntries().filter(entry => entry.streakEligible).map(entry => entry.date));
+  }
+
+  function isOnTimeDailyPlay(date, play) {
+    const timestamp = play?.playedAt;
+    if (!isStatsDateKey(date) || !timestamp) return false;
+    const moment = new Date(timestamp);
+    return Number.isFinite(moment.getTime()) && nettoDagSleutel(moment) === date && date <= TODAY_STR;
   }
 
   // =========================================================================
@@ -922,7 +930,7 @@
       if (!Number.isFinite(factor) || factor <= 0) return;
       const existing = entries.get(date);
       if (existing && existing.priority > priority) return;
-      entries.set(date, { date, factor, priority });
+      entries.set(date, { date, factor, priority, streakEligible:isOnTimeDailyPlay(date, play) });
     };
 
     Object.entries(plays).forEach(([key, play]) => {
@@ -940,7 +948,7 @@
 
     return Array.from(entries.values())
       .sort((a, b) => a.date.localeCompare(b.date))
-      .map(({ date, factor }) => ({ date, factor, accuracy: Math.max(0, Math.min(100, 100 / factor)) }));
+      .map(({ date, factor, streakEligible }) => ({ date, factor, streakEligible, accuracy: Math.max(0, Math.min(100, 100 / factor)) }));
   }
 
   function statsBucketIndex(accuracy) {
@@ -986,12 +994,11 @@
 
   function getDailyStatsSnapshot() {
     const entries = getDailyStatsEntries();
-    const dateKeys = entries.map(entry => entry.date);
+    const dateKeys = entries.filter(entry => entry.streakEligible).map(entry => entry.date);
     const currentStreak = statsTrailingStreak(dateKeys);
     const historicalBest = statsLongestStreak(dateKeys);
-    const storedBest = safeStatsInteger(localStorage.getItem(STATS_MAX_STREAK_KEY));
-    const bestStreak = Math.max(storedBest, currentStreak, historicalBest);
-    if (bestStreak > storedBest) localStorage.setItem(STATS_MAX_STREAK_KEY, String(bestStreak));
+    const bestStreak = Math.max(currentStreak, historicalBest);
+    localStorage.setItem(STATS_MAX_STREAK_KEY, String(bestStreak));
 
     const buckets = STATS_BUCKETS.map(() => 0);
     entries.forEach(entry => { buckets[statsBucketIndex(entry.accuracy)] += 1; });
@@ -1207,11 +1214,11 @@
     const dailyByNumber = new Map(DAILY_PUZZLES.map(puzzle => [Number(puzzle.number), puzzle.date]));
     Object.entries(getLocalPlays()).forEach(([key, play]) => {
       if (/^\d{4}-\d{2}-\d{2}$/.test(key)) {
-        dates.add(key);
+        if (isOnTimeDailyPlay(key, play)) dates.add(key);
         return;
       }
       const puzzleDate = dailyByNumber.get(Number(play?.puzzleNumber));
-      if (puzzleDate) dates.add(puzzleDate);
+      if (puzzleDate && isOnTimeDailyPlay(puzzleDate, play)) dates.add(puzzleDate);
     });
     return dates;
   }
@@ -2278,7 +2285,7 @@
     }
   }
 
-  function checkExistingPlay() {
+  async function checkExistingPlay() {
     werkDailyVraagDetailsBij();
     renderDailyPhoto();
     const plays = getLocalPlays();
@@ -2288,6 +2295,24 @@
     updateStreakUI(streak);
 
     if (existingPlay) {
+      const puzzle = PUZZLE_DATA;
+      if (puzzle.serverDaily) {
+        try {
+          const result = Array.isArray(existingPlay.answers) && existingPlay.answers.length === 3
+            ? existingPlay
+            : await requestDailyResult(puzzle, [existingPlay.g1, existingPlay.g2, existingPlay.g3]);
+          if (PUZZLE_DATA.id !== puzzle.id) return;
+          applyDailyResult(puzzle, result);
+          existingPlay.g1 = result.guesses?.[0] ?? result.g1;
+          existingPlay.g2 = result.guesses?.[1] ?? result.g2;
+          existingPlay.g3 = result.guesses?.[2] ?? result.g3;
+          existingPlay.factor = Number(result.factor);
+          existingPlay.ranked = result.ranked;
+        } catch (error) {
+          showNoticeToast(statsCopy('Je resultaat kon niet worden geladen. Probeer het opnieuw.', 'Your result could not be loaded. Please try again.'), '↻', statsCopy('Verbinding', 'Connection'));
+          return;
+        }
+      }
       // Reeds gespeeld voor deze puzzel
       document.getElementById('g1').value = fmt(existingPlay.g1);
       document.getElementById('g2').value = fmt(existingPlay.g2);
@@ -2296,6 +2321,7 @@
       document.getElementById('btnCheck').style.display = 'none';
       document.getElementById('alreadyPlayedBanner').classList.add('show');
       renderResultsUI(existingPlay.g1, existingPlay.g2, existingPlay.g3, existingPlay.factor);
+      setDailySyncStatus(Boolean(existingPlay.ranked));
     }
   }
 
@@ -2312,7 +2338,42 @@
     return Number.isFinite(expected) && Math.abs(expected-c) <= 1e-10 * Math.max(Math.abs(expected),Math.abs(c),Number.MIN_VALUE);
   }
 
-  function checkAnswers() {
+  let dailySubmissionBusy = false;
+
+  async function requestDailyResult(puzzle, guesses) {
+    if (!supabaseClient || !puzzle?.serverDaily) throw new Error('Daily service unavailable');
+    const {data,error} = await supabaseClient.rpc('netto_submit_daily', {
+      p_puzzle_id:puzzle.id, p_g1:guesses[0], p_g2:guesses[1], p_g3:guesses[2]
+    });
+    if (error) throw error;
+    if (data?.puzzle_id !== puzzle.id || !Array.isArray(data.answers) || data.answers.length !== 3
+        || data.answers.some(value => !Number.isFinite(Number(value)) || Number(value) <= 0)
+        || !Array.isArray(data.guesses) || data.guesses.length !== 3
+        || !Number.isFinite(Number(data.factor)) || Number(data.factor) < 1) throw new Error('Invalid Daily result');
+    return data;
+  }
+
+  function applyDailyResult(puzzle, result) {
+    result.answers.forEach((answer,index) => { puzzle['q' + (index+1) + '_answer'] = Number(answer); });
+    for (const details of result.question_details || []) REBUILT_DATA.daily_review[details.label] = details;
+  }
+
+  function setDailySyncStatus(ranked) {
+    let status = document.getElementById('dailyScoreSyncStatus');
+    if (!status) {
+      status = document.createElement('p');
+      status.id = 'dailyScoreSyncStatus';
+      status.setAttribute('role','status');
+      document.getElementById('results').append(status);
+    }
+    status.textContent = PUZZLE_DATA.date !== TODAY_STR
+      ? statsCopy('Archiefresultaat. Dit telt niet mee voor je dagelijkse streak of het bord van vandaag.', 'Archive result. This does not count toward your daily streak or today’s leaderboard.')
+      : ranked ? statsCopy('Je score staat op het leaderboard.', 'Your score is on the leaderboard.')
+      : statsCopy('Lokaal bewaard. Log in om je score van vandaag te plaatsen.', 'Saved on this device. Log in to post today’s score.');
+  }
+
+  async function checkAnswers() {
+    if (dailySubmissionBusy) return;
     const g1 = parseFormattedNumber(document.getElementById('g1').value);
     const g2 = parseFormattedNumber(document.getElementById('g2').value);
     const g3 = parseFormattedNumber(document.getElementById('g3').value);
@@ -2334,39 +2395,44 @@
     }
     const equationError = document.getElementById('dailyEquationError');
     if (equationError) equationError.hidden = true;
-    const s1 = scoreVraag(g1, PUZZEL_ECHT().a1);
-    const s2 = scoreVraag(g2, PUZZEL_ECHT().a2);
-    const s3 = scoreVraag(g3, PUZZEL_ECHT().a3);
-    const avgFactor = (s1 + s2 + s3) / 3;
-
-    // Streak bijwerken (bij de dagelijkse puzzel)
-    let streak = getLocalStreak();
-    const plays = getLocalPlays();
-    const pKey = getActivePuzzleKey();
-
-    if (!plays[pKey] && PUZZLE_DATA?.date === TODAY_STR) {
-      streak += 1;
-      localStorage.setItem('netto_streak', streak.toString());
+    const puzzle = PUZZLE_DATA;
+    const button = document.getElementById('btnCheck');
+    dailySubmissionBusy = true;
+    button.disabled = true;
+    const previousLabel = button.textContent;
+    button.textContent = statsCopy('Resultaat ophalen…', 'Checking your answers…');
+    try {
+      const result = await requestDailyResult(puzzle, [g1,g2,g3]);
+      applyDailyResult(puzzle, result);
+      const guesses = result.guesses.map(Number);
+      const avgFactor = Number(result.factor);
+      const plays = getLocalPlays();
+      plays[puzzle.date] = {g1:guesses[0],g2:guesses[1],g3:guesses[2],factor:avgFactor,
+        answers:result.answers.map(Number),question_details:result.question_details,
+        puzzleNumber:puzzle.number,playedAt:result.submitted_at,ranked:result.ranked};
+      localStorage.setItem(DAILY_PLAYS_KEY, JSON.stringify(plays));
+      const streak = getLocalStreak();
+      updateMaxStreak(streak);
+      updateStreakUI(streak);
+      if (PUZZLE_DATA.id !== puzzle.id) return;
+      ['g1','g2','g3'].forEach((id,index) => {
+        const input = document.getElementById(id);
+        input.value = fmt(guesses[index]);
+        input.disabled = true;
+      });
+      button.style.display = 'none';
+      renderResultsUI(...guesses, avgFactor, true);
+      setDailySyncStatus(result.ranked);
+      if (guesses.every((guess,index) => guess === Number(result.answers[index]))) launchConfetti();
+      if (!document.getElementById('streakCalendarPopover')?.hidden) renderStreakCalendar();
+    } catch (error) {
+      console.warn('Daily submission failed:', error.message || error);
+      showNoticeToast(statsCopy('De server kon je antwoorden niet beoordelen. Je invoer blijft staan; probeer opnieuw.', 'The server could not check your answers. Your inputs are kept; please try again.'), '↻', statsCopy('Niet ingeleverd', 'Not submitted'));
+    } finally {
+      dailySubmissionBusy = false;
+      button.disabled = false;
+      button.textContent = previousLabel;
     }
-    updateMaxStreak(streak);
-    updateStreakUI(streak);
-
-    // Opslaan in LocalStorage
-    plays[pKey] = { g1, g2, g3, factor: avgFactor, puzzleNumber: PUZZLE_DATA.number, playedAt: new Date().toISOString() };
-    localStorage.setItem(DAILY_PLAYS_KEY, JSON.stringify(plays));
-    if (!document.getElementById('streakCalendarPopover')?.hidden) renderStreakCalendar();
-
-    // Velden uitschakelen
-    ['g1', 'g2', 'g3'].forEach(id => document.getElementById(id).disabled = true);
-    document.getElementById('btnCheck').style.display = 'none';
-
-    renderResultsUI(g1, g2, g3, avgFactor, true);
-    if ([g1, g2, g3].every((guess, i) => isSpotOnAnswer(guess, [PUZZEL_ECHT().a1, PUZZEL_ECHT().a2, PUZZEL_ECHT().a3][i]))) {
-      launchConfetti();
-    }
-
-    // Sync naar Cloud / Supabase als ingelogd
-    if (PUZZLE_DATA?.date === TODAY_STR) syncPlayToCloud(TODAY_STR, g1, g2, g3, avgFactor);
   }
 
   function PUZZEL_ECHT() {
@@ -2518,29 +2584,11 @@
     const labels = volgorde.map(i => PUZZLE_DATA['q' + (i + 1) + '_label']);
     const guess = guesses[index], actual = answers[index];
     const copy = statsCopy;
-    // Fixed illustrative percentages, never used for scoring or stored as player data.
-    const demos = [
-      [1,2,3,6,12,21,26,16,7,3,2,1],
-      [2,3,5,8,16,24,20,10,6,3,2,1],
-      [1,1,2,3,5,9,17,25,19,10,5,3]
-    ];
-    const bins = demos[index];
-    const x = value => 42 + (Math.max(-3,Math.min(3,value))+3)/6*476;
     const logRatio = Math.log2(guess)-Math.log2(actual);
-    const guessX = x(logRatio);
     const exact = guess === actual;
     const factor = Math.max(guess/actual,actual/guess);
     const direction = exact ? 'Exact' : copy(logRatio > 0 ? 'te hoog' : 'te laag', logRatio > 0 ? 'too high' : 'too low');
     const ratioLabel = Number.isFinite(factor) ? new Intl.NumberFormat(nettoNumberLocale(),{maximumSignificantDigits:3}).format(factor)+'×' : copy('Buiten schaal','Off scale');
-    const ticks = dailyHistogramTicks(actual).map(value => {
-      const label = new Intl.NumberFormat(nettoNumberLocale(), {notation:'compact',maximumSignificantDigits:3}).format(value);
-      return `<text x="${x(Math.log2(value/actual))}" y="223" text-anchor="middle" class="hist-tick">${label}</text>`;
-    }).join('');
-    const bars = bins.map((percent,i) => {
-      const height = percent/30*132;
-      return `<rect x="${43+i*476/12}" y="${198-height}" width="36" height="${height}" rx="3" class="hist-bar"><title>DEMO: ${percent}%</title></rect>`;
-    }).join('');
-    const labelX = Math.max(74,Math.min(486,guessX));
     container.innerHTML = `
       <div class="review-equation"><span>${copy('Het verband','The connection')}</span><strong>${fmt(answers[0])} ${PUZZLE_DATA.operator || '×'} ${fmt(answers[1])} = ${fmt(answers[2])}</strong></div>
       <div class="review-question-tabs" role="group" aria-label="${copy('Kies een vraag','Choose a question')}">${[-1,0,1,2].map(i => `<button type="button" aria-pressed="${i===selected}" onclick="selectDailyReviewQuestion(${i})" data-question="${i}">${i === -1 ? copy('Overzicht','Overview') : copy('Vraag','Question')+' '+(i+1)}</button>`).join('')}</div>
@@ -2551,21 +2599,7 @@
       }).join('')}<p class="overview-note">${copy('Tik op een vraag om je schatting te bekijken.','Select a question to explore your estimate.')}</p></div>
       <h2 id="selectedReviewQuestion" class="selected-review-question"></h2>
       <div class="review-comparison"><div><span>${copy('Jouw schatting','Your estimate')}</span><strong>${fmt(guess)}</strong></div><div class="review-answer"><span>${copy('Echt antwoord','Actual answer')}</span><strong>${fmt(actual)}</strong></div></div>
-      <div class="hist-heading"><strong>${exact ? 'Exact' : ratioLabel+' '+direction}</strong><span>${copy('Zo werd er geschat','How people guessed')}</span></div>
-      <p class="hist-demo"><span title="${copy('Voorbeeldgegevens, geen echte spelers','Sample data, not real players')}">Demo</span></p>
-      <svg class="ratio-chart histogram-chart" viewBox="0 0 560 250" role="img" aria-labelledby="histTitle histDesc">
-        <title id="histTitle">${copy('Voorbeeldverdeling met jouw echte schatting','Sample distribution with your actual estimate')}</title>
-        <desc id="histDesc">${copy('Hogere balken betekenen meer voorbeeldspelers. Geel is jouw schatting; de stippellijn is het echte antwoord. Logaritmische schaal met ronde schaalgetallen.','Taller bars mean more sample players. Yellow marks your estimate; the dashed line is the actual answer. Logarithmic scale with rounded tick values.')}</desc>
-        <line x1="42" x2="518" y1="198" y2="198" class="ratio-grid"/>${bars}
-        <line x1="280" x2="280" y1="48" y2="199" class="hist-actual"/>
-        <line x1="${guessX}" x2="${guessX}" y1="44" y2="199" class="hist-you"/>
-        <rect x="${labelX-32}" y="15" width="64" height="26" rx="5" fill="#FFD84A"/>
-        <text x="${labelX}" y="33" text-anchor="middle" class="hist-you-label">${Math.abs(logRatio)>3 ? (logRatio<0?'← ':'→ ') : ''}${copy('Jij','You')}</text>
-        ${ticks}
-        <text x="280" y="243" text-anchor="middle" class="hist-tick">${copy('ECHT ANTWOORD','ACTUAL ANSWER')}</text>
-      </svg>
-      ${Math.abs(logRatio)>3 ? `<div class="hist-footnote">${copy('Jouw schatting valt buiten de schaal.','Your estimate is outside the scale.')}</div>` : ''}
-      <details class="hist-data"><summary>${copy('Bekijk voorbeeldpercentages','View sample percentages')}</summary><div>${bins.map((percent,i)=>`<span>${new Intl.NumberFormat(nettoNumberLocale(),{maximumSignificantDigits:3}).format(2**(-3+i/2))}–${new Intl.NumberFormat(nettoNumberLocale(),{maximumSignificantDigits:3}).format(2**(-3+(i+1)/2))}×: ${percent}%</span>`).join('')}</div></details>`;
+      <div class="hist-heading"><strong>${exact ? 'Exact' : ratioLabel+' '+direction}</strong><span>${copy('Jouw resultaat','Your result')}</span></div>`;
     document.getElementById('selectedReviewQuestion').textContent = labels[index];
     labels.forEach((label,i) => { document.getElementById('overviewQuestion'+i).textContent = label; });
     if (!overview) {
@@ -2660,42 +2694,33 @@
   // ignoreDuplicates zorgt dat een oude speelbeurt op een ander apparaat niet
   // wordt overschreven door wat er toevallig in deze browser stond.
   async function stuurLokaleScoresOp() {
-    if (!currentUser || !supabaseClient || !dailyEditionReady) return;
-    const rijen = Object.entries(getLocalPlays())
-      .filter(([sleutel, spel]) => /^\d{4}-\d{2}-\d{2}$/.test(sleutel)
-        && spel && Number.isFinite(Number(spel.factor)))
-      .map(([datum, spel]) => ({
-        user_id: currentUser.id, puzzle_date: datum,
-        g1: spel.g1, g2: spel.g2, g3: spel.g3, factor: spel.factor,
-      }));
-    if (!rijen.length) return;
-    try {
-      const { error } = await supabaseClient.from('user_plays')
-        .upsert(rijen, { onConflict: 'user_id,puzzle_date', ignoreDuplicates: true });
-      if (error) console.warn('Lokale scores niet opgestuurd:', error.message || error);
-    } catch (err) {
-      console.warn('Lokale scores niet opgestuurd:', err);
-    }
+    const play = getLocalPlays()[TODAY_STR];
+    if (!play || !isOnTimeDailyPlay(TODAY_STR, play)) return;
+    await syncPlayToCloud(TODAY_STR, play.g1, play.g2, play.g3);
   }
 
-  async function syncPlayToCloud(dateStr, g1, g2, g3, factor) {
-    if (!currentUser || !dailyEditionReady) return;
-
-    if (supabaseClient) {
-      try {
-        // Daily score blijft per datum opgeslagen.
-        const { error } = await supabaseClient.from('user_plays').upsert({
-          user_id: currentUser.id,
-          puzzle_date: dateStr,
-          g1, g2, g3, factor
-          // Geen spatie na de komma: PostgREST leest dit als een lijst
-          // kolomnamen, dus " puzzle_date" zou een onbekende kolom zijn.
-        }, { onConflict: 'user_id,puzzle_date' });
-
-        if (error) console.warn('Supabase sync error:', error);
-      } catch (err) {
-        console.warn('Sync failed:', err);
+  async function syncPlayToCloud(dateStr, g1, g2, g3) {
+    if (!currentUser || !supabaseClient || !dailyEditionReady || dateStr !== TODAY_STR
+        || !isOnTimeDailyPlay(dateStr, getLocalPlays()[dateStr])) return;
+    const puzzle = DAILY_PUZZLES.find(item => item.date === dateStr && item.serverDaily);
+    if (!puzzle) return;
+    try {
+      const result = await requestDailyResult(puzzle, [g1,g2,g3]);
+      const plays = getLocalPlays();
+      plays[dateStr] = {...plays[dateStr],g1:Number(result.guesses[0]),g2:Number(result.guesses[1]),
+        g3:Number(result.guesses[2]),factor:Number(result.factor),answers:result.answers.map(Number),
+        question_details:result.question_details,ranked:result.ranked,playedAt:result.submitted_at};
+      localStorage.setItem(DAILY_PLAYS_KEY,JSON.stringify(plays));
+      applyDailyResult(puzzle,result);
+      if (PUZZLE_DATA.id === puzzle.id && document.getElementById('results').classList.contains('show')) {
+        renderResultsUI(...result.guesses.map(Number),Number(result.factor));
+        setDailySyncStatus(result.ranked);
       }
+    } catch (error) {
+      console.warn('Daily score not posted:', error.message || error);
+      const status = document.getElementById('dailyScoreSyncStatus');
+      if (status) status.textContent = statsCopy('Je score is nog niet geplaatst. Probeer opnieuw na herladen.',
+        'Your score has not been posted. Reload to try again.');
     }
   }
 
@@ -2927,8 +2952,12 @@
   }
 
   function leaderboardStandaarddag() {
-    const dagen = leaderboardDagen();
-    return dagen.find(puzzel => puzzel.date === TODAY_STR)?.date || dagen.at(-1)?.date || TODAY_STR;
+    return TODAY_STR;
+  }
+
+  function refreshLeaderboardAfterDailySync() {
+    if (leaderboardFollowLatest) leaderboardSelectedDate = TODAY_STR;
+    if (document.getElementById('leaderboardScreen')?.classList.contains('active')) renderLeaderboard();
   }
 
   function leaderboardDatumTekst(datum, kort = false) {
@@ -2996,16 +3025,19 @@
     const volgende = Math.max(0, Math.min(dagen.length - 1, index + richting));
     if (!dagen[volgende] || volgende === index) return;
     leaderboardSelectedDate = dagen[volgende].date;
+    leaderboardFollowLatest = false;
     renderLeaderboard();
   }
 
   function resetLeaderboardDag() {
+    leaderboardFollowLatest = true;
     leaderboardSelectedDate = leaderboardStandaarddag();
   }
 
   function kiesLeaderboardDag(datum) {
     if (!leaderboardDagen().some(puzzel => puzzel.date === datum)) return;
     leaderboardSelectedDate = datum;
+    leaderboardFollowLatest = datum === TODAY_STR;
     renderLeaderboard();
   }
 
@@ -3044,6 +3076,8 @@
       list.appendChild(div);
     };
     melding(statsCopy('Laden…', 'Loading…'));
+    // A pending sync is a loading state, not an unavailable scoreboard.
+    if (!dailySyncAfgerond) return;
 
     // Alleen de spelersnaam. Stond hier "username || email", en dan kon een
     // e-mailadres in de vergelijking belanden zodra een profiel geen naam had.
@@ -3052,7 +3086,7 @@
     const eigenNaam = currentUser?.username || null;
     let rijen = [];
     try {
-      if (!supabaseClient || !dailyEditionReady) throw new Error('Daily-reeks nog niet beschikbaar op de server');
+      if (!supabaseClient) throw new Error('Database connection unavailable');
       const { data, error } = currentLbTab === 'today'
         ? await supabaseClient.rpc('leaderboard_dag', { p_datum: leaderboardSelectedDate })
         : await supabaseClient.rpc('leaderboard_streaks', { p_datum: TODAY_STR });

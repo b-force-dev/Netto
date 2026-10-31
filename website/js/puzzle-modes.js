@@ -308,7 +308,6 @@
     // Alle puzzels: 100 library + alle daily's, elk met bron-label en stabiele id.
     allCatalogusPuzzles = [
       ...libraryPuzzles.map(p => ({ ...p, source: 'Puzzels' })),
-      ...DAILY_PUZZLES.map((p, i) => ({ ...p, source: 'Daily Archive', id: p.id || `daily-${p.date || p.number || i + 1}` })),
     ];
     // Alle losse vragen (3 per puzzel).
     allCatalogusVragen = [];
