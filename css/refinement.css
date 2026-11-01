@@ -2794,7 +2794,8 @@ html[data-landing-preview="editorial"] .home-quick-card strong { max-width: none
 /* Een Daily gebruikt dezelfde royale kaartbreedte als een gewone puzzel.
    De foto krijgt naast het compacte vraagvlak haar eigen ruimte, zodat de
    afbeelding groot kan blijven zonder andere vragen te bedekken. */
-#screen-puzzle.active:not(.is-review) .inner { max-width: 760px; }
+/* Vragen, reveal en resultaat delen één breedte: niets verspringt. */
+#screen-puzzle.active .inner { max-width: 760px; }
 #screen-puzzle:not(.is-review) #dailyQuestionView .q-label { font-size: 15px; line-height: 1.4; }
 #screen-puzzle #dailyQuestionView > .q-block.has-photo {
   display: grid;

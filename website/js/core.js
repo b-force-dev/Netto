@@ -2487,7 +2487,8 @@
 
     // Nauwkeurigheid (Optie A: 100 / avgFactor)
     const accuracy = Math.round(100 / avgFactor);
-    revealDailyScore(accuracy, animate);
+    // Bij een verse inzending loopt de score pas op als de reveal klaar is.
+    if (!animate) revealDailyScore(accuracy, false);
     const factorEl = document.getElementById('scoreBadgeFactor');
     if (factorEl) {
       factorEl.textContent = `Gemiddelde afwijking: ${avgFactor.toFixed(2)}×`;
@@ -2511,15 +2512,17 @@
     if (PUZZLE_DATA?.date === TODAY_STR) startDailyCountdown();
     else { const countdown = document.getElementById('dailyCountdown'); if (countdown) countdown.remove(); if (countdownTimer) clearInterval(countdownTimer); }
     renderDailyArchive();
-    if (animate) {
-      const order = dailyQuestionOrder();
-      showAnswerReveal({
-        questions: order.map(index => PUZZLE_DATA['q' + (index + 1) + '_label']),
-        guesses: order.map(index => [g1, g2, g3][index]),
-        answers: order.map(index => [echt.a1, echt.a2, echt.a3][index]),
-        operator: PUZZLE_DATA.operator || '×', factor: avgFactor
-      });
-    }
+    // De reveal staat bovenaan het resultaat zelf: één scherm, één breedte.
+    const order = dailyQuestionOrder();
+    mountAnswerReveal(document.getElementById('results'), {
+      questions: order.map(index => PUZZLE_DATA['q' + (index + 1) + '_label']),
+      guesses: order.map(index => [g1, g2, g3][index]),
+      answers: order.map(index => [echt.a1, echt.a2, echt.a3][index]),
+      operator: PUZZLE_DATA.operator || '×', factor: avgFactor,
+      instant: !animate,
+      onDone: () => { if (animate) revealDailyScore(accuracy, true); },
+      onSources: () => { showDailyQuestions(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    });
   }
 
   function renderBadge(elemId, factor, guess, actual) {
@@ -3238,6 +3241,8 @@
     if (questions) questions.style.display = '';
     if (nav) nav.classList.remove('show');
     if (results) results.classList.remove('show');
+    window.cancelInlineAnswerReveal?.();
+    results?.querySelectorAll(':scope > .answer-reveal-inline, :scope > .answer-reveal-sources').forEach(el => el.remove());
     dailyReviewView = 'questions';
   }
 
