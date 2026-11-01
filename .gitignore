@@ -88,3 +88,6 @@ fotos/contactvellen/
 fotos/assets/wachtrij/
 fotos/wachtvellen/
 .private/
+
+# Lokale uitvoer en hulpkopieën, niet voor GitHub
+outputs/
