@@ -285,7 +285,6 @@ body[data-full-stats] .sidebar a { text-decoration: none; }
 }
 /* Score links, nauwkeurigheid per vraag rechts. */
 #results .daily-score-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 28px; align-items: center; }
-#screen-puzzle #results .daily-result-summary #scoreBadgeMsg { display: block; margin: 2px 0 0; color: var(--text-muted); font: 500 13px/1.5 'Space Grotesk', sans-serif; }
 #results .daily-score-breakdown { padding-left: 28px; border-left: 1px solid var(--surface-border); }
 #results .daily-score-breakdown:empty { display: none; }
 #results .daily-score-breakdown-title { margin-bottom: 12px; color: var(--text-muted); font: 500 13px/1.4 'Space Grotesk', sans-serif; }
@@ -299,7 +298,14 @@ body[data-full-stats] .sidebar a { text-decoration: none; }
 [data-theme="dark"] #results .daily-score-bar i { background: #8f97ff; }
 [data-theme="dark"] #results .daily-score-line.is-exact .daily-score-bar i { background: #34d399; }
 [data-theme="dark"] #results .daily-score-line.is-exact strong { color: #34d399; }
-#results .daily-result-summary .daily-result-actions { margin: 22px 0 0; padding: 0; border: 0; }
+/* Acties in een eigen, verankerde rij tussen score en voetregel. */
+#results .daily-result-summary .daily-result-actions { margin: 24px 0 0; padding: 20px 0 0; border-top: 1px solid var(--surface-border); gap: 12px; }
+#results .daily-result-summary .daily-result-actions button { min-height: 50px; border-radius: 10px; font: 600 15px 'Space Grotesk', sans-serif; transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease; }
+#results .daily-result-summary .daily-result-actions .btn-share { border-color: #e7bf2a; box-shadow: 0 1px 0 #14163b14; }
+#results .daily-result-summary .daily-result-actions .btn-share:hover { background: #ffd43d; }
+#screen-puzzle #results .daily-result-summary .btn-leaderboard-open { background: var(--surface); border-color: color-mix(in srgb, var(--ink) 22%, transparent); box-shadow: 0 1px 0 #14163b0d; }
+#screen-puzzle #results .daily-result-summary .btn-leaderboard-open:hover { border-color: var(--ink); }
+#results .daily-result-summary .daily-result-footer { margin-top: 16px; }
 #results #dailyScoreSyncStatus { margin: 12px 0 0; color: var(--text-muted); font-size: 12px; line-height: 1.5; }
 #results .daily-result-footer { margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--surface-border); }
 #results .daily-result-summary .daily-result-navigation { margin: 0; justify-content: flex-start; gap: 20px; flex-wrap: wrap; }
