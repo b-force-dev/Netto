@@ -2519,9 +2519,10 @@
       factorEl.textContent = statsCopy('Gemiddelde afwijking: ', 'Average deviation: ') + `${avgFactor.toFixed(2)}×`;
     }
     
-    const exactCount = [g1 === echt.a1, g2 === echt.a2, g3 === echt.a3].filter(Boolean).length;
-    const msg = statsCopy(`${exactCount} van 3 antwoorden spot-on`, `${exactCount} of 3 answers spot-on`);
+    const exactCount = [isSpotOn1, isSpotOn2, isSpotOn3].filter(Boolean).length;
+    const msg = statsCopy(`${exactCount} van 3 precies goed`, `${exactCount} of 3 spot on`);
     document.getElementById('scoreBadgeMsg').textContent = msg;
+    renderDailyScoreBreakdown([s1, s2, s3], [isSpotOn1, isSpotOn2, isSpotOn3]);
 
     if (currentUser) {
       document.getElementById('cloudSyncBanner').style.display = 'none';
@@ -2558,6 +2559,35 @@
         });
       }
     });
+  }
+
+  // Nauwkeurigheid per vraag naast de totaalscore, in de volgorde van de kaarten.
+  function renderDailyScoreBreakdown(factors, exact) {
+    const box = document.getElementById('dailyScoreBreakdown');
+    if (!box) return;
+    box.replaceChildren();
+    const title = document.createElement('div');
+    title.className = 'daily-score-breakdown-title';
+    title.textContent = statsCopy('Per vraag', 'Per question');
+    const list = document.createElement('ol');
+    dailyQuestionOrder().forEach((index, position) => {
+      const accuracy = exact[index] ? 100 : Math.round(100 / factors[index]);
+      const row = document.createElement('li');
+      row.className = 'daily-score-line' + (exact[index] ? ' is-exact' : '');
+      const label = document.createElement('span');
+      label.textContent = statsCopy('Vraag ', 'Question ') + (position + 1);
+      const bar = document.createElement('span');
+      bar.className = 'daily-score-bar';
+      bar.setAttribute('aria-hidden', 'true');
+      const fill = document.createElement('i');
+      fill.style.width = Math.max(2, Math.min(100, accuracy)) + '%';
+      bar.append(fill);
+      const value = document.createElement('strong');
+      value.textContent = accuracy + '%';
+      row.append(label, bar, value);
+      list.append(row);
+    });
+    box.append(title, list);
   }
 
   function renderBadge(elemId, factor, guess, actual) {
