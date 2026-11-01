@@ -53,8 +53,8 @@
 .answer-reveal-toggle { min-height:36px; display:inline-flex; align-items:center; gap:6px; flex-shrink:0; border:0; border-radius:8px; padding:6px 10px; background:#ffffffb3; color:#14163b; font:600 12px/1.3 inherit; font-family:inherit; cursor:pointer; }
 .answer-reveal-toggle:hover { background:#fff; }
 .answer-reveal-toggle:focus-visible { outline:3px solid #ffd84a; outline-offset:2px; }
-.answer-reveal-chevron { display:inline-block; transition:transform .2s ease; line-height:1; transform:translateY(-2px); }
-.answer-reveal-question.is-open .answer-reveal-chevron { transform:translateY(1px) rotate(180deg); }
+.answer-reveal-chevron { display:block; flex-shrink:0; transition:transform .2s ease; }
+.answer-reveal-question.is-open .answer-reveal-chevron { transform:rotate(180deg); }
 .answer-reveal-detail { margin-top:12px; padding-top:12px; border-top:1px solid #14163b14; cursor:auto; }
 .answer-reveal-detail .vraag-bron { margin:0; padding:0; border:0; background:none; }
 .answer-reveal-detail .vraag-bron p { margin:0 0 8px; font-size:13px; line-height:1.5; color:#14163b; }
@@ -62,14 +62,9 @@
 .answer-reveal-detail-empty { margin:0; font-size:13px; color:#656b7d; }
 
 /* Tijdens de reveal wacht de rest; daarna verschijnt het in rustige stappen. */
-#results.is-answer-revealing > :not(.answer-reveal-inline),
-#results.is-answer-revealing ~ #dailyCountdown { display:none !important; }
+#results.is-answer-revealing > :not(.answer-reveal-inline) { display:none !important; }
 /* Alleen na een echte reveal; bij herladen of sync staat alles er meteen. */
 #results > .answer-reveal-inline.is-complete:not(.is-instant) ~ * { animation:answer-reveal-rest .45s ease both; }
-#results > .answer-reveal-inline.is-complete:not(.is-instant) ~ .daily-result-actions { animation-delay:.9s; }
-#results > .answer-reveal-inline.is-complete:not(.is-instant) ~ .daily-result-navigation { animation-delay:1.05s; }
-#results:has(> .answer-reveal-inline.is-complete:not(.is-instant)) ~ #dailyCountdown { animation:answer-reveal-rest .45s ease 1.2s both; }
 @keyframes answer-reveal-rest { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
 @media(max-width:649px) { .answer-reveal-inline .answer-reveal-question { padding:12px; } .answer-reveal-foot { flex-wrap:wrap; } .answer-reveal-toggle { min-height:44px; padding:8px 12px; } }
-.answer-reveal-detail .source-translation-note { color:#656b7d; }
-@media(prefers-reduced-motion:reduce) { #results > .answer-reveal-inline ~ *, #results ~ #dailyCountdown { animation:none !important; } .answer-reveal-verdict, .answer-reveal-chevron { transition:none; } }
+@media(prefers-reduced-motion:reduce) { #results > .answer-reveal-inline ~ * { animation:none !important; } .answer-reveal-verdict, .answer-reveal-chevron { transition:none; } }

@@ -2073,7 +2073,7 @@
     return paneel;
   }
 
-  // Uitleg + bronlink + vertaalnotitie, zonder eigen <details>-omhulling.
+  // Uitleg + bronlink, zonder eigen <details>-omhulling.
   function maakBronInhoud(vermelding, reviewed, url) {
     const delen = [];
     const uitleg = document.createElement('p');
@@ -2089,12 +2089,6 @@
     link.textContent = statsCopy('Bekijk de bron: ', 'View the source: ')
       + url.hostname.replace(/^www\./, '');
     delen.push(uitleg, link);
-    if (english && translation && translation !== vermelding.uitleg) {
-      const note = document.createElement('small');
-      note.className = 'source-translation-note';
-      note.textContent = 'Automatically translated';
-      delen.push(note);
-    }
     return delen;
   }
 
@@ -2385,7 +2379,7 @@
       status = document.createElement('p');
       status.id = 'dailyScoreSyncStatus';
       status.setAttribute('role','status');
-      document.getElementById('results').append(status);
+      document.getElementById('dailyResultStatus').append(status);
     }
     status.textContent = PUZZLE_DATA.date !== TODAY_STR
       ? statsCopy('Archiefresultaat. Dit telt niet mee voor je dagelijkse streak of het bord van vandaag.', 'Archive result. This does not count toward your daily streak or today’s leaderboard.')
@@ -2501,9 +2495,9 @@
     const isSpotOn2 = isSpotOnAnswer(g2, echt.a2);
     const isSpotOn3 = isSpotOnAnswer(g3, echt.a3);
 
-    document.getElementById('a1').innerHTML = fmt(echt.a1) + (isSpotOn1 ? '<div class="spot-on-sub">Spot on! 🎯</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g1)}</div>`);
-    document.getElementById('a2').innerHTML = fmt(echt.a2) + (isSpotOn2 ? '<div class="spot-on-sub">Spot on! 🎯</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g2)}</div>`);
-    document.getElementById('a3').innerHTML = fmt(echt.a3) + (isSpotOn3 ? '<div class="spot-on-sub">Spot on! 🎯</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g3)}</div>`);
+    document.getElementById('a1').innerHTML = fmt(echt.a1) + (isSpotOn1 ? '<div class="spot-on-sub">Spot on!</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g1)}</div>`);
+    document.getElementById('a2').innerHTML = fmt(echt.a2) + (isSpotOn2 ? '<div class="spot-on-sub">Spot on!</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g2)}</div>`);
+    document.getElementById('a3').innerHTML = fmt(echt.a3) + (isSpotOn3 ? '<div class="spot-on-sub">Spot on!</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g3)}</div>`);
 
     renderBadge('badge-q1', s1, g1, echt.a1);
     renderBadge('badge-q2', s2, g2, echt.a2);
@@ -2519,9 +2513,10 @@
     const accuracy = Math.round(100 / avgFactor);
     // Bij een verse inzending loopt de score pas op als de reveal klaar is.
     if (!animate) revealDailyScore(accuracy, false);
+    document.getElementById('scoreBadgeTitle').textContent = statsCopy('Nauwkeurigheid', 'Accuracy');
     const factorEl = document.getElementById('scoreBadgeFactor');
     if (factorEl) {
-      factorEl.textContent = `Gemiddelde afwijking: ${avgFactor.toFixed(2)}×`;
+      factorEl.textContent = statsCopy('Gemiddelde afwijking: ', 'Average deviation: ') + `${avgFactor.toFixed(2)}×`;
     }
     
     const exactCount = [g1 === echt.a1, g2 === echt.a2, g3 === echt.a3].filter(Boolean).length;
@@ -2572,14 +2567,14 @@
     if (isSpotOn) {
       el.style.background = '#10B981';
       el.style.color = '#FFFFFF';
-      el.innerHTML = `🎯 Spot on!`;
+      el.innerHTML = `Spot on!`;
       return;
     }
     const r = getFactorRating(factor);
     const qAcc = Math.round(100 / factor);
     el.style.background = r.bg;
     el.style.color = r.color;
-    el.innerHTML = `${r.emoji} ${qAcc}% (${factor.toFixed(2)}×)`;
+    el.innerHTML = `${qAcc}% (${factor.toFixed(2)}×)`;
   }
 
   // =========================================================================
@@ -3245,7 +3240,7 @@
     el.className = 'countdown-card';
     el.setAttribute('role', 'timer');
     el.setAttribute('aria-live', 'off');
-    document.querySelector('#screen-puzzle .card').appendChild(el);
+    document.getElementById('dailyResultCountdown').appendChild(el);
     const tick = () => {
       const ms = Math.max(0, londonMidnightTarget() - new Date());
       const h = Math.floor(ms / 3600000), m = Math.floor(ms % 3600000 / 60000), s = Math.floor(ms % 60000 / 1000);

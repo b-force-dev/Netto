@@ -13,7 +13,7 @@
   const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
   function verdictText(guess, actual) {
-    if (exactMatch(guess, actual)) return copy('Spot on! 🎯', 'Spot on! 🎯');
+    if (exactMatch(guess, actual)) return copy('Precies goed', 'Spot on');
     const factor = typeof scoreVraag === 'function' ? scoreVraag(guess, actual) : Math.max(guess / actual, actual / guess);
     return factor.toFixed(2) + '× ' + (guess < actual ? copy('te laag', 'too low') : copy('te hoog', 'too high'));
   }
@@ -149,10 +149,13 @@
       toggle.setAttribute('aria-controls', panel.id);
       const label = document.createElement('span');
       label.textContent = copy('Uitleg & bron', 'Explanation & source');
-      const chevron = document.createElement('span');
-      chevron.className = 'answer-reveal-chevron';
+      const chevron = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      chevron.setAttribute('class', 'answer-reveal-chevron');
+      chevron.setAttribute('viewBox', '0 0 12 12');
+      chevron.setAttribute('width', '12');
+      chevron.setAttribute('height', '12');
       chevron.setAttribute('aria-hidden', 'true');
-      chevron.textContent = '⌄';
+      chevron.innerHTML = '<path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>';
       toggle.append(label, chevron);
       const foot = document.createElement('div');
       foot.className = 'answer-reveal-foot';
