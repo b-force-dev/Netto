@@ -3,100 +3,136 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#2934b8">
+  <meta name="theme-color" content="#252FB6">
   <title>OpenAEC Special · Netto</title>
-  <style>
-    :root { color-scheme: light; --ink:#171a43; --blue:#2934b8; --line:#dfe2f5; --yellow:#ffd84a; --muted:#68708c; }
-    * { box-sizing:border-box; }
-    body { margin:0; min-height:100vh; color:var(--ink); font:500 16px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; background-color:var(--blue); background-image:linear-gradient(#ffffff0b 1px,transparent 1px),linear-gradient(90deg,#ffffff0b 1px,transparent 1px); background-size:36px 36px; }
-    .topbar { height:68px; padding:0 clamp(18px,4vw,56px); display:flex; align-items:center; justify-content:space-between; color:#fff; border-bottom:1px solid #ffffff24; }
-    .brand { font-weight:850; font-size:23px; letter-spacing:-.04em; color:var(--yellow); }
-    .top-label { color:#d8dcff; font-size:12px; font-weight:750; letter-spacing:.16em; text-transform:uppercase; }
-    main { width:min(100% - 32px,980px); margin:clamp(24px,5vh,54px) auto 40px; }
-    .sheet { background:#fff; border-radius:24px; padding:clamp(22px,4vw,44px); box-shadow:0 24px 64px #11144540; }
-    .eyebrow { margin:0 0 9px; color:var(--blue); font-size:12px; font-weight:850; letter-spacing:.18em; text-transform:uppercase; }
-    h1 { margin:0; font-size:clamp(30px,5vw,48px); line-height:1.05; letter-spacing:-.045em; }
-    .intro { margin:12px 0 26px; color:var(--muted); }
-    .question { position:relative; min-height:128px; padding:22px 24px; border:1px solid var(--line); border-radius:17px; box-shadow:0 8px 20px #161a4310; }
-    .question:nth-of-type(1) { background:#f9edf1; }
-    .question:nth-of-type(2) { background:#edf5ec; }
-    .question:nth-of-type(3) { background:#edf0fb; }
-    .question.with-image { padding-right:188px; }
-    .question label { display:block; max-width:650px; margin:0 0 14px; font-size:clamp(16px,2vw,20px); font-weight:700; }
-    .answer-row { display:flex; align-items:center; min-height:48px; overflow:hidden; border:1px solid #dfe2f5; border-radius:10px; background:#fff; }
-    input { width:100%; min-width:0; padding:11px 14px; border:0; outline:0; color:var(--ink); font:600 17px ui-sans-serif,system-ui,sans-serif; }
-    input::placeholder { color:#7b82a0; }
-    .unit { flex:none; padding:0 14px; color:var(--muted); font:700 12px ui-monospace,SFMono-Regular,Consolas,monospace; }
-    .photo { position:absolute; right:22px; top:15px; width:142px; height:112px; display:grid; place-items:center; margin:0; overflow:hidden; border:1px solid #ffffff; border-radius:12px; background:#fff; box-shadow:0 10px 24px #10133b22; }
-    .photo img { width:100%; height:100%; object-fit:contain; }
-    .connector { display:flex; align-items:center; gap:14px; height:54px; }
-    .connector::before,.connector::after { content:""; flex:1; height:1px; background:var(--line); }
-    .operator { width:42px; height:42px; display:grid; place-items:center; color:#fff; background:var(--blue); border-radius:13px; font-size:19px; font-weight:850; box-shadow:0 5px 12px #2934b82e; }
-    .operator.equal { background:var(--ink); }
-    .submit { width:100%; min-height:58px; margin-top:24px; border:0; border-radius:13px; color:var(--ink); background:var(--yellow); font:800 18px ui-sans-serif,system-ui,sans-serif; cursor:pointer; transition:transform .15s,filter .15s; }
-    .submit:hover { transform:translateY(-1px); filter:brightness(1.02); }
-    .error { min-height:22px; margin:10px 0 0; color:#b62935; font-size:14px; font-weight:700; }
-    .results { margin-top:22px; padding:20px; border-radius:15px; background:#f1f3fd; }
-    .results h2 { margin:0 0 6px; font-size:23px; }
-    .results p { margin:5px 0; color:var(--muted); }
-    .answers { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-top:14px; }
-    .answer-result { padding:12px; border:1px solid var(--line); border-radius:11px; background:#fff; }
-    .answer-result span { display:block; color:var(--muted); font-size:12px; }
-    .answer-result strong { display:block; margin-top:3px; font-size:19px; }
-    details { margin-top:22px; color:var(--muted); font-size:13px; }
-    details a { color:var(--blue); }
-    footer { padding:0 16px 24px; color:#d8dcff; text-align:center; font-size:12px; }
-    @media (max-width:600px) {
-      main { width:min(100% - 20px,980px); margin-top:16px; }
-      .sheet { padding:20px 15px; border-radius:18px; }
-      .question { min-height:unset; padding:17px 14px; }
-      .question.with-image { padding-right:14px; padding-bottom:132px; }
-      .photo { top:auto; bottom:12px; left:14px; right:auto; width:126px; height:104px; }
-      .connector { height:46px; }
-      .operator { width:36px; height:36px; }
-      .answers { grid-template-columns:1fr; }
-    }
-  </style>
-  <link rel="stylesheet" href="./special.css">
+  <script>
+    // Zelfde voorkeuren als de hoofdsite: taal en thema uit localStorage.
+    (function () {
+      var language = 'en', theme = 'light';
+      try {
+        language = localStorage.getItem('netto_language') === 'nl' ? 'nl' : 'en';
+        theme = localStorage.getItem('netto_theme') === 'dark' ? 'dark' : 'light';
+      } catch (_) {}
+      document.documentElement.lang = language;
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./special.css?v=2">
 </head>
 <body>
-  <header class="topbar"><a class="back-button" href="../" aria-label="Back to Netto">‹</a><a class="brand" href="../">Netto</a></header>
+  <header class="topbar">
+    <a class="back-button" href="../" data-i18n-label="back">‹</a>
+    <a class="brand" href="../">Netto</a>
+    <div class="language-switch" role="group" data-i18n-label="language">
+      <button type="button" data-language="nl">NL</button>
+      <button type="button" data-language="en">EN</button>
+    </div>
+  </header>
   <main>
     <section class="sheet" aria-labelledby="title">
-      <div class="puzzle-heading"><h1 id="title" class="puzzle-caption">Special puzzle</h1><span class="collab-mark">Netto <span aria-hidden="true">×</span> <strong>OpenAEC</strong></span></div>
+      <div class="puzzle-heading">
+        <h1 id="title" class="puzzle-caption" data-i18n="caption">Special puzzle · 1 November 2026</h1>
+        <span class="collab-mark">Netto <span aria-hidden="true">×</span> <strong>OpenAEC</strong></span>
+      </div>
       <form id="puzzleForm" novalidate>
         <article class="question with-image">
-          <label for="guess1">How many contributors are listed in the OpenAEC ecosystem statistics?</label>
-          <div class="answer-row"><input id="guess1" type="number" inputmode="numeric" min="1" step="1" placeholder="Your answer" required><span class="unit">contributors</span></div>
-          <figure class="photo"><img src="../fotos/assets/openaec-cube.png" alt="Orange isometric cube illustration"></figure>
+          <label for="guess1" data-i18n="q1">As of 1 November 2026, how many releases had Open CAD Studio published on GitHub?</label>
+          <div class="answer-row"><input id="guess1" type="number" inputmode="numeric" min="1" step="1" required><span class="unit" data-i18n="u1">releases</span></div>
+          <figure class="photo"><img src="../fotos/assets/openaec-cube.png" data-i18n-alt="photo" alt="Orange isometric cube illustration"></figure>
         </article>
         <div class="connector" aria-hidden="true"><span class="operator">−</span></div>
         <article class="question">
-          <label for="guess2">How many releases has Open PDF Studio published?</label>
-          <div class="answer-row"><input id="guess2" type="number" inputmode="numeric" min="1" step="1" placeholder="Your answer" required><span class="unit">releases</span></div>
+          <label for="guess2" data-i18n="q2">How many public repositories did the OpenAEC Foundation have on GitHub on 1 November 2026?</label>
+          <div class="answer-row"><input id="guess2" type="number" inputmode="numeric" min="1" step="1" required><span class="unit" data-i18n="u2">repositories</span></div>
         </article>
         <div class="connector" aria-hidden="true"><span class="operator equal">=</span></div>
         <article class="question">
-          <label for="guess3">How many OpenAEC repositories use Rust as their primary language?</label>
-          <div class="answer-row"><input id="guess3" type="number" inputmode="numeric" min="1" step="1" placeholder="Your answer" required><span class="unit">repositories</span></div>
+          <label for="guess3" data-i18n="q3">As of 1 November 2026, how many releases had Open Calc Studio published?</label>
+          <div class="answer-row"><input id="guess3" type="number" inputmode="numeric" min="1" step="1" required><span class="unit" data-i18n="u3">releases</span></div>
         </article>
         <p class="error" id="error" role="alert" aria-live="polite"></p>
-        <button class="submit" type="submit">Check my score</button>
+        <button class="submit" type="submit" data-i18n="submit">Check my score</button>
       </form>
       <section class="results" id="results" hidden aria-live="polite"></section>
-      <details id="sources" hidden><summary>Where do these numbers come from?</summary><ul>
-        <li><a href="https://open-aec.com/statistieken/" target="_blank" rel="noopener">OpenAEC ecosystem statistics</a></li>
-        <li><a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases" target="_blank" rel="noopener">Open PDF Studio releases</a></li>
-        <li><a href="https://github.com/orgs/OpenAEC-Foundation/repositories?language=rust" target="_blank" rel="noopener">OpenAEC repositories filtered by Rust</a></li>
-      </ul></details>
+      <details id="sources" hidden><summary data-i18n="sources">Where do these numbers come from?</summary><ul>
+        <li><a href="https://github.com/HakanSeven12/OpenCADStudio/releases" target="_blank" rel="noopener" data-i18n="s1">Open CAD Studio releases</a></li>
+        <li><a href="https://github.com/orgs/OpenAEC-Foundation/repositories" target="_blank" rel="noopener" data-i18n="s2">OpenAEC Foundation repositories</a></li>
+        <li><a href="https://github.com/OpenAEC-Foundation/open-calc-studio/releases" target="_blank" rel="noopener" data-i18n="s3">Open Calc Studio releases</a></li>
+      </ul><p data-i18n="sourceNote">Counted on 1 November 2026; later releases and repositories do not count.</p></details>
     </section>
   </main>
-  <footer>Made by B-Force · Netto</footer>
+  <footer data-i18n="footer">Made by B-Force · Netto</footer>
   <script>
-    const actual = [96, 81, 15];
+    const COPY = {
+      nl: {
+        back: 'Terug naar Netto', language: 'Taal',
+        caption: 'Speciale puzzel · 1 november 2026',
+        q1: 'Hoeveel releases had Open CAD Studio op 1 november 2026 op GitHub gepubliceerd?',
+        q2: 'Hoeveel openbare repositories had de OpenAEC Foundation op 1 november 2026 op GitHub?',
+        q3: 'Hoeveel releases had Open Calc Studio op 1 november 2026 gepubliceerd?',
+        u1: 'releases', u2: 'repositories', u3: 'releases',
+        photo: 'Oranje isometrische kubus', placeholder: 'Jouw schatting',
+        submit: 'Controleer mijn score', sources: 'Waar komen deze getallen vandaan?',
+        s1: 'Releases van Open CAD Studio', s2: 'Repositories van de OpenAEC Foundation', s3: 'Releases van Open Calc Studio',
+        sourceNote: 'Geteld op 1 november 2026; latere releases en repositories tellen niet mee.',
+        footer: 'Gemaakt door B-Force · Netto',
+        error: 'Vul bij alle drie de vragen een heel getal groter dan nul in.',
+        eyebrow: 'JOUW SCORE', exact: 'Precies goed.', done: 'De getallen zijn binnen.',
+        factorNote: 'Gemiddelde factor · hoe dichter bij 1,00×, hoe beter.',
+        question: 'VRAAG', yours: 'Jouw antwoord', actual: 'Juiste antwoord'
+      },
+      en: {
+        back: 'Back to Netto', language: 'Language',
+        caption: 'Special puzzle · 1 November 2026',
+        q1: 'As of 1 November 2026, how many releases had Open CAD Studio published on GitHub?',
+        q2: 'How many public repositories did the OpenAEC Foundation have on GitHub on 1 November 2026?',
+        q3: 'As of 1 November 2026, how many releases had Open Calc Studio published?',
+        u1: 'releases', u2: 'repositories', u3: 'releases',
+        photo: 'Orange isometric cube illustration', placeholder: 'Your estimate',
+        submit: 'Check my score', sources: 'Where do these numbers come from?',
+        s1: 'Open CAD Studio releases', s2: 'OpenAEC Foundation repositories', s3: 'Open Calc Studio releases',
+        sourceNote: 'Counted on 1 November 2026; later releases and repositories do not count.',
+        footer: 'Made by B-Force · Netto',
+        error: 'Enter a whole number greater than zero for all three questions.',
+        eyebrow: 'YOUR SCORE', exact: 'Exactly right.', done: 'The numbers are in.',
+        factorNote: 'Average factor · closer to 1.00× is better.',
+        question: 'QUESTION', yours: 'Your answer', actual: 'Actual answer'
+      }
+    };
+    const actual = [97, 74, 23];
+    let language = document.documentElement.lang === 'nl' ? 'nl' : 'en';
+    let lastGuesses = null;
+    const text = key => COPY[language][key];
+    const number = value => value.toLocaleString(language === 'nl' ? 'nl-NL' : 'en-GB');
+    const factorText = value => value.toLocaleString(language === 'nl' ? 'nl-NL' : 'en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     const form = document.getElementById('puzzleForm');
     const sources = document.getElementById('sources');
+    const results = document.getElementById('results');
+    const error = document.getElementById('error');
     const inputs = [1, 2, 3].map(index => document.getElementById(`guess${index}`));
+
+    function applyLanguage() {
+      document.documentElement.lang = language;
+      document.querySelectorAll('[data-i18n]').forEach(node => { node.textContent = text(node.dataset.i18n); });
+      document.querySelectorAll('[data-i18n-label]').forEach(node => node.setAttribute('aria-label', text(node.dataset.i18nLabel)));
+      document.querySelectorAll('[data-i18n-alt]').forEach(node => { node.alt = text(node.dataset.i18nAlt); });
+      inputs.forEach(input => { input.placeholder = text('placeholder'); });
+      document.querySelectorAll('[data-language]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === language)));
+      if (error.textContent) error.textContent = text('error');
+      if (lastGuesses) renderResults(lastGuesses);
+    }
+
+    document.querySelectorAll('[data-language]').forEach(button => button.addEventListener('click', () => {
+      language = button.dataset.language;
+      try { localStorage.setItem('netto_language', language); } catch (_) {}
+      applyLanguage();
+    }));
+
+    // Vul het open veld automatisch in zodra de som met de twee andere klopt.
     let calculatedInput = null;
     inputs.forEach(input => {
       input.addEventListener('focus', () => {
@@ -129,24 +165,30 @@
         }
       });
     });
+
+    function renderResults(guesses) {
+      const factors = guesses.map((value, index) => Math.max(value / actual[index], actual[index] / value));
+      const average = factors.reduce((sum, factor) => sum + factor, 0) / factors.length;
+      results.innerHTML = `<div class="result-heading"><div><p class="eyebrow">${text('eyebrow')}</p><h2>${average === 1 ? text('exact') : text('done')}</h2><p>${text('factorNote')}</p></div><strong class="result-factor">${factorText(average)}<small>×</small></strong></div><div class="reveal-equation">${actual[0]} <span>−</span> ${actual[1]} <span>=</span> ${actual[2]}</div><div class="answers">${actual.map((answer, index) => `<div class="answer-result"><span>${text('question')} ${index + 1}<b>${factorText(factors[index])}×</b></span><div class="result-values"><div><span>${text('yours')}</span><strong>${number(guesses[index])}</strong></div><div><span>${text('actual')}</span><strong>${number(answer)}</strong></div></div></div>`).join('')}</div>`;
+      results.appendChild(sources);
+    }
+
     form.addEventListener('submit', event => {
       event.preventDefault();
-      const guesses = [1, 2, 3].map(index => Number(document.getElementById(`guess${index}`).value));
-      const error = document.getElementById('error');
+      const guesses = inputs.map(input => Number(input.value));
       if (guesses.some(value => !Number.isSafeInteger(value) || value <= 0)) {
-        error.textContent = 'Enter a whole number greater than zero for all three questions.';
+        error.textContent = text('error');
         return;
       }
       error.textContent = '';
-      const factors = guesses.map((value, index) => Math.max(value / actual[index], actual[index] / value));
-      const average = factors.reduce((sum, factor) => sum + factor, 0) / factors.length;
-      const results = document.getElementById('results');
-      results.innerHTML = `<div class="result-heading"><div><p class="eyebrow">YOUR CONNECTION</p><h2>${average === 1 ? 'Exactly right.' : 'The numbers are in.'}</h2><p>Average factor · closer to 1.00× is better.</p></div><strong class="result-factor">${average.toFixed(2)}<small>×</small></strong></div><div class="reveal-equation">96 <span>−</span> 81 <span>=</span> 15</div><div class="answers">${actual.map((answer, index) => `<div class="answer-result"><span>QUESTION ${index + 1}<b>${factors[index].toFixed(2)}×</b></span><div class="result-values"><div><span>Your answer</span><strong>${guesses[index].toLocaleString()}</strong></div><div><span>Actual answer</span><strong>${answer.toLocaleString()}</strong></div></div></div>`).join('')}</div>`;
+      lastGuesses = guesses;
+      renderResults(guesses);
       results.hidden = false;
-      results.appendChild(sources);
       sources.hidden = false;
       results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
+
+    applyLanguage();
   </script>
 </body>
 </html>

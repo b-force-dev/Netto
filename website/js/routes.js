@@ -47,7 +47,7 @@
       if (visible('aboutPanel')) return 'about';
       if (visible('howPanel')) return 'how-to-play';
       if (libraryMode === 'daily') return 'daily-archive';
-      if (visible('libraryPuzzleView') && libraryActivePuzzle?.id === 'openaec-special-20261030') return 'openaec';
+      if (visible('libraryPuzzleView') && libraryActivePuzzle?.id === 'openaec-special-20261101') return 'openaec';
       if (visible('libraryPuzzleView') && libraryActivePuzzle?.number)
         return 'puzzles/' + libraryActivePuzzle.number;
       return 'puzzles';

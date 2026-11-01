@@ -52,6 +52,7 @@ MIRROR_FILES = (
 # fotos/assets, dus een handmatige bestandslijst raakt hier gegarandeerd achter.
 MIRROR_DIRS = (
     "fotos/assets",
+    "openaec",
 )
 
 
