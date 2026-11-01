@@ -2381,8 +2381,8 @@
       status.setAttribute('role','status');
       document.getElementById('dailyResultStatus').append(status);
     }
-    status.textContent = PUZZLE_DATA.date !== TODAY_STR
-      ? statsCopy('Archiefresultaat. Dit telt niet mee voor je dagelijkse streak of het bord van vandaag.', 'Archive result. This does not count toward your daily streak or today’s leaderboard.')
+    // Bij een archief-daily geen extra uitleg onder de knoppen.
+    status.textContent = PUZZLE_DATA.date !== TODAY_STR ? ''
       : ranked ? statsCopy('Je score staat op het leaderboard.', 'Your score is on the leaderboard.')
       : statsCopy('Lokaal bewaard. Log in om je score van vandaag te plaatsen.', 'Saved on this device. Log in to post today’s score.');
   }

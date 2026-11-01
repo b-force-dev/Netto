@@ -309,11 +309,14 @@ body[data-full-stats] .sidebar a { text-decoration: none; }
 #results #dailyScoreSyncStatus { margin: 12px 0 0; color: var(--text-muted); font-size: 12px; line-height: 1.5; }
 #results .daily-result-footer { margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--surface-border); }
 #results .daily-result-summary .daily-result-navigation { margin: 0; justify-content: flex-start; gap: 20px; flex-wrap: wrap; }
-#results .daily-result-summary .daily-home-button { color: var(--text-muted); font-weight: 500; }
-#results .daily-result-summary .daily-home-button:hover { color: var(--ink); }
+/* Home en Daily Archive als rustige, omlijnde knoppen. */
+#results .daily-result-summary .daily-result-navigation { gap: 8px; }
+#results .daily-result-summary .daily-home-button { min-height: 40px; padding: 8px 14px; gap: 8px; border: 1px solid var(--surface-border); border-radius: 9px; background: transparent; color: var(--ink); font: 500 14px 'Space Grotesk', sans-serif; transition: background-color .15s ease, border-color .15s ease; }
+#results .daily-result-summary .daily-home-button svg { color: var(--text-muted); }
+#results .daily-result-summary .daily-home-button:hover { background: var(--surface-2); border-color: color-mix(in srgb, var(--ink) 25%, transparent); }
+#results #dailyScoreSyncStatus:empty { display: none; }
 /* Eén voetregel: navigatie links, countdown rechts. */
-#results .daily-result-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px 20px; flex-wrap: wrap; }
-#results .daily-result-footer .daily-home-button { padding-left: 0; padding-right: 0; }
+#results .daily-result-footer { display: flex; align-items: center; justify-content: space-between; gap: 14px 20px; flex-wrap: wrap; }
 #screen-puzzle #results .countdown-card { margin: 0; padding: 0; border: 0; gap: 10px; align-items: baseline; }
 #screen-puzzle #results .countdown-card b { font-size: 13px; }
 #screen-puzzle #results .countdown-card span { font-size: 15px; letter-spacing: 0; }
