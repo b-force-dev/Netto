@@ -82,7 +82,7 @@
     const complete = () => {
       if (completed) return;
       completed = true;
-      onComplete?.();
+      onComplete?.(numbers.map(item => item.card));
     };
     // Jump straight to the end state (skip button, Escape, click).
     const finish = () => {
@@ -124,15 +124,80 @@
     return { finish, stop, isComplete: () => completed };
   }
 
+  // After the reveal each card can open its explanation and source in place.
+  // At most one card is open; the whole card is a click target for the mouse,
+  // the toggle button is the keyboard/screen-reader control.
+  let detailCounter = 0;
+  function makeExpandable(cards, details) {
+    const entries = cards.map((card, index) => {
+      const panel = document.createElement('div');
+      panel.className = 'answer-reveal-detail';
+      panel.id = 'answerRevealDetail' + (++detailCounter);
+      panel.hidden = true;
+      const content = details[index];
+      if (content) panel.append(content);
+      else {
+        const empty = document.createElement('p');
+        empty.className = 'answer-reveal-detail-empty';
+        empty.textContent = copy('Voor deze vraag is geen broninformatie beschikbaar.', 'No source information is available for this question.');
+        panel.append(empty);
+      }
+      const toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'answer-reveal-toggle';
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-controls', panel.id);
+      const label = document.createElement('span');
+      label.textContent = copy('Uitleg & bron', 'Explanation & source');
+      const chevron = document.createElement('span');
+      chevron.className = 'answer-reveal-chevron';
+      chevron.setAttribute('aria-hidden', 'true');
+      chevron.textContent = '⌄';
+      toggle.append(label, chevron);
+      const foot = document.createElement('div');
+      foot.className = 'answer-reveal-foot';
+      const verdict = card.querySelector('.answer-reveal-verdict');
+      if (verdict) foot.append(verdict);
+      foot.append(toggle);
+      card.append(foot, panel);
+      card.classList.add('is-expandable');
+      return { card, toggle, panel };
+    });
+    const setOpen = (target, open) => {
+      entries.forEach(entry => {
+        const isOpen = entry === target && open;
+        entry.panel.hidden = !isOpen;
+        entry.toggle.setAttribute('aria-expanded', String(isOpen));
+        entry.card.classList.toggle('is-open', isOpen);
+      });
+    };
+    entries.forEach(entry => {
+      entry.toggle.addEventListener('click', event => {
+        event.stopPropagation();
+        setOpen(entry, entry.toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      entry.card.addEventListener('click', event => {
+        // Links and the open panel itself stay clickable without toggling.
+        if (event.target.closest('a, button, .answer-reveal-detail')) return;
+        if (window.getSelection?.().toString()) return;
+        setOpen(entry, entry.toggle.getAttribute('aria-expanded') !== 'true');
+      });
+    });
+    return entries.map(entry => entry.toggle);
+  }
+
   let cancelInline = () => {};
   window.cancelInlineAnswerReveal = () => cancelInline();
   // Inline reveal inside a results container. While revealing, the container
   // gets .is-answer-revealing so the rest of the results can wait below.
   window.mountAnswerReveal = function (container, opts) {
     cancelInline();
-    container.querySelectorAll(':scope > .answer-reveal-inline, :scope > .answer-reveal-sources').forEach(el => el.remove());
+    // Bij een stille herteken (bv. cloudsync) blijft een open kaart open.
+    const previous = container.querySelector(':scope > .answer-reveal-inline');
+    const openIndex = previous ? [...previous.querySelectorAll('.answer-reveal-question')].findIndex(card => card.classList.contains('is-open')) : -1;
+    previous?.remove();
     const section = document.createElement('section');
-    section.className = 'answer-reveal-inline';
+    section.className = 'answer-reveal-inline' + (opts.instant ? ' is-instant' : '');
     section.setAttribute('aria-label', copy('Jouw antwoorden', 'Your answers'));
     const header = document.createElement('header');
     header.className = 'answer-reveal-header';
@@ -150,21 +215,16 @@
     container.prepend(section);
 
     const onKey = event => { if (event.key === 'Escape') { event.preventDefault(); controller.finish(); } };
-    const done = () => {
+    const done = cards => {
       heading.textContent = copy('Je antwoorden.', 'Your answers.');
       container.classList.remove('is-answer-revealing');
       section.classList.add('is-complete');
+      const skipHadFocus = document.activeElement === skip;
       skip.remove();
       document.removeEventListener('keydown', onKey);
-      if (opts.onSources) {
-        const sources = document.createElement('button');
-        sources.type = 'button';
-        sources.className = 'answer-reveal-sources';
-        sources.textContent = copy('Bekijk de vragen & bronnen →', 'Review questions & sources →');
-        sources.addEventListener('click', opts.onSources);
-        const actions = container.querySelector(':scope > .daily-result-actions');
-        if (actions) actions.before(sources); else container.append(sources);
-      }
+      const toggles = makeExpandable(cards, opts.details || []);
+      if (opts.instant && openIndex >= 0) toggles[openIndex]?.click();
+      if (skipHadFocus) toggles[0]?.focus({ preventScroll:true });
       opts.onDone?.();
     };
     heading.textContent = opts.instant ? copy('Je antwoorden.', 'Your answers.')

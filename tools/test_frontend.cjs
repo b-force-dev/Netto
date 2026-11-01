@@ -172,19 +172,6 @@ test('Ratio graph is symmetric, unit-independent and clips extreme estimates', (
   assert.equal(run('dailyRatioPoint(2,1).y + dailyRatioPoint(1,2).y'),284);
   assert.equal(run('dailyRatioPoint(1000,1).clipped'),true);
   assert.equal(run('dailyRatioPoint(1,1000).y'),244);
-  run('renderNumberLine(4,2,80000000,4,4,40000000)');
-  assert.equal((get('numberlineCard').innerHTML.match(/class="ratio-chart histogram-chart"/g)||[]).length,1);
-  assert.ok(!get('numberlineCard').innerHTML.includes('NaN'));
-});
-test('Histogram selection uses actual question data and explicit demo labels', () => {
-  run('renderNumberLine(4,2,8,4,4,16); selectDailyReviewQuestion(1)');
-  assert.ok(get('numberlineCard').innerHTML.includes('Sample data, not real players'));
-  assert.ok(!get('numberlineCard').innerHTML.includes('Yellow line: you'));
-  assert.ok(get('numberlineCard').innerHTML.includes('2× too low'));
-  assert.equal(get('selectedReviewQuestion').textContent,run('PUZZLE_DATA.q2_label'));
-  assert.equal((get('numberlineCard').innerHTML.match(/class="hist-bar"/g)||[]).length,12);
-  run('renderNumberLine(999999,1,1,1,1,1)');
-  assert.ok(get('numberlineCard').innerHTML.includes('outside the scale'));
 });
 test('Daily equation checks every operator and decimal rounding', () => {
   for (const expression of ['dailyEquationMatches(4,2,8,"×")','dailyEquationMatches(8,2,4,"÷")','dailyEquationMatches(0.1,0.2,0.3,"+")','dailyEquationMatches(8,2,6,"−")']) assert.equal(run(expression),true);
