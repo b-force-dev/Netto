@@ -36,12 +36,21 @@
 
 /* Inline reveal: bovenaan het Daily-resultaat, zelfde kaart en breedte. */
 .answer-reveal-inline { margin:0 0 22px; color:var(--ink,#14163b); }
-.answer-reveal-inline .answer-reveal-header h2 { font-size:clamp(20px,2.6vw,26px); letter-spacing:-.04em; margin:7px 0 0; line-height:1.15; }
+.answer-reveal-inline .answer-reveal-header h2 { font-size:clamp(20px,2.6vw,26px); letter-spacing:-.04em; margin:0; line-height:1.15; }
 .answer-reveal-inline .answer-reveal-question { color:#14163b; }
+/* Compact genoeg dat alle drie de vragen tijdens de reveal in beeld passen. */
+.answer-reveal-inline .answer-reveal-header { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:14px; }
+.answer-reveal-inline .answer-reveal-question { padding:12px 18px; }
+.answer-reveal-inline .answer-reveal-question h2 { margin-bottom:8px; }
+.answer-reveal-inline .answer-reveal-values strong { font-size:clamp(22px,3vw,28px); }
+.answer-reveal-inline .answer-reveal-verdict { margin-top:6px; }
+.answer-reveal-inline .answer-reveal-connector { height:26px; }
+.answer-reveal-inline .answer-reveal-connector span { width:24px; height:24px; border-radius:7px; font-size:13px; }
+.answer-reveal-inline .answer-reveal-foot { margin-top:6px; }
 .answer-reveal-verdict { margin:10px 0 0; min-height:1.4em; font:600 12px/1.4 'JetBrains Mono',ui-monospace,monospace; color:#656b7d; opacity:0; transition:opacity .3s ease; }
 .answer-reveal-question.is-revealed .answer-reveal-verdict { opacity:1; }
 .answer-reveal-question.is-exact .answer-reveal-verdict { color:#07835e; }
-.answer-reveal-skip { display:block; margin:14px 0 0 auto; border:0; border-radius:10px; padding:11px 16px; background:transparent; color:#656b7d; font:600 13px/1.4 inherit; font-family:inherit; cursor:pointer; }
+.answer-reveal-skip { flex-shrink:0; margin:0; border:0; border-radius:10px; padding:8px 4px 8px 12px; background:transparent; color:#656b7d; font:600 13px/1.4 inherit; font-family:inherit; cursor:pointer; }
 .answer-reveal-skip:hover { color:#14163b; }
 .answer-reveal-skip:focus-visible { outline:3px solid #ffd84a; outline-offset:3px; }
 

@@ -204,18 +204,25 @@
     section.setAttribute('aria-label', copy('Jouw antwoorden', 'Your answers'));
     const header = document.createElement('header');
     header.className = 'answer-reveal-header';
-    const eyebrow = document.createElement('span');
-    eyebrow.textContent = 'NETTO · THE REVEAL';
     const heading = document.createElement('h2');
-    header.append(eyebrow, heading);
+    header.append(heading);
     const list = document.createElement('div');
     list.className = 'answer-reveal-questions';
     const skip = document.createElement('button');
     skip.type = 'button';
     skip.className = 'answer-reveal-skip';
     skip.textContent = copy('Sla over →', 'Skip →');
-    section.append(header, list, skip);
+    header.append(skip);
+    section.append(header, list);
     container.prepend(section);
+    // Past de reveal niet onder de paginakop, schuif hem dan net onder de
+    // vaste balk, zodat alle drie de vragen tegelijk in beeld zijn.
+    if (!opts.instant) requestAnimationFrame(() => {
+      const box = section.getBoundingClientRect();
+      if (box.bottom <= window.innerHeight) return;
+      const bar = document.querySelector('.topbar')?.offsetHeight || 0;
+      window.scrollTo({ top: window.scrollY + box.top - bar - 12, behavior: reducedMotion() ? 'auto' : 'smooth' });
+    });
 
     const onKey = event => { if (event.key === 'Escape') { event.preventDefault(); controller.finish(); } };
     const done = cards => {
