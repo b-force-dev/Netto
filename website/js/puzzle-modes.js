@@ -160,25 +160,40 @@
 
   // A standalone, shareable special puzzle; it is deliberately not part of
   // the regular puzzle pool, progression, daily rotation, or race selection.
-  const OPENAEC_SPECIAL_PUZZLE = {
-    id: 'openaec-special-20261030',
-    number: 'OpenAEC',
-    name: 'OpenAEC Special',
-    operator: '−',
-    q1_label: 'As of 30 October 2026, how many contributors were listed in the OpenAEC ecosystem statistics?',
-    q1_answer: 96,
-    q2_label: 'By that date, how many releases had Open PDF Studio published?',
-    q2_answer: 81,
-    q3_label: 'How many OpenAEC repositories used Rust as their primary language on that date?',
-    q3_answer: 15,
-    calculation: '96 − 81 = 15',
-    categories: ['Open-source software', 'Software releases', 'Programming languages'],
-    difficulty: 'hard',
-    source_links: [
-      'https://open-aec.com/statistieken/',
-      'https://github.com/OpenAEC-Foundation/open-pdf-studio/releases',
-    ],
-  };
+  // Peildatum 1 november 2026. Alle drie de getallen zijn op GitHub na te
+  // gaan aan de hand van de publicatie- en aanmaakdatums.
+  const OPENAEC_SPECIAL_ID = 'openaec-special-20261101';
+  function openAecSpecialPuzzle() {
+    return {
+      id: OPENAEC_SPECIAL_ID,
+      number: 'OpenAEC',
+      name: 'OpenAEC Special',
+      operator: '−',
+      q1_label: statsCopy(
+        'Hoeveel releases had Open CAD Studio op 1 november 2026 op GitHub gepubliceerd?',
+        'As of 1 November 2026, how many releases had Open CAD Studio published on GitHub?'
+      ),
+      q1_answer: 97,
+      q2_label: statsCopy(
+        'Hoeveel openbare repositories had de OpenAEC Foundation op 1 november 2026 op GitHub?',
+        'How many public repositories did the OpenAEC Foundation have on GitHub on 1 November 2026?'
+      ),
+      q2_answer: 74,
+      q3_label: statsCopy(
+        'Hoeveel releases had Open Calc Studio op 1 november 2026 gepubliceerd?',
+        'As of 1 November 2026, how many releases had Open Calc Studio published?'
+      ),
+      q3_answer: 23,
+      calculation: '97 − 74 = 23',
+      categories: ['Open-source software', 'Software releases', 'GitHub'],
+      difficulty: 'hard',
+      source_links: [
+        'https://github.com/HakanSeven12/OpenCADStudio/releases',
+        'https://github.com/orgs/OpenAEC-Foundation/repositories',
+        'https://github.com/OpenAEC-Foundation/open-calc-studio/releases',
+      ],
+    };
+  }
 
   function addOpenAecPuzzleImage() {
     const list = document.getElementById('libraryQuestionList');
@@ -195,7 +210,7 @@
     button.setAttribute('aria-controls', 'puzzelFotoDialog');
     const image = document.createElement('img');
     image.src = new URL('fotos/assets/openaec-cube.png', document.baseURI).href;
-    image.alt = 'Orange isometric cube illustration';
+    image.alt = statsCopy('Oranje isometrische kubus', 'Orange isometric cube illustration');
     image.width = 132;
     image.height = 104;
     image.decoding = 'async';
@@ -208,12 +223,12 @@
       const enlarged = dialog.querySelector('img');
       enlarged.src = image.src;
       enlarged.alt = image.alt;
-      dialog.querySelector('p').textContent = 'Illustration supplied for the OpenAEC special puzzle.';
+      dialog.querySelector('p').textContent = statsCopy('Illustratie bij de OpenAEC-special.', 'Illustration supplied for the OpenAEC special puzzle.');
       dialog.showModal();
     });
     const credit = document.createElement('figcaption');
     credit.className = 'daily-photo-credit';
-    credit.textContent = 'Image supplied for this puzzle';
+    credit.textContent = statsCopy('Beeld aangeleverd voor deze puzzel', 'Image supplied for this puzzle');
     figure.append(button, credit);
     firstQuestion.prepend(figure);
   }
@@ -248,10 +263,11 @@
     }
 
     view.style.display = 'block';
-    selectedDifficulty = OPENAEC_SPECIAL_PUZZLE.difficulty;
+    const puzzle = openAecSpecialPuzzle();
+    selectedDifficulty = puzzle.difficulty;
     renderPuzzleView(
       'library',
-      OPENAEC_SPECIAL_PUZZLE,
+      puzzle,
       statsCopy('OPENAEC SPECIAL · 1/1', 'OPENAEC SPECIAL · 1/1')
     );
     addOpenAecPuzzleImage();

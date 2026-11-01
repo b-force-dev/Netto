@@ -41,8 +41,8 @@
 <script src="data/netto_translations_en.js?v=51"></script>
 <script src="js/i18n.js?v=83"></script>
 <link rel="stylesheet" href="css/styles.css?v=62">
-<link rel="stylesheet" href="css/refinement.css?v=167">
-<link rel="stylesheet" href="css/answer-reveal.css?v=2">
+<link rel="stylesheet" href="css/refinement.css?v=170">
+<link rel="stylesheet" href="css/answer-reveal.css?v=8">
 <link rel="stylesheet" href="css/live-rounds.css?v=12">
 <link rel="stylesheet" href="css/stats-page.css?v=5">
 
@@ -300,68 +300,69 @@
         <button class="btn-check" id="btnCheck" onclick="checkAnswers()">Check mijn score</button>
         </div>
 
-        <div class="daily-review-nav" id="dailyReviewNav" aria-label="Review navigatie">
-          <button type="button" id="dailyQuestionsNav" onclick="showDailyQuestions()" aria-label="Bekijk de vragen">← <span>Vragen</span></button>
-          <span class="daily-review-position" id="dailyReviewPosition">Resultaat</span>
-          <button type="button" id="dailyResultsNav" onclick="showDailyResults()" aria-label="Bekijk het resultaat"><span>Resultaat</span> →</button>
-        </div>
 
         <!-- Resultaten & Wordle Share Card -->
         <div class="results" id="results">
-          <div class="score-badge-container">
-            <div class="score-badge-title" id="scoreBadgeTitle">Nauwkeurigheid</div>
-            <div class="score-badge-val" id="scoreBadge">100%</div>
-            <div class="score-badge-factor" id="scoreBadgeFactor" style="font-family:'JetBrains Mono',monospace; font-size:13px; opacity:0.85; margin-bottom:4px;">Gem. factor: 1.00×</div>
-            <div class="score-badge-msg" id="scoreBadgeMsg">🎯 Meesterlijk geschat!</div>
-          </div>
-
-          <!-- Getallenbalk (Jouw schattingen vs de werkelijkheid) -->
-          <div class="numberline-card" id="numberlineCard"></div>
-
-          <div class="results-grid">
-            <div class="result-card-item">
-              <div class="res-info">
-                <span class="res-lbl" id="reviewQuestion1">Vraag 1</span>
-                <span class="res-val" id="a1"></span>
+          <section class="daily-result-summary" aria-labelledby="scoreBadgeTitle">
+            <div class="daily-score-row">
+              <div class="score-badge-container">
+                <div class="score-badge-title" id="scoreBadgeTitle">Nauwkeurigheid</div>
+                <div class="score-badge-val" id="scoreBadge">100%</div>
+                <div class="score-badge-factor" id="scoreBadgeFactor">Gemiddelde afwijking: 1.00×</div>
+                <div class="score-badge-msg" id="scoreBadgeMsg">Meesterlijk geschat!</div>
               </div>
-              <div class="res-badge" id="badge-q1"></div>
+              <div class="daily-score-breakdown" id="dailyScoreBreakdown"></div>
             </div>
-            <div class="result-card-item">
-              <div class="res-info">
-                <span class="res-lbl" id="reviewQuestion2">Vraag 2</span>
-                <span class="res-val" id="a2"></span>
-              </div>
-              <div class="res-badge" id="badge-q2"></div>
-            </div>
-            <div class="result-card-item">
-              <div class="res-info">
-                <span class="res-lbl" id="reviewQuestion3">Vraag 3</span>
-                <span class="res-val" id="a3"></span>
-              </div>
-              <div class="res-badge" id="badge-q3"></div>
-            </div>
-          </div>
 
-          <div class="actions-row daily-result-actions">
-            <button class="btn-share" onclick="shareScore()">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-              Deel uitslag
-            </button>
-            <button class="btn-leaderboard-open" onclick="openLeaderboardModal()">
-              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4"/></svg>
-              <span id="btnLeaderboardLabel">Leaderboard</span>
-            </button>
-          </div>
+            <div class="results-grid">
+              <div class="result-card-item">
+                <div class="res-info">
+                  <span class="res-lbl" id="reviewQuestion1">Vraag 1</span>
+                  <span class="res-val" id="a1"></span>
+                </div>
+                <div class="res-badge" id="badge-q1"></div>
+              </div>
+              <div class="result-card-item">
+                <div class="res-info">
+                  <span class="res-lbl" id="reviewQuestion2">Vraag 2</span>
+                  <span class="res-val" id="a2"></span>
+                </div>
+                <div class="res-badge" id="badge-q2"></div>
+              </div>
+              <div class="result-card-item">
+                <div class="res-info">
+                  <span class="res-lbl" id="reviewQuestion3">Vraag 3</span>
+                  <span class="res-val" id="a3"></span>
+                </div>
+                <div class="res-badge" id="badge-q3"></div>
+              </div>
+            </div>
 
-          <!-- Banner om in te loggen als speler niet is ingelogd -->
-          <div class="cloud-sync-banner" id="cloudSyncBanner">
-            <span>🏆 Wil je meedoen in het <b>Leaderboard</b>?</span>
-            <button onclick="openAuthModal()">Log in / Registreer</button>
-          </div>
-          <div class="daily-result-navigation">
-            <button type="button" class="daily-home-button" onclick="goHome()"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9"/></svg>Home</button>
-            <button type="button" class="daily-home-button" onclick="openDailyPuzzles()">Daily Archive <span aria-hidden="true">→</span></button>
-          </div>
+            <div class="actions-row daily-result-actions">
+              <button class="btn-share" onclick="shareScore()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                Deel uitslag
+              </button>
+              <button class="btn-leaderboard-open" onclick="openLeaderboardModal()">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4"/></svg>
+                <span id="btnLeaderboardLabel">Leaderboard</span>
+              </button>
+            </div>
+
+            <!-- Banner om in te loggen als speler niet is ingelogd -->
+            <div class="cloud-sync-banner" id="cloudSyncBanner">
+              <span>Wil je meedoen in het <b>Leaderboard</b>?</span>
+              <button onclick="openAuthModal()">Log in / Registreer</button>
+            </div>
+            <div id="dailyResultStatus"></div>
+            <footer class="daily-result-footer">
+            <div class="daily-result-navigation">
+              <button type="button" class="daily-home-button" onclick="goHome()"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9"/></svg>Home</button>
+              <button type="button" class="daily-home-button" onclick="openDailyPuzzles()">Daily Archive <span aria-hidden="true">→</span></button>
+            </div>
+            <div id="dailyResultCountdown"></div>
+            </footer>
+          </section>
         </div>
 
       </div>
@@ -1123,16 +1124,16 @@
 <script src="js/photo-credits.js?v=6"></script>
 <script src="js/daily-photos.js?v=3"></script>
 <script src="js/question-context.js?v=4"></script>
-<script src="js/answer-reveal.js?v=2"></script>
-<script src="js/core.js?v=137"></script>
-<script src="js/puzzle-modes.js?v=63"></script>
+<script src="js/answer-reveal.js?v=7"></script>
+<script src="js/core.js?v=140"></script>
+<script src="js/puzzle-modes.js?v=64"></script>
 <script src="js/find-connection.js?v=11"></script>
 <script src="js/race.js?v=65"></script>
 <script src="js/live-rounds.js?v=7"></script>
 <script src="js/submissions.js?v=41"></script>
 <script src="js/library.js?v=60"></script>
 <script src="js/site-navigation.js?v=8"></script>
-<script src="js/routes.js?v=7"></script>
+<script src="js/routes.js?v=8"></script>
 <script src="js/app.js?v=36"></script>
 <script src="js/stats-page.js?v=9"></script>
 

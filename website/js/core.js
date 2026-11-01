@@ -2069,6 +2069,13 @@
     paneel.className = 'vraag-bron';
     const kop = document.createElement('summary');
     kop.textContent = statsCopy('Waar komt dit vandaan?', 'Where does this answer come from?');
+    paneel.append(kop, ...maakBronInhoud(vermelding, reviewed, url));
+    return paneel;
+  }
+
+  // Uitleg + bronlink, zonder eigen <details>-omhulling.
+  function maakBronInhoud(vermelding, reviewed, url) {
+    const delen = [];
     const uitleg = document.createElement('p');
     // Vertalingen zijn vooraf gegenereerd: geen externe vertaalverzoeken tijdens spelen.
     uitleg.setAttribute('data-i18n-skip', '');
@@ -2081,14 +2088,22 @@
     link.rel = 'noopener';
     link.textContent = statsCopy('Bekijk de bron: ', 'View the source: ')
       + url.hostname.replace(/^www\./, '');
-    paneel.append(kop, uitleg, link);
-    if (english && translation && translation !== vermelding.uitleg) {
-      const note = document.createElement('small');
-      note.className = 'source-translation-note';
-      note.textContent = 'Automatically translated';
-      paneel.appendChild(note);
-    }
-    return paneel;
+    delen.push(uitleg, link);
+    return delen;
+  }
+
+  // Bronblok voor een vraagkaart in de Daily-reveal (geen geneste uitklapper).
+  function maakBronBlok(vraag) {
+    const reviewed = REBUILT_DATA.daily_review?.[vraag] || REBUILT_DATA.library_review?.[vraag] || REBUILT_DATA.connection_review?.[vraag];
+    const vermelding = reviewed || window.NETTO_BRONNEN?.[vraag];
+    if (!vermelding?.bron || !vermelding?.uitleg) return null;
+    let url;
+    try { url = new URL(vermelding.bron); } catch { return null; }
+    if (!['https:', 'http:'].includes(url.protocol)) return null;
+    const blok = document.createElement('div');
+    blok.className = 'vraag-bron vraag-bron-open';
+    blok.append(...maakBronInhoud(vermelding, reviewed, url));
+    return blok;
   }
 
   function werkDailyVraagDetailsBij(ingeleverd = false) {
@@ -2364,7 +2379,7 @@
       status = document.createElement('p');
       status.id = 'dailyScoreSyncStatus';
       status.setAttribute('role','status');
-      document.getElementById('results').append(status);
+      document.getElementById('dailyResultStatus').append(status);
     }
     status.textContent = PUZZLE_DATA.date !== TODAY_STR
       ? statsCopy('Archiefresultaat. Dit telt niet mee voor je dagelijkse streak of het bord van vandaag.', 'Archive result. This does not count toward your daily streak or today’s leaderboard.')
@@ -2423,7 +2438,6 @@
       button.style.display = 'none';
       renderResultsUI(...guesses, avgFactor, true);
       setDailySyncStatus(result.ranked);
-      if (guesses.every((guess,index) => guess === Number(result.answers[index]))) launchConfetti();
       if (!document.getElementById('streakCalendarPopover')?.hidden) renderStreakCalendar();
     } catch (error) {
       console.warn('Daily submission failed:', error.message || error);
@@ -2440,22 +2454,32 @@
   }
 
   let dailyScoreFrame = null;
-  function revealDailyScore(accuracy, animate) {
+  let dailyScoreRun = 0;
+  function cancelDailyScore() {
+    dailyScoreRun++;
     if (dailyScoreFrame !== null) cancelAnimationFrame(dailyScoreFrame);
     dailyScoreFrame = null;
+  }
+  function revealDailyScore(accuracy, animate, onDone) {
+    cancelDailyScore();
+    const run = dailyScoreRun;
     const badge = document.getElementById('scoreBadge');
     badge.setAttribute('aria-label', `${accuracy}%`);
     badge.dataset.tone = accuracy >= 85 ? 'precise' : accuracy >= 60 ? 'close' : 'wide';
-    if (!animate || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches || accuracy === 100) {
+    if (!animate || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
       badge.textContent = `${accuracy}%`;
+      onDone?.();
       return;
     }
+    // Telt op vanaf 0 zodat ook 100% een opbouw krijgt; confetti volgt daarna.
     const started = Date.now();
     const tick = () => {
       const progress = Math.min(1, (Date.now() - started) / 750);
       const eased = 1 - (1-progress)**3;
-      badge.textContent = `${Math.round(100 + (accuracy-100)*eased)}%`;
-      dailyScoreFrame = progress < 1 ? requestAnimationFrame(tick) : null;
+      badge.textContent = `${Math.round(accuracy*eased)}%`;
+      if (run !== dailyScoreRun) return;
+      if (progress < 1) dailyScoreFrame = requestAnimationFrame(tick);
+      else { dailyScoreFrame = null; onDone?.(); }
     };
     tick();
   }
@@ -2471,9 +2495,9 @@
     const isSpotOn2 = isSpotOnAnswer(g2, echt.a2);
     const isSpotOn3 = isSpotOnAnswer(g3, echt.a3);
 
-    document.getElementById('a1').innerHTML = fmt(echt.a1) + (isSpotOn1 ? '<div class="spot-on-sub">Spot on! 🎯</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g1)}</div>`);
-    document.getElementById('a2').innerHTML = fmt(echt.a2) + (isSpotOn2 ? '<div class="spot-on-sub">Spot on! 🎯</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g2)}</div>`);
-    document.getElementById('a3').innerHTML = fmt(echt.a3) + (isSpotOn3 ? '<div class="spot-on-sub">Spot on! 🎯</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g3)}</div>`);
+    document.getElementById('a1').innerHTML = fmt(echt.a1) + (isSpotOn1 ? '<div class="spot-on-sub">Spot on!</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g1)}</div>`);
+    document.getElementById('a2').innerHTML = fmt(echt.a2) + (isSpotOn2 ? '<div class="spot-on-sub">Spot on!</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g2)}</div>`);
+    document.getElementById('a3').innerHTML = fmt(echt.a3) + (isSpotOn3 ? '<div class="spot-on-sub">Spot on!</div>' : `<div class="guess-sub">Jouw gok: ${fmt(g3)}</div>`);
 
     renderBadge('badge-q1', s1, g1, echt.a1);
     renderBadge('badge-q2', s2, g2, echt.a2);
@@ -2489,17 +2513,16 @@
     const accuracy = Math.round(100 / avgFactor);
     // Bij een verse inzending loopt de score pas op als de reveal klaar is.
     if (!animate) revealDailyScore(accuracy, false);
+    document.getElementById('scoreBadgeTitle').textContent = statsCopy('Nauwkeurigheid', 'Accuracy');
     const factorEl = document.getElementById('scoreBadgeFactor');
     if (factorEl) {
-      factorEl.textContent = `Gemiddelde afwijking: ${avgFactor.toFixed(2)}×`;
+      factorEl.textContent = statsCopy('Gemiddelde afwijking: ', 'Average deviation: ') + `${avgFactor.toFixed(2)}×`;
     }
     
-    const exactCount = [g1 === echt.a1, g2 === echt.a2, g3 === echt.a3].filter(Boolean).length;
-    const msg = statsCopy(`${exactCount} van 3 antwoorden spot-on`, `${exactCount} of 3 answers spot-on`);
+    const exactCount = [isSpotOn1, isSpotOn2, isSpotOn3].filter(Boolean).length;
+    const msg = statsCopy(`${exactCount} van 3 precies goed`, `${exactCount} of 3 spot on`);
     document.getElementById('scoreBadgeMsg').textContent = msg;
-
-    // Getallenbalk tekenen
-    renderNumberLine(g1, g2, g3, echt.a1, echt.a2, echt.a3, PUZZLE_DATA.operator || '×');
+    renderDailyScoreBreakdown([s1, s2, s3], [isSpotOn1, isSpotOn2, isSpotOn3]);
 
     if (currentUser) {
       document.getElementById('cloudSyncBanner').style.display = 'none';
@@ -2507,8 +2530,9 @@
       document.getElementById('cloudSyncBanner').style.display = 'flex';
     }
 
+    const resultsAlreadyShown = document.getElementById('results').classList.contains('show');
     document.getElementById('results').classList.add('show');
-    showDailyResults();
+    showDailyResults({ quiet: resultsAlreadyShown });
     if (PUZZLE_DATA?.date === TODAY_STR) startDailyCountdown();
     else { const countdown = document.getElementById('dailyCountdown'); if (countdown) countdown.remove(); if (countdownTimer) clearInterval(countdownTimer); }
     renderDailyArchive();
@@ -2519,10 +2543,51 @@
       guesses: order.map(index => [g1, g2, g3][index]),
       answers: order.map(index => [echt.a1, echt.a2, echt.a3][index]),
       operator: PUZZLE_DATA.operator || '×', factor: avgFactor,
+      details: order.map(index => maakBronBlok(PUZZLE_DATA['q' + (index + 1) + '_label'])),
       instant: !animate,
-      onDone: () => { if (animate) revealDailyScore(accuracy, true); },
-      onSources: () => { showDailyQuestions(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+      // Volgorde: alle antwoorden → score telt op → confetti (alleen bij een
+      // verse, volledig exacte inzending). Herladen of sync viert niet opnieuw.
+      onDone: () => {
+        if (!animate) return;
+        const puzzleId = PUZZLE_DATA?.id;
+        revealDailyScore(accuracy, true, () => {
+          // Alleen vieren als de speler nog naar dit resultaat kijkt.
+          const stillHere = PUZZLE_DATA?.id === puzzleId
+            && document.getElementById('screen-puzzle')?.classList.contains('active')
+            && document.getElementById('results')?.classList.contains('show');
+          if (stillHere && isSpotOn1 && isSpotOn2 && isSpotOn3) launchConfetti();
+        });
+      }
     });
+  }
+
+  // Nauwkeurigheid per vraag naast de totaalscore, in de volgorde van de kaarten.
+  function renderDailyScoreBreakdown(factors, exact) {
+    const box = document.getElementById('dailyScoreBreakdown');
+    if (!box) return;
+    box.replaceChildren();
+    const title = document.createElement('div');
+    title.className = 'daily-score-breakdown-title';
+    title.textContent = statsCopy('Per vraag', 'Per question');
+    const list = document.createElement('ol');
+    dailyQuestionOrder().forEach((index, position) => {
+      const accuracy = exact[index] ? 100 : Math.round(100 / factors[index]);
+      const row = document.createElement('li');
+      row.className = 'daily-score-line' + (exact[index] ? ' is-exact' : '');
+      const label = document.createElement('span');
+      label.textContent = statsCopy('Vraag ', 'Question ') + (position + 1);
+      const bar = document.createElement('span');
+      bar.className = 'daily-score-bar';
+      bar.setAttribute('aria-hidden', 'true');
+      const fill = document.createElement('i');
+      fill.style.width = Math.max(2, Math.min(100, accuracy)) + '%';
+      bar.append(fill);
+      const value = document.createElement('strong');
+      value.textContent = accuracy + '%';
+      row.append(label, bar, value);
+      list.append(row);
+    });
+    box.append(title, list);
   }
 
   function renderBadge(elemId, factor, guess, actual) {
@@ -2532,14 +2597,14 @@
     if (isSpotOn) {
       el.style.background = '#10B981';
       el.style.color = '#FFFFFF';
-      el.innerHTML = `🎯 Spot on!`;
+      el.innerHTML = `Spot on!`;
       return;
     }
     const r = getFactorRating(factor);
     const qAcc = Math.round(100 / factor);
     el.style.background = r.bg;
     el.style.color = r.color;
-    el.innerHTML = `${r.emoji} ${qAcc}% (${factor.toFixed(2)}×)`;
+    el.innerHTML = `${qAcc}% (${factor.toFixed(2)}×)`;
   }
 
   // =========================================================================
@@ -2566,51 +2631,6 @@
     return ticks.sort((a,b)=>a-b);
   }
 
-  let dailyReviewData = null;
-  function renderNumberLine(g1, g2, g3, a1, a2, a3) {
-    dailyReviewData = { guesses: [g1,g2,g3], answers: [a1,a2,a3] };
-    selectDailyReviewQuestion(-1);
-  }
-
-  function selectDailyReviewQuestion(index) {
-    if (!dailyReviewData || !Number.isInteger(index) || index < -1 || index > 2) return;
-    const container = document.getElementById('numberlineCard');
-    if (!container) return;
-    const overview = index === -1;
-    const selected = index;
-    const restoreFocus = document.activeElement?.dataset?.question !== undefined;
-    container.classList.toggle('is-overview', overview);
-    if (overview) index = 0;
-    const volgorde = dailyQuestionOrder();
-    const guesses = volgorde.map(i => dailyReviewData.guesses[i]);
-    const answers = volgorde.map(i => dailyReviewData.answers[i]);
-    const labels = volgorde.map(i => PUZZLE_DATA['q' + (i + 1) + '_label']);
-    const guess = guesses[index], actual = answers[index];
-    const copy = statsCopy;
-    const logRatio = Math.log2(guess)-Math.log2(actual);
-    const exact = guess === actual;
-    const factor = Math.max(guess/actual,actual/guess);
-    const direction = exact ? 'Exact' : copy(logRatio > 0 ? 'te hoog' : 'te laag', logRatio > 0 ? 'too high' : 'too low');
-    const ratioLabel = Number.isFinite(factor) ? new Intl.NumberFormat(nettoNumberLocale(),{maximumSignificantDigits:3}).format(factor)+'×' : copy('Buiten schaal','Off scale');
-    container.innerHTML = `
-      <div class="review-equation"><span>${copy('Het verband','The connection')}</span><strong>${fmt(answers[0])} ${PUZZLE_DATA.operator || '×'} ${fmt(answers[1])} = ${fmt(answers[2])}</strong></div>
-      <div class="review-question-tabs" role="group" aria-label="${copy('Kies een vraag','Choose a question')}">${[-1,0,1,2].map(i => `<button type="button" aria-pressed="${i===selected}" onclick="selectDailyReviewQuestion(${i})" data-question="${i}">${i === -1 ? copy('Overzicht','Overview') : copy('Vraag','Question')+' '+(i+1)}</button>`).join('')}</div>
-      <div class="review-overview"><div class="overview-caption">${copy('Jouw schatting → echt antwoord','Your estimate → actual answer')}</div>${guesses.map((g,i) => {
-        const exact = g === answers[i];
-        const accuracy = Math.round(100/scoreVraag(g,answers[i]));
-        return `<button type="button" class="overview-row ${exact ? 'is-exact' : 'is-estimate'}" onclick="selectDailyReviewQuestion(${i})"><span class="overview-row-title" id="overviewQuestion${i}"></span><span class="overview-numbers">${fmt(g)} <span aria-hidden="true">→</span> <strong>${fmt(answers[i])}</strong></span><span class="overview-status">${exact ? 'Exact' : accuracy+'%'} <span aria-hidden="true">↗</span></span></button>`;
-      }).join('')}<p class="overview-note">${copy('Tik op een vraag om je schatting te bekijken.','Select a question to explore your estimate.')}</p></div>
-      <h2 id="selectedReviewQuestion" class="selected-review-question"></h2>
-      <div class="review-comparison"><div><span>${copy('Jouw schatting','Your estimate')}</span><strong>${fmt(guess)}</strong></div><div class="review-answer"><span>${copy('Echt antwoord','Actual answer')}</span><strong>${fmt(actual)}</strong></div></div>
-      <div class="hist-heading"><strong>${exact ? 'Exact' : ratioLabel+' '+direction}</strong><span>${copy('Jouw resultaat','Your result')}</span></div>`;
-    document.getElementById('selectedReviewQuestion').textContent = labels[index];
-    labels.forEach((label,i) => { document.getElementById('overviewQuestion'+i).textContent = label; });
-    if (!overview) {
-      const bron = maakBronpaneel(labels[index]);
-      if (bron) container.querySelector('.review-comparison').insertAdjacentElement('afterend', bron);
-    }
-    if (restoreFocus) container.querySelector(`[data-question="${selected}"]`)?.focus();
-  }
   // =========================================================================
   // 5. WORDLE-STIJL SCORE DELEN
   // =========================================================================
@@ -3182,22 +3202,7 @@
 
   let countdownTimer = null;
 
-  function updateDailyReviewNav() {
-    const nav = document.getElementById('dailyReviewNav');
-    const questionsButton = document.getElementById('dailyQuestionsNav');
-    const resultsButton = document.getElementById('dailyResultsNav');
-    const position = document.getElementById('dailyReviewPosition');
-    if (!nav || !questionsButton || !resultsButton || !position) return;
-    nav.classList.add('show');
-    const showingResults = dailyReviewView === 'results';
-    questionsButton.disabled = !showingResults;
-    resultsButton.disabled = showingResults;
-    questionsButton.setAttribute('aria-disabled', String(!showingResults));
-    resultsButton.setAttribute('aria-disabled', String(showingResults));
-    position.textContent = showingResults ? 'Resultaat' : 'Vragen';
-  }
-
-  function showDailyResults() {
+  function showDailyResults({ quiet = false } = {}) {
     const questions = document.getElementById('dailyQuestionView');
     const results = document.getElementById('results');
     if (!questions || !results) return;
@@ -3207,9 +3212,8 @@
     if (headline) headline.textContent = statsCopy('Jouw resultaat.', 'Your result.');
     questions.style.display = 'none';
     results.classList.add('show');
-    updateDailyReviewNav();
     results.setAttribute('tabindex', '-1');
-    if (document.getElementById('screen-puzzle').classList.contains('active')) {
+    if (!quiet && document.getElementById('screen-puzzle').classList.contains('active')) {
       results.focus({ preventScroll: true });
       window.scrollTo({ top: 0, behavior: 'instant' });
     }
@@ -3225,7 +3229,6 @@
     dailyReviewView = 'questions';
     questions.style.display = '';
     results.classList.remove('show');
-    updateDailyReviewNav();
   }
 
   function resetDailyReviewView() {
@@ -3242,6 +3245,7 @@
     if (nav) nav.classList.remove('show');
     if (results) results.classList.remove('show');
     window.cancelInlineAnswerReveal?.();
+    cancelDailyScore();
     results?.querySelectorAll(':scope > .answer-reveal-inline, :scope > .answer-reveal-sources').forEach(el => el.remove());
     dailyReviewView = 'questions';
   }
@@ -3266,7 +3270,7 @@
     el.className = 'countdown-card';
     el.setAttribute('role', 'timer');
     el.setAttribute('aria-live', 'off');
-    document.querySelector('#screen-puzzle .card').appendChild(el);
+    document.getElementById('dailyResultCountdown').appendChild(el);
     const tick = () => {
       const ms = Math.max(0, londonMidnightTarget() - new Date());
       const h = Math.floor(ms / 3600000), m = Math.floor(ms % 3600000 / 60000), s = Math.floor(ms % 60000 / 1000);
