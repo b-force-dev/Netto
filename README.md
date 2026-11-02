@@ -100,7 +100,9 @@ open — dan zijn er twee wegen:
 1. **GitHub Pro** (~$4 per maand). Niets aan de opzet veranderen; de bestaande
    workflow blijft werken.
 2. **Netlify, Vercel of Cloudflare Pages** (gratis). Die bouwen wel uit een
-   privérepo. `netlify.toml` ligt klaar; koppelen duurt een paar minuten.
+   privérepo. Laat ze de map `website/` publiceren, met
+   `python3 tools/sync_website.py --check` als bouwstap. Een eerder voorbeeld
+   staat in de git-geschiedenis (`netlify.toml`, verwijderd in november 2026).
 
 Bij optie 2 verhuist de site van `berend-wt.github.io/nettoo/` naar de hoofdmap
 van het nieuwe adres. Alle paden in de frontend zijn relatief, dus dat werkt
