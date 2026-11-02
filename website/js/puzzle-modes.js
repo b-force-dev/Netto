@@ -6,6 +6,15 @@
     const navigatie = document.querySelector('#' + prefix + 'PuzzleView .library-actions');
     if (!navigatie) return;
     const bibliotheek = prefix === 'library';
+    if (bibliotheek && libraryActivePuzzle?.id === OPENAEC_SPECIAL_ID) {
+      const hoofdactie = document.createElement('button');
+      hoofdactie.type = 'button';
+      hoofdactie.className = 'puzzel-hoofdactie' + (ingeleverd ? ' puzzel-verder' : '');
+      hoofdactie.textContent = ingeleverd ? 'Speel meer puzzels →' : 'Controleer mijn score';
+      hoofdactie.onclick = ingeleverd ? () => openPuzzles() : () => submitPuzzleView(prefix);
+      navigatie.replaceChildren(hoofdactie);
+      return;
+    }
     const reeks = bibliotheek ? libraryPuzzles.filter(p => p.difficulty === selectedDifficulty) : catalogusPuzzleList;
     const index = bibliotheek ? libraryIndex : catalogusPuzzleIndex;
     const verplaats = stap => bibliotheek ? libraryMove(stap) : catalogusPuzzleMove(stap);
@@ -158,124 +167,124 @@
     closeMenu(); openLibraryScreen('library');
   }
 
-  // A standalone, shareable special puzzle; it is deliberately not part of
-  // the regular puzzle pool, progression, daily rotation, or race selection.
-  // Peildatum 1 november 2026. Alle drie de getallen zijn op GitHub na te
-  // gaan aan de hand van de publicatie- en aanmaakdatums.
+  // OpenAEC-special: een losse, deelbare puzzel (route /openaec/) die bewust
+  // buiten de gewone puzzelreeks, de Daily en de race blijft. Alleen Nederlands.
+  // Peildatum 1 november 2026 (staat in de kop, niet in de vragen); alle drie
+  // de getallen zijn op GitHub na te gaan via de publicatie- en aanmaakdatums.
+  // Opnieuw gecontroleerd op 2 november 2026: 97, 74 en 23 kloppen.
   const OPENAEC_SPECIAL_ID = 'openaec-special-20261101';
-  function openAecSpecialPuzzle() {
-    return {
-      id: OPENAEC_SPECIAL_ID,
-      number: 'OpenAEC',
-      name: 'OpenAEC Special',
-      operator: '−',
-      q1_label: statsCopy(
-        'Hoeveel releases had Open CAD Studio op 1 november 2026 op GitHub gepubliceerd?',
-        'As of 1 November 2026, how many releases had Open CAD Studio published on GitHub?'
-      ),
-      q1_answer: 97,
-      q2_label: statsCopy(
-        'Hoeveel openbare repositories had de OpenAEC Foundation op 1 november 2026 op GitHub?',
-        'How many public repositories did the OpenAEC Foundation have on GitHub on 1 November 2026?'
-      ),
-      q2_answer: 74,
-      q3_label: statsCopy(
-        'Hoeveel releases had Open Calc Studio op 1 november 2026 gepubliceerd?',
-        'As of 1 November 2026, how many releases had Open Calc Studio published?'
-      ),
-      q3_answer: 23,
-      calculation: '97 − 74 = 23',
-      categories: ['Open-source software', 'Software releases', 'GitHub'],
-      difficulty: 'hard',
-      source_links: [
-        'https://github.com/HakanSeven12/OpenCADStudio/releases',
-        'https://github.com/orgs/OpenAEC-Foundation/repositories',
-        'https://github.com/OpenAEC-Foundation/open-calc-studio/releases',
-      ],
-    };
+  const OPENAEC_SPECIAL_PUZZLE = Object.freeze({
+    id: OPENAEC_SPECIAL_ID,
+    number: 'OpenAEC',
+    name: 'OpenAEC Special',
+    operator: '−',
+    q1_label: 'Hoeveel releases heeft Open CAD Studio op GitHub gepubliceerd?',
+    q1_answer: 97,
+    q2_label: 'Hoeveel openbare repositories heeft de OpenAEC Foundation op GitHub?',
+    q2_answer: 74,
+    q3_label: 'Hoeveel releases heeft Open Calc Studio op GitHub gepubliceerd?',
+    q3_answer: 23,
+    calculation: '97 − 74 = 23',
+    categories: ['Open-source software', 'Software releases', 'GitHub'],
+    difficulty: 'hard',
+  });
+
+  // Bronpanelen ("Waar komt dit vandaan?") in de review en de reveal lezen
+  // NETTO_BRONNEN op vraagtekst, net als bij de gewone puzzels.
+  const OPENAEC_BRONNEN = {
+    [OPENAEC_SPECIAL_PUZZLE.q1_label]: {
+      bron: 'https://github.com/HakanSeven12/OpenCADStudio/releases',
+      uitleg: 'Op 1 november 2026 stonden er 97 releases van Open CAD Studio op GitHub; de nieuwste was v2026.44.',
+    },
+    [OPENAEC_SPECIAL_PUZZLE.q2_label]: {
+      bron: 'https://github.com/orgs/OpenAEC-Foundation/repositories',
+      uitleg: 'Op 1 november 2026 had de OpenAEC Foundation 74 openbare repositories op GitHub, inclusief 3 forks en 1 gearchiveerde repository.',
+    },
+    [OPENAEC_SPECIAL_PUZZLE.q3_label]: {
+      bron: 'https://github.com/OpenAEC-Foundation/open-calc-studio/releases',
+      uitleg: 'Open Calc Studio had op 1 november 2026 23 releases gepubliceerd; de laatste was v0.13.0 van 12 september 2026.',
+    },
+  };
+
+  const OPENAEC_LOGO = {
+    bestand: 'fotos/assets/openaec-logo.svg',
+    pagina: 'https://open-aec.com/',
+    maker: 'OpenAEC Foundation',
+    licentie: 'logo',
+    vraag: 2,
+  };
+
+  function openAecBronlink() {
+    const link = document.createElement('a');
+    link.href = OPENAEC_LOGO.pagina;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = 'open-aec.com ↗';
+    return link;
   }
 
+  // Zelfde opbouw als renderPuzzelfoto (photo-credits.js), alleen met het
+  // logo van OpenAEC in plaats van een Wikimedia-foto. Het logo hoort bij
+  // vraag 2 (de OpenAEC Foundation) en staat dus bij het middelste blok.
   function addOpenAecPuzzleImage() {
     const list = document.getElementById('libraryQuestionList');
-    const firstQuestion = list?.querySelector('.q-block');
-    if (!list || !firstQuestion) return;
-
+    const block = list?.querySelectorAll('.q-block')[OPENAEC_LOGO.vraag - 1];
+    if (!list || !block) return;
+    list.querySelectorAll('.puzzelfoto').forEach(el => el.remove());
     list.classList.add('puzzelfoto-lijst');
     const figure = document.createElement('figure');
-    figure.className = 'puzzelfoto';
+    figure.className = 'puzzelfoto puzzelfoto-logo';
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'daily-photo';
     button.setAttribute('aria-haspopup', 'dialog');
     button.setAttribute('aria-controls', 'puzzelFotoDialog');
     const image = document.createElement('img');
-    image.src = new URL('fotos/assets/openaec-cube.png', document.baseURI).href;
-    image.alt = statsCopy('Oranje isometrische kubus', 'Orange isometric cube illustration');
+    image.src = new URL(OPENAEC_LOGO.bestand, document.baseURI).href;
+    image.alt = 'Logo van de OpenAEC Foundation';
     image.width = 132;
     image.height = 104;
     image.decoding = 'async';
+    image.onerror = () => { figure.style.visibility = 'hidden'; };
     const caption = document.createElement('span');
-    caption.textContent = 'OpenAEC special';
+    caption.textContent = 'Bij vraag ' + OPENAEC_LOGO.vraag + ' ↗';
     button.append(image, caption);
+    const credit = document.createElement('figcaption');
+    credit.className = 'daily-photo-credit';
+    credit.setAttribute('data-i18n-skip', '');
+    credit.append(document.createTextNode(OPENAEC_LOGO.maker + ' · ' + OPENAEC_LOGO.licentie + ' · '), openAecBronlink());
     button.addEventListener('click', () => {
       const dialog = document.getElementById('puzzelFotoDialog');
       if (!dialog) return;
       const enlarged = dialog.querySelector('img');
       enlarged.src = image.src;
       enlarged.alt = image.alt;
-      dialog.querySelector('p').textContent = statsCopy('Illustratie bij de OpenAEC-special.', 'Illustration supplied for the OpenAEC special puzzle.');
+      dialog.querySelector('p').replaceChildren(
+        document.createTextNode(OPENAEC_LOGO.maker + ' · ' + OPENAEC_LOGO.licentie + ' · '), openAecBronlink());
       dialog.showModal();
     });
-    const credit = document.createElement('figcaption');
-    credit.className = 'daily-photo-credit';
-    credit.textContent = statsCopy('Beeld aangeleverd voor deze puzzel', 'Image supplied for this puzzle');
     figure.append(button, credit);
-    firstQuestion.prepend(figure);
+    block.prepend(figure);
   }
 
   function openOpenAecPuzzle() {
     closeMenu();
     openLibraryScreen('library');
-    const stats = document.getElementById('libraryStats');
-    const difficulties = document.getElementById('libraryDifficulties');
-    const cards = document.getElementById('libraryCardGrid');
-    const archive = document.getElementById('dailyPuzzleList');
     const view = document.getElementById('libraryPuzzleView');
     if (!view) return;
-
-    if (stats) stats.style.display = 'none';
-    if (difficulties) difficulties.style.display = 'none';
-    if (cards) cards.style.display = 'none';
-    if (archive) archive.style.display = 'none';
-    document.getElementById('libraryPageKicker').textContent = 'NETTO · OPENAEC SPECIAL';
-    document.getElementById('libraryTitle').textContent = 'OpenAEC Special';
-    document.getElementById('librarySubtitle').textContent = statsCopy(
-      'Drie OpenAEC-feiten. Eén som.',
-      'Three OpenAEC facts. One equation.'
-    );
-
-    const actions = view.querySelector('.library-actions');
-    if (actions) actions.style.display = 'none';
-    const returnButton = view.querySelector('.bk-overview-button');
-    if (returnButton) {
-      returnButton.textContent = statsCopy('← Naar home', '← Back home');
-      returnButton.onclick = () => goHome();
-    }
-
-    view.style.display = 'block';
-    const puzzle = openAecSpecialPuzzle();
-    selectedDifficulty = puzzle.difficulty;
-    renderPuzzleView(
-      'library',
-      puzzle,
-      statsCopy('OPENAEC SPECIAL · 1/1', 'OPENAEC SPECIAL · 1/1')
-    );
-    addOpenAecPuzzleImage();
-    const checkButton = document.querySelector('#libraryQuestionList .btn-check');
-    if (checkButton) checkButton.textContent = statsCopy('Controleer mijn score', 'Check my score');
-    document.querySelectorAll('#libraryQuestionList input').forEach(input => {
-      input.placeholder = statsCopy('Jouw antwoord', 'Your answer');
+    ['libraryStats', 'libraryDifficulties', 'libraryCardGrid', 'dailyPuzzleList'].forEach(id => {
+      const element = document.getElementById(id);
+      if (element) element.style.display = 'none';
     });
+    document.getElementById('libraryPageKicker').textContent = 'NETTO × OPENAEC';
+    document.getElementById('libraryTitle').textContent = 'OpenAEC Special';
+    document.getElementById('librarySubtitle').textContent = 'Drie feiten over open-source bouwsoftware. Eén som.';
+
+    window.NETTO_BRONNEN = Object.assign(window.NETTO_BRONNEN || {}, OPENAEC_BRONNEN);
+    view.style.display = 'block';
+    selectedDifficulty = OPENAEC_SPECIAL_PUZZLE.difficulty;
+    renderPuzzleView('library', OPENAEC_SPECIAL_PUZZLE, 'OpenAEC Special · 1 november 2026');
+    addOpenAecPuzzleImage();
   }
 
   // SLAPEND, MET OPZET.

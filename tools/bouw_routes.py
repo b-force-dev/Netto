@@ -14,7 +14,7 @@ DATA = ROOT / "data/netto_frontend_puzzles.js"
 SCREENS = (
     "daily", "daily-archive", "puzzles", "connections", "race", "live-rounds",
     "race/online", "leaderboard", "settings", "how-to-play",
-    "submit-question", "about", "photo-credits",
+    "submit-question", "about", "photo-credits", "openaec",
 )
 
 

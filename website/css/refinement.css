@@ -3348,3 +3348,6 @@ html[data-landing-preview="editorial"] .home-quick-card strong { max-width: none
   #racePlay #raceQuestionList .puzzelfoto { width: 106px; margin: 0 0 12px 12px; }
   #racePlay #raceQuestionList .puzzelfoto .daily-photo img { height: 80px; }
 }
+
+/* OpenAEC-special: het logo past heel in het fotokader in plaats van bijgesneden te worden. */
+.puzzelfoto-logo .daily-photo img { object-fit: contain; padding: 8px; background: #FFFFFF; }
