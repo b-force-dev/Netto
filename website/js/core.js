@@ -402,7 +402,8 @@
       q2_label: row.question_2,
       q3_label: row.question_3,
       date: row.scheduled_date,
-      categories: (row.question_details || []).map(detail => detail.category).filter(Boolean),
+      // Positie behouden: een ontbrekende categorie mag de rest niet verschuiven.
+      categories: (row.question_details || []).map(detail => detail.category || null),
       image_path: row.image_path,
       image_alt: row.image_alt,
       image_caption: row.image_caption,
@@ -630,11 +631,12 @@
     return kaart;
   })();
 
+  // Altijd drie plekken, in vraagvolgorde. Ontbreekt er een, dan zoeken we hem
+  // op via de vraagtekst; lukt dat niet, dan blijft de plek leeg (null).
   function categorieënVoor(puzzle) {
-    if (Array.isArray(puzzle.categories) && puzzle.categories.length) return puzzle.categories;
-    return ['q1', 'q2', 'q3']
-      .map(slot => VRAAG_CATEGORIE.get((puzzle[`${slot}_label`] || '').trim()))
-      .filter(Boolean);
+    const eigen = Array.isArray(puzzle.categories) ? puzzle.categories : [];
+    return ['q1', 'q2', 'q3'].map((slot, i) =>
+      eigen[i] || VRAAG_CATEGORIE.get((puzzle[`${slot}_label`] || '').trim()) || null);
   }
 
   function datumInWoorden(isoDatum) {
@@ -729,7 +731,7 @@
     if (!puzzle) return;
     const categories = categorieënVoor(puzzle);
     const operator = puzzle.operator || '×';
-    const translatedCategories = categories.map(category => window.NettoI18n?.t(category) || category);
+    const translatedCategories = categories.map(category => category ? (window.NettoI18n?.t(category) || category) : '');
     // Staat er voor vandaag niets ingepland, dan valt de site terug op de
     // nieuwste puzzel die er wél is. Dat gebeurde op 7 september ongemerkt: de
     // speler kreeg die van de 6e voorgeschoteld alsof het de daily van vandaag
@@ -749,12 +751,14 @@
     if (equation) equation.setAttribute('aria-label', `${translatedCategories[0] || 'A'} ${operator} ${translatedCategories[1] || 'B'} = ${translatedCategories[2] || 'C'}`);
     const card = document.querySelector('.home-daily-card');
     if (card) card.dataset.operator = operator;
-    categories.slice(0, 3).forEach((category, index) => {
+    categories.forEach((category, index) => {
       const icon = document.getElementById(`homeDailyCategory${index + 1}`);
       if (!icon) return;
-      renderDailyCategoryReel(icon, category, index, String(puzzle.date || puzzle.id || puzzle.number || 'daily'));
-      icon.title = translatedCategories[index] || category;
-      icon.setAttribute('aria-label', translatedCategories[index] || category);
+      // Zonder categorie toont dailyCategoryIcon het neutrale lampje.
+      renderDailyCategoryReel(icon, category || '', index, String(puzzle.date || puzzle.id || puzzle.number || 'daily'));
+      const naam = translatedCategories[index] || statsCopy('Vraag ', 'Question ') + (index + 1);
+      icon.title = naam;
+      icon.setAttribute('aria-label', naam);
     });
   }
 
