@@ -361,7 +361,7 @@
     const catSelect = document.getElementById('catalogusCategory');
     const vragenSelect = document.getElementById('vragenCategory');
     if (!catSelect || !vragenSelect) return;
-    const categories = [...new Set(allCatalogusPuzzles.flatMap(p => p.categories || []))].sort((a,b) => a.localeCompare(b));
+    const categories = [...new Set(allCatalogusPuzzles.flatMap(p => (p.categories || []).filter(Boolean)))].sort((a,b) => a.localeCompare(b));
     const options = '<option value="">Alle categorieën</option>' + categories.map(c => `<option value="${c.replace(/"/g, '&quot;')}">${c}</option>`).join('');
     catSelect.innerHTML = options;
     vragenSelect.innerHTML = options;
