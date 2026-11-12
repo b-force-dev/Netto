@@ -38,6 +38,11 @@ jobs:
       - name: Controleer of website/ gelijk is aan de frontend
         run: python tools/sync_website.py --check
 
+      - name: Controleer of de zoekmachinegegevens in index.html actueel zijn
+        run: python tools/seo.py --bron-controleren
+
+      # Maakt per route een eigen pagina (titel, beschrijving, canonical) en
+      # schrijft sitemap.xml, robots.txt en 404.html.
       - name: Maak directe adressen voor de spelpagina's
         run: python tools/bouw_routes.py
 
