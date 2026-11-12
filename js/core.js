@@ -92,7 +92,7 @@
   //
   // Speel je lokaal, dan heeft je vriend niets aan http://127.0.0.1; in dat
   // geval valt hij terug op het gepubliceerde adres.
-  const GEPUBLICEERD = 'https://b-force-games.github.io/nettoo/';
+  const GEPUBLICEERD = 'https://b-force-dev.github.io/nettoo/';
   function speelAdres() {
     try {
       const u = new URL(window.location.href);

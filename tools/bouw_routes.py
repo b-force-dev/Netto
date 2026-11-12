@@ -71,8 +71,8 @@ def make_entry(source: str, route: str) -> str:
     if "<head>" not in source:
         raise ValueError("De HTML-pagina heeft geen head-element")
     source = source.replace(
-        'content="https://b-force-games.github.io/nettoo/"',
-        f'content="https://b-force-games.github.io/nettoo/{route}/"', 1,
+        'content="https://b-force-dev.github.io/nettoo/"',
+        f'content="https://b-force-dev.github.io/nettoo/{route}/"', 1,
     )
     return source.replace("<head>", f'<head>\n<base href="{base}">', 1)
 
