@@ -19,12 +19,19 @@ MIRROR_FILES = (
     "admin.html",
     "stats.html",
     "favicon.svg",
+    # Installeerbare app: manifest, service worker (moet in de root staan om de
+    # hele site te beslaan), offline-pagina en het icoon voor iOS.
+    "manifest.webmanifest",
+    "sw.js",
+    "offline.html",
+    "apple-touch-icon.png",
     "css/styles.css",
     "css/refinement.css",
     "css/answer-reveal.css",
     "css/live-rounds.css",
     "css/admin.css",
     "css/stats-page.css",
+    "css/pwa.css",
     "js/core.js",
     "js/answer-reveal.js",
     "js/question-context.js",
@@ -41,6 +48,7 @@ MIRROR_FILES = (
     "js/i18n.js",
     "js/daily-photos.js",
     "js/photo-credits.js",
+    "js/pwa.js",
     "data/netto_translations_en.js",
     "data/netto_bronnen.js",
     "data/netto_bronnen_en.js",
@@ -52,6 +60,7 @@ MIRROR_FILES = (
 # fotos/assets, dus een handmatige bestandslijst raakt hier gegarandeerd achter.
 MIRROR_DIRS = (
     "fotos/assets",
+    "icons",  # PNG-iconen van de app, gemaakt door tools/maak_pwa_iconen.py
 )
 
 
