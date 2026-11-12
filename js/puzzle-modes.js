@@ -13,6 +13,7 @@
       hoofdactie.textContent = ingeleverd ? 'Speel meer puzzels →' : 'Controleer mijn score';
       hoofdactie.onclick = ingeleverd ? () => openPuzzles() : () => submitPuzzleView(prefix);
       navigatie.replaceChildren(hoofdactie);
+      if (ingeleverd) navigatie.append(NettoShare.libraryButton());
       return;
     }
     const reeks = bibliotheek ? libraryPuzzles.filter(p => p.difficulty === selectedDifficulty) : catalogusPuzzleList;
@@ -29,6 +30,7 @@
       ? laatste ? () => bibliotheek ? openPuzzles() : openCatalogusLibrary() : () => verplaats(1)
       : () => submitPuzzleView(prefix);
     navigatie.replaceChildren(hoofdactie);
+    if (ingeleverd) navigatie.append(NettoShare.libraryButton());
     if (!ingeleverd) {
       const overslaan = document.createElement('button');
       overslaan.type = 'button';
