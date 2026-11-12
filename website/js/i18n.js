@@ -688,15 +688,20 @@
   });
 
   document.documentElement.lang = language;
-  if (language === 'en') {
-    if (document.title === 'Netto · dagelijkse schatting') document.title = ui['Netto · dagelijkse schatting'];
-    const description = document.querySelector('meta[name="description"]');
-    if (description) description.content = ui['Schat drie feiten, vind het verband. Elke dag een nieuwe puzzel.'];
-    document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach((meta) => { meta.content = ui['Netto · dagelijkse schatting']; });
-    document.querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]').forEach((meta) => { meta.content = ui['Drie vragen. Eén verband. Elke dag een nieuwe puzzel.']; });
+  // De statische kop (titel, beschrijving, deelkaarten) en de crawlbare tekst zijn Engels,
+  // de standaardtaal. Elementen met data-nl dragen de Nederlandse versie; die zetten we
+  // hier in als de speler Nederlands heeft gekozen. tools/seo.py schrijft die attributen.
+  function applyDutchText(root) {
+    root.querySelectorAll('[data-nl]').forEach((element) => {
+      const text = element.dataset.nl;
+      if (element.tagName === 'META') element.content = text;
+      else element.textContent = text;
+    });
   }
+  if (language === 'nl') applyDutchText(document.head);
 
   document.addEventListener('DOMContentLoaded', () => {
+    if (language === 'nl') applyDutchText(document.body);
     translateTree(document.body);
     updateLanguageControls();
     const observer = new MutationObserver((mutations) => {
