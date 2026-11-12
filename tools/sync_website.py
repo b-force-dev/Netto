@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -12,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WEBSITE = ROOT / "website"
+ASSET_REF = re.compile(r'(?:src|href)="((?:css|js|data)/[^"?#]+\.(?:css|js))')
 
 # Only browser/runtime files belong in the mirror. Source work happens in ROOT.
 MIRROR_FILES = (
@@ -55,8 +57,24 @@ MIRROR_DIRS = (
 )
 
 
+def referenced_assets() -> list[str]:
+    """Lokale css/js/data-bestanden waar de pagina's naar verwijzen.
+
+    Zo komt een nieuw bestand vanzelf mee; een vergeten regel in MIRROR_FILES
+    gaf anders een 404 op de live site.
+    """
+    found: list[str] = []
+    for page in ("index.html", "stats.html", "admin.html"):
+        text = (ROOT / page).read_text(encoding="utf-8")
+        for match in ASSET_REF.finditer(text):
+            if match.group(1) not in found:
+                found.append(match.group(1))
+    return found
+
+
 def mirrored_files() -> tuple[str, ...]:
     files = list(MIRROR_FILES)
+    files += [path for path in referenced_assets() if path not in files]
     for relative_dir in MIRROR_DIRS:
         source_dir = ROOT / relative_dir
         if not source_dir.is_dir():
