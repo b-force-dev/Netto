@@ -669,6 +669,7 @@
       + (isRecord ? `<span class="race-summary-record">${statsCopy('Nieuw persoonlijk record', 'New personal best')}</span>` : '');
     document.getElementById('raceResultsMeta').innerHTML = meta;
     document.getElementById('raceReviewList').innerHTML = review;
+    window.NettoShare?.mountRace({ correct, attempted, longest, tolerance: raceState.tolerantie, seconds: raceState.totalSeconds });
     document.getElementById('racePlay').style.display = 'none';
     document.getElementById('raceResults').style.display = 'block';
     if (raceDuelSession) {
