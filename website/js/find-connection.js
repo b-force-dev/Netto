@@ -489,6 +489,7 @@ function submitConnection() {
   const equation = document.createElement('p');
   equation.textContent = fmt(result.answers[0]) + ' ' + state.operator + ' ' + fmt(result.answers[1]) + (correct ? ' = ' : ' ≠ ') + fmt(result.answers[2]);
   connection.append(title, equation);
+  connection.append(NettoShare.connectionButton(state.puzzle, result));
   if (!correct) {
     const solution = validConnections(answers)[0];
     const [a, b, c] = solution.order.map(i => fmt(answers[i]));

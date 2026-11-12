@@ -45,4 +45,6 @@ function browser(options = {}) {
   await new Promise(resolve => setImmediate(resolve));
   offline.window.nettoTrack('visit'); assert.equal(offline.calls.length,1);
   console.log('Usage privacy, identity, deduplication, startup and failure checks passed.');
-})();
+  // Sluit expliciet af: een open handle hield de test anders minutenlang vast.
+  process.exit(0);
+})().catch(error => { console.error(error); process.exit(1); });
