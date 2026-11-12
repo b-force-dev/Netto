@@ -118,6 +118,7 @@
   function initSupabaseClient() {
     if (SUPABASE_URL && SUPABASE_ANON_KEY && window.supabase) {
       supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      window.nettoUsageClient = supabaseClient;
     }
   }
   initSupabaseClient();
@@ -1175,6 +1176,7 @@
       return;
     }
     const recent = snapshot.entries.slice(-30);
+    window.nettoTrack?.('share', { kind:'stats' });
     const emojis = recent.map(entry => STATS_BUCKETS[statsBucketIndex(entry.accuracy)].emoji);
     const rows = [];
     for (let index = 0; index < emojis.length; index += 10) rows.push(emojis.slice(index, index + 10).join(' '));
@@ -2423,6 +2425,7 @@
     try {
       const result = await requestDailyResult(puzzle, [g1,g2,g3]);
       applyDailyResult(puzzle, result);
+      window.nettoTrack?.('daily_finish', { mode:puzzle.date === TODAY_STR ? 'daily' : 'archive', once:puzzle.date });
       const guesses = result.guesses.map(Number);
       const avgFactor = Number(result.factor);
       const plays = getLocalPlays();
@@ -2643,6 +2646,7 @@
     const pKey = getActivePuzzleKey();
     const play = plays[pKey] || plays[TODAY_STR];
     if (!play) return;
+    window.nettoTrack?.('share', { mode:'daily', kind:'score' });
 
     const echt = PUZZEL_ECHT();
     const s1 = scoreVraag(play.g1, echt.a1);
