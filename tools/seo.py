@@ -57,7 +57,7 @@ PAGES: dict[str, dict] = {
         ),
         "h1": "Netto: a daily estimation game",
         "body": [
-            "Every day Netto gives you three trivia questions that each have a number as their answer. The answers are linked by a simple calculation, such as 4 × 2 = 8. Estimate all three, use the connection as a clue and try to stay close to the real answers.",
+            "Every day Netto gives you three trivia questions that each have a number as their answer. The answers are linked by a simple calculation, such as 8 × 11 = 88. Estimate all three, use the connection as a clue and try to stay close to the real answers.",
             "Play the Daily, replay the archive, race the clock in the Puzzle Race or challenge friends in Live Rounds.",
         ],
     },
@@ -82,14 +82,14 @@ PAGES: dict[str, dict] = {
         "body": [
             "Estimate three answers. Use the equation as an extra clue. The lowest factor wins.",
             "1. Estimate all three answers. Enter your best estimate for each question. You do not need to know the exact answer.",
-            "2. Check the connection. The first two answers combine to make the third, for example 4 × 2 = 8. Use an answer you trust to check the other two.",
+            "2. Check the connection. The first two answers combine to make the third, for example 8 × 11 = 88. Use an answer you trust to check the other two.",
             "3. Keep your factor low. An exact answer scores 1.00×. If you are twice too high or too low, you score 2.00×. Your final score is the average of all three.",
         ],
         "faq": [
             ("How do you play Netto?",
              "Every puzzle has three questions. Enter your best estimate for each one; you do not need to know the exact answer."),
             ("What is the connection between the three answers?",
-             "The first two answers combine to make the third, for example 4 × 2 = 8. Use an answer you trust to check the other two."),
+             "The first two answers combine to make the third, for example 8 × 11 = 88. Use an answer you trust to check the other two."),
             ("How is the score calculated?",
              "Your score is a factor. An exact answer scores 1.00×. If you are twice too high or too low, you score 2.00×. Your final score is the average of the three, and the lowest factor wins."),
         ],

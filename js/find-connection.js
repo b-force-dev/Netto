@@ -122,7 +122,7 @@ function renderConnectionStart() {
   document.getElementById('bkPlayedCount').textContent = results.length + '/' + connectionPool.length;
   document.getElementById('bkExactCount').textContent = found + '/' + results.length;
   document.getElementById('bkAverageScore').textContent = results.length
-    ? (results.reduce((sum, r) => sum + r.factor, 0) / results.length).toFixed(2) + '×' : '—';
+    ? (results.reduce((sum, r) => sum + r.factor, 0) / results.length).toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×' : '—';
   const open = connectionPool.length - results.length;
   document.getElementById('bkProgress').textContent = !connectionPool.length
     ? statsCopy('Er zijn nog geen geschikte puzzels beschikbaar.', 'No suitable puzzles are available yet.')
@@ -163,7 +163,7 @@ function renderConnectionStart() {
     const label = document.createElement('span');
     if (result) {
       label.className = result.connectionCorrect ? 'status-correct' : 'status-incorrect';
-      label.textContent = (result.connectionCorrect ? '✓ ' : '≠ ') + result.factor.toFixed(2) + '×';
+      label.textContent = (result.connectionCorrect ? '✓ ' : '≠ ') + result.factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×';
     } else {
       label.textContent = statsCopy('Speel →', 'Play →');
     }
@@ -171,7 +171,7 @@ function renderConnectionStart() {
     // Symbool en kleur zeggen hetzelfde als deze tekst; kleur is nooit het enige signaal.
     button.setAttribute('aria-label', statsCopy('Puzzel ', 'Puzzle ') + puzzle.number + ', ' + (result
       ? (result.connectionCorrect ? statsCopy('verband gevonden', 'connection found') : statsCopy('verband niet gevonden', 'connection not found'))
-        + ', ' + statsCopy('factor ', 'factor ') + result.factor.toFixed(2) + '×'
+        + ', ' + statsCopy('factor ', 'factor ') + result.factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×'
       : statsCopy('nog niet gespeeld', 'not played yet')));
     button.onclick = () => startConnection(index);
     grid.append(button);
@@ -404,8 +404,8 @@ function renderConnectionRule(previous) {
   if (previous) {
     const note = document.createElement('span');
     note.className = 'connection-replay-note';
-    note.textContent = ' ' + statsCopy('Al gespeeld (' + previous.factor.toFixed(2) + '×): dit is een oefenronde, je eerste score blijft staan.',
-      'Already played (' + previous.factor.toFixed(2) + '×): this is a practice round, your first score stays.');
+    note.textContent = ' ' + statsCopy('Al gespeeld (' + previous.factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×): dit is een oefenronde, je eerste score blijft staan.',
+      'Already played (' + previous.factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×): this is a practice round, your first score stays.');
     rule.append(note);
   }
 }
@@ -619,8 +619,8 @@ function submitConnection() {
   const detail = document.createElement('p');
   detail.className = 'connection-verdict-detail';
   detail.textContent = previous
-    ? statsCopy('Oefenronde: factor ' + factor.toFixed(2) + '×. Je score blijft ' + previous.factor.toFixed(2) + '×.',
-                'Practice round: factor ' + factor.toFixed(2) + '×. Your score stays ' + previous.factor.toFixed(2) + '×.')
+    ? statsCopy('Oefenronde: factor ' + factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×. Je score blijft ' + previous.factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×.',
+                'Practice round: factor ' + factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×. Your score stays ' + previous.factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×.')
     : correct
       ? statsCopy('De drie echte antwoorden vormen precies deze som.', 'The three real answers form exactly this equation.')
       : statsCopy('Je schattingen tellen nog steeds mee in je factor.', 'Your estimates still count towards your factor.');
@@ -633,7 +633,7 @@ function submitConnection() {
   document.getElementById('connectionAnnouncement').textContent = (correct
     ? statsCopy('Verband gevonden. ', 'Connection found. ') + equation.textContent
     : statsCopy('Verband niet gevonden. Het verband is ', 'Connection not found. The connection is ') + solutionText)
-    + '. ' + statsCopy('Gemiddelde factor ', 'Average factor ') + factor.toFixed(2) + '×.';
+    + '. ' + statsCopy('Gemiddelde factor ', 'Average factor ') + factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×.';
   document.getElementById('connectionSkip').hidden = true;
   const liveFormula = document.getElementById('connectionLiveFormula');
   if (liveFormula) liveFormula.style.display = 'none';
@@ -771,7 +771,7 @@ function submitChainPuzzle() {
   document.getElementById('bkQuestionList').prepend(equation, share);
   document.getElementById('connectionSkip').hidden = true;
   document.getElementById('bkSubmitButton').textContent = statsCopy('Volgende ketting →', 'Next chain →');
-  document.getElementById('connectionAnnouncement').textContent = statsCopy('Gemiddelde factor ', 'Average factor ') + factor.toFixed(2) + '×. ' + equation.textContent;
+  document.getElementById('connectionAnnouncement').textContent = statsCopy('Gemiddelde factor ', 'Average factor ') + factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×. ' + equation.textContent;
   window.nettoTrack?.('puzzle_finish', {mode:'connection', once:state.puzzle.id});
   document.getElementById('bkSubmitButton').focus({preventScroll:true});
 }

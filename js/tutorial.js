@@ -4,12 +4,11 @@
   const ROOT = new URL('../', document.currentScript.src);
   const SEEN = 'netto_tutorial_seen_v1';
   const copy = (en, nl) => window.NettoI18n?.locale() === 'nl' ? nl : en;
-  // Verified: https://www.mbl.edu/news/why-do-spiders-have-8-legs-live-science
-  // https://australian.museum/learn/animals/spiders/
-  const answers = [4, 2, 8];
+  // Same internationally familiar example as the home page and how-to-play.
+  const answers = [8, 11, 88];
   const factorText = value => value.toLocaleString(window.NettoI18n?.locale() === 'nl' ? 'nl-NL' : 'en-GB', { minimumFractionDigits:2, maximumFractionDigits:2 });
-  const questions = () => [copy('Legs on a dog?', 'Poten van een hond?'),
-    copy('Legs on a human?', 'Benen van een mens?'), copy('Legs on a spider?', 'Poten van een spin?')];
+  const questions = () => [copy('Legs on a spider?', 'Poten van een spin?'),
+    copy('Players on a football team on the pitch?', 'Spelers van een voetbalteam op het veld?'), copy('Keys on a standard piano?', 'Toetsen van een standaardpiano?')];
   let dialog, content, step, guesses, corrected, opener, chip;
   const el = (tag, text, className) => {
     const node = document.createElement(tag);
@@ -39,7 +38,7 @@
   function render() {
     content.replaceChildren();
     dialog.querySelector('.tutorial-progress').textContent = copy('Practice', 'Oefening') + ' · ' + (step + 1) + ' / 3';
-    const title = el('h2', [copy('Three guesses. One connection.', 'Drie schattingen. Eén verband.'),
+    const title = el('h2', [copy('Three questions. One equation.', 'Drie vragen. Eén som.'),
       copy('Let the connection help.', 'Laat het verband helpen.'), copy('You’ve got it!', 'Je hebt het door!')][step]);
     title.id = 'tutorialTitle'; title.tabIndex = -1;
     content.append(title);
@@ -57,7 +56,7 @@
         input.setAttribute('enterkeyhint', i < 2 ? 'next' : 'go');
         input.setAttribute('aria-describedby', 'tutorialError');
         input.placeholder = copy('Your estimate', 'Jouw schatting');
-        bindWholeNumberInput(input, () => input.setCustomValidity(''), true);
+        bindWholeNumberInput(input, () => input.setCustomValidity(''));
         input.addEventListener('keydown', event => {
           if (event.key === 'Enter' && i < 2) {
             event.preventDefault(); form.querySelectorAll('input')[i + 1].focus();
@@ -73,11 +72,8 @@
         event.preventDefault();
         const inputs = [...form.querySelectorAll('input')];
         // Same locale-aware parser as the Daily, with k/m shorthand. Reject malformed grouping.
-        const pattern = window.NettoI18n?.locale() === 'nl'
-          ? /^(?:\d+|\d{1,3}(?:\.\d{3})+)(?:,\d+)?\s*[km]?$/i
-          : /^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?\s*[km]?$/i;
         guesses = inputs.map(input => parseFormattedNumber(input.value.trim()));
-        const invalid = inputs.findIndex((input, i) => !pattern.test(input.value.trim()) || !Number.isSafeInteger(guesses[i]) || guesses[i] <= 0);
+        const invalid = inputs.findIndex((input, i) => !Number.isSafeInteger(guesses[i]) || guesses[i] <= 0);
         if (invalid >= 0) {
           error.textContent = copy('Enter a positive whole number for each guess.', 'Vul voor elke schatting een positief heel getal in.');
           inputs[invalid].focus(); return;
@@ -86,22 +82,22 @@
       };
       content.append(form);
     } else if (step === 1) {
-      content.append(el('p', copy('A dog has 4 legs. A human has 2. In this puzzle, A × B = C. What does that tell you about the spider?',
-        'Een hond heeft 4 poten. Een mens heeft 2 benen. In deze puzzel geldt A × B = C. Wat zegt dat over de spin?')));
-      content.append(el('div', '4 × 2 = ' + (corrected ? '8' : '?'), 'tutorial-equation'));
-      content.append(el('p', copy('Your spider guess: ', 'Jouw schatting voor de spin: ') + fmt(guesses[2]) + (corrected ? ' → 8' : '')));
-      if (!corrected) content.append(button(copy('Use the connection: 4 × 2', 'Gebruik het verband: 4 × 2'), () => {
+      content.append(el('p', copy('A spider has 8 legs. A football team has 11 players on the pitch. In this puzzle, A × B = C. What does that tell you about the piano?',
+        'Een spin heeft 8 poten. Een voetbalteam heeft 11 spelers op het veld. In deze puzzel geldt A × B = C. Wat zegt dat over de piano?')));
+      content.append(el('div', '8 × 11 = ' + (corrected ? '88' : '?'), 'tutorial-equation'));
+      content.append(el('p', copy('Your piano guess: ', 'Jouw schatting voor de piano: ') + fmt(guesses[2]) + (corrected ? ' → 88' : '')));
+      if (!corrected) content.append(button(copy('Use the connection: 8 × 11', 'Gebruik het verband: 8 × 11'), () => {
         corrected = true; render();
       }, 'tutorial-primary'));
       else {
-        const status = el('p', copy('8 legs! Two answers you trust can improve the third.', '8 poten! Met twee zekere antwoorden verbeter je het derde.'), 'tutorial-insight');
+        const status = el('p', copy('88 keys! Two answers you trust can improve the third.', '88 toetsen! Met twee zekere antwoorden verbeter je het derde.'), 'tutorial-insight');
         status.setAttribute('role', 'status'); content.append(status);
         content.append(button(copy('Reveal my practice score →', 'Bekijk mijn oefenscore →'), () => {
           step = 2; render(); remember(); window.nettoTrack?.('tutorial_done');
         }, 'tutorial-primary'));
       }
     } else {
-      content.append(el('div', '4 × 2 = 8', 'tutorial-equation'));
+      content.append(el('div', '8 × 11 = 88', 'tutorial-equation'));
       const before = guesses.reduce((sum, g, i) => sum + scoreVraag(g, answers[i]), 0) / 3;
       content.append(el('p', copy('Your first guesses: ', 'Je eerste schattingen: ') + guesses.map(fmt).join(' · ')));
       content.append(el('p', copy('Average factor: ', 'Gemiddelde factor: ') + factorText(before) + '× → ' + factorText(1) + '×', 'tutorial-insight'));
@@ -111,8 +107,8 @@
       content.append(button(copy('Play today’s Daily', 'Speel de Daily van vandaag'), () => {
         close(); window.NettoRoutes.openToday();
       }, 'tutorial-primary'));
-      const sources = el('a', copy('Practice facts: Marine Biological Laboratory', 'Oefenfeiten: Marine Biological Laboratory'));
-      sources.href = 'https://www.mbl.edu/news/why-do-spiders-have-8-legs-live-science';
+      const sources = el('a', copy('Practice facts: piano keys', 'Oefenfeiten: pianotoetsen'));
+      sources.href = 'https://www.yamaha.com/en/musical_instrument_guide/piano/trivia/trivia007.html';
       sources.target = '_blank'; sources.rel = 'noopener'; sources.className = 'tutorial-source'; content.append(sources);
     }
     title.focus({ preventScroll:true }); content.scrollTop = 0; viewport();

@@ -144,17 +144,10 @@
     submit();
   }
 
-  // Alleen een echt getypt teken geeft de "cijfers gevraagd"-hint. Mobiele
-  // toetsenborden sturen vaak 'Unidentified'; bindWholeNumberInput filtert daarna.
+  // Enter navigeert; normale tekens volgen dezelfde parser als geplakte invoer.
   function nettoNumberKeydown(event, input, onEnter) {
     if (event.key === 'Enter') { event.preventDefault(); if (!event.repeat) onEnter(); return; }
-    if (event.isComposing || event.ctrlKey || event.metaKey || event.altKey || event.key.length !== 1) return;
-    if (!/\d/.test(event.key)) {
-      event.preventDefault();
-      input.classList.add('shake');
-      setTimeout(() => input.classList.remove('shake'), 400);
-      showSarcasticToast();
-    }
+    // Laat de volledige invoer staan; de gedeelde parser valideert bij inleveren.
   }
 
   function raceDurationText(seconds) {
@@ -898,11 +891,11 @@
     const p = raceQueue[raceState.index];
     if (!p) { finishRace(false); return; }
     const answers = [p.q1_answer, p.q2_answer, p.q3_answer];
-    // Ook in de race moet een inzending een geldige gehele som zijn.
+    // Vrij spelen accepteert ook positieve decimalen, net als de Library.
     const guesses = [0, 1, 2].map(i => parseFormattedNumber(document.getElementById(`raceAnswer${i}`).value));
     if (!validWholeAnswers(guesses)) {
       showNoticeToast(
-        statsCopy('Vul alle drie de vragen in met een heel getal groter dan 0.', 'Enter a whole number greater than 0 for all three questions.'),
+        statsCopy('Vul alle drie de vragen in met een getal groter dan 0.', 'Enter a number greater than 0 for all three questions.'),
         '✏️', statsCopy('Antwoorden ontbreken', 'Complete your answers'));
       return;
     }

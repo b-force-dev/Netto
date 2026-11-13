@@ -31,6 +31,10 @@ function browser(options = {}) {
   assert.equal(b.calls.length,2);
   assert.equal(b.calls[0].args.p_referrer,'search.example');
   assert.equal(b.calls[0].args.p_device,'mobile');
+  assert.equal(b.calls[0].args.p_language,'en', 'A first visit uses English');
+  const dutch = browser(); dutch.storage.set('netto_language', 'nl');
+  dutch.window.nettoTrack('visit');
+  assert.equal(dutch.calls[0].args.p_language, 'nl');
   assert.equal(b.calls[0].args.p_visitor_id,b.calls[1].args.p_visitor_id);
   assert(!JSON.stringify(b.calls).includes('secret'));
   assert(!JSON.stringify(b.calls).includes('answer'));

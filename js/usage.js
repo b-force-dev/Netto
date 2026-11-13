@@ -41,7 +41,7 @@
       } catch (_) {}
       const request = client.rpc('netto_track', {
         p_event:event, p_visitor_id:identity.id, p_mode:props.mode || '',
-        p_language:localStorage.getItem('netto_language') === 'en' ? 'en' : 'nl',
+        p_language:localStorage.getItem('netto_language') === 'nl' ? 'nl' : 'en',
         p_device:window.matchMedia('(max-width: 767px)').matches ? 'mobile' : 'desktop',
         p_referrer:host, p_first_visit:identity.day === day, p_kind:props.kind || ''
       });

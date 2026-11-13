@@ -1353,7 +1353,7 @@
       toast.innerHTML = `
         <div class="toast-icon">📋</div>
         <div class="toast-body">
-          <b>Gekopieerd!</b>
+          <b>${statsCopy('Gekopieerd!', 'Copied!')}</b>
           <span>${msg}</span>
         </div>
       `;
@@ -1362,7 +1362,7 @@
       toast.innerHTML = `
         <div class="toast-icon">🧐</div>
         <div class="toast-body">
-          <b>Cijfers gevraagd</b>
+          <b>${statsCopy('Cijfers gevraagd', 'Numbers, please')}</b>
           <span>${quote}</span>
         </div>
       `;
@@ -1630,31 +1630,15 @@
       const input = document.getElementById(id);
       bindWholeNumberInput(input, updateDailyDerivedInput);
       
-      // Detecteer letters bij keydown
-      input.addEventListener('keydown', (e) => {
-        // Navigatie met Enter
-        if (e.key === 'Enter') {
-          const arr = dailyQuestionOrder().map(i => 'g' + (i + 1));
-          const index = arr.indexOf(id);
-          if (index < arr.length - 1) {
-            document.getElementById(arr[index + 1]).focus();
-          } else {
-            checkAnswers();
-          }
-          return;
-        }
-
-        // Toegestane besturingstoetsen
-        const allowed = ['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'Tab', 'Enter', 'Home', 'End'];
-        if (allowed.includes(e.key) || e.ctrlKey || e.metaKey) return;
-
-        // Als er een letter of ongeldig teken wordt ingedrukt
-        if (!/\d/.test(e.key)) {
-          e.preventDefault();
-          input.classList.add('shake');
-          setTimeout(() => input.classList.remove('shake'), 400);
-          showSarcasticToast();
-        }
+      // Typen en plakken volgen dezelfde parser, inclusief lokale tekens en k/m/b.
+      input.addEventListener('keydown', e => {
+        if (e.key !== 'Enter' || e.isComposing) return;
+        e.preventDefault();
+        if (e.repeat) return;
+        const order = dailyQuestionOrder().map(i => 'g' + (i + 1));
+        const index = order.indexOf(id);
+        if (index < order.length - 1) document.getElementById(order[index + 1]).focus();
+        else checkAnswers();
       });
 
       // Formatteer bij invoer
@@ -2407,9 +2391,9 @@
     const g2 = parseFormattedNumber(document.getElementById('g2').value);
     const g3 = parseFormattedNumber(document.getElementById('g3').value);
 
-    if (!validWholeAnswers([g1,g2,g3])) {
+    if (![g1,g2,g3].every(value => Number.isSafeInteger(value) && value > 0)) {
       showNoticeToast(
-        statsCopy('Vul eerst alle drie de vragen in met een getal groter dan 0.', 'Enter a number greater than 0 for all three questions.'),
+        statsCopy('Vul voor alle drie de vragen een positief heel getal in (bijvoorbeeld 1500 of 1,5k).', 'Enter a positive whole number for all three questions (for example, 1500 or 1.5k).'),
         '✏️', statsCopy('Antwoorden ontbreken', 'Complete your answers'));
       return;
     }
@@ -2451,6 +2435,7 @@
         input.disabled = true;
       });
       button.style.display = 'none';
+      document.getElementById('dailyAutoHint')?.remove();
       renderResultsUI(...guesses, avgFactor, true);
       setDailySyncStatus(result.ranked);
       if (!document.getElementById('streakCalendarPopover')?.hidden) renderStreakCalendar();
@@ -3327,7 +3312,7 @@
     if (equationError) equationError.hidden = true;
     document.getElementById('screen-puzzle').classList.remove('is-review');
     const headline = document.getElementById('dailyHeadline');
-    if (headline) headline.innerHTML = statsCopy('Drie antwoorden. <span class="script">Eén som.</span>', 'Three answers. <span class="script">One equation.</span>');
+    if (headline) headline.innerHTML = statsCopy('Drie vragen. <span class="script">Eén som.</span>', 'Three questions. <span class="script">One equation.</span>');
     const questions = document.getElementById('dailyQuestionView');
     const nav = document.getElementById('dailyReviewNav');
     const results = document.getElementById('results');
