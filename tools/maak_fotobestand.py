@@ -214,6 +214,15 @@ def main():
         uit[vraag] = {'url': gekozen['miniatuur'], 'pagina': gekozen['pagina'],
                       'licentie': gekozen['licentie'], 'maker': gekozen['maker']}
 
+    # Openbare, visueel gecontroleerde keuzes op vraagtekst, ook buiten de bank.
+    # null betekent bewust geen foto (bijvoorbeeld omdat het beeld verklapt).
+    publiek = lees(os.path.join(FOTOS, 'publieke_fotos.json'))
+    for vraag, foto in publiek.items():
+        if foto is None:
+            uit.pop(vraag, None)
+        else:
+            uit[vraag] = {k: foto[k] for k in ('url', 'pagina', 'licentie', 'maker')}
+
     # Een hernoemde vraag houdt haar foto. De fotobank sleutelt op vraagtekst;
     # zonder deze stap verdwijnt de foto stilletjes bij elke tekstcorrectie.
     hernoemd = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
@@ -232,7 +241,7 @@ def main():
            '// staan erbij omdat de eerste twee naamsvermelding eisen.\n'
            'window.NETTO_FOTOS = ')
     tekst = kop + json.dumps(uit, ensure_ascii=False) + ';\n'
-    for map_ in (DATA, SPIEGEL):
+    for map_ in (DATA,):
         with open(os.path.join(map_, 'netto_fotos.js'), 'w', encoding='utf-8') as f:
             f.write(tekst)
 

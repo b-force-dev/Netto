@@ -7,13 +7,14 @@
 // foto is alsnog te vinden zonder de databank aan te passen. Dat werkt meteen
 // voor elke toekomstige dagpuzzel.
 function fotoUitVraagtekst(puzzel) {
-  if (puzzel?.edition && !puzzel.photo) return null;
+  if (puzzel?.edition && !puzzel.photo && !puzzel.edition.startsWith('library')) return null;
   const bron = window.NETTO_FOTOS;
   if (!bron || !puzzel) return null;
   for (const i of [1, 2, 3]) {
     const label = puzzel['q' + i + '_label'];
     const original = window.NETTO_REBUILT_PUZZLES?.daily_review?.[label]?.original
-      || window.NETTO_REBUILT_PUZZLES?.library_review?.[label]?.original;
+      || window.NETTO_REBUILT_PUZZLES?.library_review?.[label]?.original
+      || window.NETTO_REBUILT_PUZZLES?.connection_review?.[label]?.original;
     const gevonden = bron[original || label];
     if (gevonden) return { ...gevonden, vraag: i };
   }
@@ -31,8 +32,9 @@ function nogInDeBank(puzzel, foto) {
   const nr = Number(foto.vraag);
   const label = nr >= 1 && nr <= 3 ? puzzel?.['q' + nr + '_label'] : null;
   const bij = window.NETTO_REBUILT_PUZZLES?.daily_review?.[label]?.original
-    || window.NETTO_REBUILT_PUZZLES?.library_review?.[label]?.original || label;
-  return bij ? Object.prototype.hasOwnProperty.call(bron, bij) : true;
+    || window.NETTO_REBUILT_PUZZLES?.library_review?.[label]?.original
+      || window.NETTO_REBUILT_PUZZLES?.connection_review?.[label]?.original || label;
+  return bij ? !!bron[bij] && ['url', 'pagina', 'maker', 'licentie'].every(k => bron[bij][k] === foto[k]) : true;
 }
 
 function geldigePuzzelfoto(puzzel) {
@@ -41,8 +43,9 @@ function geldigePuzzelfoto(puzzel) {
   if (!foto || !String(foto.maker || '').trim() || !String(foto.licentie || '').trim()) return null;
   try {
     const bron = new URL(foto.pagina);
-    const beeld = new URL(foto.url);
-    if (bron.protocol !== 'https:' || bron.hostname !== 'commons.wikimedia.org' || !bron.pathname.startsWith('/wiki/File:') || beeld.protocol !== 'https:') return null;
+    const beeld = new URL(foto.url, document.baseURI);
+    const lokaal = beeld.origin === new URL(document.baseURI).origin && beeld.pathname.startsWith(new URL('fotos/assets/', document.baseURI).pathname);
+    if (bron.protocol !== 'https:' || bron.hostname !== 'commons.wikimedia.org' || !bron.pathname.startsWith('/wiki/File:') || (!lokaal && beeld.protocol !== 'https:')) return null;
   } catch (_) { return null; }
   return foto;
 }
@@ -112,7 +115,8 @@ function verzamelFotocredits() {
     if (geldigePuzzelfoto({ photo: foto }) && !uniek.has(foto.pagina)) uniek.set(foto.pagina, foto);
   };
   puzzels.forEach(p => {
-    if (p.photo) voegToe(p.photo);
+    const actueel = geldigePuzzelfoto(p);
+    if (actueel) voegToe(actueel);
     if (p.image_path && p.image_credit && p.image_source_url) {
       const delen = p.image_credit.split(' · ');
       voegToe({ url: new URL(p.image_path, document.baseURI).href, pagina: p.image_source_url, maker: delen.slice(0, -1).join(' · '), licentie: delen.at(-1) });
@@ -124,6 +128,8 @@ function verzamelFotocredits() {
     const foto = { url: new URL((window.NETTO_DAILY_PHOTO_DIR || 'fotos/assets/') + f.file, document.baseURI).href, pagina: f.source, maker: delen.slice(1, -1).join(' · '), licentie: delen.at(-1) };
     if (foto.maker && foto.licentie && foto.pagina?.startsWith('https://commons.wikimedia.org/wiki/File:') && !uniek.has(foto.pagina)) uniek.set(foto.pagina, foto);
   });
+  // Ook vraagfoto's uit kettingen en Race: die dragen niet altijd een photo-veld.
+  Object.values(window.NETTO_FOTOS || {}).forEach(voegToe);
   return [...uniek.values()].sort((a, b) => a.maker.localeCompare(b.maker, 'nl') || a.licentie.localeCompare(b.licentie, 'nl'));
 }
 
