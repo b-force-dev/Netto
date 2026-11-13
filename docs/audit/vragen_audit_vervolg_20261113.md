@@ -2,15 +2,15 @@
 
 Bereik: 122 van de 122 open punten uit het verslag van 12 november. De letterlijke categorie “Definitie, bron of afbakening vereist vervolgcontrole” bevat 39 punten; de 122 omvatten ook records, statistiek en redactionele keuzes.
 
-Uitkomsten: in orde: 17, aangescherpt: 85, antwoord gecorrigeerd: 0, vraag vervangen: 2, nog open: 18.
+Uitkomsten: in orde: 17, aangescherpt: 95, antwoord gecorrigeerd: 0, vraag vervangen: 3, nog open: 7.
 
-Bronnen zijn op 13 november 2026 geraadpleegd. Een bron bij **nog open** is een gecontroleerde verwijzing, geen bevestiging van het oude antwoord. Niet toegankelijke pagina’s zijn niet als bewijs aanvaard. Getallen zijn niet van een verzonnen peildatum voorzien.
+Bronnen zijn op 13 november 2026 geraadpleegd. Een bron bij **nog open** is een gecontroleerde verwijzing, geen bevestiging van het oude antwoord. Foutpagina’s zonder bruikbare broninhoud zijn niet als bewijs aanvaard. Waar de zoekindex wel de concrete passage uit een betrouwbaar rapport ontsloot, is die passage gebruikt. Getallen zijn niet van een verzonnen peildatum voorzien.
 
 Alle puzzel-id’s en antwoorden blijven behouden. Daardoor blijven de bestaande berekeningen exact gelijk en blijven alle antwoorden positieve gehele getallen. Voor onopgeloste fouten is geen vervangende vraag zonder verificatie toegevoegd; de concrete puzzel-id’s staan bij elk open punt.
 
-Werkwijze conform de vorige audit: gerichte migratie van reviewblad, generatorbank, Library/Connection-selecties, vertalingen, bewijszinnen en root-data voor openbare modi. De JSON naast dit verslag bevat per punt de oude tekst, uitkomst, bron en waar van toepassing de nieuwe NL/EN-tekst en bewijszinnen. Deze gerichte migratie bewaart de bestaande Race-/ketting-id’s. Het historische werkbestand puzzels/breinkrakers.xlsx (100.000 kandidaten) wordt niet opnieuw getrokken.
+Werkwijze conform de vorige audit: gerichte migratie van reviewblad, generatorbank, Library/Connection-selecties, vertalingen, bewijszinnen en root-data voor openbare modi. De JSON naast dit verslag bevat per punt de oude tekst, uitkomst, bron en waar van toepassing de nieuwe NL/EN-tekst en bewijszinnen. Deze gerichte migratie bewaart de bestaande Race-/ketting-id’s en is herhaalbaar met python tools/verwerk_vraagaudit_vervolg_20261113.py. Het historische werkbestand puzzels/breinkrakers.xlsx (100.000 kandidaten) wordt niet opnieuw getrokken.
 
-Daily-selecties, de Daily-lijst in frontenddata, Supabase, foto-assets, handgeschreven JS/CSS/HTML, cacheversies en website/ zijn niet gewijzigd. Nederlandse hernoemingen zijn vastgelegd in vragen/hernoemingen_fotos.json. De integrator verzorgt de fotogeneratie, cacheversies en mirror.
+Daily-selecties, de Daily-lijst in frontenddata, Supabase, foto-assets, handgeschreven JS/CSS/HTML, cacheversies en website/ zijn niet gewijzigd. Nederlandse hernoemingen zijn vastgelegd in vragen/hernoemingen_fotos.json. De integrator verzorgt de fotogeneratie, cacheversies en mirror. Een proef met de fotogenerator wijzigde ook bestaande, niet-gerelateerde sleutels; de uitvoer is teruggezet en data/netto_fotos.js is in het eindresultaat ongewijzigd. Controleer die generatie afzonderlijk bij integratie.
 
 ## 1. q148 — in orde
 
@@ -90,7 +90,7 @@ Oud: Hoeveel punten scoorde een team in de hoogste basketbalscore ooit? Antwoord
 
 Detroit won met 186 punten tegen Denver op 13 december 1983.
 
-Bron: [geraadpleegde bron](https://www.nba.com/news/history-this-date-in-nba-dec).
+Bron: [geraadpleegde bron](https://cdn.nba.com/teams/uploads/sites/1610612743/2024/01/DN_2324_MediaGuide.pdf).
 
 Vindplaatsen: library:433f451b-b85e-5a65-b16a-700c5cb0af9e, race:pool-054, breinkrakers:bk-13, breinkrakers:bk-47, breinkrakers:bk-130.
 
@@ -140,15 +140,19 @@ NL: Hoeveel kilogram kan een mannelijke Amerikaanse bizon volgens de National Pa
 
 EN: How many kilograms can a male American bison weigh according to the National Park Service, rounded to the nearest hundred?
 
-## 11. q074 — nog open
+## 11. q074 — aangescherpt
 
 Oud: Hoeveel LEGO-steentjes worden er wereldwijd per seconde gemaakt? Antwoord: **1300**.
 
-De LEGO-pagina onderbouwt geen productie van 1300 per seconde met meetperiode. Geen peiljaar verzonnen.
+Der Standard citeerde op 7 juni 2020 een LEGO-medewerker die een productie van 1300 steentjes per seconde noemde.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Lego).
+Bron: [geraadpleegde bron](https://www.derstandard.at/story/2000117920314/oefters-fast-pleite-jetzt-verkauft-lego-mehr-steine-als-je).
 
 Vindplaatsen: library:20d8d058-83c1-5a32-afe6-76d517aa56df, race:pool-041.
+
+NL: Hoeveel LEGO-steentjes per seconde noemde een medewerker tijdens het fabrieksbezoek dat Der Standard in juni 2020 beschreef?
+
+EN: How many LEGO bricks per second did an employee report during the factory visit described by Der Standard in June 2020?
 
 ## 12. q225 — in orde
 
@@ -268,15 +272,19 @@ NL: Hoeveel procent van de plant- en diersoorten leeft volgens de schatting in h
 
 EN: Approximately what percentage of plant and animal species live in rainforests according to the estimate in JICA’s grade-five science textbook?
 
-## 21. nr712 — nog open
+## 21. nr712 — aangescherpt
 
 Oud: Hoeveel kilogram rundvlees eet een Argentijn per jaar? Antwoord: **50**.
 
-Geen jaartal of meetdefinitie voor 50 kg rundvlees per inwoner gevonden; consumptie en karkasgewicht verschillen.
+Het Argentijnse landbouwministerie vermeldt 50,2 kg rundvlees per inwoner in 2020: afgerond 50 kg.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Argentine_cuisine).
+Bron: [geraadpleegde bron](https://www.magyp.gob.ar/sitio/areas/aves/informes/boletines/_archivos/000000_Datos%20Hist%C3%B3ricos/000083_Nro%2083%20Anuario%20Avicola%202020.pdf).
 
 Vindplaatsen: race:pool-011.
+
+NL: Hoeveel kilogram rundvlees werd in Argentinië in 2020 per inwoner geconsumeerd volgens het landbouwministerie, afgerond?
+
+EN: How many kilograms of beef were consumed per inhabitant in Argentina in 2020 according to its agriculture ministry, rounded?
 
 ## 22. nr291 — aangescherpt
 
@@ -348,15 +356,19 @@ NL: Hoeveel kilogram weegt een volwassen mannelijk nijlpaard gemiddeld, afgerond
 
 EN: How many kilograms does an adult male hippopotamus weigh on average, rounded to the nearest hundred?
 
-## 27. nr679 — nog open
+## 27. nr679 — aangescherpt
 
 Oud: Hoeveel vogelsoorten telt Colombia, het land met de meeste ter wereld? Antwoord: **1900**.
 
-De bron noemt meer dan 1900 soorten; een exacte lijsteditie, gebiedsdefinitie en afronding voor 1900 zijn niet vastgesteld.
+ProAves meldde meer dan 1900 vogelsoorten; het artikel maakt onderscheid tussen totale en met foto’s of exemplaren bevestigde soorten.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Colombia).
+Bron: [geraadpleegde bron](https://proaves.org/blog/colombia-officially-the-nation-with-the-greatest-diversity-of-birds-and-a-new-world-record/).
 
 Vindplaatsen: race:pool-026.
+
+NL: Meer dan hoeveel vogelsoorten telde Colombia volgens het historische ProAves-artikel over zijn wereldrecord aan vogeldiversiteit?
+
+EN: More than how many bird species did Colombia have according to the historical ProAves article about its world record for bird diversity?
 
 ## 28. nr264 — nog open
 
@@ -490,7 +502,7 @@ EN: How many centimetres tall was the miniature horse Thumbelina according to Gu
 
 Oud: Hoeveel IKEA-winkels zijn er wereldwijd ongeveer? Antwoord: **480**.
 
-IKEA-bron niet opgehaald; geen historische telling gevonden die bij de bedoelde afronding van 480 hoort.
+De primaire IKEA-bron kon niet worden opgehaald. Een secundair verslag noemt 480 winkels, maar de peildatum en winkeltelling zijn nog niet tegen een primair bedrijfsverslag bevestigd.
 
 Bron: [geraadpleegde bron](https://about.ikea.com/en/about-us).
 
@@ -514,7 +526,7 @@ EN: How many centimetres tall was Robert Wadlow at his final measurement in June
 
 Oud: Wat is de autorij-afstand van Amsterdam naar Rome in km? Antwoord: **1650**.
 
-Geen reproduceerbare 1650 km met beginpunt, eindpunt en route. Alle genoemde puzzels blijven open; geen alternatief met hetzelfde antwoord geverifieerd.
+De oude Maps-link levert geen reproduceerbare 1650 km. Rome2Rio noemt een andere routeafstand (1621 km). Een gecontroleerd geboortejaar 1650 zou de categorie van de vraag wijzigen en in race:pool-075 twee geschiedenisvragen opleveren; geen passende vervanging toegepast.
 
 Bron: [geraadpleegde bron](https://www.google.com/maps/dir/Amsterdam/Rome).
 
@@ -524,7 +536,7 @@ Vindplaatsen: race:pool-075, breinkrakers:bk-80, breinkrakers:bk-84, breinkraker
 
 Oud: Hoeveel duizend inwoners heeft Amsterdam? Antwoord: **933**.
 
-CBS-tabel bereikbaar, maar de bedoelde 933 duizend is zonder vastgelegde jaar- en gemeenteselectie niet bevestigd.
+CBS-tabel bereikbaar, maar de bedoelde 933 duizend is zonder vastgelegde jaar- en gemeenteselectie niet bevestigd. Het elders genoemde 933.680 zou bij afronden 934 duizend worden; afronden en afkappen zijn niet hetzelfde.
 
 Bron: [geraadpleegde bron](https://www.cbs.nl/nl-nl/cijfers/detail/70072ned).
 
@@ -540,15 +552,19 @@ Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/news/2023/5/mans
 
 Vindplaatsen: race:pool-078, breinkrakers:bk-62, breinkrakers:bk-116.
 
-## 43. nr443 — nog open
+## 43. nr443 — aangescherpt
 
 Oud: Hoe lang was de langste hond ooit in centimeters? Antwoord: **250**.
 
-Guinness-link geeft pagina niet gevonden. Lengte 250 cm en meetdefinitie van Zorba nog uit gezaghebbende bron te bevestigen.
+De recordbeschrijving noemt circa 2,5 meter voor Zorba: afgerond op tientallen centimeters 250.
 
-Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/longest-dog-ever).
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/List_of_individual_dogs).
 
 Vindplaatsen: race:pool-080, breinkrakers:bk-101, breinkrakers:bk-102.
+
+NL: Hoeveel centimeter lang was de Engelse mastiff Zorba volgens de gangbare recordbeschrijving, afgerond op tientallen centimeters?
+
+EN: How many centimetres long was the English Mastiff Zorba according to the commonly cited record account, rounded to the nearest ten centimetres?
 
 ## 44. nr60 — nog open
 
@@ -588,15 +604,19 @@ NL: Hoeveel uur per dag is een leeuw ongeveer inactief?
 
 EN: Approximately how many hours a day is a lion inactive?
 
-## 47. nr546 — nog open
+## 47. nr546 — aangescherpt
 
 Oud: Hoeveel duizend zoekopdrachten verwerkt Google wereldwijd per seconde? Antwoord: **99**.
 
-Google-bron onderbouwt geen 99 duizend zoekopdrachten per seconde met meetperiode.
+De Media Federation of Australia geeft in haar gids uit 2024 een schatting van circa 99.000 zoekopdrachten per seconde: 99 duizend.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Google_Search).
+Bron: [geraadpleegde bron](https://www.mediafederation.org.au/images/Educational-Guidelines/mfaguide/MFA_2024_TheMFAGuide_V1_200524.pdf).
 
 Vindplaatsen: race:pool-096, breinkrakers:bk-57.
+
+NL: Hoeveel duizend zoekopdrachten per seconde verwerkt Google volgens de schatting in The MFA Guide uit 2024?
+
+EN: How many thousand search queries per second does Google process according to the estimate in The MFA Guide from 2024?
 
 ## 48. nr440 — aangescherpt
 
@@ -700,7 +720,7 @@ EN: How many bird species have been scientifically classified in the Amazon rain
 
 Oud: Wat is de autorij-afstand van Amsterdam naar Parijs in km? Antwoord: **510**.
 
-Geen reproduceerbare 510 km met beginpunt, eindpunt en route. Open in race:pool-118.
+Geen vaste route voor 510 km. ADAC toont zowel 514 km in de kop als 519 km in de tekst; Rome2Rio noemt 502 km. Zonder vastgelegde meetpunten en route is 510 niet eenduidig. Open in race:pool-118.
 
 Bron: [geraadpleegde bron](https://www.google.com/maps/dir/Amsterdam/Parijs).
 
@@ -800,15 +820,19 @@ Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/news/2026/10/pum
 
 Vindplaatsen: race:pool-142.
 
-## 63. nr1209 — nog open
+## 63. nr1209 — vraag vervangen
 
 Oud: Hoeveel liter melk geeft een gemiddelde Nederlandse koe per jaar? Antwoord: **9200**.
 
-CBS-link levert geen verifieerbare melkproductie van 9200 liter met jaar en koe-definitie. Kilogram melk is bovendien geen liter.
+CRV vermeldt voor Erve Westerhof een rollend jaargemiddelde van 9200 kilogram melk per koe. Dit is een specifiek bedrijf en geen landelijk gemiddelde in liters.
 
-Bron: [geraadpleegde bron](https://www.cbs.nl/nl-nl/cijfers/detail/7425).
+Bron: [geraadpleegde bron](https://crv4all.nl/nl/news/ik-hoef-niet-meer-achter-de-koe-te-twijfelen-welke-stier-ik-moet-pakken).
 
 Vindplaatsen: race:pool-144, breinkrakers:bk-83, breinkrakers:bk-182, breinkrakers:bk-191.
+
+NL: Hoeveel kilogram melk per koe bedroeg het rollend jaargemiddelde van Erve Westerhof in de CRV-bedrijfsreportage?
+
+EN: How many kilograms of milk per cow was Erve Westerhof’s rolling annual average in the CRV farm report?
 
 ## 64. nr437 — aangescherpt
 
@@ -1120,15 +1144,19 @@ Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Diagonal).
 
 Vindplaatsen: race:pool-254.
 
-## 87. nr722 — nog open
+## 87. nr722 — aangescherpt
 
 Oud: Hoeveel procent van de wereldkoffie komt uit Brazilië? Antwoord: **35**.
 
-Bron onderbouwt geen 35 procent met oogstjaar en eenheid voor Braziliaans aandeel in wereldkoffie.
+De FGV-studie noemt voor 2017 een Braziliaans aandeel van 35 procent in de wereldwijde koffieproductie.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Coffee_production_in_Brazil).
+Bron: [geraadpleegde bron](https://agro.fgv.br/sites/default/files/2023-03/coffe_fgv_ENG.pdf).
 
 Vindplaatsen: race:pool-256, breinkrakers:bk-101.
+
+NL: Hoeveel procent van de wereldwijde koffieproductie kwam in 2017 uit Brazilië volgens de studie Brazilian Coffee Industry van FGV?
+
+EN: What percentage of world coffee production came from Brazil in 2017 according to FGV’s Brazilian Coffee Industry study?
 
 ## 88. nr637 — in orde
 
@@ -1336,15 +1364,19 @@ NL: Hoeveel nationale talen heeft Zwitserland?
 
 EN: How many national languages does Switzerland have?
 
-## 103. nr1088 — nog open
+## 103. nr1088 — aangescherpt
 
 Oud: Hoeveel winkels heeft Aldi wereldwijd ongeveer? Antwoord: **12500**.
 
-Aldi Nederland-site onderbouwt geen gezamenlijke wereldtelling van Nord en Süd van 12.500 met peildatum.
+Het overzicht van Solomon Partners uit maart 2024 noemt meer dan 12.500 winkels wereldwijd.
 
-Bron: [geraadpleegde bron](https://www.aldi.nl/).
+Bron: [geraadpleegde bron](https://solomonpartners.com/wp-content/uploads/2024/03/Scott-Moses-Grocery-Facts-5-Things-You-Might-Not-Know-Update-Aldi-2024-03.pdf).
 
 Vindplaatsen: breinkrakers:bk-64, breinkrakers:bk-65.
+
+NL: Meer dan hoeveel winkels wereldwijd noemt het Aldi-overzicht van Solomon Partners uit maart 2024?
+
+EN: More than how many stores worldwide does the Solomon Partners Aldi factsheet from March 2024 report?
 
 ## 104. nr1283 — aangescherpt
 
@@ -1454,15 +1486,19 @@ NL: Hoeveel meter hoog is de Zeelandbrug volgens Architectuur Zeeland?
 
 EN: How many metres high is the Zeelandbrug according to Architectuur Zeeland?
 
-## 112. nr845 — nog open
+## 112. nr845 — aangescherpt
 
 Oud: Hoeveel eilanden vormen Indonesië volgens de officiële telling? Antwoord: **17508**.
 
-17.508 is niet de actuele officiële eilandtelling in de bron. Historische teldefinitie en jaar niet geverifieerd; genoemde kettingen blijven open.
+Het rapport Limits in the Seas, nummer 141, noemt een gerapporteerd aantal van 17.508 eilanden. Dit is geen claim over de huidige officiële telling.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Indonesia).
+Bron: [geraadpleegde bron](https://2017-2021.state.gov/wp-content/uploads/2020/02/LIS-141.pdf).
 
 Vindplaatsen: breinkrakers:bk-114, breinkrakers:bk-139, breinkrakers:bk-140, breinkrakers:bk-195.
+
+NL: Uit hoeveel eilanden bestaat Indonesië volgens de gerapporteerde telling in het Amerikaanse rapport Limits in the Seas, nummer 141?
+
+EN: How many islands make up Indonesia according to the reported count in the US report Limits in the Seas, number 141?
 
 ## 113. nr650 — aangescherpt
 
@@ -1506,25 +1542,33 @@ NL: Hoeveel kilogram woog de recordcheddar van Agropur in Granby in september 19
 
 EN: How many kilograms did Agropur’s record cheddar in Granby in September 1995 weigh?
 
-## 116. nr1197 — nog open
+## 116. nr1197 — aangescherpt
 
 Oud: Hoeveel vierkante kilometer groot is de provincie Utrecht? Antwoord: **1449**.
 
-Provincie-homepage onderbouwt 1449 km² niet met peildatum; landoppervlak en totaaloppervlak verschillen.
+Tabel 4 van het VU-onderzoek vermeldt 1449 km² voor de provincie Utrecht, waarvan 64 km² water; dit zijn de historische grenzen in dat onderzoek.
 
-Bron: [geraadpleegde bron](https://www.provincie-utrecht.nl/).
+Bron: [geraadpleegde bron](https://spinlab.vu.nl/wp-content/uploads/2016/09/Onderzoek_economische_impact_recreatietoervaart_Def_VU_Romy_Hoogeveen.pdf).
 
 Vindplaatsen: breinkrakers:bk-146, breinkrakers:bk-185.
 
-## 117. nr560 — nog open
+NL: Hoeveel vierkante kilometer omvatte de provincie Utrecht inclusief water volgens het VU-onderzoek naar de economische impact van recreatietoervaart?
+
+EN: How many square kilometres did the province of Utrecht cover including water according to the VU study of the economic impact of recreational boating?
+
+## 117. nr560 — aangescherpt
 
 Oud: In welk jaar werd de eerste radio-uitzending gemaakt? Antwoord: **1906**.
 
-Bron schrijft Fessendens kerstavonduitzending van 1906 toe aan latere verhalen; eerste radio-uitzending historisch betwist. Primaire of museumbron nodig.
+De IEEE Milestone dateert Fessendens uitzending op 24 december 1906; de vraag volgt expliciet die historische toeschrijving.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/History_of_radio).
+Bron: [geraadpleegde bron](https://ethw.org/Milestones:First_Wireless_Radio_Broadcast_by_Reginald_A._Fessenden,_1906).
 
 Vindplaatsen: breinkrakers:bk-163.
+
+NL: In welk jaar vond Fessendens kerstavonduitzending plaats volgens de IEEE Milestone-gedenkplaat?
+
+EN: In which year did Fessenden’s Christmas Eve broadcast take place according to the IEEE Milestone plaque?
 
 ## 118. nr1501 — aangescherpt
 
@@ -1595,6 +1639,10 @@ Vindplaatsen: breinkrakers:bk-195.
 NL: Hoeveel miljoen mensen namen gemiddeld per jaar deel aan de hadj in de periode 2000–2019, afgerond?
 
 EN: How many million people took part in the Hajj per year on average in 2000–2019, rounded?
+
+## Nog open
+
+nr264, nr367, nr422, nr1173, nr60, nr344, nr1312. Zie de afzonderlijke punten voor de reden, bron en alle betrokken puzzel-id’s.
 
 ## Controles
 

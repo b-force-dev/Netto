@@ -86,7 +86,7 @@
     "url": "https://www.basketball-reference.com/boxscores/198312130DEN.html",
     "status": "aangescherpt",
     "reason": "Detroit won met 186 punten tegen Denver op 13 december 1983.",
-    "source": "https://www.nba.com/news/history-this-date-in-nba-dec",
+    "source": "https://cdn.nba.com/teams/uploads/sites/1610612743/2024/01/DN_2324_MediaGuide.pdf",
     "new": "Hoeveel punten scoorden de Detroit Pistons tegen de Denver Nuggets op 13 december 1983?",
     "en": "How many points did the Detroit Pistons score against the Denver Nuggets on 13 December 1983?",
     "evidence": "Detroit won met 186 punten tegen Denver op 13 december 1983.",
@@ -144,9 +144,13 @@
     "locations": "library:20d8d058-83c1-5a32-afe6-76d517aa56df, race:pool-041",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://en.wikipedia.org/wiki/Lego",
-    "status": "nog open",
-    "reason": "De LEGO-pagina onderbouwt geen productie van 1300 per seconde met meetperiode. Geen peiljaar verzonnen.",
-    "source": "https://en.wikipedia.org/wiki/Lego"
+    "status": "aangescherpt",
+    "reason": "Der Standard citeerde op 7 juni 2020 een LEGO-medewerker die een productie van 1300 steentjes per seconde noemde.",
+    "source": "https://www.derstandard.at/story/2000117920314/oefters-fast-pleite-jetzt-verkauft-lego-mehr-steine-als-je",
+    "new": "Hoeveel LEGO-steentjes per seconde noemde een medewerker tijdens het fabrieksbezoek dat Der Standard in juni 2020 beschreef?",
+    "en": "How many LEGO bricks per second did an employee report during the factory visit described by Der Standard in June 2020?",
+    "evidence": "Der Standard citeerde op 7 juni 2020 een LEGO-medewerker die een productie van 1300 steentjes per seconde noemde.",
+    "evidence_en": "On 7 June 2020, Der Standard quoted a LEGO employee reporting production of 1,300 bricks per second."
   },
   {
     "id": "q225",
@@ -282,9 +286,13 @@
     "locations": "race:pool-011",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://en.wikipedia.org/wiki/Argentine_cuisine",
-    "status": "nog open",
-    "reason": "Geen jaartal of meetdefinitie voor 50 kg rundvlees per inwoner gevonden; consumptie en karkasgewicht verschillen.",
-    "source": "https://en.wikipedia.org/wiki/Argentine_cuisine"
+    "status": "aangescherpt",
+    "reason": "Het Argentijnse landbouwministerie vermeldt 50,2 kg rundvlees per inwoner in 2020: afgerond 50 kg.",
+    "source": "https://www.magyp.gob.ar/sitio/areas/aves/informes/boletines/_archivos/000000_Datos%20Hist%C3%B3ricos/000083_Nro%2083%20Anuario%20Avicola%202020.pdf",
+    "new": "Hoeveel kilogram rundvlees werd in Argentinië in 2020 per inwoner geconsumeerd volgens het landbouwministerie, afgerond?",
+    "en": "How many kilograms of beef were consumed per inhabitant in Argentina in 2020 according to its agriculture ministry, rounded?",
+    "evidence": "Het Argentijnse landbouwministerie vermeldt 50,2 kg rundvlees per inwoner in 2020: afgerond 50 kg.",
+    "evidence_en": "Argentina’s agriculture ministry gives 50.2 kilograms of beef per inhabitant in 2020: 50 kilograms when rounded."
   },
   {
     "id": "nr291",
@@ -368,9 +376,13 @@
     "locations": "race:pool-026",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://en.wikipedia.org/wiki/Colombia",
-    "status": "nog open",
-    "reason": "De bron noemt meer dan 1900 soorten; een exacte lijsteditie, gebiedsdefinitie en afronding voor 1900 zijn niet vastgesteld.",
-    "source": "https://en.wikipedia.org/wiki/Colombia"
+    "status": "aangescherpt",
+    "reason": "ProAves meldde meer dan 1900 vogelsoorten; het artikel maakt onderscheid tussen totale en met foto’s of exemplaren bevestigde soorten.",
+    "source": "https://proaves.org/blog/colombia-officially-the-nation-with-the-greatest-diversity-of-birds-and-a-new-world-record/",
+    "new": "Meer dan hoeveel vogelsoorten telde Colombia volgens het historische ProAves-artikel over zijn wereldrecord aan vogeldiversiteit?",
+    "en": "More than how many bird species did Colombia have according to the historical ProAves article about its world record for bird diversity?",
+    "evidence": "ProAves meldde meer dan 1900 vogelsoorten; het artikel maakt onderscheid tussen totale en met foto’s of exemplaren bevestigde soorten.",
+    "evidence_en": "ProAves reported more than 1,900 bird species; the article distinguishes total species from those confirmed by photographs or specimens."
   },
   {
     "id": "nr264",
@@ -518,7 +530,7 @@
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://about.ikea.com/en/about-us",
     "status": "nog open",
-    "reason": "IKEA-bron niet opgehaald; geen historische telling gevonden die bij de bedoelde afronding van 480 hoort.",
+    "reason": "De primaire IKEA-bron kon niet worden opgehaald. Een secundair verslag noemt 480 winkels, maar de peildatum en winkeltelling zijn nog niet tegen een primair bedrijfsverslag bevestigd.",
     "source": "https://about.ikea.com/en/about-us"
   },
   {
@@ -544,7 +556,7 @@
     "issue": "Definitie, bron of afbakening vereist vervolgcontrole.",
     "url": "https://www.google.com/maps/dir/Amsterdam/Rome",
     "status": "nog open",
-    "reason": "Geen reproduceerbare 1650 km met beginpunt, eindpunt en route. Alle genoemde puzzels blijven open; geen alternatief met hetzelfde antwoord geverifieerd.",
+    "reason": "De oude Maps-link levert geen reproduceerbare 1650 km. Rome2Rio noemt een andere routeafstand (1621 km). Een gecontroleerd geboortejaar 1650 zou de categorie van de vraag wijzigen en in race:pool-075 twee geschiedenisvragen opleveren; geen passende vervanging toegepast.",
     "source": "https://www.google.com/maps/dir/Amsterdam/Rome"
   },
   {
@@ -555,7 +567,7 @@
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://www.cbs.nl/nl-nl/cijfers/detail/70072ned",
     "status": "nog open",
-    "reason": "CBS-tabel bereikbaar, maar de bedoelde 933 duizend is zonder vastgelegde jaar- en gemeenteselectie niet bevestigd.",
+    "reason": "CBS-tabel bereikbaar, maar de bedoelde 933 duizend is zonder vastgelegde jaar- en gemeenteselectie niet bevestigd. Het elders genoemde 933.680 zou bij afronden 934 duizend worden; afronden en afkappen zijn niet hetzelfde.",
     "source": "https://www.cbs.nl/nl-nl/cijfers/detail/70072ned"
   },
   {
@@ -576,9 +588,13 @@
     "locations": "race:pool-080, breinkrakers:bk-101, breinkrakers:bk-102",
     "issue": "Record: persoon, datum, afronding en bron nog afzonderlijk controleren.",
     "url": "https://www.guinnessworldrecords.com/world-records/longest-dog-ever",
-    "status": "nog open",
-    "reason": "Guinness-link geeft pagina niet gevonden. Lengte 250 cm en meetdefinitie van Zorba nog uit gezaghebbende bron te bevestigen.",
-    "source": "https://www.guinnessworldrecords.com/world-records/longest-dog-ever"
+    "status": "aangescherpt",
+    "reason": "De recordbeschrijving noemt circa 2,5 meter voor Zorba: afgerond op tientallen centimeters 250.",
+    "source": "https://en.wikipedia.org/wiki/List_of_individual_dogs",
+    "new": "Hoeveel centimeter lang was de Engelse mastiff Zorba volgens de gangbare recordbeschrijving, afgerond op tientallen centimeters?",
+    "en": "How many centimetres long was the English Mastiff Zorba according to the commonly cited record account, rounded to the nearest ten centimetres?",
+    "evidence": "De recordbeschrijving noemt circa 2,5 meter voor Zorba: afgerond op tientallen centimeters 250.",
+    "evidence_en": "The record account gives approximately 2.5 metres for Zorba: 250 to the nearest ten centimetres."
   },
   {
     "id": "nr60",
@@ -628,9 +644,13 @@
     "locations": "race:pool-096, breinkrakers:bk-57",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://en.wikipedia.org/wiki/Google_Search",
-    "status": "nog open",
-    "reason": "Google-bron onderbouwt geen 99 duizend zoekopdrachten per seconde met meetperiode.",
-    "source": "https://en.wikipedia.org/wiki/Google_Search"
+    "status": "aangescherpt",
+    "reason": "De Media Federation of Australia geeft in haar gids uit 2024 een schatting van circa 99.000 zoekopdrachten per seconde: 99 duizend.",
+    "source": "https://www.mediafederation.org.au/images/Educational-Guidelines/mfaguide/MFA_2024_TheMFAGuide_V1_200524.pdf",
+    "new": "Hoeveel duizend zoekopdrachten per seconde verwerkt Google volgens de schatting in The MFA Guide uit 2024?",
+    "en": "How many thousand search queries per second does Google process according to the estimate in The MFA Guide from 2024?",
+    "evidence": "De Media Federation of Australia geeft in haar gids uit 2024 een schatting van circa 99.000 zoekopdrachten per seconde: 99 duizend.",
+    "evidence_en": "The Media Federation of Australia’s 2024 guide gives an estimate of about 99,000 search queries per second: 99 thousand."
   },
   {
     "id": "nr440",
@@ -745,7 +765,7 @@
     "issue": "Definitie, bron of afbakening vereist vervolgcontrole.",
     "url": "https://www.google.com/maps/dir/Amsterdam/Parijs",
     "status": "nog open",
-    "reason": "Geen reproduceerbare 510 km met beginpunt, eindpunt en route. Open in race:pool-118.",
+    "reason": "Geen vaste route voor 510 km. ADAC toont zowel 514 km in de kop als 519 km in de tekst; Rome2Rio noemt 502 km. Zonder vastgelegde meetpunten en route is 510 niet eenduidig. Open in race:pool-118.",
     "source": "https://www.google.com/maps/dir/Amsterdam/Parijs"
   },
   {
@@ -856,9 +876,13 @@
     "locations": "race:pool-144, breinkrakers:bk-83, breinkrakers:bk-182, breinkrakers:bk-191",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://www.cbs.nl/nl-nl/cijfers/detail/7425",
-    "status": "nog open",
-    "reason": "CBS-link levert geen verifieerbare melkproductie van 9200 liter met jaar en koe-definitie. Kilogram melk is bovendien geen liter.",
-    "source": "https://www.cbs.nl/nl-nl/cijfers/detail/7425"
+    "status": "vraag vervangen",
+    "reason": "CRV vermeldt voor Erve Westerhof een rollend jaargemiddelde van 9200 kilogram melk per koe. Dit is een specifiek bedrijf en geen landelijk gemiddelde in liters.",
+    "source": "https://crv4all.nl/nl/news/ik-hoef-niet-meer-achter-de-koe-te-twijfelen-welke-stier-ik-moet-pakken",
+    "new": "Hoeveel kilogram melk per koe bedroeg het rollend jaargemiddelde van Erve Westerhof in de CRV-bedrijfsreportage?",
+    "en": "How many kilograms of milk per cow was Erve Westerhof’s rolling annual average in the CRV farm report?",
+    "evidence": "CRV vermeldt voor Erve Westerhof een rollend jaargemiddelde van 9200 kilogram melk per koe. Dit is een specifiek bedrijf en geen landelijk gemiddelde in liters.",
+    "evidence_en": "CRV gives Erve Westerhof a rolling annual average of 9,200 kilograms of milk per cow. This is a specific farm, not a national average in litres."
   },
   {
     "id": "nr437",
@@ -1200,9 +1224,13 @@
     "locations": "race:pool-256, breinkrakers:bk-101",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://en.wikipedia.org/wiki/Coffee_production_in_Brazil",
-    "status": "nog open",
-    "reason": "Bron onderbouwt geen 35 procent met oogstjaar en eenheid voor Braziliaans aandeel in wereldkoffie.",
-    "source": "https://en.wikipedia.org/wiki/Coffee_production_in_Brazil"
+    "status": "aangescherpt",
+    "reason": "De FGV-studie noemt voor 2017 een Braziliaans aandeel van 35 procent in de wereldwijde koffieproductie.",
+    "source": "https://agro.fgv.br/sites/default/files/2023-03/coffe_fgv_ENG.pdf",
+    "new": "Hoeveel procent van de wereldwijde koffieproductie kwam in 2017 uit Brazilië volgens de studie Brazilian Coffee Industry van FGV?",
+    "en": "What percentage of world coffee production came from Brazil in 2017 according to FGV’s Brazilian Coffee Industry study?",
+    "evidence": "De FGV-studie noemt voor 2017 een Braziliaans aandeel van 35 procent in de wereldwijde koffieproductie.",
+    "evidence_en": "The FGV study gives Brazil a 35 per cent share of world coffee production in 2017."
   },
   {
     "id": "nr637",
@@ -1432,9 +1460,13 @@
     "locations": "breinkrakers:bk-64, breinkrakers:bk-65",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://www.aldi.nl/",
-    "status": "nog open",
-    "reason": "Aldi Nederland-site onderbouwt geen gezamenlijke wereldtelling van Nord en Süd van 12.500 met peildatum.",
-    "source": "https://www.aldi.nl/"
+    "status": "aangescherpt",
+    "reason": "Het overzicht van Solomon Partners uit maart 2024 noemt meer dan 12.500 winkels wereldwijd.",
+    "source": "https://solomonpartners.com/wp-content/uploads/2024/03/Scott-Moses-Grocery-Facts-5-Things-You-Might-Not-Know-Update-Aldi-2024-03.pdf",
+    "new": "Meer dan hoeveel winkels wereldwijd noemt het Aldi-overzicht van Solomon Partners uit maart 2024?",
+    "en": "More than how many stores worldwide does the Solomon Partners Aldi factsheet from March 2024 report?",
+    "evidence": "Het overzicht van Solomon Partners uit maart 2024 noemt meer dan 12.500 winkels wereldwijd.",
+    "evidence_en": "The Solomon Partners factsheet from March 2024 reports more than 12,500 stores worldwide."
   },
   {
     "id": "nr1283",
@@ -1559,9 +1591,13 @@
     "locations": "breinkrakers:bk-114, breinkrakers:bk-139, breinkrakers:bk-140, breinkrakers:bk-195",
     "issue": "Definitie, bron of afbakening vereist vervolgcontrole.",
     "url": "https://en.wikipedia.org/wiki/Indonesia",
-    "status": "nog open",
-    "reason": "17.508 is niet de actuele officiële eilandtelling in de bron. Historische teldefinitie en jaar niet geverifieerd; genoemde kettingen blijven open.",
-    "source": "https://en.wikipedia.org/wiki/Indonesia"
+    "status": "aangescherpt",
+    "reason": "Het rapport Limits in the Seas, nummer 141, noemt een gerapporteerd aantal van 17.508 eilanden. Dit is geen claim over de huidige officiële telling.",
+    "source": "https://2017-2021.state.gov/wp-content/uploads/2020/02/LIS-141.pdf",
+    "new": "Uit hoeveel eilanden bestaat Indonesië volgens de gerapporteerde telling in het Amerikaanse rapport Limits in the Seas, nummer 141?",
+    "en": "How many islands make up Indonesia according to the reported count in the US report Limits in the Seas, number 141?",
+    "evidence": "Het rapport Limits in the Seas, nummer 141, noemt een gerapporteerd aantal van 17.508 eilanden. Dit is geen claim over de huidige officiële telling.",
+    "evidence_en": "Limits in the Seas, number 141, gives a reported count of 17,508 islands. This does not claim to be the current official count."
   },
   {
     "id": "nr650",
@@ -1615,9 +1651,13 @@
     "locations": "breinkrakers:bk-146, breinkrakers:bk-185",
     "issue": "Definitie, bron of afbakening vereist vervolgcontrole.",
     "url": "https://www.provincie-utrecht.nl/",
-    "status": "nog open",
-    "reason": "Provincie-homepage onderbouwt 1449 km² niet met peildatum; landoppervlak en totaaloppervlak verschillen.",
-    "source": "https://www.provincie-utrecht.nl/"
+    "status": "aangescherpt",
+    "reason": "Tabel 4 van het VU-onderzoek vermeldt 1449 km² voor de provincie Utrecht, waarvan 64 km² water; dit zijn de historische grenzen in dat onderzoek.",
+    "source": "https://spinlab.vu.nl/wp-content/uploads/2016/09/Onderzoek_economische_impact_recreatietoervaart_Def_VU_Romy_Hoogeveen.pdf",
+    "new": "Hoeveel vierkante kilometer omvatte de provincie Utrecht inclusief water volgens het VU-onderzoek naar de economische impact van recreatietoervaart?",
+    "en": "How many square kilometres did the province of Utrecht cover including water according to the VU study of the economic impact of recreational boating?",
+    "evidence": "Tabel 4 van het VU-onderzoek vermeldt 1449 km² voor de provincie Utrecht, waarvan 64 km² water; dit zijn de historische grenzen in dat onderzoek.",
+    "evidence_en": "Table 4 of the VU study gives 1,449 square kilometres for Utrecht, including 64 square kilometres of water; these are the historical boundaries used in that study."
   },
   {
     "id": "nr560",
@@ -1626,9 +1666,13 @@
     "locations": "breinkrakers:bk-163",
     "issue": "Definitie, bron of afbakening vereist vervolgcontrole.",
     "url": "https://en.wikipedia.org/wiki/History_of_radio",
-    "status": "nog open",
-    "reason": "Bron schrijft Fessendens kerstavonduitzending van 1906 toe aan latere verhalen; eerste radio-uitzending historisch betwist. Primaire of museumbron nodig.",
-    "source": "https://en.wikipedia.org/wiki/History_of_radio"
+    "status": "aangescherpt",
+    "reason": "De IEEE Milestone dateert Fessendens uitzending op 24 december 1906; de vraag volgt expliciet die historische toeschrijving.",
+    "source": "https://ethw.org/Milestones:First_Wireless_Radio_Broadcast_by_Reginald_A._Fessenden,_1906",
+    "new": "In welk jaar vond Fessendens kerstavonduitzending plaats volgens de IEEE Milestone-gedenkplaat?",
+    "en": "In which year did Fessenden’s Christmas Eve broadcast take place according to the IEEE Milestone plaque?",
+    "evidence": "De IEEE Milestone dateert Fessendens uitzending op 24 december 1906; de vraag volgt expliciet die historische toeschrijving.",
+    "evidence_en": "The IEEE Milestone dates Fessenden’s broadcast to 24 December 1906; the question explicitly follows that historical attribution."
   },
   {
     "id": "nr1501",
