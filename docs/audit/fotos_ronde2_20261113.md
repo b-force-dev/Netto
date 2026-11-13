@@ -121,3 +121,40 @@ Deze partij: 11 met foto; 19 bewust zonder. Nog 45 Library-vragen open; de oorsp
 | Hoeveel seizoenen heeft de afgeronde televisieserie Breaking Bad? | [Commons](https://commons.wikimedia.org/wiki/File:Breaking_Bad_official_logo.svg); Sony Television; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
 | Hoeveel selectiecriteria gebruikt UNESCO in totaal voor werelderfgoed? | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_UNESCO.svg); Mouagip; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
 | Wat is het atoomnummer van tin? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+
+## Library-vragen 91–120 van 135
+
+Deze partij: 7 met foto; 23 bewust zonder. Nog 15 Library-vragen open; de oorspronkelijke vervolglijst telt 248 (met overlap met Library).
+
+| Vraag | Keuze en bronvermelding | Reden |
+|---|---|---|
+| Hoeveel landen grenzen aan Colombia? | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Colombia.svg); See File history below for details.; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel millimeter is één centimeter? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel huwelijksjaren markeert een gouden bruiloft? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van xenon? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel poten heeft een typisch volwassen insect? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel nummers staan op de oorspronkelijke uitgave van Michael Jacksons Thriller uit 1982? | [Commons](https://commons.wikimedia.org/wiki/File:Michael_Jackson_1983_(3x4_cropped)_(contrast).jpg); Matthew Rolston; Distributed by Epic Records; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Welk nummer heeft Haydns Afscheidssymfonie? | [Commons](https://commons.wikimedia.org/wiki/File:Joseph_Haydn.jpg); Thomas Hardy; Public domain | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel Amerikaanse eetlepels vormen één Amerikaanse customary cup? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van koper? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel huwelijksjaren markeert een diamanten bruiloft in de Britse traditie? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel liter bevat een balthazar-wijnfles? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel atomen bevat één molecuul methaan? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel liter bevat een methusalem-champagnefles? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel jaar duurde de Trojaanse Oorlog volgens de Griekse overlevering? | null | De kaart van Troas is op klein formaat onvoldoende herkenbaar als illustratie van de Trojaanse Oorlog. |
+| Wat is de standaardfrequentie van het elektriciteitsnet in de Verenigde Staten, in hertz? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel voetwortelbeentjes heeft één gewone menselijke voet? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van zilver? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel houten blokken bevat een standaard Jenga-spel? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van platina? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel artikelen telt de Universele Verklaring van de Rechten van de Mens? | [Commons](https://commons.wikimedia.org/wiki/File:UN_emblem_blue.svg); Joowwww; Public domain | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel uur zijn twee dagen van elk vierentwintig uur? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel brede domeinen van immaterieel cultureel erfgoed noemt het UNESCO-verdrag uit 2003? | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_UNESCO.svg); Mouagip; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel grondstoffenkaarten bevat het standaard Catan-basisspel voor drie of vier spelers? | [Commons](https://commons.wikimedia.org/wiki/File:Nepomuk_280_-_Osadn%C3%ADci_z_Katanu.jpg); Matěj Baťha; CC BY-SA 3.0 | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel keer groter is de waterstofionactiviteit bij pH drie dan bij pH vijf? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel rijstroken heeft de Golden Gate Bridge? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van lood? | [Commons](https://commons.wikimedia.org/wiki/File:Lead-2.jpg); Chemical Elements; CC BY 3.0 | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel sterrenbeelden erkent de Internationale Astronomische Unie officieel? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel cent zit er in één euro? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel van de acht planeten draaien verder van de zon dan de aarde? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel zijvlakken heeft een regelmatige icosaëdrische dobbelsteen? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
