@@ -8,17 +8,68 @@
   let pending = 0, queue = Promise.resolve(), offset = 0, lastSuccess = 0, rendered = '';
   let sending = false, previousEntry = false, waitingForRound = false;
   const remembered = () => sessionStorage.getItem('netto_live_room') || '';
-  const me = () => state?.players.find(player => player.id === currentUser?.id);
+  const me = () => state?.players.find(player => player.id === uid());
   const now = () => Date.now() + offset;
   const format = n => Number(n).toLocaleString(nettoNumberLocale());
   const factor = n => Number(n).toLocaleString(nettoNumberLocale(), {minimumFractionDigits:2,maximumFractionDigits:2}) + '×';
   const roundWord = count => count===1?copy('ronde','round'):copy('rondes','rounds');
 
-  function requireLogin() {
-    if (currentUser && supabaseClient) return true;
-    showNoticeToast(copy('Log in om Live Rondes te spelen.', 'Sign in to play Live Rounds.'), '👤', copy('Inloggen vereist','Sign-in required'));
-    openAuthModal();
-    return false;
+  // Spelen kan met een account of als gast. Een gast krijgt een anonieme
+  // Supabase-sessie in een eigen opslagsleutel, zodat de rest van Netto (Daily,
+  // leaderboard) gewoon uitgelogd blijft. Alleen mogelijk als anonieme logins
+  // in Supabase aan staan; anders vragen we om een (gratis) account.
+  const GUEST_STORAGE_KEY = 'netto-live-guest';
+  let guest = null, auth = null, guestClientInstance = null, anonymousAllowed = null, pendingJoin = '';
+  const hasClient = () => typeof supabaseClient !== 'undefined' && Boolean(supabaseClient);
+  function currentAuth() {
+    if (currentUser && hasClient()) return { client: supabaseClient, id: currentUser.id };
+    if (guest) return { client: guest.client, id: guest.id };
+    return null;
+  }
+  function uid() { return (auth || currentAuth())?.id ?? currentUser?.id; }
+  function api() { return (auth || currentAuth())?.client || (hasClient() ? supabaseClient : null); }
+  function guestClient() {
+    if (!guestClientInstance && window.supabase?.createClient) guestClientInstance = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY,
+      { auth: { storageKey: GUEST_STORAGE_KEY, persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
+    return guestClientInstance;
+  }
+  async function restoreGuest() {
+    if (guest) return true;
+    try { if (!localStorage.getItem(GUEST_STORAGE_KEY)) return false; } catch (_) { return false; }
+    try {
+      const { data } = await guestClient().auth.getSession();
+      const user = data?.session?.user;
+      if (!user) return false;
+      guest = { client: guestClient(), id: user.id, name: user.user_metadata?.username || nettoGuestName() };
+      return true;
+    } catch (_) { return false; }
+  }
+  async function isAnonymousAllowed() {
+    if (anonymousAllowed !== null) return anonymousAllowed;
+    try {
+      const response = await fetch(`${SUPABASE_URL}/auth/v1/settings`, { headers: { apikey: SUPABASE_ANON_KEY } });
+      anonymousAllowed = Boolean((await response.json())?.external?.anonymous_users);
+    } catch (_) { anonymousAllowed = false; }
+    return anonymousAllowed;
+  }
+  async function ensurePlayer() {
+    if (!hasClient()) { showError(Error('OFFLINE')); return false; }
+    if (currentUser || guest || await restoreGuest()) return true;
+    if (!(await isAnonymousAllowed())) {
+      await nettoAskPlayerName({ allowGuest: false, title: copy('Gratis account nodig', 'Free account needed'),
+        text: copy('Live Rondes houdt de stand bij op de server. Daarvoor heb je een gratis account nodig; aanmaken duurt een halve minuut. Daarna kom je meteen in de room.',
+          'Live Rounds keeps score on the server, so you need a free account. It takes half a minute to create one, then you go straight into the room.') });
+      return false;
+    }
+    const name = await nettoAskPlayerName({ title: copy('Hoe heet je?', 'What is your name?'),
+      text: copy('Iedereen in de room ziet deze naam. Je hebt geen account nodig.', 'Everyone in the room sees this name. You do not need an account.') });
+    if (!name) return false;
+    try {
+      const { data, error } = await guestClient().auth.signInAnonymously({ options: { data: { username: name } } });
+      if (error || !data?.user) throw error || Error('LOGIN_REQUIRED');
+      guest = { client: guestClient(), id: data.user.id, name };
+      return true;
+    } catch (error) { showError(error); return false; }
   }
 
   function errorText(error) {
@@ -64,7 +115,7 @@
       let response;
       try {
         response = await Promise.race([
-          supabaseClient.rpc('live_rounds', {p_action:action,p_code:code || null,p_options:options}),
+          api().rpc('live_rounds', {p_action:action,p_code:code || null,p_options:options}),
           new Promise((_, reject) => { timeout=setTimeout(()=>reject(Error('CONNECTION_TIMEOUT')),10000); })
         ]);
       } finally { clearTimeout(timeout); }
@@ -108,7 +159,7 @@
       if (version === generation && state) renderPlayers();
     }).subscribe(status => {
       if (version !== generation) return;
-      if (status === 'SUBSCRIBED') roomChannel.track({client_id:RACE_CLIENT_ID,user_id:currentUser.id,name:raceDisplayName()});
+      if (status === 'SUBSCRIBED') roomChannel.track({client_id:RACE_CLIENT_ID,user_id:uid(),name:raceDisplayName()});
       // Heartbeats/RPC blijven werken wanneer alleen Realtime tijdelijk uitvalt.
     });
     heartbeat = setInterval(() => { if (state && !pending) request('state',{},state.code,true); }, 2000);
@@ -116,7 +167,7 @@
   }
 
   function lobbyEntry() {
-    if (!state || state.phase !== 'lobby' || state.visibility !== 'open' || state.host !== currentUser?.id) return null;
+    if (!state || state.phase !== 'lobby' || state.visibility !== 'open' || state.host !== uid()) return null;
     return {kind:'open-live',status:'waiting',roomCode:state.code,name:raceDisplayName(),seconds:state.seconds,
       rounds:state.rounds,maxPlayers:state.maxPlayers||8,requireEquation:state.requireEquation!==false,showAnswers:state.showAnswers===true,players:state.players.length,createdAt:Date.parse(state.createdAt),client_id:RACE_CLIENT_ID};
   }
@@ -153,15 +204,16 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
 
   async function create(event) {
     event.preventDefault();
-    if (!requireLogin() || pending) return;
     const form = event.currentTarget;
-    if (!form.reportValidity()) return;
+    if (pending || !form.reportValidity()) return;
+    if (!(await ensurePlayer()) || pending) return;
+    auth = currentAuth();
     const options = {seconds:Number(el('liveSeconds').value),rounds:Number(el('liveRounds').value),maxPlayers:Number(el('liveMaxPlayers').value),visibility:el('liveVisibility').value,
       requireEquation:el('liveRequireEquation').checked,showAnswers:el('liveShowRoundAnswers').checked};
     const button=form.querySelector('[type="submit"]');
     button.disabled=true;
     try {
-      const {data,error}=await supabaseClient.rpc('live_rounds',{p_action:'available',p_code:null,p_options:{}});
+      const {data,error}=await api().rpc('live_rounds',{p_action:'available',p_code:null,p_options:{}});
       if(error) throw error;
       if(!data?.maxPlayers) {
         if(options.maxPlayers!==8) throw Error('CAPACITY_UNAVAILABLE');
@@ -186,7 +238,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
   }
 
   async function updateSettings() {
-    if(!state || typeof state.requireEquation!=='boolean' || state.phase!=='lobby' || state.host!==currentUser?.id || pending) { if(state) render(); return; }
+    if(!state || typeof state.requireEquation!=='boolean' || state.phase!=='lobby' || state.host!==uid() || pending) { if(state) render(); return; }
     const options={requireEquation:el('liveRoomRequireEquation').checked,showAnswers:el('liveRoomShowAnswers').checked};
     el('liveRoomRequireEquation').disabled=el('liveRoomShowAnswers').disabled=true;
     await request('settings',options);
@@ -194,14 +246,47 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
   }
 
   async function join(code) {
-    if (!requireLogin() || pending) return;
-    code = String(code || '').trim().toUpperCase();
+    if (pending) return;
+    code = String(code || '').replace(/[^A-Za-z0-9]/g, '').toUpperCase();
     if (!/^[A-Z2-9]{6}$/.test(code)) {
       showError({message:copy('Vul een code van zes letters/cijfers in.','Enter a six-character room code.')});
       el('liveMessage').textContent = copy('Vul een code van zes letters/cijfers in.','Enter a six-character room code.');
       return;
     }
+    pendingJoin = code;
+    if (!(await ensurePlayer())) {
+      el('liveJoinCode').value = code;
+      el('liveMessage').textContent = copy(`Log in of maak een account om mee te doen met room ${code}. Je komt daarna meteen binnen.`, `Sign in or create an account to join room ${code}. You will go straight in afterwards.`);
+      el('liveMessage').hidden = false;
+      return;
+    }
+    pendingJoin = '';
+    if (state && state.code !== code) leave(false);
+    auth = currentAuth();
     await request('join', {}, code);
+  }
+
+  // Gedeelde link: /live-rounds/?join=CODE
+  function handleInvite(code) {
+    if (state?.code === code) return;
+    if (!el('liveScreen')?.classList.contains('active')) open();
+    el('liveJoinCode').value = code;
+    const details = el('liveJoinCode').closest('details');
+    if (details) details.open = true;
+    join(code);
+  }
+
+  // Na een refresh vanzelf terug in je room, zonder extra klik.
+  async function resume(code) {
+    if (state || pending || !code) return;
+    if (!currentUser && !(await restoreGuest())) return;
+    auth = currentAuth();
+    const data = await request('join', {}, code, true);
+    if (!data && !state) {
+      auth = null;
+      sessionStorage.removeItem('netto_live_room');
+      el('liveResume').hidden = true;
+    }
   }
 
   function renderPlayers() {
@@ -210,7 +295,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     const content = state.players.map(player => {
       const status = !player.connected || player.disqualified ? copy('Niet verbonden','Disconnected')
         : player.submitted ? copy('Ingezonden','Submitted') : state.phase==='lobby' ? copy('Klaar','Ready') : copy('Bezig','Thinking');
-      return `<li class="live-player ${player.submitted || state.phase==='lobby' ? 'is-submitted' : ''}"><span class="live-marker" aria-label="${esc(status)}">${state.phase==='lobby'?esc(player.name.charAt(0).toUpperCase()):player.submitted?'✓':'○'}</span><span>${esc(player.name)}${player.id===currentUser?.id ? ' · '+copy('jij','you') : ''}<small>${state.phase==='lobby' && player.id===host?'Host':status}</small></span>${state.phase==='lobby'?'':`<b>${player.points}</b>`}</li>`;
+      return `<li class="live-player ${player.submitted || state.phase==='lobby' ? 'is-submitted' : ''}"><span class="live-marker" aria-label="${esc(status)}">${state.phase==='lobby'?esc(player.name.charAt(0).toUpperCase()):player.submitted?'✓':'○'}</span><span>${esc(player.name)}${player.id===uid() ? ' · '+copy('jij','you') : ''}<small>${state.phase==='lobby' && player.id===host?'Host':status}</small></span>${state.phase==='lobby'?'':`<b>${player.points}</b>`}</li>`;
     }).join('');
     ['liveLobbyPlayers','liveRoundPlayers'].forEach(id => { if (el(id).innerHTML !== content) el(id).innerHTML=content; });
   }
@@ -249,7 +334,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
   function renderOutcome() {
     const overlay = el('liveRoundOutcome');
     const winner = state.players.find(player => player.id===state.winner);
-    const won = state.winner===currentUser?.id;
+    const won = state.winner===uid();
     overlay.classList.toggle('is-win', won);
     overlay.classList.toggle('is-loss', Boolean(winner)&&!won);
     overlay.classList.toggle('is-draw', !winner);
@@ -272,14 +357,14 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     archive.innerHTML = rounds.map(round => {
       const puzzle = round.puzzle;
       const questions = [1,2,3].map(n => `<li><span>${esc(window.NettoI18n?.t(puzzle['q'+n+'_label']) || puzzle['q'+n+'_label'])}</span><b>${format(puzzle['q'+n+'_answer'])}</b></li>`).join('');
-      const players = (round.players || []).map(player => `<tr class="${player.id===round.winner?'live-winner':''}"><th scope="row">${player.id===round.winner?'★ ':''}${esc(player.name)}${player.id===currentUser?.id?`<small>${copy('jij','you')}</small>`:''}</th>${[0,1,2].map(i=>`<td>${player.answers?.[i]!=null?format(player.answers[i]):'—'}</td>`).join('')}<td>${player.factor==null?'—':factor(player.factor)}</td></tr>`).join('');
+      const players = (round.players || []).map(player => `<tr class="${player.id===round.winner?'live-winner':''}"><th scope="row">${player.id===round.winner?'★ ':''}${esc(player.name)}${player.id===uid()?`<small>${copy('jij','you')}</small>`:''}</th>${[0,1,2].map(i=>`<td>${player.answers?.[i]!=null?format(player.answers[i]):'—'}</td>`).join('')}<td>${player.factor==null?'—':factor(player.factor)}</td></tr>`).join('');
       return `<article class="live-answer-round"><h2>${copy(`Ronde ${round.round}`, `Round ${round.round}`)}</h2><ul class="live-answer-questions">${questions}</ul><div class="live-table-wrap" role="region" tabindex="0" aria-label="${copy(`Antwoorden ronde ${round.round}`, `Answers for round ${round.round}`)}"><table class="live-table"><thead><tr><th scope="col">${copy('Speler','Player')}</th><th scope="col">${copy('Vraag 1','Question 1')}</th><th scope="col">${copy('Vraag 2','Question 2')}</th><th scope="col">${copy('Vraag 3','Question 3')}</th><th scope="col">${copy('Gem. factor','Avg. factor')}</th></tr></thead><tbody>${players}</tbody></table></div></article>`;
     }).join('');
   }
 
   function renderRoundReview() {
     const winner=state.players.find(player=>player.id===state.winner);
-    const won=state.winner===currentUser?.id;
+    const won=state.winner===uid();
     el('liveRevealRound').textContent=copy(`Ronde ${state.round} van ${state.rounds}`,`Round ${state.round} of ${state.rounds}`);
     el('liveRevealTitle').textContent=copy('De antwoorden','The answers');
     const banner=el('liveRevealWinner');
@@ -290,7 +375,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     const puzzle=state.puzzle;
     if(!puzzle) return;
     const questions=[1,2,3].map(n=>`<div class="live-reveal-answer"><span class="live-muted">${copy('Vraag','Question')} ${n}</span><p>${esc(window.NettoI18n?.t(puzzle['q'+n+'_label'])||puzzle['q'+n+'_label'])}</p><strong>${format(puzzle['q'+n+'_answer'])}</strong></div>`).join('');
-    const players=state.players.map(player=>`<tr class="${player.id===state.winner?'live-winner':''}"><th scope="row">${player.id===state.winner?'★ ':''}${esc(player.name)}${player.id===currentUser?.id?`<small>${copy('jij','you')}</small>`:''}</th>${[0,1,2].map(i=>`<td>${player.answers?.[i]!=null&&!player.disqualified?format(player.answers[i]):'—'}</td>`).join('')}<td>${player.factor==null?'—':factor(player.factor)}</td></tr>`).join('');
+    const players=state.players.map(player=>`<tr class="${player.id===state.winner?'live-winner':''}"><th scope="row">${player.id===state.winner?'★ ':''}${esc(player.name)}${player.id===uid()?`<small>${copy('jij','you')}</small>`:''}</th>${[0,1,2].map(i=>`<td>${player.answers?.[i]!=null&&!player.disqualified?format(player.answers[i]):'—'}</td>`).join('')}<td>${player.factor==null?'—':factor(player.factor)}</td></tr>`).join('');
     el('liveRevealContent').innerHTML=`<div class="live-reveal-answers">${questions}</div><div class="live-reveal-equation">${esc(puzzle.calculation||'')}</div><div class="live-table-wrap" role="region" tabindex="0" aria-label="${copy('Antwoorden en tussenstand','Answers and standings')}"><table class="live-table"><thead><tr><th scope="col">${copy('Speler','Player')}</th>${[1,2,3].map(n=>`<th scope="col">${copy('Vraag','Question')} ${n}</th>`).join('')}<th scope="col">${copy('Gem. factor','Avg. factor')}</th></tr></thead><tbody>${players}</tbody></table></div>`;
   }
 
@@ -305,7 +390,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     archive.innerHTML = `<p class="live-muted">${copy('Antwoorden laden…','Loading answers…')}</p>`;
     const code = state.code;
     let data, error;
-    try { ({data,error} = await supabaseClient.rpc('live_rounds_results',{p_code:code})); }
+    try { ({data,error} = await api().rpc('live_rounds_results',{p_code:code})); }
     catch (requestError) { error=requestError; }
     if (!state || state.code!==code || state.phase!=='finished') return;
     if (error || !Array.isArray(data)) {
@@ -322,7 +407,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     el('liveFinishTitle').textContent = best===0 ? copy('Geen rondes gewonnen','No rounds won') : winners.length>1
       ? copy('Gedeelde overwinning','Joint winners') : copy(`${winners[0].name} wint!`,`${winners[0].name} wins!`);
     const ranked=[...state.players].sort((a,b)=>b.points-a.points);
-    el('liveFinalPlayers').innerHTML = ranked.map(player=>`<li class="live-player ${best>0&&player.points===best?'live-winner':''}"><span class="live-rank">${1+ranked.filter(other=>other.points>player.points).length}</span><span>${esc(player.name)}${player.id===currentUser?.id?`<small>${copy('jij','you')}</small>`:''}</span><b>${player.points} <small>${player.points===1?copy('punt','point'):copy('punten','points')}</small></b></li>`).join('');
+    el('liveFinalPlayers').innerHTML = ranked.map(player=>`<li class="live-player ${best>0&&player.points===best?'live-winner':''}"><span class="live-rank">${1+ranked.filter(other=>other.points>player.points).length}</span><span>${esc(player.name)}${player.id===uid()?`<small>${copy('jij','you')}</small>`:''}</span><b>${player.points} <small>${player.points===1?copy('punt','point'):copy('punten','points')}</small></b></li>`).join('');
     el('liveFinishMeta').textContent=copy(`${state.rounds} ${roundWord(state.rounds)} gespeeld met ${state.players.length} spelers.`,`${state.rounds} ${roundWord(state.rounds)} played with ${state.players.length} players.`);
     el('liveAnswerArchive').hidden=true;
     el('liveAnswerArchive').innerHTML='';
@@ -356,12 +441,12 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     el('liveRoomRequireEquation').checked=state.requireEquation!==false;
     el('liveRoomShowAnswers').checked=state.showAnswers===true;
     const customRulesSupported=typeof state.requireEquation==='boolean'&&typeof state.showAnswers==='boolean';
-    el('liveRoomRequireEquation').disabled=el('liveRoomShowAnswers').disabled=!customRulesSupported||state.host!==currentUser?.id||state.phase!=='lobby';
+    el('liveRoomRequireEquation').disabled=el('liveRoomShowAnswers').disabled=!customRulesSupported||state.host!==uid()||state.phase!=='lobby';
     el('liveRoomRulesNote').textContent=customRulesSupported?copy('De host kiest de regels voor iedereen.','The host chooses the rules for everyone.')
       :copy('Standaardregels actief. Extra opties komen beschikbaar na de database-update.','Standard rules active. Custom rules become available after the database update.');
-    el('liveStart').hidden=state.host!==currentUser?.id;
+    el('liveStart').hidden=state.host!==uid();
     el('liveStart').disabled=state.players.length<2;
-    el('liveWaitingHost').hidden=state.host===currentUser?.id;
+    el('liveWaitingHost').hidden=state.host===uid();
     el('liveRoundLabel').textContent=copy(`Ronde ${state.round} van ${state.rounds}`,`Round ${state.round} of ${state.rounds}`);
     el('liveQuestionList').hidden=!state.puzzle;
     renderPlayers();
@@ -416,7 +501,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     generation++;
     clearInterval(heartbeat); clearInterval(clock);
     heartbeat=clock=null;
-    if (code && supabaseClient) supabaseClient.rpc('live_rounds',{p_action:'leave',p_code:code,p_options:{}}).then(()=>{},()=>{});
+    if (code && api()) api().rpc('live_rounds',{p_action:'leave',p_code:code,p_options:{}}).then(()=>{},()=>{});
     if (channel) { signal(); supabaseClient?.removeChannel(channel); channel=null; }
     if (previousEntry) unpublishOpenRaceEntry();
     previousEntry=false; state=null; rendered=''; sending=false; waitingForRound=false;

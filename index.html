@@ -569,6 +569,7 @@
             <aside class="race-open-games">
               <div class="race-open-games-heading"><h2>Open games</h2><button type="button" onclick="refreshOpenGames()" aria-label="Open games vernieuwen">↻</button></div>
               <p class="race-lobby-intro">Kies een game en daag iemand uit.</p>
+              <p class="race-online-explainer">Een duel is 1 tegen 1: dezelfde puzzels, dezelfde klok. Wie de meeste goed heeft, wint. Met een groep? Speel <a href="live-rounds/" onclick="event.preventDefault();openLiveRounds()">Live Rondes</a>.</p>
               <div id="raceOpenGamesList" class="race-open-games-list" aria-live="polite"><div class="race-open-games-empty">Open games laden…</div></div>
               <details class="live-private-join"><summary>Meedoen met een roomcode</summary>
                 <form class="race-duel-join race-online-code-join" onsubmit="event.preventDefault();joinRaceRoom('raceOnlineJoinCode')">
@@ -632,13 +633,17 @@
               <div class="race-duel-code" id="raceRoomCode">—</div>
               <div class="race-room-settings" id="raceRoomSettings"></div>
             </div>
-            <button class="race-copy-btn" type="button" onclick="copyRaceRoomCode()">📋 Kopieer</button>
+            <div class="race-share-actions">
+              <button class="btn-check race-share-btn" type="button" onclick="shareRaceInvite()">Uitnodiging delen</button>
+              <button class="race-copy-btn" type="button" onclick="copyRaceRoomCode()">📋 Kopieer code</button>
+            </div>
           </div>
+          <label class="race-invite-link"><span>Stuur deze link, bijvoorbeeld via WhatsApp. Je vriend doet mee zonder account.</span><input id="raceInviteLink" type="text" readonly onfocus="this.select()" aria-label="Uitnodigingslink"></label>
           <div class="race-duel-status" id="raceDuelStatus">Verbinden…</div>
           <div class="race-duel-players" id="raceDuelPlayers"></div>
           <div class="race-duel-actions">
             <button class="btn-check" id="raceDuelStartBtn" type="button" style="display:none;" onclick="startDuelRace()">Start duel →</button>
-            <button class="race-duel-leave" type="button" onclick="leaveRaceRoom()">Annuleren</button>
+            <button class="race-duel-leave" type="button" onclick="cancelRaceRoom()">Room verlaten</button>
           </div>
         </div>
       </section>
@@ -659,10 +664,11 @@
         <div class="race-history race-opponent-history" id="raceOpponentHistory" style="display:none;"></div>
 
         <div class="race-question-card">
+          <div class="race-countdown" id="raceCountdown" role="status" aria-live="assertive" hidden><strong id="raceCountdownNumber">3</strong><span id="raceCountdownLabel">Maak je klaar…</span></div>
           <div class="race-question-list" id="raceQuestionList"></div>
           <div class="race-feedback" id="raceFeedback" role="status" aria-live="polite"></div>
           <button class="btn-check race-submit-button" id="raceSubmitButton" type="button" onclick="submitPuzzleRace()">Check en door →</button>
-          <div class="race-hint">Enter in het laatste veld gaat ook meteen door.</div>
+          <div class="race-hint">Enter springt naar het volgende lege vak en levert in zodra alles is ingevuld.</div>
         </div>
       </section>
 
@@ -674,7 +680,10 @@
         <p class="race-results-meta" id="raceResultsMeta"></p>
         <div class="race-review-heading"><h3>Review</h3><span>Alle ingediende puzzels</span></div>
         <div class="race-review-list" id="raceReviewList"></div>
-        <button class="hero-cta race-restart-button" type="button" onclick="openPuzzleRace()">← Puzzle Race</button>
+        <div class="race-results-actions">
+          <button class="hero-cta" id="raceAgainButton" type="button" onclick="raceAgain()">Nog een race →</button>
+          <button class="btn-check race-restart-button" type="button" onclick="openPuzzleRace()">← Puzzel Race-menu</button>
+        </div>
       </section>
     </div>
   </main>

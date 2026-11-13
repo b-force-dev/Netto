@@ -307,3 +307,46 @@
   #livePlay .live-clock small { display: none; }
   #livePlay .live-round-players .live-player { flex-basis: 120px; }
 }
+
+/* ===== Puzzel Race: aftellen, uitnodigen, eindscherm ===== */
+#racePlay .race-question-card { position: relative; }
+.race-countdown { position: absolute; inset: -6px; z-index: 5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; border-radius: 16px; background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(3px); text-align: center; }
+.race-countdown[hidden] { display: none; }
+.race-countdown strong { font: 700 clamp(64px, 14vw, 112px)/1 'Space Mono', 'JetBrains Mono', monospace; color: var(--ink); animation: race-count-pop .9s ease-out both; }
+.race-countdown span { font: 600 14px/1.4 'Space Grotesk', sans-serif; color: var(--ink-muted, #626880); }
+.race-countdown.is-go strong { color: var(--green, #13845d); }
+@keyframes race-count-pop { from { transform: scale(1.35); opacity: .2; } 30% { transform: scale(1); opacity: 1; } }
+#racePlay input:disabled, #raceSubmitButton:disabled { opacity: .55; cursor: not-allowed; }
+.race-feedback.is-good, .race-feedback.is-bad { animation: race-feedback-in .35s ease-out; }
+@keyframes race-feedback-in { from { transform: translateY(-4px); opacity: 0; } to { transform: none; opacity: 1; } }
+.race-share-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.race-share-actions .btn-check { margin: 0; min-height: 42px; padding: 10px 16px; }
+.race-invite-link { display: block; margin: 4px 0 14px; font-size: 13px; color: var(--ink-muted, #626880); }
+.race-invite-link input { display: block; width: 100%; margin-top: 6px; padding: 9px 11px; border: 1px solid var(--surface-border); border-radius: 9px; background: var(--surface); color: var(--ink); font: 500 12px/1.4 'JetBrains Mono', monospace; }
+.race-online-explainer { margin: 0 0 14px; font-size: 13px; line-height: 1.5; color: var(--ink-muted, #626880); }
+.race-online-explainer a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.race-duel-player .is-waiting { color: var(--ink-muted, #626880); font-weight: 500; }
+.race-duel-verdict.waiting { background: color-mix(in srgb, var(--ink) 7%, transparent); color: var(--ink); font-size: 16px; }
+.race-duel-verdict.left { background: #E0E7FF; color: #1E1B4B; font-size: 17px; }
+.race-duel-verdict b { margin-right: 6px; }
+.race-results-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 18px; }
+.race-results-actions .hero-cta, .race-results-actions .btn-check { margin: 0; }
+#raceResultsMeta .race-summary-record { animation: race-count-pop .8s ease-out both; }
+@media (max-width: 640px) {
+  .race-duel-code-row { flex-wrap: wrap; }
+  .race-share-actions { width: 100%; justify-content: stretch; }
+  .race-share-actions > button { flex: 1 1 auto; }
+  .race-results-actions > button { flex: 1 1 100%; }
+}
+
+/* ===== Naamvraag voor spelen zonder account (race en live) ===== */
+.netto-name-dialog { width: min(420px, calc(100vw - 32px)); padding: 0; border: 1px solid var(--surface-border); border-radius: 18px; background: var(--surface); color: var(--ink); box-shadow: 0 24px 60px rgba(0,0,0,.25); }
+.netto-name-dialog::backdrop { background: rgba(10, 12, 40, .55); }
+.netto-name-form { display: grid; gap: 10px; padding: 24px; }
+.netto-name-form h2 { margin: 0; font-size: 22px; }
+.netto-name-text { margin: 0 0 6px; font-size: 14px; line-height: 1.5; color: var(--ink-muted, #626880); }
+.netto-name-form label { font-size: 13px; font-weight: 600; }
+.netto-name-form input { min-height: 46px; padding: 10px 12px; border: 1px solid var(--surface-border); border-radius: 10px; background: var(--surface); color: var(--ink); font: inherit; font-size: 16px; }
+.netto-name-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 6px; }
+.netto-name-actions .hero-cta, .netto-name-actions .btn-check { margin: 0; min-height: 46px; }
+.netto-name-actions .live-text-button { margin-left: auto; }
