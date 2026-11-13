@@ -20,6 +20,7 @@
   // in Supabase aan staan; anders vragen we om een (gratis) account.
   const GUEST_STORAGE_KEY = 'netto-live-guest';
   let guest = null, auth = null, guestClientInstance = null, anonymousAllowed = null, pendingJoin = '';
+  try { pendingJoin = sessionStorage.getItem('netto_live_invite') || ''; } catch (_) {}
   const hasClient = () => typeof supabaseClient !== 'undefined' && Boolean(supabaseClient);
   function currentAuth() {
     if (currentUser && hasClient()) return { client: supabaseClient, id: currentUser.id };
@@ -56,9 +57,9 @@
     if (!hasClient()) { showError(Error('OFFLINE')); return false; }
     if (currentUser || guest || await restoreGuest()) return true;
     if (!(await isAnonymousAllowed())) {
-      await nettoAskPlayerName({ allowGuest: false, title: copy('Gratis account nodig', 'Free account needed'),
-        text: copy('Live Rondes houdt de stand bij op de server. Daarvoor heb je een gratis account nodig; aanmaken duurt een halve minuut. Daarna kom je meteen in de room.',
-          'Live Rounds keeps score on the server, so you need a free account. It takes half a minute to create one, then you go straight into the room.') });
+      await nettoAskPlayerName({ allowGuest: false, offerDuel: true, title: copy('Gratis account nodig', 'Free account needed'),
+        text: copy('Live Rondes heeft op deze server een gratis account nodig. Log in of meld je aan om terug te keren naar deze room. E-mailbevestiging kan nodig zijn. Zonder account spelen? Kies een 1v1-duel.',
+          'Live Rounds needs a free account on this server. Sign in or sign up to return to this room. Email confirmation may be required. Want to play without an account? Choose a 1v1 duel.') });
       return false;
     }
     const name = await nettoAskPlayerName({ title: copy('Hoe heet je?', 'What is your name?'),
@@ -184,7 +185,11 @@
       && /^[A-Z2-9]{6}$/.test(entry.roomCode) && entry.client_id!==RACE_CLIENT_ID && entry.players<(entry.maxPlayers||8))
       .map(entry => [entry.roomCode,entry])).values()];
 list.innerHTML = games.length ? games.map(game => `<button type="button" class="race-open-game" data-code="${esc(game.roomCode)}"><span>${esc(game.name)}<small>${esc(game.seconds)}s · ${esc(game.rounds)} ${roundWord(game.rounds)} · ${esc(game.players)}/${esc(game.maxPlayers||8)}</small><small>${game.requireEquation!==false?copy('Som verplicht','Equation required'):copy('Vrije antwoorden','Free answers')} · ${game.showAnswers?copy('Met onthulling','With reveals'):copy('Snelle rondes','Quick rounds')}</small></span><b>${copy('Meedoen','Join')} →</b></button>`).join('')
-      : `<div class="live-open-empty"><span class="live-open-empty-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="15" cy="13" r="5"/><path d="M5 31v-3a10 10 0 0 1 20 0v3M27 9a5 5 0 0 1 0 10M30 23a9 9 0 0 1 5 8"/></svg></span><h3>${raceLobbyFout?copy('Even geen verbinding','Connection interrupted'):copy('De eerste room is aan jou','Start something fun')}</h3><p>${raceLobbyFout?copy('Vernieuw om opnieuw naar open rooms te zoeken.','Refresh to look for open rooms again.'):copy('Er zijn nu geen open rooms. Maak er een aan — andere spelers kunnen hier aansluiten.','No open rooms right now. Create one — other players can join you here.')}</p></div>`;
+      : `<div class="live-open-empty"><span class="live-open-empty-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="15" cy="13" r="5"/><path d="M5 31v-3a10 10 0 0 1 20 0v3M27 9a5 5 0 0 1 0 10M30 23a9 9 0 0 1 5 8"/></svg></span><h3>${raceLobbyFout?copy('Opnieuw verbinden\u2026','Reconnecting\u2026'):copy('De eerste room is aan jou','Start something fun')}</h3><p>${raceLobbyFout?copy('We zoeken vanzelf opnieuw naar rooms.','We will look for rooms again automatically.'):copy('Er zijn nu geen open rooms. Maak er een aan — andere spelers kunnen hier aansluiten.','No open rooms right now. Create one — other players can join you here.')}</p></div>`;
+    if (raceLobbyFout) {
+      const retry = document.createElement('button'); retry.type='button'; retry.className='btn-check';
+      retry.textContent=copy('Opnieuw proberen','Retry now'); retry.addEventListener('click',retryRaceLobby); list.appendChild(retry);
+    }
     list.querySelectorAll('[data-code]').forEach(button => button.addEventListener('click',() => join(button.dataset.code)));
   }
 
@@ -259,6 +264,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
       return;
     }
     pendingJoin = code;
+    sessionStorage.setItem('netto_live_invite', code);
     if (!(await ensurePlayer())) {
       el('liveJoinCode').value = code;
       el('liveMessage').textContent = copy(`Log in of maak een account om mee te doen met room ${code}. Je komt daarna meteen binnen.`, `Sign in or create an account to join room ${code}. You will go straight in afterwards.`);
@@ -266,6 +272,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
       return;
     }
     pendingJoin = '';
+    sessionStorage.removeItem('netto_live_invite');
     if (state && state.code !== code) leave(false);
     auth = currentAuth();
     await request('join', {}, code);

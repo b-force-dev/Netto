@@ -108,7 +108,9 @@
   function eigenAdres() {
     try {
       const u = new URL(window.location.href);
-      return u.origin + u.pathname;
+      const invite = sessionStorage.getItem('netto_live_invite');
+      const join = u.pathname.includes('live-rounds') && /^[A-Z2-9]{6}$/.test(invite || '') ? `?join=${invite}` : '';
+      return u.origin + u.pathname + join;
     } catch (_) {
       return undefined;   // undefined laat Supabase zijn eigen Site URL kiezen
     }
@@ -167,6 +169,8 @@
         updateUserUI();
         stuurLokaleScoresOp();
         laadLeaderboardZichtbaar();
+        // Auth-callbacks mogen niet op een nieuwe Supabase-call wachten.
+        setTimeout(() => window.NettoLive?.onSignIn(), 0);
       }
     });
   }
