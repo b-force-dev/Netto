@@ -99,7 +99,7 @@
 <script src="data/netto_frontend_puzzles.js?v=61"></script>
 <script src="data/netto_race_pool.js?v=45"></script>
 <script src="data/netto_translations_en.js?v=52"></script>
-<script src="js/i18n.js?v=87"></script>
+<script src="js/i18n.js?v=88"></script>
 <link rel="stylesheet" href="css/styles.css?v=62">
 <link rel="stylesheet" href="css/refinement.css?v=174">
 <link rel="stylesheet" href="css/home.css?v=2">
@@ -117,7 +117,7 @@
 </head>
 <body>
 <!-- seo:noscript-begin -->
-<noscript><div style="position:relative;z-index:5;max-width:40rem;margin:0 auto;padding:5rem 1.25rem 2rem;color:#fff;font:16px/1.55 system-ui,sans-serif"><h1>Netto: a daily estimation game</h1><p>Every day Netto gives you three trivia questions that each have a number as their answer. The answers are linked by a simple calculation, such as 4 × 2 = 8. Estimate all three, use the connection as a clue and try to stay close to the real answers.</p><p>Play the Daily, replay the archive, race the clock in the Puzzle Race or challenge friends in Live Rounds.</p><p>Netto needs JavaScript to run. Please turn it on in your browser to play.</p><p><a href="daily/" style="color:#ffd84a">Today&#x27;s Daily</a> · <a href="how-to-play/" style="color:#ffd84a">How to play</a> · <a href="puzzles/" style="color:#ffd84a">Puzzles</a> · <a href="connections/" style="color:#ffd84a">Find the Connection</a> · <a href="race/" style="color:#ffd84a">Puzzle Race</a> · <a href="live-rounds/" style="color:#ffd84a">Live Rounds</a> · <a href="about/" style="color:#ffd84a">About Netto</a></p></div></noscript>
+<noscript><div style="position:relative;z-index:5;max-width:40rem;margin:0 auto;padding:5rem 1.25rem 2rem;color:#fff;font:16px/1.55 system-ui,sans-serif"><h1>Netto: a daily estimation game</h1><p>Every day Netto gives you three trivia questions that each have a number as their answer. The answers are linked by a simple calculation, such as 8 × 11 = 88. Estimate all three, use the connection as a clue and try to stay close to the real answers.</p><p>Play the Daily, replay the archive, race the clock in the Puzzle Race or challenge friends in Live Rounds.</p><p>Netto needs JavaScript to run. Please turn it on in your browser to play.</p><p><a href="daily/" style="color:#ffd84a">Today&#x27;s Daily</a> · <a href="how-to-play/" style="color:#ffd84a">How to play</a> · <a href="puzzles/" style="color:#ffd84a">Puzzles</a> · <a href="connections/" style="color:#ffd84a">Find the Connection</a> · <a href="race/" style="color:#ffd84a">Puzzle Race</a> · <a href="live-rounds/" style="color:#ffd84a">Live Rounds</a> · <a href="about/" style="color:#ffd84a">About Netto</a></p></div></noscript>
 <!-- seo:noscript-end -->
 
   <!-- Achtergrond Formules -->
@@ -360,7 +360,7 @@
   <main class="screen" id="screen-puzzle">
     <div class="inner">
       <div class="eyebrow" id="puzzleEyebrow">Netto · nr. 032 · 28 aug</div>
-      <h1 class="headline" id="dailyHeadline">Drie antwoorden. <span class="script">Eén som.</span></h1>
+      <h1 class="headline" id="dailyHeadline">Drie vragen. <span class="script">Eén som.</span></h1>
 
       <div class="card">
         <div class="daily-question-view" id="dailyQuestionView">
@@ -514,14 +514,14 @@
         <h2 data-nl="Zo speel je Netto">How to play Netto</h2>
         <p class="how-lede" data-nl="Schat drie feiten. Gebruik het verband om je antwoorden te verbeteren.">Estimate three facts. Use the connection to improve your guesses.</p>
         <button type="button" class="tutorial-start" data-tutorial-start data-nl="Probeer de tour van 30 seconden">Try the 30-second tour</button>
-        <div class="how-equation" aria-label="A ? B = C"><span>A</span><b>?</b><span>B</span><b>=</b><span>C</span></div>
+        <div class="how-equation" aria-label="A × B = C"><span>A</span><b>×</b><span>B</span><b>=</b><span>C</span></div>
         <ol class="how-steps">
-          <li><span class="how-step-number">01</span><div><h3 data-nl="Schat drie antwoorden">Estimate three answers</h3><p data-nl="Vul je beste schattingen in. Je hoeft niet alles te weten.">Enter your best guesses. You don?t need to know everything.</p></div></li>
-          <li><span class="how-step-number">02</span><div><h3 data-nl="Gebruik het verband">Use the connection</h3><p data-nl="Bijvoorbeeld: een hond heeft 4 poten, een mens 2 benen en een spin 8 poten. Dus 4 ? 2 = 8. Gebruik antwoorden die je vertrouwt om de andere te verbeteren. De operator kan per puzzel verschillen.">For example: a dog has 4 legs, a human 2, and a spider 8. So 4 ? 2 = 8. Use answers you trust to improve the others. The operator can change from puzzle to puzzle.</p></div></li>
-          <li><span class="how-step-number">03</span><div><h3 data-nl="Lager is beter">Lower is better</h3><p data-nl="1,00? is perfect; 2? betekent dat je er een factor twee naast zat. Je eindfactor is het gemiddelde van de drie. Je ziet ook je nauwkeurigheid: 100% gedeeld door je factor.">1.00? is perfect; 2? means you were a factor of two off. Your final factor is the average of all three. You?ll also see your accuracy: 100% divided by your factor.</p></div></li>
+          <li><span class="how-step-number">01</span><div><h3 data-nl="Schat drie antwoorden">Estimate three answers</h3><p data-nl="Vul je beste schattingen in. Je hoeft niet alles te weten.">Enter your best guesses. You don’t need to know everything.</p></div></li>
+          <li><span class="how-step-number">02</span><div><h3 data-nl="Gebruik het verband">Use the connection</h3><p data-nl="Bijvoorbeeld: een spin heeft 8 poten, een voetbalteam 11 spelers op het veld en een standaardpiano 88 toetsen. Dus 8 × 11 = 88. Gebruik antwoorden die je vertrouwt om de andere te verbeteren. De operator kan per puzzel verschillen.">For example: a spider has 8 legs, a football team 11 players on the pitch, and a standard piano 88 keys. So 8 × 11 = 88. Use answers you trust to improve the others. The operator can change from puzzle to puzzle.</p></div></li>
+          <li><span class="how-step-number">03</span><div><h3 data-nl="Lager is beter">Lower is better</h3><p data-nl="1,00× is perfect; 2× betekent dat je er een factor twee naast zat. Je eindfactor is het gemiddelde van de drie. Je ziet ook je nauwkeurigheid: 100% gedeeld door je factor.">1.00× is perfect; 2× means you were a factor of two off. Your final factor is the average of all three. You’ll also see your accuracy: 100% divided by your factor.</p></div></li>
         </ol>
         <div class="how-next"><div class="how-next-grid">
-          <button type="button" onclick="NettoRoutes.openToday()"><b data-nl="Speel de Daily van vandaag">Play today?s Daily</b><span data-nl="Drie vragen. Elke dag een nieuwe puzzel.">Three questions. A fresh puzzle every day.</span><i aria-hidden="true">?</i></button>
+          <button type="button" onclick="NettoRoutes.openToday()"><b data-nl="Speel de Daily van vandaag">Play today’s Daily</b><span data-nl="Drie vragen. Elke dag een nieuwe puzzel.">Three questions. A fresh puzzle every day.</span><i aria-hidden="true">→</i></button>
         </div></div>
       </section>
       <div class="library-difficulties" id="libraryDifficulties">
@@ -1229,23 +1229,23 @@
 <script src="js/daily-photos.js?v=3"></script>
 <script src="js/question-context.js?v=4"></script>
 <script src="js/answer-reveal.js?v=8"></script>
-<script src="js/usage.js?v=1"></script>
-<script src="js/core.js?v=151"></script>
+<script src="js/usage.js?v=2"></script>
+<script src="js/core.js?v=152"></script>
 <script src="js/share.js?v=2"></script>
-<script src="js/puzzle-modes.js?v=70"></script>
-<script src="js/find-connection.js?v=14"></script>
-<script src="js/race.js?v=68"></script>
+<script src="js/puzzle-modes.js?v=71"></script>
+<script src="js/find-connection.js?v=15"></script>
+<script src="js/race.js?v=69"></script>
 <script src="js/live-rounds.js?v=9"></script>
 <script src="js/submissions.js?v=41"></script>
 <script src="js/library.js?v=62"></script>
-<script src="js/home.js?v=2"></script>
+<script src="js/home.js?v=3"></script>
 <script src="js/keyboard.js?v=3"></script>
 <script src="js/site-navigation.js?v=8"></script>
 <script src="js/routes.js?v=10"></script>
 <script src="js/app.js?v=36"></script>
-<script src="js/stats-page.js?v=10"></script>
+<script src="js/stats-page.js?v=11"></script>
 <script src="js/pwa.js?v=2"></script>
-<script src="js/tutorial.js?v=3"></script>
+<script src="js/tutorial.js?v=4"></script>
 
 </body>
 </html>
