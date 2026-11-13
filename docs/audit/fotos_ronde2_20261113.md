@@ -1,6 +1,22 @@
-﻿# Foto-aanvulling ronde 2 — 13 november 2026
+# Foto-aanvulling ronde 2 — 13 november 2026
 
 Branch: `t3/add-library-puzzle-photos`, basis `2beac5d`, gelijk aan opgehaalde `origin/develop`. Geen push.
+
+## Eindresultaat
+
+| Bereik | Vragen | Met foto | Bewust zonder (`null`) | Nog open | Nieuw gekoppeld t.o.v. aanvang |
+|---|---:|---:|---:|---:|---:|
+| Library 68–112 | 135 | 48 | 87 | 0 | 32 |
+| Oorspronkelijke vervolglijst | 248 | 30 | 149 | 69 | 30 |
+| Unieke teksten in beide lijsten | 382 | 77 | 236 | 69 | 61 |
+
+De zuurstofvraag staat in beide lijsten; tel de twee rijen dus niet zonder correctie op. De 179 behandelde vervolgvragen omvatten 88 gerichte keuzes en 91 aanvullende lokale kandidaten. De 69 overgebleven vragen hadden geen bruikbaar voorstel in de geraadpleegde lokale catalogus en zijn niet als beoordeeld gemarkeerd. Ze vereisen nieuw gericht brononderzoek. `null` bij afgewezen voorstellen is voorlopig: een later bevestigd veilig alternatief kan deze keuze vervangen. Bij onmiskenbaar verkeerde kandidaten is de bestandsmetadata voldoende voor afwijzing; goedgekeurde bestanden zijn daadwerkelijk opgehaald en visueel bekeken.
+
+Er zijn 10 nieuwe lokale miniaturen (langste zijde maximaal 640 pixels), met Commons-pagina, maker en vrije licentie in de canonieke bron. Overige goedkeuringen hergebruiken bestaande Commons-gegevens. Alle 95 aangescherpte vragen hebben een passende bestaande hernoemingsregel; 26 aanvullende Library-hernoemingen zijn toegevoegd. De gegenereerde bank gaat van 896 naar 997 sleutels: 116 erbij en 15 verwijderd, inclusief historische aliassen. Dit is geen telling van unieke nieuwe beelden.
+
+Netwerk: één verzoek tegelijk, minstens 3 seconden tussen verzoeken, algemene User-Agent `NettoPhotoReview/1.1 (educational quiz; free image attribution review)`. Geen HTTP 429 gezien. De eerste urllib-poging faalde op certificaatvalidatie; requests werkte met normale TLS-validatie. Geen certificaatcontrole uitgeschakeld. De ingebedde werkbladbeelden bleken niet betrouwbaar aan de huidige kandidaatvolgorde te koppelen; ze zijn daarom niet gebruikt als visueel bewijs voor goedgekeurde bestanden. Daarvoor zijn de werkelijk gekozen URLs gedownload.
+
+Controles: na iedere partij slagen `node tests/photo-links.cjs` en `python tools/controleer_puzzels.py` (**ALLES IN ORDE**). Ook `node tests/daily-reliability.cjs` en `node tests/daily-server.cjs` slagen. De laatste generatie is reproduceerbaar (bytegelijk bij opnieuw draaien). Geen volledige browsercontrole of netwerkcontrole van de gehele bestaande bank uitgevoerd. Alleen de toegestane fotobron, foto-assets, hernoemingen, gegenereerde fotobank en dit verslag zijn gewijzigd. Niets gepusht; integrator verzorgt eventuele versies en mirror.
 
 ## Herstel vooraf
 
@@ -12,7 +28,7 @@ Na dit herstel slagen `node tests/photo-links.cjs` en `python tools/controleer_p
 
 ## Library 68–77 (partij 1: 30 vragen)
 
-9 met foto, 21 bewust zonder; 105 nieuwe Library-vragen nog te beoordelen. De 248 vervolgvragen blijven in deze partij open. Van deze negen waren er vijf al gekoppeld bij aanvang; vier koppelingen zijn hersteld/toegevoegd door generatie.
+9 met foto, 21 bewust zonder; 105 nieuwe Library-vragen nog te beoordelen. De 248 vervolgvragen blijven in deze partij open. Van deze negen waren er vier al gekoppeld bij aanvang; vijf koppelingen zijn hersteld/toegevoegd door generatie.
 
 | Vraag | Keuze | Reden |
 |---|---|---|
@@ -405,3 +421,79 @@ Deze partij: 3 met foto; 28 bewust zonder.
 | Hoeveel metrolijnen heeft Amsterdam? | null | Lokaal voorstel afgewezen op onderwerp/afbakening: Imagen de los canales concéntricos en Ámsterdam.png. Geen voldoende specifiek, herkenbaar en spoilervrij alternatief bevestigd; voorlopig null. |
 | Welke pH-waarde heeft zuiver water bij kamertemperatuur ongeveer? | null | Voorstel bevat een schema, aantallen, meetinformatie of een ander onderwerp: Mercury Thermometer.jpg. Bij twijfel geen beeld dat de uitkomst helpt afleiden. |
 | Hoeveel doelpunten maakte Robin van Persie voor het Nederlands elftal? | null | Lokaal voorstel afgewezen op onderwerp/afbakening: Flag of the Netherlands.svg. Geen voldoende specifiek, herkenbaar en spoilervrij alternatief bevestigd; voorlopig null. |
+
+## Laatste controle van aangescherpte onderwerpen
+
+Ook de generieke chocoladefoto bij de nu specifiek genoemde Lindt Excellence Intense Dark-reep en de willekeurige Fleckvieh-koe bij het nu specifiek genoemde bedrijf Erve Westerhof zijn afgewezen, voor zowel oude als nieuwe tekst. Er is geen vrij beeld van dat product/bedrijf bevestigd. Samen met de wombat zijn dit drie inhoudelijk onjuiste overnames uit de 95 aangescherpte vragen. Van de 50 nieuwe teksten waarvoor regeneratie de oude foto zou terugzetten blijven daardoor 47 veilig gekoppeld; drie blijven bewust zonder.
+
+## Nog open voor een volgende ronde (69)
+
+- Hoeveel passagiers voeren met de Mayflower naar Amerika?
+- Hoeveel punten scoorde een team in de hoogste basketbalscore ooit?
+- Hoeveel afleveringen telt de serie Game of Thrones?
+- In welk jaar werd de eerste commerciële harde schijf geïntroduceerd?
+- In welk jaar werd de eerste ruimtestationmodule gelanceerd?
+- Uit hoeveel eilanden bestaan de Malediven?
+- Hoeveel huizen werden verwoest bij de Grote Brand van Londen?
+- Wat is de hoogste windsnelheid in kilometer per uur die nog bij windkracht 8 hoort?
+- In welk jaar werd de eerste commerciële cd uitgebracht?
+- Hoeveel kilometer zijn alle bloedvaten van een volwassene samen lang, volgens de bekende schatting van 60.000 mijl?
+- Hoeveel planeten werden bezocht door het Voyager-programma?
+- Hoeveel minuten duurt een volledige dag-en-nachtcyclus in Minecraft?
+- Hoeveel seconden duurde de eerste geslaagde gemotoriseerde vlucht?
+- Hoeveel decibel veroorzaakt een gemiddeld gesprek op normale toon?
+- Hoeveel kilometer per uur haalt een cheetah op zijn snelst?
+- Hoeveel kilometer lang is het Victoriameer ongeveer?
+- Wat is de totale lengte van alle onderzeese internetkabels op aarde in duizend kilometer?
+- In welk jaar vertrok de eerste commerciële passagiersvlucht?
+- Hoeveel Afrikaanse landen produceren koffie?
+- Hoeveel procent van de wetlands is sinds 1700 wereldwijd verdwenen?
+- Hoeveel innings telt een standaard honkbalwedstrijd?
+- Hoeveel procent van het voedsel dat wereldwijd wordt geproduceerd gaat verloren of wordt verspild?
+- Hoeveel procent van de landbouwgrond wordt gebruikt voor voedsel dat uiteindelijk niet wordt opgegeten?
+- Hoeveel delen telt de originele The Godfather-filmreeks?
+- Hoeveel kg afval produceert een Nederlander gemiddeld per jaar?
+- Hoeveel belangrijkste producten ontstaan bij de reactie tussen azijn en baking soda?
+- In welk jaar werd de eerste commerciële mobiele telefoon uitgebracht?
+- Hoeveel miljard kilometer legt licht af in één lichtjaar, afgerond?
+- Hoeveel minuten duurt de film Avatar: The Way of Water?
+- Welk percentage van het wereldwijd geproduceerde staal wordt gebruikt in de bouw?
+- Hoeveel letters heeft het Armeense alfabet?
+- Hoeveel minuten duurt een ijshockeywedstrijd netto?
+- Hoeveel afleveringen telt de serie Friends in totaal?
+- Hoeveel miljoen ton plastic afval lekt jaarlijks in rivieren, meren en zeeën, volgens de ondergrens van de VN-schatting?
+- In welk jaar werd de eerste moderne volkstelling gehouden?
+- In welk jaar werd de Al-Qarawiyyin in Fez gesticht, de oudste nog bestaande universiteit?
+- In welk jaar werd penicilline ontdekt?
+- In welk jaar werd de eerste radio-uitzending gemaakt?
+- Hoeveel meter hoog is het hoogste punt van het Millauviaduct?
+- In welk jaar werd de eerste digitale camera ontwikkeld?
+- In welk jaar werd de eerste laptop uitgebracht?
+- Hoeveel vel papier zitten er in een standaard riem printpapier?
+- Hoeveel procent van de wereldwijde landbouwgrond wordt geïrrigeerd?
+- Wat is het atoomnummer van ijzer?
+- Hoeveel watt levert de standaard USB-C-lader van Apple voor de iPhone?
+- Hoeveel kilometer per uur zwemt een dolfijn op zijn snelst?
+- Hoeveel duizend knipperbewegingen met je ogen maak je gemiddeld per dag?
+- Hoeveel kcal heeft een middelgroot ei?
+- Hoeveel landen ondertekenden het Verdrag van Rome in 1957?
+- Hoeveel millimeter per jaar verschuiven de aardplaten gemiddeld?
+- In welk jaar maakte Robert Fultons onderzeeër Nautilus zijn eerste proefvaart?
+- Hoeveel uur per dag slaapt een leeuw gemiddeld?
+- In welk jaar werd de eerste succesvolle orgaantransplantatie uitgevoerd?
+- In welk jaar maakte Martin Behaim de oudste bewaard gebleven globe?
+- Hoeveel bitcoins kunnen er maximaal worden gecreëerd?
+- Wat is de totale geschatte lengte van alle bloedvaten in een volwassen menselijk lichaam in kilometers?
+- In welk jaar werd de eerste röntgenfoto gemaakt?
+- Hoeveel ton plastic wordt wereldwijd jaarlijks geproduceerd?
+- Hoeveel spieren heeft het menselijk lichaam ongeveer?
+- Hoeveel werelden verbindt de wereldboom Yggdrasil in de Noorse mythologie?
+- Hoeveel protonen heeft een neutraal atoom van wolfraam?
+- In welk jaar kwam de eerste commerciële microprocessor, de Intel 4004, uit?
+- Hoeveel kilometer lang is de Mississippi ongeveer?
+- Hoeveel meter is de kortste individuele olympische langebaanschaatsafstand?
+- Hoeveel landen worden door de evenaar doorkruist?
+- Welk percentage van plastic afval wordt wereldwijd gestort?
+- Hoeveel teams spelen er in de NFL?
+- Hoeveel miljoen ton groene koffiebonen produceerde de wereld in 2023?
+- Hoeveel liter bloed heeft een volwassen mens ongeveer?
