@@ -123,6 +123,15 @@ def main():
                     meta.get('uitleg_en') != english.get(q['evidence'])):
                     print(f"FOUT selectie/vertaling {mode} {q['id']}")
                     alles_goed = False
+                if q['id'].startswith('bank-') and (
+                    bank.get(q['original']) != q['answer'] or
+                    not q.get('verified_on') or
+                    not q.get('evidence_en') or
+                    q['evidence_en'] != english.get(q['evidence']) or
+                    meta.get('bron') != q['source']
+                ):
+                    print(f"FOUT gecontroleerde bankaanvulling {mode} {q['id']}")
+                    alles_goed = False
     for naam, ps in sets:
         fouten = Counter()
         waarschuwingen = Counter()
@@ -149,6 +158,8 @@ def main():
                 fouten['dubbele eenheid'] += 1
             if len({families.get(sleutel(x)) for x in cats}) < 3:
                 waarschuwingen['gedeelde kleurfamilie'] += 1
+                if any(qid.startswith('bank-') for qid in p.get('question_ids', [])):
+                    fouten['gedeelde kleurfamilie in nieuwe puzzel'] += 1
             if len({iconen.get(x, 'idea') for x in cats}) < 3:
                 waarschuwingen['gedeeld icoon'] += 1
             n = sum(1 for l in labels if l in fotos)

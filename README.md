@@ -9,10 +9,10 @@ Een dagelijks schatspel: je schat drie feiten waarvan de antwoorden samen een so
 | Modus | Beschrijving |
 |---|---|
 | **Daily** | Elke dag één officiële puzzel, met streak en deelbare score. De planning en de antwoorden staan alleen in Supabase; zie `docs/audit/daily_planning_20261113.md` voor het bijvullen |
-| **Puzzels (Library)** | 49 nagekeken puzzels over vier niveaus (stand november 2026), direct speelbaar, met voortgang per niveau. Elke vraag komt in de hele set precies één keer voor |
+| **Puzzels (Library)** | 67 nagekeken puzzels over vier niveaus (stand november 2026), direct speelbaar, met voortgang per niveau. Elke vraag komt in de hele set precies één keer voor |
 | **Puzzel Race** | 5 minuten, zoveel mogelijk puzzels exact oplossen — van makkelijk naar moeilijk, met directe feedback en eindscore. Ook **1v1-duel** via room-code (Supabase Realtime) |
 | **Breinkrakers** | Kettingpuzzels van 4 vragen: `a op1 b op2 c = d`, **van links naar rechts** gelezen. `2 + 3 × 4` is hier dus 20 en niet 14 |
-| **Find the Connection** | 20 puzzels waarin je het verband tussen drie vragen zoekt |
+| **Find the Connection** | 40 puzzels waarin je het verband tussen drie vragen zoekt |
 | **Live rondes** | Groepsspel: dezelfde puzzel, dezelfde klok |
 | **Daily Archive** | Eerdere Dailies opnieuw spelen (vanaf de server, telt niet mee voor de ranglijst) |
 
