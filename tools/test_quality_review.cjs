@@ -8,6 +8,14 @@ const json = name => JSON.parse(read(name));
 const before = json('puzzels/voor_kwaliteitsreview_20260927.json');
 const review = json('puzzels/kwaliteitsreview_20260927.json');
 const source = new Map(Object.values(before).flatMap(s=>s.puzzles.flatMap(p=>p.questions.map(q=>[q.id,q]))));
+// De oorspronkelijke review blijft bewaard. Aanvullingen verwijzen naar een
+// opnieuw gecontroleerde rij in de vragenbank; controleer_puzzels.py vergelijkt
+// de selectie en de gegenereerde antwoorden rechtstreeks met dat werkboek.
+for (const [id,q] of Object.entries(review.extension_20261113?.questions || {})) {
+  assert.ok(!source.has(id), 'Aanvulling overschrijft historisch review-id '+id);
+  assert.ok(Number.isInteger(q.row) && Number.isInteger(q.answer) && q.answer > 0);
+  source.set(id,q);
+}
 const seen = new Set(), reserved = new Set(), texts = new Set();
 assert.equal(review.audit.length,167);
 assert.equal(new Set(review.audit.map(a=>a.mode+'/'+a.number)).size,167);
@@ -34,11 +42,11 @@ for (const mode of ['daily','library','connection']) {
     }
   }
 }
-assert.equal(seen.size,267);
+assert.equal(seen.size,review.used_questions);
 assert.equal(reserved.size,review.reserved_including_aliases);
 assert.equal(read('index.html').match(/netto_frontend_puzzles.js\?v=(\d+)/)[1],
   read('stats.html').match(/netto_frontend_puzzles.js\?v=(\d+)/)[1]);
-console.log('PASS: alle 167 oude puzzels verantwoord; 267 ongewijzigde antwoorden; unieke vragen/aliasreserveringen; bronproblemen niet actief.');
+console.log(`PASS: alle 167 oude puzzels verantwoord; ${seen.size} gecontroleerde antwoorden; unieke vragen/aliasreserveringen; bronproblemen niet actief.`);
 
 async function testSql() {
   if(!process.argv[2]) return;
