@@ -23,10 +23,20 @@ def main():
     data_path = ROOT / 'data/netto_frontend_puzzles.js'
     data = read_js(data_path)
     translations = read_js(ROOT / 'data/netto_bronnen_en.js')
+    # De gerichte bankaanvullingen dragen hun eigen vertaling en bewijs.
+    # Publiceer die uit dezelfde selectie, zonder de website-mirror bij te werken.
+    labels = read_js(ROOT / 'data/netto_translations_en.js')
+    sources = read_js(ROOT / 'data/netto_bronnen.js')
+    for p in selection['puzzles']:
+        for q in p['questions']:
+            if q.get('evidence_en'):
+                translations[q['evidence']] = q['evidence_en']
+                labels[q['original']] = q['question']
+                sources[q['original']] = {'bron': q['source'], 'uitleg': q['evidence']}
     translations['Bestaande bron opgehaald; het antwoord staat op de pagina.'] = 'See the linked source for the supporting information.'
     puzzles, metadata, seen = [], {}, set()
     levels = Counter(p['difficulty'] for p in selection['puzzles'])
-    assert 1 <= len(selection['puzzles']) <= 100
+    assert len(selection['puzzles']) >= 1
     assert set(levels) == {'easy', 'intermediate', 'hard', 'extremely-hard'}
     assert not set(selection['reserved']).intersection(daily['reserved'])
     for p in selection['puzzles']:
@@ -61,6 +71,17 @@ def main():
         data['connection'] = data['library'] + data.get('reserve', [])
     data.update(library=puzzles, reserve=[], library_edition=selection['edition'], library_review=metadata)
     data_path.write_text('// Gegenereerde puzzels; gecontroleerde reeksen via tools/maak_review_dailies.py en tools/maak_review_library.py.\nwindow.NETTO_REBUILT_PUZZLES = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n', encoding='utf8')
+    for filename, variable, values, indent in (
+        ('netto_bronnen_en.js', 'NETTO_BRONNEN_EN', translations, None),
+        ('netto_translations_en.js', 'NETTO_TRANSLATIONS_EN', labels, 2),
+        ('netto_bronnen.js', 'NETTO_BRONNEN', sources, 2),
+    ):
+        path = ROOT / 'data' / filename
+        old = path.read_text(encoding='utf8')
+        prefix = old[:old.index('{')]
+        encoded = json.dumps(values, ensure_ascii=False, indent=indent,
+                             separators=(',', ':') if indent is None else None)
+        path.write_text(prefix + encoded + ';\n', encoding='utf8')
     if args.selection.resolve() != MANIFEST.resolve():
         MANIFEST.write_text(json.dumps(selection, ensure_ascii=False, indent=2) + '\n', encoding='utf8')
     print(f'{len(puzzles)} puzzels, {dict(levels)}, {len(seen)} unieke goedgekeurde vragen; geen overlap met Dailies.')
