@@ -82,7 +82,7 @@ zoekmachines en AI-samenvattingen ze gebruiken.
 1. **Google Search Console**
    1. Ga naar <https://search.google.com/search-console> en log in.
    2. Kies "Property toevoegen" en dan **URL-voorvoegsel** met
-      `https://b-force-dev.github.io/nettoo/`.
+      `https://b-force-dev.github.io/Netto/`.
    3. Verifieer. De eenvoudigste manier voor GitHub Pages is de
       **HTML-tag**: Google geeft een `<meta name="google-site-verification" ...>`.
       Zet die in `index.html` (hij blijft staan bij het opnieuw genereren, zolang hij
@@ -99,9 +99,9 @@ zoekmachines en AI-samenvattingen ze gebruiken.
 
 ### Een eigen domein (aanbevolen)
 
-Het adres `b-force-dev.github.io/nettoo/` werkt, maar heeft twee nadelen voor
+Het adres `b-force-dev.github.io/Netto/` werkt, maar heeft twee nadelen voor
 vindbaarheid: Google geeft `robots.txt` alleen aandacht in de root van een domein
-(dus niet in `/nettoo/robots.txt`), en een eigen naam wordt eerder onthouden en
+(dus niet in `/Netto/robots.txt`), en een eigen naam wordt eerder onthouden en
 aangeklikt.
 
 1. Koop een domein, bijvoorbeeld `netto.game` (kies zelf).

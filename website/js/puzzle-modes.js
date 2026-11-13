@@ -139,10 +139,6 @@
     document.getElementById(prefix + 'Equation').style.display = 'none';
     const autoCalcNote = localStorage.getItem('netto_auto_calc_note_seen') === 'true' ? '' : `<div class="auto-calc-note" role="status" aria-live="polite">↳ ${statsCopy('Antwoorden worden automatisch berekend als de berekening klopt.', 'Answers are calculated automatically when the equation matches.')}</div>`;
     listEl.innerHTML = [[p.q1_label,p.q1_answer],[p.q2_label,p.q2_answer],[p.q3_label,p.q3_answer]].map((q,i) => `<div class="q-block"><label class="q-label" for="${prefix}Answer${i}">${q[0] || statsCopy('Vraag niet beschikbaar', 'Question unavailable')}</label><div class="input-wrapper"><input type="text" class="library-answer-input daily-style-input" id="${prefix}Answer${i}" name="netto-schatting-${i}" inputmode="numeric" pattern="[0-9]*" enterkeyhint="${i < 2 ? 'next' : 'done'}" placeholder="${statsCopy('Jouw schatting', 'Your estimate')}" autocomplete="off" autocorrect="off" spellcheck="false" data-lpignore="true"></div></div>${i < 2 ? `<div class="connector"><div class="connector-line"></div><div class="connector-badge ${i === 1 ? 'eq' : ''}">${i === 0 ? (p.operator || '×') : '='}</div><div class="connector-line"></div></div>` : ''}`).join('') + autoCalcNote;
-    const inputHint = document.createElement('p');
-    inputHint.className = 'number-input-hint';
-    inputHint.textContent = statsCopy('Bijvoorbeeld: 1,5k = 1.500. Gebruik een komma voor decimalen.', 'For example: 1.5k = 1,500. Use a dot for decimals.');
-    listEl.append(inputHint);
     if (autoCalcNote) localStorage.setItem('netto_auto_calc_note_seen', 'true');
     if (prefix === 'library') libraryActivePuzzle = p; else catalogusActivePuzzle = p;
     renderPuzzelfoto(listEl, p);

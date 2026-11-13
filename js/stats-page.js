@@ -202,7 +202,7 @@
   }
   // Hoofdmap van het spel; lokaal het gepubliceerde adres, want een vriend heeft niets aan localhost.
   function siteLink() {
-    return local ? 'https://b-force-dev.github.io/nettoo/' : siteBase.origin + siteBase.pathname;
+    return local ? 'https://b-force-dev.github.io/Netto/' : siteBase.origin + siteBase.pathname;
   }
   function preferNativeShare() {
     if (typeof navigator.share !== 'function') return false;

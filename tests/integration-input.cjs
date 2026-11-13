@@ -31,16 +31,16 @@ vm.runInContext(core.slice(core.indexOf('  async function checkAnswers'), core.i
 (async () => {
   for (const lang of ['en', 'nl']) {
     locale = lang;
-    for (const invalid of [lang === 'en' ? '1.25' : '1,25', 'garbage', '0', '-1', '9007199254740992']) {
+    for (const invalid of [lang === 'en' ? '1.25' : '1,25', lang === 'en' ? '1.5k' : '1,5k', 'garbage', '0', '-1', '9007199254740992']) {
       values = [invalid, '2', '3']; notices = [];
       await context.checkAnswers();
       assert.equal(notices.length, 1, `${lang}: ${invalid} must stop before the server`);
       assert.match(notices[0], lang === 'en' ? /whole number/ : /heel getal/);
     }
-    for (const valid of ['1500', lang === 'en' ? '1,500' : '1.500', lang === 'en' ? '1.5k' : '1,5k']) {
+    for (const valid of ['1500', lang === 'en' ? '1,500' : '1.500']) {
       values = [valid, '2', '3'];
       await assert.rejects(context.checkAnswers(), /accepted-input/);
     }
   }
-  console.log('Daily rejects decimals and unsafe input before submission; localized integer shorthand passes.');
+  console.log('Daily rejects decimals and unsafe input before submission; grouped whole numbers pass.');
 })().catch(error => { console.error(error); process.exitCode = 1; });

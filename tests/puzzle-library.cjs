@@ -15,8 +15,8 @@ function sourceSlice(source, start, end) {
 }
 vm.runInContext(sourceSlice(core,'  function parseFormattedNumber','  function removeToastAfter'), context);
 for (const [lang,examples] of [
-  ['en', [['1.5k',1500],['1,000',1000],['1.25',1.25],['2m',2000000],['1,2',NaN]]],
-  ['nl', [['1,5k',1500],['1.000',1000],['1,25',1.25],['1.234,5',1234.5],['1.2',NaN]]]
+  ['en', [['1500',1500],['1,000',1000],['1.25',1.25],['1.5k',NaN],['2m',NaN],['1,2',NaN]]],
+  ['nl', [['1500',1500],['1.000',1000],['1,25',1.25],['1.234,5',1234.5],['1,5k',NaN],['1.2',NaN]]]
 ]) {
   language=lang;
   for(const [text,expected] of examples) assert.equal(context.parseFormattedNumber(text),expected,lang+': '+text);

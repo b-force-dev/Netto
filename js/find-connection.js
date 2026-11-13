@@ -399,8 +399,8 @@ function renderConnectionRule(previous) {
   rule.append(
     document.createTextNode(statsCopy('Sleep de vragen in de goede volgorde en kies het teken: ', 'Drag the questions into the right order and choose the sign: ')),
     formula,
-    document.createTextNode(statsCopy('. Je mag decimalen en k voor duizendtallen invoeren. Je scoort op het verband én op hoe dicht je schattingen zitten.',
-      '. Answers may use decimals or k for thousands. You score on the connection and on how close your estimates are.')));
+    document.createTextNode(statsCopy('. Je scoort op het verband én op hoe dicht je schattingen zitten.',
+      '. You score on the connection and on how close your estimates are.')));
   if (previous) {
     const note = document.createElement('span');
     note.className = 'connection-replay-note';

@@ -1,7 +1,7 @@
 # Werkafspraken voor agents (Claude, Codex en andere)
 
 ## Git en GitHub
-- Repo: `github.com/b-force-dev/nettoo` (organisatie heette eerder B-Force-Games).
+- Repo: `github.com/b-force-dev/Netto` (heette eerder `nettoo`) (organisatie heette eerder B-Force-Games).
 - `main` = live site. `develop` = werkversie.
 - **Begin altijd met bijwerken:** `git fetch origin` en zorg dat de lokale branch gelijk is aan GitHub voordat je wijzigt. Staat er ongecommit werk, zet het dan eerst veilig opzij (`git stash push -u -m "<omschrijving>"`) en meld dat.
 - De lokale map is een kopie; GitHub is leidend. De gebruiker wil dat wijzigingen online komen, niet alleen lokaal.

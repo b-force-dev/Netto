@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # ---------------------------------------------------------------------------
 # Het enige adres van de site. Altijd met een slash aan het eind.
-SITE_URL = "https://b-force-dev.github.io/nettoo/"
+SITE_URL = "https://b-force-dev.github.io/Netto/"
 # ---------------------------------------------------------------------------
 
 SITE_NAME = "Netto"

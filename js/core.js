@@ -92,7 +92,7 @@
   //
   // Speel je lokaal, dan heeft je vriend niets aan http://127.0.0.1; in dat
   // geval valt hij terug op het gepubliceerde adres.
-  const GEPUBLICEERD = 'https://b-force-dev.github.io/nettoo/';
+  const GEPUBLICEERD = 'https://b-force-dev.github.io/Netto/';
   function speelAdres() {
     try {
       const u = new URL(window.location.href);
@@ -1321,7 +1321,7 @@
   function parseFormattedNumber(str) {
     if (!str || !String(str).trim()) return NaN;
     const raw = String(str).trim().replace(/[\s\u00a0\u202f']/g, '');
-    const match = raw.match(/^([0-9.,]+)([kKmMbB]?)$/);
+    const match = raw.match(/^([0-9.,]+)$/);
     if (!match) return NaN;
     const nl = window.NettoI18n?.locale() === 'nl';
     const group = nl ? '.' : ',', decimal = nl ? ',' : '.';
@@ -1330,9 +1330,7 @@
     const whole = parts[0];
     if (whole.includes(group) && !new RegExp('^\\d{1,3}(?:\\' + group + '\\d{3})+$').test(whole)) return NaN;
     const number = Number(whole.split(group).join('') + (parts.length === 2 ? '.' + parts[1] : ''));
-    const scale = {k:1e3, m:1e6, b:1e9}[match[2].toLowerCase()] || 1;
-    const value = number * scale;
-    return Number.isFinite(value) ? value : NaN;
+    return Number.isFinite(number) ? number : NaN;
   }
 
   function removeToastAfter(toast, duration = 3800) {
@@ -1550,12 +1548,17 @@
     input.value = ''; input.placeholder = /^g[123]$/.test(id) ? statsCopy('Jouw antwoord', 'Your answer') : statsCopy('Jouw schatting', 'Your estimate'); input.dataset.autoCalculated = 'false'; input.classList.remove('auto-calculated'); autoCalculatedInputs.delete(id);
     input.removeAttribute('aria-description');
   }
-  // Eén invoerregel voor alle spelmodi, inclusief plakken en decimalen.
-  // parseFormattedNumber valideert de volledige invoer bij het inleveren.
+  // Eén invoerregel voor alle spelmodi, inclusief plakken. Alle antwoorden in
+  // Netto zijn hele getallen: een ander teken dan een cijfer wordt geweigerd.
   function bindWholeNumberInput(input, update) {
-    input.inputMode = 'decimal';
-    input.removeAttribute('pattern');
+    let previous = input.value;
+    input.inputMode = 'numeric';
+    input.addEventListener('beforeinput', event => {
+      if (event.data && /\D/.test(event.data)) event.preventDefault();
+    });
     input.addEventListener('input', () => {
+      if (!/^\d*$/.test(input.value)) { input.value = previous; return; }
+      previous = input.value;
       autoCalculatedInputs.delete(input.id);
       input.classList.remove('auto-calculated');
       input.dataset.autoCalculated = 'false';
@@ -1564,6 +1567,10 @@
     });
     input.addEventListener('focus', () => {
       if (autoCalculatedInputs.has(input.id)) clearAutoInput(input.id);
+      // Groepering weghalen maakt ook een groot automatisch antwoord bewerkbaar.
+      const value = parseFormattedNumber(input.value);
+      if (Number.isSafeInteger(value)) input.value = String(value);
+      previous = input.value;
     });
   }
 
@@ -2397,7 +2404,7 @@
 
     if (![g1,g2,g3].every(value => Number.isSafeInteger(value) && value > 0)) {
       showNoticeToast(
-        statsCopy('Vul voor alle drie de vragen een positief heel getal in (bijvoorbeeld 1500 of 1,5k).', 'Enter a positive whole number for all three questions (for example, 1500 or 1.5k).'),
+        statsCopy('Vul voor alle drie de vragen een positief heel getal in (bijvoorbeeld 1500).', 'Enter a positive whole number for all three questions (for example, 1500).'),
         '✏️', statsCopy('Antwoorden ontbreken', 'Complete your answers'));
       return;
     }

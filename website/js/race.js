@@ -915,7 +915,6 @@
     const p = raceQueue[raceState.index];
     if (!p) { finishRace(false); return; }
     const answers = [p.q1_answer, p.q2_answer, p.q3_answer];
-    // Vrij spelen accepteert ook positieve decimalen, net als de Library.
     const guesses = [0, 1, 2].map(i => parseFormattedNumber(document.getElementById(`raceAnswer${i}`).value));
     if (!validWholeAnswers(guesses)) {
       showNoticeToast(

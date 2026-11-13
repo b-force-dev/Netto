@@ -9,7 +9,7 @@
   const factorText = value => value.toLocaleString(window.NettoI18n?.locale() === 'nl' ? 'nl-NL' : 'en-GB', { minimumFractionDigits:2, maximumFractionDigits:2 });
   const questions = () => [copy('Legs on a spider?', 'Poten van een spin?'),
     copy('Players on a football team on the pitch?', 'Spelers van een voetbalteam op het veld?'), copy('Keys on a standard piano?', 'Toetsen van een standaardpiano?')];
-  let dialog, content, step, guesses, corrected, opener, chip;
+  let dialog, content, step, guesses, corrected, opener;
   const el = (tag, text, className) => {
     const node = document.createElement(tag);
     if (text) node.textContent = text;
@@ -23,7 +23,7 @@
   };
   function remember() { try { localStorage.setItem(SEEN, '1'); } catch (_) {} }
   function close() {
-    remember(); dialog.close(); chip?.remove();
+    remember(); dialog.close();
     document.body.classList.remove('tutorial-open');
     if (opener?.isConnected && opener.getClientRects().length) opener.focus();
     else document.getElementById('btnStartPuzzle')?.focus();
@@ -155,18 +155,8 @@
     window.visualViewport?.addEventListener('scroll', viewport);
     window.addEventListener('resize', viewport);
     dialog.addEventListener('focusin', () => requestAnimationFrame(viewport));
-    document.querySelector('[data-tutorial-start]')?.addEventListener('click', open);
+    document.querySelectorAll('[data-tutorial-start]').forEach(knop => knop.addEventListener('click', open));
     window.NettoTutorial = Object.freeze({ open });
-    if (!firstVisit()) return;
-    // Een nieuwe bezoeker ziet eerst de startpagina met het voorbeeld. De tour
-    // is een uitnodiging, geen venster dat die pagina meteen bedekt.
-    {
-      chip = el('div', '', 'tutorial-chip');
-      chip.append(button(copy('New here? 30-second tour', 'Nieuw hier? Tour van 30 seconden'), open),
-        button('×', () => { remember(); chip.remove(); }));
-      chip.lastChild.setAttribute('aria-label', copy('Dismiss tour invitation', 'Touruitnodiging sluiten'));
-      document.body.append(chip);
-    }
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
