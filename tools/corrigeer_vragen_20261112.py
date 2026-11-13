@@ -20,9 +20,9 @@ WAT HET DOET
 
 WAT HET NIET DOET
 - Geen nieuwe willekeurige puzzels: bibliotheek- en FTC-id's blijven gelijk.
-- netto_fotos.js, netto_translations_en.js en netto_bronnen_en.js blijven
-  onaangeroerd (andere werkbaan). Vragen met een nieuwe tekst staan in het
-  verslag, zodat vertaling en foto mee kunnen.
+- Dit is de historische eerste migratiestap, geen herhaalbaar onderhoudscommando.
+  Gebruik daarna herstel_vraagaudit_20261112.py voor de Engelse catalogi.
+  Fotobestanden en bestaande fotokeuzes blijven onaangeroerd.
 - website/ wordt niet bijgewerkt; dat doet tools/sync_website.py.
 
 Na afloop: tools/maak_review_library.py, tools/maak_review_connection.py en
@@ -672,20 +672,6 @@ def main():
                 gewijzigd_nl.append((qid, oud_bank, tekst))
         log.append(f'{qid} gesplitst: bibliotheek "{lib_tekst}" / bank en race "{bank_tekst}"')
 
-    # Bibliotheekfoto's: de frontend zoekt de foto op via `original`. Staat een
-    # hernoemde vraag niet meer in de fotobank, kies een andere fotovraag.
-    for sel in selecties.values():
-        for p in sel['puzzles']:
-            foto = p.get('photo')
-            if not foto or p['questions'][foto['vraag'] - 1]['original'] in fotos:
-                continue
-            nieuw = next(({**fotos[q['original']], 'vraag': i} for i, q in
-                          ((2, p['questions'][1]), (1, p['questions'][0]), (3, p['questions'][2]))
-                          if q['original'] in fotos), None)
-            log.append(f"{sel['edition']} #{p['number']}: foto van vraag {foto['vraag']} -> "
-                       + (f"vraag {nieuw['vraag']}" if nieuw else 'geen'))
-            p['photo'] = nieuw
-
     # 2. Vervangingen in de racepool
     labels_race = {p[f'q{i}_label'] for p in race for i in (1, 2, 3)}
     for pid, (pos, nr) in VERVANGINGEN.items():
@@ -713,22 +699,6 @@ def main():
     race[:] = [p for p in race if p['id'] not in WEGHALEN]
     assert voor - len(race) == len(WEGHALEN)
     brein[:] = [p for p in brein if p['id'] not in BREIN_WEGHALEN]
-
-    # Foto per racepuzzel opnieuw bepalen: de fotobank zoekt op vraagtekst, dus
-    # een hernoemde vraag verliest zijn foto tot de fotobaan de sleutel bijwerkt.
-    for p in race:
-        foto = p.get('photo')
-        if foto and p[f"q{foto['vraag']}_label"] in fotos:
-            continue
-        nieuw = next(({**fotos[p[f'q{i}_label']], 'vraag': i} for i in (2, 1, 3)
-                      if p[f'q{i}_label'] in fotos), None)
-        if foto:
-            log.append(f"{p['id']}: foto van vraag {foto['vraag']} "
-                       + (f"-> vraag {nieuw['vraag']}" if nieuw else 'vervalt (geen fotovraag meer)'))
-        if nieuw:
-            p['photo'] = nieuw
-        else:
-            p.pop('photo', None)
 
     for regel in log:
         print(regel)
