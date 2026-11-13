@@ -394,13 +394,7 @@ function renderConnectionRule(previous) {
   if (!rule) return;
   rule.hidden = false;
   rule.replaceChildren();
-  const formula = document.createElement('strong');
-  formula.textContent = statsCopy('positie 1  ?  positie 2  =  uitkomst', 'position 1  ?  position 2  =  result');
-  rule.append(
-    document.createTextNode(statsCopy('Sleep de vragen in de goede volgorde en kies het teken: ', 'Drag the questions into the right order and choose the sign: ')),
-    formula,
-    document.createTextNode(statsCopy('. Je scoort op het verband én op hoe dicht je schattingen zitten.',
-      '. You score on the connection and on how close your estimates are.')));
+  rule.append(document.createTextNode(statsCopy('Sleep de vragen in de goede volgorde en kies het teken.', 'Drag the questions into the right order and choose the sign.')));
   if (previous) {
     const note = document.createElement('span');
     note.className = 'connection-replay-note';

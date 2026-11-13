@@ -40,13 +40,14 @@ window.NETTO_DAILY_PHOTOS = [
 window.NETTO_DAILY_PHOTO_DIR = 'fotos/assets/';
 
 // Fixed frames keep their space while the image loads. Preserve the complete
-// subject for logos, diagrams and extreme aspect ratios, including in reveals.
+// subject for logos, diagrams and very wide panoramas; ordinary photos fill
+// the frame, also when they are portrait.
 document.addEventListener('load', event => {
   const image = event.target;
   if (!(image instanceof HTMLImageElement) || !image.matches('.daily-photo img, .answer-reveal-photo img, .foto-credit-kaart img')) return;
   const ratio = image.naturalWidth / image.naturalHeight;
   const graphic = /(?:logo|wordmark|diagram|\.svg(?:[/.?]|$))/i.test(image.currentSrc);
-  image.classList.toggle('photo-contain', graphic || ratio > 1.8 || ratio < 0.75);
+  image.classList.toggle('photo-contain', graphic || ratio > 2.6);
 }, true);
 
 // Resolve by the question itself, including minor editorial wording changes.

@@ -29,7 +29,7 @@
       .live-clock small, .live-room-code span, .live-room-summary,
       .live-table, .live-table thead, .live-table small,
       .live-answer-questions li, .live-open-empty p, .live-private-join summary,
-      .pwa-copy p, .pwa-time-label, .toast-body) { font-size: 14px; line-height: 1.45; }
+      .pwa-copy p, .pwa-time-label, .toast-body) { font-size: 12.5px; line-height: 1.45; }
 
   /* Six controls still fit at 320px, each with a real finger-sized target. */
   .topbar { height: 64px; padding-inline: max(8px, env(safe-area-inset-left)) max(8px, env(safe-area-inset-right)); }
@@ -74,9 +74,9 @@
   :is(.race-duration-options, .race-tolerance-labels) :is(b, span, small),
   .library-stat span, .library-flip-front span, .library-difficulty-card span,
   .stats-mode-tabs button, .stats-kpi > span, .stats-kpi > small,
-  .sidebar-item span, .settings-language button { font-size: 14px; }
+  .sidebar-item span, .settings-language button { font-size: 12px; }
   .live-table-wrap { max-width: 100%; overscroll-behavior-x: contain; }
-  .daily-photo span { font-size: 14px; line-height: 1.4; }
+  .daily-photo span { font-size: 11px; line-height: 1.4; }
   .live-card { --ink-muted: var(--text-muted); }
   .live-option-list .live-option { min-height: 60px; }
 

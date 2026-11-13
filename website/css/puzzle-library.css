@@ -105,10 +105,8 @@ button.daily-archive-row:focus-visible { outline: 3px solid var(--yellow, #FFD84
 .bk-quick-actions button.is-primary { background: var(--accent); border-color: transparent; color: #14163B; }
 .bk-quick-actions button[hidden] { display: none; }
 .connection-rule {
-  margin: 0 0 12px; padding: 10px 14px; border-radius: 10px;
-  background: rgba(20, 22, 59, .06); color: var(--ink); font: 500 13px/1.5 'Space Grotesk', sans-serif;
+  margin: 0 0 10px; color: var(--text-muted); font: 500 13px/1.45 'Space Grotesk', sans-serif;
 }
-.connection-rule strong { font-family: 'JetBrains Mono', monospace; white-space: nowrap; }
 .connection-rule[hidden] { display: none; }
 .connection-verdict:focus { outline: none; }
 .connection-verdict:focus-visible { outline: 3px solid var(--yellow, #FFD84A); outline-offset: 3px; }
@@ -120,7 +118,6 @@ button.daily-archive-row:focus-visible { outline: 3px solid var(--yellow, #FFD84
 }
 .connection-catalog-card .status-correct::before { content: ''; }
 
-[data-theme="dark"] .connection-rule { background: rgba(255, 255, 255, .06); }
 [data-theme="dark"] .library-replay-note { background: #4A4320; color: #FFF4B8; }
 [data-theme="dark"] .library-flip-front .library-card-operator { background: rgba(255, 255, 255, .1); }
 [data-theme="dark"] button.daily-archive-row { border-bottom-color: var(--surface-border); }
@@ -140,3 +137,13 @@ button.daily-archive-row:focus-visible { outline: 3px solid var(--yellow, #FFD84
 
 .number-input-hint { margin: 8px 0; color: var(--ink); font: 500 12px/1.5 'Space Grotesk', sans-serif; }
 .library-difficulties button small { display: block; font-size: 11px; }
+
+/* De bibliotheek blijft rustig: alleen "alle / nog te spelen / gespeeld".
+   Teken, onderwerp, sortering en de teller zijn uit beeld. */
+#libraryBrowse .library-chip-group[data-filter="operator"],
+#libraryBrowse .library-sort,
+#libraryBrowse .library-result-count { display: none; }
+
+/* De kaart is een knop met spans erin; de binnenkant moet een blok zijn,
+   anders valt de hoogte weg en klapt de kaart in. */
+.library-flip-card-inner { display: block; }

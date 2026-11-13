@@ -16,9 +16,11 @@ function readLibraryView() {
   return {
     difficulty: LIBRARY_LEVELS.includes(saved.difficulty) ? saved.difficulty : 'easy',
     status: LIBRARY_STATUS_FILTERS.includes(saved.status) ? saved.status : 'all',
-    operator: LIBRARY_OPERATOR_FILTERS.includes(saved.operator) ? saved.operator : '',
-    category: typeof saved.category === 'string' ? saved.category : '',
-    sort: LIBRARY_SORTS.includes(saved.sort) ? saved.sort : 'number'
+    // De lijst is kort genoeg om zonder teken-, onderwerp- en sorteerfilter te
+    // overzien; die keuzes zijn uit beeld en staan dus altijd op de standaard.
+    operator: '',
+    category: '',
+    sort: 'number'
   };
 }
 let libraryView = readLibraryView();
