@@ -89,7 +89,7 @@
   }
 
   // Vraagt een naam voor spelen zonder account. Geeft de naam of null terug.
-  function nettoAskPlayerName({ title, text, allowGuest = true } = {}) {
+  function nettoAskPlayerName({ title, text, allowGuest = true, offerDuel = false } = {}) {
     return new Promise(resolve => {
       document.getElementById('nettoNameDialog')?.remove();
       const dialog = document.createElement('dialog');
@@ -101,7 +101,7 @@
         ${allowGuest ? `<label for="nettoNameInput"></label><input id="nettoNameInput" type="text" maxlength="20" autocomplete="nickname" enterkeyhint="go" required>` : ''}
         <div class="netto-name-actions">${allowGuest ? '<button type="submit" class="hero-cta" value="guest"></button>' : ''}
           <button type="button" class="btn-check" data-name-action="login"></button>
-          <button type="button" class="live-text-button" data-name-action="cancel"></button></div></form>`;
+          ${offerDuel ? '<button type="button" class="btn-check" data-name-action="duel"></button>' : ''}<button type="button" class="live-text-button" data-name-action="cancel"></button></div></form>`;
       dialog.querySelector('h2').textContent = title || statsCopy('Hoe heet je?', 'What is your name?');
       dialog.querySelector('.netto-name-text').textContent = text || statsCopy('Je tegenstander ziet deze naam. Een account is niet nodig.', 'Your opponent sees this name. No account needed.');
       const input = dialog.querySelector('input');
@@ -113,6 +113,11 @@
       }
       dialog.querySelector('[data-name-action="login"]').textContent = allowGuest ? statsCopy('Inloggen met account', 'Sign in with an account') : statsCopy('Inloggen of account maken', 'Sign in or create an account');
       dialog.querySelector('[data-name-action="cancel"]').textContent = statsCopy('Annuleren', 'Cancel');
+      const duel = dialog.querySelector('[data-name-action="duel"]');
+      if (duel) {
+        duel.textContent = statsCopy('Speel 1v1 zonder account', 'Play 1v1 without an account');
+        duel.addEventListener('click', () => { dialog.close(); openPuzzleRace(); switchRaceMode('online'); });
+      }
       let result = null;
       dialog.querySelector('form').addEventListener('submit', event => {
         const name = (input?.value || '').replace(/\s+/g, ' ').trim().slice(0, 20);
@@ -242,41 +247,47 @@
     return RACE_DURATION_META[key] || RACE_DURATION_META.snel;
   }
 
+  let raceLobbyRetryTimer = null, raceLobbyRetryAttempt = 0;
+  function retryRaceLobby() {
+    clearTimeout(raceLobbyRetryTimer);
+    raceLobbyRetryTimer = null;
+    ensureRaceLobby();
+  }
   function ensureRaceLobby() {
     if (!supabaseClient) return;
-    if (raceLobbyChannel) {
-      // Kanaal bestaat al: zorg dat het daadwerkelijk gesubscribed is (de
-      // lobby-listing vertrouwt op raceLobbyReady) en publish opnieuw — de
-      // sessie kan inmiddels een open host zijn geworden.
-      if (!raceLobbyReady) {
-        try { supabaseClient.removeChannel(raceLobbyChannel); } catch (_) {}
-        raceLobbyChannel = null;
-      } else {
-        publishOpenRaceEntry();
-        return;
-      }
-    }
-    raceLobbyChannel = supabaseClient.channel('netto-race-lobby-v1', {
+    // Een kanaal dat nog joint is ook in gebruik. Niet halverwege verwijderen.
+    if (raceLobbyChannel) { if (raceLobbyReady) publishOpenRaceEntry(); return; }
+    clearTimeout(raceLobbyRetryTimer);
+    raceLobbyRetryTimer = null;
+    const channel = supabaseClient.channel('netto-race-lobby-v1', {
       config: { presence: { key: RACE_CLIENT_ID } }
     });
-    raceLobbyChannel
-      .on('presence', { event: 'sync' }, () => { raceLobbyReady = true; publishOpenRaceEntry(); renderNettoOpenGames(); })
+    raceLobbyChannel = channel;
+    let removing = false;
+    channel
+      .on('presence', { event: 'sync' }, () => { if (raceLobbyChannel === channel) { publishOpenRaceEntry(); renderNettoOpenGames(); } })
       .on('presence', { event: 'join' }, renderNettoOpenGames)
       .on('presence', { event: 'leave' }, renderNettoOpenGames)
       .subscribe(status => {
+        if (raceLobbyChannel !== channel || removing) return;
         if (status === 'SUBSCRIBED') {
           raceLobbyReady = true;
           raceLobbyFout = false;
+          raceLobbyRetryAttempt = 0;
           raceLobbyPublishedSignature = '';
           publishOpenRaceEntry();
           renderNettoOpenGames();
-        } else if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') {
-          // Kanaal kapot: volledig resetten zodat de volgende ensure het opnieuw probeert.
+        } else if (['CHANNEL_ERROR', 'TIMED_OUT', 'CLOSED'].includes(status)) {
+          removing = true;
           raceLobbyReady = false;
-          raceLobbyChannel = null;
-          // En het opnieuw tekenen, anders blijft er "Nog geen open games"
-          // staan terwijl er in werkelijkheid geen verbinding is.
           raceLobbyFout = true;
+          // Houd het oude kanaal vast tot removeChannel klaar is; geen dubbele joins.
+          Promise.resolve(supabaseClient.removeChannel(channel)).catch(() => {}).finally(() => {
+            if (raceLobbyChannel !== channel) return;
+            raceLobbyChannel = null;
+            raceLobbyRetryTimer = setTimeout(retryRaceLobby, Math.min(30000, 1000 * 2 ** Math.min(raceLobbyRetryAttempt++, 5)));
+            renderNettoOpenGames();
+          });
           renderNettoOpenGames();
         }
       });
@@ -310,20 +321,27 @@
       // ook als de verbinding was weggevallen of er helemaal geen server was.
       // Je bleef dan wachten op spelers die je nooit te zien zou krijgen.
       const melding = !supabaseClient
-        ? 'Geen verbinding met de server, dus open games zijn nu niet te zien. Solo spelen kan wel.'
+        ? statsCopy('Geen verbinding met de server. Solo spelen kan wel.', 'Cannot reach the server. You can still play solo.')
         : raceLobbyFout
-          ? 'De verbinding met de lobby is weggevallen. Ververs om het opnieuw te proberen.'
+          ? statsCopy('Opnieuw verbinden? We zoeken vanzelf weer naar spelers.', 'Reconnecting? We will look for players again automatically.')
           : 'Maak een game aan — andere spelers kunnen hier aansluiten.';
       list.innerHTML = '';
       const div = document.createElement('div');
       div.className = 'race-open-games-empty';
       const title = document.createElement('strong');
       title.textContent = !supabaseClient || raceLobbyFout
-        ? statsCopy('Even geen verbinding', 'Connection interrupted')
+        ? statsCopy('Opnieuw verbinden?', 'Reconnecting?')
         : statsCopy('Nog geen open games', 'No open games yet');
       const description = document.createElement('span');
       description.textContent = melding;
       div.append(title, description);
+      if (raceLobbyFout) {
+        const retry = document.createElement('button');
+        retry.type = 'button'; retry.className = 'btn-check';
+        retry.textContent = statsCopy('Opnieuw proberen', 'Retry now');
+        retry.addEventListener('click', retryRaceLobby);
+        div.appendChild(retry);
+      }
       list.appendChild(div);
       return;
     }
@@ -1161,7 +1179,7 @@
   }
 
   function openRaceChannel(session) {
-    if (raceDuelSession !== session || session.channel) return;
+    if (raceDuelSession !== session || session.channel || session.removingChannel) return;
     if (!supabaseClient) {
       setRaceDuelStatus(statsCopy('Geen verbinding met de server. Controleer je internet en probeer het opnieuw.', 'Could not reach the server. Check your connection and try again.'));
       return;
@@ -1180,11 +1198,13 @@
       .on('broadcast', { event: 'hello' }, on('hello'))
       .on('broadcast', { event: 'rematch' }, on('rematch'))
       .subscribe(status => {
-        if (raceDuelSession !== session) return;
+        if (raceDuelSession !== session || session.channel !== channel) return;
         if (status === 'SUBSCRIBED') {
           // Ook na een herverbinding: opnieuw aanmelden en de stand opvragen.
           session.subscribed = true;
           session.connectionLost = false;
+          session.retryAttempt = 0;
+          clearTimeout(session.retryTimer);
           trackRacePresence();
           sendRaceHello();
           if (session.myCorrect != null) broadcastRaceEvent(session.code, 'finish', { correct: session.myCorrect, attempted: session.myAttempted || 0, seed: session.seed });
@@ -1192,6 +1212,13 @@
         } else if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT' || status === 'CLOSED') {
           session.subscribed = false;
           session.connectionLost = true;
+          session.channel = null;
+          session.removingChannel = true;
+          Promise.resolve(supabaseClient.removeChannel(channel)).catch(() => {}).finally(() => {
+            session.removingChannel = false;
+            if (raceDuelSession !== session) return;
+            session.retryTimer = setTimeout(() => openRaceChannel(session), Math.min(30000, 1000 * 2 ** Math.min(session.retryAttempt = (session.retryAttempt || 0) + 1, 5)));
+          });
           renderDuelRoomState();
         }
       });
@@ -1518,7 +1545,7 @@
     if (!session) return;
     const name = session.opponentName || statsCopy('je tegenstander', 'your opponent');
     const startBtn = document.getElementById('raceDuelStartBtn');
-    const canStart = session.role === 'host' && session.opponentPresent && !raceState;
+    const canStart = session.subscribed && session.role === 'host' && session.opponentPresent && !raceState;
     if (startBtn) {
       startBtn.style.display = canStart ? 'block' : 'none';
       startBtn.textContent = session.started ? statsCopy('Start revanche →', 'Start rematch →') : statsCopy('Start duel →', 'Start duel →');
@@ -1553,6 +1580,15 @@
       text = statsCopy('Room zoeken…', 'Looking for the room…');
     }
     setRaceDuelStatus(text);
+    let retry = document.getElementById('raceDuelRetry');
+    if (!session.connectionLost) { retry?.remove(); return; }
+    if (!retry) {
+      retry = document.createElement('button'); retry.id = 'raceDuelRetry';
+      retry.type = 'button'; retry.className = 'btn-check';
+      retry.textContent = statsCopy('Opnieuw proberen', 'Retry now');
+      retry.onclick = () => { clearTimeout(session.retryTimer); openRaceChannel(session); };
+      document.getElementById('raceDuelStatus')?.after(retry);
+    }
   }
 
   function renderDuelPlayers() {
@@ -1577,6 +1613,7 @@
   function leaveRaceRoom() {
     const session = raceDuelSession;
     if (session) {
+      clearTimeout(session.retryTimer);
       clearTimeout(session.lonelyTimer);
       clearTimeout(session.goneTimer);
       clearOpenRaceAutoStart();
