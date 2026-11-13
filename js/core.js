@@ -118,6 +118,7 @@
   function initSupabaseClient() {
     if (SUPABASE_URL && SUPABASE_ANON_KEY && window.supabase) {
       supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      window.nettoUsageClient = supabaseClient;
     }
   }
   initSupabaseClient();
@@ -1175,6 +1176,7 @@
       return;
     }
     const recent = snapshot.entries.slice(-30);
+    window.nettoTrack?.('share', { kind:'stats' });
     const emojis = recent.map(entry => STATS_BUCKETS[statsBucketIndex(entry.accuracy)].emoji);
     const rows = [];
     for (let index = 0; index < emojis.length; index += 10) rows.push(emojis.slice(index, index + 10).join(' '));
@@ -1186,16 +1188,10 @@
       ...(statsMode === 'daily' ? [`🔥 ${snapshot.currentStreak} ${streakWord} streak`] : []),
       `🎯 ${snapshot.entries.filter(r => r.exact === undefined ? r.factor === 1 : r.exact === true).length} spot-on`,
       `📈 ${snapshot.averageAccuracy}% ${statsCopy('gemiddelde nauwkeurigheid', 'average accuracy')}`,
-      speelAdres()
+      window.NettoShare.link('')
     ].join('\n');
 
-    if (typeof navigator !== 'undefined' && navigator.clipboard?.writeText) {
-      navigator.clipboard.writeText(text).then(() => {
-        showSarcasticToast(statsCopy('Statistieken gekopieerd naar je klembord!', 'Statistics copied to your clipboard!'), true);
-      }).catch(() => fallbackPrompt(text));
-    } else {
-      fallbackPrompt(text);
-    }
+    window.NettoShare.deliver(text);
   }
 
   function updateStreakUI(streak) {
@@ -2388,7 +2384,15 @@
     // Bij een archief-daily geen extra uitleg onder de knoppen.
     status.textContent = PUZZLE_DATA.date !== TODAY_STR ? ''
       : ranked ? statsCopy('Je score staat op het leaderboard.', 'Your score is on the leaderboard.')
-      : statsCopy('Lokaal bewaard. Log in om je score van vandaag te plaatsen.', 'Saved on this device. Log in to post today’s score.');
+      : statsCopy('Lokaal bewaard. ', 'Saved on this device. ');
+    if (PUZZLE_DATA.date !== TODAY_STR || ranked || currentUser) return;
+    // Gast: de uitleg is meteen de knop, zodat het resultaat geen dood spoor is.
+    const login = document.createElement('button');
+    login.type = 'button';
+    login.className = 'daily-status-login';
+    login.textContent = statsCopy('Log in om je score van vandaag te plaatsen', 'Log in to post today’s score');
+    login.onclick = () => openAuthModal();
+    status.append(login);
   }
 
   async function checkAnswers() {
@@ -2423,6 +2427,7 @@
     try {
       const result = await requestDailyResult(puzzle, [g1,g2,g3]);
       applyDailyResult(puzzle, result);
+      window.nettoTrack?.('daily_finish', { mode:puzzle.date === TODAY_STR ? 'daily' : 'archive', once:puzzle.date });
       const guesses = result.guesses.map(Number);
       const avgFactor = Number(result.factor);
       const plays = getLocalPlays();
@@ -2468,10 +2473,12 @@
     cancelDailyScore();
     const run = dailyScoreRun;
     const badge = document.getElementById('scoreBadge');
+    const summary = badge.closest('.daily-result-summary');
     badge.setAttribute('aria-label', `${accuracy}%`);
     badge.dataset.tone = accuracy >= 85 ? 'precise' : accuracy >= 60 ? 'close' : 'wide';
     if (!animate || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
       badge.textContent = `${accuracy}%`;
+      summary?.classList.remove('is-score-pending', 'is-score-fresh');
       onDone?.();
       return;
     }
@@ -2483,7 +2490,13 @@
       badge.textContent = `${Math.round(accuracy*eased)}%`;
       if (run !== dailyScoreRun) return;
       if (progress < 1) dailyScoreFrame = requestAnimationFrame(tick);
-      else { dailyScoreFrame = null; onDone?.(); }
+      else {
+        dailyScoreFrame = null;
+        // Nu pas het oordeel en de reeks; een hoge score krijgt een korte gloed.
+        summary?.classList.remove('is-score-pending');
+        summary?.classList.add('is-score-fresh');
+        onDone?.();
+      }
     };
     tick();
   }
@@ -2518,15 +2531,24 @@
     // Bij een verse inzending loopt de score pas op als de reveal klaar is.
     if (!animate) revealDailyScore(accuracy, false);
     document.getElementById('scoreBadgeTitle').textContent = statsCopy('Nauwkeurigheid', 'Accuracy');
+    const exactCount = [isSpotOn1, isSpotOn2, isSpotOn3].filter(Boolean).length;
     const factorEl = document.getElementById('scoreBadgeFactor');
     if (factorEl) {
-      factorEl.textContent = statsCopy('Gemiddelde afwijking: ', 'Average deviation: ') + `${avgFactor.toFixed(2)}×`;
+      // De factor in een paar woorden, met de taalgebonden decimaal (1,29× / 1.29×).
+      const factorText = value => window.NettoReveal?.factorText(value) || `${value.toFixed(2)}×`;
+      factorEl.textContent = exactCount === 3
+        ? statsCopy(`Elk antwoord exact: ${factorText(1)}`, `Every answer exact: ${factorText(1)}`)
+        : statsCopy(`Gemiddeld ${factorText(avgFactor)} ernaast · 2× = dubbel of half`,
+          `Average miss: ${factorText(avgFactor)} · 2× = double or half`);
+      factorEl.title = statsCopy('De factor is hoeveel keer je te hoog of te laag zat. 2× is het dubbele of de helft.',
+        'The factor is how many times too high or too low you were. 2× means double or half.');
     }
-    
-    const exactCount = [isSpotOn1, isSpotOn2, isSpotOn3].filter(Boolean).length;
-    const msg = statsCopy(`${exactCount} van 3 precies goed`, `${exactCount} of 3 spot on`);
-    document.getElementById('scoreBadgeMsg').textContent = msg;
+
+    document.getElementById('scoreBadgeMsg').textContent = dailyScoreHeadline(accuracy, exactCount === 3);
+    // Bij een verse inzending wachten oordeel en reeks tot de score is opgelopen.
+    document.querySelector('#results .daily-result-summary')?.classList.toggle('is-score-pending', animate);
     renderDailyScoreBreakdown([s1, s2, s3], [isSpotOn1, isSpotOn2, isSpotOn3]);
+    renderDailyResultExtras();
 
     if (currentUser) {
       document.getElementById('cloudSyncBanner').style.display = 'none';
@@ -2547,6 +2569,8 @@
       guesses: order.map(index => [g1, g2, g3][index]),
       answers: order.map(index => [echt.a1, echt.a2, echt.a3][index]),
       operator: PUZZLE_DATA.operator || '×', factor: avgFactor,
+      units: order.map(index => eenheidUit(PUZZLE_DATA['q' + (index + 1) + '_label'])),
+      photo: dailyRevealPhoto(order),
       details: order.map(index => maakBronBlok(PUZZLE_DATA['q' + (index + 1) + '_label'])),
       instant: !animate,
       // Volgorde: alle antwoorden → score telt op → confetti (alleen bij een
@@ -2565,6 +2589,88 @@
     });
   }
 
+  // Eén regel onder de score. Goed geschat voelt als een beloning; ver ernaast
+  // krijgt een knipoog in plaats van een standje. Vast per puzzel, zodat de
+  // tekst niet wisselt bij hertekenen.
+  function dailyScoreHeadline(accuracy, allExact) {
+    const lines = allExact ? [
+      ['Foutloos. Drie uit drie.', 'Flawless. Three out of three.'],
+      ['Alles exact. Een buiging waard.', 'All exact. Take a bow.']
+    ] : accuracy >= 90 ? [
+      ['Vlijmscherp geschat.', 'Razor-sharp estimating.'],
+      ['Verdacht goed. Was dit echt een gok?', 'Suspiciously good. Was that really a guess?']
+    ] : accuracy >= 75 ? [
+      ['Sterk geschat.', 'Strong estimating.'],
+      ['Dit zat er dicht op.', 'That was close to the mark.']
+    ] : accuracy >= 55 ? [
+      ['In de goede buurt.', 'In the right ballpark.'],
+      ['Netjes. Niet precies, wel in de buurt.', 'Decent. Not exact, but in the area.']
+    ] : accuracy >= 35 ? [
+      ['Juiste planeet, verkeerd continent.', 'Right planet, wrong continent.'],
+      ['Bijna. Voor een ruime definitie van bijna.', 'Close. For a generous definition of close.']
+    ] : accuracy >= 15 ? [
+      ['Gedurfd. De werkelijkheid dacht er anders over.', 'Bold. Reality had other ideas.'],
+      ['Met overtuiging gegokt. Dat telt ook.', 'Guessed with conviction. That counts for something.']
+    ] : [
+      ['Indrukwekkend ernaast. Daar is lef voor nodig.', 'Impressively off. That takes nerve.'],
+      ['De antwoorden lagen in een ander postcodegebied.', 'The answers were in a different postcode.']
+    ];
+    const pick = lines[Math.abs(Number(PUZZLE_DATA?.number) || 0) % lines.length];
+    return statsCopy(pick[0], pick[1]);
+  }
+
+  // De foto die bij een van de vragen hoort, klein op de bijbehorende kaart.
+  // Zonder foto (of als hij niet laadt) blijft de kaart gewoon tekst.
+  function dailyRevealPhoto(order) {
+    const button = document.getElementById('dailyPhotoButton');
+    const image = document.getElementById('dailyPhotoImage');
+    const src = image?.getAttribute('src');
+    if (!button || button.hidden || !src) return null;
+    const question = PUZZLE_DATA?.image_path ? dailyAssignedPhotoQuestion() : gekoppeldeFoto()?.vraag;
+    const index = order.indexOf(Number(question) - 1);
+    if (index < 0) return null;
+    return { index, src, open: () => document.getElementById('dailyPhotoDialog')?.showModal() };
+  }
+
+  // Onder de score: je reeks (alleen bij de daily van vandaag) en één
+  // duidelijke vervolgstap vooraan in de voetregel.
+  function renderDailyResultExtras() {
+    const summary = document.querySelector('#results .daily-result-summary');
+    if (!summary) return;
+    const today = PUZZLE_DATA?.date === TODAY_STR;
+    let streakEl = document.getElementById('dailyResultStreak');
+    if (!streakEl) {
+      streakEl = document.createElement('div');
+      streakEl.id = 'dailyResultStreak';
+      streakEl.className = 'daily-result-streak';
+      streakEl.setAttribute('data-i18n-skip', '');
+      summary.querySelector('.daily-score-row')?.after(streakEl);
+    }
+    const streak = today ? getLocalStreak() : 0;
+    streakEl.hidden = streak < 1;
+    streakEl.textContent = streak === 1
+      ? statsCopy('🔥 Reeks gestart. Morgen dag 2.', '🔥 Streak started. Day 2 tomorrow.')
+      : statsCopy(`🔥 ${streak} dagen op rij`, `🔥 ${streak} days in a row`);
+
+    const navigation = summary.querySelector('.daily-result-navigation');
+    if (!navigation) return;
+    let next = document.getElementById('dailyNextStep');
+    if (!next) {
+      next = document.createElement('button');
+      next.type = 'button';
+      next.id = 'dailyNextStep';
+      next.className = 'daily-home-button daily-next-button';
+      next.setAttribute('data-i18n-skip', '');
+      navigation.prepend(next);
+    }
+    // Archief gespeeld terwijl de daily van vandaag nog openstaat: die eerst.
+    const todayOpen = !today && !getLocalPlays()[TODAY_STR]
+      && DAILY_PUZZLES.some(puzzle => puzzle.date === TODAY_STR) && window.NettoRoutes?.openToday;
+    next.textContent = todayOpen ? statsCopy('Speel de Daily van vandaag →', 'Play today’s Daily →')
+      : statsCopy('Meer puzzels →', 'More puzzles →');
+    next.onclick = () => (todayOpen ? window.NettoRoutes.openToday() : openPuzzles());
+  }
+
   // Nauwkeurigheid per vraag naast de totaalscore, in de volgorde van de kaarten.
   function renderDailyScoreBreakdown(factors, exact) {
     const box = document.getElementById('dailyScoreBreakdown');
@@ -2578,6 +2684,9 @@
       const accuracy = exact[index] ? 100 : Math.round(100 / factors[index]);
       const row = document.createElement('li');
       row.className = 'daily-score-line' + (exact[index] ? ' is-exact' : '');
+      // Dezelfde kleurstappen als de schaal op de antwoordkaarten.
+      row.dataset.tone = exact[index] ? 'exact' : factors[index] <= 1.15 ? 'great'
+        : factors[index] <= 1.5 ? 'good' : factors[index] <= 2.5 ? 'fair' : 'far';
       const label = document.createElement('span');
       label.textContent = statsCopy('Vraag ', 'Question ') + (position + 1);
       const bar = document.createElement('span');
@@ -2638,44 +2747,14 @@
   // =========================================================================
   // 5. WORDLE-STIJL SCORE DELEN
   // =========================================================================
+  // De tekst en het versturen staan in js/share.js (deelmenu, klembord, prompt).
   function shareScore() {
-    const plays = getLocalPlays();
-    const pKey = getActivePuzzleKey();
-    const play = plays[pKey] || plays[TODAY_STR];
-    if (!play) return;
-
-    const echt = PUZZEL_ECHT();
-    const s1 = scoreVraag(play.g1, echt.a1);
-    const s2 = scoreVraag(play.g2, echt.a2);
-    const s3 = scoreVraag(play.g3, echt.a3);
-    const streak = getLocalStreak();
-    const acc = Math.round(100 / play.factor);
-
-    function formatLine(emoji, g, a, f) {
-      if (Math.abs(g - a) < 0.001) return `🎯 Spot on!`;
-      const qAcc = Math.round(100 / f);
-      return `${emoji} ${qAcc}% (${f.toFixed(2)}×)`;
-    }
-
-    const r1 = getFactorRating(s1);
-    const r2 = getFactorRating(s2);
-    const r3 = getFactorRating(s3);
-
-    const regels = [formatLine(r1.emoji, play.g1, echt.a1, s1), formatLine(r2.emoji, play.g2, echt.a2, s2), formatLine(r3.emoji, play.g3, echt.a3, s3)];
-    const vraagregels = dailyQuestionOrder().map((i, positie) => ['1️⃣', '2️⃣', '3️⃣'][positie] + ' ' + regels[i]).join('\n');
-    const text = `Netto #${PUZZLE_DATA.number} · Score: ${acc}% 🎯 (${play.factor.toFixed(2)}×)\n${vraagregels}\n🔥 Streak: ${streak} ${streak === 1 ? 'dag' : 'dagen'}\n${speelAdres()}`;
-
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(text).then(() => {
-        showSarcasticToast("Score gekopieerd naar klembord! Deel het in je groepsapp.", true);
-      }).catch(() => fallbackPrompt(text));
-    } else {
-      fallbackPrompt(text);
-    }
+    window.nettoTrack?.('share', { mode:'daily', kind:'score' });
+    window.NettoShare.daily();
   }
 
   function fallbackPrompt(text) {
-    prompt("Kopieer jouw uitslag:", text);
+    prompt(statsCopy('Kopieer jouw uitslag:', 'Copy your result:'), text);
   }
 
   // =========================================================================

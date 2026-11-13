@@ -13,6 +13,7 @@
       hoofdactie.textContent = ingeleverd ? 'Speel meer puzzels →' : 'Controleer mijn score';
       hoofdactie.onclick = ingeleverd ? () => openPuzzles() : () => submitPuzzleView(prefix);
       navigatie.replaceChildren(hoofdactie);
+      if (ingeleverd) navigatie.append(NettoShare.libraryButton());
       return;
     }
     const reeks = bibliotheek ? libraryPuzzles.filter(p => p.difficulty === selectedDifficulty) : catalogusPuzzleList;
@@ -29,6 +30,7 @@
       ? laatste ? () => bibliotheek ? openPuzzles() : openCatalogusLibrary() : () => verplaats(1)
       : () => submitPuzzleView(prefix);
     navigatie.replaceChildren(hoofdactie);
+    if (ingeleverd) navigatie.append(NettoShare.libraryButton());
     if (!ingeleverd) {
       const overslaan = document.createElement('button');
       overslaan.type = 'button';
@@ -42,6 +44,7 @@
   function renderPuzzleView(prefix, p, progressLabel, moveAction) {
     const listEl = document.getElementById(prefix + 'QuestionList');
     if (!listEl || !p) return;
+    window.nettoTrack?.('puzzle_start', { mode:prefix === 'library' ? 'library' : 'catalogus', once:p.id });
     const progress = document.getElementById(prefix + 'Progress');
     if (prefix === 'library') {
       const badge = document.createElement('button');
@@ -98,6 +101,7 @@
     if (guesses.every((guess, i) => isSpotOnAnswer(guess, answers[i]))) launchConfetti();
     const plays = JSON.parse(localStorage.getItem('netto_library_plays') || '{}'); plays[active.id] = { factor, guesses, completedAt:new Date().toISOString() }; localStorage.setItem('netto_library_plays',JSON.stringify(plays));
     updateContinuePuzzleButton();
+    window.nettoTrack?.('puzzle_finish', { mode:prefix === 'library' ? 'library' : 'catalogus', once:active.id });
     renderPuzzleReview(prefix, active, guesses, answers, factor);
     werkPuzzelNavigatieBij(prefix, true);
     syncLibraryPlay(active, guesses[0], guesses[1], guesses[2], factor);
