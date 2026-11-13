@@ -64,6 +64,10 @@ def routes(data: dict) -> dict[str, str]:
         number = int(puzzle['number'])
         if connection(puzzle):
             items[f"connections/{number}"] = "index.html"
+    chain_source = (ROOT / "data/netto_breinkrakers.js").read_text(encoding="utf-8")
+    chains = json.loads(chain_source.split("window.NETTO_BREINKRAKERS =", 1)[1].strip().rstrip(";"))
+    for puzzle in chains:
+        items[f"connections/chains/{int(puzzle['number'])}"] = "index.html"
     # Ook nog niet gepubliceerde dagpuzzels kunnen uit de database komen.
     first = min((date.fromisoformat(puzzle["date"]) for puzzle in data["daily"]), default=date(2026, 9, 21))
     last = date.today() + timedelta(days=366)
