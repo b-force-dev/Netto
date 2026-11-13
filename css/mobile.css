@@ -1,0 +1,144 @@
+/* Phone and small-tablet overrides. Keep last; desktop remains independent. */
+@media (max-width: 820px) {
+  html { scroll-padding-block: 76px 24px; }
+  body { min-height: 100dvh; }
+  main, .modal, .live-card, .card { overflow-wrap: anywhere; }
+  button, select, input, textarea { font-size: 16px; }
+  button, [role="button"], select, summary { touch-action: manipulation; }
+  /* Earlier screen-specific rules include compact inline heights. This floor
+     must win over those rules, including on calendar and result controls. */
+  :is(main, .modal, .sidebar) button { min-height: 44px !important; min-width: 44px !important; white-space: normal; }
+  :is(main, .modal) :is(input:not([type="checkbox"]):not([type="radio"]), textarea, select) {
+    font-size: 16px; min-height: 44px; max-width: 100%;
+    scroll-margin-block: 80px 24px;
+  }
+  :is(main, .modal) :is(p, small, label, dt) { font-size: 14px; line-height: 1.5; }
+  :is(.eyebrow, .library-page-kicker, .lp-brand-tag, .lp-demo-label, .lp-eyebrow,
+      .lp-mode-tag, .lp-assurance, .lp-today-label, .lp-today-label .hero-meta,
+      .lp-facts-note, .lp-footer-brand small, .lp-continue-item small,
+      .lp-welcome-stats li, .lp-mode-body small, .lp-facts-list dt,
+      .race-config-label, .race-tolerance-note, .race-best, .race-hint,
+      .race-scoreline, .race-history-label, .race-level-label, .race-config-card small,
+      .bk-catalog-summary, .bk-leesregel, .connection-position, .vraag-ondertekst,
+      .invoer-eenheid, .archive-status, .library-progress, .tag,
+      .stats-eyebrow, .stats-empty, .stats-calendar-link, .stats-kpi-label,
+      .stats-distribution-row, .stats-kpi span, .stats-kpi small,
+      .stats-section-heading span, .modal-subtitle, .auth-toggle, .auth-link,
+      .live-eyebrow, .live-muted, .live-player-count, .live-rules, .live-card label,
+      .live-card legend, .live-option strong, .live-option small, .live-player small,
+      .live-clock small, .live-room-code span, .live-room-summary,
+      .live-table, .live-table thead, .live-table small,
+      .live-answer-questions li, .live-open-empty p, .live-private-join summary,
+      .pwa-copy p, .pwa-time-label, .toast-body) { font-size: 14px; line-height: 1.45; }
+
+  /* Six controls still fit at 320px, each with a real finger-sized target. */
+  .topbar { height: 64px; padding-inline: max(8px, env(safe-area-inset-left)) max(8px, env(safe-area-inset-right)); }
+  .topbar > .topbar-navigation, .user-badge-bar { gap: 4px; }
+  .topbar :is(button, .topbar-home) { min-width: 44px; min-height: 44px; height: 44px; }
+  .topbar .streak-badge { padding-inline: 6px; }
+  .sidebar { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
+  .sidebar .sidebar-scroll { overflow-y: auto; justify-content: flex-start; overscroll-behavior: contain; }
+  .sidebar .sidebar-item { min-height: 44px; flex-shrink: 0; font-size: 14px; }
+  .sidebar :is(.sidebar-group-title, .sidebar-tagline, .sidebar-footer) { font-size: 14px; }
+  .sidebar .sidebar-header { min-height: 44px; }
+  .sidebar-close { min-width: 44px; }
+  .streak-popover { max-width: calc(100vw - 16px); max-height: calc(100dvh - 80px); overflow-y: auto; }
+
+  /* Keep the first Daily action visible even on a short 320px phone. */
+  .screen-home { padding-top: 80px; }
+  .lp-hero { padding: 20px 18px; gap: 22px; }
+  .lp-brand { margin-bottom: 16px; gap: 10px; flex-wrap: wrap; }
+  .lp-brand-tag { letter-spacing: .06em; }
+  .lp-title { font-size: clamp(32px, 9vw, 48px); line-height: 1.05; }
+  .lp-welcome-title { font-size: clamp(28px, 8vw, 42px); }
+  .lp-welcome-stats { margin-top: 12px; }
+  .lp-lede { margin-top: 12px; font-size: 16px; line-height: 1.45; }
+  .lp-cta-row { margin-top: 18px; }
+  .hero-cta.lp-cta { padding: 14px 16px; gap: 12px; min-height: 52px; }
+  .lp-demo-replay, .lp-footer-nav :is(a, button), .lp-language button, .lp-theme { min-height: 44px; font-size: 14px; }
+  .lp-footer-nav a { display: inline-flex; align-items: center; }
+  .lp-facts-list { gap: 10px; }
+
+  .screen, .library-screen { min-height: 100dvh; padding-bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .library-screen.active { height: var(--mobile-viewport-height, 100dvh); min-height: 0; scroll-padding-block: 80px 24px; }
+  .library-home, .puzzle-index-badge { min-height: 44px; }
+  :is(.library-actions, .daily-result-actions, .live-actions, .live-finish-actions) { flex-wrap: wrap; gap: 12px; }
+  :is(.library-actions, .live-actions, .live-finish-actions) > button { flex: 1 1 160px; }
+  :is(.q-label, .library-page-title, .headline, .live-card h1) { text-wrap: pretty; }
+  :is(#dailyQuestionView, #libraryQuestionList, #raceQuestionList, #bkQuestionList, #liveQuestionList) input { min-height: 48px; }
+  #bkQuestionList .connection-drag-handle { width: 44px; height: 44px; min-width: 44px; }
+  #bkQuestionList .connection-position { padding-right: 44px; }
+  #bkQuestionList select { min-width: 44px; min-height: 44px; }
+  .live-refresh-button { min-width: 44px; flex-basis: 44px; }
+  .live-copy-button, .live-text-button { font-size: 14px; }
+  :is(.race-duration-options, .race-tolerance-labels) :is(b, span, small),
+  .library-stat span, .library-flip-front span, .library-difficulty-card span,
+  .stats-mode-tabs button, .stats-kpi > span, .stats-kpi > small,
+  .sidebar-item span, .settings-language button { font-size: 14px; }
+  .live-table-wrap { max-width: 100%; overscroll-behavior-x: contain; }
+  .daily-photo span { font-size: 14px; line-height: 1.4; }
+  .live-card { --ink-muted: var(--text-muted); }
+  .live-option-list .live-option { min-height: 60px; }
+
+  /* The visual viewport shrinks with the keyboard on iOS; dvh alone does not. */
+  .modal-overlay {
+    top: var(--mobile-viewport-top, 0px); bottom: auto;
+    height: var(--mobile-viewport-height, 100dvh);
+    padding: 12px max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  }
+  .modal { max-height: 100%; padding: 24px 20px; overscroll-behavior: contain; scroll-padding-block: 16px; }
+  .modal-title { padding-right: 40px; }
+  .modal-close { width: 44px; height: 44px; top: 8px; right: 8px; }
+  .modal-subtitle, .auth-toggle, .form-group label { color: var(--text-muted); }
+  .form-group input { color: var(--ink); background: var(--surface); }
+  .answer-reveal { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
+  :is(.answer-reveal-header > span, .answer-reveal-score > span,
+      .answer-reveal-values > div > span, .answer-reveal-score p, .answer-reveal-toggle) { font-size: 14px; }
+  .answer-reveal-head { flex-wrap: wrap; }
+  .answer-reveal-head h2 { flex-basis: 160px; }
+  .answer-reveal-foot { flex-wrap: wrap; }
+  .answer-reveal-foot .answer-reveal-verdict { flex: 1 1 130px; }
+  .answer-reveal-foot .answer-reveal-toggle { flex: 0 1 auto; max-width: 100%; }
+  .answer-reveal-toggle { min-width: 44px; min-height: 44px; }
+  .answer-reveal-values { gap: 12px; }
+  .answer-reveal-actual { padding-left: 12px; }
+  :is(.answer-reveal-end, .answer-reveal-payoff-label, .answer-reveal-yours,
+      .answer-reveal-yours span, .answer-reveal-equation i, .answer-reveal-verdict,
+      .answer-reveal-detail a, .answer-reveal-legend,
+      .score-badge-title, .score-badge-factor, .daily-score-breakdown-title,
+      .daily-score-breakdown strong, .daily-result-streak, #btnLeaderboardLabel,
+      #dailyScoreSyncStatus, #dailyScoreSyncStatus .daily-status-login) { font-size: 14px; }
+  .answer-reveal-end { color: #656b7d; }
+  .calculator-toggle, .calculator { bottom: calc(16px + env(safe-area-inset-bottom)); right: max(14px, env(safe-area-inset-right)); }
+  .calculator { max-height: calc(100dvh - 90px); overflow-y: auto; }
+  .calculator-close { min-width: 44px; min-height: 44px; }
+  body:has(input:focus, textarea:focus, .modal-overlay.active, dialog[open]) .calculator-toggle { display: none; }
+  .toast-container { top: 76px; left: 12px; right: 12px; width: auto; max-width: none; pointer-events: none; }
+  .toast { width: 100%; max-width: 460px; margin-inline: auto; }
+  .pwa-card { padding-right: 48px; }
+  .pwa-copy { flex-basis: 100%; }
+  .pwa-actions { min-width: 0; }
+}
+
+@media (max-width: 560px) {
+  .lp-today { margin-top: 16px; padding-top: 14px; }
+  .lp-hero .lp-brand-tag { max-width: 145px; }
+  .live-setup-heading, .live-round-heading { flex-wrap: wrap; gap: 12px; }
+  .live-setup-grid, .live-room-grid, .live-settings-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  #liveSetup .live-create-panel { padding: 16px; }
+  .live-card { padding: 20px 16px; }
+  .live-round-players { grid-template-columns: minmax(0, 1fr); }
+  .live-room-code { padding: 14px; gap: 12px; }
+  .stats-kpi-label { min-height: 0; letter-spacing: 0; }
+  .stats-kpi-box { padding: 16px 12px; }
+  .stats-distribution-row { grid-template-columns: 82px minmax(0,1fr) 30px; gap: 8px; }
+  .stats-card { padding: 20px 16px; }
+}
+
+@media (max-width: 820px) and (max-height: 500px) {
+  .sidebar { overflow-y: auto; }
+  .sidebar .sidebar-scroll { flex: 0 0 auto; overflow: visible; }
+  .screen, .library-screen, #liveScreen { padding-top: 76px; }
+  .modal-overlay { padding-block: 8px; }
+  .modal { padding-top: 20px; }
+}
