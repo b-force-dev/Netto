@@ -1800,5 +1800,20 @@ window.NETTO_BRONNEN_EN = {
   "Leeuwen zijn ongeveer twintig uur per dag inactief; dat omvat rusten en is niet uitsluitend slaap.": "Lions are inactive for about twenty hours a day; this includes resting and is not exclusively sleep.",
   "Guinness vermeldt 251 centimeter bij de meting in februari 2011.": "Guinness gives 251 centimetres at the measurement in February 2011.",
   "De infographic uit 2022 noemt 85 procent verlies sinds de achttiende eeuw; dit is de daarin gebruikte historische schatting.": "The 2022 infographic gives 85 per cent lost since the eighteenth century; this is the historical estimate used in that publication.",
-  "Iedere dobbelsteen heeft zes mogelijkheden; de dobbelstenen worden onderscheiden: 6³ = 216.": "Each die has six possibilities; the dice are distinguished: 6³ = 216."
+  "Iedere dobbelsteen heeft zes mogelijkheden; de dobbelstenen worden onderscheiden: 6³ = 216.": "Each die has six possibilities; the dice are distinguished: 6³ = 216.",
+  "National Museum Wales vermeldt 916 kilogram voor de lederschildpad die in september 1988 bij Harlech werd gevonden.": "National Museum Wales gives 916 kilograms for the leatherback found at Harlech in September 1988.",
+  "Volwassen mannetjes wegen gemiddeld circa 4 ton, oftewel 4000 kilogram.": "Adult males average about 4 tonnes, or 4,000 kilograms.",
+  "De FAO noemt circa 70 procent van de wateronttrekkingen voor landbouw; dit is niet hetzelfde als netto waterverbruik.": "FAO gives around 70 per cent of water withdrawals for agriculture; withdrawals differ from net water consumption.",
+  "De aangehaalde inventaris noemt 1294 vogelsoorten: afgerond op honderdtallen 1300.": "The cited inventory lists 1,294 bird species: 1,300 to the nearest hundred.",
+  "Er zijn 8 keuzes voor goud, daarna 7 voor zilver en 6 voor brons: 8×7×6 = 336.": "There are 8 choices for gold, then 7 for silver and 6 for bronze: 8×7×6 = 336.",
+  "De British Antarctic Survey meldde in 2010 een jaarlijkse trekafstand van meer dan 70.000 kilometer voor de gevolgde sterns.": "The British Antarctic Survey reported an annual migration distance of more than 70,000 kilometres for the tracked terns in 2010.",
+  "Guinness vermeldt een lengte van 123 centimeter van neus tot staartpunt voor Stewie op 28 augustus 2010.": "Guinness gives Stewie’s length from nose to tail tip as 123 centimetres on 28 August 2010.",
+  "Bij de European Juggling Convention jongleerden 1508 deelnemers minstens tien seconden met minstens drie voorwerpen.": "At the European Juggling Convention, 1,508 participants juggled at least three objects for at least ten seconds.",
+  "De EAZA-richtlijn noemt 1600–2000 kilogram voor volwassen vrouwtjes; de bovengrens is 2000.": "The EAZA guidelines give 1,600–2,000 kilograms for adult females; the upper end is 2,000.",
+  "Guinness noemt voor Sampson, geboren in 1846, een schofthoogte van 219 centimeter op vierjarige leeftijd.": "Guinness gives Sampson, born in 1846, a height of 219 centimetres at the withers at four years old.",
+  "De wedstrijd op 30 maart 1946 duurde 203 minuten.": "The match on 30 March 1946 lasted 203 minutes.",
+  "De Britse Lindt-productpagina noemt 70 procent cacao; dit is een specifiek product, geen standaard voor alle pure chocolade.": "The UK Lindt product page gives 70 per cent cocoa; this is a specific product, not a standard for all dark chocolate.",
+  "Het CBS noemt voor 2023 gemiddeld 1065 fietskilometer per persoon van zes jaar of ouder.": "CBS gives an average of 1,065 kilometres cycled per person aged six or over in 2023.",
+  "De Society for Mining, Metallurgy and Exploration vermeldt op basis van USGS 22 miljoen metrische ton mijnproductie in 2023.": "The Society for Mining, Metallurgy and Exploration reports, citing USGS, 22 million metric tonnes of mine production in 2023.",
+  "Het VN-rapport uit 2021 noemt circa 400 miljoen ton plastic per jaar.": "The 2021 UN report gives approximately 400 million tonnes of plastic per year."
 };

@@ -2664,7 +2664,7 @@ window.NETTO_TRANSLATIONS_EN = {
   "Hoeveel ingangen had het Colosseum?": "How many entrances did the Colosseum have?",
   "Hoeveel miljoen inwoners heeft China volgens de VN-schatting voor 2025?": "How many million people lived in China according to the UN's 2025 estimate?",
   "Hoeveel kilogram woog de zwaarste lederschildpad ooit, volgens Guinness World Records?": "How many kilograms did the heaviest recorded leatherback turtle weigh, according to Guinness World Records?",
-  "Hoeveel kilogram woog de zwaarste schildpad ooit, volgens het National Museum Wales?": "How many kilograms did the heaviest recorded turtle weigh, according to National Museum Wales?",
+  "Hoeveel kilogram woog de zwaarste schildpad ooit, volgens het National Museum Wales?": "How many kilograms did the heaviest turtle ever weigh, according to National Museum Wales?",
   "Hoeveel kilometer zijn alle bloedvaten van een volwassene samen lang, volgens de bekende schatting van 60.000 mijl?": "How many kilometres long are an adult's blood vessels according to the widely quoted estimate of 60,000 miles?",
   "Hoeveel kilometer per uur is de baansnelheid van het ISS, afgerond op duizendtallen?": "How many kilometres per hour is the ISS's orbital speed, rounded to the nearest thousand?",
   "Hoeveel kilometer per uur is de baansnelheid van het ISS ongeveer?": "Approximately how many kilometres per hour is the ISS's orbital speed?",
@@ -2887,5 +2887,18 @@ window.NETTO_TRANSLATIONS_EN = {
   "Hoeveel uur per dag is een leeuw ongeveer inactief?": "Approximately how many hours a day is a lion inactive?",
   "Hoeveel centimeter lang was Sultan Kösen volgens zijn Guinness-meting in februari 2011?": "How many centimetres tall was Sultan Kösen according to his Guinness measurement in February 2011?",
   "Hoeveel procent van de natuurlijke wetlands was volgens de Ramsar-infographic voor Wereldwetlandsdag 2022 sinds de achttiende eeuw verdwenen?": "What percentage of natural wetlands had been lost since the eighteenth century according to the Ramsar infographic for World Wetlands Day 2022?",
-  "Hoeveel geordende uitkomsten zijn er bij één worp met drie gewone zeszijdige dobbelstenen?": "How many ordered outcomes are possible in one roll of three standard six-sided dice?"
+  "Hoeveel geordende uitkomsten zijn er bij één worp met drie gewone zeszijdige dobbelstenen?": "How many ordered outcomes are possible in one roll of three standard six-sided dice?",
+  "Hoeveel procent van de wereldwijde wateronttrekkingen gaat volgens de FAO bij benadering naar landbouw?": "Approximately what percentage of global water withdrawals is used for agriculture according to FAO?",
+  "Hoeveel vogelsoorten zijn in het Amazoneregenwoud wetenschappelijk geclassificeerd volgens de inventaris in de Engelstalige Wikipedia, afgerond op honderdtallen?": "How many bird species have been scientifically classified in the Amazon rainforest according to the inventory in English Wikipedia, rounded to the nearest hundred?",
+  "Op hoeveel manieren kunnen goud, zilver en brons worden verdeeld onder acht renners, zonder gedeelde plaatsen?": "In how many ways can gold, silver and bronze be awarded among eight runners, with no ties?",
+  "Meer dan hoeveel kilometer per jaar legden de Noordse sterns af in de trekstudie die de British Antarctic Survey in 2010 bekendmaakte?": "More than how many kilometres per year did Arctic terns travel in the migration study announced by the British Antarctic Survey in 2010?",
+  "Hoeveel centimeter lang was de huiskat Stewie bij zijn recordmeting in augustus 2010?": "How many centimetres long was the domestic cat Stewie at his record measurement in August 2010?",
+  "Hoeveel deelnemers jongleerden tegelijk bij het Guinness-record in Edinburgh op 7 augustus 1998?": "How many participants juggled simultaneously at the Guinness record in Edinburgh on 7 August 1998?",
+  "Wat is volgens de EAZA-richtlijn uit 2018 de bovengrens van het opgegeven gewichtsbereik voor een volwassen vrouwelijke witte neushoorn, in kilogram?": "According to the 2018 EAZA guidelines, what is the upper end of the stated weight range for an adult female white rhinoceros, in kilograms?",
+  "Hoeveel centimeter schofthoogte vermeldt Guinness voor het paard Sampson op vierjarige leeftijd?": "How many centimetres at the withers does Guinness give for the horse Sampson at four years old?",
+  "Hoeveel minuten duurde de voetbalwedstrijd Stockport County–Doncaster Rovers op 30 maart 1946?": "How many minutes did the Stockport County v Doncaster Rovers football match on 30 March 1946 last?",
+  "Hoeveel procent cacao bevat de Lindt Excellence Intense Dark-reep van 100 gram op de Britse productpagina?": "What percentage cocoa does the 100-gram Lindt Excellence Intense Dark bar contain on the UK product page?",
+  "Hoeveel kilometer fietste een inwoner van Nederland van zes jaar of ouder gemiddeld in 2023 volgens het CBS?": "How many kilometres did a resident of the Netherlands aged six or over cycle on average in 2023 according to CBS?",
+  "Hoeveel ton koper werd volgens de schatting voor 2023 wereldwijd uit mijnen gewonnen, ongeveer?": "Approximately how many tonnes of copper were mined worldwide according to the estimate for 2023?",
+  "Hoeveel ton plastic werd volgens het VN-rapport Drowning in Plastics uit 2021 wereldwijd per jaar geproduceerd, ongeveer?": "Approximately how many tonnes of plastic were produced worldwide per year according to the UN report Drowning in Plastics from 2021?"
 };

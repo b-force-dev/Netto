@@ -673,5 +673,70 @@
     "id": "nr596",
     "oud": "Hoeveel mogelijke worpen zijn er met drie gewone dobbelstenen?",
     "nieuw": "Hoeveel geordende uitkomsten zijn er bij één worp met drie gewone zeszijdige dobbelstenen?"
+  },
+  {
+    "id": "nr378",
+    "oud": "Hoeveel procent van het wereldwijde waterverbruik gaat naar landbouw?",
+    "nieuw": "Hoeveel procent van de wereldwijde wateronttrekkingen gaat volgens de FAO bij benadering naar landbouw?"
+  },
+  {
+    "id": "nr680",
+    "oud": "Hoeveel vogelsoorten telt het Amazonegebied?",
+    "nieuw": "Hoeveel vogelsoorten zijn in het Amazoneregenwoud wetenschappelijk geclassificeerd volgens de inventaris in de Engelstalige Wikipedia, afgerond op honderdtallen?"
+  },
+  {
+    "id": "nr105",
+    "oud": "Hoeveel manieren kun je 3 renners op een podium van 8 deelnemers indelen?",
+    "nieuw": "Op hoeveel manieren kunnen goud, zilver en brons worden verdeeld onder acht renners, zonder gedeelde plaatsen?"
+  },
+  {
+    "id": "nr157",
+    "oud": "Hoeveel kilometer legt de Noordse stern jaarlijks trekafstand af?",
+    "nieuw": "Meer dan hoeveel kilometer per jaar legden de Noordse sterns af in de trekstudie die de British Antarctic Survey in 2010 bekendmaakte?"
+  },
+  {
+    "id": "nr445",
+    "oud": "Hoe lang was de langste kat ooit in centimeters?",
+    "nieuw": "Hoeveel centimeter lang was de huiskat Stewie bij zijn recordmeting in augustus 2010?"
+  },
+  {
+    "id": "nr1311",
+    "oud": "Hoeveel jongleurs deden mee aan het grootste jongleerrecord?",
+    "nieuw": "Hoeveel deelnemers jongleerden tegelijk bij het Guinness-record in Edinburgh op 7 augustus 1998?"
+  },
+  {
+    "id": "nr652",
+    "oud": "Hoeveel kilogram weegt een volwassen witte neushoorn?",
+    "nieuw": "Wat is volgens de EAZA-richtlijn uit 2018 de bovengrens van het opgegeven gewichtsbereik voor een volwassen vrouwelijke witte neushoorn, in kilogram?"
+  },
+  {
+    "id": "nr437",
+    "oud": "Hoe hoog was het hoogste paard ooit in centimeters?",
+    "nieuw": "Hoeveel centimeter schofthoogte vermeldt Guinness voor het paard Sampson op vierjarige leeftijd?"
+  },
+  {
+    "id": "nr67",
+    "oud": "Hoe lang duurde de langste voetbalwedstrijd ooit in minuten?",
+    "nieuw": "Hoeveel minuten duurde de voetbalwedstrijd Stockport County–Doncaster Rovers op 30 maart 1946?"
+  },
+  {
+    "id": "nr720",
+    "oud": "Hoeveel procent cacao heeft standaard pure chocolade?",
+    "nieuw": "Hoeveel procent cacao bevat de Lindt Excellence Intense Dark-reep van 100 gram op de Britse productpagina?"
+  },
+  {
+    "id": "nr62",
+    "oud": "Hoeveel kilometer fietst een Nederlander gemiddeld per jaar?",
+    "nieuw": "Hoeveel kilometer fietste een inwoner van Nederland van zes jaar of ouder gemiddeld in 2023 volgens het CBS?"
+  },
+  {
+    "id": "nr363",
+    "oud": "Hoeveel ton koper wordt wereldwijd jaarlijks geproduceerd?",
+    "nieuw": "Hoeveel ton koper werd volgens de schatting voor 2023 wereldwijd uit mijnen gewonnen, ongeveer?"
+  },
+  {
+    "id": "nr1081",
+    "oud": "Hoeveel ton plastic wordt wereldwijd jaarlijks geproduceerd?",
+    "nieuw": "Hoeveel ton plastic werd volgens het VN-rapport Drowning in Plastics uit 2021 wereldwijd per jaar geproduceerd, ongeveer?"
   }
 ]
