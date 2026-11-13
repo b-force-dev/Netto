@@ -151,10 +151,14 @@
   function connect() {
     ensureRaceLobby();
     const version = generation;
-    const roomChannel = nettoRoomChannel(state.code, 'live');
+    const roomChannel = nettoRoomChannel(state.code, 'live', api());
     channel = roomChannel;
     roomChannel.on('broadcast',{event:'changed'},() => {
       if (version === generation && !pending && state) request('state',{},state.code,true);
+    }).on('broadcast',{event:'rematch'},({payload}) => {
+      if (version !== generation || state?.phase !== 'finished' || payload?.host !== state.host || !/^[A-Z2-9]{6}$/.test(payload?.code || '')) return;
+      showNoticeToast(copy('De host heeft een nieuwe room klaargezet.', 'The host has created a new room.'), '🔁', copy('Nog een potje?', 'Play again?'),
+        {duration:30000,actionLabel:copy('Meedoen','Join'),onAction:()=>join(payload.code)});
     }).on('presence',{event:'sync'},() => {
       if (version === generation && state) renderPlayers();
     }).subscribe(status => {
@@ -200,6 +204,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     showScreen('live');
     if (state) render(); else setup();
     ensureRaceLobby();
+    if (!state && remembered()) nettoWhenOnline(() => resume(remembered()));
   }
 
   async function create(event) {
@@ -278,7 +283,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
 
   // Na een refresh vanzelf terug in je room, zonder extra klik.
   async function resume(code) {
-    if (state || pending || !code) return;
+    if (state || pending || pendingJoin || !code) return;
     if (!currentUser && !(await restoreGuest())) return;
     auth = currentAuth();
     const data = await request('join', {}, code, true);
@@ -309,11 +314,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     renderPuzzelfoto(list,puzzle);
     [0,1,2].forEach(i => autoCalculatedInputs.delete('liveAnswer'+i));
     bindDerivedInputs('live',puzzle.operator);
-    list.querySelectorAll('input').forEach((input,i) => input.addEventListener('keydown', event => {
-      if (event.key!=='Enter') return;
-      event.preventDefault();
-      if (i<2) el('liveAnswer'+(i+1)).focus(); else submit();
-    }));
+    list.querySelectorAll('input').forEach((input,i) => input.addEventListener('keydown', event => nettoNumberKeydown(event,input,()=>nettoAnswerEnter('live',i,submit))));
     window.NettoI18n?.translateTree(list);
     if (focus) el('liveAnswer0')?.focus({preventScroll:true});
   }
@@ -409,7 +410,8 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     const ranked=[...state.players].sort((a,b)=>b.points-a.points);
     el('liveFinalPlayers').innerHTML = ranked.map(player=>`<li class="live-player ${best>0&&player.points===best?'live-winner':''}"><span class="live-rank">${1+ranked.filter(other=>other.points>player.points).length}</span><span>${esc(player.name)}${player.id===uid()?`<small>${copy('jij','you')}</small>`:''}</span><b>${player.points} <small>${player.points===1?copy('punt','point'):copy('punten','points')}</small></b></li>`).join('');
     el('liveFinishMeta').textContent=copy(`${state.rounds} ${roundWord(state.rounds)} gespeeld met ${state.players.length} spelers.`,`${state.rounds} ${roundWord(state.rounds)} played with ${state.players.length} players.`);
-    window.NettoShare?.mountLive(state, currentUser?.id);
+    window.NettoShare?.mountLive(state, uid());
+    el('liveRematch').hidden=state.host!==uid();
     el('liveAnswerArchive').hidden=true;
     el('liveAnswerArchive').innerHTML='';
     delete el('liveAnswerArchive').dataset.loaded;
@@ -436,6 +438,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     el('liveFinished').hidden=state.phase!=='finished';
     el('liveRoundOutcome').hidden=state.phase!=='reveal'||answerReview;
     el('liveRoomCode').textContent=state.code;
+    el('liveInviteLink').value=nettoInviteUrl('live', state.code);
     el('liveRoomSummary').innerHTML=`<span><b>${state.seconds}s</b> ${copy('per ronde','per round')}</span><span><b>${state.rounds}</b> ${roundWord(state.rounds)}</span><span>${state.visibility==='open'?copy('Open room','Open room'):copy('Privéroom','Private room')}</span>`;
     el('liveLobbyCount').textContent=`${state.players.length}/${state.maxPlayers||8}`;
     el('liveStartHint').textContent=state.players.length<2?copy('Nog één speler nodig om te beginnen.','One more player needed to start.'):copy('Iedereen speelt dezelfde puzzel.','Everyone plays the same puzzle.');
@@ -476,6 +479,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     el('liveConnection').hidden=!stale;
     if (waitingForRound) {
       if (!preparing) { waitingForRound=false; render(); return; }
+      el('liveStartHint').textContent=copy(`Start over ${Math.max(1,Math.ceil((Date.parse(state.startsAt)-now())/1000))}…`,`Starting in ${Math.max(1,Math.ceil((Date.parse(state.startsAt)-now())/1000))}…`);
       el('liveSubmit').disabled=true;
       el('liveQuestionList').querySelectorAll('input').forEach(input=>{ input.disabled=true; });
       return;
@@ -497,13 +501,30 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
       : copy('De som is een aanwijzing. Je antwoorden hoeven er niet aan te voldoen.','The equation is a clue. Your answers do not have to match it.');
   }
 
+  let rematching = false;
+  async function rematch() {
+    if (rematching || !state || state.phase!=='finished' || state.host!==uid()) return;
+    rematching=true; el('liveRematch').disabled=true;
+    try {
+      const options={seconds:state.seconds,rounds:state.rounds,maxPlayers:state.maxPlayers||8,visibility:state.visibility,
+        requireEquation:state.requireEquation!==false,showAnswers:state.showAnswers===true};
+      const {data,error}=await api().rpc('live_rounds',{p_action:'create',p_code:null,p_options:options});
+      if(error) throw error;
+      if(!/^[A-Z2-9]{6}$/.test(data?.code || '')) throw Error('INVALID_STATE');
+      if(channel) await Promise.resolve(channel.send({type:'broadcast',event:'rematch',payload:{code:data.code,host:uid()}})).catch(()=>{});
+      leave(false);
+      await join(data.code);
+    } catch(error) { showError(error); }
+    finally { rematching=false; el('liveRematch').disabled=false; }
+  }
+
   function leave(reset = true) {
     const code=state?.code;
     generation++;
     clearInterval(heartbeat); clearInterval(clock);
     heartbeat=clock=null;
     if (code && api()) api().rpc('live_rounds',{p_action:'leave',p_code:code,p_options:{}}).then(()=>{},()=>{});
-    if (channel) { signal(); supabaseClient?.removeChannel(channel); channel=null; }
+    if (channel) { signal(); api()?.removeChannel(channel); channel=null; }
     if (previousEntry) unpublishOpenRaceEntry();
     previousEntry=false; state=null; rendered=''; sending=false; waitingForRound=false;
     sessionStorage.removeItem('netto_live_room');
@@ -517,14 +538,18 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     el('liveStart').addEventListener('click',()=>{if(!pending) request('start');});
     el('liveResume').addEventListener('click',()=>join(remembered()));
     el('liveSubmit').addEventListener('click',submit);
+    el('liveRematch').addEventListener('click',rematch);
     el('liveShowAnswers').addEventListener('click',toggleAnswers);
     document.querySelectorAll('[data-live-leave]').forEach(button=>button.addEventListener('click',()=>leave()));
     el('liveRefresh').addEventListener('click',()=>{ensureRaceLobby();renderOpenGames();});
+    el('liveShare').addEventListener('click',()=>nettoShareInvite('live',state?.code));
     el('liveCopy').addEventListener('click',async()=>{
       try { await navigator.clipboard.writeText(state.code); showNoticeToast(copy('Roomcode gekopieerd','Room code copied'),'✓',copy('Gekopieerd','Copied')); }
       catch (_) { showNoticeToast(state.code,'⌨',copy('Kopieer deze code','Copy this code')); }
     });
   });
-  window.NettoLive={open,leave,lobbyEntry,renderOpenGames};
+  window.NettoLive={open,leave,lobbyEntry,renderOpenGames,handleInvite,
+    onSignIn: () => { if(pendingJoin) join(pendingJoin); else if(remembered()) resume(remembered()); }
+  };
   window.openLiveRounds=open;
 })();

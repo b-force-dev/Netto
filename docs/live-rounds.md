@@ -66,3 +66,46 @@ python tools/bouw_routes.py
 ```
 
 Controleer met echte accounts: open discovery, privécode, 2–8 spelers, gelijktijdige vragen, vinkjes zonder inzendwaarden, vroegtijdige reveal, lege ronde, gedeelde eindstand, hostvertrek en hervatten. Controleer ook een bestaande Puzzle Race-duel na de gedeelde lobby-aanpassing.
+
+
+## Uitnodigen, gasten en revanche (november 2026)
+
+- Live-uitnodigingen gebruiken `/live-rounds/?join=CODE`; duels gebruiken
+  `/race/online/?join=CODE`. Delen loopt via `js/share.js`.
+- Puzzle Race gebruikt publieke Realtime-kanalen en vraagt gasten alleen een naam.
+  Een refresh herstelt room, rol, puzzelvolgorde, score en de oorspronkelijke deadline.
+- Live Rondes gebruikt voor gasten een aparte anonieme Auth-client, zodat Daily en
+  het normale account uitgelogd blijven. RPC en roomkanaal gebruiken dezelfde client.
+  **Productiecontrole 13 november 2026: anonymous_users staat uit.** Live vraagt
+  daarom eerlijk om een gratis account en bewaart de uitnodigingscode tot na login.
+  Accountloos Live spelen vereist dat de beheerder anonieme logins inschakelt en
+  daarna de gastflow met de productie-RPC controleert. Deze wijziging past geen
+  productie-instellingen, SQL, schema of policies aan.
+- Na refresh hervat Live de bestaande room automatisch. Tijdens de gezamenlijke
+  voorbereiding toont de lobby een aftelling; de vragen blijven verborgen.
+- Op de eindstand kan de host dezelfde instellingen in een nieuwe room gebruiken.
+  De oude groep krijgt een uitnodiging om mee te doen; deelname blijft expliciet.
+  Bij gemist Realtime-bericht kan de host altijd de nieuwe link delen.
+
+### Controle van deze branch
+
+De bestaande databasecontrole (16 scenario's), lobbycontrole, acht combinaties
+van servermogelijkheden/spelregels en overgangscontrole slagen. Ook
+`tests/daily-reliability.cjs`, `tests/daily-server.cjs` en `tests/usage.cjs` slagen.
+De browsercontrole gebruikte Chrome op 390x844 en 1440x900, EN en NL:
+
+- Drie fictieve spelers met de echte SQL via `preview_live_rounds.cjs`: uitnodiging,
+  gezamenlijke vragen, inzendingen, vroege reveal, lege rondes/tijdslimiet,
+  refresh/hervatten, netwerkverlies/herstel, hostvertrek, antwoordenarchief,
+  nieuwe groepsroom en opnieuw aansluiten, spelervertrek.
+- Solo: aftelling, correcte invoer, dubbele inzending, refresh, verlopen deadline,
+  record en direct opnieuw; alle vier themasets bevatten passende vragen.
+  Records zijn gescheiden per tempo, speling en thema.
+- Echt Supabase Realtime, twee aparte browsercontexten: accountloos duel via link,
+  gedeelde seed, refresh, netwerkherstel, eindstanden, revanche en vertrek.
+  Ook de naamprompt in een lege browsercontext is gecontroleerd.
+
+Nog door de integrator: gegenereerde routes, cacheversies en `website/` bijwerken;
+productie-Live met echte accounts controleren. Er zijn geen productieaccounts
+of bestaande spelersgegevens gewijzigd. Browserhulpscripts en screenshots staan
+uitsluitend buiten de repository.

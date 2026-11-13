@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 const tracked=[],channels=[],untracked=[];
 const channel={track:async entry=>{tracked.push(entry);return 'ok';},untrack:async()=>{untracked.push(true);},presenceState:()=>({})};
 const context=vm.createContext({console,Math,Date,Map,Set,Promise,localStorage:{getItem:()=>null},
-  document:{getElementById:()=>null},currentUser:{user_metadata:{username:'Tester'}},
+  document:{getElementById:()=>null,addEventListener(){}},currentUser:{user_metadata:{username:'Tester'}},
   supabaseClient:{channel:(name,config)=>{channels.push({name,config});return channel;}},
   liveEntry:null});
 context.window=context;context.NettoLive={lobbyEntry:()=>context.liveEntry,renderOpenGames:()=>{}};

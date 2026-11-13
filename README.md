@@ -144,8 +144,8 @@ Auth en score-sync draaien op Supabase (`bqatnnouxkjdzvvhqbly`). De anon key in
 
 **Spelen kan zonder account.** De dagpuzzel, de puzzels, de catalogus, de
 breinkrakers en de solo-race werken uitgelogd; scores staan dan in localStorage.
-Een account is nodig voor drie dingen: het leaderboard, online duels en het
-insturen van vragen. Wie inlogt stuurt zijn lokaal gespeelde dagpuzzels alsnog
+Een account is nodig voor het leaderboard, Live Rondes (zolang anonieme logins uit staan) en het
+insturen van vragen. Online raceduels werken ook als gast. Wie inlogt stuurt zijn lokaal gespeelde dagpuzzels alsnog
 op (`stuurLokaleScoresOp` in `js/core.js`), zodat die niet verloren gaan.
 
 Accounts: e-mail + wachtwoord, minimaal 6 tekens, met wachtwoord-vergeten-flow

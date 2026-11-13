@@ -2968,6 +2968,7 @@
     stuurLokaleScoresOp();
     laadLeaderboardZichtbaar();
     closeAuthModal();
+    window.NettoLive?.onSignIn();
     showNoticeToast(
       statsCopy(`Welkom terug, ${currentUser.username}! Je scores zijn gesynchroniseerd.`, `Welcome back, ${currentUser.username}! Your scores are synced.`),
       '👋', statsCopy('Ingelogd', 'Signed in'));

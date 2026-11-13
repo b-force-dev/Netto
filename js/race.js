@@ -83,16 +83,9 @@
     const text = mode === 'live'
       ? statsCopy(`Doe mee met mijn Netto Live Rondes! Code ${code}`, `Join my Netto Live Rounds! Code ${code}`)
       : statsCopy(`Race tegen me in Netto! Code ${code}`, `Race me in Netto! Code ${code}`);
-    if (navigator.share) {
-      try { await navigator.share({ title: 'Netto', text, url }); return; }
-      catch (error) { if (error && error.name === 'AbortError') return; }
-    }
-    try {
-      await navigator.clipboard.writeText(`${text} ${url}`);
-      showNoticeToast(statsCopy('Plak de link in WhatsApp of een ander chatbericht.', 'Paste the link into WhatsApp or any chat.'), '🔗', statsCopy('Link gekopieerd', 'Link copied'));
-    } catch (_) {
-      showNoticeToast(url, '🔗', statsCopy('Kopieer deze link', 'Copy this link'), { duration: 12000 });
-    }
+    return window.NettoShare?.deliver(`${text} ${url}`, {
+      copiedMessage: statsCopy('Plak de link in WhatsApp of een ander chatbericht.', 'Paste the link into WhatsApp or any chat.')
+    });
   }
 
   // Vraagt een naam voor spelen zonder account. Geeft de naam of null terug.
@@ -170,7 +163,18 @@
     return `${minutes}:00`;
   }
 
-  function buildRaceQueue(seed) {
+  const RACE_THEMES = {
+    all: null,
+    nature: ['Dieren', 'Biologie & gezondheid', 'Milieu en duurzaamheid'],
+    science: ['Technologie', 'Scheikunde', 'Natuurkunde', 'Wiskunde', 'Sterrenkunde & ruimte'],
+    culture: ['Kunst en cultuur', 'Boeken en literatuur', 'Films en series', 'Muziek', 'Geschiedenis'],
+    sport: ['Sport', 'Spellen en speelgoed']
+  };
+  function selectRaceTheme(key) {
+    saveRaceModeConfig('solo', {themeKey: RACE_THEMES[key] !== undefined ? key : 'all'});
+    renderRaceBest();
+  }
+  function buildRaceQueue(seed, themeKey = 'all') {
     // Elke run gebruikt een willekeurige, gededupliceerde volgorde. In een
     // duel komt de seed van de host, zodat beide spelers gelijk lopen.
     let source;
@@ -179,7 +183,8 @@
     } else {
       source = REBUILT_DATA.race || [];
     }
-    const list = source.map(normalizeLibraryPuzzle);
+    const themes = RACE_THEMES[themeKey];
+    const list = source.filter(p => !themes || p.categories?.some(category => themes.includes(category))).map(normalizeLibraryPuzzle);
     const rng = mulberry32(seed ?? (Date.now() ^ (Math.random() * 0xffffffff)));
     for (let i = list.length - 1; i > 0; i--) {
       const j = Math.floor(rng() * (i + 1));
@@ -222,6 +227,7 @@
     try { saved = JSON.parse(localStorage.getItem(RACE_MODE_CONFIG_KEY) || '{}'); } catch (_) {}
     const config = saved[mode] || {};
     return {
+      themeKey: RACE_THEMES[config.themeKey] !== undefined ? config.themeKey : 'all',
       durationKey: RACE_DURATIONS[config.durationKey] ? config.durationKey : 'snel',
       toleranceKey: RACE_TOLERANTIES[config.toleranceKey]
         ? config.toleranceKey : RACE_TOLERANTIE_STANDAARD
@@ -566,24 +572,26 @@
 
   // Records gelden per tempo en speling: 10 minuten met 3,00× is geen eerlijke
   // vergelijking met 3 minuten exact.
-  function readRaceBest(durationKey, toleranceKey) {
+  function readRaceBest(durationKey, toleranceKey, themeKey = 'all') {
     const saved = readRaceStore(localStorage, RACE_BEST_KEY) || {};
-    const key = `${durationKey}:${toleranceKey}`;
+    const key = `${durationKey}:${toleranceKey}${themeKey === 'all' ? '' : ':' + themeKey}`;
     if (Number.isFinite(Number(saved[key]))) return Number(saved[key]);
     // Het oude record kende geen instellingen; het hoort bij de standaard.
-    if (key === `snel:${RACE_TOLERANTIE_STANDAARD}`) return Number(localStorage.getItem('netto_race_best') || 0) || 0;
+    if (key === `snel:${RACE_TOLERANTIE_STANDAARD}`) {
+      try { return Number(localStorage.getItem('netto_race_best') || 0) || 0; } catch (_) { return 0; }
+    }
     return 0;
   }
-  function writeRaceBest(durationKey, toleranceKey, value) {
+  function writeRaceBest(durationKey, toleranceKey, value, themeKey = 'all') {
     const saved = readRaceStore(localStorage, RACE_BEST_KEY) || {};
-    saved[`${durationKey}:${toleranceKey}`] = value;
+    saved[`${durationKey}:${toleranceKey}${themeKey === 'all' ? '' : ':' + themeKey}`] = value;
     writeRaceStore(localStorage, RACE_BEST_KEY, saved);
   }
   function renderRaceBest() {
     const bestEl = document.getElementById('raceBest');
     if (!bestEl) return;
     const config = getRaceModeConfig('solo');
-    const best = readRaceBest(config.durationKey, config.toleranceKey);
+    const best = readRaceBest(config.durationKey, config.toleranceKey, config.themeKey);
     const setting = raceSettingLabel(config.durationKey, config.toleranceKey);
     bestEl.textContent = best > 0
       ? statsCopy(`Jouw record (${setting}): ${best} goed`, `Your best (${setting}): ${best} correct`)
@@ -596,7 +604,7 @@
     if (!raceState) return;
     const session = raceState.isDuel ? raceDuelSession : null;
     writeRaceStore(sessionStorage, RACE_RUN_KEY, {
-      v: 1, seed: raceState.seed, durationKey: raceState.durationKey, toleranceKey: raceState.toleranceKey,
+      v: 1, themeKey: raceState.themeKey, seed: raceState.seed, durationKey: raceState.durationKey, toleranceKey: raceState.toleranceKey,
       startsAt: raceState.startsAt, endsAt: raceState.endsAt,
       results: raceState.results.map(r => ({ g: r.guesses, f: r.factor, e: r.exact, r: r.raak })),
       duel: session ? {
@@ -620,7 +628,7 @@
       session.opponent = { correct: Number(run.duel.opponentCorrect) || 0, attempted: 0, finished: false };
     }
     startRaceCore(Boolean(run.duel), { resumed: true, seed: run.seed, durationKey: run.durationKey, toleranceKey: run.toleranceKey,
-      startsAt: run.startsAt, endsAt: run.endsAt, restore });
+      themeKey: run.themeKey, startsAt: run.startsAt, endsAt: run.endsAt, restore });
     if (raceState && Date.now() >= raceState.endsAt) finishRace(true);
   }
 
@@ -638,11 +646,14 @@
     raceState = null;
     showScreen('race');
     document.getElementById('raceScreen').classList.add('active');
+    document.getElementById('raceScreen').scrollTop = 0;
     document.getElementById('raceStart').style.display = 'block';
     document.getElementById('racePlay').style.display = 'none';
     document.getElementById('raceResults').style.display = 'none';
     resetRaceDuelUi();
     renderRaceModeControls();
+    const theme = document.getElementById('raceSoloTheme');
+    if (theme) theme.value = getRaceModeConfig('solo').themeKey;
     switchRaceMode('solo');
     toggleOnlineVisibility(raceOnlineVisibility === 'open');
     renderRaceBest();
@@ -715,12 +726,13 @@
         broadcastRaceEvent(session.code, 'start', { seed, durationKey, toleranceKey, countdownMs, startedAt: Date.now() });
       }
     }
-    raceQueue = buildRaceQueue(seed);
+    const themeKey = !isDuel && RACE_THEMES[options.themeKey] !== undefined ? options.themeKey : 'all';
+    raceQueue = buildRaceQueue(seed, themeKey);
     if (!raceQueue.length) {
       showNoticeToast(statsCopy('Er zijn nog geen race-puzzels geladen.', 'There are no race puzzles loaded yet.'), '🏁', statsCopy('Geen puzzels', 'No puzzles'));
       return;
     }
-    raceState = { index: 0, results: [], correct: 0, streak: 0, longestStreak: 0, remaining: totalSeconds, totalSeconds, durationKey, toleranceKey,
+    raceState = { index: 0, results: [], correct: 0, streak: 0, longestStreak: 0, remaining: totalSeconds, totalSeconds, durationKey, toleranceKey, themeKey,
       tolerantie: RACE_TOLERANTIES[toleranceKey] || 1.0, timerId: null, progress: 0, startsAt, endsAt, seed, isDuel: Boolean(session), live: false };
     const inDuel = Boolean(session);
     window.nettoTrack?.('race_start', { mode:'race' });
@@ -954,14 +966,14 @@
       history.push(...state.results.map(result => ({ factor: result.factor, exact: result.exact,
         guesses: result.guesses, answers: [result.puzzle.q1_answer, result.puzzle.q2_answer, result.puzzle.q3_answer],
         operators: [result.puzzle.operator], categories: result.puzzle.categories || [], completedAt: new Date().toISOString() })));
-      localStorage.setItem('netto_race_stats', JSON.stringify(history));
+      writeRaceStore(localStorage, 'netto_race_stats', history);
       state.statsSaved = true;
     }
     const correct = state.correct;
     const longest = state.longestStreak;
-    const best = readRaceBest(state.durationKey, state.toleranceKey);
+    const best = readRaceBest(state.durationKey, state.toleranceKey, state.themeKey);
     const isRecord = correct > best;
-    if (isRecord) writeRaceBest(state.durationKey, state.toleranceKey, correct);
+    if (isRecord) writeRaceBest(state.durationKey, state.toleranceKey, correct, state.themeKey);
     const you = statsCopy('jij', 'you');
     const real = statsCopy('echt', 'actual');
     const review = state.results.map((r, i) => `
@@ -1009,6 +1021,7 @@
     } else {
       document.getElementById('raceDuelVerdict').style.display = 'none';
     }
+    document.getElementById('raceScreen').scrollTop = 0;
     window.scrollTo(0, 0);
   }
 
@@ -1055,8 +1068,8 @@
   function raceChannelName(code, mode = 'race') { return `netto-race:${mode === 'live' ? 'live:' : ''}${String(code).toUpperCase()}`; }
 
   // Beide online spelmodi gebruiken dezelfde Supabase-verbinding en kanaalconfiguratie.
-  function nettoRoomChannel(code, mode = 'race') {
-    return supabaseClient.channel(raceChannelName(code, mode), {
+  function nettoRoomChannel(code, mode = 'race', client = supabaseClient) {
+    return client.channel(raceChannelName(code, mode), {
       config: { broadcast: { self: false }, presence: { key: RACE_CLIENT_ID } }
     });
   }
@@ -1408,6 +1421,7 @@
     renderRaceRoomSettings();
     if (session.role === 'host' && session.opponentPresent && session.opponent && session.opponent.wantsRematch) { startDuelRace(); return; }
     renderDuelRoomState();
+    document.getElementById('raceScreen').scrollTop = 0;
     window.scrollTo(0, 0);
   }
 

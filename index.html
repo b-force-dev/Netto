@@ -605,7 +605,8 @@
       </section>
       <section id="liveRoom" class="live-card" hidden>
         <div class="live-setup-heading"><div><p class="live-eyebrow">Samen aan de start</p><h1>Wachtkamer</h1></div><button type="button" class="live-text-button" data-live-leave>Room verlaten</button></div>
-        <div class="live-room-code"><div><span>Deel deze code</span><strong id="liveRoomCode"></strong></div><button id="liveCopy" type="button" class="live-copy-button">Code kopiëren</button></div>
+        <div class="live-room-code"><div><span>Deel deze code</span><strong id="liveRoomCode"></strong></div><button id="liveShare" type="button" class="btn-check">Uitnodiging delen</button><button id="liveCopy" type="button" class="live-copy-button">Code kopiëren</button></div>
+        <label class="race-invite-link"><span>Stuur deze link, bijvoorbeeld via WhatsApp.</span><input id="liveInviteLink" type="text" readonly onfocus="this.select()" aria-label="Uitnodigingslink"></label>
         <div id="liveRoomSummary" class="live-room-summary"></div>
         <div class="live-room-grid"><div><div class="live-section-heading"><h2>Spelers</h2><span id="liveLobbyCount" class="live-muted"></span></div><ul id="liveLobbyPlayers" class="live-players" aria-label="Spelers"></ul></div>
           <fieldset class="live-option-list live-room-options"><legend>Spelregels</legend>
@@ -632,7 +633,7 @@
       <section id="liveFinished" class="live-card" hidden>
         <p class="live-eyebrow">Eindstand</p><h1 id="liveFinishTitle" tabindex="-1"></h1><p id="liveFinishMeta" class="live-muted"></p>
         <ul id="liveFinalPlayers" class="live-players"></ul>
-        <div class="live-finish-actions"><button type="button" class="hero-cta" data-live-leave>Terug naar Live Rondes →</button><button type="button" id="liveShowAnswers" class="btn-check" aria-expanded="false" aria-controls="liveAnswerArchive">Bekijk alle antwoorden</button></div>
+        <div class="live-finish-actions"><button type="button" id="liveRematch" class="hero-cta" hidden>Speel opnieuw met deze groep →</button><button type="button" class="hero-cta" data-live-leave>Terug naar Live Rondes →</button><button type="button" id="liveShowAnswers" class="btn-check" aria-expanded="false" aria-controls="liveAnswerArchive">Bekijk alle antwoorden</button></div>
         <section id="liveAnswerArchive" class="live-answer-archive" aria-label="Alle antwoorden" hidden></section>
       </section>
     </div>
@@ -669,6 +670,7 @@
               <small class="race-tolerance-note" id="raceSoloToleranceNote"></small>
             </div>
           </div>
+          <label class="race-theme-select" for="raceSoloTheme"><span>Thema</span><select id="raceSoloTheme" onchange="selectRaceTheme(this.value)"><option value="all">Alles door elkaar</option><option value="nature">Natuur</option><option value="science">Wetenschap en techniek</option><option value="culture">Cultuur en geschiedenis</option><option value="sport">Sport en spellen</option></select><small>Elke puzzel bevat minstens één vraag uit je thema.</small></label>
           <div class="race-best" id="raceBest"></div>
           <button class="hero-cta race-start-button" type="button" onclick="startPuzzleRace()">Start solo race <span aria-hidden="true">→</span></button>
         </section>
