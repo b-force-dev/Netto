@@ -324,6 +324,7 @@ list.innerHTML = games.length ? games.map(game => `<button type="button" class="
     const ranked=[...state.players].sort((a,b)=>b.points-a.points);
     el('liveFinalPlayers').innerHTML = ranked.map(player=>`<li class="live-player ${best>0&&player.points===best?'live-winner':''}"><span class="live-rank">${1+ranked.filter(other=>other.points>player.points).length}</span><span>${esc(player.name)}${player.id===currentUser?.id?`<small>${copy('jij','you')}</small>`:''}</span><b>${player.points} <small>${player.points===1?copy('punt','point'):copy('punten','points')}</small></b></li>`).join('');
     el('liveFinishMeta').textContent=copy(`${state.rounds} ${roundWord(state.rounds)} gespeeld met ${state.players.length} spelers.`,`${state.rounds} ${roundWord(state.rounds)} played with ${state.players.length} players.`);
+    window.NettoShare?.mountLive(state, currentUser?.id);
     el('liveAnswerArchive').hidden=true;
     el('liveAnswerArchive').innerHTML='';
     delete el('liveAnswerArchive').dataset.loaded;

@@ -118,6 +118,7 @@
   function initSupabaseClient() {
     if (SUPABASE_URL && SUPABASE_ANON_KEY && window.supabase) {
       supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      window.nettoUsageClient = supabaseClient;
     }
   }
   initSupabaseClient();
@@ -1175,6 +1176,7 @@
       return;
     }
     const recent = snapshot.entries.slice(-30);
+    window.nettoTrack?.('share', { kind:'stats' });
     const emojis = recent.map(entry => STATS_BUCKETS[statsBucketIndex(entry.accuracy)].emoji);
     const rows = [];
     for (let index = 0; index < emojis.length; index += 10) rows.push(emojis.slice(index, index + 10).join(' '));
@@ -1186,16 +1188,10 @@
       ...(statsMode === 'daily' ? [`🔥 ${snapshot.currentStreak} ${streakWord} streak`] : []),
       `🎯 ${snapshot.entries.filter(r => r.exact === undefined ? r.factor === 1 : r.exact === true).length} spot-on`,
       `📈 ${snapshot.averageAccuracy}% ${statsCopy('gemiddelde nauwkeurigheid', 'average accuracy')}`,
-      speelAdres()
+      window.NettoShare.link('')
     ].join('\n');
 
-    if (typeof navigator !== 'undefined' && navigator.clipboard?.writeText) {
-      navigator.clipboard.writeText(text).then(() => {
-        showSarcasticToast(statsCopy('Statistieken gekopieerd naar je klembord!', 'Statistics copied to your clipboard!'), true);
-      }).catch(() => fallbackPrompt(text));
-    } else {
-      fallbackPrompt(text);
-    }
+    window.NettoShare.deliver(text);
   }
 
   function updateStreakUI(streak) {
@@ -2423,6 +2419,7 @@
     try {
       const result = await requestDailyResult(puzzle, [g1,g2,g3]);
       applyDailyResult(puzzle, result);
+      window.nettoTrack?.('daily_finish', { mode:puzzle.date === TODAY_STR ? 'daily' : 'archive', once:puzzle.date });
       const guesses = result.guesses.map(Number);
       const avgFactor = Number(result.factor);
       const plays = getLocalPlays();
@@ -2638,44 +2635,14 @@
   // =========================================================================
   // 5. WORDLE-STIJL SCORE DELEN
   // =========================================================================
+  // De tekst en het versturen staan in js/share.js (deelmenu, klembord, prompt).
   function shareScore() {
-    const plays = getLocalPlays();
-    const pKey = getActivePuzzleKey();
-    const play = plays[pKey] || plays[TODAY_STR];
-    if (!play) return;
-
-    const echt = PUZZEL_ECHT();
-    const s1 = scoreVraag(play.g1, echt.a1);
-    const s2 = scoreVraag(play.g2, echt.a2);
-    const s3 = scoreVraag(play.g3, echt.a3);
-    const streak = getLocalStreak();
-    const acc = Math.round(100 / play.factor);
-
-    function formatLine(emoji, g, a, f) {
-      if (Math.abs(g - a) < 0.001) return `🎯 Spot on!`;
-      const qAcc = Math.round(100 / f);
-      return `${emoji} ${qAcc}% (${f.toFixed(2)}×)`;
-    }
-
-    const r1 = getFactorRating(s1);
-    const r2 = getFactorRating(s2);
-    const r3 = getFactorRating(s3);
-
-    const regels = [formatLine(r1.emoji, play.g1, echt.a1, s1), formatLine(r2.emoji, play.g2, echt.a2, s2), formatLine(r3.emoji, play.g3, echt.a3, s3)];
-    const vraagregels = dailyQuestionOrder().map((i, positie) => ['1️⃣', '2️⃣', '3️⃣'][positie] + ' ' + regels[i]).join('\n');
-    const text = `Netto #${PUZZLE_DATA.number} · Score: ${acc}% 🎯 (${play.factor.toFixed(2)}×)\n${vraagregels}\n🔥 Streak: ${streak} ${streak === 1 ? 'dag' : 'dagen'}\n${speelAdres()}`;
-
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(text).then(() => {
-        showSarcasticToast("Score gekopieerd naar klembord! Deel het in je groepsapp.", true);
-      }).catch(() => fallbackPrompt(text));
-    } else {
-      fallbackPrompt(text);
-    }
+    window.nettoTrack?.('share', { mode:'daily', kind:'score' });
+    window.NettoShare.daily();
   }
 
   function fallbackPrompt(text) {
-    prompt("Kopieer jouw uitslag:", text);
+    prompt(statsCopy('Kopieer jouw uitslag:', 'Copy your result:'), text);
   }
 
   // =========================================================================

@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
-"""Maak de vaste GitHub Pages-ingangen voor Netto zonder kopieën in Git te bewaren."""
+"""Maak de vaste GitHub Pages-ingangen voor Netto zonder kopieën in Git te bewaren.
+
+Per route komt er een eigen index.html met eigen titel, beschrijving en
+canonical-adres (zie seo.py). Daarnaast schrijft dit script robots.txt,
+sitemap.xml en 404.html in de gepubliceerde map.
+"""
 
 from __future__ import annotations
 
 import argparse
 import json
+import sys
 from datetime import date, timedelta
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import seo  # noqa: E402  (zoekmachinegegevens en het enige site-adres)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -65,16 +74,25 @@ def routes(data: dict) -> dict[str, str]:
     return items
 
 
-def make_entry(source: str, route: str) -> str:
+def make_entry(source: str, route: str, filename: str = "index.html") -> str:
     depth = route.count("/") + 1
     base = "../" * depth
     if "<head>" not in source:
         raise ValueError("De HTML-pagina heeft geen head-element")
-    source = source.replace(
-        'content="https://b-force-dev.github.io/nettoo/"',
-        f'content="https://b-force-dev.github.io/nettoo/{route}/"', 1,
-    )
-    return source.replace("<head>", f'<head>\n<base href="{base}">', 1)
+    if filename == "index.html":
+        source = seo.apply_seo(source, route)
+    eol = "\r\n" if "\r\n" in source else "\n"
+    return source.replace("<head>", f'<head>{eol}<base href="{base}">', 1)
+
+
+def read(path: Path) -> str:
+    # Bytes, zodat de regeleindes van het bronbestand ongewijzigd blijven.
+    return path.read_bytes().decode("utf-8")
+
+
+def write(path: Path, text: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(text.encode("utf-8"))
 
 
 def main() -> None:
@@ -86,12 +104,19 @@ def main() -> None:
         parser.error(f"Geen Netto-site gevonden in {site}")
     data = puzzles()
     entries = routes(data)
-    originals = {name: (site / name).read_text(encoding="utf-8") for name in set(entries.values())}
+    originals = {name: read(site / name) for name in set(entries.values())}
     for route, filename in entries.items():
-        target = site / route / "index.html"
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(make_entry(originals[filename], route), encoding="utf-8")
-    print(f"{len(entries)} routepagina's gemaakt in {site}")
+        write(site / route / "index.html", make_entry(originals[filename], route, filename))
+    # De startpagina krijgt dezelfde gegenereerde kop als de andere routes.
+    write(site / "index.html", seo.apply_seo(originals["index.html"], ""))
+    missing = [route for route in seo.SITEMAP_ROUTES if route and route not in entries]
+    if missing:
+        raise SystemExit(f"Sitemap noemt routes die niet bestaan: {', '.join(missing)}")
+    write(site / "sitemap.xml", seo.sitemap())
+    write(site / "robots.txt", seo.robots())
+    if (site / "404.html").is_file():
+        write(site / "404.html", seo.not_found_page(read(site / "404.html")))
+    print(f"{len(entries)} routepagina's, sitemap.xml en robots.txt gemaakt in {site}")
 
 
 if __name__ == "__main__":

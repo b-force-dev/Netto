@@ -49,6 +49,21 @@ daarna `python tools/sync_website.py`.
 
 De bestanden worden als gewone scripts in vaste volgorde geladen. Daardoor blijft de bestaande frontend zonder bundler werken.
 
+## Installeerbare app (PWA)
+
+Netto is te installeren op het beginscherm en onthoudt niets offline wat het
+niet hoort te onthouden.
+
+- `manifest.webmanifest` en `icons/` — naam, kleuren, snelkoppelingen (Daily, Race).
+  De iconen worden gemaakt uit `favicon.svg` met `python tools/maak_pwa_iconen.py`.
+- `sw.js` — service worker: HTML netwerk-eerst (offline: `offline.html`), Supabase
+  nooit aangeraakt, statische bestanden stale-while-revalidate. Alleen `VERSION`
+  ophogen als de logica verandert. Lokaal registreert hij niet, tenzij je `?sw=1`
+  achter het adres zet; `?sw=0` haalt hem en zijn caches weg (noodrem).
+- `js/pwa.js` + `css/pwa.css` — registratie, themakleur per thema, een
+  installatiehint en een agenda-herinnering (.ics of Google Agenda) onder het
+  Daily-resultaat. Geen web-push: daar is geen server voor.
+
 ## Website-kopie synchroniseren
 
 Werk alleen in de project-root. Werk daarna de zelfstandige kopie bij en controleer hem:

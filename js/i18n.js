@@ -239,6 +239,7 @@
     'Netto maakt nieuwsgierigheid speelbaar. We verbinden alledaagse feiten met slimme rekensommen, zodat je niet alleen gokt, maar leert denken in verhoudingen.': 'Netto makes curiosity playable. We connect everyday facts through clever calculations, so you learn to think in proportions instead of merely guessing.',
     'Elke puzzel is een kleine ontdekking: drie vragen, één verband en altijd een kans om dichter bij de waarheid te komen.': 'Every puzzle is a small discovery: three questions, one connection and always a chance to get closer to the truth.',
     'Een spel over goed schatten.': 'A game about estimating well.',
+    'We meten bezoeken en spelacties met een willekeurige browsercode in lokale opslag, zonder cookies of opgeslagen IP-adressen; Do Not Track en Global Privacy Control schakelen dit uit.': 'We count visits and game actions using a random browser code in local storage, without cookies or stored IP addresses; Do Not Track and Global Privacy Control disable this.',
     'Je hoeft niet ieder feit te kennen. Netto beloont logisch nadenken, gevoel voor verhoudingen en een goede gok op het juiste moment.': 'You do not need to know every fact. Netto rewards logic, a feel for proportions and a well-judged guess.',
     'B-Force maakt en controleert de vragen. Zie je iets dat scherper kan? Stuur je eigen vraag in; de beste komen terug in het spel.': 'B-Force writes and checks the questions. Found something that could be sharper? Submit your own question; the best ones make it into the game.',
     'Het idee achter het spel.': 'The idea behind the game.',
@@ -687,15 +688,20 @@
   });
 
   document.documentElement.lang = language;
-  if (language === 'en') {
-    if (document.title === 'Netto · dagelijkse schatting') document.title = ui['Netto · dagelijkse schatting'];
-    const description = document.querySelector('meta[name="description"]');
-    if (description) description.content = ui['Schat drie feiten, vind het verband. Elke dag een nieuwe puzzel.'];
-    document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach((meta) => { meta.content = ui['Netto · dagelijkse schatting']; });
-    document.querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]').forEach((meta) => { meta.content = ui['Drie vragen. Eén verband. Elke dag een nieuwe puzzel.']; });
+  // De statische kop (titel, beschrijving, deelkaarten) en de crawlbare tekst zijn Engels,
+  // de standaardtaal. Elementen met data-nl dragen de Nederlandse versie; die zetten we
+  // hier in als de speler Nederlands heeft gekozen. tools/seo.py schrijft die attributen.
+  function applyDutchText(root) {
+    root.querySelectorAll('[data-nl]').forEach((element) => {
+      const text = element.dataset.nl;
+      if (element.tagName === 'META') element.content = text;
+      else element.textContent = text;
+    });
   }
+  if (language === 'nl') applyDutchText(document.head);
 
   document.addEventListener('DOMContentLoaded', () => {
+    if (language === 'nl') applyDutchText(document.body);
     translateTree(document.body);
     updateLanguageControls();
     const observer = new MutationObserver((mutations) => {

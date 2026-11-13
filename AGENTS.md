@@ -11,8 +11,9 @@
 
 ## Website-mirror
 - De bron staat in de root (`index.html`, `css/`, `js/`, ...). De map `website/` is een kopie.
-- Na wijzigingen aan frontendbestanden: `python tools/sync_website.py`.
-- Verhoog bij gewijzigde CSS/JS de `?v=`-versie in de HTML die het bestand laadt (cache).
+- Na wijzigingen aan frontendbestanden: eerst `python tools/verhoog_versies.py`, dan `python tools/sync_website.py`.
+- `verhoog_versies.py` verhoogt de `?v=`-versie van elk gewijzigd CSS-, JS- en databestand (cache). Doe dat niet met de hand.
+- Een nieuw CSS- of JS-bestand dat in de HTML staat, gaat vanzelf mee naar `website/`.
 
 ## Testen
 - `node tests/daily-reliability.cjs` en `node tests/daily-server.cjs` moeten slagen.
