@@ -1,12 +1,12 @@
 {
   "counts": {
     "daily": 20,
-    "library": 97,
+    "library": 112,
     "connection": 40
   },
   "reviewed_puzzles": 167,
-  "used_questions": 471,
-  "reserved_including_aliases": 635,
+  "used_questions": 516,
+  "reserved_including_aliases": 680,
   "held_for_source_check": {
     "q989": "Bewijszin gaat over oppervlakte, niet over wereldwonderen.",
     "q1084": "Tarwe-antwoord en bewijsberekening spreken elkaar tegen.",
@@ -3940,6 +3940,231 @@
       "bank-1514": {
         "row": 1514,
         "answer": 50,
+        "status": "APPROVED"
+      },
+      "bank-879": {
+        "row": 879,
+        "answer": 5,
+        "status": "APPROVED"
+      },
+      "bank-1507": {
+        "row": 1507,
+        "answer": 10,
+        "status": "APPROVED"
+      },
+      "bank-1566": {
+        "row": 1566,
+        "answer": 50,
+        "status": "APPROVED"
+      },
+      "bank-1523": {
+        "row": 1523,
+        "answer": 54,
+        "status": "APPROVED"
+      },
+      "bank-669": {
+        "row": 669,
+        "answer": 6,
+        "status": "APPROVED"
+      },
+      "bank-389": {
+        "row": 389,
+        "answer": 9,
+        "status": "APPROVED"
+      },
+      "bank-1543": {
+        "row": 1543,
+        "answer": 45,
+        "status": "APPROVED"
+      },
+      "bank-1568": {
+        "row": 1568,
+        "answer": 16,
+        "status": "APPROVED"
+      },
+      "bank-1512": {
+        "row": 1512,
+        "answer": 29,
+        "status": "APPROVED"
+      },
+      "bank-1564": {
+        "row": 1564,
+        "answer": 60,
+        "status": "APPROVED"
+      },
+      "bank-1572": {
+        "row": 1572,
+        "answer": 12,
+        "status": "APPROVED"
+      },
+      "bank-1318": {
+        "row": 1318,
+        "answer": 5,
+        "status": "APPROVED"
+      },
+      "bank-1574": {
+        "row": 1574,
+        "answer": 6,
+        "status": "APPROVED"
+      },
+      "bank-761": {
+        "row": 761,
+        "answer": 10,
+        "status": "APPROVED"
+      },
+      "bank-1525": {
+        "row": 1525,
+        "answer": 60,
+        "status": "APPROVED"
+      },
+      "bank-1583": {
+        "row": 1583,
+        "answer": 7,
+        "status": "APPROVED"
+      },
+      "bank-1513": {
+        "row": 1513,
+        "answer": 47,
+        "status": "APPROVED"
+      },
+      "bank-1563": {
+        "row": 1563,
+        "answer": 54,
+        "status": "APPROVED"
+      },
+      "bank-1516": {
+        "row": 1516,
+        "answer": 78,
+        "status": "APPROVED"
+      },
+      "bank-1251": {
+        "row": 1251,
+        "answer": 30,
+        "status": "APPROVED"
+      },
+      "bank-1552": {
+        "row": 1552,
+        "answer": 48,
+        "status": "APPROVED"
+      },
+      "bank-348": {
+        "row": 348,
+        "answer": 5,
+        "status": "APPROVED"
+      },
+      "bank-1332": {
+        "row": 1332,
+        "answer": 95,
+        "status": "APPROVED"
+      },
+      "bank-1325": {
+        "row": 1325,
+        "answer": 100,
+        "status": "APPROVED"
+      },
+      "bank-1491": {
+        "row": 1491,
+        "answer": 6,
+        "status": "APPROVED"
+      },
+      "bank-1515": {
+        "row": 1515,
+        "answer": 82,
+        "status": "APPROVED"
+      },
+      "bank-1547": {
+        "row": 1547,
+        "answer": 88,
+        "status": "APPROVED"
+      },
+      "bank-696": {
+        "row": 696,
+        "answer": 100,
+        "status": "APPROVED"
+      },
+      "bank-1434": {
+        "row": 1434,
+        "answer": 5,
+        "status": "APPROVED"
+      },
+      "bank-1553": {
+        "row": 1553,
+        "answer": 20,
+        "status": "APPROVED"
+      },
+      "bank-1542": {
+        "row": 1542,
+        "answer": 104,
+        "status": "APPROVED"
+      },
+      "bank-1339": {
+        "row": 1339,
+        "answer": 100,
+        "status": "APPROVED"
+      },
+      "bank-585": {
+        "row": 585,
+        "answer": 4,
+        "status": "APPROVED"
+      },
+      "bank-1551": {
+        "row": 1551,
+        "answer": 120,
+        "status": "APPROVED"
+      },
+      "bank-1517": {
+        "row": 1517,
+        "answer": 20,
+        "status": "APPROVED"
+      },
+      "bank-1398": {
+        "row": 1398,
+        "answer": 6,
+        "status": "APPROVED"
+      },
+      "bank-1555": {
+        "row": 1555,
+        "answer": 8,
+        "status": "APPROVED"
+      },
+      "bank-1521": {
+        "row": 1521,
+        "answer": 16,
+        "status": "APPROVED"
+      },
+      "bank-1527": {
+        "row": 1527,
+        "answer": 128,
+        "status": "APPROVED"
+      },
+      "bank-1530": {
+        "row": 1530,
+        "answer": 144,
+        "status": "APPROVED"
+      },
+      "bank-1362": {
+        "row": 1362,
+        "answer": 9,
+        "status": "APPROVED"
+      },
+      "bank-1529": {
+        "row": 1529,
+        "answer": 16,
+        "status": "APPROVED"
+      },
+      "bank-1550": {
+        "row": 1550,
+        "answer": 196,
+        "status": "APPROVED"
+      },
+      "bank-1519": {
+        "row": 1519,
+        "answer": 28,
+        "status": "APPROVED"
+      },
+      "bank-831": {
+        "row": 831,
+        "answer": 7,
         "status": "APPROVED"
       }
     }

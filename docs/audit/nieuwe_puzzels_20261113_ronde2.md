@@ -1,6 +1,6 @@
 # Nieuwe Library-puzzels — ronde 2, 13 november 2026
 
-Library: **67 → 97**. Nieuwe vragen zijn eerst in het Engels geredigeerd, met gelijkwaardige Nederlandse afbakening. Alle antwoorden zijn positieve gehele getallen. Elke som is exact.
+Library: **67 → 112**. Nieuwe vragen zijn eerst in het Engels geredigeerd, met gelijkwaardige Nederlandse afbakening. Alle antwoorden zijn positieve gehele getallen. Elke som is exact.
 
 ## Werkwijze
 
@@ -19,14 +19,14 @@ Niveaus zijn redactionele inschattingen, niet gekalibreerd met spelers. Binnen d
 | easy | 28 |
 | intermediate | 28 |
 | hard | 28 |
-| extremely-hard | 13 |
+| extremely-hard | 28 |
 
 | Teken | Totaal | Nieuw |
 |---|---:|---:|
-| × | 22 | 9 |
-| − | 33 | 12 |
-| + | 21 | 3 |
-| ÷ | 21 | 6 |
+| × | 25 | 12 |
+| − | 36 | 15 |
+| + | 24 | 6 |
+| ÷ | 27 | 12 |
 
 ## Vragen, sommen en bronnen
 
@@ -212,3 +212,100 @@ Per regel: bank-id, Engelse hoofdvraag, Nederlandse vertaling en bron. De korte 
 - **bank-1069** — How many selection criteria does the United Nations cultural agency use for its World Heritage List? / Hoeveel selectiecriteria gebruikt UNESCO in totaal voor werelderfgoed? Antwoord: **10**. [Bron](https://whc.unesco.org/en/criteria/). Er zijn tien criteria: zes culturele en vier natuurlijke. (2026-11-13).
 - **bank-1514** — What is the atomic number of tin? / Wat is het atoomnummer van tin? Antwoord: **50**. [Bron](https://en.wikipedia.org/wiki/Tin). Tin heeft atoomnummer vijftig. (2026-11-13).
 
+### Library 98: 5 × 10 = 50 (extremely-hard)
+
+- **bank-879** — How many countries share a land border with Colombia? / Hoeveel landen grenzen aan Colombia? Antwoord: **5**. [Bron](https://en.wikipedia.org/wiki/Colombia). Colombia grenst aan Venezuela, Brazilië, Peru, Ecuador en Panama. (2026-11-13).
+- **bank-1507** — How many millimetres make up one centimetre? / Hoeveel millimeter is één centimeter? Antwoord: **10**. [Bron](https://en.wikipedia.org/wiki/Centimetre). Eén centimeter is tien millimeter. (2026-11-13).
+- **bank-1566** — How many years of marriage mark a golden wedding anniversary? / Hoeveel huwelijksjaren markeert een gouden bruiloft? Antwoord: **50**. [Bron](https://en.wikipedia.org/wiki/Wedding_anniversary). Een gouden bruiloft markeert vijftig jaar. (2026-11-13).
+
+### Library 99: 54 ÷ 6 = 9 (extremely-hard)
+
+- **bank-1523** — What is the atomic number of xenon? / Wat is het atoomnummer van xenon? Antwoord: **54**. [Bron](https://en.wikipedia.org/wiki/Xenon). Xenon heeft atoomnummer vierenvijftig. (2026-11-13).
+- **bank-669** — How many legs does a typical adult insect have? / Hoeveel poten heeft een typisch volwassen insect? Antwoord: **6**. [Bron](https://en.wikipedia.org/wiki/Insect). Volwassen insecten hebben drie paar poten, dus zes poten. (2026-11-13).
+- **bank-389** — How many tracks are on the original 1982 edition of Michael Jackson's Thriller? / Hoeveel nummers staan op de oorspronkelijke uitgave van Michael Jacksons Thriller uit 1982? Antwoord: **9**. [Bron](https://en.wikipedia.org/wiki/Thriller_(album)). Het oorspronkelijke album Thriller bevat negen nummers. (2026-11-13).
+
+### Library 100: 45 − 16 = 29 (extremely-hard)
+
+- **bank-1543** — What number is Haydn's Farewell Symphony? / Welk nummer heeft Haydns Afscheidssymfonie? Antwoord: **45**. [Bron](https://en.wikipedia.org/wiki/Symphony_No._45_(Haydn)). De Afscheidssymfonie heeft nummer vijfenveertig. (2026-11-13).
+- **bank-1568** — How many United States tablespoons make up one United States customary cup? / Hoeveel Amerikaanse eetlepels vormen één Amerikaanse customary cup? Antwoord: **16**. [Bron](https://en.wikipedia.org/wiki/Cup_(unit)). Een Amerikaanse customary cup is zestien Amerikaanse eetlepels. (2026-11-13).
+- **bank-1512** — What is the atomic number of copper? / Wat is het atoomnummer van koper? Antwoord: **29**. [Bron](https://en.wikipedia.org/wiki/Copper). Koper heeft atoomnummer negenentwintig. (2026-11-13).
+
+### Library 101: 60 ÷ 12 = 5 (extremely-hard)
+
+- **bank-1564** — How many years are marked by a diamond wedding anniversary in British tradition? / Hoeveel huwelijksjaren markeert een diamanten bruiloft in de Britse traditie? Antwoord: **60**. [Bron](https://en.wikipedia.org/wiki/Wedding_anniversary). Een diamanten bruiloft markeert zestig huwelijksjaren. (2026-11-13).
+- **bank-1572** — How many litres does a Balthazar wine bottle hold? / Hoeveel liter bevat een balthazar-wijnfles? Antwoord: **12**. [Bron](https://en.wikipedia.org/wiki/Wine_bottle). Een balthazar bevat twaalf liter. (2026-11-13).
+- **bank-1318** — How many atoms are in one molecule of methane? / Hoeveel atomen bevat één molecuul methaan? Antwoord: **5**. [Bron](https://en.wikipedia.org/wiki/Methane). Methaan bestaat uit één koolstofatoom en vier waterstofatomen: vijf atomen in totaal. (2026-11-13).
+
+### Library 102: 6 × 10 = 60 (extremely-hard)
+
+- **bank-1574** — How many litres does a Methuselah champagne bottle hold? / Hoeveel liter bevat een methusalem-champagnefles? Antwoord: **6**. [Bron](https://en.wikipedia.org/wiki/Wine_bottle). Een methusalem bevat zes liter. (2026-11-13).
+- **bank-761** — How many years did the Trojan War last in Greek tradition? / Hoeveel jaar duurde de Trojaanse Oorlog volgens de Griekse overlevering? Antwoord: **10**. [Bron](https://en.wikipedia.org/wiki/Trojan_War). Volgens de Griekse overlevering duurde het beleg van Troje tien jaar. (2026-11-13).
+- **bank-1525** — What is the standard mains electricity frequency in the United States, in hertz? / Wat is de standaardfrequentie van het elektriciteitsnet in de Verenigde Staten, in hertz? Antwoord: **60**. [Bron](https://en.wikipedia.org/wiki/Utility_frequency). De standaardnetfrequentie in de Verenigde Staten is zestig hertz. (2026-11-13).
+
+### Library 103: 7 + 47 = 54 (extremely-hard)
+
+- **bank-1583** — How many tarsal bones are in one typical human foot? / Hoeveel voetwortelbeentjes heeft één gewone menselijke voet? Antwoord: **7**. [Bron](https://en.wikipedia.org/wiki/Tarsus_(skeleton)). Elke voet heeft zeven voetwortelbeentjes. (2026-11-13).
+- **bank-1513** — What is the atomic number of silver? / Wat is het atoomnummer van zilver? Antwoord: **47**. [Bron](https://en.wikipedia.org/wiki/Silver). Zilver heeft atoomnummer zevenenveertig. (2026-11-13).
+- **bank-1563** — How many wooden blocks are in a standard Jenga set? / Hoeveel houten blokken bevat een standaard Jenga-spel? Antwoord: **54**. [Bron](https://en.wikipedia.org/wiki/Jenga). Een standaard Jenga-spel bevat vierenvijftig blokken. (2026-11-13).
+
+### Library 104: 78 − 30 = 48 (extremely-hard)
+
+- **bank-1516** — What is the atomic number of platinum? / Wat is het atoomnummer van platina? Antwoord: **78**. [Bron](https://en.wikipedia.org/wiki/Platinum). Platina heeft atoomnummer achtenzeventig. (2026-11-13).
+- **bank-1251** — How many articles are in the Universal Declaration of Human Rights? / Hoeveel artikelen telt de Universele Verklaring van de Rechten van de Mens? Antwoord: **30**. [Bron](https://www.un.org/en/about-us/universal-declaration-of-human-rights). De verklaring bevat dertig artikelen. (2026-11-13).
+- **bank-1552** — How many hours make up two days of twenty-four hours each? / Hoeveel uur zijn twee dagen van elk vierentwintig uur? Antwoord: **48**. [Bron](https://en.wikipedia.org/wiki/Day). Twee dagen van vierentwintig uur tellen achtenveertig uur. (2026-11-13).
+
+### Library 105: 5 + 95 = 100 (extremely-hard)
+
+- **bank-348** — How many broad domains of intangible cultural heritage does the United Nations cultural agency list in its 2003 Convention? / Hoeveel brede domeinen van immaterieel cultureel erfgoed noemt het UNESCO-verdrag uit 2003? Antwoord: **5**. [Bron](https://ich.unesco.org/en/intangible-heritage-domains-00052). Het verdrag noemt vijf brede domeinen van immaterieel cultureel erfgoed. (2026-11-13).
+- **bank-1332** — How many resource cards are in the standard Catan base game for three or four players? / Hoeveel grondstoffenkaarten bevat het standaard Catan-basisspel voor drie of vier spelers? Antwoord: **95**. [Bron](https://www.catan.com/sites/default/files/2021-06/catan_base_rules_2020_200707.pdf). Het basisspel bevat vijfennegentig grondstoffenkaarten: negentien van elk van vijf soorten. (2026-11-13).
+- **bank-1325** — How many times greater is the hydrogen ion activity at pH three than at pH five? / Hoeveel keer groter is de waterstofionactiviteit bij pH drie dan bij pH vijf? Antwoord: **100**. [Bron](https://www.usgs.gov/special-topics/water-science-school/science/ph-and-water). Twee pH-eenheden verschil betekenen een factor honderd in waterstofionactiviteit. (2026-11-13).
+
+### Library 106: 6 + 82 = 88 (extremely-hard)
+
+- **bank-1491** — How many road lanes cross the Golden Gate Bridge? / Hoeveel rijstroken heeft de Golden Gate Bridge? Antwoord: **6**. [Bron](https://www.goldengate.org/bridge/bridge-operations/). De brug heeft zes rijstroken. (2026-11-13).
+- **bank-1515** — What is the atomic number of lead? / Wat is het atoomnummer van lood? Antwoord: **82**. [Bron](https://en.wikipedia.org/wiki/Lead). Lood heeft atoomnummer tweeëntachtig. (2026-11-13).
+- **bank-1547** — How many constellations are officially recognised by the International Astronomical Union? / Hoeveel sterrenbeelden erkent de Internationale Astronomische Unie officieel? Antwoord: **88**. [Bron](https://www.iau.org/IAU/Astronomy-FAQs/Constellations.aspx). De hemel is verdeeld in achtentachtig sterrenbeelden. (2026-11-13).
+
+### Library 107: 100 ÷ 5 = 20 (extremely-hard)
+
+- **bank-696** — How many cents make up one euro? / Hoeveel cent zit er in één euro? Antwoord: **100**. [Bron](https://en.wikipedia.org/wiki/Euro). Eén euro is verdeeld in honderd cent. (2026-11-13).
+- **bank-1434** — How many of the eight planets orbit farther from the Sun than Earth does? / Hoeveel van de acht planeten draaien verder van de zon dan de aarde? Antwoord: **5**. [Bron](https://en.wikipedia.org/wiki/Solar_System). Mars, Jupiter, Saturnus, Uranus en Neptunus staan verder van de zon dan de aarde. (2026-11-13).
+- **bank-1553** — How many faces does a regular icosahedral die have? / Hoeveel zijvlakken heeft een regelmatige icosaëdrische dobbelsteen? Antwoord: **20**. [Bron](https://en.wikipedia.org/wiki/Icosahedron). Een icosaëder heeft twintig zijvlakken. (2026-11-13).
+
+### Library 108: 104 − 100 = 4 (extremely-hard)
+
+- **bank-1542** — What is the number of Haydn's final numbered symphony, the London Symphony? / Welk nummer heeft Haydns laatste genummerde symfonie, de Londense symfonie? Antwoord: **104**. [Bron](https://en.wikipedia.org/wiki/Symphony_No._104_(Haydn)). De Londense symfonie is Haydns symfonie nummer honderdvier. (2026-11-13).
+- **bank-1339** — How many squares are on an international draughts board? / Hoeveel velden telt een internationaal dambord? Antwoord: **100**. [Bron](https://en.wikipedia.org/wiki/International_draughts). Internationaal dammen gebruikt een bord van tien bij tien met honderd velden. (2026-11-13).
+- **bank-585** — How many wheels does a Formula One racing car have under the 2025 rules? / Hoeveel wielen heeft een Formule 1-auto volgens de regels uit 2025? Antwoord: **4**. [Bron](https://en.wikipedia.org/wiki/Formula_One_car). Een Formule 1-auto heeft vier wielen. (2026-11-13).
+
+### Library 109: 120 ÷ 20 = 6 (extremely-hard)
+
+- **bank-1551** — How many minutes make up two hours? / Hoeveel minuten zijn twee uur? Antwoord: **120**. [Bron](https://en.wikipedia.org/wiki/Hour). Een uur telt zestig minuten; twee uur tellen honderdtwintig minuten. (2026-11-13).
+- **bank-1517** — What is the atomic number of calcium? / Wat is het atoomnummer van calcium? Antwoord: **20**. [Bron](https://en.wikipedia.org/wiki/Calcium). Calcium heeft atoomnummer twintig. (2026-11-13).
+- **bank-1398** — How many points does a touchdown score in American football, before any conversion attempt? / Hoeveel punten levert een touchdown op bij American football, vóór een conversiepoging? Antwoord: **6**. [Bron](https://operations.nfl.com/the-rules/nfl-rulebook/#rule11). Een touchdown levert zes punten op. (2026-11-13).
+
+### Library 110: 8 × 16 = 128 (extremely-hard)
+
+- **bank-1555** — How many faces does a regular octahedral die have? / Hoeveel zijvlakken heeft een regelmatige octaëdrische dobbelsteen? Antwoord: **8**. [Bron](https://en.wikipedia.org/wiki/Octahedron). Een octaëder heeft acht zijvlakken. (2026-11-13).
+- **bank-1521** — What is the atomic number of sulphur? / Wat is het atoomnummer van zwavel? Antwoord: **16**. [Bron](https://en.wikipedia.org/wiki/Sulfur). Zwavel heeft atoomnummer zestien. (2026-11-13).
+- **bank-1527** — How many bits are in an Internet Protocol version six address? / Hoeveel bits bevat een internetprotocoladres van versie zes? Antwoord: **128**. [Bron](https://www.rfc-editor.org/rfc/rfc8200#section-3). Een internetprotocoladres van versie zes is honderdachtentwintig bits lang. (2026-11-13).
+
+### Library 111: 144 ÷ 9 = 16 (extremely-hard)
+
+- **bank-1530** — How many items make up one gross? / Hoeveel stuks vormen één gros? Antwoord: **144**. [Bron](https://en.wikipedia.org/wiki/Gross_(unit)). Een gros is twaalf dozijn, dus honderdvierenveertig stuks. (2026-11-13).
+- **bank-1362** — How many Copa América titles had Brazil won by the end of 2024? / Hoeveel Copa América-titels had Brazilië eind 2024 gewonnen? Antwoord: **9**. [Bron](https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica). Brazilië had eind 2024 negen titels gewonnen. (2026-11-13).
+- **bank-1529** — How many different digits are used in the hexadecimal numeral system? / Hoeveel verschillende cijfers gebruikt het hexadecimale getallenstelsel? Antwoord: **16**. [Bron](https://en.wikipedia.org/wiki/Hexadecimal). Het hexadecimale stelsel gebruikt zestien cijfers: nul tot en met negen en A tot en met F. (2026-11-13).
+
+### Library 112: 196 ÷ 28 = 7 (extremely-hard)
+
+- **bank-1550** — How many small squares are in a fourteen-by-fourteen square grid? / Hoeveel kleine vakjes telt een vierkant raster van veertien bij veertien? Antwoord: **196**. [Bron](https://en.wikipedia.org/wiki/Square_number). Veertien in het kwadraat is honderdzesennegentig. (2026-11-13).
+- **bank-1519** — What is the atomic number of nickel? / Wat is het atoomnummer van nikkel? Antwoord: **28**. [Bron](https://en.wikipedia.org/wiki/Nickel). Nikkel heeft atoomnummer achtentwintig. (2026-11-13).
+- **bank-831** — Across how many countries is the Architectural Work of Le Corbusier World Heritage site spread? / Over hoeveel landen is het werelderfgoed Het architectonische werk van Le Corbusier verspreid? Antwoord: **7**. [Bron](https://whc.unesco.org/en/list/1321/). De zeventien onderdelen van het erfgoed liggen verspreid over zeven landen. (2026-11-13).
+
+## Eindcontrole
+
+Alle drie partijen van vijftien puzzels zijn afzonderlijk gecontroleerd met `python tools/controleer_puzzels.py` (ALLES IN ORDE) en `node tests/puzzle-library.cjs`. De kwaliteitsreviewtest slaagt met 516 gecontroleerde antwoorden in de bestaande selecties. Ook `node tests/daily-reliability.cjs` en `node tests/daily-server.cjs` slagen.
+
+Een onafhankelijke vergelijking met startcommit `00600e9` bevestigt dat alle 67 bestaande Library-puzzels volledig gelijk zijn gebleven, evenals alle andere gegenereerde spelmodi en bestaande reviewmetadata. Alle bestaande antwoorden in de vragenbank zijn behouden; alleen geselecteerde vraag-, bron-, vertaal- en reviewcellen zijn aangepast. Geen wijziging aan foto's, handgeschreven frontend, website-mirror, cacheversies of Supabase.
+
+De integrator moet nog de gebruikelijke cacheverhoging, website-sync en routegeneratie uitvoeren. De afzonderlijke fotoreview en kalibratie van niveaus met spelers vallen buiten deze uitbreiding. Er is niets gepusht.
