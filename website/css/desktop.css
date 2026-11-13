@@ -1,0 +1,179 @@
+/* Netto desktop — bureaublad en groot tablet (vanaf 821px).
+   Dit bestand laadt als laatste. Het verandert het merk niet; het trekt
+   breedtes, tegels, klikdoelen en focusranden gelijk tussen de schermen.
+   Telefoonopmaak (tot 820px) hoort in css/mobile.css. */
+
+/* ---------- 0. Fouten die op elke breedte spelen ---------- */
+
+/* Het dichte menu stond met zijn schaduw nog 90px in beeld (donkere band links)
+   en zijn knoppen zaten in de tabvolgorde. Verborgen = echt weg. */
+.sidebar:not(.open) {
+  visibility: hidden;
+  box-shadow: none;
+  transition: transform .3s ease, visibility 0s linear .3s, box-shadow 0s linear .3s;
+}
+.sidebar.open { visibility: visible; transition: transform .3s ease; }
+
+/* De focusrand van de puzzeltegels verwees naar --yellow, een kleur die niet
+   bestaat; daardoor was er op het toetsenbord niets te zien. */
+.library-flip-card:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 12px; }
+
+@media (min-width: 821px) {
+  /* ---------- 1. Eén maatsysteem ---------- */
+  :root {
+    --page-wide: 1120px;   /* home, overzichten, tekstpagina's */
+    --page-focus: 920px;   /* instellen, formulieren, ranglijst */
+    --page-play: 760px;    /* de kaart waarop je speelt */
+    --measure: 68ch;       /* langste leesregel */
+    --radius-card: 16px;
+    --radius-control: 10px;
+    --tap: 40px;           /* kleinste klikdoel met de muis */
+  }
+
+  /* Overzichten krijgen dezelfde breedte als de home. */
+  .library-page-inner { max-width: var(--page-wide); }
+
+  /* Instelschermen en de ranglijst: één smallere kolom, kop en paneel gelijk. */
+  #leaderboardScreen .library-page-inner,
+  .race-page-inner,
+  .live-shell { max-width: var(--page-focus); }
+  #settingsScreen .settings-panel,
+  #submitScreen .settings-panel,
+  #raceStart { max-width: none; }
+  #settingsScreen .settings-panel { margin-top: 22px; }
+
+  /* Uitleg en Over: de pagina zelf wordt smaller, zodat titel en kaart onder
+     elkaar uitlijnen in plaats van een lege rechterhelft over te laten. */
+  #libraryScreen:has(#aboutPanel:not([style*="none"]), #howPanel:not([style*="none"])) .library-page-inner { max-width: var(--page-focus); }
+  .about-panel { max-width: none; }
+  .about-panel > p,
+  .about-panel .how-lede,
+  .how-example-heading p,
+  .how-steps p { max-width: var(--measure); }
+
+  /* Speelkaarten: Daily, puzzel, race en verband even breed. */
+  #libraryPuzzleView,
+  .bk-play-panel,
+  #racePlay,
+  #raceResults { max-width: var(--page-play); margin-left: auto; margin-right: auto; }
+
+  /* Fotoverantwoording stond in een kolom van 620px met 38.000px scrollen. */
+  .foto-credits-inner { max-width: var(--page-wide); width: 100%; }
+  .foto-credits-inner > p { max-width: var(--measure); }
+  .foto-credits-lijst { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+
+  /* Lange ondertitels breken op een leesbare lengte. */
+  .library-page-subtitle { max-width: 56ch; }
+
+  /* ---------- 2. Minder lege ruimte ---------- */
+
+  /* Twee cijfers hoeven geen 1040px breed te zijn. */
+  .library-stats { max-width: 520px; }
+  .library-stats:has(> :nth-child(3)) { max-width: 780px; }
+  .library-stats:has(> :nth-child(4)) { max-width: none; }
+  .library-stat { min-height: 0; padding: 14px 18px; }
+
+  /* Puzzeltegels: zeven naast elkaar in plaats van vijf hoge, lege vlakken. */
+  #libraryCardGrid.library-card-grid,
+  .bk-card-grid.library-card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: 112px;
+    gap: 10px;
+  }
+  #libraryCardGrid .library-flip-card,
+  #libraryCardGrid .library-flip-card-inner,
+  .bk-card-grid .library-flip-card,
+  .bk-card-grid .library-flip-card-inner { height: 112px; min-height: 112px; }
+
+  /* ---------- 3. Klikdoelen ---------- */
+  .modal-close { width: var(--tap); height: var(--tap); }
+  .library-actions button,
+  #bkSubmitButton,
+  #connectionSkip,
+  .language-selector button,
+  #statsModes button,
+  .lb-tabs button { min-height: var(--tap); }
+  /* Schakelaars blijven even groot ogen, maar het raakvlak wordt 44px hoog. */
+  .settings-toggle { position: relative; }
+  .settings-toggle::after { content: ''; position: absolute; inset: -8px -4px; }
+  .auth-link { display: inline-block; padding: 8px 4px; }
+  .daily-photo-credit a,
+  .foto-credit-kaart a { display: inline-block; padding: 4px 0; }
+
+  /* ---------- 4. Hover en focus overal gelijk ---------- */
+
+  /* Vangnet met specificiteit nul: alles wat nog geen eigen focusrand heeft
+     krijgt er één; bestaande regels winnen. */
+  :where(button, a, summary, select, [role="button"], [role="tab"], [role="switch"], [tabindex="0"]):focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+  }
+  /* Op een witte kaart valt geel weg; daar is de rand donker. */
+  :where(.card, .modal, .race-panel, .live-card, .about-panel, .library-puzzle-card, .lb-board, .submit-form-card)
+    :where(button, a, summary, select, [role="button"], [role="tab"], [role="switch"]):focus-visible { outline-color: var(--ink); }
+
+  .month-nav button:not(:disabled):hover,
+  .leaderboard-day-nav button:not(:disabled):hover { transform: translateY(-1px); }
+  .library-home:hover { filter: brightness(1.06); transform: translateY(-1px); }
+  .library-home { transition: transform .15s ease, filter .15s ease; }
+  .how-next-grid button:hover { border-color: var(--bg-main); transform: translateY(-2px); }
+  .how-next-grid button { transition: transform .15s ease, border-color .15s ease; }
+  .auth-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .sidebar-footer:hover { background: rgba(255, 255, 255, .065); }
+  .daily-home-button:hover { border-color: currentColor; }
+}
+
+/* ---------- 5. Heel breed (vanaf 1600px) ----------
+   De inhoud blijft op leesbreedte; alleen de bovenbalk schuift mee naar binnen
+   zodat menu en account niet 400px van de inhoud af komen te staan. */
+@media (min-width: 1600px) {
+  .topbar { padding-inline: max(28px, calc((100vw - 1500px) / 2)); }
+}
+
+@media (min-width: 821px) and (prefers-reduced-motion: reduce) {
+  .library-home, .how-next-grid button { transition: none; }
+  .library-home:hover, .how-next-grid button:hover, .month-nav button:hover, .leaderboard-day-nav button:hover { transform: none; }
+}
+
+@media (min-width: 821px) {
+  /* Use theme surfaces together with theme ink, including nested help cards. */
+  [data-theme="dark"] .how-example,
+  [data-theme="dark"] #howPanel .how-score-bar,
+  [data-theme="dark"] .how-next-grid button {
+    background: var(--surface-2); border-color: var(--surface-border);
+  }
+  [data-theme="dark"] .how-example-grid article { background: var(--surface); border-color: var(--surface-border); }
+  [data-theme="dark"] .how-lede,
+  [data-theme="dark"] .how-example-heading p,
+  [data-theme="dark"] .how-example-grid article > span,
+  [data-theme="dark"] .how-steps p,
+  [data-theme="dark"] #howPanel .how-score-bar small,
+  [data-theme="dark"] .how-next-grid span,
+  [data-theme="dark"] #modalAuth .modal-subtitle,
+  [data-theme="dark"] #modalAuth .auth-toggle { color: var(--text-muted); }
+  [data-theme="dark"] .how-example-heading > span,
+  [data-theme="dark"] .how-example-grid strong,
+  [data-theme="dark"] .about-panel h3,
+  [data-theme="dark"] #modalAuth .auth-link { color: var(--accent); }
+  [data-theme="dark"] .how-next-grid button:hover { background: var(--surface); border-color: var(--accent); }
+  [data-theme="dark"] #modalAuth .auth-link:focus-visible { outline-color: var(--accent); }
+  :where(input, textarea):focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .stats-page-container { max-width: var(--page-focus); }
+}
+
+@media (min-width: 821px) {
+  [data-theme="dark"] .submit-form-card { background: var(--surface); border-color: var(--surface-border); }
+  [data-theme="dark"] .submit-form-card :is(.submit-mode-hint, .submit-q-block, .submit-preview) {
+    background: var(--surface-2); color: var(--text-muted); border-color: var(--surface-border);
+  }
+  [data-theme="dark"] .submit-form-card :is(input, textarea, select) {
+    background: var(--bg-dark); color: var(--ink); border-color: var(--surface-border);
+  }
+  [data-theme="dark"] .submit-form-card :is(input, textarea)::placeholder,
+  [data-theme="dark"] .submit-form-card :is(label, .submit-optional),
+  [data-theme="dark"] .submit-form-heading > div > span,
+  [data-theme="dark"] #modalAuth .form-group label { color: var(--text-muted); }
+  [data-theme="dark"] .race-visibility-copy b { color: var(--ink); }
+  [data-theme="dark"] .race-visibility-copy small { color: var(--text-muted); }
+}
