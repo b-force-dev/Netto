@@ -19,7 +19,8 @@
   // leaderboard) gewoon uitgelogd blijft. Alleen mogelijk als anonieme logins
   // in Supabase aan staan; anders vragen we om een (gratis) account.
   const GUEST_STORAGE_KEY = 'netto-live-guest';
-  let guest = null, auth = null, guestClientInstance = null, anonymousAllowed = null, pendingJoin = sessionStorage.getItem('netto_live_invite') || '';
+  let guest = null, auth = null, guestClientInstance = null, anonymousAllowed = null, pendingJoin = '';
+  try { pendingJoin = sessionStorage.getItem('netto_live_invite') || ''; } catch (_) {}
   const hasClient = () => typeof supabaseClient !== 'undefined' && Boolean(supabaseClient);
   function currentAuth() {
     if (currentUser && hasClient()) return { client: supabaseClient, id: currentUser.id };
@@ -184,7 +185,7 @@
       && /^[A-Z2-9]{6}$/.test(entry.roomCode) && entry.client_id!==RACE_CLIENT_ID && entry.players<(entry.maxPlayers||8))
       .map(entry => [entry.roomCode,entry])).values()];
 list.innerHTML = games.length ? games.map(game => `<button type="button" class="race-open-game" data-code="${esc(game.roomCode)}"><span>${esc(game.name)}<small>${esc(game.seconds)}s · ${esc(game.rounds)} ${roundWord(game.rounds)} · ${esc(game.players)}/${esc(game.maxPlayers||8)}</small><small>${game.requireEquation!==false?copy('Som verplicht','Equation required'):copy('Vrije antwoorden','Free answers')} · ${game.showAnswers?copy('Met onthulling','With reveals'):copy('Snelle rondes','Quick rounds')}</small></span><b>${copy('Meedoen','Join')} →</b></button>`).join('')
-      : `<div class="live-open-empty"><span class="live-open-empty-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="15" cy="13" r="5"/><path d="M5 31v-3a10 10 0 0 1 20 0v3M27 9a5 5 0 0 1 0 10M30 23a9 9 0 0 1 5 8"/></svg></span><h3>${raceLobbyFout?copy('Opnieuw verbinden?','Reconnecting?'):copy('De eerste room is aan jou','Start something fun')}</h3><p>${raceLobbyFout?copy('We zoeken vanzelf opnieuw naar rooms.','We will look for rooms again automatically.'):copy('Er zijn nu geen open rooms. Maak er een aan — andere spelers kunnen hier aansluiten.','No open rooms right now. Create one — other players can join you here.')}</p></div>`;
+      : `<div class="live-open-empty"><span class="live-open-empty-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="15" cy="13" r="5"/><path d="M5 31v-3a10 10 0 0 1 20 0v3M27 9a5 5 0 0 1 0 10M30 23a9 9 0 0 1 5 8"/></svg></span><h3>${raceLobbyFout?copy('Opnieuw verbinden\u2026','Reconnecting\u2026'):copy('De eerste room is aan jou','Start something fun')}</h3><p>${raceLobbyFout?copy('We zoeken vanzelf opnieuw naar rooms.','We will look for rooms again automatically.'):copy('Er zijn nu geen open rooms. Maak er een aan — andere spelers kunnen hier aansluiten.','No open rooms right now. Create one — other players can join you here.')}</p></div>`;
     if (raceLobbyFout) {
       const retry = document.createElement('button'); retry.type='button'; retry.className='btn-check';
       retry.textContent=copy('Opnieuw proberen','Retry now'); retry.addEventListener('click',retryRaceLobby); list.appendChild(retry);

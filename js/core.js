@@ -169,6 +169,8 @@
         updateUserUI();
         stuurLokaleScoresOp();
         laadLeaderboardZichtbaar();
+        // Auth-callbacks mogen niet op een nieuwe Supabase-call wachten.
+        setTimeout(() => window.NettoLive?.onSignIn(), 0);
       }
     });
   }

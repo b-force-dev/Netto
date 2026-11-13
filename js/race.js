@@ -247,14 +247,20 @@
     return RACE_DURATION_META[key] || RACE_DURATION_META.snel;
   }
 
-  let raceLobbyRetryTimer = null, raceLobbyRetryAttempt = 0;
+  let raceLobbyRetryTimer = null, raceLobbyRetryAttempt = 0, raceLobbyWaitingForLoad = false;
   function retryRaceLobby() {
     clearTimeout(raceLobbyRetryTimer);
     raceLobbyRetryTimer = null;
     ensureRaceLobby();
   }
   function ensureRaceLobby() {
-    if (!supabaseClient) return;
+    if (!supabaseClient) {
+      if (!raceLobbyWaitingForLoad && document.readyState !== 'complete') {
+        raceLobbyWaitingForLoad = true;
+        nettoWhenOnline(() => { raceLobbyWaitingForLoad = false; ensureRaceLobby(); renderNettoOpenGames(); });
+      }
+      return;
+    }
     // Een kanaal dat nog joint is ook in gebruik. Niet halverwege verwijderen.
     if (raceLobbyChannel) { if (raceLobbyReady) publishOpenRaceEntry(); return; }
     clearTimeout(raceLobbyRetryTimer);
@@ -323,14 +329,14 @@
       const melding = !supabaseClient
         ? statsCopy('Geen verbinding met de server. Solo spelen kan wel.', 'Cannot reach the server. You can still play solo.')
         : raceLobbyFout
-          ? statsCopy('Opnieuw verbinden? We zoeken vanzelf weer naar spelers.', 'Reconnecting? We will look for players again automatically.')
+          ? statsCopy('Opnieuw verbinden\u2026 We zoeken vanzelf weer naar spelers.', 'Reconnecting\u2026 We will look for players again automatically.')
           : 'Maak een game aan — andere spelers kunnen hier aansluiten.';
       list.innerHTML = '';
       const div = document.createElement('div');
       div.className = 'race-open-games-empty';
       const title = document.createElement('strong');
       title.textContent = !supabaseClient || raceLobbyFout
-        ? statsCopy('Opnieuw verbinden?', 'Reconnecting?')
+        ? statsCopy('Opnieuw verbinden\u2026', 'Reconnecting\u2026')
         : statsCopy('Nog geen open games', 'No open games yet');
       const description = document.createElement('span');
       description.textContent = melding;
