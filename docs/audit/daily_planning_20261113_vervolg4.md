@@ -20,4 +20,17 @@ Na blok 1 slagen de publieke anon-API-controles: vandaag zonder antwoorden,
 toekomstige vragen verborgen, toekomstige inzendingen geweigerd, gastresultaat
 met tweetalige uitleg en ranked=false, directe tabel- en viewlezingen geweigerd.
 Beide verplichte Node-tests slagen. Er zijn geen frontendbestanden gewijzigd
-en er is niet gepusht. Resterend: **18 t/m 31 januari 2027**.
+en er is niet gepusht.
+
+Blok 2 is toegevoegd en gecontroleerd: **18 t/m 24 januari**. Een eerste
+transactiepoging is volledig teruggedraaid door de herhalingscontrole. De
+afgewezen kandidaten zijn vervangen voordat de volledige batch opnieuw is
+ingevoegd. Databasecontrole bevestigt 73 aaneengesloten dagen vanaf 13 november,
+kloppende sommen en ongewijzigde oorspronkelijke inhoud. Publieke API-controles
+en beide verplichte Node-tests slagen opnieuw.
+
+Open redactionele fout: bij een uitgebreidere vergelijking na blok 1 is één
+inhoudelijke herhaling met een eerder geplande dag gevonden. De exacte locatie
+staat uitsluitend in het private hervatdossier. De betreffende rij is niet
+gewijzigd: de opdracht staat uitsluitend toevoegen toe. Daardoor is de eis van
+volledig herhalingsvrije inhoud niet gehaald. Resterend: **25 t/m 31 januari**.
