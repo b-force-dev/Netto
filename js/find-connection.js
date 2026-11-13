@@ -222,6 +222,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
 function startConnection(index = 0) {
   const puzzle = connectionPool[index];
   if (!puzzle) { renderConnectionStart(); return; }
+  window.nettoTrack?.('puzzle_start', { mode:'connection', once:puzzle.id });
   connectionState = { puzzle, index, order: shuffledConnectionOrder(), operator: null, submitted: false };
   connectionPicked = null;
   const screen = document.getElementById('breinkrakersScreen');
@@ -477,6 +478,7 @@ function submitConnection() {
   progress.results = progress.results.filter(r => r.id !== result.id).concat(result);
   localStorage.setItem(CONNECTION_PROGRESS_KEY, JSON.stringify(progress));
   state.submitted = true;
+  window.nettoTrack?.('puzzle_finish', { mode:'connection', once:state.puzzle.id });
   // De normale review wordt hergebruikt, in de door de speler gekozen volgorde.
   const ordered = { categories: result.categories };
   state.order.forEach((i, position) => { ordered['q' + (position + 1) + '_label'] = state.puzzle['q' + (i + 1) + '_label']; });
@@ -487,6 +489,7 @@ function submitConnection() {
   const equation = document.createElement('p');
   equation.textContent = fmt(result.answers[0]) + ' ' + state.operator + ' ' + fmt(result.answers[1]) + (correct ? ' = ' : ' ≠ ') + fmt(result.answers[2]);
   connection.append(title, equation);
+  connection.append(NettoShare.connectionButton(state.puzzle, result));
   if (!correct) {
     const solution = validConnections(answers)[0];
     const [a, b, c] = solution.order.map(i => fmt(answers[i]));
