@@ -2859,5 +2859,20 @@ window.NETTO_TRANSLATIONS_EN = {
   "Hoeveel verschillende cijfers gebruikt het hexadecimale getallenstelsel?": "How many different digits are used in the hexadecimal numeral system?",
   "Hoeveel kleine vakjes telt een vierkant raster van veertien bij veertien?": "How many small squares are in a fourteen-by-fourteen square grid?",
   "Wat is het atoomnummer van nikkel?": "What is the atomic number of nickel?",
-  "Over hoeveel landen is het werelderfgoed Het architectonische werk van Le Corbusier verspreid?": "Across how many countries is the Architectural Work of Le Corbusier World Heritage site spread?"
+  "Over hoeveel landen is het werelderfgoed Het architectonische werk van Le Corbusier verspreid?": "Across how many countries is the Architectural Work of Le Corbusier World Heritage site spread?",
+  "Hoeveel miljoen inwoners had Argentinië volgens de VN-schatting voor 2025, afgerond?": "How many million inhabitants did Argentina have according to the UN estimate for 2025, rounded?",
+  "Hoeveel kilogram weegt een volgroeide mannelijke Afrikaanse savanneolifant gemiddeld onder optimale groeiomstandigheden, ongeveer?": "Approximately how many kilograms does a fully grown male African bush elephant weigh on average under optimal growth conditions?",
+  "Hoeveel miljoen inwoners telde Peru bij de volkstelling van 2025, afgerond?": "How many million inhabitants did Peru count in its 2025 census, rounded?",
+  "Hoeveel punten scoorden de Detroit Pistons tegen de Denver Nuggets op 13 december 1983?": "How many points did the Detroit Pistons score against the Denver Nuggets on 13 December 1983?",
+  "Hoeveel miljoen inwoners had Australië op 30 juni 2024 volgens het Australian Bureau of Statistics, afgerond?": "How many million inhabitants did Australia have on 30 June 2024 according to the Australian Bureau of Statistics, rounded?",
+  "Hoeveel kilogram woog de lederschildpad die in september 1988 bij Harlech werd gevonden volgens Guinness, afgerond?": "How many kilograms did the leatherback found at Harlech in September 1988 weigh according to Guinness, rounded?",
+  "Hoeveel kilogram kan een mannelijke Amerikaanse bizon volgens de National Park Service wegen, afgerond op honderdtallen?": "How many kilograms can a male American bison weigh according to the National Park Service, rounded to the nearest hundred?",
+  "Hoeveel uur per dag kan een koala volgens San Diego Zoo slapen?": "How many hours a day can a koala sleep according to San Diego Zoo?",
+  "Hoeveel centimeter lang was Zeng Jinlian bij haar laatste meting in 1982, afgerond?": "How many centimetres tall was Zeng Jinlian at her final measurement in 1982, rounded?",
+  "Hoeveel kilogram weegt een stenen blok van de Piramide van Cheops gemiddeld, ongeveer?": "Approximately how many kilograms does a stone block of the Great Pyramid of Giza weigh on average?",
+  "Hoeveel miljoen inwoners had Chili volgens de VN-schatting voor 2025, afgerond?": "How many million inhabitants did Chile have according to the UN estimate for 2025, rounded?",
+  "Hoeveel volle jaren oud werd de Australische hond Bluey volgens Guinness?": "How many full years old did the Australian dog Bluey live to be according to Guinness?",
+  "Hoeveel miljoen inwoners had Nieuw-Zeeland op 30 juni 2024 volgens Stats NZ, afgerond?": "How many million inhabitants did New Zealand have on 30 June 2024 according to Stats NZ, rounded?",
+  "Hoeveel Starbucks-winkels waren er wereldwijd aan het einde van boekjaar 2024, afgerond op tienduizendtallen?": "How many Starbucks stores were there worldwide at the end of fiscal 2024, rounded to the nearest ten thousand?",
+  "Hoeveel satellieten lanceerde ISRO met PSLV-C37 op 15 februari 2017?": "How many satellites did ISRO launch on PSLV-C37 on 15 February 2017?"
 };
