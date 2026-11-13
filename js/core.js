@@ -2538,8 +2538,8 @@
       const factorText = value => window.NettoReveal?.factorText(value) || `${value.toFixed(2)}×`;
       factorEl.textContent = exactCount === 3
         ? statsCopy(`Elk antwoord exact: ${factorText(1)}`, `Every answer exact: ${factorText(1)}`)
-        : statsCopy(`Gemiddeld ${factorText(avgFactor)} ernaast · ${factorText(1)} is exact`,
-          `On average ${factorText(avgFactor)} off · ${factorText(1)} is exact`);
+        : statsCopy(`Gemiddeld ${factorText(avgFactor)} ernaast · 2× = dubbel of half`,
+          `Average miss: ${factorText(avgFactor)} · 2× = double or half`);
       factorEl.title = statsCopy('De factor is hoeveel keer je te hoog of te laag zat. 2× is het dubbele of de helft.',
         'The factor is how many times too high or too low you were. 2× means double or half.');
     }
@@ -2595,7 +2595,7 @@
   function dailyScoreHeadline(accuracy, allExact) {
     const lines = allExact ? [
       ['Foutloos. Drie uit drie.', 'Flawless. Three out of three.'],
-      ['Alles exact. Dit gebeurt bijna nooit.', 'All exact. That almost never happens.']
+      ['Alles exact. Een buiging waard.', 'All exact. Take a bow.']
     ] : accuracy >= 90 ? [
       ['Vlijmscherp geschat.', 'Razor-sharp estimating.'],
       ['Verdacht goed. Was dit echt een gok?', 'Suspiciously good. Was that really a guess?']
@@ -2644,7 +2644,7 @@
       streakEl.id = 'dailyResultStreak';
       streakEl.className = 'daily-result-streak';
       streakEl.setAttribute('data-i18n-skip', '');
-      summary.querySelector('.score-badge-container')?.append(streakEl);
+      summary.querySelector('.daily-score-row')?.after(streakEl);
     }
     const streak = today ? getLocalStreak() : 0;
     streakEl.hidden = streak < 1;

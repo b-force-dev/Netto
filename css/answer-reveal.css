@@ -194,3 +194,58 @@ body:has(#screen-puzzle.active.is-review) .calculator-toggle { display:none; }
   .answer-reveal-fill, .answer-reveal-dot, .answer-reveal-question, .answer-reveal-connector span, .answer-reveal-payoff, #results .daily-result-summary #scoreBadgeMsg, #results .daily-result-streak { transition:none; }
   .answer-reveal-equation b.is-known, .answer-reveal-payoff.is-landed, .answer-reveal-score-pill, #results .daily-result-summary #scoreBadge { animation:none !important; }
 }
+
+/* Reserve the final number's dimensions even while it is still a question mark. */
+.answer-reveal-actual strong { display:inline-grid; max-width:100%; grid-template-columns:minmax(0,max-content) auto; }
+.answer-reveal-actual .answer-reveal-number, .answer-reveal-reserve { grid-area:1 / 1; min-width:0; }
+.answer-reveal-reserve { visibility:hidden; pointer-events:none; }
+.answer-reveal-values strong small { grid-area:1 / 2; align-self:baseline; }
+.answer-reveal-foot .answer-reveal-verdict { flex:1; min-width:0; overflow-wrap:anywhere; }
+.answer-reveal-legend { margin:-4px 0 12px; color:var(--text-muted); font-size:11px; line-height:1.4; }
+.answer-reveal-yours .answer-reveal-computed { flex-basis:100%; margin-top:2px; font:inherit; letter-spacing:0; text-transform:none; }
+.answer-reveal-equation b { overflow-wrap:anywhere; min-width:0; }
+.answer-reveal-detail { overflow-wrap:anywhere; }
+.answer-reveal-inline { scroll-margin-top:74px; }
+.daily-result-summary { scroll-margin-top:74px; }
+
+/* Same quiet surfaces and readable accents in both colour schemes. */
+[data-theme="dark"] .answer-reveal-sheet { background:var(--surface); color:var(--ink); }
+[data-theme="dark"] .answer-reveal-question,
+[data-theme="dark"] .answer-reveal-inline .answer-reveal-question { background:var(--surface-2); border-color:var(--surface-border); color:var(--ink); }
+[data-theme="dark"] .answer-reveal-question:nth-of-type(2) { background:color-mix(in srgb, var(--surface-2) 92%, #5fc9a9); }
+[data-theme="dark"] .answer-reveal-question:nth-of-type(3) { background:color-mix(in srgb, var(--surface-2) 92%, #a9b3e6); }
+[data-theme="dark"] .answer-reveal-actual strong,
+[data-theme="dark"] .answer-reveal-equation b.is-known,
+[data-theme="dark"] .answer-reveal-score strong,
+[data-theme="dark"] .answer-reveal-detail .vraag-bron a { color:#bfc5ff; }
+[data-theme="dark"] .answer-reveal-question[data-tone="exact"],
+[data-theme="dark"] .answer-reveal-question[data-tone="great"] { --tone:#34d399; --tone-ink:#7be0c0; }
+[data-theme="dark"] .answer-reveal-question[data-tone="good"] { --tone:#f5c044; --tone-ink:#f5c044; }
+[data-theme="dark"] .answer-reveal-question[data-tone="fair"] { --tone:#fb923c; --tone-ink:#ffb47c; }
+[data-theme="dark"] .answer-reveal-question[data-tone="far"] { --tone:#f87171; --tone-ink:#ffaaaa; }
+[data-theme="dark"] .answer-reveal-question.is-exact .answer-reveal-actual strong { color:#7be0c0; }
+[data-theme="dark"] .answer-reveal-values > div > span,
+[data-theme="dark"] .answer-reveal-values strong small,
+[data-theme="dark"] .answer-reveal-end,
+[data-theme="dark"] .answer-reveal-payoff-label,
+[data-theme="dark"] .answer-reveal-yours,
+[data-theme="dark"] .answer-reveal-skip,
+[data-theme="dark"] .answer-reveal-header > span,
+[data-theme="dark"] .answer-reveal-score > span,
+[data-theme="dark"] .answer-reveal-score p,
+[data-theme="dark"] .answer-reveal-detail-empty { color:var(--text-muted); }
+[data-theme="dark"] .answer-reveal-toggle { background:#141b4566; color:var(--ink); }
+[data-theme="dark"] .answer-reveal-toggle:hover { background:#141b45; }
+[data-theme="dark"] .answer-reveal-track { background:#a9b3e633; }
+[data-theme="dark"] .answer-reveal-tick { background:#a9b3e666; }
+[data-theme="dark"] .answer-reveal-centre { background:var(--ink); }
+[data-theme="dark"] .answer-reveal-actual,
+[data-theme="dark"] .answer-reveal-detail { border-color:var(--surface-border); }
+[data-theme="dark"] .answer-reveal-connector::before,
+[data-theme="dark"] .answer-reveal-connector::after { background:var(--surface-border); }
+[data-theme="dark"] .answer-reveal-payoff { background:var(--surface-2); color:var(--ink); border-color:var(--surface-border); }
+[data-theme="dark"] .answer-reveal-payoff.is-landed,
+[data-theme="dark"] .answer-reveal-question.is-revealing { border-color:#a9b3e6; box-shadow:0 0 0 3px #a9b3e61a; }
+[data-theme="dark"] .answer-reveal-yours b,
+[data-theme="dark"] .answer-reveal-detail .vraag-bron p { color:var(--ink); }
+[data-theme="dark"] .answer-reveal-yours em { color:#7be0c0; }

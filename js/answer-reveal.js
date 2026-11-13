@@ -103,7 +103,7 @@
         const connector = document.createElement('div');
         connector.className = 'answer-reveal-connector';
         const badge = document.createElement('span');
-        badge.textContent = index === 1 ? operator : '=';
+        badge.textContent = index === questions.length - 1 ? '=' : operator;
         connector.append(badge);
         list.append(connector);
       }
@@ -122,7 +122,7 @@
         image.src = photo.src;
         image.alt = '';
         image.decoding = 'async';
-        image.addEventListener('error', () => thumb.remove());
+        image.addEventListener('error', () => { thumb.style.visibility = 'hidden'; thumb.disabled = true; });
         thumb.append(image);
         thumb.addEventListener('click', event => { event.stopPropagation(); photo.open?.(); });
         head.append(thumb);
@@ -154,6 +154,8 @@
       actualValue.setAttribute('aria-hidden', 'true');
       const number = element('span', 'answer-reveal-number', '?');
       actualValue.append(number);
+      const reserve = element('span', 'answer-reveal-reserve', formatValue(answers[index], question));
+      actualValue.append(reserve);
       withUnit(actualValue);
       const announcement = document.createElement('span');
       announcement.className = 'answer-reveal-announcement';
@@ -196,13 +198,21 @@
       truth.setAttribute('aria-hidden', 'true');
       truth.append(...equationParts(['?', '?', '?'], operator));
       slots.push(...truth.querySelectorAll('b'));
+      slots.forEach((slot, index) => {
+        slot.style.minWidth = 'min(' + (formatValue(answers[index], questions[index]).length * .64) + 'em, 100%)';
+      });
       const yours = element('p', 'answer-reveal-yours');
       const validEquation = sameNumber(calculate(guesses[0], guesses[1], operator), guesses[2]);
       const allExact = guesses.every((guess, index) => exactMatch(guess, answers[index]));
       yours.append(element('span', '', copy('Jij', 'You')),
         ...equationParts(guesses.map((guess, index) => formatValue(guess, questions[index])), operator));
       // Zonder kloppende som (instelling uit) staat er eerlijk een ≠.
-      if (!validEquation) yours.querySelector('.is-equals').textContent = '≠';
+      if (!validEquation) {
+        yours.querySelector('.is-equals').textContent = '≠';
+        const computed = calculate(guesses[0], guesses[1], operator);
+        if (Number.isFinite(computed)) yours.append(element('span', 'answer-reveal-computed',
+          copy('Berekend: ', 'Calculated: ') + format(computed)));
+      }
       if (allExact) yours.append(element('em', '', '✓'));
       spoken = element('span', 'answer-reveal-announcement');
       spoken.setAttribute('aria-live', 'polite');
@@ -389,7 +399,8 @@
     skip.className = 'answer-reveal-skip';
     skip.textContent = copy('Sla over →', 'Skip →');
     header.append(skip);
-    section.append(header, list);
+    const legend = element('p', 'answer-reveal-legend', copy('Midden = juist · stip = jouw schatting', 'Centre = actual · dot = your estimate'));
+    section.append(header, legend, list);
     container.prepend(section);
     const bar = () => document.querySelector('.topbar')?.offsetHeight || 0;
     const scrollBy = top => window.scrollTo({ top: window.scrollY + top, behavior: reducedMotion() ? 'auto' : 'smooth' });
@@ -458,7 +469,7 @@
       opts.onDone?.();
     };
     heading.textContent = opts.instant ? copy('Je antwoorden.', 'Your answers.')
-      : copy('Tijd om de antwoorden te verbinden.', 'Let’s connect the answers.');
+      : copy('De onthulling.', 'The reveal.');
     if (!opts.instant) {
       container.classList.add('is-answer-revealing');
       document.addEventListener('keydown', skipKeys);
@@ -494,7 +505,7 @@
     const header = document.createElement('header');
     header.className = 'answer-reveal-header';
     const eyebrow = document.createElement('span');
-    eyebrow.textContent = 'NETTO · THE REVEAL';
+    eyebrow.textContent = copy('NETTO · DE ONTHULLING', 'NETTO · THE REVEAL');
     const heading = document.createElement('h1');
     heading.textContent = copy('Tijd om de antwoorden te verbinden.', 'Let’s connect the answers.');
     header.append(eyebrow, heading);
@@ -509,7 +520,8 @@
     button.type = 'button';
     button.textContent = copy('Sla over →', 'Skip →');
     footer.append(score, button);
-    shell.append(header, list, footer);
+    const legend = element('p', 'answer-reveal-legend', copy('Midden = juist · stip = jouw schatting', 'Centre = actual · dot = your estimate'));
+    shell.append(header, legend, list, footer);
     overlay.append(shell);
     document.body.append(overlay);
     overlay.showModal();
@@ -546,6 +558,11 @@
     };
     const controller = buildReveal(opts, list, { instant:false, onComplete: done });
     cancelCurrent = close;
+    overlay.addEventListener('keydown', event => {
+      if (controller.isComplete() || !['Enter', ' '].includes(event.key) || event.target.closest('button, a, input')) return;
+      event.preventDefault();
+      controller.finish();
+    });
     overlay.addEventListener('cancel', event => {
       event.preventDefault();
       if (controller.isComplete()) close(); else controller.finish();
