@@ -33,4 +33,19 @@ Open redactionele fout: bij een uitgebreidere vergelijking na blok 1 is één
 inhoudelijke herhaling met een eerder geplande dag gevonden. De exacte locatie
 staat uitsluitend in het private hervatdossier. De betreffende rij is niet
 gewijzigd: de opdracht staat uitsluitend toevoegen toe. Daardoor is de eis van
-volledig herhalingsvrije inhoud niet gehaald. Resterend: **25 t/m 31 januari**.
+volledig herhalingsvrije inhoud niet gehaald.
+
+Blok 3 is toegevoegd en gecontroleerd: **25 t/m 31 januari 2027**. Daarmee
+loopt de planning vanaf 13 november aaneengesloten tot en met **31 januari 2027**.
+Er zijn 21 puzzels en 63 detailrecords toegevoegd in drie volledige blokken.
+Alle 198 oorspronkelijke puzzelrijen en 239 oorspronkelijke detailrecords zijn
+exact ongewijzigd. De eindcontrole vindt geen gaten, dubbele datums of onjuiste
+sommen. De publieke API-controles en beide verplichte Node-tests slagen ook na
+blok 3. Er staat geen half toegepast blok in de database.
+
+Alleen dit verslag is in de repo gewijzigd; drie afzonderlijke commits, geen
+push. Back-up, voorstellen, bronnen, SQL, API-uitvoer en het exacte open
+redactionele hervatpunt staan uitsluitend onder `daily_*20261113g*` in de
+genoemde privémap. Er zijn geen open datums binnen de gevraagde periode.
+De hierboven genoemde inhoudelijke herhaling is nog niet opgelost. De
+moeilijkheidsbalans is niet met spelers getest; 30 januari is relatief lastig.
