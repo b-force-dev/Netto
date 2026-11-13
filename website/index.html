@@ -107,6 +107,7 @@
 <link rel="stylesheet" href="css/live-rounds.css?v=12">
 <link rel="stylesheet" href="css/share.css?v=2">
 <link rel="stylesheet" href="css/stats-page.css?v=5">
+<link rel="stylesheet" href="css/puzzle-library.css?v=2">
 <link rel="stylesheet" href="css/vindbaarheid.css?v=2">
 <link rel="stylesheet" href="css/pwa.css?v=2">
 <link rel="stylesheet" href="css/desktop.css?v=2">
@@ -772,11 +773,15 @@
 
       <section class="bk-library-overview" id="bkStart">
         <h1 class="library-page-title">Find the Connection</h1>
-        <p class="library-page-subtitle">Three questions. One hidden equation. Rearrange them and find the mathematical connection.</p>
-        <div class="library-stats" aria-label="Find the Connection progress">
-          <div class="library-stat"><b id="bkPlayedCount">0</b><span>Gespeeld</span></div>
-          <div class="library-stat"><b id="bkExactCount">0</b><span>Connections found</span></div>
-          <div class="library-stat"><b id="bkAverageScore">—</b><span>Gemiddelde score</span></div>
+        <p class="library-page-subtitle" id="bkSubtitle">Three questions. One hidden equation. Rearrange them and find the mathematical connection.</p>
+        <div class="library-stats" id="bkStats" aria-label="Find the Connection progress">
+          <div class="library-stat"><b id="bkPlayedCount">0</b><span id="bkPlayedLabel">Gespeeld</span></div>
+          <div class="library-stat"><b id="bkExactCount">0</b><span id="bkExactLabel">Connections found</span></div>
+          <div class="library-stat"><b id="bkAverageScore">—</b><span id="bkAverageLabel">Gemiddelde score</span></div>
+        </div>
+        <div class="bk-quick-actions" id="bkQuickActions">
+          <button type="button" class="is-primary" id="bkContinue" onclick="startNextConnection()">Speel de volgende →</button>
+          <button type="button" id="bkRandom" onclick="startRandomConnection()">Verras me</button>
         </div>
         <div class="bk-catalog-toolbar">
           <p class="bk-catalog-summary" id="bkProgress" role="status"></p>
@@ -787,13 +792,14 @@
       <section class="bk-play-panel" id="bkPlay" style="display:none;">
         <div class="card race-question-card bk-question-card">
           <h1 class="headline puzzle-section-header" aria-label="Puzzel 1"><button class="puzzle-index-badge" id="bkPuzzleLabel" type="button" onclick="renderBreinkrakersStart()">Puzzel 1</button><span class="puzzle-header-meta" id="bkCounter">1 / 199</span></h1>
+          <p class="connection-rule" id="connectionRule"></p>
           <div class="race-question-list" id="bkQuestionList"></div>
           <div class="connection-live-formula" id="connectionLiveFormula" aria-live="polite"></div>
           <div class="race-feedback" id="bkFeedback" role="status" aria-live="polite"></div>
           <span class="connection-announcement" id="connectionAnnouncement" role="status" aria-live="polite"></span>
           <div class="connection-actions">
             <button class="btn-check race-submit-button" id="bkSubmitButton" type="button" onclick="submitConnection()">Check my connection</button>
-            <button class="connection-skip" id="connectionSkip" type="button" onclick="startConnection(connectionState.index + 1)">Skip puzzle →</button>
+            <button class="connection-skip" id="connectionSkip" type="button" onclick="skipConnection()">Skip puzzle →</button>
           </div>
         </div>
       </section>
@@ -1212,18 +1218,18 @@
 <script src="js/question-context.js?v=4"></script>
 <script src="js/answer-reveal.js?v=8"></script>
 <script src="js/usage.js?v=1"></script>
-<script src="js/core.js?v=149"></script>
+<script src="js/core.js?v=150"></script>
 <script src="js/share.js?v=2"></script>
-<script src="js/puzzle-modes.js?v=69"></script>
-<script src="js/find-connection.js?v=13"></script>
+<script src="js/puzzle-modes.js?v=70"></script>
+<script src="js/find-connection.js?v=14"></script>
 <script src="js/race.js?v=67"></script>
 <script src="js/live-rounds.js?v=8"></script>
 <script src="js/submissions.js?v=41"></script>
-<script src="js/library.js?v=61"></script>
+<script src="js/library.js?v=62"></script>
 <script src="js/home.js?v=2"></script>
 <script src="js/keyboard.js?v=2"></script>
 <script src="js/site-navigation.js?v=8"></script>
-<script src="js/routes.js?v=9"></script>
+<script src="js/routes.js?v=10"></script>
 <script src="js/app.js?v=36"></script>
 <script src="js/stats-page.js?v=10"></script>
 <script src="js/pwa.js?v=2"></script>
