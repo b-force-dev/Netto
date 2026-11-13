@@ -1,0 +1,36 @@
+{
+  "id": "./",
+  "name": "Netto · daily estimation game",
+  "short_name": "Netto",
+  "description": "Estimate three facts, find the link. A new puzzle every day.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#14163B",
+  "theme_color": "#252FB6",
+  "categories": ["games", "education", "trivia"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Daily",
+      "short_name": "Daily",
+      "description": "Play today's Daily",
+      "url": "./?screen=daily&source=shortcut",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Puzzle Race",
+      "short_name": "Race",
+      "description": "Five minutes, as many puzzles as you can",
+      "url": "./?screen=race&source=shortcut",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}
