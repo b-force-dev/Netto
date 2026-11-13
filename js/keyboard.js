@@ -10,6 +10,36 @@
   const zichtbaar = element => element.getClientRects().length > 0;
   const stops = container => Array.from(container.querySelectorAll(focusbaar)).filter(zichtbaar);
 
+  // iOS keeps the layout viewport tall when its software keyboard opens.
+  // Size phone dialogs/scroll containers to the part that is actually visible.
+  const viewport = window.visualViewport;
+  if (viewport) {
+    let frame;
+    const updateViewport = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const root = document.documentElement;
+        if (window.innerWidth > 820 || viewport.scale > 1.05) {
+          root.style.removeProperty('--mobile-viewport-height');
+          root.style.removeProperty('--mobile-viewport-top');
+          return;
+        }
+        root.style.setProperty('--mobile-viewport-height', viewport.height + 'px');
+        root.style.setProperty('--mobile-viewport-top', viewport.offsetTop + 'px');
+        const field = document.activeElement;
+        if (field?.matches('input, textarea') && viewport.height < window.innerHeight - 100) {
+          const rect = field.getBoundingClientRect();
+          if (rect.bottom > viewport.offsetTop + viewport.height - 16 || rect.top < viewport.offsetTop + 72) {
+            field.scrollIntoView({ block: 'center', behavior: 'instant' });
+          }
+        }
+      });
+    };
+    viewport.addEventListener('resize', updateViewport);
+    viewport.addEventListener('scroll', updateViewport);
+    updateViewport();
+  }
+
   function menuOpen() { return Boolean(sidebar?.classList.contains('open')); }
   function authOpen() { return Boolean(auth?.classList.contains('active')); }
 
