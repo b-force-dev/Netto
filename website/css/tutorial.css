@@ -23,3 +23,7 @@
 .tutorial-open .pwa-return { visibility:hidden; }
 @media (max-width:540px) { .tutorial-content { padding:16px; } .tutorial-content h2 { font-size:23px; } .tutorial-header { padding:8px 16px; } }
 @media (prefers-reduced-motion:reduce) { .tutorial-dialog *, .tutorial-chip * { animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
+
+/* De uitnodiging hoort bij de startpagina; tijdens een puzzel zou ze de
+   invoervelden bedekken. */
+body:not(:has(#screen-home.active)) .tutorial-chip { display: none; }
