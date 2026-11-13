@@ -47,6 +47,15 @@
       if (open === wasOpen) return;
       wasOpen = open;
       if (open) {
+        const title = auth.querySelector('#authFormView')?.style.display === 'none'
+          ? auth.querySelector('#authLoggedInView .modal-title')
+          : auth.querySelector('#authForgotView')?.style.display !== 'none'
+            ? auth.querySelector('#authForgotView .modal-title')
+            : auth.querySelector('#authTitle');
+        if (title) {
+          if (!title.id) title.id = 'authVisibleTitle';
+          venster?.setAttribute('aria-labelledby', title.id);
+        }
         terugNaar = document.activeElement;
         requestAnimationFrame(() => {
           const eerste = stops(auth).find(element => element.matches('input')) || stops(auth)[0];
@@ -70,6 +79,19 @@
   }
 
   document.addEventListener('keydown', event => {
+    // Library inputs are generated without a form; mirror Daily's Enter flow.
+    const answer = event.target.closest?.('input[id^="libraryAnswer"], input[id^="catalogusAnswer"]');
+    if (event.key === 'Enter' && answer && !event.defaultPrevented && !event.isComposing) {
+      const prefix = answer.id.startsWith('library') ? 'library' : 'catalogus';
+      const inputs = Array.from(document.querySelectorAll('#' + prefix + 'QuestionList input'))
+        .filter(input => !input.disabled && !input.readOnly && zichtbaar(input));
+      const index = inputs.indexOf(answer);
+      if (index < 0) return;
+      event.preventDefault();
+      if (index < inputs.length - 1) inputs[index + 1].focus();
+      else submitPuzzleView(prefix);
+      return;
+    }
     if (event.key === 'Tab') {
       if (authOpen()) houdBinnen(event, auth);
       else if (menuOpen()) houdBinnen(event, sidebar);

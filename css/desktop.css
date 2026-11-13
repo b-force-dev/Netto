@@ -135,3 +135,45 @@
   .library-home, .how-next-grid button { transition: none; }
   .library-home:hover, .how-next-grid button:hover, .month-nav button:hover, .leaderboard-day-nav button:hover { transform: none; }
 }
+
+@media (min-width: 821px) {
+  /* Use theme surfaces together with theme ink, including nested help cards. */
+  [data-theme="dark"] .how-example,
+  [data-theme="dark"] #howPanel .how-score-bar,
+  [data-theme="dark"] .how-next-grid button {
+    background: var(--surface-2); border-color: var(--surface-border);
+  }
+  [data-theme="dark"] .how-example-grid article { background: var(--surface); border-color: var(--surface-border); }
+  [data-theme="dark"] .how-lede,
+  [data-theme="dark"] .how-example-heading p,
+  [data-theme="dark"] .how-example-grid article > span,
+  [data-theme="dark"] .how-steps p,
+  [data-theme="dark"] #howPanel .how-score-bar small,
+  [data-theme="dark"] .how-next-grid span,
+  [data-theme="dark"] #modalAuth .modal-subtitle,
+  [data-theme="dark"] #modalAuth .auth-toggle { color: var(--text-muted); }
+  [data-theme="dark"] .how-example-heading > span,
+  [data-theme="dark"] .how-example-grid strong,
+  [data-theme="dark"] .about-panel h3,
+  [data-theme="dark"] #modalAuth .auth-link { color: var(--accent); }
+  [data-theme="dark"] .how-next-grid button:hover { background: var(--surface); border-color: var(--accent); }
+  [data-theme="dark"] #modalAuth .auth-link:focus-visible { outline-color: var(--accent); }
+  :where(input, textarea):focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .stats-page-container { max-width: var(--page-focus); }
+}
+
+@media (min-width: 821px) {
+  [data-theme="dark"] .submit-form-card { background: var(--surface); border-color: var(--surface-border); }
+  [data-theme="dark"] .submit-form-card :is(.submit-mode-hint, .submit-q-block, .submit-preview) {
+    background: var(--surface-2); color: var(--text-muted); border-color: var(--surface-border);
+  }
+  [data-theme="dark"] .submit-form-card :is(input, textarea, select) {
+    background: var(--bg-dark); color: var(--ink); border-color: var(--surface-border);
+  }
+  [data-theme="dark"] .submit-form-card :is(input, textarea)::placeholder,
+  [data-theme="dark"] .submit-form-card :is(label, .submit-optional),
+  [data-theme="dark"] .submit-form-heading > div > span,
+  [data-theme="dark"] #modalAuth .form-group label { color: var(--text-muted); }
+  [data-theme="dark"] .race-visibility-copy b { color: var(--ink); }
+  [data-theme="dark"] .race-visibility-copy small { color: var(--text-muted); }
+}

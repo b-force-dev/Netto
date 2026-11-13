@@ -214,9 +214,9 @@
         <div class="lp-hero-copy">
           <p class="lp-brand"><span class="lp-wordmark" data-i18n-skip>Netto</span><span class="lp-brand-tag" data-nl="het schattingsspel">the estimation game</span></p>
 
-          <div class="lp-pitch">
-            <h1 class="lp-title" id="homeDailyTitle">Drie vragen.<br><span data-nl="Eén som.">One equation.</span></h1>
-            <p class="lp-lede" data-nl="Elke dag drie weetjesvragen. Hun antwoorden vormen samen een som, dus elke goede schatting helpt je bij de volgende.">Three trivia questions a day. Their answers fit together in one equation, so every good estimate helps you with the next.</p>
+          <div class="lp-pitch" role="group" aria-label="What is Netto?">
+            <h1 class="lp-title" id="homeDailyTitle"><span class="lp-title-first" data-nl="Drie vragen.">Three questions.</span><br><span data-nl="Eén som.">One equation.</span></h1>
+            <p class="lp-lede" data-nl="Een gratis dagelijks schatspel: schat drie feiten, gebruik de som als aanwijzing en kijk hoe dichtbij je komt.">A free daily estimation game: guess three facts, use the equation as a clue and see how close you get.</p>
           </div>
 
           <div class="lp-welcome" id="homeWelcome" hidden>
@@ -283,27 +283,27 @@
           <h2 id="homeModesTitle" data-nl="Meer manieren om te spelen">More ways to play</h2>
         </div>
         <div class="lp-mode-grid">
-          <a class="lp-mode" data-home-mode="puzzles" id="homeModePuzzles" href="puzzles/" data-home-open="openPuzzles()">
+          <a class="lp-mode" data-home-mode="puzzles" id="homeModePuzzles" href="puzzles/">
             <span class="lp-mode-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 17.5h7M17.5 14v7"/></svg></span>
             <span class="lp-mode-body"><b data-nl="Puzzels">Puzzles</b><small data-nl="Extra puzzels in vier niveaus, van makkelijk tot extreem moeilijk.">Extra puzzles in four levels, from easy to extremely hard.</small></span>
             <span class="lp-mode-tag">Solo</span>
           </a>
-          <a class="lp-mode" data-home-mode="connection" id="homeModeConnection" href="connections/" data-home-open="openConnection()">
+          <a class="lp-mode" data-home-mode="connection" id="homeModeConnection" href="connections/">
             <span class="lp-mode-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14l4-4M8 16l-1 1a3.5 3.5 0 0 1-5-5l4-4a3.5 3.5 0 0 1 5 0M16 8l1-1a3.5 3.5 0 0 1 5 5l-4 4a3.5 3.5 0 0 1-5 0"/></svg></span>
             <span class="lp-mode-body"><b>Find the Connection</b><small data-nl="Je krijgt drie vragen en zoekt zelf de som die ze verbindt.">You get three questions and find the equation that links them.</small></span>
             <span class="lp-mode-tag">Solo</span>
           </a>
-          <a class="lp-mode" data-home-mode="race" href="race/" data-home-open="openPuzzleRace()">
+          <a class="lp-mode" data-home-mode="race" href="race/">
             <span class="lp-mode-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6M12 5V2"/></svg></span>
             <span class="lp-mode-body"><b data-nl="Puzzel Race">Puzzle Race</b><small data-nl="Los in 3, 5 of 10 minuten zoveel mogelijk puzzels op.">Solve as many puzzles as you can in 3, 5 or 10 minutes.</small></span>
             <span class="lp-mode-tag" data-nl="Solo of 1 tegen 1">Solo or 1 v 1</span>
           </a>
-          <a class="lp-mode" data-home-mode="live" href="live-rounds/" data-home-open="openLiveRounds()">
+          <a class="lp-mode" data-home-mode="live" href="live-rounds/">
             <span class="lp-mode-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M17 4a3 3 0 0 1 0 6M21 21v-3a6 6 0 0 0-4-5.65"/></svg></span>
             <span class="lp-mode-body"><b data-nl="Live Rondes">Live Rounds</b><small data-nl="Dezelfde puzzel, dezelfde klok. Wie zit het dichtst bij?">Same puzzle, same clock. Who gets closest?</small></span>
             <span class="lp-mode-tag" data-nl="2–8 spelers">2–8 players</span>
           </a>
-          <a class="lp-mode" data-home-mode="archive" href="daily-archive/" data-home-open="openDailyPuzzles()">
+          <a class="lp-mode" data-home-mode="archive" href="daily-archive/">
             <span class="lp-mode-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg></span>
             <span class="lp-mode-body"><b>Daily Archive</b><small data-nl="Dag gemist? Speel elke eerdere Daily opnieuw.">Missed a day? Replay every earlier Daily.</small></span>
             <span class="lp-mode-tag">Solo</span>
@@ -333,10 +333,10 @@
           <small>Made by B-Force</small>
         </div>
         <nav class="lp-footer-nav" aria-label="Meer van Netto">
-          <a href="about/" onclick="event.preventDefault(); openAbout()" data-nl="Over Netto">About Netto</a>
-          <a href="how-to-play/" onclick="event.preventDefault(); openHowItWorks()" data-nl="Hoe werkt het?">How does it work?</a>
-          <a href="?screen=submit" onclick="event.preventDefault(); openSubmitQuestion()" data-nl="Vraag insturen">Submit a question</a>
-          <a href="?screen=photo-credits" onclick="event.preventDefault(); openFotoverantwoording()" data-nl="Fotoverantwoording">Photo credits</a>
+          <a href="about/" onclick="if(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return; event.preventDefault(); openAbout()" data-nl="Over Netto">About Netto</a>
+          <a href="how-to-play/" onclick="if(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return; event.preventDefault(); openHowItWorks()" data-nl="Hoe werkt het?">How does it work?</a>
+          <a href="submit-question/" onclick="if(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return; event.preventDefault(); openSubmitQuestion()" data-nl="Vraag insturen">Submit a question</a>
+          <a href="photo-credits/" onclick="if(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return; event.preventDefault(); openFotoverantwoording()" data-nl="Fotoverantwoording">Photo credits</a>
           <button type="button" onclick="openSettings()" data-nl="Instellingen">Settings</button>
         </nav>
         <div class="lp-footer-prefs">
@@ -1142,7 +1142,7 @@
   <!-- ============ MODAL: AUTH / ACCOUNT ============ -->
   <div class="modal-overlay" id="modalAuth" onclick="closeModalOnBg(event, 'modalAuth')">
     <div class="modal">
-      <button class="modal-close" onclick="closeAuthModal()">✕</button>
+      <button class="modal-close" aria-label="Close" onclick="closeAuthModal()">✕</button>
       
       <!-- Ingelogde weergave -->
       <div id="authLoggedInView" style="display:none;">

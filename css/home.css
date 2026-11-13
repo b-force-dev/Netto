@@ -470,3 +470,10 @@
   .lp-mode:hover { transform: none; }
   .lp-demo-card.is-fresh .lp-demo-value { animation: none; }
 }
+
+/* Native links share the same visual language as the mode buttons. */
+a.lp-mode { text-decoration: none; }
+.lp-footer-nav a { color: inherit; font: inherit; text-decoration: none; padding: 8px 0; }
+.lp-footer-nav a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+.lp-title .lp-title-first { color: #fff; }
+.lp-hero > .daily-verouderd { grid-column: 1 / -1; margin: 0; max-width: 68ch; }

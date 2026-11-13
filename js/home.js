@@ -5,6 +5,17 @@
 (function () {
   const screen = document.getElementById('screen-home');
   if (!screen) return;
+  const routes = {
+    puzzles: () => openPuzzles(), connection: () => openConnection(),
+    race: () => openPuzzleRace(), live: () => openLiveRounds(), archive: () => openDailyPuzzles()
+  };
+  screen.querySelectorAll('a[data-home-mode]').forEach(link => {
+    link.addEventListener('click', event => {
+      if (event.button || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      routes[link.dataset.homeMode]?.();
+    });
+  });
   const el = id => document.getElementById(id);
   const copy = (nl, en) => (typeof statsCopy === 'function' ? statsCopy(nl, en) : nl);
   const veilig = (lees, terugval) => { try { return lees(); } catch (_) { return terugval; } };
