@@ -477,6 +477,7 @@
     raceState = { index: 0, results: [], correct: 0, streak: 0, longestStreak: 0, remaining: totalSeconds, totalSeconds, durationKey, toleranceKey,
       tolerantie: RACE_TOLERANTIES[toleranceKey] || 1.0, timerId: null, progress: 0, endsAt: null };
     const inDuel = Boolean(isDuel && raceDuelSession);
+    window.nettoTrack?.('race_start', { mode:'race' });
     if (inDuel) raceDuelSession.opponent = { correct: 0, finished: false };
     const oppEl = document.getElementById('raceOpponentHistory');
     if (oppEl) { oppEl.innerHTML = ''; oppEl.style.display = inDuel ? 'flex' : 'none'; }
@@ -634,6 +635,7 @@
     stopRaceTimer();
     const attempted = raceState.results.length;
     if (!raceState.statsSaved) {
+      window.nettoTrack?.('race_finish', { mode:'race' });
       const saved = readStatsStorage('netto_race_stats', []);
       const history = Array.isArray(saved) ? saved : [];
       // Een momentopname blijft bruikbaar als de puzzelcatalogus later verandert.
@@ -667,6 +669,7 @@
       + (isRecord ? `<span class="race-summary-record">${statsCopy('Nieuw persoonlijk record', 'New personal best')}</span>` : '');
     document.getElementById('raceResultsMeta').innerHTML = meta;
     document.getElementById('raceReviewList').innerHTML = review;
+    window.NettoShare?.mountRace({ correct, attempted, longest, tolerance: raceState.tolerantie, seconds: raceState.totalSeconds });
     document.getElementById('racePlay').style.display = 'none';
     document.getElementById('raceResults').style.display = 'block';
     if (raceDuelSession) {

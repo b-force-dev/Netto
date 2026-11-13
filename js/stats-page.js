@@ -181,7 +181,7 @@
       if (s.categories.length) html += card(t('Per categorie', 'By category'), '<div class="stats-category-list">' + s.categories.map(c => '<p class="stats-category-line"><span>' + escape(c.name) + '<small> · ' + c.count + '</small></span><strong>' + factor(c.avg) + '</strong></p>').join('') + '</div><p class="stats-header-desc">' + t('Gebaseerd op losse antwoorden. Er zijn nog geen communitygemiddelden beschikbaar.', 'Based on individual answers. Community averages are not available yet.') + '</p>');
       html += card(t('Jouw ontwikkeling', 'Your progress'), trend());
       html += card(t('Jouw schattingsprofiel', 'Your estimation profile'), '<h3 class="stats-archetype-name">' + profile(s) + '</h3><p>' + t('Een speelse indicatie op basis van je opgeslagen resultaten, geen vergelijking met andere spelers.', 'A playful indication based on your saved results, not a comparison with other players.') + '</p>');
-      html += card(t('Deel je overzicht', 'Share your record'), '<div class="stats-share-actions"><button type="button" class="stats-btn-primary" data-share="image">' + t('Deel afbeelding', 'Share image') + '</button><button type="button" class="stats-btn-secondary" data-share="text">' + t('Kopieer tekst', 'Copy text') + '</button></div><p id="statsShareStatus" role="status" aria-live="polite"></p>');
+      html += card(t('Deel je overzicht', 'Share your record'), '<div class="stats-share-actions"><button type="button" class="stats-btn-primary" data-share="image">' + t('Deel afbeelding', 'Share image') + '</button><button type="button" class="stats-btn-secondary" data-share="text">' + t('Deel tekst', 'Share text') + '</button></div><p id="statsShareStatus" role="status" aria-live="polite"></p>');
     }
     root.innerHTML = html + '</div>';
     root.querySelectorAll('[data-mode]').forEach(button => button.addEventListener('click', () => {
@@ -195,14 +195,28 @@
   function shareText() {
     return 'Netto · ' + t(...modes[mode]) + (demo ? ' · DEMO' : '') + '\n' + profile(summary) + '\n' +
       summary.count + ' ' + t('gespeeld', 'played') + ' · ' + summary.exact + ' spot-on\n' +
-      pct(summary.accuracy) + ' ' + t('gem. nauwkeurigheid', 'avg. accuracy');
+      pct(summary.accuracy) + ' ' + t('gem. nauwkeurigheid', 'avg. accuracy') + '\n' + siteLink();
+  }
+  // Hoofdmap van het spel; lokaal het gepubliceerde adres, want een vriend heeft niets aan localhost.
+  function siteLink() {
+    return local ? 'https://b-force-dev.github.io/nettoo/' : siteBase.origin + siteBase.pathname;
+  }
+  function preferNativeShare() {
+    if (typeof navigator.share !== 'function') return false;
+    return !!window.matchMedia?.('(pointer: coarse)').matches || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   }
   async function share(kind) {
     const status = document.getElementById('statsShareStatus');
     try {
       if (kind === 'text') {
-        await navigator.clipboard.writeText(shareText());
-        status.textContent = t('Tekst gekopieerd.', 'Text copied.');
+        if (preferNativeShare()) { await navigator.share({ title: 'Netto', text: shareText() }); return; }
+        try {
+          await navigator.clipboard.writeText(shareText());
+          status.textContent = t('Tekst gekopieerd.', 'Text copied.');
+        } catch (_) {
+          if (typeof navigator.share !== 'function') throw _;
+          await navigator.share({ title: 'Netto', text: shareText() });
+        }
         return;
       }
       const canvas = document.createElement('canvas'); canvas.width = 1200; canvas.height = 630;

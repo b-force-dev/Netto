@@ -1,0 +1,28 @@
+/* Uitlegblok onderaan de startpagina: echte tekst en links voor zoekmachines en nieuwe spelers. */
+.home-about {
+  margin-top: 46px;
+  max-width: 760px;
+  color: #BEC3E8;
+  font: 400 14px/1.6 'Space Grotesk', sans-serif;
+}
+.home-about h2 { margin: 0 0 10px; color: #fff; font: 600 18px 'Space Grotesk', sans-serif; }
+.home-about p { margin: 0 0 10px; }
+.home-about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.home-about-links a {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+}
+.home-about-links a:hover,
+.home-about-links a:focus-visible { border-color: #FFD84A; color: #FFD84A; }

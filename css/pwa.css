@@ -1,0 +1,67 @@
+/* Installeerbare app: de hint en de herinnering onder het Daily-resultaat, plus
+   aanpassingen voor als Netto als app (zonder browserbalk) draait.
+   Kleuren komen uit de bestaande tokens, dus licht en donker volgen vanzelf. */
+
+.pwa-return { display: grid; gap: 12px; margin-top: 18px; }
+.pwa-return[hidden] { display: none; }
+
+.pwa-card {
+  position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px;
+  padding: 16px 44px 16px 18px; border: 1px solid var(--surface-border); border-radius: 12px;
+  background: var(--surface-2); color: var(--ink);
+}
+.pwa-copy { flex: 1 1 240px; min-width: 0; }
+.pwa-copy strong { display: block; font: 700 15px/1.3 'Space Grotesk', sans-serif; }
+.pwa-copy p { margin: 4px 0 0; color: var(--text-muted); font: 400 13px/1.5 'Space Grotesk', sans-serif; }
+.pwa-steps svg { vertical-align: -3px; margin: 0 1px; }
+.pwa-steps b { color: var(--ink); font-weight: 600; }
+
+.pwa-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.pwa-btn {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 16px;
+  border: 1px solid color-mix(in srgb, var(--ink) 25%, transparent); border-radius: 10px;
+  background: transparent; color: var(--ink); font: 600 14px 'Space Grotesk', sans-serif;
+  text-decoration: none; cursor: pointer; transition: background-color .15s ease, border-color .15s ease;
+}
+.pwa-btn:hover { background: var(--surface); border-color: var(--ink); }
+.pwa-btn.is-primary { border-color: #e7bf2a; background: var(--accent); color: #14163B; }
+.pwa-btn.is-primary:hover { background: #ffd43d; }
+.pwa-btn:focus-visible, .pwa-time:focus-visible, .pwa-dismiss:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+.pwa-time-label { display: inline-flex; align-items: center; gap: 8px; color: var(--text-muted); font: 500 13px 'Space Grotesk', sans-serif; }
+.pwa-time {
+  min-height: 44px; padding: 8px 10px; border: 1px solid var(--surface-border); border-radius: 10px;
+  background: var(--surface); color: var(--ink); font: 500 15px 'JetBrains Mono', monospace; color-scheme: light;
+}
+[data-theme="dark"] .pwa-time { color-scheme: dark; }
+
+.pwa-dismiss {
+  position: absolute; top: 4px; right: 4px; width: 44px; height: 44px; border: 0; border-radius: 10px;
+  background: transparent; color: var(--text-muted); font: 400 22px/1 'Space Grotesk', sans-serif; cursor: pointer;
+}
+.pwa-dismiss:hover { color: var(--ink); }
+
+/* Alleen voor schermlezers. */
+.pwa-live { position: absolute; width: 1px; height: 1px; margin: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+@media (max-width: 480px) {
+  .pwa-card { padding: 14px 40px 14px 14px; }
+  .pwa-actions { width: 100%; }
+  .pwa-actions .pwa-btn { flex: 1 1 auto; }
+  .pwa-time-label { flex: 1 1 100%; }
+  .pwa-time { flex: 1 1 auto; }
+}
+
+/* ===== Als app geopend (geen adresbalk, geen terugknop) ===== */
+@media (display-mode: standalone), (display-mode: fullscreen) {
+  /* Geen trek-om-te-verversen of rubberbandeffect dat de vaste topbalk laat meebewegen. */
+  html, body { overscroll-behavior-y: none; }
+  button, a, [role="button"] { -webkit-tap-highlight-color: transparent; }
+}
+
+/* Randen van het scherm (notch, thuisbalk): de pagina gebruikt bewust geen
+   viewport-fit=cover. Zonder die schakelaar houden iOS en Android de inhoud
+   binnen het veilige vlak, dus de vaste topbalk, de rekenmachine en de ruim
+   dertig vaste bovenmarges (104px, 112px, ...) hoeven niets van de randen te
+   weten. Wie ooit viewport-fit=cover wil, moet die marges eerst optellen met
+   env(safe-area-inset-top). */

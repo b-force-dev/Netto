@@ -125,6 +125,7 @@
     PUZZLE_DATA = puzzle;
     loadActivePuzzle();
     showScreen('puzzle');
+    if (!getLocalPlays()[date]) window.nettoTrack?.('daily_start', { mode:date === TODAY_STR ? 'daily' : 'archive', once:date });
     return true;
   }
 

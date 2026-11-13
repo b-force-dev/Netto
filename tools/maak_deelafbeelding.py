@@ -58,8 +58,9 @@ def main():
     som = lettertype(VET, 46)
 
     tk.text((90, 150), 'NETTO', font=titel, fill=WIT)
-    tk.text((96, 300), 'Drie vragen. Eén verband.', font=onder, fill=ZACHT)
-    tk.text((96, 352), 'Elke dag een nieuwe puzzel.', font=onder, fill=ZACHT)
+    # Engels: dat is de standaardtaal van de site en dus van de deelkaart.
+    tk.text((96, 300), 'Three questions. One connection.', font=onder, fill=ZACHT)
+    tk.text((96, 352), 'A new puzzle every day.', font=onder, fill=ZACHT)
 
     # De som als beeldmerk: dat is waar het spel om draait.
     doos = (90, 452, 640, 540)
