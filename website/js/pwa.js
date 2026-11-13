@@ -288,6 +288,22 @@
           })));
     }
 
+    // Eerst één rustige regel; tijd en agendaknoppen komen pas na een klik.
+    if (!saved && !editingReminder) {
+      return el('div', { class: 'pwa-card pwa-reminder is-compact' },
+        el('div', { class: 'pwa-copy' },
+          el('strong', { text: copy('Morgen weer een nieuwe Daily', 'A new Daily tomorrow') })),
+        el('div', { class: 'pwa-actions' },
+          el('button', {
+            type: 'button', class: 'pwa-btn', text: copy('Herinner mij', 'Remind me'),
+            onclick: () => { editingReminder = true; render(); container.querySelector('input')?.focus(); }
+          })),
+        el('button', {
+          type: 'button', class: 'pwa-dismiss', 'aria-label': copy('Niet meer tonen', 'Don’t show again'), text: '×',
+          onclick: () => { storageSet(KEYS.reminderDismissed, '1'); render(); }
+        }));
+    }
+
     const time = validTime(pendingTime) ? pendingTime : (saved?.time || DEFAULT_REMINDER_TIME);
     const input = el('input', {
       type: 'time', class: 'pwa-time', value: time, required: '',
@@ -378,7 +394,10 @@
     }
     const target = mount();
     if (!target) return;
-    const cards = [reminderCard(), installCard()].filter(Boolean);
+    // Eén blok tegelijk: eerst de herinnering, en pas als die geregeld of
+    // weggeklikt is de installatietip.
+    const volgorde = savedReminder() ? [installCard(), reminderCard()] : [reminderCard(), installCard()];
+    const cards = volgorde.filter(Boolean).slice(0, 1);
     target.replaceChildren(...cards, el('p', { class: 'pwa-live', role: 'status', 'aria-live': 'polite', text: announcement }));
     target.hidden = cards.length === 0;
     announcement = '';
