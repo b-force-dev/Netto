@@ -180,3 +180,7 @@ Deze partij: 7 met foto; 8 bewust zonder. Nog 0 Library-vragen open; de oorspron
 | Hoeveel kleine vakjes telt een vierkant raster van veertien bij veertien? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
 | Wat is het atoomnummer van nikkel? | [Commons](https://commons.wikimedia.org/wiki/File:Nickel_chunk.jpg); Materialscientist (talk); CC BY-SA 3.0 | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
 | Over hoeveel landen is het werelderfgoed Het architectonische werk van Le Corbusier verspreid? | [Commons](https://commons.wikimedia.org/wiki/File:Le_Corbusier_(1964).jpg); Joop van Bilsen for Anefo; CC0 | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+
+## Ook historische Library-teksten gelijkgetrokken
+
+26 aanvullende hernoemingen voor ronde 2 vastgelegd, zodat oude en nieuwe teksten dezelfde veilige fotokeuze behouden. De oude formulering over de zuilen aan de voorzijde van het Witte Huis staat apart op null. De nieuwe vraag noemt de zuidelijke portiek; die twee definities zijn niet als alias samengevoegd.
