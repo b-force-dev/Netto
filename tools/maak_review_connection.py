@@ -27,7 +27,7 @@ def main():
     translations = read_js(ROOT / 'data/netto_bronnen_en.js')
     translations['Bestaande bron opgehaald; het antwoord staat op de pagina.'] = 'See the linked source for the supporting information.'
     puzzles, metadata, seen = [], {}, set()
-    assert 1 <= len(selection['puzzles']) <= 50
+    assert len(selection['puzzles']) >= 1
     for number, p in enumerate(selection['puzzles'], 1):
         assert p['number'] == number
         questions = p['questions']
