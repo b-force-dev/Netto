@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   const siteBase = new URL('../', document.currentScript?.src || location.href);
-  const modes = { daily: ['Daily', 'Daily'], library: ['Puzzels', 'Puzzles'], connection: ['Find the Connection', 'Find the Connection'], race: ['Puzzelrace', 'Puzzle Race'] };
+  const modes = { daily: ['Daily', 'Daily'], library: ['Puzzels', 'Puzzles'], connection: ['Find the Connection', 'Find the Connection'], chain: ['Kettingen', 'Chains'], race: ['Puzzelrace', 'Puzzle Race'] };
   const read = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch (_) { return fallback; } };
   const t = (nl, en) => readLanguage() === 'en' ? en : nl;
   function readLanguage() { try { return localStorage.getItem('netto_language') === 'nl' ? 'nl' : 'en'; } catch (_) { return 'en'; } }
@@ -73,6 +73,9 @@
     } else if (selected === 'library') {
       const plays = read('netto_library_plays', {});
       entries = (data.library || []).map(p => attempt(plays[p.id], p, plays[p.id]?.completedAt?.slice(0, 10)));
+    } else if (selected === 'chain') {
+      const plays = read('netto_chain_plays', {});
+      entries = (window.NETTO_BREINKRAKERS || []).map(p => attempt(plays[p.id], p, plays[p.id]?.completedAt?.slice(0, 10)));
     } else if (selected === 'connection') {
       const puzzles = new Map((data.connection || data.library || []).map(p => [p.id, p]));
       const progressKey = data.connection_edition ? 'netto_connection_progress_' + data.connection_edition : 'netto_connection_progress';

@@ -1353,7 +1353,7 @@
       toast.innerHTML = `
         <div class="toast-icon">📋</div>
         <div class="toast-body">
-          <b>Gekopieerd!</b>
+          <b>${statsCopy('Gekopieerd!', 'Copied!')}</b>
           <span>${msg}</span>
         </div>
       `;
@@ -1362,7 +1362,7 @@
       toast.innerHTML = `
         <div class="toast-icon">🧐</div>
         <div class="toast-body">
-          <b>Cijfers gevraagd</b>
+          <b>${statsCopy('Cijfers gevraagd', 'Numbers, please')}</b>
           <span>${quote}</span>
         </div>
       `;
@@ -2407,9 +2407,9 @@
     const g2 = parseFormattedNumber(document.getElementById('g2').value);
     const g3 = parseFormattedNumber(document.getElementById('g3').value);
 
-    if (!validWholeAnswers([g1,g2,g3])) {
+    if (![g1,g2,g3].every(value => Number.isSafeInteger(value) && value > 0)) {
       showNoticeToast(
-        statsCopy('Vul eerst alle drie de vragen in met een getal groter dan 0.', 'Enter a number greater than 0 for all three questions.'),
+        statsCopy('Vul voor alle drie de vragen een positief heel getal in (bijvoorbeeld 1500 of 1,5k).', 'Enter a positive whole number for all three questions (for example, 1500 or 1.5k).'),
         '✏️', statsCopy('Antwoorden ontbreken', 'Complete your answers'));
       return;
     }
@@ -2451,6 +2451,7 @@
         input.disabled = true;
       });
       button.style.display = 'none';
+      document.getElementById('dailyAutoHint')?.remove();
       renderResultsUI(...guesses, avgFactor, true);
       setDailySyncStatus(result.ranked);
       if (!document.getElementById('streakCalendarPopover')?.hidden) renderStreakCalendar();
