@@ -221,3 +221,40 @@ Deze partij: 0 met foto; 30 bewust zonder.
 | Hoeveel uren zitten er in een standaard kalenderjaar? | null | Rekenkundige/abstracte vraag. Een schema, tabel of volledige geometrische figuur zou de uitkomst of berekening tonen; geen passende illustratie bevestigd. |
 | Hoeveel verschillende euromunten zijn er? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
 | Hoeveel genummerde vakjes heeft een Europees roulettewiel, inclusief 0? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+
+## Vervolglijst, partij 31–60
+
+Deze partij: 0 met foto; 30 bewust zonder.
+
+| Vraag | Keuze en bronvermelding | Reden |
+|---|---|---|
+| Hoeveel sterren staan er op de vlag van de Verenigde Staten? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel dieren bevat de klassieke Big Five van Afrika? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel push-ups deed Charles Servizio in 24 uur in april 1993, afgerond op duizendtallen? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel graden is elke binnenhoek van een regelmatige zeshoek? | null | Rekenkundige/abstracte vraag. Een schema, tabel of volledige geometrische figuur zou de uitkomst of berekening tonen; geen passende illustratie bevestigd. |
+| Hoe lang was de langste kat ooit in centimeters? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel minaretten heeft de Taj Mahal? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel duizend beeldpunten telt een Full HD-scherm? | null | Rekenkundige/abstracte vraag. Een schema, tabel of volledige geometrische figuur zou de uitkomst of berekening tonen; geen passende illustratie bevestigd. |
+| Hoeveel procent van het lichaam was bedekt met tatoeages bij de meest getatoeëerde man? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel groepen heeft het moderne periodiek systeem? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel bulten heeft een Bactrische kameel? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel zijvlakken heeft een icosaeder? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoe lang was de langste man ooit in centimeters? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel noten bevat een standaard majeurtoonladder inclusief het herhaalde octaaf? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel ribben heeft een menselijk lichaam in totaal? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel manieren kun je 3 renners op een podium van 8 deelnemers indelen? | null | Rekenkundige/abstracte vraag. Een schema, tabel of volledige geometrische figuur zou de uitkomst of berekening tonen; geen passende illustratie bevestigd. |
+| Hoeveel jongleurs deden mee aan het grootste jongleerrecord? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoe lang duurde de langste voetbalwedstrijd ooit in minuten? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel zijden heeft een octagoon? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel poten heeft een kreeft? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel elektronen kan de derde elektronenschil maximaal bevatten? | null | Rekenkundige/abstracte vraag. Een schema, tabel of volledige geometrische figuur zou de uitkomst of berekening tonen; geen passende illustratie bevestigd. |
+| Hoeveel leeuwen staan er rond de Nelson’s Column in Londen? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel stenen staan er in de Stonehenge-hoofdstructuur ongeveer overeind? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel munten telt een volledige set eurocent- en euromunten? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel strepen heeft het klassieke Adidas-logo? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel halve tonen bevat een octaaf? | null | Rekenkundige/abstracte vraag. Een schema, tabel of volledige geometrische figuur zou de uitkomst of berekening tonen; geen passende illustratie bevestigd. |
+| Hoeveel snaren heeft een standaard gitaar? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel speelkaarten zitten er in een standaard kaartspel (zonder jokers)? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel farao’s hadden de drie grote piramides van Gizeh als opdrachtgever? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoe lang waren de langste vingernagels aan één hand in meters? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel snaren heeft een Chinese guzheng? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
