@@ -94,3 +94,79 @@ Bij overname is het ongecommitteerde werk veiliggesteld in een stash. De onafger
 De Engelse vraag is leidend, met gelijkwaardige Nederlandse vertaling. Bronnen en eigen bewijszinnen staan per vraag hieronder en in de selectie en bank. Algemene encyclopedische feiten zijn gecontroleerd via Wikipedia; primaire bronnen omvatten NASA, UNESCO, IWF, de Zuid-Afrikaanse overheid, NFL, WTO en uitgevers. De boekhoofdstukken zijn geteld in de oorspronkelijke teksten bij Project Gutenberg. De Beatles-telling is bevestigd bij Guinness; de Billboard-pagina blokkeert automatische toegang. PBS blokkeert directe toegang, maar het geïndexeerde PBS-fragment bevestigt de drie rumbastijlen. De kapotte NFL-videolink is vervangen door het officiële reglement. Dit zijn gerichte broncontroles, geen hercontrole van de volledige oude inhoud.
 
 Partij 1 (41–50): tools/controleer_puzzels.py geeft ALLES IN ORDE. Ook tests/puzzle-library.cjs, tests/photo-links.cjs, tests/daily-reliability.cjs en tests/daily-server.cjs slagen. Historische visuele waarschuwingen van de validator blijven bestaan. Geen foto's, handgeschreven frontend, cacheversies, website-mirror of Supabase gewijzigd; geen Daily-vragen toegevoegd.
+
+## Connection-partij 2
+
+Elke som is exact; de drie vragen hebben verschillende categorieën, kleurfamilies en eenheden. Moeilijkheid is een redactionele inschatting. Bronnen geraadpleegd op 13 november 2026.
+
+### Connection 51: 6 × 2 = 12 (easy)
+
+- **bank-295** — How many states does Australia have, excluding territories? / Hoeveel staten heeft Australië, zonder territoria? Antwoord: **6**. [Bron](https://en.wikipedia.org/wiki/States_and_territories_of_Australia). Australië heeft zes staten, naast zijn territoria.
+- **bank-586** — How many wheels does a conventional solo motorcycle have, excluding a sidecar? / Hoeveel wielen heeft een gewone solomotorfiets, zonder zijspan? Antwoord: **2**. [Bron](https://en.wikipedia.org/wiki/Motorcycle). Een gewone solomotorfiets heeft twee wielen.
+- **bank-1008** — How many countries founded NATO in 1949? / Hoeveel landen richtten de NAVO op in 1949? Antwoord: **12**. [Bron](https://www.nato.int/cps/en/natohq/topics_52044.htm). Het Noord-Atlantisch Verdrag werd in 1949 door twaalf landen ondertekend.
+
+### Connection 52: 32 ÷ 2 = 16 (intermediate)
+
+- **bank-1115** — How many numbered piano sonatas did Ludwig van Beethoven compose? / Hoeveel genummerde pianosonates componeerde Ludwig van Beethoven? Antwoord: **32**. [Bron](https://en.wikipedia.org/wiki/Piano_sonatas_(Beethoven)). Beethovens standaard genummerde reeks bevat 32 pianosonates.
+- **bank-466** — How many different chemical elements are in carbon dioxide, CO₂? / Hoeveel verschillende chemische elementen bevat koolstofdioxide, CO₂? Antwoord: **2**. [Bron](https://pubchem.ncbi.nlm.nih.gov/compound/Carbon-dioxide). CO₂ bevat koolstof en zuurstof: twee elementen.
+- **bank-583** — How many carriages make up a Eurostar e320 train? / Hoeveel rijtuigen vormen een Eurostar e320-trein? Antwoord: **16**. [Bron](https://press.siemens.com/global/en/feature/eurostar-e320-high-speed-trains-eurostar-international-limited). Een Eurostar e320 bestaat uit zestien rijtuigen; dit is niet de oudere e300.
+
+### Connection 53: 9 + 4 = 13 (easy)
+
+- **bank-347** — How many central scenes from Genesis did Michelangelo paint on the Sistine Chapel ceiling? / Hoeveel centrale scènes uit Genesis schilderde Michelangelo op het plafond van de Sixtijnse Kapel? Antwoord: **9**. [Bron](https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/volta/storie-centrali.html). De centrale reeks bestaat uit negen scènes uit Genesis.
+- **bank-897** — How many countries share a land border with Nigeria? / Hoeveel landen grenzen aan Nigeria? Antwoord: **4**. [Bron](https://en.wikipedia.org/wiki/Nigeria). Nigeria grenst aan Benin, Niger, Tsjaad en Kameroen: vier landen.
+- **bank-324** — How many British colonies became the original United States? / Hoeveel Britse koloniën vormden de oorspronkelijke Verenigde Staten? Antwoord: **13**. [Bron](https://en.wikipedia.org/wiki/Thirteen_Colonies). De Verenigde Staten ontstonden uit dertien Britse koloniën.
+
+### Connection 54: 8 − 5 = 3 (easy)
+
+- **bank-1596** — How many vertices does a cube have? / Hoeveel hoekpunten heeft een kubus? Antwoord: **8**. [Bron](https://en.wikipedia.org/wiki/Cube). Een kubus heeft acht hoekpunten.
+- **bank-1484** — How many stars are on the national flag of the People’s Republic of China? / Hoeveel sterren telt de nationale vlag van de Volksrepubliek China? Antwoord: **5**. [Bron](https://en.wikipedia.org/wiki/Flag_of_China). De vlag heeft één grote en vier kleinere sterren: vijf in totaal.
+- **bank-1591** — How many novels make up C. S. Lewis’s completed Space Trilogy? / Hoeveel romans vormen de voltooide ruimtetrilogie van C. S. Lewis? Antwoord: **3**. [Bron](https://www.simonandschuster.com/series/The-Space-Trilogy). De reeks bestaat uit Out of the Silent Planet, Perelandra en That Hideous Strength: drie romans.
+
+### Connection 55: 3 × 9 = 27 (intermediate)
+
+- **bank-241** — How many principal pyramids form the Giza pyramid complex? / Hoeveel hoofdpiramides vormen het piramidecomplex van Gizeh? Antwoord: **3**. [Bron](https://en.wikipedia.org/wiki/Giza_pyramid_complex). De drie hoofdpiramides zijn die van Cheops, Chefren en Mykerinos.
+- **bank-880** — How many countries border the Democratic Republic of the Congo, including across Lake Tanganyika? / Hoeveel landen grenzen aan de Democratische Republiek Congo, inclusief over het Tanganyikameer? Antwoord: **9**. [Bron](https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo). De negen buurlanden zijn Angola, Burundi, de Centraal-Afrikaanse Republiek, Congo-Brazzaville, Rwanda, Zuid-Soedan, Tanzania, Oeganda en Zambia.
+- **bank-390** — How many numbered piano concertos are in Mozart’s standard concerto numbering? / Hoeveel genummerde pianoconcerten telt de gebruikelijke nummering van Mozarts pianoconcerten? Antwoord: **27**. [Bron](https://en.wikipedia.org/wiki/Piano_concertos_by_Wolfgang_Amadeus_Mozart). De gebruikelijke nummering loopt van 1 tot en met 27; vroege bewerkingen tellen daarin mee.
+
+### Connection 56: 55 ÷ 11 = 5 (intermediate)
+
+- **bank-1588** — How many chapters are in Jane Austen’s Emma across all three volumes? / Hoeveel hoofdstukken telt Emma van Jane Austen over alle drie de delen? Antwoord: **55**. [Bron](https://www.gutenberg.org/files/158/158-h/158-h.htm). De delen tellen 18, 18 en 19 hoofdstukken: samen 55.
+- **bank-423** — How many Advocates General did the Court of Justice of the European Union have in 2024? / Hoeveel advocaten-generaal telde het Hof van Justitie van de Europese Unie in 2024? Antwoord: **11**. [Bron](https://curia.europa.eu/jcms/jcms/Jo2_7024/en/). Het Hof telde in 2024 elf advocaten-generaal.
+- **bank-902** — How many countries share a land border with Peru? / Hoeveel landen grenzen aan Peru? Antwoord: **5**. [Bron](https://en.wikipedia.org/wiki/Peru). Peru grenst aan Ecuador, Colombia, Brazilië, Bolivia en Chili: vijf landen.
+
+### Connection 57: 30 + 2 = 32 (intermediate)
+
+- **bank-1413** — How many teams played in the NBA in the 2024–25 season? / Hoeveel teams speelden in de NBA in het seizoen 2024–25? Antwoord: **30**. [Bron](https://en.wikipedia.org/wiki/2024%E2%80%9325_NBA_season). De NBA telde in 2024–25 dertig teams.
+- **bank-882** — How many countries share a land border with Ecuador? / Hoeveel landen grenzen aan Ecuador? Antwoord: **2**. [Bron](https://en.wikipedia.org/wiki/Ecuador). Ecuador grenst aan Colombia en Peru: twee landen.
+- **bank-1253** — How many departments does Colombia have, excluding the capital district of Bogotá? / Hoeveel departementen heeft Colombia, zonder het hoofdstedelijke district Bogotá? Antwoord: **32**. [Bron](https://en.wikipedia.org/wiki/Departments_of_Colombia). Colombia heeft 32 departementen en daarnaast het hoofdstedelijke district Bogotá.
+
+### Connection 58: 27 − 24 = 3 (intermediate)
+
+- **bank-1589** — How many numbered chapters does Bram Stoker’s Dracula have, excluding its closing note? / Hoeveel genummerde hoofdstukken telt Dracula van Bram Stoker, zonder de afsluitende notitie? Antwoord: **27**. [Bron](https://www.gutenberg.org/files/345/345-h/345-h.htm). Dracula telt 27 genummerde hoofdstukken, gevolgd door een notitie.
+- **bank-1599** — How many elders surround the throne in Revelation 4:4? / Hoeveel oudsten omringen de troon in Openbaring 4:4? Antwoord: **24**. [Bron](https://www.biblegateway.com/passage/?search=Revelation%204%3A4&version=NIV). Openbaring 4:4 beschrijft vierentwintig oudsten op vierentwintig tronen.
+- **bank-910** — How many countries share a land border with Venezuela? / Hoeveel landen grenzen aan Venezuela? Antwoord: **3**. [Bron](https://nl.wikipedia.org/wiki/Venezuela). Venezuela grenst aan Colombia, Brazilië en Guyana: drie landen.
+
+### Connection 59: 50 × 2 = 100 (intermediate)
+
+- **bank-1586** — After how many consecutive moves by each player without a pawn move or capture may the player to move claim a draw under FIDE rules? / Na hoeveel opeenvolgende zetten van iedere speler zonder pionzet of slag mag de speler die aan zet is volgens FIDE remise claimen? Antwoord: **50**. [Bron](https://handbook.fide.com/chapter/E012023). Artikel 9.3.2 staat een remiseclaim toe na vijftig zetten van iedere speler zonder pionzet of slag.
+- **bank-895** — How many countries share a land border with Nicaragua? / Hoeveel landen grenzen aan Nicaragua? Antwoord: **2**. [Bron](https://en.wikipedia.org/wiki/Nicaragua). Nicaragua grenst aan Honduras en Costa Rica: twee landen.
+- **bank-1598** — How many years make up one century? / Hoeveel jaar telt een eeuw? Antwoord: **100**. [Bron](https://dictionary.cambridge.org/dictionary/english/century). Een eeuw is een periode van honderd jaar.
+
+### Connection 60: 24 ÷ 6 = 4 (intermediate)
+
+- **bank-1454** — How many frames per second is the standard traditional sound-film cinema projection rate? / Hoeveel beelden per seconde telt de traditionele standaardprojectiesnelheid van geluidsfilm in de bioscoop? Antwoord: **24**. [Bron](https://pub.smpte.org/pub/st194/st0194-2002_stable2012.pdf). De traditionele standaard voor geluidsfilm is 24 beelden per seconde.
+- **bank-1264** — How many countries used the Central African CFA franc in 2024? / Hoeveel landen gebruikten de Centraal-Afrikaanse CFA-frank in 2024? Antwoord: **6**. [Bron](https://en.wikipedia.org/wiki/Central_African_CFA_franc). Kameroen, de Centraal-Afrikaanse Republiek, Tsjaad, Congo-Brazzaville, Equatoriaal-Guinea en Gabon: zes landen.
+- **bank-964** — How many states form the Federated States of Micronesia? / Hoeveel deelstaten vormen de Federale Staten van Micronesië? Antwoord: **4**. [Bron](https://en.wikipedia.org/wiki/Federated_States_of_Micronesia). Yap, Chuuk, Pohnpei en Kosrae vormen vier deelstaten.
+
+## Eindresultaat Deel B
+
+Find the Connection groeit van **40 naar 60 puzzels**: twintig toevoegingen met zestig unieke vragen. Verdeling totaal: **+ 18, − 13, × 15, ÷ 14**. De twintig toevoegingen gebruiken elk teken precies vijf keer. De reeks telt 28 easy- en 32 intermediate-puzzels; niveaus blijven redactionele inschattingen.
+
+De tweede partij (51–60) slaagt voor alle vijf vereiste controles: tools/controleer_puzzels.py geeft **ALLES IN ORDE**; tests/puzzle-library.cjs, tests/photo-links.cjs, tests/daily-reliability.cjs en tests/daily-server.cjs slagen. Aanvullend slaagt tools/test_quality_review.cjs met 576 gecontroleerde antwoorden. git diff --check is schoon. De bestaande visuele waarschuwingen zijn niet als fouten aangemerkt; de twintig nieuwe puzzels hebben elk drie verschillende kleurfamilies.
+
+Onafhankelijk vergeleken met begincommit d6b80c5: alle veertig bestaande Connection-puzzels en hun reviewmetadata zijn inhoudelijk exact gelijk, evenals de overige spelmodi en fotodata. Alle oorspronkelijke antwoorden in de vragenbank zijn behouden. Alleen redactievelden van 47 geselecteerde bestaande bankrijen zijn aangepast; dertien nieuwe bankrijen zijn toegevoegd. Andere werkbladen zijn inhoudelijk gelijk gebleven. Het voorlopige Eurostar e300-feit is vóór toevoeging vervangen door het duidelijk gedocumenteerde zestienrijtuigstel e320 van Siemens; het bestaande bankantwoord 16 bleef behouden.
+
+De eeuwdefinitie is bevestigd bij Cambridge Dictionary. De vierentwintig oudsten staan expliciet in Openbaring 4:4. Deze vervangen doublures zonder bestaande vragen te wijzigen. README vermeldt zestig puzzels. De generator behoudt editie, id's en volgorde en vult uitsluitend de Connection-catalogus en bijbehorende reviewmetadata aan.
+
+Geen wijzigingen aan fotos/, data/netto_fotos.js, index.html, css/, handgeschreven js/, Daily-selecties, website/ of cacheversies. Geen Supabase gebruikt en geen toekomstige Daily-antwoorden toegevoegd. Cacheverhoging en website-sync zijn volgens opdracht niet uitgevoerd. Er is niets gepusht. De overgenomen onvoltooide wijzigingen blijven herstelbaar in de stash met omschrijving “Veiligstellen overgenomen onafgeronde Connection-uitbreiding”. Losse hulpbestanden worden niet gecommit en zijn na afronding verwijderd. Een browserreview en nieuwe foto's vallen buiten deze opdracht; er is geen open implementatiepunt voor het gevraagde minimum van zestig puzzels.
