@@ -46,3 +46,41 @@ Na dit herstel slagen `node tests/photo-links.cjs` en `python tools/controleer_p
 | Hoeveel zijvlakken heeft een regelmatige dodecaëdrische dobbelsteen? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
 | Hoeveel coupures bevatte de eerste reeks eurobankbiljetten, inclusief het biljet van vijfhonderd euro? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
 | Hoeveel landen hebben een kust aan de Kaspische Zee? | Foto | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+
+## Library-vragen 31–60 van 135 en aanvullend magnesium
+
+Deze partij: 14 met foto; 17 bewust zonder. Nog 75 Library-vragen open; de oorspronkelijke vervolglijst telt 248 (met overlap met Library).
+
+| Vraag | Keuze en bronvermelding | Reden |
+|---|---|---|
+| Hoeveel lidstaten telt de Veiligheidsraad van de Verenigde Naties in totaal? | [Commons](https://commons.wikimedia.org/wiki/File:UN_emblem_blue.svg); Joowwww; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel liter bevat een salmanazar-wijnfles? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel tonen onderscheidt het standaard-Noord-Vietnamees? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| In hoeveel door Eon geproduceerde James Bond-films speelde Roger Moore Bond? | [Commons](https://commons.wikimedia.org/wiki/File:Sir_Roger_Moore_Allan_Warren.jpg); Allan warren; CC BY-SA 3.0 | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Wat is het atoomnummer van zuurstof? | [Commons](https://commons.wikimedia.org/wiki/File:Liquid_oxygen_in_a_beaker_4.jpg); U.S. Air Force/Staff Sgt. Jim Araos; Public domain | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel liter bevat een nebuchadnezzar-wijnfles? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel korte verhalen staan in Dubliners van James Joyce? | [Commons](https://commons.wikimedia.org/wiki/File:Revolutionary_Joyce_Better_Contrast.jpg); Camille Ruf; Public domain | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel jaar duurde de terugreis van Odysseus na de Trojaanse Oorlog in Homerus’ Odyssee? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel landen grenzen aan Kenia? | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Kenya.svg); User:Pumbaa80; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel nummers staan op het oorspronkelijke Beatles-album Abbey Road uit 1969, inclusief Her Majesty? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel landen grenzen aan Ethiopië? | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Ethiopia.svg); Drawn by User:SKopp; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel lijnen had de London Underground in 2025, zonder Elizabeth line en Overground? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel lange films telde de Toy Story-reeks eind 2019? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van koolstof? | [Commons](https://commons.wikimedia.org/wiki/File:Coal_anthracite.jpg); onbekend; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel positieve delers heeft het getal driehonderdzestig? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel landen grenzen aan Niger? | [Commons](https://commons.wikimedia.org/wiki/File:Niger_(orthographic_projection).svg); Marcos Elias de Oliveira Júnior; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Uit hoeveel kuuroorden bestaat de UNESCO-site The Great Spa Towns of Europe? | [Commons](https://commons.wikimedia.org/wiki/File:Roman_Baths_in_Bath_Spa,_England_-_July_2006.jpg); Diliff; CC BY 2.5 | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel episodes telt de roman Ulysses van James Joyce? | [Commons](https://commons.wikimedia.org/wiki/File:Revolutionary_Joyce_Better_Contrast.jpg); Camille Ruf; Public domain | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel borstwervels heeft een gewone volwassen mens? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel Amerikaanse theelepels vormen één Amerikaanse eetlepel? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel zuurstofatomen bevat één molecuul zwavelzuur? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van silicium? | [Commons](https://commons.wikimedia.org/wiki/File:SiliconCroda.jpg); Enricoros at English Wikipedia; Public domain | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel handwortelbeentjes heeft één pols van een gewone volwassen mens? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel jaar duurt een volledige termijn van een senator van de Verenigde Staten? | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg); Uploaded by Dbenbenn ; edited by users such as Zscout370 , Jacobolus , Indolences , and Technion .; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel motoren heeft een Airbus A380? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel landen grenzen aan Libië? | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Libya.svg); Various The SVG code is valid . This vector image was created with a text editor .; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel driehoekige punten heeft een standaard backgammonbord? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel positieve delers heeft het getal zevenhonderdtwintig? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel geboden bevat de Bijbelse decaloog? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel oogleden heeft een gewone uil per oog? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van magnesium? | [Commons](https://commons.wikimedia.org/wiki/File:Magnesium_crystals.jpg); Warut Roonguthai; CC BY-SA 3.0 | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
