@@ -656,7 +656,7 @@
     // een gat. Pas oordelen als de database is geraadpleegd — of als er geen
     // verbinding is, want dan is de statische set het eindantwoord.
     if (!dailySyncAfgerond) return;
-    const kaart = document.querySelector('.home-daily-card');
+    const kaart = document.getElementById('homeDailyCard');
     if (!kaart) return;
     let melding = document.getElementById('dailyVerouderdMelding');
     if (!datumVanPuzzel) {
@@ -749,7 +749,7 @@
     if (operatorElement) operatorElement.textContent = operator;
     const equation = document.getElementById('homeDailyEquation');
     if (equation) equation.setAttribute('aria-label', `${translatedCategories[0] || 'A'} ${operator} ${translatedCategories[1] || 'B'} = ${translatedCategories[2] || 'C'}`);
-    const card = document.querySelector('.home-daily-card');
+    const card = document.getElementById('homeDailyCard');
     if (card) card.dataset.operator = operator;
     categories.forEach((category, index) => {
       const icon = document.getElementById(`homeDailyCategory${index + 1}`);
