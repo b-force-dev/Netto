@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#252FB6">
+<title>Netto · offline</title>
+<!-- Wordt door sw.js getoond als een pagina niet geladen kan worden. Dit bestand
+     staat los van de rest: geen externe stijlen of scripts, geen relatieve
+     links, want het wordt onder elk willekeurig adres van de site geserveerd. -->
+<style>
+  :root { --bg: #252FB6; --card: #FFFFFF; --ink: #14163B; --muted: #4C519C; --accent: #FFD84A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1E2A5A; --card: #2A3567; --ink: #EDEFFB; --muted: #C7CEEF; --accent: #F4B860; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--bg); }
+  body {
+    min-height: 100vh; min-height: 100dvh; display: grid; place-items: center;
+    padding: max(20px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+    background: var(--bg); color: var(--ink);
+    font-family: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  }
+  main { width: min(100%, 460px); padding: 32px 28px; border-radius: 20px; background: var(--card); box-shadow: 0 16px 38px rgba(11, 14, 63, .22); }
+  .logo { display: grid; place-items: center; width: 56px; height: 56px; margin-bottom: 22px; border-radius: 14px; background: #14163B; color: #FFD43B; font: 800 30px/1 system-ui, sans-serif; }
+  h1 { font-size: 26px; line-height: 1.15; letter-spacing: -.02em; margin-bottom: 12px; }
+  p { color: var(--muted); font-size: 16px; line-height: 1.55; }
+  p + p { margin-top: 10px; }
+  button { margin-top: 24px; min-height: 48px; padding: 12px 22px; border: 0; border-radius: 12px; background: var(--accent); color: #14163B; font: 700 16px/1 inherit; cursor: pointer; }
+  button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  [lang="nl"] { display: none; }
+  html[data-lang="nl"] [lang="en"] { display: none; }
+  html[data-lang="nl"] [lang="nl"] { display: revert; }
+</style>
+</head>
+<body>
+<main role="main">
+  <div class="logo" aria-hidden="true">N</div>
+  <section lang="en">
+    <h1>You're offline</h1>
+    <p>The Daily is fetched fresh every day, so Netto needs a connection to show today's puzzle.</p>
+    <p>Check your Wi-Fi or mobile data and try again.</p>
+    <button type="button" data-retry>Try again</button>
+  </section>
+  <section lang="nl">
+    <h1>Je bent offline</h1>
+    <p>De Daily wordt elke dag opnieuw opgehaald, dus Netto heeft een verbinding nodig om de puzzel van vandaag te tonen.</p>
+    <p>Controleer je wifi of mobiele data en probeer het opnieuw.</p>
+    <button type="button" data-retry>Opnieuw proberen</button>
+  </section>
+</main>
+<script>
+  try {
+    // Zelfde sleutel als js/i18n.js; standaard Engels.
+    if (localStorage.getItem('netto_language') === 'nl') {
+      document.documentElement.dataset.lang = 'nl';
+      document.documentElement.lang = 'nl';
+      document.title = 'Netto · offline';
+    }
+  } catch (error) { /* opslag geblokkeerd: Engels blijft staan */ }
+  document.querySelectorAll('[data-retry]').forEach(function (knop) {
+    knop.addEventListener('click', function () { location.reload(); });
+  });
+  // Zodra de verbinding terug is, laad de echte pagina.
+  window.addEventListener('online', function () { location.reload(); });
+</script>
+</body>
+</html>

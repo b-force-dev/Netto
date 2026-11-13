@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- GitHub Pages toont dit bestand voor elk adres dat niet bestaat, op elke diepte.
+     Daarom een absolute basis; tools/seo.py zet hier het site-adres in. -->
+<base href="https://b-force-dev.github.io/nettoo/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-nl="Pagina niet gevonden | Netto">Page not found | Netto</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#14163B">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: #14163B;
+    color: #fff;
+    font: 400 17px/1.55 "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { width: min(520px, 100%); }
+  .sum { font: 700 clamp(44px, 14vw, 76px)/1 ui-monospace, "JetBrains Mono", Consolas, monospace; letter-spacing: -0.02em; }
+  .sum b { color: #FFD84A; }
+  h1 { margin: 18px 0 8px; font-size: clamp(24px, 6vw, 32px); line-height: 1.2; }
+  p { margin: 0 0 22px; color: #BEC3E8; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  a {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .primary { background: #FFD84A; color: #14163B; }
+  .secondary { border: 1px solid rgba(255, 255, 255, 0.28); color: #fff; }
+  a:hover, a:focus-visible { filter: brightness(1.12); outline: 2px solid #fff; outline-offset: 2px; }
+  [hidden] { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <div class="sum" aria-hidden="true">4<b>0</b>4</div>
+  <section lang="en" data-lang="en">
+    <h1>This page does not add up.</h1>
+    <p>We could not find the page you were looking for. It may have moved, or the link may be mistyped. The Daily is still waiting for your estimates.</p>
+    <div class="actions">
+      <a class="primary" href="daily/">Play today's Daily</a>
+      <a class="secondary" href="./">Go to the home page</a>
+    </div>
+  </section>
+  <section lang="nl" data-lang="nl" hidden>
+    <h1>Deze pagina klopt niet.</h1>
+    <p>We konden de pagina die je zocht niet vinden. Misschien is hij verhuisd, of staat er een typfout in de link. De Daily wacht nog op je schattingen.</p>
+    <div class="actions">
+      <a class="primary" href="daily/">Speel de Daily van vandaag</a>
+      <a class="secondary" href="./">Naar de startpagina</a>
+    </div>
+  </section>
+</main>
+<script>
+  // Zelfde taalkeuze als de app; zonder keuze blijft het Engels.
+  try {
+    if (localStorage.getItem('netto_language') === 'nl') {
+      document.documentElement.lang = 'nl';
+      document.title = document.querySelector('title').dataset.nl;
+      document.querySelector('[data-lang="en"]').hidden = true;
+      document.querySelector('[data-lang="nl"]').hidden = false;
+    }
+  } catch (_) {}
+</script>
+</body>
+</html>
