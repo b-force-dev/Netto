@@ -349,22 +349,29 @@
       if (error) throw error;
       composerUsedLibraryIds = new Set((data || []).map(r => r.source_library_id).filter(Boolean).map(String));
       composerTakenDates = new Set((data || []).map(r => r.scheduled_date).filter(Boolean));
-      // Waarschuwen als de planning bijna op is. Loopt het archief leeg, dan
-      // toont het spel de laatste daily alsof het die van vandaag is, en worden
-      // scores niet opgeslagen omdat de datum niet klopt. Dat gebeurde op
-      // 6 september en bleef onopgemerkt tot het leaderboard leeg bleef.
-      const datums = (data || []).map(r => r.scheduled_date).filter(Boolean).sort();
+      // Tel alleen vrij te geven dagen, vanaf vandaag in de publicatietijdzone.
+      // Een verre einddatum of ongedateerde reserve mag een gat niet verbergen.
+      const vandaag = new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'Europe/London', year: 'numeric', month: '2-digit', day: '2-digit'
+      }).format(new Date());
+      const datums = [...new Set((data || [])
+        .filter(r => r.status === 'scheduled' && r.scheduled_date >= vandaag)
+        .map(r => r.scheduled_date))].sort();
       const laatste = datums[datums.length - 1];
-      const dagenOver = laatste
-        ? Math.round((Date.parse(laatste) - Date.now()) / 86400000)
-        : -1;
-      const waarschuwing = dagenOver < 3
-        ? ` ⚠ Nog maar ${Math.max(0, dagenOver)} dag(en) ingepland — plan er tijdig bij, anders vallen scores stil.`
+      const geplandeDatums = new Set(datums);
+      let dagenOver = 0;
+      const cursor = new Date(vandaag + 'T00:00:00Z');
+      while (geplandeDatums.has(cursor.toISOString().slice(0, 10))) {
+        dagenOver++;
+        cursor.setUTCDate(cursor.getUTCDate() + 1);
+      }
+      const waarschuwing = dagenOver < 14
+        ? ` ⚠ Nog ${dagenOver} aaneengesloten Daily-dag(en) vanaf vandaag. Eerste ontbrekende dag: ${cursor.toISOString().slice(0, 10)}. Vul de planning aan tot minstens 14 dagen.`
         : '';
       $('composerIntro').textContent =
         `${(data || []).length} dailies in de database, ingepland tot ${laatste || '—'}. `
         + `Eerstvolgende vrije datum: ${nextFreeDate()}.${waarschuwing}`;
-      $('composerIntro').classList.toggle('composer-waarschuwing', dagenOver < 3);
+      $('composerIntro').classList.toggle('composer-waarschuwing', dagenOver < 14);
       $('composerDate').value = nextFreeDate();
       renderScheduled(data || []);
       await loadComposerSource();
