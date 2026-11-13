@@ -1,6 +1,6 @@
 # Nieuwe Library-puzzels — ronde 2, 13 november 2026
 
-Library: **67 → 82**. Nieuwe vragen zijn eerst in het Engels geredigeerd, met gelijkwaardige Nederlandse afbakening. Alle antwoorden zijn positieve gehele getallen. Elke som is exact.
+Library: **67 → 97**. Nieuwe vragen zijn eerst in het Engels geredigeerd, met gelijkwaardige Nederlandse afbakening. Alle antwoorden zijn positieve gehele getallen. Elke som is exact.
 
 ## Werkwijze
 
@@ -17,16 +17,16 @@ Niveaus zijn redactionele inschattingen, niet gekalibreerd met spelers. Binnen d
 | Niveau | Totaal |
 |---|---:|
 | easy | 28 |
-| intermediate | 21 |
-| hard | 20 |
+| intermediate | 28 |
+| hard | 28 |
 | extremely-hard | 13 |
 
 | Teken | Totaal | Nieuw |
 |---|---:|---:|
-| × | 16 | 3 |
-| − | 30 | 9 |
-| + | 20 | 2 |
-| ÷ | 16 | 1 |
+| × | 22 | 9 |
+| − | 33 | 12 |
+| + | 21 | 3 |
+| ÷ | 21 | 6 |
 
 ## Vragen, sommen en bronnen
 
@@ -121,4 +121,94 @@ Per regel: bank-id, Engelse hoofdvraag, Nederlandse vertaling en bron. De korte 
 - **bank-742** — How many feature films were in the Toy Story series by the end of 2019? / Hoeveel lange films telde de Toy Story-reeks eind 2019? Antwoord: **4**. [Bron](https://en.wikipedia.org/wiki/Toy_Story_(franchise)). Toy Story 4 was de vierde lange film in de reeks. (2026-11-13).
 - **bank-1328** — What is the atomic number of carbon? / Wat is het atoomnummer van koolstof? Antwoord: **6**. [Bron](https://en.wikipedia.org/wiki/Carbon). Koolstof heeft atoomnummer zes. (2026-11-13).
 - **bank-1508** — How many positive divisors does the number three hundred and sixty have? / Hoeveel positieve delers heeft het getal driehonderdzestig? Antwoord: **24**. [Bron](https://mathworld.wolfram.com/Divisor.html). De priemfactorisatie is twee tot de derde maal drie tot de tweede maal vijf; vier maal drie maal twee geeft vierentwintig delers. (2026-11-13).
+
+### Library 83: 7 + 11 = 18 (intermediate)
+
+- **bank-896** — How many countries share a land border with Niger? / Hoeveel landen grenzen aan Niger? Antwoord: **7**. [Bron](https://en.wikipedia.org/wiki/Niger). Niger grenst aan Algerije, Libië, Tsjaad, Nigeria, Benin, Burkina Faso en Mali. (2026-11-13).
+- **bank-356** — How many spa towns make up the World Heritage site The Great Spa Towns of Europe? / Uit hoeveel kuuroorden bestaat de UNESCO-site The Great Spa Towns of Europe? Antwoord: **11**. [Bron](https://whc.unesco.org/en/list/1613/). Het werelderfgoed bestaat uit elf kuuroorden in zeven landen. (2026-11-13).
+- **bank-1534** — How many episodes make up James Joyce's novel Ulysses? / Hoeveel episodes telt de roman Ulysses van James Joyce? Antwoord: **18**. [Bron](https://en.wikipedia.org/wiki/Ulysses_(novel)). Ulysses is verdeeld in achttien episodes. (2026-11-13).
+
+### Library 84: 12 ÷ 3 = 4 (intermediate)
+
+- **bank-1584** — How many thoracic vertebrae does a typical adult human have? / Hoeveel borstwervels heeft een gewone volwassen mens? Antwoord: **12**. [Bron](https://en.wikipedia.org/wiki/Thoracic_vertebrae). Mensen hebben normaal twaalf borstwervels. (2026-11-13).
+- **bank-1569** — How many United States teaspoons make up one United States tablespoon? / Hoeveel Amerikaanse theelepels vormen één Amerikaanse eetlepel? Antwoord: **3**. [Bron](https://en.wikipedia.org/wiki/Tablespoon). Eén Amerikaanse eetlepel is drie Amerikaanse theelepels. (2026-11-13).
+- **bank-1327** — How many oxygen atoms are in one molecule of sulphuric acid? / Hoeveel zuurstofatomen bevat één molecuul zwavelzuur? Antwoord: **4**. [Bron](https://en.wikipedia.org/wiki/Sulfuric_acid). De formule bevat vier zuurstofatomen per molecuul. (2026-11-13).
+
+### Library 85: 14 − 8 = 6 (intermediate)
+
+- **bank-1520** — What is the atomic number of silicon? / Wat is het atoomnummer van silicium? Antwoord: **14**. [Bron](https://en.wikipedia.org/wiki/Silicon). Silicium heeft atoomnummer veertien. (2026-11-13).
+- **bank-1582** — How many carpal bones are in one typical adult human wrist? / Hoeveel handwortelbeentjes heeft één pols van een gewone volwassen mens? Antwoord: **8**. [Bron](https://en.wikipedia.org/wiki/Carpal_bones). Elke pols heeft acht handwortelbeentjes. (2026-11-13).
+- **bank-1261** — How many years is one full term for a United States senator? / Hoeveel jaar duurt een volledige termijn van een senator van de Verenigde Staten? Antwoord: **6**. [Bron](https://en.wikipedia.org/wiki/United_States_Senate). Een volledige senaatstermijn duurt zes jaar. (2026-11-13).
+
+### Library 86: 4 × 6 = 24 (intermediate)
+
+- **bank-577** — How many engines does an Airbus A380 have? / Hoeveel motoren heeft een Airbus A380? Antwoord: **4**. [Bron](https://en.wikipedia.org/wiki/Airbus_A380). De Airbus A380 is een vliegtuig met vier motoren. (2026-11-13).
+- **bank-892** — How many countries share a land border with Libya? / Hoeveel landen grenzen aan Libië? Antwoord: **6**. [Bron](https://en.wikipedia.org/wiki/Libya). Libië grenst aan Egypte, Soedan, Tsjaad, Niger, Algerije en Tunesië. (2026-11-13).
+- **bank-1560** — How many triangular points are on a standard backgammon board? / Hoeveel driehoekige punten heeft een standaard backgammonbord? Antwoord: **24**. [Bron](https://en.wikipedia.org/wiki/Backgammon). Een backgammonbord heeft vierentwintig punten. (2026-11-13).
+
+### Library 87: 30 ÷ 10 = 3 (intermediate)
+
+- **bank-1509** — How many positive divisors does the number seven hundred and twenty have? / Hoeveel positieve delers heeft het getal zevenhonderdtwintig? Antwoord: **30**. [Bron](https://en.wikipedia.org/wiki/Divisor). De priemfactorisatie is twee tot de vierde maal drie tot de tweede maal vijf; vijf maal drie maal twee geeft dertig delers. (2026-11-13).
+- **bank-759** — How many commandments are in the biblical Decalogue? / Hoeveel geboden bevat de Bijbelse decaloog? Antwoord: **10**. [Bron](https://en.wikipedia.org/wiki/Ten_Commandments). De decaloog wordt traditioneel ingedeeld in tien geboden. (2026-11-13).
+- **bank-1581** — How many eyelids does a typical owl have on each eye? / Hoeveel oogleden heeft een gewone uil per oog? Antwoord: **3**. [Bron](https://www.owlresearchinstitute.org/adaptations). Uilen hebben een bovenste ooglid, een onderste ooglid en een knipvlies. (2026-11-13).
+
+### Library 88: 30 ÷ 15 = 2 (intermediate)
+
+- **bank-1518** — What is the atomic number of zinc? / Wat is het atoomnummer van zink? Antwoord: **30**. [Bron](https://en.wikipedia.org/wiki/Zinc). Zink heeft atoomnummer dertig. (2026-11-13).
+- **bank-396** — How many studio albums did Queen release from Queen (1973) through Made in Heaven (1995)? / Hoeveel studioalbums bracht Queen uit van Queen uit 1973 tot en met Made in Heaven uit 1995? Antwoord: **15**. [Bron](https://en.wikipedia.org/wiki/Queen_discography). Queen bracht in deze periode vijftien studioalbums uit. (2026-11-13).
+- **bank-519** — How many planets in our Solar System are classified as ice giants? / Hoeveel ijsreuzen telt ons zonnestelsel? Antwoord: **2**. [Bron](https://en.wikipedia.org/wiki/Ice_giant). Uranus en Neptunus zijn de twee ijsreuzen. (2026-11-13).
+
+### Library 89: 30 ÷ 5 = 6 (intermediate)
+
+- **bank-1575** — How many litres does a Melchizedek champagne bottle hold? / Hoeveel liter bevat een melchizedek-champagnefles? Antwoord: **30**. [Bron](https://en.wikipedia.org/wiki/Wine_bottle). Een melchizedek bevat dertig liter. (2026-11-13).
+- **bank-729** — In how many James Bond films did Daniel Craig play Bond? / Hoeveel James Bond films met Daniel Craig verschenen er? Antwoord: **5**. [Bron](https://en.wikipedia.org/wiki/Daniel_Craig). Craig speelde Bond in vijf films, van Casino Royale tot No Time to Die. (2026-11-13).
+- **bank-894** — How many countries share a land border with Mozambique? / Hoeveel landen grenzen aan Mozambique? Antwoord: **6**. [Bron](https://en.wikipedia.org/wiki/Mozambique). Mozambique grenst aan Tanzania, Malawi, Zambia, Zimbabwe, Zuid-Afrika en Eswatini. (2026-11-13).
+
+### Library 90: 25 − 10 = 15 (hard)
+
+- **bank-1565** — How many years of marriage mark a silver wedding anniversary? / Hoeveel huwelijksjaren markeert een zilveren bruiloft? Antwoord: **25**. [Bron](https://en.wikipedia.org/wiki/Wedding_anniversary). Een zilveren bruiloft markeert vijfentwintig jaar. (2026-11-13).
+- **bank-463** — How many electrons does a singly charged positive sodium ion have? / Hoeveel elektronen heeft een enkelvoudig positief geladen natriumion? Antwoord: **10**. [Bron](https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism). Natrium heeft elf protonen; na verlies van één elektron blijven tien elektronen over. (2026-11-13).
+- **bank-1561** — How many checkers does each player start with in backgammon? / Met hoeveel schijven begint elke speler bij backgammon? Antwoord: **15**. [Bron](https://en.wikipedia.org/wiki/Backgammon). Elke speler begint met vijftien schijven. (2026-11-13).
+
+### Library 91: 4 × 8 = 32 (hard)
+
+- **bank-642** — How many compartments does a goat's stomach have? / Hoeveel compartimenten heeft de maag van een geit? Antwoord: **4**. [Bron](https://en.wikipedia.org/wiki/Ruminant). De maag van een geit heeft vier compartimenten: pens, netmaag, boekmaag en lebmaag. (2026-11-13).
+- **bank-1326** — How many neutrons does a carbon-fourteen nucleus contain? / Hoeveel neutronen bevat een koolstof-veertienkern? Antwoord: **8**. [Bron](https://en.wikipedia.org/wiki/Carbon-14). Koolstof-veertien bevat zes protonen en acht neutronen. (2026-11-13).
+- **bank-1528** — How many bits are in an Internet Protocol version four address? / Hoeveel bits bevat een internetprotocoladres van versie vier? Antwoord: **32**. [Bron](https://www.rfc-editor.org/rfc/rfc791#section-3.1). Een internetprotocoladres van versie vier is tweeëndertig bits lang. (2026-11-13).
+
+### Library 92: 27 − 19 = 8 (hard)
+
+- **bank-1536** — How many chapters are in the original French edition of The Little Prince? / Hoeveel hoofdstukken telt de oorspronkelijke Franse editie van De kleine prins? Antwoord: **27**. [Bron](https://gutenberg.net.au/ebooks03/0300771h.html). Het boek heeft zevenentwintig genummerde hoofdstukken. (2026-11-13).
+- **bank-1549** — In which numbered century was Neptune discovered? / In welke genummerde eeuw werd Neptunus ontdekt? Antwoord: **19**. [Bron](https://en.wikipedia.org/wiki/Discovery_of_Neptune). Neptunus is ontdekt in achttienzesenveertig, in de negentiende eeuw. (2026-11-13).
+- **bank-829** — How many columns are across each short end of the Parthenon's outer colonnade? / Hoeveel zuilen staan aan elke korte zijde van de buitenste zuilengang van het Parthenon? Antwoord: **8**. [Bron](https://en.wikipedia.org/wiki/Parthenon). De buitenste zuilengang heeft acht zuilen aan elke korte zijde en zeventien langs elke lange zijde. (2026-11-13).
+
+### Library 93: 28 ÷ 7 = 4 (hard)
+
+- **bank-1559** — How many tiles are in a standard double-six domino set? / Hoeveel stenen bevat een standaard dubbelzes-dominospel? Antwoord: **28**. [Bron](https://en.wikipedia.org/wiki/Dominoes). Een dubbelzes-spel bevat achtentwintig stenen. (2026-11-13).
+- **bank-903** — How many countries share a land border with Poland? / Hoeveel landen grenzen aan Polen? Antwoord: **7**. [Bron](https://en.wikipedia.org/wiki/Poland). Polen grenst aan Duitsland, Tsjechië, Slowakije, Oekraïne, Belarus, Litouwen en Rusland. (2026-11-13).
+- **bank-1579** — How many toes are on each hind paw of a typical domestic cat, excluding polydactyl cats? / Hoeveel tenen heeft elke achterpoot van een gewone huiskat, zonder polydactylie? Antwoord: **4**. [Bron](https://en.wikipedia.org/wiki/Cat). Een gewone kat heeft vier tenen per achterpoot. (2026-11-13).
+
+### Library 94: 5 × 8 = 40 (hard)
+
+- **bank-898** — How many countries share a land border with Uganda? / Hoeveel landen grenzen aan Oeganda? Antwoord: **5**. [Bron](https://en.wikipedia.org/wiki/Uganda). Oeganda grenst aan Zuid-Soedan, Kenia, Tanzania, Rwanda en Congo-Kinshasa. (2026-11-13).
+- **bank-741** — How many films adapt the seven original Harry Potter novels, excluding Fantastic Beasts? / Hoeveel films verfilmen de zeven oorspronkelijke Harry Potter-romans, zonder Fantastic Beasts? Antwoord: **8**. [Bron](https://en.wikipedia.org/wiki/Harry_Potter_(film_series)). De zeven romans zijn verfilmd in acht films. (2026-11-13).
+- **bank-1567** — How many years of marriage mark a ruby wedding anniversary? / Hoeveel huwelijksjaren markeert een robijnen bruiloft? Antwoord: **40**. [Bron](https://en.wikipedia.org/wiki/Wedding_anniversary). Een robijnen bruiloft markeert veertig jaar. (2026-11-13).
+
+### Library 95: 3 × 12 = 36 (hard)
+
+- **bank-1577** — How many hearts does a squid have? / Hoeveel harten heeft een pijlinktvis? Antwoord: **3**. [Bron](https://en.wikipedia.org/wiki/Squid). Pijlinktvissen hebben twee kieuwharten en één centraal hart. (2026-11-13).
+- **bank-764** — How many labours did Heracles complete in the traditional Greek myth? / Hoeveel werken voltooide Herakles volgens de traditionele Griekse mythe? Antwoord: **12**. [Bron](https://en.wikipedia.org/wiki/Labours_of_Hercules). De traditionele cyclus bestaat uit twaalf werken. (2026-11-13).
+- **bank-1524** — What is the atomic number of krypton? / Wat is het atoomnummer van krypton? Antwoord: **36**. [Bron](https://en.wikipedia.org/wiki/Krypton). Krypton heeft atoomnummer zesendertig. (2026-11-13).
+
+### Library 96: 5 × 8 = 40 (hard)
+
+- **bank-1585** — How many lumbar vertebrae does a typical adult human have? / Hoeveel lendenwervels heeft een gewone volwassen mens? Antwoord: **5**. [Bron](https://en.wikipedia.org/wiki/Lumbar_vertebrae). Mensen hebben normaal vijf lendenwervels. (2026-11-13).
+- **bank-1330** — How many studs are on top of a standard two-by-four LEGO brick? / Hoeveel noppen heeft een standaard LEGO-steen van twee bij vier aan de bovenkant? Antwoord: **8**. [Bron](https://en.wikipedia.org/wiki/Lego). Een standaardsteen van twee bij vier heeft acht noppen. (2026-11-13).
+- **bank-1544** — What is the number of Mozart's well-known symphony in G minor, catalogue number five hundred and fifty? / Welk nummer heeft Mozarts bekende symfonie in g-klein met catalogusnummer vijfhonderdvijftig? Antwoord: **40**. [Bron](https://en.wikipedia.org/wiki/Symphony_No._40_(Mozart)). Deze symfonie is Mozarts nummer veertig. (2026-11-13).
+
+### Library 97: 5 × 10 = 50 (hard)
+
+- **bank-743** — How many seasons does the completed Breaking Bad television series have? / Hoeveel seizoenen heeft de afgeronde televisieserie Breaking Bad? Antwoord: **5**. [Bron](https://en.wikipedia.org/wiki/Breaking_Bad). Breaking Bad telt vijf seizoenen. (2026-11-13).
+- **bank-1069** — How many selection criteria does the United Nations cultural agency use for its World Heritage List? / Hoeveel selectiecriteria gebruikt UNESCO in totaal voor werelderfgoed? Antwoord: **10**. [Bron](https://whc.unesco.org/en/criteria/). Er zijn tien criteria: zes culturele en vier natuurlijke. (2026-11-13).
+- **bank-1514** — What is the atomic number of tin? / Wat is het atoomnummer van tin? Antwoord: **50**. [Bron](https://en.wikipedia.org/wiki/Tin). Tin heeft atoomnummer vijftig. (2026-11-13).
 

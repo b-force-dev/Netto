@@ -74,7 +74,7 @@ def main():
     for filename, variable, values, indent in (
         ('netto_bronnen_en.js', 'NETTO_BRONNEN_EN', translations, None),
         ('netto_translations_en.js', 'NETTO_TRANSLATIONS_EN', labels, 2),
-        ('netto_bronnen.js', 'NETTO_BRONNEN', sources, 2),
+        ('netto_bronnen.js', 'NETTO_BRONNEN', sources, None),
     ):
         path = ROOT / 'data' / filename
         old = path.read_text(encoding='utf8')
