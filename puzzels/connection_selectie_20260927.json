@@ -77,7 +77,7 @@
           "row": 110,
           "status": "APPROVED",
           "category": "Boeken en literatuur",
-          "original": "Hoeveel boeken bevat de originele The Hunger Games-trilogie?",
+          "original": "Hoeveel boeken telt de oorspronkelijke The Hunger Games-reeks?",
           "question": "How many books are in the original Hunger Games series?",
           "subtitle": "Count only the original series.",
           "answer": 3,
@@ -130,7 +130,8 @@
         "number": 1
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "2fc5e871-a463-52c4-b6aa-624c92622005",
@@ -142,12 +143,12 @@
           "row": 502,
           "status": "APPROVED",
           "category": "Muziek",
-          "original": "Hoeveel studioalbums bracht Taylor Swift uit tot 2024?",
+          "original": "Hoeveel studioalbums met nieuw werk had Taylor Swift eind 2025 uitgebracht?",
           "question": "How many studio albums had Taylor Swift released by the end of 2025?",
           "subtitle": null,
           "answer": 12,
-          "evidence": "Taylor Swift won ruim 250 awards, waaronder 12 Grammy Awards (uit 34 nominaties), 16 American Music Awards, 11 Country Music Association Awards, 22 Billboard Music Awards en één Emmy Award.",
-          "source": "https://nl.wikipedia.org/wiki/Taylor_Swift",
+          "evidence": "The Life of a Showgirl (oktober 2025) is het twaalfde studioalbum van Taylor Swift. Heropnames (Taylor’s Version) tellen niet mee.",
+          "source": "https://en.wikipedia.org/wiki/The_Life_of_a_Showgirl",
           "notes": "Final version follows latest user decision. Original source/evidence retained as historical context; not independently reverified for this revised figure/scope.",
           "unit_group": "albums",
           "group": "q1130",
@@ -163,7 +164,7 @@
           "question": "How many ships did Christopher Columbus set out with on his first voyage across the Atlantic?",
           "subtitle": null,
           "answer": 3,
-          "evidence": "Marco, de chirurg\nMesta Bernal, de arts\nLuis de Torres, de tolk (zou later in Cuba blijven en terugkeren tot het jodendom)\nRodrigo de Triana, matroos die als eerste land gezien zou hebben\nOp 3 augustus 1492 vertrokken de drie schepen naar de Canarische Eilanden.",
+          "evidence": "Columbus vertrok in 1492 met drie schepen: de Santa María, de Pinta en de Niña.",
           "source": "https://nl.wikipedia.org/wiki/Christoffel_Columbus",
           "notes": null,
           "unit_group": "ships",
@@ -195,7 +196,8 @@
         "number": 4
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "719fb859-c790-583d-9c9f-99abab99d923",
@@ -211,7 +213,7 @@
           "question": "How many million people live in Chile?",
           "subtitle": "As of 2025.",
           "answer": 20,
-          "evidence": "In de 18e, 19e, 20e eeuw kwamen er geen Spaanse Europese immigranten in Chili aan en in het begin van 1848 vond een grote en belangrijke Duitse immigratie plaats, die het fundament legde voor een grote Duits-Chileense gemeenschap.",
+          "evidence": "Chili heeft ongeveer twintig miljoen inwoners.",
           "source": "https://nl.wikipedia.org/wiki/Chili",
           "notes": "Final Q805–Q949 review decision.",
           "unit_group": "people",
@@ -228,7 +230,7 @@
           "question": "How many wheels does a Boeing 747 have in its standard configuration?",
           "subtitle": null,
           "answer": 18,
-          "evidence": "De 747 staat op achttien wielen: vier hoofdstellen van vier plus een neuswiel van twee. De oude bron was het artikel over het bedrijf Boeing, en het getang 18 kwam daar uit een bedrag van 18 miljard dollar.",
+          "evidence": "De Boeing 747 staat op achttien wielen: vier hoofdlandingsgestellen met elk vier wielen en een neuswiel met twee.",
           "source": "https://nl.wikipedia.org/wiki/Boeing_747",
           "notes": null,
           "unit_group": "wheels",
@@ -245,7 +247,7 @@
           "question": "How many planets are closer to the Sun than Earth?",
           "subtitle": null,
           "answer": 2,
-          "evidence": "2 min read",
+          "evidence": "Alleen Mercurius en Venus staan dichter bij de zon dan de aarde.",
           "source": "https://science.nasa.gov/solar-system/planets/",
           "notes": null,
           "unit_group": "planets",
@@ -260,7 +262,8 @@
         "number": 10
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "4e7228cf-a657-5b3f-b745-bb5fa835d58a",
@@ -289,7 +292,7 @@
           "row": 549,
           "status": "APPROVED",
           "category": "Sport",
-          "original": "Hoeveel keer won Argentinië de FIFA World Cup voetbal bij de mannen (2024)?",
+          "original": "Hoeveel keer won Argentinië het WK voetbal bij de mannen, tot en met 2026?",
           "question": "How many times has Argentina won the men’s FIFA World Cup?",
           "subtitle": "Through 2026.",
           "answer": 3,
@@ -310,7 +313,7 @@
           "question": "How many U.S. presidents have been assassinated?",
           "subtitle": null,
           "answer": 4,
-          "evidence": "Kennedy – op 22 november 1963 met een geweer doodgeschoten, na 2 jaar en 10 maanden presidentschap\nBuiten de vermoorde presidenten zijn er vier presidenten tijdens hun regeringsperiode overleden:\n\nWilliam Henry Harrison – op 4 april 1841 overleden aan een longontsteking of buiktyfus, precies 1 maand",
+          "evidence": "Vier Amerikaanse presidenten werden vermoord: Lincoln, Garfield, McKinley en Kennedy.",
           "source": "https://nl.wikipedia.org/wiki/Lijst_van_presidenten_van_de_Verenigde_Staten",
           "notes": null,
           "unit_group": "presidents",
@@ -325,7 +328,8 @@
         "number": 11
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "0e05920a-a80b-533b-a49b-b2271f34da5d",
@@ -341,7 +345,7 @@
           "question": "How many years did Nelson Mandela spend in prison?",
           "subtitle": null,
           "answer": 27,
-          "evidence": "Mandela werd op 27 april 1994, op 75-jarige leeftijd, president van Zuid-Afrika, als opvolger van De Klerk, die al een aarzelend begin had gemaakt met afschaffing van apartheidsregels.",
+          "evidence": "Nelson Mandela zat van 1962 tot 1990 gevangen: 27 jaar.",
           "source": "https://nl.wikipedia.org/wiki/Nelson_Mandela",
           "notes": null,
           "unit_group": "years",
@@ -358,7 +362,7 @@
           "question": "How many time zones does India use?",
           "subtitle": null,
           "answer": 1,
-          "evidence": "Volgens de laatste volkstelling telde India 1.210.193.422 (2011) inwoners en volgens niet-officiële schattingen telt het land anno 2019 zo'n 1.352.642.280 inwoners.",
+          "evidence": "Heel India gebruikt één tijdzone: Indian Standard Time (UTC+5:30).",
           "source": "https://nl.wikipedia.org/wiki/India",
           "notes": "Explicitly approved by the user.",
           "unit_group": "time zones",
@@ -390,7 +394,8 @@
         "number": 14
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "8300b6ab-ae07-5877-8b05-8a6dee370af6",
@@ -419,7 +424,7 @@
           "row": 551,
           "status": "APPROVED",
           "category": "Sport",
-          "original": "Hoeveel keer won Duitsland de FIFA World Cup?",
+          "original": "Hoeveel keer won Duitsland het WK voetbal bij de mannen, tot en met 2026?",
           "question": "How many times has Germany won the men’s FIFA World Cup?",
           "subtitle": "Through 2026.",
           "answer": 4,
@@ -455,7 +460,8 @@
         "number": 15
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "25f528ba-898e-5485-9141-9a7c290e6db3",
@@ -467,11 +473,11 @@
           "row": 290,
           "status": "APPROVED",
           "category": "Vervoer",
-          "original": "Hoeveel metrolijnen heeft de Parijse metro?",
-          "question": "How many lines does the Paris Métro have?",
+          "original": "Hoeveel metrolijnen had de Parijse metro in 2025?",
+          "question": "How many lines did the Paris Métro have in 2025?",
           "subtitle": null,
           "answer": 16,
-          "evidence": "De lijnen 14 en 15 zullen metrolijnen met een grote vervoerscapaciteit zijn (met lange perrons), terwijl de lijnen 16, 17 en 18 goedkoper uitgevoerd zullen worden met kortere perrons.",
+          "evidence": "De Parijse metro had in 2025 zestien lijnen: 1 tot en met 14 plus 3bis en 7bis.",
           "source": "https://nl.wikipedia.org/wiki/Metro_van_Parijs",
           "notes": null,
           "unit_group": "lines",
@@ -505,7 +511,7 @@
           "question": "How many books are in The Chronicles of Narnia?",
           "subtitle": null,
           "answer": 7,
-          "evidence": "The Silver Chair (1953)\n\nCompleted at the beginning of March 1951 and published 7 September 1953, The Silver Chair is the first Narnia book not involving the Pevensie children, focusing instead on Eustace.",
+          "evidence": "The Chronicles of Narnia bestaat uit zeven boeken, verschenen tussen 1950 en 1956.",
           "source": "https://en.wikipedia.org/wiki/The_Chronicles_of_Narnia",
           "notes": "Current evidence excerpt needs replacement.",
           "unit_group": "books",
@@ -520,7 +526,8 @@
         "number": 24
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "82142cf5-0bed-50c1-9972-77ab19311b19",
@@ -585,7 +592,8 @@
         "number": 27
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "6af861a1-ff1f-5b70-a466-1e68d050b194",
@@ -601,7 +609,7 @@
           "question": "How many years did it take to complete the Taj Mahal complex?",
           "subtitle": null,
           "answer": 21,
-          "evidence": "Bestaande bron opgehaald; het antwoord staat op de pagina.",
+          "evidence": "De bouw van de Taj Mahal begon in 1632; het complex was rond 1653 klaar: ongeveer 21 jaar.",
           "source": "https://asi.nic.in/taj-mahal/",
           "notes": "Photo needed",
           "unit_group": "years",
@@ -650,7 +658,8 @@
         "number": 31
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "542e42d9-cd87-5c59-8e62-6399ed0f16ed",
@@ -679,7 +688,7 @@
           "row": 550,
           "status": "APPROVED",
           "category": "Sport",
-          "original": "Hoeveel keer won Brazilië de FIFA World Cup voetbal bij de mannen (2024)?",
+          "original": "Hoeveel keer won Brazilië het WK voetbal bij de mannen, tot en met 2026?",
           "question": "How many times has Brazil won the men’s FIFA World Cup?",
           "subtitle": "Through 2026.",
           "answer": 5,
@@ -715,7 +724,8 @@
         "number": 34
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "fd337ed6-c001-533a-970e-0e3d4f60be9b",
@@ -731,7 +741,7 @@
           "question": "How many African countries border the Mediterranean Sea?",
           "subtitle": null,
           "answer": 5,
-          "evidence": "Marokko, Algerije, Tunesie, Libie en Egypte. De oude telling rekende de Westelijke Sahara mee, maar die grenst aan de Atlantische Oceaan, niet aan de Middellandse Zee.",
+          "evidence": "Marokko, Algerije, Tunesië, Libië en Egypte grenzen aan de Middellandse Zee.",
           "source": "https://en.wikipedia.org/wiki/Mediterranean_Sea",
           "notes": "Final Q805–Q949 review decision.",
           "unit_group": "countries",
@@ -748,7 +758,7 @@
           "question": "How many official languages does Belgium have?",
           "subtitle": null,
           "answer": 3,
-          "evidence": "3 dat België drie gewesten omvat: het Vlaams Gewest (waarin vooral Nederlandstaligen wonen, met in bepaalde gemeenten faciliteiten voor Franstaligen), het Waals Gewest (waarin vooral Franstaligen en de Duitstalige gemeenschap wonen, in bepaalde gemeenten faciliteiten voor de Nederlandstaligen) en he",
+          "evidence": "België heeft drie officiële talen: Nederlands, Frans en Duits.",
           "source": "https://nl.wikipedia.org/wiki/Belgi%C3%AB",
           "notes": "Explicitly approved by the user.",
           "unit_group": "languages",
@@ -765,7 +775,7 @@
           "question": "How many centimetres can the top of the Eiffel Tower shift as the sun heats it?",
           "subtitle": null,
           "answer": 15,
-          "evidence": "De Eiffeltoren zet bij warmte tot ongeveer vijftien centimeter uit. De oude bron verwees naar een UNESCO-werelderfgoedlijst.",
+          "evidence": "De Eiffeltoren kan bij warmte tot ongeveer 15 centimeter uitzetten.",
           "source": "https://www.toureiffel.paris/en/the-monument/key-figures",
           "notes": null,
           "unit_group": "cm",
@@ -780,7 +790,8 @@
         "number": 35
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "72f1c215-dffc-57ef-9cd3-f75d298fd28c",
@@ -796,7 +807,7 @@
           "question": "How many meters above the surrounding plain does Uluru rise?",
           "subtitle": null,
           "answer": 348,
-          "evidence": "| hoogte = 863 (boven zeeniveau) / 348",
+          "evidence": "Uluru steekt 348 meter boven de omgeving uit (863 meter boven zeeniveau).",
           "source": "https://nl.wikipedia.org/wiki/Uluru",
           "notes": "Final Q805–Q949 review decision.",
           "unit_group": "m",
@@ -813,7 +824,7 @@
           "question": "How old was the oldest reliably verified dog ever?",
           "subtitle": null,
           "answer": 29,
-          "evidence": "Bluey werd 29 jaar en 5 maanden. Bobi nam de titel in 2023 over, maar Guinness trok die in 2024 weer in. De oude bron was een lijst van oudste mensen.",
+          "evidence": "Bluey werd 29 jaar en 5 maanden. Bobi nam de titel in 2023 over, maar Guinness trok die in 2024 weer in.",
           "source": "https://en.wikipedia.org/wiki/Bluey_(long-lived_dog)",
           "notes": "Explicitly approved with simplified wording and answer 29 years.",
           "unit_group": "years",
@@ -845,7 +856,8 @@
         "number": 36
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "61c24111-7bff-546f-a5e8-52a32ed86501",
@@ -910,7 +922,8 @@
         "number": 42
       },
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "046d2bad-b7bc-5a0a-b312-0b0a7843b4ba",
@@ -968,7 +981,8 @@
       "note": "Cola, hondentanden en Mona Lisa: drie direct voorstelbare objecten.",
       "origin": null,
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "ea602197-7b4f-5313-b078-15b90e066266",
@@ -1026,7 +1040,8 @@
       "note": "Venus, handbotten en Beethoven; de bekende componist vervangt de Muzen.",
       "origin": null,
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "1c070875-427c-5cd7-83da-c74e29a7b373",
@@ -1042,7 +1057,7 @@
           "question": "How many members were in the classic lineup of The Beatles?",
           "subtitle": null,
           "answer": 4,
-          "evidence": "During the week of 4 April 1964, the Beatles held twelve positions on the Billboard Hot 100 singles chart, including the top five.",
+          "evidence": "De klassieke bezetting van The Beatles bestond uit vier leden: John Lennon, Paul McCartney, George Harrison en Ringo Starr.",
           "source": "https://en.wikipedia.org/wiki/The_Beatles",
           "notes": null,
           "unit_group": "members",
@@ -1055,12 +1070,12 @@
           "row": 443,
           "status": "APPROVED",
           "category": "Geografie",
-          "original": "Hoeveel van de Grote Meren liggen in de VS en Canada samen?",
+          "original": "Uit hoeveel meren bestaan de Grote Meren van Noord-Amerika?",
           "question": "How many Great Lakes are there in the United States and Canada combined?",
           "subtitle": null,
           "answer": 5,
-          "evidence": "Bevolkingsontwikkeling\n\njaar0102030401860189019201950198020102040inwoners (x miljoen).mw-chart-ed1ffdf0116d644c3b7e61db92d121ad0ee2e2ab107ff61b18e459a8628a508c408b87022bd12b5d5401819ba21a4f3a8d186e375abe899337ae990459eae769__zr9197043-cls-47078137:hover{pointer-events:none}.mw-chart-ed1ffdf0116d644c",
-          "source": "https://nl.wikipedia.org/wiki/Canada",
+          "evidence": "De Grote Meren zijn vijf meren: het Bovenmeer, het Michiganmeer, het Huronmeer, het Eriemeer en het Ontariomeer.",
+          "source": "https://nl.wikipedia.org/wiki/Grote_Meren",
           "notes": "Explicitly approved by the user.",
           "unit_group": "lakes",
           "group": "q974",
@@ -1072,7 +1087,7 @@
           "row": 598,
           "status": "APPROVED",
           "category": "Spellen en speelgoed",
-          "original": "How many minutes does a full day-and-night cycle last in Minecraft?",
+          "original": "Hoeveel minuten duurt een volledige dag-en-nachtcyclus in Minecraft?",
           "question": "How many minutes does a full day-and-night cycle last in Minecraft?",
           "subtitle": null,
           "answer": 20,
@@ -1086,7 +1101,8 @@
       "note": "Beatles en Great Lakes helpen bij de verrassende Minecraft-dagduur.",
       "origin": null,
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "ae8a5568-85e1-537e-b473-8c72e8ae2296",
@@ -1136,7 +1152,7 @@
           "question": "How many natural moons does Mars have?",
           "subtitle": null,
           "answer": 2,
-          "evidence": "Mars heeft twee manen, Phobos en Deimos. De oude bron was de doorverwijspagina voor het woord Mars.",
+          "evidence": "Mars heeft twee manen: Phobos en Deimos.",
           "source": "https://nl.wikipedia.org/wiki/Mars_(planeet)",
           "notes": "No final individual decision recorded.",
           "unit_group": "moons",
@@ -1148,7 +1164,8 @@
       "note": "Octopus, volleybal en Mars: concrete, korte vragen zonder administratieve tellingen.",
       "origin": null,
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "09485751-a8bf-56a7-a58b-806fc46fa5b4",
@@ -1160,7 +1177,7 @@
           "row": 601,
           "status": "APPROVED",
           "category": "Geschiedenis",
-          "original": "How many seconds did the first successful powered airplane flight last?",
+          "original": "Hoeveel seconden duurde de eerste geslaagde gemotoriseerde vlucht?",
           "question": "How many seconds did the first successful powered airplane flight last?",
           "subtitle": null,
           "answer": 12,
@@ -1210,7 +1227,8 @@
       "note": "Eerste vlucht, NBA en gesprek: herkenbare activiteiten met verschillende meeteenheden.",
       "origin": null,
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "ca49394f-170c-55e8-8419-3a5dd18611c7",
@@ -1272,7 +1290,8 @@
       "note": "Jachtluipaard, Nieuw-Zeeland en Boeing: snelheid, bevolking en vliegtuigcapaciteit.",
       "origin": null,
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     },
     {
       "id": "3e75ab30-4718-5348-9475-c7b44d8f748c",
@@ -1301,7 +1320,7 @@
           "row": 565,
           "status": "APPROVED",
           "category": "Sterrenkunde & ruimte",
-          "original": "Hoeveel NASA-mannetjes missies naar de maan (Apollo) landden er daadwerkelijk?",
+          "original": "Hoeveel Apollo-missies landden met astronauten op de maan?",
           "question": "How many Apollo missions successfully landed astronauts on the Moon?",
           "subtitle": null,
           "answer": 6,
@@ -1334,7 +1353,8 @@
       "note": "Afrika, Apollo en honkbal geven drie bekende contexten.",
       "origin": null,
       "difficulty": "intermediate",
-      "difficulty_score": 50
+      "difficulty_score": 50,
+      "photo": null
     }
   ]
 }

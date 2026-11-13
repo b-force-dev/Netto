@@ -93,6 +93,15 @@ def main():
     sets = [('daily + bibliotheek', fr['daily'] + fr['library']),
             ('racepool', rp)]
 
+    # Bibliotheek en daily dragen een Engels label; de Nederlandse tekst staat
+    # in `original` van de review. Bank en fotobank sleutelen op die Nederlandse
+    # tekst, dus zonder deze vertaalslag telde elke bibliotheekfoto als "foto
+    # zonder fotovraag" en werd geen enkel bibliotheekantwoord getoetst.
+    review = {**(fr.get('daily_review') or {}), **(fr.get('library_review') or {})}
+
+    def nl(label):
+        return (review.get(label) or {}).get('original') or label
+
     alles_goed = True
     for naam, ps in sets:
         fouten = Counter()
@@ -104,7 +113,7 @@ def main():
                 fouten['som'] += 1
             if p.get('calculation') != f"{a} {p['operator']} {b} = {c}":
                 fouten['calculation'] += 1
-            labels = [p[f'q{i}_label'] for i in (1, 2, 3)]
+            labels = [nl(p[f'q{i}_label']) for i in (1, 2, 3)]
             for l, w in zip(labels, (a, b, c)):
                 if l in bank and bank[l] != w:
                     fouten['antwoord'] += 1
