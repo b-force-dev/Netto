@@ -235,9 +235,9 @@ function renderLibraryStats() {
 
   function loadActivePuzzle() {
     document.getElementById('dailyScoreSyncStatus')?.remove();
-    document.getElementById('q1-label').textContent = PUZZLE_DATA.q1_label;
-    document.getElementById('q2-label').textContent = PUZZLE_DATA.q2_label;
-    document.getElementById('q3-label').textContent = PUZZLE_DATA.q3_label;
+    document.getElementById('q1-label').textContent = window.NettoI18n?.t(PUZZLE_DATA.q1_label) || PUZZLE_DATA.q1_label;
+    document.getElementById('q2-label').textContent = window.NettoI18n?.t(PUZZLE_DATA.q2_label) || PUZZLE_DATA.q2_label;
+    document.getElementById('q3-label').textContent = window.NettoI18n?.t(PUZZLE_DATA.q3_label) || PUZZLE_DATA.q3_label;
     document.getElementById('operatorBadge').textContent = PUZZLE_DATA.operator || '×';
     document.getElementById('puzzleEyebrow').textContent = `Netto · ${puzzleNr(PUZZLE_DATA.number)}`;
 
