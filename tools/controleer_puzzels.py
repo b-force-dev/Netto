@@ -18,7 +18,7 @@ Wat er wordt getoetst:
   kleur        rapporteert gedeelde kleurfamilies als visuele waarschuwing
   icoon        rapporteert gedeelde iconen als visuele waarschuwing
   fotos        hoogstens twee fotovragen per puzzel
-  fotoveld     draagt een puzzel met fotovragen ook echt een foto
+  fotoveld     valideer actuele fotobank; meld verouderde ingebakken velden
   bewerking    zijn de vier bewerkingen ongeveer gelijk verdeeld
   niveau       zijn de vier moeilijkheden ongeveer gelijk verdeeld
 """
@@ -170,9 +170,20 @@ def main():
                 # regel de gedeelde commitpoort blokkeerde.
                 waarschuwingen['meer dan twee fotovragen'] += 1
             if naam != 'Find the Connection' and n and not p.get('photo'):
-                fouten['fotovraag zonder foto'] += 1
+                # photo-credits.js zoekt nu ook zonder ingebakken veld in de
+                # actuele bank. Nieuwe keuzes vereisen geen puzzelregeneratie.
+                waarschuwingen['foto via actuele bank'] += 1
             if p.get('photo') and not n:
-                fouten['foto zonder fotovraag'] += 1
+                # Afgekeurde ingebakken foto's worden door nogInDeBank geweerd.
+                waarschuwingen['verouderd fotoveld genegeerd'] += 1
+            for label in labels:
+                foto = fotos.get(label)
+                if foto is None:
+                    continue
+                if not all(str(foto.get(k, '')).strip() for k in ('url', 'pagina', 'maker', 'licentie')):
+                    fouten['fotobank mist bronvermelding'] += 1
+                if foto.get('url', '').startswith('fotos/assets/') and not os.path.isfile(os.path.join(WORTEL, foto['url'])):
+                    fouten['fotobank verwijst naar ontbrekend bestand'] += 1
 
         ops = Counter(p['operator'] for p in ps)
         niv = Counter(p['difficulty'] for p in ps)

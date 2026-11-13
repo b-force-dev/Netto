@@ -64,8 +64,8 @@ function renderPuzzelfoto(lijst, puzzel) {
   lijst.querySelectorAll('.puzzelfoto').forEach(el => el.remove());
   const foto = geldigePuzzelfoto(puzzel);
   if (!foto || ![1, 2, 3].includes(Number(foto.vraag))) return;
-  // Beeld bij vraag 1 staat in het midden; bijschrift en bron blijven bij vraag 1 horen.
-  const positie = Number(foto.vraag) === 1 ? 2 : Number(foto.vraag);
+  // Het beeld hoort bij dezelfde vraag als het bijschrift, ook bij vraag 1.
+  const positie = Number(foto.vraag);
   const blok = lijst.querySelectorAll('.q-block')[positie - 1];
   if (!blok) return;
   lijst.classList.add('puzzelfoto-lijst');
