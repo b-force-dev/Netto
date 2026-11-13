@@ -162,8 +162,9 @@
     document.querySelector('[data-tutorial-start]')?.addEventListener('click', open);
     window.NettoTutorial = Object.freeze({ open });
     if (!firstVisit()) return;
-    if (!linked && !document.querySelector('dialog[open]')) open();
-    else {
+    // Een nieuwe bezoeker ziet eerst de startpagina met het voorbeeld. De tour
+    // is een uitnodiging, geen venster dat die pagina meteen bedekt.
+    {
       chip = el('div', '', 'tutorial-chip');
       chip.append(button(copy('New here? 30-second tour', 'Nieuw hier? Tour van 30 seconden'), open),
         button('×', () => { remember(); chip.remove(); }));
