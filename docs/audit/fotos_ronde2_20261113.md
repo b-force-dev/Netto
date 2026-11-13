@@ -158,3 +158,25 @@ Deze partij: 7 met foto; 23 bewust zonder. Nog 15 Library-vragen open; de oorspr
 | Hoeveel cent zit er in één euro? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
 | Hoeveel van de acht planeten draaien verder van de zon dan de aarde? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
 | Hoeveel zijvlakken heeft een regelmatige icosaëdrische dobbelsteen? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+
+## Library-vragen 121–135 van 135
+
+Deze partij: 7 met foto; 8 bewust zonder. Nog 0 Library-vragen open; de oorspronkelijke vervolglijst telt 248 (met overlap met Library).
+
+| Vraag | Keuze en bronvermelding | Reden |
+|---|---|---|
+| Welk nummer heeft Haydns laatste genummerde symfonie, de Londense symfonie? | [Commons](https://commons.wikimedia.org/wiki/File:Joseph_Haydn.jpg); Thomas Hardy; Public domain | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel velden telt een internationaal dambord? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel wielen heeft een Formule 1-auto volgens de regels uit 2025? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel minuten zijn twee uur? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van calcium? | [Commons](https://commons.wikimedia.org/wiki/File:Calcium_unter_Argon_Schutzgasatmosph%C3%A4re.jpg); Matthias Zepper; Public domain | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel punten levert een touchdown op bij American football, vóór een conversiepoging? | [Commons](https://commons.wikimedia.org/wiki/File:Vince_Young_scores_a_touchdown_in_the_2005_Big_12_Championship_Game.JPG); Johntex; CC BY 2.5 | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel zijvlakken heeft een regelmatige octaëdrische dobbelsteen? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van zwavel? | [Commons](https://commons.wikimedia.org/wiki/File:Sulfur-sample.jpg); Ben Mills; Public domain | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel bits bevat een internetprotocoladres van versie zes? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel stuks vormen één gros? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel Copa América-titels had Brazilië eind 2024 gewonnen? | [Commons](https://commons.wikimedia.org/wiki/File:Copa_america_trofeo.jpg); Casa Escasany de Buenos Aires (trophy) Hazaña17 (photo); Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel verschillende cijfers gebruikt het hexadecimale getallenstelsel? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel kleine vakjes telt een vierkant raster van veertien bij veertien? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van nikkel? | [Commons](https://commons.wikimedia.org/wiki/File:Nickel_chunk.jpg); Materialscientist (talk); CC BY-SA 3.0 | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Over hoeveel landen is het werelderfgoed Het architectonische werk van Le Corbusier verspreid? | [Commons](https://commons.wikimedia.org/wiki/File:Le_Corbusier_(1964).jpg); Joop van Bilsen for Anefo; CC0 | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
