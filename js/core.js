@@ -109,8 +109,8 @@
     try {
       const u = new URL(window.location.href);
       const invite = sessionStorage.getItem('netto_live_invite');
-      if (u.pathname.includes('live-rounds') && /^[A-Z2-9]{6}$/.test(invite || '')) u.searchParams.set('join', invite);
-      return u.origin + u.pathname + u.search;
+      const join = u.pathname.includes('live-rounds') && /^[A-Z2-9]{6}$/.test(invite || '') ? `?join=${invite}` : '';
+      return u.origin + u.pathname + join;
     } catch (_) {
       return undefined;   // undefined laat Supabase zijn eigen Site URL kiezen
     }
