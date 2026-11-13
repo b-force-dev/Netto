@@ -1,8 +1,8 @@
 # Vervolg vragenaudit — 13 november 2026
 
-Bereik: 75 van de 122 open punten uit het verslag van 12 november. De letterlijke categorie “Definitie, bron of afbakening vereist vervolgcontrole” bevat 39 punten; de 122 omvatten ook records, statistiek en redactionele keuzes.
+Bereik: 100 van de 122 open punten uit het verslag van 12 november. De letterlijke categorie “Definitie, bron of afbakening vereist vervolgcontrole” bevat 39 punten; de 122 omvatten ook records, statistiek en redactionele keuzes.
 
-Uitkomsten: in orde: 13, aangescherpt: 41, antwoord gecorrigeerd: 0, vraag vervangen: 0, nog open: 21.
+Uitkomsten: in orde: 17, aangescherpt: 54, antwoord gecorrigeerd: 0, vraag vervangen: 0, nog open: 29.
 
 Bronnen zijn op 13 november 2026 geraadpleegd. Een bron bij **nog open** is een gecontroleerde verwijzing, geen bevestiging van het oude antwoord. Niet toegankelijke pagina’s zijn niet als bewijs aanvaard. Getallen zijn niet van een verzonnen peildatum voorzien.
 
@@ -933,6 +933,312 @@ De Dode Zee grenst ook aan de bezette Westelijke Jordaanoever; twee landen zonde
 Bron: [geraadpleegde bron](https://nl.wikipedia.org/wiki/Dode_Zee).
 
 Vindplaatsen: race:pool-200, breinkrakers:bk-1.
+
+## 76. nr649 — aangescherpt
+
+Oud: Hoeveel kilogram weegt een volwassen emoe? Antwoord: **45**.
+
+Perth Zoo vermeldt een gewichtsbereik van 30–45 kilogram: de bovengrens is 45.
+
+Bron: [geraadpleegde bron](https://perthzoo.wa.gov.au/animal/emu).
+
+Vindplaatsen: race:pool-206.
+
+NL: Wat is volgens Perth Zoo de bovengrens van het opgegeven gewichtsbereik van een emoe, in kilogram?
+
+EN: According to Perth Zoo, what is the upper end of the stated weight range for an emu, in kilograms?
+
+## 77. nr684 — nog open
+
+Oud: Hoeveel tanden wisselt een haai gedurende zijn leven ongeveer? Antwoord: **20000**.
+
+20.000 vervangende tanden hangt van haaiensoort en levensduur af; passende soort en studie ontbreken.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Shark_tooth).
+
+Vindplaatsen: race:pool-222, breinkrakers:bk-182.
+
+## 78. nr372 — in orde
+
+Oud: Hoeveel miljoen ton plastic afval lekt jaarlijks in rivieren, meren en zeeën, volgens de ondergrens van de VN-schatting? Antwoord: **19**.
+
+UNEP noemt een geschatte 19 tot 23 miljoen ton per jaar; de ondergrens is 19 miljoen.
+
+Bron: [geraadpleegde bron](https://www.unep.org/en/what-we-do/ocean-seas-and-coasts/ecosystem-degradation-pollution/plastic-pollution-and-marine).
+
+Vindplaatsen: race:pool-226, breinkrakers:bk-81.
+
+NL: Hoeveel miljoen ton plastic afval lekt jaarlijks in rivieren, meren en zeeën, volgens de ondergrens van de VN-schatting?
+
+EN: How many million tonnes of plastic waste leak into rivers, lakes and seas each year, according to the lower end of the UN estimate?
+
+## 79. nr540 — aangescherpt
+
+Oud: Hoeveel letters had het oorspronkelijke Morsealfabet ongeveer? Antwoord: **26**.
+
+De internationale morsecode codeert de 26 basisletters A tot en met Z; cijfers en aanvullende tekens tellen hier niet mee.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Morse_code).
+
+Vindplaatsen: race:pool-231, breinkrakers:bk-190.
+
+NL: Hoeveel basisletters van het Latijnse alfabet worden gecodeerd in de internationale morsecode?
+
+EN: How many basic Latin alphabet letters are encoded in International Morse code?
+
+## 80. nr1298 — nog open
+
+Oud: Hoe hoog was de hoogste robot ooit gebouwd in meters? Antwoord: **18**.
+
+Guinness-link geeft pagina niet gevonden. Voor 18 m zijn concreet exemplaar en categorie (beweegbaar beeld versus robot) nodig.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/tallest-humanoid-robot).
+
+Vindplaatsen: race:pool-232.
+
+## 81. nr311 — aangescherpt
+
+Oud: Hoeveel chromosomen telt een gezonde menselijke cel? Antwoord: **46**.
+
+Een normale diploïde menselijke lichaamscel heeft 23 chromosomenparen, samen 46; geslachtscellen en kernloze rode bloedcellen vallen buiten deze vraag.
+
+Bron: [geraadpleegde bron](https://www.genome.gov/genetics-glossary/Chromosome).
+
+Vindplaatsen: race:pool-233.
+
+NL: Hoeveel chromosomen heeft een menselijke diploïde lichaamscel normaal in de celkern?
+
+EN: How many chromosomes does a human diploid body cell normally have in its nucleus?
+
+## 82. nr1505 — in orde
+
+Oud: Hoeveel diagonalen heeft een regelmatige twaalfhoek? Antwoord: **54**.
+
+Een convexe twaalfhoek heeft 12×9/2 = 54 diagonalen. De oude bron ging over een vijfhoek; passende bron toegevoegd.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Diagonal).
+
+Vindplaatsen: race:pool-237.
+
+## 83. nr721 — aangescherpt
+
+Oud: Hoeveel procent van de wereldcacao komt uit West-Afrika? Antwoord: **70**.
+
+De ICCO-verklaring van 17 oktober 2014 noemt circa 70 procent voor West-Afrika.
+
+Bron: [geraadpleegde bron](https://www.icco.org/icco-statement-on-ebola-and-the-west-african-cocoa-sector/).
+
+Vindplaatsen: race:pool-240.
+
+NL: Hoeveel procent van de wereldcacao leverde West-Afrika bij benadering volgens de ICCO-verklaring uit oktober 2014?
+
+EN: Approximately what percentage of the world’s cocoa did West Africa supply according to the ICCO statement of October 2014?
+
+## 84. nr192 — nog open
+
+Oud: Hoeveel vakken heeft een klassieke eierdoos meestal? Antwoord: **12**.
+
+Eierdozen kunnen 6, 10, 12 of meer eieren bevatten. Bron bewijst geen algemeen meest voorkomende maat; product of regio ontbreekt.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Egg_carton).
+
+Vindplaatsen: race:pool-251.
+
+## 85. nr1095 — nog open
+
+Oud: Hoeveel procent van de oorspronkelijke bossen in de wereld is nog over? Antwoord: **36**.
+
+FAO 2020 noemt minstens 1,11 miljard hectare primair bos, niet dat 36 procent van alle oorspronkelijke bossen over is. Teller/noemer niet onderbouwd.
+
+Bron: [geraadpleegde bron](https://www.fao.org/interactive/forest-resources-assessment/2020/en/).
+
+Vindplaatsen: race:pool-251, breinkrakers:bk-87.
+
+## 86. nr102 — in orde
+
+Oud: Hoeveel diagonalen heeft een regelmatige tienhoek? Antwoord: **35**.
+
+Een convexe tienhoek heeft 10×7/2 = 35 diagonalen.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Diagonal).
+
+Vindplaatsen: race:pool-254.
+
+## 87. nr722 — nog open
+
+Oud: Hoeveel procent van de wereldkoffie komt uit Brazilië? Antwoord: **35**.
+
+Bron onderbouwt geen 35 procent met oogstjaar en eenheid voor Braziliaans aandeel in wereldkoffie.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Coffee_production_in_Brazil).
+
+Vindplaatsen: race:pool-256, breinkrakers:bk-101.
+
+## 88. nr637 — in orde
+
+Oud: Hoeveel dieren bevat de klassieke Big Five van Afrika? Antwoord: **5**.
+
+De klassieke Big Five zijn leeuw, luipaard, olifant, neushoorn en buffel: vijf. De naam is bewust behouden.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Big_five_game).
+
+Vindplaatsen: race:pool-258, breinkrakers:bk-157.
+
+## 89. nr920 — nog open
+
+Oud: Hoeveel landen telt Europa? Antwoord: **50**.
+
+De Europese lijst telt 50 staten op basis van ligging en/of lidmaatschap van organisaties, niet één geografische indeling. Definitie nog niet onafhankelijk vastgelegd.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe).
+
+Vindplaatsen: race:pool-263.
+
+## 90. nr1077 — aangescherpt
+
+Oud: Hoeveel procent van de wereldwijde landbouwgrond wordt geïrrigeerd? Antwoord: **20**.
+
+Het FAO-feitenoverzicht uit 2015 noemt 20 procent van het beteelde land; dit omvat niet alle landbouwgrond zoals permanente weiden.
+
+Bron: [geraadpleegde bron](https://www.fao.org/fileadmin/user_upload/mdg/doc/100facts_EN_SOFI2015.pdf).
+
+Vindplaatsen: race:pool-264, breinkrakers:bk-187.
+
+NL: Hoeveel procent van het wereldwijde beteelde land werd volgens het FAO-feitenoverzicht uit 2015 geïrrigeerd?
+
+EN: What percentage of the world’s cultivated land was irrigated according to the 2015 FAO factsheet?
+
+## 91. nr434 — aangescherpt
+
+Oud: Hoe groot was de grootste pizza ooit in vierkante meter? Antwoord: **1297**.
+
+Guinness vermeldt 1296,72 vierkante meter op 19 januari 2023: afgerond 1297.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/largest-pizza).
+
+Vindplaatsen: breinkrakers:bk-7, breinkrakers:bk-20.
+
+NL: Hoeveel vierkante meter groot was de recordpizza van Airrack in Los Angeles in januari 2023, afgerond?
+
+EN: How many square metres was Airrack’s record pizza in Los Angeles in January 2023, rounded?
+
+## 92. nr1219 — aangescherpt
+
+Oud: Hoeveel miljard euro bedraagt het Nederlandse defensiebudget? Antwoord: **21**.
+
+Defensie meldde op Prinsjesdag 2023 een begroting van 21,4 miljard euro voor 2024: afgerond 21 miljard.
+
+Bron: [geraadpleegde bron](https://www.defensie.nl/actueel/nieuws/2023/09/19/prinsjesdag-2023-dreigingen-wereldwijd-onderstrepen-noodzaak-van-een-sterke-krijgsmacht).
+
+Vindplaatsen: breinkrakers:bk-8.
+
+NL: Hoeveel miljard euro had Nederland voor defensie-uitgaven in 2024 begroot volgens de aankondiging op Prinsjesdag 2023, afgerond?
+
+EN: How many billion euros had the Netherlands budgeted for defence spending in 2024 according to the September 2023 budget announcement, rounded?
+
+## 93. nr1062 — aangescherpt
+
+Oud: Hoeveel kilogram weegt de Moai-beelden op Paaseiland gemiddeld? Antwoord: **12500**.
+
+De gangbare schatting is circa 12,5 ton per moai: 12.500 kilogram; de afzonderlijke beelden verschillen sterk.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Moai).
+
+Vindplaatsen: breinkrakers:bk-19, breinkrakers:bk-81, breinkrakers:bk-108.
+
+NL: Hoeveel kilogram weegt een moai op Paaseiland volgens de gangbare schatting ongeveer?
+
+EN: Approximately how many kilograms does a moai on Easter Island weigh according to the commonly cited estimate?
+
+## 94. nr45 — nog open
+
+Oud: Hoeveel ton goud wordt wereldwijd jaarlijks gewonnen? Antwoord: **3000**.
+
+USGS-overzicht is geen historische jaarwaarde voor 3000 ton. Mijnproductie, recycling en afronding moeten worden onderscheiden.
+
+Bron: [geraadpleegde bron](https://www.usgs.gov/centers/national-minerals-information-center/gold-statistics-and-information).
+
+Vindplaatsen: breinkrakers:bk-21, breinkrakers:bk-22, breinkrakers:bk-24.
+
+## 95. nr479 — aangescherpt
+
+Oud: Hoeveel dorpen krijgt iedere speler bij de start van Catan? Antwoord: **5**.
+
+Iedere speler heeft vijf dorpsstukken; bij de opbouw worden daarvan twee op het bord gezet.
+
+Bron: [geraadpleegde bron](https://www.catan.com/sites/default/files/2021-07/catan-25th-rules_eng-200313.pdf).
+
+Vindplaatsen: breinkrakers:bk-23, breinkrakers:bk-156.
+
+NL: Hoeveel houten dorpsstukken krijgt iedere speler in het basisspel Catan?
+
+EN: How many wooden settlement pieces does each player receive in the Catan base game?
+
+## 96. nr441 — aangescherpt
+
+Oud: Hoe lang is de langste levende vrouw in centimeters? Antwoord: **215**.
+
+Guinness vermeldt 215,16 centimeter op 23 mei 2021: afgerond 215.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/tallest-woman-living).
+
+Vindplaatsen: breinkrakers:bk-34, breinkrakers:bk-168, breinkrakers:bk-196.
+
+NL: Hoeveel centimeter lang was Rumeysa Gelgi volgens Guinness in mei 2021, afgerond?
+
+EN: How many centimetres tall was Rumeysa Gelgi according to Guinness in May 2021, rounded?
+
+## 97. nr1423 — nog open
+
+Oud: Hoeveel bekende manen heeft Jupiter (stand 2026)? Antwoord: **115**.
+
+Pagina noemt 115 op 9 april 2026. IAU bevestigt nieuwe manen in maart, maar de totaaltelling voor 9 april is nog niet bij MPC/IAU vastgesteld.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Moons_of_Jupiter).
+
+Vindplaatsen: breinkrakers:bk-36, breinkrakers:bk-181.
+
+## 98. nr1307 — aangescherpt
+
+Oud: Hoe zwaar was de grootste chocoladereep ooit in kilogram? Antwoord: **5793**.
+
+Guinness vermeldt 5792,50 kilogram: afgerond op hele kilogrammen 5793.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/largest-chocolate-bar-).
+
+Vindplaatsen: breinkrakers:bk-46, breinkrakers:bk-97, breinkrakers:bk-98.
+
+NL: Hoeveel kilogram woog de chocoladereep van Thorntons uit 2011 volgens Guinness, afgerond?
+
+EN: How many kilograms did the Thorntons chocolate bar from 2011 weigh according to Guinness, rounded?
+
+## 99. nr411 — aangescherpt
+
+Oud: Hoeveel kg afval produceert een Nederlander gemiddeld per jaar? Antwoord: **449**.
+
+De voorlopige CBS-cijfers voor 2025 geven 449 kilogram ingezameld huishoudelijk afval per inwoner.
+
+Bron: [geraadpleegde bron](https://www.cbs.nl/nl-nl/cijfers/detail/83558NED).
+
+Vindplaatsen: breinkrakers:bk-47, breinkrakers:bk-129.
+
+NL: Hoeveel kilogram huishoudelijk afval zamelden Nederlandse gemeenten in 2025 per inwoner in volgens de voorlopige CBS-cijfers?
+
+EN: How many kilograms of household waste did Dutch municipalities collect per inhabitant in 2025 according to provisional CBS figures?
+
+## 100. nr1249 — aangescherpt
+
+Oud: Hoeveel miljoen inwoners heeft China? Antwoord: **1410**.
+
+Het naslagwerk vermeldt 1410 miljoen inwoners voor 2023.
+
+Bron: [geraadpleegde bron](https://nl.wikipedia.org/wiki/Bevolking_van_China).
+
+Vindplaatsen: breinkrakers:bk-52.
+
+NL: Hoeveel miljoen inwoners had China volgens het bevolkingscijfer voor 2023 in de Engelstalige Wikipedia?
+
+EN: How many million inhabitants did China have according to English Wikipedia’s population figure for 2023?
 
 ## Controles
 

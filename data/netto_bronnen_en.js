@@ -1815,5 +1815,19 @@ window.NETTO_BRONNEN_EN = {
   "De Britse Lindt-productpagina noemt 70 procent cacao; dit is een specifiek product, geen standaard voor alle pure chocolade.": "The UK Lindt product page gives 70 per cent cocoa; this is a specific product, not a standard for all dark chocolate.",
   "Het CBS noemt voor 2023 gemiddeld 1065 fietskilometer per persoon van zes jaar of ouder.": "CBS gives an average of 1,065 kilometres cycled per person aged six or over in 2023.",
   "De Society for Mining, Metallurgy and Exploration vermeldt op basis van USGS 22 miljoen metrische ton mijnproductie in 2023.": "The Society for Mining, Metallurgy and Exploration reports, citing USGS, 22 million metric tonnes of mine production in 2023.",
-  "Het VN-rapport uit 2021 noemt circa 400 miljoen ton plastic per jaar.": "The 2021 UN report gives approximately 400 million tonnes of plastic per year."
+  "Het VN-rapport uit 2021 noemt circa 400 miljoen ton plastic per jaar.": "The 2021 UN report gives approximately 400 million tonnes of plastic per year.",
+  "Perth Zoo vermeldt een gewichtsbereik van 30–45 kilogram: de bovengrens is 45.": "Perth Zoo gives a weight range of 30–45 kilograms: the upper end is 45.",
+  "UNEP noemt een geschatte 19 tot 23 miljoen ton per jaar; de ondergrens is 19 miljoen.": "UNEP estimates 19 to 23 million tonnes per year; the lower end is 19 million.",
+  "De internationale morsecode codeert de 26 basisletters A tot en met Z; cijfers en aanvullende tekens tellen hier niet mee.": "International Morse code encodes the 26 basic Latin letters A to Z; numerals and additional characters are excluded here.",
+  "Een normale diploïde menselijke lichaamscel heeft 23 chromosomenparen, samen 46; geslachtscellen en kernloze rode bloedcellen vallen buiten deze vraag.": "A normal human diploid body cell has 23 chromosome pairs, totalling 46; gametes and anucleate red blood cells are excluded.",
+  "De ICCO-verklaring van 17 oktober 2014 noemt circa 70 procent voor West-Afrika.": "The ICCO statement of 17 October 2014 gives approximately 70 per cent for West Africa.",
+  "Het FAO-feitenoverzicht uit 2015 noemt 20 procent van het beteelde land; dit omvat niet alle landbouwgrond zoals permanente weiden.": "The 2015 FAO factsheet gives 20 per cent of cultivated land; this does not include all agricultural land such as permanent pasture.",
+  "Guinness vermeldt 1296,72 vierkante meter op 19 januari 2023: afgerond 1297.": "Guinness gives 1,296.72 square metres on 19 January 2023: 1,297 when rounded.",
+  "Defensie meldde op Prinsjesdag 2023 een begroting van 21,4 miljard euro voor 2024: afgerond 21 miljard.": "The Ministry of Defence announced a 2024 budget of 21.4 billion euros in September 2023: 21 billion when rounded.",
+  "De gangbare schatting is circa 12,5 ton per moai: 12.500 kilogram; de afzonderlijke beelden verschillen sterk.": "The commonly cited estimate is around 12.5 tonnes per moai: 12,500 kilograms; individual statues vary greatly.",
+  "Iedere speler heeft vijf dorpsstukken; bij de opbouw worden daarvan twee op het bord gezet.": "Each player has five settlement pieces; two are placed on the board during set-up.",
+  "Guinness vermeldt 215,16 centimeter op 23 mei 2021: afgerond 215.": "Guinness gives 215.16 centimetres on 23 May 2021: 215 when rounded.",
+  "Guinness vermeldt 5792,50 kilogram: afgerond op hele kilogrammen 5793.": "Guinness gives 5,792.50 kilograms: 5,793 to the nearest whole kilogram.",
+  "De voorlopige CBS-cijfers voor 2025 geven 449 kilogram ingezameld huishoudelijk afval per inwoner.": "Provisional CBS figures for 2025 give 449 kilograms of household waste collected per inhabitant.",
+  "Het naslagwerk vermeldt 1410 miljoen inwoners voor 2023.": "The reference gives 1,410 million inhabitants for 2023."
 };

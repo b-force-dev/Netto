@@ -2624,7 +2624,7 @@ window.NETTO_TRANSLATIONS_EN = {
   "Hoeveel versies van Zonnebloemen in een vaas schilderde Van Gogh in Arles?": "How many versions of Sunflowers in a vase did Van Gogh paint in Arles?",
   "Hoeveel beelden telt het Terracottaleger ongeveer?": "Approximately how many statues make up the Terracotta Army?",
   "Welk percentage van het wereldwijde staal werd in 2023 in China geproduceerd?": "What percentage of the world's steel was produced in China in 2023?",
-  "Hoeveel miljoen ton plastic afval lekt jaarlijks in rivieren, meren en zeeën, volgens de ondergrens van de VN-schatting?": "How many million tonnes of plastic waste enter rivers, lakes and seas annually, at the lower end of the UN estimate?",
+  "Hoeveel miljoen ton plastic afval lekt jaarlijks in rivieren, meren en zeeën, volgens de ondergrens van de VN-schatting?": "How many million tonnes of plastic waste leak into rivers, lakes and seas each year, according to the lower end of the UN estimate?",
   "Hoeveel facetten heeft een rond briljant geslepen diamant, zonder de punt (culet) mee te tellen?": "How many facets does a round brilliant-cut diamond have, excluding the culet?",
   "Hoeveel Grammy-nominaties had Beyoncé in totaal bij de uitreiking van februari 2025?": "How many Grammy nominations had Beyoncé received by the February 2025 ceremony?",
   "Hoeveel studioalbums met nieuw werk had Taylor Swift eind 2025 uitgebracht?": "How many original studio albums had Taylor Swift released by the end of 2025?",
@@ -2900,5 +2900,18 @@ window.NETTO_TRANSLATIONS_EN = {
   "Hoeveel procent cacao bevat de Lindt Excellence Intense Dark-reep van 100 gram op de Britse productpagina?": "What percentage cocoa does the 100-gram Lindt Excellence Intense Dark bar contain on the UK product page?",
   "Hoeveel kilometer fietste een inwoner van Nederland van zes jaar of ouder gemiddeld in 2023 volgens het CBS?": "How many kilometres did a resident of the Netherlands aged six or over cycle on average in 2023 according to CBS?",
   "Hoeveel ton koper werd volgens de schatting voor 2023 wereldwijd uit mijnen gewonnen, ongeveer?": "Approximately how many tonnes of copper were mined worldwide according to the estimate for 2023?",
-  "Hoeveel ton plastic werd volgens het VN-rapport Drowning in Plastics uit 2021 wereldwijd per jaar geproduceerd, ongeveer?": "Approximately how many tonnes of plastic were produced worldwide per year according to the UN report Drowning in Plastics from 2021?"
+  "Hoeveel ton plastic werd volgens het VN-rapport Drowning in Plastics uit 2021 wereldwijd per jaar geproduceerd, ongeveer?": "Approximately how many tonnes of plastic were produced worldwide per year according to the UN report Drowning in Plastics from 2021?",
+  "Wat is volgens Perth Zoo de bovengrens van het opgegeven gewichtsbereik van een emoe, in kilogram?": "According to Perth Zoo, what is the upper end of the stated weight range for an emu, in kilograms?",
+  "Hoeveel basisletters van het Latijnse alfabet worden gecodeerd in de internationale morsecode?": "How many basic Latin alphabet letters are encoded in International Morse code?",
+  "Hoeveel chromosomen heeft een menselijke diploïde lichaamscel normaal in de celkern?": "How many chromosomes does a human diploid body cell normally have in its nucleus?",
+  "Hoeveel procent van de wereldcacao leverde West-Afrika bij benadering volgens de ICCO-verklaring uit oktober 2014?": "Approximately what percentage of the world’s cocoa did West Africa supply according to the ICCO statement of October 2014?",
+  "Hoeveel procent van het wereldwijde beteelde land werd volgens het FAO-feitenoverzicht uit 2015 geïrrigeerd?": "What percentage of the world’s cultivated land was irrigated according to the 2015 FAO factsheet?",
+  "Hoeveel vierkante meter groot was de recordpizza van Airrack in Los Angeles in januari 2023, afgerond?": "How many square metres was Airrack’s record pizza in Los Angeles in January 2023, rounded?",
+  "Hoeveel miljard euro had Nederland voor defensie-uitgaven in 2024 begroot volgens de aankondiging op Prinsjesdag 2023, afgerond?": "How many billion euros had the Netherlands budgeted for defence spending in 2024 according to the September 2023 budget announcement, rounded?",
+  "Hoeveel kilogram weegt een moai op Paaseiland volgens de gangbare schatting ongeveer?": "Approximately how many kilograms does a moai on Easter Island weigh according to the commonly cited estimate?",
+  "Hoeveel houten dorpsstukken krijgt iedere speler in het basisspel Catan?": "How many wooden settlement pieces does each player receive in the Catan base game?",
+  "Hoeveel centimeter lang was Rumeysa Gelgi volgens Guinness in mei 2021, afgerond?": "How many centimetres tall was Rumeysa Gelgi according to Guinness in May 2021, rounded?",
+  "Hoeveel kilogram woog de chocoladereep van Thorntons uit 2011 volgens Guinness, afgerond?": "How many kilograms did the Thorntons chocolate bar from 2011 weigh according to Guinness, rounded?",
+  "Hoeveel kilogram huishoudelijk afval zamelden Nederlandse gemeenten in 2025 per inwoner in volgens de voorlopige CBS-cijfers?": "How many kilograms of household waste did Dutch municipalities collect per inhabitant in 2025 according to provisional CBS figures?",
+  "Hoeveel miljoen inwoners had China volgens het bevolkingscijfer voor 2023 in de Engelstalige Wikipedia?": "How many million inhabitants did China have according to English Wikipedia’s population figure for 2023?"
 };
