@@ -38,7 +38,7 @@
   function render() {
     content.replaceChildren();
     dialog.querySelector('.tutorial-progress').textContent = copy('Practice', 'Oefening') + ' · ' + (step + 1) + ' / 3';
-    const title = el('h2', [copy('Three questions. One equation.', 'Drie schattingen. Eén verband.'),
+    const title = el('h2', [copy('Three questions. One equation.', 'Drie vragen. Eén som.'),
       copy('Let the connection help.', 'Laat het verband helpen.'), copy('You’ve got it!', 'Je hebt het door!')][step]);
     title.id = 'tutorialTitle'; title.tabIndex = -1;
     content.append(title);
@@ -82,11 +82,11 @@
       };
       content.append(form);
     } else if (step === 1) {
-      content.append(el('p', copy('A dog has 4 legs. A human has 2. In this puzzle, A × B = C. What does that tell you about the spider?',
-        'Een hond heeft 4 poten. Een mens heeft 2 benen. In deze puzzel geldt A × B = C. Wat zegt dat over de spin?')));
-      content.append(el('div', '4 × 2 = ' + (corrected ? '88' : '?'), 'tutorial-equation'));
-      content.append(el('p', copy('Your piano guess: ', 'Jouw schatting voor de piano: ') + fmt(guesses[2]) + (corrected ? ' → 8' : '')));
-      if (!corrected) content.append(button(copy('Use the connection: 4 × 2', 'Gebruik het verband: 4 × 2'), () => {
+      content.append(el('p', copy('A spider has 8 legs. A football team has 11 players on the pitch. In this puzzle, A × B = C. What does that tell you about the piano?',
+        'Een spin heeft 8 poten. Een voetbalteam heeft 11 spelers op het veld. In deze puzzel geldt A × B = C. Wat zegt dat over de piano?')));
+      content.append(el('div', '8 × 11 = ' + (corrected ? '88' : '?'), 'tutorial-equation'));
+      content.append(el('p', copy('Your piano guess: ', 'Jouw schatting voor de piano: ') + fmt(guesses[2]) + (corrected ? ' → 88' : '')));
+      if (!corrected) content.append(button(copy('Use the connection: 8 × 11', 'Gebruik het verband: 8 × 11'), () => {
         corrected = true; render();
       }, 'tutorial-primary'));
       else {
@@ -97,7 +97,7 @@
         }, 'tutorial-primary'));
       }
     } else {
-      content.append(el('div', '4 × 2 = 8', 'tutorial-equation'));
+      content.append(el('div', '8 × 11 = 88', 'tutorial-equation'));
       const before = guesses.reduce((sum, g, i) => sum + scoreVraag(g, answers[i]), 0) / 3;
       content.append(el('p', copy('Your first guesses: ', 'Je eerste schattingen: ') + guesses.map(fmt).join(' · ')));
       content.append(el('p', copy('Average factor: ', 'Gemiddelde factor: ') + factorText(before) + '× → ' + factorText(1) + '×', 'tutorial-insight'));

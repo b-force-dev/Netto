@@ -3328,7 +3328,7 @@
     if (equationError) equationError.hidden = true;
     document.getElementById('screen-puzzle').classList.remove('is-review');
     const headline = document.getElementById('dailyHeadline');
-    if (headline) headline.innerHTML = statsCopy('Drie antwoorden. <span class="script">Eén som.</span>', 'Three answers. <span class="script">One equation.</span>');
+    if (headline) headline.innerHTML = statsCopy('Drie vragen. <span class="script">Eén som.</span>', 'Three questions. <span class="script">One equation.</span>');
     const questions = document.getElementById('dailyQuestionView');
     const nav = document.getElementById('dailyReviewNav');
     const results = document.getElementById('results');
