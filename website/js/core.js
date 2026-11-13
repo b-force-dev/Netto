@@ -1316,6 +1316,9 @@
 
   function parseFormattedNumber(str) {
     if (!str) return NaN;
+    // Optional estimate shorthand; ordinary whole-number fields still reject it.
+    const shorthand = String(str).trim().match(/^(.+?)\s*([km])$/i);
+    if (shorthand) return parseFormattedNumber(shorthand[1]) * (/k/i.test(shorthand[2]) ? 1000 : 1000000);
     const clean = window.NettoI18n?.locale() === 'nl'
       ? str.replace(/\./g, '').replace(',', '.')
       : str.replace(/,/g, '');
@@ -1539,13 +1542,14 @@
   }
   // Eén invoerregel voor alle spelmodi, inclusief plakken. Een ongeldig teken
   // wordt geweigerd, niet stilletjes uit een ander getal weggepoetst.
-  function bindWholeNumberInput(input, update) {
+  function bindWholeNumberInput(input, update, formatted = false) {
     let previous = input.value;
     input.addEventListener('beforeinput', event => {
-      if (event.data && /\D/.test(event.data)) event.preventDefault();
+      if (event.data && (formatted ? /[^\d.,km\s]/i : /\D/).test(event.data)) event.preventDefault();
     });
     input.addEventListener('input', () => {
-      if (!/^\d*$/.test(input.value)) { input.value = previous; return; }
+      const valid = formatted ? /^\d[\d.,\s]*[km]?$/i.test(input.value) || input.value === '' : /^\d*$/.test(input.value);
+      if (!valid) { input.value = previous; return; }
       previous = input.value;
       autoCalculatedInputs.delete(input.id);
       input.classList.remove('auto-calculated');

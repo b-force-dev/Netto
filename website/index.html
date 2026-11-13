@@ -110,6 +110,7 @@
 <link rel="stylesheet" href="css/vindbaarheid.css?v=2">
 <link rel="stylesheet" href="css/pwa.css?v=2">
 <link rel="stylesheet" href="css/desktop.css?v=2">
+<link rel="stylesheet" href="css/tutorial.css?v=2">
 
 </head>
 <body>
@@ -508,46 +509,18 @@
       </section>
 
       <section class="about-panel" id="howPanel" style="display:none;">
-        <h2>De korte versie</h2>
-        <p class="how-lede">Schat drie antwoorden. Gebruik de formule als extra aanwijzing. De laagste factor wint.</p>
-        <div class="how-equation" aria-label="A maal B is C"><span>A</span><b>×</b><span>B</span><b>=</b><span>C</span></div>
-
-        <section class="how-example" aria-labelledby="howExampleTitle">
-          <div class="how-example-heading">
-            <span>Voorbeeldpuzzel</span>
-            <h3 id="howExampleTitle">Een supermakkelijk voorbeeld</h3>
-            <p>De antwoorden zijn expres simpel, zodat je meteen ziet hoe het verband helpt.</p>
-          </div>
-          <div class="how-example-grid">
-            <article><span>Vraag 1 · A</span><p>Hoeveel poten heeft een hond?</p><strong>4</strong></article>
-            <article><span>Vraag 2 · B</span><p>Hoeveel benen heeft een mens?</p><strong>2</strong></article>
-            <article><span>Vraag 3 · C</span><p>Hoeveel poten heeft een spin?</p><strong>8</strong></article>
-          </div>
-          <div class="how-example-result"><strong>4 × 2 = 8</strong><span>Je weet dus al dat het derde antwoord 8 moet zijn.</span></div>
-        </section>
-
+        <h2 data-nl="Zo speel je Netto">How to play Netto</h2>
+        <p class="how-lede" data-nl="Schat drie feiten. Gebruik het verband om je antwoorden te verbeteren.">Estimate three facts. Use the connection to improve your guesses.</p>
+        <button type="button" class="tutorial-start" data-tutorial-start data-nl="Probeer de tour van 30 seconden">Try the 30-second tour</button>
+        <div class="how-equation" aria-label="A ? B = C"><span>A</span><b>?</b><span>B</span><b>=</b><span>C</span></div>
         <ol class="how-steps">
-          <li><span class="how-step-number">01</span><div><h3>Schat de drie antwoorden</h3><p>Vul bij iedere vraag je beste schatting in. Exact weten hoeft niet.</p></div></li>
-          <li><span class="how-step-number">02</span><div><h3>Controleer het verband</h3><p>De eerste twee antwoorden vormen samen het derde. Gebruik een antwoord dat je vertrouwt om de andere twee te controleren.</p></div></li>
-          <li><span class="how-step-number">03</span><div><h3>Houd je factor laag</h3><p>Een exact antwoord scoort 1,00×. Zit je twee keer te hoog of te laag, dan scoor je 2,00×. Je eindscore is het gemiddelde van de drie.</p></div></li>
+          <li><span class="how-step-number">01</span><div><h3 data-nl="Schat drie antwoorden">Estimate three answers</h3><p data-nl="Vul je beste schattingen in. Je hoeft niet alles te weten.">Enter your best guesses. You don?t need to know everything.</p></div></li>
+          <li><span class="how-step-number">02</span><div><h3 data-nl="Gebruik het verband">Use the connection</h3><p data-nl="Bijvoorbeeld: een hond heeft 4 poten, een mens 2 benen en een spin 8 poten. Dus 4 ? 2 = 8. Gebruik antwoorden die je vertrouwt om de andere te verbeteren. De operator kan per puzzel verschillen.">For example: a dog has 4 legs, a human 2, and a spider 8. So 4 ? 2 = 8. Use answers you trust to improve the others. The operator can change from puzzle to puzzle.</p></div></li>
+          <li><span class="how-step-number">03</span><div><h3 data-nl="Lager is beter">Lower is better</h3><p data-nl="1,00? is perfect; 2? betekent dat je er een factor twee naast zat. Je eindfactor is het gemiddelde van de drie. Je ziet ook je nauwkeurigheid: 100% gedeeld door je factor.">1.00? is perfect; 2? means you were a factor of two off. Your final factor is the average of all three. You?ll also see your accuracy: 100% divided by your factor.</p></div></li>
         </ol>
-
-        <h3 class="how-score-heading">Zo lees je de score</h3>
-        <div class="how-score-bars">
-          <div class="how-score-bar"><span class="tag tag-green">1,00×</span><small>Exact</small></div>
-          <div class="how-score-bar"><span class="tag tag-yellow">≤ 1,15×</span><small>Zeer dichtbij</small></div>
-          <div class="how-score-bar"><span class="tag tag-orange">≤ 1,50×</span><small>Goede schatting</small></div>
-          <div class="how-score-bar"><span class="tag tag-red">&gt; 2,50×</span><small>Ruim ernaast</small></div>
-        </div>
-
-        <div class="how-next">
-          <h3>Wat wil je spelen?</h3>
-          <div class="how-next-grid">
-            <button type="button" onclick="NettoRoutes.openToday()"><b>De Daily</b><span>Drie vragen, één keer per dag.</span><i aria-hidden="true">→</i></button>
-            <button type="button" onclick="openPuzzleRace()"><b>Puzzel Race</b><span>Zoveel mogelijk exact binnen de tijd.</span><i aria-hidden="true">→</i></button>
-            <button type="button" onclick="openConnection()"><b>Find the Connection</b><span>Rearrange three questions and find the connection.</span><i aria-hidden="true">→</i></button>
-          </div>
-        </div>
+        <div class="how-next"><div class="how-next-grid">
+          <button type="button" onclick="NettoRoutes.openToday()"><b data-nl="Speel de Daily van vandaag">Play today?s Daily</b><span data-nl="Drie vragen. Elke dag een nieuwe puzzel.">Three questions. A fresh puzzle every day.</span><i aria-hidden="true">?</i></button>
+        </div></div>
       </section>
       <div class="library-difficulties" id="libraryDifficulties">
         <button class="active" onclick="selectLibraryDifficulty('easy', this)">Easy <span>laden…</span></button>
@@ -1239,7 +1212,7 @@
 <script src="js/question-context.js?v=4"></script>
 <script src="js/answer-reveal.js?v=8"></script>
 <script src="js/usage.js?v=1"></script>
-<script src="js/core.js?v=147"></script>
+<script src="js/core.js?v=148"></script>
 <script src="js/share.js?v=2"></script>
 <script src="js/puzzle-modes.js?v=69"></script>
 <script src="js/find-connection.js?v=13"></script>
@@ -1254,6 +1227,7 @@
 <script src="js/app.js?v=36"></script>
 <script src="js/stats-page.js?v=10"></script>
 <script src="js/pwa.js?v=2"></script>
+<script src="js/tutorial.js?v=2"></script>
 
 </body>
 </html>
