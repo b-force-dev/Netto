@@ -102,6 +102,7 @@
   }
 
   function renderWelkom(stand) {
+    el('homeWelcomeStats').setAttribute('aria-label', copy('Jouw cijfers', 'Your numbers'));
     const procent = stand.vandaag ? Math.round(stand.vandaag.accuracy) : null;
     el('homeWelcomeTitle').textContent = stand.vandaag
       ? copy(`Vandaag: ${procent}% nauwkeurig.`, `Today: ${procent}% accurate.`)

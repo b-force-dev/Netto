@@ -219,12 +219,12 @@
     const label = document.createElement('span');
     label.textContent = statsCopy('Gemiddelde factor', 'Average factor');
     const score = document.createElement('strong');
-    score.textContent = factor.toFixed(2) + '×';
+    score.textContent = formatLibraryFactor(factor);
     const detail = document.createElement('span');
     const oud = eerder ? libraryFactorOf(eerder) : null;
     detail.textContent = oud !== null
       ? statsCopy('Oefenronde. Je score blijft ' + formatLibraryFactor(oud) + '.', 'Practice round. Your score stays ' + formatLibraryFactor(oud) + '.')
-      : libraryRating(factor) + ' · ' + statsCopy('Dichter bij 1.00× is beter.', 'Closer to 1.00× is better.');
+      : libraryRating(factor) + ' · ' + statsCopy('Dichter bij 1,00× is beter.', 'Closer to 1.00× is better.');
     summary.append(label, score, detail);
     list.appendChild(summary);
     answers.forEach((answer, index) => {
@@ -238,7 +238,7 @@
       const exact = isSpotOnAnswer(guesses[index], answer);
       verdict.className = 'puzzle-review-verdict' + (exact ? ' is-exact' : '');
       verdict.textContent = exact ? statsCopy('✓ Exact goed', '✓ Exactly right')
-        : scoreVraag(guesses[index], answer).toFixed(2) + '× ' + (guesses[index] < answer
+        : formatLibraryFactor(scoreVraag(guesses[index], answer)) + ' ' + (guesses[index] < answer
           ? statsCopy('te laag', 'too low') : statsCopy('te hoog', 'too high'));
       header.append(number, verdict);
       const question = document.createElement('h3');
