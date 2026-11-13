@@ -2874,5 +2874,18 @@ window.NETTO_TRANSLATIONS_EN = {
   "Hoeveel volle jaren oud werd de Australische hond Bluey volgens Guinness?": "How many full years old did the Australian dog Bluey live to be according to Guinness?",
   "Hoeveel miljoen inwoners had Nieuw-Zeeland op 30 juni 2024 volgens Stats NZ, afgerond?": "How many million inhabitants did New Zealand have on 30 June 2024 according to Stats NZ, rounded?",
   "Hoeveel Starbucks-winkels waren er wereldwijd aan het einde van boekjaar 2024, afgerond op tienduizendtallen?": "How many Starbucks stores were there worldwide at the end of fiscal 2024, rounded to the nearest ten thousand?",
-  "Hoeveel satellieten lanceerde ISRO met PSLV-C37 op 15 februari 2017?": "How many satellites did ISRO launch on PSLV-C37 on 15 February 2017?"
+  "Hoeveel satellieten lanceerde ISRO met PSLV-C37 op 15 februari 2017?": "How many satellites did ISRO launch on PSLV-C37 on 15 February 2017?",
+  "Hoeveel kilogram weegt een volwassen mannelijk nijlpaard gemiddeld, afgerond op honderdtallen?": "How many kilograms does an adult male hippopotamus weigh on average, rounded to the nearest hundred?",
+  "Hoeveel centimeter hoog was de Duitse dog Zeus bij de schouder in oktober 2011, afgerond?": "How many centimetres tall was the Great Dane Zeus at the shoulder in October 2011, rounded?",
+  "Hoeveel deelnemers telde het recordwaterballonnengevecht in Lexington op 27 augustus 2011?": "How many participants took part in the record water balloon fight in Lexington on 27 August 2011?",
+  "Hoeveel kilogram weegt een mannelijke jaguar in de Braziliaanse Pantanal gemiddeld volgens Animal Diversity Web?": "How many kilograms does a male jaguar in the Brazilian Pantanal weigh on average according to Animal Diversity Web?",
+  "Hoeveel kilogram weegt een zuidelijke breedneuswombat gemiddeld volgens Redz Zoo?": "How many kilograms does a southern hairy-nosed wombat weigh on average according to Redz Zoo?",
+  "Hoeveel procent van het voor menselijke consumptie geproduceerde voedsel ging volgens de FAO-studie uit 2011 verloren of werd verspild, afgerond?": "What percentage of food produced for human consumption was lost or wasted according to the 2011 FAO study, rounded?",
+  "Hoeveel centimeter hoog was het miniatuurpaard Thumbelina volgens Guinness, afgerond?": "How many centimetres tall was the miniature horse Thumbelina according to Guinness, rounded?",
+  "Hoeveel centimeter lang was Robert Wadlow bij zijn laatste meting in juni 1940?": "How many centimetres tall was Robert Wadlow at his final measurement in June 1940?",
+  "Hoeveel uur duurde de videogamemarathon van Szabolcs Csépe in oktober 2024?": "How many hours did Szabolcs Csépe’s videogame marathon last in October 2024?",
+  "Hoeveel uur per dag is een leeuw ongeveer inactief?": "Approximately how many hours a day is a lion inactive?",
+  "Hoeveel centimeter lang was Sultan Kösen volgens zijn Guinness-meting in februari 2011?": "How many centimetres tall was Sultan Kösen according to his Guinness measurement in February 2011?",
+  "Hoeveel procent van de natuurlijke wetlands was volgens de Ramsar-infographic voor Wereldwetlandsdag 2022 sinds de achttiende eeuw verdwenen?": "What percentage of natural wetlands had been lost since the eighteenth century according to the Ramsar infographic for World Wetlands Day 2022?",
+  "Hoeveel geordende uitkomsten zijn er bij één worp met drie gewone zeszijdige dobbelstenen?": "How many ordered outcomes are possible in one roll of three standard six-sided dice?"
 };

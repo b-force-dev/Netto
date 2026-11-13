@@ -1,8 +1,8 @@
 # Vervolg vragenaudit — 13 november 2026
 
-Bereik: 25 van de 122 open punten uit het verslag van 12 november. De letterlijke categorie “Definitie, bron of afbakening vereist vervolgcontrole” bevat 39 punten; de 122 omvatten ook records, statistiek en redactionele keuzes.
+Bereik: 50 van de 122 open punten uit het verslag van 12 november. De letterlijke categorie “Definitie, bron of afbakening vereist vervolgcontrole” bevat 39 punten; de 122 omvatten ook records, statistiek en redactionele keuzes.
 
-Uitkomsten: in orde: 5, aangescherpt: 15, antwoord gecorrigeerd: 0, vraag vervangen: 0, nog open: 5.
+Uitkomsten: in orde: 8, aangescherpt: 28, antwoord gecorrigeerd: 0, vraag vervangen: 0, nog open: 14.
 
 Bronnen zijn op 13 november 2026 geraadpleegd. Een bron bij **nog open** is een gecontroleerde verwijzing, geen bevestiging van het oude antwoord. Niet toegankelijke pagina’s zijn niet als bewijs aanvaard. Getallen zijn niet van een verzonnen peildatum voorzien.
 
@@ -321,6 +321,308 @@ De telefoongeschiedenis onderbouwt eerste internationale verbinding in 1887 niet
 Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/History_of_the_telephone).
 
 Vindplaatsen: race:pool-013.
+
+## 26. nr648 — aangescherpt
+
+Oud: Hoeveel kilogram weegt een volwassen nijlpaard? Antwoord: **1500**.
+
+Het genoemde gemiddelde voor mannetjes is 1,48 ton: 1480 kilogram, afgerond 1500 kilogram.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Hippopotamus).
+
+Vindplaatsen: race:pool-025.
+
+NL: Hoeveel kilogram weegt een volwassen mannelijk nijlpaard gemiddeld, afgerond op honderdtallen?
+
+EN: How many kilograms does an adult male hippopotamus weigh on average, rounded to the nearest hundred?
+
+## 27. nr679 — nog open
+
+Oud: Hoeveel vogelsoorten telt Colombia, het land met de meeste ter wereld? Antwoord: **1900**.
+
+De bron noemt meer dan 1900 soorten; een exacte lijsteditie, gebiedsdefinitie en afronding voor 1900 zijn niet vastgesteld.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Colombia).
+
+Vindplaatsen: race:pool-026.
+
+## 28. nr264 — nog open
+
+Oud: Hoeveel inwoners heeft Monaco? Antwoord: **39000**.
+
+39.000 is zonder peildatum en afronding niet bevestigd; actuele bevolking mag niet zonder historische bron aan het oude antwoord worden gekoppeld.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Monaco).
+
+Vindplaatsen: race:pool-029, breinkrakers:bk-126.
+
+## 29. nr923 — nog open
+
+Oud: Hoeveel landen telt Azië? Antwoord: **49**.
+
+De Azië-pagina noemt 49 VN-lidstaten volgens een specifieke indeling; grens met Rusland en behandeling van Palestina/Taiwan nog niet onafhankelijk vastgesteld.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Asia).
+
+Vindplaatsen: race:pool-033, breinkrakers:bk-196.
+
+## 30. nr435 — aangescherpt
+
+Oud: Hoe hoog was de hoogste hond ooit in centimeters? Antwoord: **112**.
+
+Guinness vermeldt 111,8 centimeter op 4 oktober 2011: afgerond 112.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/tallest-dog-ever).
+
+Vindplaatsen: race:pool-038, breinkrakers:bk-71.
+
+NL: Hoeveel centimeter hoog was de Duitse dog Zeus bij de schouder in oktober 2011, afgerond?
+
+EN: How many centimetres tall was the Great Dane Zeus at the shoulder in October 2011, rounded?
+
+## 31. nr1313 — aangescherpt
+
+Oud: Hoeveel mensen deden mee aan het grootste waterballonnengevecht ooit? Antwoord: **8957**.
+
+Guinness telde 8957 deelnemers bij het waterballonnengevecht in Lexington op 27 augustus 2011.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/largest-water-balloon-fight).
+
+Vindplaatsen: race:pool-046, breinkrakers:bk-27, breinkrakers:bk-28.
+
+NL: Hoeveel deelnemers telde het recordwaterballonnengevecht in Lexington op 27 augustus 2011?
+
+EN: How many participants took part in the record water balloon fight in Lexington on 27 August 2011?
+
+## 32. nr594 — in orde
+
+Oud: Hoeveel deelverzamelingen heeft een verzameling met acht elementen? Antwoord: **256**.
+
+Voor elk van acht elementen zijn er twee keuzes: 2^8 = 256 deelverzamelingen.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Power_set).
+
+Vindplaatsen: race:pool-053, breinkrakers:bk-67, breinkrakers:bk-68, breinkrakers:bk-147, breinkrakers:bk-184.
+
+## 33. nr651 — aangescherpt
+
+Oud: Hoeveel kilogram weegt een volwassen mannelijke jaguar? Antwoord: **100**.
+
+Animal Diversity Web noemt gemiddeld 100 kilogram voor mannelijke jaguars in de Braziliaanse Pantanal.
+
+Bron: [geraadpleegde bron](https://animaldiversity.org/accounts/Panthera_onca/).
+
+Vindplaatsen: race:pool-054.
+
+NL: Hoeveel kilogram weegt een mannelijke jaguar in de Braziliaanse Pantanal gemiddeld volgens Animal Diversity Web?
+
+EN: How many kilograms does a male jaguar in the Brazilian Pantanal weigh on average according to Animal Diversity Web?
+
+## 34. nr653 — aangescherpt
+
+Oud: Hoeveel kilogram weegt een volwassen wombat? Antwoord: **30**.
+
+Redz Zoo vermeldt een gemiddeld gewicht van 30 kilogram voor de zuidelijke breedneuswombat.
+
+Bron: [geraadpleegde bron](https://redzzoo.com.au/animal/southern-hairy-nosed-wombat/).
+
+Vindplaatsen: race:pool-056.
+
+NL: Hoeveel kilogram weegt een zuidelijke breedneuswombat gemiddeld volgens Redz Zoo?
+
+EN: How many kilograms does a southern hairy-nosed wombat weigh on average according to Redz Zoo?
+
+## 35. nr103 — in orde
+
+Oud: Hoeveel diagonalen heeft een regelmatige twintighoek? Antwoord: **170**.
+
+Een convexe n-hoek heeft n(n−3)/2 diagonalen: 20×17/2 = 170.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Diagonal).
+
+Vindplaatsen: race:pool-060, breinkrakers:bk-174.
+
+## 36. nr377 — aangescherpt
+
+Oud: Hoeveel procent van het voedsel dat wereldwijd wordt geproduceerd gaat verloren of wordt verspild? Antwoord: **33**.
+
+De FAO-studie uit 2011 schatte ongeveer een derde naar massa: afgerond 33 procent.
+
+Bron: [geraadpleegde bron](https://www.fao.org/4/mb060e/mb060e00.htm).
+
+Vindplaatsen: race:pool-067, breinkrakers:bk-35.
+
+NL: Hoeveel procent van het voor menselijke consumptie geproduceerde voedsel ging volgens de FAO-studie uit 2011 verloren of werd verspild, afgerond?
+
+EN: What percentage of food produced for human consumption was lost or wasted according to the 2011 FAO study, rounded?
+
+## 37. nr438 — aangescherpt
+
+Oud: Hoe klein was het kleinste paard ooit in centimeters? Antwoord: **45**.
+
+Guinness vermeldt 44,5 centimeter voor Thumbelina: afgerond op hele centimeters 45.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/news/2019/9/meet-the-smallest-horse-in-the-world-thats-shorter-than-a-greyhound-588674).
+
+Vindplaatsen: race:pool-069, breinkrakers:bk-106, breinkrakers:bk-170.
+
+NL: Hoeveel centimeter hoog was het miniatuurpaard Thumbelina volgens Guinness, afgerond?
+
+EN: How many centimetres tall was the miniature horse Thumbelina according to Guinness, rounded?
+
+## 38. nr367 — nog open
+
+Oud: Hoeveel IKEA-winkels zijn er wereldwijd ongeveer? Antwoord: **480**.
+
+IKEA-bron niet opgehaald; geen historische telling gevonden die bij de bedoelde afronding van 480 hoort.
+
+Bron: [geraadpleegde bron](https://about.ikea.com/en/about-us).
+
+Vindplaatsen: race:pool-069, breinkrakers:bk-48, breinkrakers:bk-183, breinkrakers:bk-200.
+
+## 39. nr1300 — aangescherpt
+
+Oud: Hoe lang was de langste man ooit in centimeters? Antwoord: **272**.
+
+Guinness vermeldt 272 centimeter bij zijn laatste meting op 27 juni 1940.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/tallest-man-ever).
+
+Vindplaatsen: race:pool-070.
+
+NL: Hoeveel centimeter lang was Robert Wadlow bij zijn laatste meting in juni 1940?
+
+EN: How many centimetres tall was Robert Wadlow at his final measurement in June 1940?
+
+## 40. nr422 — nog open
+
+Oud: Wat is de autorij-afstand van Amsterdam naar Rome in km? Antwoord: **1650**.
+
+Geen reproduceerbare 1650 km met beginpunt, eindpunt en route. Alle genoemde puzzels blijven open; geen alternatief met hetzelfde antwoord geverifieerd.
+
+Bron: [geraadpleegde bron](https://www.google.com/maps/dir/Amsterdam/Rome).
+
+Vindplaatsen: race:pool-075, breinkrakers:bk-80, breinkrakers:bk-84, breinkrakers:bk-108, breinkrakers:bk-163.
+
+## 41. nr1173 — nog open
+
+Oud: Hoeveel duizend inwoners heeft Amsterdam? Antwoord: **933**.
+
+CBS-tabel bereikbaar, maar de bedoelde 933 duizend is zonder vastgelegde jaar- en gemeenteselectie niet bevestigd.
+
+Bron: [geraadpleegde bron](https://www.cbs.nl/nl-nl/cijfers/detail/70072ned).
+
+Vindplaatsen: race:pool-078, breinkrakers:bk-35.
+
+## 42. nr439 — in orde
+
+Oud: Hoeveel minuten duurde de recordplank van Josef Šálek in mei 2023, afgerond? Antwoord: **579**.
+
+De Guinness-bron vermeldt 9 uur, 38 minuten en 47 seconden; dat is afgerond 579 minuten.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/news/2023/5/mans-incredible-physical-feat-as-he-holds-abdominal-plank-for-almost-10-hours-750261).
+
+Vindplaatsen: race:pool-078, breinkrakers:bk-62, breinkrakers:bk-116.
+
+## 43. nr443 — nog open
+
+Oud: Hoe lang was de langste hond ooit in centimeters? Antwoord: **250**.
+
+Guinness-link geeft pagina niet gevonden. Lengte 250 cm en meetdefinitie van Zorba nog uit gezaghebbende bron te bevestigen.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/longest-dog-ever).
+
+Vindplaatsen: race:pool-080, breinkrakers:bk-101, breinkrakers:bk-102.
+
+## 44. nr60 — nog open
+
+Oud: Hoeveel millimeter per jaar verschuiven de aardplaten gemiddeld? Antwoord: **25**.
+
+De bron beschrijft verschillende tektonische snelheden; een wereldwijd gemiddelde van 25 mm/jaar is niet onderbouwd.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Plate_tectonics).
+
+Vindplaatsen: race:pool-083.
+
+## 45. nr456 — aangescherpt
+
+Oud: Hoeveel uur duurde het langste videogame-marathonrecord (stand 2026)? Antwoord: **144**.
+
+Szabolcs Csépe speelde Dance Dance Revolution gedurende 144 uur van 23 tot 29 oktober 2024.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/longest-video-games-marathon).
+
+Vindplaatsen: race:pool-089, breinkrakers:bk-72, breinkrakers:bk-197.
+
+NL: Hoeveel uur duurde de videogamemarathon van Szabolcs Csépe in oktober 2024?
+
+EN: How many hours did Szabolcs Csépe’s videogame marathon last in October 2024?
+
+## 46. nr687 — aangescherpt
+
+Oud: Hoeveel uur per dag slaapt een leeuw gemiddeld? Antwoord: **20**.
+
+Leeuwen zijn ongeveer twintig uur per dag inactief; dat omvat rusten en is niet uitsluitend slaap.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Lion).
+
+Vindplaatsen: race:pool-091.
+
+NL: Hoeveel uur per dag is een leeuw ongeveer inactief?
+
+EN: Approximately how many hours a day is a lion inactive?
+
+## 47. nr546 — nog open
+
+Oud: Hoeveel duizend zoekopdrachten verwerkt Google wereldwijd per seconde? Antwoord: **99**.
+
+Google-bron onderbouwt geen 99 duizend zoekopdrachten per seconde met meetperiode.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Google_Search).
+
+Vindplaatsen: race:pool-096, breinkrakers:bk-57.
+
+## 48. nr440 — aangescherpt
+
+Oud: Hoe lang is de langste levende man in centimeters? Antwoord: **251**.
+
+Guinness vermeldt 251 centimeter bij de meting in februari 2011.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/tallest-man-living).
+
+Vindplaatsen: race:pool-101, breinkrakers:bk-33.
+
+NL: Hoeveel centimeter lang was Sultan Kösen volgens zijn Guinness-meting in februari 2011?
+
+EN: How many centimetres tall was Sultan Kösen according to his Guinness measurement in February 2011?
+
+## 49. nr1096 — aangescherpt
+
+Oud: Hoeveel procent van de wetlands is sinds 1700 wereldwijd verdwenen? Antwoord: **85**.
+
+De infographic uit 2022 noemt 85 procent verlies sinds de achttiende eeuw; dit is de daarin gebruikte historische schatting.
+
+Bron: [geraadpleegde bron](https://www.ramsar.org/sites/default/files/wwd2022_infographic_english_printhome.pdf).
+
+Vindplaatsen: race:pool-102, breinkrakers:bk-23, breinkrakers:bk-184.
+
+NL: Hoeveel procent van de natuurlijke wetlands was volgens de Ramsar-infographic voor Wereldwetlandsdag 2022 sinds de achttiende eeuw verdwenen?
+
+EN: What percentage of natural wetlands had been lost since the eighteenth century according to the Ramsar infographic for World Wetlands Day 2022?
+
+## 50. nr596 — aangescherpt
+
+Oud: Hoeveel mogelijke worpen zijn er met drie gewone dobbelstenen? Antwoord: **216**.
+
+Iedere dobbelsteen heeft zes mogelijkheden; de dobbelstenen worden onderscheiden: 6³ = 216.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Dice).
+
+Vindplaatsen: race:pool-104, breinkrakers:bk-66, breinkrakers:bk-69, breinkrakers:bk-82.
+
+NL: Hoeveel geordende uitkomsten zijn er bij één worp met drie gewone zeszijdige dobbelstenen?
+
+EN: How many ordered outcomes are possible in one roll of three standard six-sided dice?
 
 ## Controles
 

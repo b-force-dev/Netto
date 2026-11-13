@@ -1787,5 +1787,18 @@ window.NETTO_BRONNEN_EN = {
   "Bluey leefde 29 jaar en 5 maanden: 29 volle jaren.": "Bluey lived for 29 years and 5 months: 29 full years.",
   "De basisbevolking voor de projecties was 5,290 miljoen op 30 juni 2024: afgerond 5 miljoen.": "The projection base population was 5.290 million on 30 June 2024: 5 million when rounded.",
   "Starbucks rapporteert 40.199 winkels aan het einde van boekjaar 2024: afgerond 40.000.": "Starbucks reports 40,199 stores at the end of fiscal 2024: 40,000 when rounded.",
-  "PSLV-C37 lanceerde Cartosat-2 plus 103 meereizende satellieten: samen 104.": "PSLV-C37 launched Cartosat-2 and 103 co-passenger satellites: 104 in total."
+  "PSLV-C37 lanceerde Cartosat-2 plus 103 meereizende satellieten: samen 104.": "PSLV-C37 launched Cartosat-2 and 103 co-passenger satellites: 104 in total.",
+  "Het genoemde gemiddelde voor mannetjes is 1,48 ton: 1480 kilogram, afgerond 1500 kilogram.": "The stated male average is 1.48 tonnes: 1,480 kilograms, rounding to 1,500 kilograms.",
+  "Guinness vermeldt 111,8 centimeter op 4 oktober 2011: afgerond 112.": "Guinness gives 111.8 centimetres on 4 October 2011: 112 when rounded.",
+  "Guinness telde 8957 deelnemers bij het waterballonnengevecht in Lexington op 27 augustus 2011.": "Guinness counted 8,957 participants at the water balloon fight in Lexington on 27 August 2011.",
+  "Animal Diversity Web noemt gemiddeld 100 kilogram voor mannelijke jaguars in de Braziliaanse Pantanal.": "Animal Diversity Web gives an average of 100 kilograms for male jaguars in the Brazilian Pantanal.",
+  "Redz Zoo vermeldt een gemiddeld gewicht van 30 kilogram voor de zuidelijke breedneuswombat.": "Redz Zoo gives an average weight of 30 kilograms for the southern hairy-nosed wombat.",
+  "De FAO-studie uit 2011 schatte ongeveer een derde naar massa: afgerond 33 procent.": "The 2011 FAO study estimated about one third by mass: 33 per cent when rounded.",
+  "Guinness vermeldt 44,5 centimeter voor Thumbelina: afgerond op hele centimeters 45.": "Guinness gives 44.5 centimetres for Thumbelina: 45 to the nearest whole centimetre.",
+  "Guinness vermeldt 272 centimeter bij zijn laatste meting op 27 juni 1940.": "Guinness gives 272 centimetres at his final measurement on 27 June 1940.",
+  "Szabolcs Csépe speelde Dance Dance Revolution gedurende 144 uur van 23 tot 29 oktober 2024.": "Szabolcs Csépe played Dance Dance Revolution for 144 hours from 23 to 29 October 2024.",
+  "Leeuwen zijn ongeveer twintig uur per dag inactief; dat omvat rusten en is niet uitsluitend slaap.": "Lions are inactive for about twenty hours a day; this includes resting and is not exclusively sleep.",
+  "Guinness vermeldt 251 centimeter bij de meting in februari 2011.": "Guinness gives 251 centimetres at the measurement in February 2011.",
+  "De infographic uit 2022 noemt 85 procent verlies sinds de achttiende eeuw; dit is de daarin gebruikte historische schatting.": "The 2022 infographic gives 85 per cent lost since the eighteenth century; this is the historical estimate used in that publication.",
+  "Iedere dobbelsteen heeft zes mogelijkheden; de dobbelstenen worden onderscheiden: 6³ = 216.": "Each die has six possibilities; the dice are distinguished: 6³ = 216."
 };
