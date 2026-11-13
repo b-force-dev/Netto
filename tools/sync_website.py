@@ -36,6 +36,7 @@ MIRROR_FILES = (
     "css/admin.css",
     "css/stats-page.css",
     "css/puzzle-library.css",
+    "data/netto_breinkrakers.js",
     "css/vindbaarheid.css",
     "css/pwa.css",
     "js/core.js",

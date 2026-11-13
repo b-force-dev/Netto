@@ -1315,11 +1315,20 @@
   }
 
   function parseFormattedNumber(str) {
-    if (!str) return NaN;
-    const clean = window.NettoI18n?.locale() === 'nl'
-      ? str.replace(/\./g, '').replace(',', '.')
-      : str.replace(/,/g, '');
-    return parseFloat(clean);
+    if (!str || !String(str).trim()) return NaN;
+    const raw = String(str).trim().replace(/[\s\u00a0\u202f']/g, '');
+    const match = raw.match(/^([0-9.,]+)([kKmMbB]?)$/);
+    if (!match) return NaN;
+    const nl = window.NettoI18n?.locale() === 'nl';
+    const group = nl ? '.' : ',', decimal = nl ? ',' : '.';
+    const parts = match[1].split(decimal);
+    if (parts.length > 2 || (parts[1] !== undefined && !/^\d+$/.test(parts[1]))) return NaN;
+    const whole = parts[0];
+    if (whole.includes(group) && !new RegExp('^\\d{1,3}(?:\\' + group + '\\d{3})+$').test(whole)) return NaN;
+    const number = Number(whole.split(group).join('') + (parts.length === 2 ? '.' + parts[1] : ''));
+    const scale = {k:1e3, m:1e6, b:1e9}[match[2].toLowerCase()] || 1;
+    const value = number * scale;
+    return Number.isFinite(value) ? value : NaN;
   }
 
   function removeToastAfter(toast, duration = 3800) {
@@ -1523,7 +1532,7 @@
     if (!input || input.disabled || document.activeElement === input || !Number.isSafeInteger(value) || value < 0) return;
     input.value = formatDutchNumber(String(value));
     autoCalculatedInputs.add(id); input.dataset.autoCalculated = 'true'; input.classList.add('auto-calculated');
-    input.setAttribute('aria-label', 'Automatisch berekend antwoord');
+    input.setAttribute('aria-description', statsCopy('Automatisch berekend antwoord', 'Automatically calculated answer'));
     if (/^g[123]$/.test(id) && !localStorage.getItem(DAILY_AUTO_HINT_KEY)) {
       localStorage.setItem(DAILY_AUTO_HINT_KEY, '1');
       showNoticeToast(
@@ -1534,43 +1543,37 @@
   }
   function clearAutoInput(id) {
     const input = document.getElementById(id); if (!input || !autoCalculatedInputs.has(id)) return;
-    input.value = ''; input.placeholder = /^g[123]$/.test(id) ? 'Jouw antwoord' : 'Jouw schatting'; input.dataset.autoCalculated = 'false'; input.classList.remove('auto-calculated'); autoCalculatedInputs.delete(id);
-    input.removeAttribute('aria-label');
+    input.value = ''; input.placeholder = /^g[123]$/.test(id) ? statsCopy('Jouw antwoord', 'Your answer') : statsCopy('Jouw schatting', 'Your estimate'); input.dataset.autoCalculated = 'false'; input.classList.remove('auto-calculated'); autoCalculatedInputs.delete(id);
+    input.removeAttribute('aria-description');
   }
-  // Eén invoerregel voor alle spelmodi, inclusief plakken. Een ongeldig teken
-  // wordt geweigerd, niet stilletjes uit een ander getal weggepoetst.
+  // Eén invoerregel voor alle spelmodi, inclusief plakken en decimalen.
+  // parseFormattedNumber valideert de volledige invoer bij het inleveren.
   function bindWholeNumberInput(input, update) {
-    let previous = input.value;
-    input.addEventListener('beforeinput', event => {
-      if (event.data && /\D/.test(event.data) && !/^\d{1,3}(?:[.,\s  ']\d{3})+$/.test(event.data.trim())) event.preventDefault();
-    });
+    input.inputMode = 'decimal';
+    input.removeAttribute('pattern');
     input.addEventListener('input', () => {
-      // Een geplakt getal met duizendtallen ("1,000", "1.000", "1 000") is
-      // ondubbelzinnig een heel getal; alleen die scheidingstekens vallen weg.
-      if (/^\d{1,3}(?:[.,\s  ']\d{3})+$/.test(input.value.trim())) input.value = input.value.trim().replace(/\D/g, '');
-      if (!/^\d*$/.test(input.value)) { input.value = previous; return; }
-      previous = input.value;
       autoCalculatedInputs.delete(input.id);
       input.classList.remove('auto-calculated');
       input.dataset.autoCalculated = 'false';
-      input.removeAttribute('aria-label');
+      input.removeAttribute('aria-description');
       update();
     });
     input.addEventListener('focus', () => {
       if (autoCalculatedInputs.has(input.id)) clearAutoInput(input.id);
-      // Groepering weghalen maakt ook een groot automatisch antwoord bewerkbaar.
-      const value = parseFormattedNumber(input.value);
-      if (Number.isSafeInteger(value)) input.value = String(value);
-      previous = input.value;
     });
   }
 
+  function numbersMatch(actual, expected) {
+    if (Number.isInteger(actual) && Number.isInteger(expected)) return actual === expected;
+    return Number.isFinite(actual) && Number.isFinite(expected)
+      && Math.abs(actual - expected) <= Number.EPSILON * 8 * Math.max(1, Math.abs(actual), Math.abs(expected));
+  }
   function validWholeEquation(values, operator) {
-    return values.every(v => Number.isSafeInteger(v) && v > 0)
-      && calculateDailyValue(values[0], values[1], operator) === values[2];
+    return values.every(v => Number.isFinite(v) && v > 0)
+      && numbersMatch(calculateDailyValue(values[0], values[1], operator), values[2]);
   }
   function validWholeAnswers(values, allowZero = false) {
-    return values.every(value => Number.isSafeInteger(value) && (allowZero ? value >= 0 : value > 0));
+    return values.every(value => Number.isFinite(value) && value <= Number.MAX_SAFE_INTEGER && (allowZero ? value >= 0 : value > 0));
   }
   function showEquationNotice() {
     showNoticeToast(
@@ -2398,7 +2401,7 @@
 
     if (!validWholeAnswers([g1,g2,g3])) {
       showNoticeToast(
-        statsCopy('Vul eerst alle drie de vragen in met een heel getal groter dan 0.', 'Enter a whole number greater than 0 for all three questions.'),
+        statsCopy('Vul eerst alle drie de vragen in met een getal groter dan 0.', 'Enter a number greater than 0 for all three questions.'),
         '✏️', statsCopy('Antwoorden ontbreken', 'Complete your answers'));
       return;
     }
@@ -3289,7 +3292,9 @@
     return { first: first.slice(0, 7), last: last.slice(0, 7) };
   }
   const latestArchiveMonth = getArchiveBounds().last.split('-').map(Number);
-  let archiveMonth = { year: latestArchiveMonth[0], month: latestArchiveMonth[1] };
+  const savedArchiveMonth = localStorage.getItem('netto_archive_month') || '';
+  const initialArchiveMonth = /^\d{4}-(0[1-9]|1[0-2])$/.test(savedArchiveMonth) ? savedArchiveMonth.split('-').map(Number) : latestArchiveMonth;
+  let archiveMonth = { year: initialArchiveMonth[0], month: initialArchiveMonth[1] };
   function monthLabel(month) { return new Intl.DateTimeFormat(nettoNumberLocale(), { month:'long', year:'numeric' }).format(new Date(archiveMonth.year, month - 1, 1)); }
   function changeArchiveMonth(delta) {
     const next = new Date(archiveMonth.year, archiveMonth.month - 1 + delta, 1);
@@ -3297,6 +3302,7 @@
     const bounds = getArchiveBounds();
     if (key < bounds.first || key > bounds.last) return;
     archiveMonth = { year: next.getFullYear(), month: next.getMonth() + 1 };
+    localStorage.setItem('netto_archive_month', key);
     renderDailyArchive();
   }
   const LIBRARY_DIFFICULTY_ORDER = ['easy', 'intermediate', 'hard', 'extremely-hard'];

@@ -72,7 +72,7 @@
         ? statsCopy(libraryLevelName(niveau) + ' is helemaal gespeeld 🎉', libraryLevelName(niveau) + ' completed 🎉')
         : statsCopy('Nog ' + (rest.total - rest.played) + ' van ' + rest.total + ' te spelen in ' + libraryLevelName(niveau) + '.',
                     (rest.total - rest.played) + ' of ' + rest.total + ' left in ' + libraryLevelName(niveau) + '.');
-      navigatie.append(voortgang);
+      navigatie.append(NettoShare.libraryButton(), voortgang);
       return;
     }
     navigatie.replaceChildren(knop(statsCopy('Controleer mijn score', 'Check my score'), () => submitPuzzleView('library'), 'puzzel-hoofdactie'));
@@ -137,13 +137,26 @@
       progress.replaceChildren(badge, moeilijkheid);
     } else progress.textContent = progressLabel;
     document.getElementById(prefix + 'Equation').style.display = 'none';
-    const autoCalcNote = localStorage.getItem('netto_auto_calc_note_seen') === 'true' ? '' : `<div class="auto-calc-note" role="status" aria-live="polite">↳ Antwoorden worden automatisch berekend als de berekening klopt.</div>`;
-    listEl.innerHTML = [[p.q1_label,p.q1_answer],[p.q2_label,p.q2_answer],[p.q3_label,p.q3_answer]].map((q,i) => `<div class="q-block"><div class="q-label">${q[0] || statsCopy('Vraag niet beschikbaar', 'Question unavailable')}</div><div class="input-wrapper"><input type="text" class="library-answer-input daily-style-input" id="${prefix}Answer${i}" name="netto-schatting-${i}" inputmode="numeric" pattern="[0-9]*" enterkeyhint="${i < 2 ? 'next' : 'done'}" placeholder="${statsCopy('Jouw schatting', 'Your estimate')}" autocomplete="off" autocorrect="off" spellcheck="false" data-lpignore="true"></div></div>${i < 2 ? `<div class="connector"><div class="connector-line"></div><div class="connector-badge ${i === 1 ? 'eq' : ''}">${i === 0 ? (p.operator || '×') : '='}</div><div class="connector-line"></div></div>` : ''}`).join('') + autoCalcNote;
+    const autoCalcNote = localStorage.getItem('netto_auto_calc_note_seen') === 'true' ? '' : `<div class="auto-calc-note" role="status" aria-live="polite">↳ ${statsCopy('Antwoorden worden automatisch berekend als de berekening klopt.', 'Answers are calculated automatically when the equation matches.')}</div>`;
+    listEl.innerHTML = [[p.q1_label,p.q1_answer],[p.q2_label,p.q2_answer],[p.q3_label,p.q3_answer]].map((q,i) => `<div class="q-block"><label class="q-label" for="${prefix}Answer${i}">${q[0] || statsCopy('Vraag niet beschikbaar', 'Question unavailable')}</label><div class="input-wrapper"><input type="text" class="library-answer-input daily-style-input" id="${prefix}Answer${i}" name="netto-schatting-${i}" inputmode="numeric" pattern="[0-9]*" enterkeyhint="${i < 2 ? 'next' : 'done'}" placeholder="${statsCopy('Jouw schatting', 'Your estimate')}" autocomplete="off" autocorrect="off" spellcheck="false" data-lpignore="true"></div></div>${i < 2 ? `<div class="connector"><div class="connector-line"></div><div class="connector-badge ${i === 1 ? 'eq' : ''}">${i === 0 ? (p.operator || '×') : '='}</div><div class="connector-line"></div></div>` : ''}`).join('') + autoCalcNote;
+    const inputHint = document.createElement('p');
+    inputHint.className = 'number-input-hint';
+    inputHint.textContent = statsCopy('Bijvoorbeeld: 1,5k = 1.500. Gebruik een komma voor decimalen.', 'For example: 1.5k = 1,500. Use a dot for decimals.');
+    listEl.append(inputHint);
     if (autoCalcNote) localStorage.setItem('netto_auto_calc_note_seen', 'true');
     if (prefix === 'library') libraryActivePuzzle = p; else catalogusActivePuzzle = p;
     renderPuzzelfoto(listEl, p);
     bindDerivedInputs(prefix, p.operator || '×');
     bindPuzzleEnterFlow(prefix);
+    const draftKey = 'netto_puzzle_draft_' + prefix + '_' + p.id;
+    const draft = readStatsStorage(draftKey, []);
+    [0,1,2].forEach(i => {
+      const input = document.getElementById(prefix + 'Answer' + i);
+      if (typeof draft[i] === 'string') input.value = draft[i];
+      input.addEventListener('input', () => {
+        localStorage.setItem(draftKey, JSON.stringify([0,1,2].map(j => document.getElementById(prefix + 'Answer' + j).value)));
+      });
+    });
     if (prefix === 'library') {
       const eerder = libraryEerdereScore(p);
       if (eerder) {
@@ -167,7 +180,7 @@
     const guesses = inputs.map(input => parseFormattedNumber(input.value));
     if (!validWholeAnswers(guesses)) {
       showNoticeToast(
-        statsCopy('Vul alle drie de vragen in met een heel getal groter dan 0.', 'Enter a whole number greater than 0 for all three questions.'),
+        statsCopy('Vul alle drie de vragen in met een getal groter dan 0.', 'Enter a number greater than 0 for all three questions.'),
         '✏️', statsCopy('Antwoorden ontbreken', 'Complete your answers'));
       return;
     }
@@ -179,6 +192,7 @@
     if (!eerder) {
       const plays = getSavedLibraryPlays(); plays[active.id] = { factor, guesses, completedAt:new Date().toISOString() }; localStorage.setItem('netto_library_plays',JSON.stringify(plays));
     }
+    localStorage.removeItem('netto_puzzle_draft_' + prefix + '_' + active.id);
     updateContinuePuzzleButton();
     window.nettoTrack?.('puzzle_finish', { mode:prefix === 'library' ? 'library' : 'catalogus', once:active.id });
     renderPuzzleReview(prefix, active, guesses, answers, factor, eerder);
@@ -199,6 +213,8 @@
     list.replaceChildren();
     const summary = document.createElement('section');
     summary.className = 'puzzle-review-summary';
+    summary.setAttribute('role', 'status');
+    summary.setAttribute('aria-live', 'polite');
     summary.setAttribute('aria-label', statsCopy('Puzzelresultaat', 'Puzzle result'));
     const label = document.createElement('span');
     label.textContent = statsCopy('Gemiddelde factor', 'Average factor');

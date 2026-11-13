@@ -17,6 +17,7 @@ function readLibraryView() {
     difficulty: LIBRARY_LEVELS.includes(saved.difficulty) ? saved.difficulty : 'easy',
     status: LIBRARY_STATUS_FILTERS.includes(saved.status) ? saved.status : 'all',
     operator: LIBRARY_OPERATOR_FILTERS.includes(saved.operator) ? saved.operator : '',
+    category: typeof saved.category === 'string' ? saved.category : '',
     sort: LIBRARY_SORTS.includes(saved.sort) ? saved.sort : 'number'
   };
 }
@@ -30,7 +31,7 @@ function saveLibraryView(patch) {
 }
 
 function getLibrarySet(level) { return libraryPuzzles.filter(p => p.difficulty === level); }
-function libraryPlayOf(plays, p) { return plays[p.id] || plays['library_' + p.id] || null; }
+function libraryPlayOf(plays, p) { return [plays[p.id], plays['library_' + p.id]].find(play => libraryFactorOf(play) !== null) || null; }
 function libraryPlayFor(p) { return libraryPlayOf(getSavedLibraryPlays(), p); }
 function libraryFactorOf(play) {
   const factor = Number(play?.factor);
@@ -56,11 +57,12 @@ function libraryLevelSummary(level, plays = getSavedLibraryPlays()) {
   return {
     total: set.length,
     played: factors.length,
+    accuracy: factors.length ? Math.round(factors.reduce((sum, f) => sum + 100 / f, 0) / factors.length) : null,
     average: factors.length ? factors.reduce((sum, f) => sum + f, 0) / factors.length : null
   };
 }
 
-function libraryLevelName(level) { return LIBRARY_DIFFICULTY_LABEL[level] || LIBRARY_DIFFICULTY_LABEL.easy; }
+function libraryLevelName(level) { return window.NettoI18n?.locale() === 'nl' ? ({easy:'Makkelijk', intermediate:'Gemiddeld', hard:'Moeilijk', 'extremely-hard':'Zeer moeilijk'}[level] || 'Makkelijk') : (LIBRARY_DIFFICULTY_LABEL[level] || LIBRARY_DIFFICULTY_LABEL.easy); }
 
 // Volgende ongespeelde puzzel ná de huidige: eerst verder in hetzelfde niveau,
 // dan de niveaus erna, en pas daarna wat eerder in de lijst is overgeslagen.
@@ -134,7 +136,7 @@ function renderLibraryStats() {
   const level = libraryLevelSummary(selectedDifficulty, plays);
   const allPlayed = libraryPuzzles.filter(p => libraryFactorOf(libraryPlayOf(plays, p)) !== null).length;
   add(level.played + '/' + level.total, libraryLevelName(selectedDifficulty) + ' · ' + statsCopy('gespeeld', 'played'));
-  add(level.average === null ? '—' : formatLibraryFactor(level.average), statsCopy('Gemiddelde factor', 'Average factor'));
+  add(level.accuracy === null ? '—' : level.accuracy + '% · ' + formatLibraryFactor(level.average), statsCopy('Gemiddelde nauwkeurigheid', 'Average accuracy'));
   add(allPlayed + '/' + libraryPuzzles.length, statsCopy('Alle niveaus', 'All levels'));
   stats.style.gridTemplateColumns = 'repeat(3,1fr)';
 }
@@ -156,7 +158,9 @@ function renderLibraryLevels() {
     bar.className = 'library-level-bar';
     bar.setAttribute('aria-hidden', 'true');
     bar.style.setProperty('--level-progress', (summary.total ? Math.round(summary.played / summary.total * 100) : 0) + '%');
-    button.replaceChildren(name, count, bar);
+    const accuracy = document.createElement('small');
+    accuracy.textContent = summary.accuracy === null ? '—' : summary.accuracy + '% ' + statsCopy('nauwkeurig', 'accuracy');
+    button.replaceChildren(name, count, accuracy, bar);
     button.type = 'button';
     button.disabled = !summary.total;
     button.classList.toggle('active', active);
@@ -255,7 +259,20 @@ function ensureLibraryBrowse() {
   });
   sort.addEventListener('change', () => setLibraryFilter('sort', sort.value));
   sortLabel.append(sortText, sort);
-  filters.append(sortLabel);
+  const categoryLabel = document.createElement('label');
+  categoryLabel.className = 'library-sort';
+  categoryLabel.append(document.createTextNode(statsCopy('Onderwerp ', 'Topic ')));
+  const category = document.createElement('select');
+  category.id = 'libraryCategory';
+  const categories = [...new Set(libraryPuzzles.flatMap(p => p.categories || []).filter(Boolean))].sort();
+  ['', ...categories].forEach(value => {
+    const option = document.createElement('option'); option.value = value;
+    option.textContent = value ? (window.NettoI18n?.t(value) || value) : statsCopy('Alle onderwerpen', 'All topics');
+    category.append(option);
+  });
+  category.addEventListener('change', () => { saveLibraryView({category: category.value}); renderLibraryCards(); });
+  categoryLabel.append(category);
+  filters.append(categoryLabel, sortLabel);
 
   const count = document.createElement('p');
   count.id = 'libraryResultCount';
@@ -277,6 +294,7 @@ function updateLibraryBrowse(shown, total) {
     });
   });
   browse.querySelector('#librarySort').value = libraryView.sort;
+  browse.querySelector('#libraryCategory').value = libraryView.category;
   const plays = getSavedLibraryPlays();
   const target = libraryContinueTarget(plays);
   const resume = browse.querySelector('#libraryContinue');
@@ -359,6 +377,7 @@ function renderLibraryCards() {
   const factorOf = p => libraryFactorOf(libraryPlayOf(plays, p));
   let shown = level.filter(p => (libraryView.status === 'all'
       || (libraryView.status === 'done') === (factorOf(p) !== null))
+    && (!libraryView.category || (p.categories || []).includes(libraryView.category))
     && (!libraryView.operator || (p.operator || '×') === libraryView.operator));
   const byNumber = (a, b) => (Number(a.number) || 0) - (Number(b.number) || 0);
   shown = shown.slice().sort((a, b) => {
@@ -380,7 +399,7 @@ function renderLibraryCards() {
     reset.type = 'button';
     reset.textContent = statsCopy('Filters wissen', 'Clear filters');
     reset.addEventListener('click', () => {
-      saveLibraryView({ status: 'all', operator: '' });
+      saveLibraryView({ status: 'all', operator: '', category: '' });
       renderLibraryCards();
       document.querySelector('#libraryBrowse .library-chip')?.focus();
     });
@@ -460,7 +479,9 @@ function renderDailyArchive() {
         clearInterval(dailyArchiveWait);
         dailyArchiveWait = null;
         // De nieuwste maand pas nu bepalen: vóór de sync was het archief leeg.
-        const latest = getArchiveBounds().last.split('-').map(Number);
+        const saved = localStorage.getItem('netto_archive_month') || '';
+        const bounds = getArchiveBounds();
+        const latest = (saved >= bounds.first && saved <= bounds.last ? saved : bounds.last).split('-').map(Number);
         archiveMonth = { year: latest[0], month: latest[1] };
         if (libraryMode === 'daily' && document.getElementById('libraryScreen')?.classList.contains('active')) {
           renderLibraryStats();

@@ -137,3 +137,6 @@ button.daily-archive-row:focus-visible { outline: 3px solid var(--yellow, #FFD84
   .connection-verdict.is-correct { animation: none; }
   .library-quick-actions button:hover { transform: none; }
 }
+
+.number-input-hint { margin: 8px 0; color: var(--ink); font: 500 12px/1.5 'Space Grotesk', sans-serif; }
+.library-difficulties button small { display: block; font-size: 11px; }

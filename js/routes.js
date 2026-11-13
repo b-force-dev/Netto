@@ -53,6 +53,7 @@
       return 'puzzles';
     }
     if (active('breinkrakersScreen')) {
+      if (visible('bkPlay') && connectionState?.chain) return 'connections/chains/' + connectionState.puzzle.number;
       if (visible('bkPlay') && connectionState?.puzzle?.number)
         return 'connections/' + connectionState.puzzle.number;
       return 'connections';
@@ -155,6 +156,9 @@
     }
     if (route === 'connections') { openConnection(); return true; }
     if (route === 'live-rounds') { openLiveRounds(); return true; }
+    if (route.startsWith('connections/chains/')) {
+      openConnection(); openChainPuzzles(Number(route.slice(19))); return true;
+    }
     if (route.startsWith('connections/')) {
       const number = Number(route.slice(12));
       openConnection();

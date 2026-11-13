@@ -92,6 +92,7 @@ function startRandomConnection() {
 
 // Overslaan en "volgende" springen over wat je al speelde heen.
 function skipConnection() {
+  if (connectionState?.chain) { nextChainPuzzle(); return; }
   const volgende = nextUnplayedConnection(connectionState ? connectionState.index : -1);
   if (volgende >= 0) startConnection(volgende); else renderConnectionStart();
 }
@@ -143,6 +144,13 @@ function renderConnectionStart() {
     randomButton.textContent = statsCopy('Verras me', 'Surprise me');
     randomButton.setAttribute('aria-label', statsCopy('Willekeurige ongespeelde puzzel', 'Random unplayed puzzle'));
   }
+  let chains = document.getElementById('connectionChains');
+  if (!chains) {
+    chains = document.createElement('button'); chains.id = 'connectionChains'; chains.type = 'button';
+    chains.onclick = () => openChainPuzzles();
+    document.getElementById('bkQuickActions').append(chains);
+  }
+  chains.textContent = statsCopy('Kettingen · 4 vragen →', 'Chains · 4 questions →');
   const grid = document.getElementById('bkCardGrid');
   grid.replaceChildren();
   connectionPool.forEach((puzzle, index) => {
@@ -212,6 +220,7 @@ function setConnectionOperator(symbol) {
   const select = document.querySelector('.connection-operator-select');
   if (select) select.value = symbol;
   updateConnectionLiveFormula();
+  saveConnectionDraft();
 }
 
 function renderConnectionEqualsConnector() {
@@ -246,7 +255,7 @@ function updateConnectionLiveFormula() {
   // De drie kaarten tonen de formule al; pas bij een complete poging is extra feedback nuttig.
   container.hidden = !op || !guesses.every(value => Number.isSafeInteger(value) && value > 0);
   if (container.hidden) { container.textContent = ''; return; }
-  const klopt = connectionEquation(guesses, op);
+  const klopt = validWholeEquation(guesses, op);
   container.classList.toggle('is-valid', klopt);
   container.classList.toggle('is-invalid', !klopt);
   container.textContent = klopt
@@ -255,7 +264,7 @@ function updateConnectionLiveFormula() {
 }
 
 function handleConnectionGlobalKeydown(event) {
-  if (typeof document === 'undefined' || !connectionState || connectionState.submitted) return;
+  if (typeof document === 'undefined' || !connectionState || connectionState.submitted || connectionState.chain) return;
   const bkScreen = document.getElementById('breinkrakersScreen');
   if (!bkScreen || bkScreen.style.display === 'none' || !bkScreen.classList.contains('is-playing')) return;
   
@@ -286,7 +295,9 @@ function startConnection(index = 0) {
   const puzzle = connectionPool[index];
   if (!puzzle) { renderConnectionStart(); return; }
   window.nettoTrack?.('puzzle_start', { mode:'connection', once:puzzle.id });
-  connectionState = { puzzle, index, order: shuffledConnectionOrder(), operator: null, submitted: false };
+  const draft = readStatsStorage('netto_connection_draft_' + puzzle.id, {});
+  const order = Array.isArray(draft.order) && [...draft.order].sort().join() === '0,1,2' ? draft.order : shuffledConnectionOrder();
+  connectionState = { puzzle, index, order, operator: connectionOperators.includes(draft.operator) ? draft.operator : null, submitted: false };
   connectionPicked = null;
   const screen = document.getElementById('breinkrakersScreen');
   screen.classList.add('is-playing');
@@ -332,13 +343,16 @@ function startConnection(index = 0) {
     const input = document.createElement('input');
     input.id = 'connectionAnswer' + i; input.type = 'text'; input.inputMode = 'numeric';
     input.className = 'library-answer-input daily-style-input';
+    if (typeof draft.guesses?.[i] === 'string') input.value = draft.guesses[i];
     input.placeholder = statsCopy('Jouw schatting', 'Your estimate'); input.autocomplete = 'off';
     // Geen verborgen operator aan de autocalculator geven: die zou het verband verklappen.
     bindWholeNumberInput(input, () => {
       updateConnectionLiveFormula();
+      saveConnectionDraft();
     });
     input.addEventListener('input', () => {
       updateConnectionLiveFormula();
+      saveConnectionDraft();
     });
     input.addEventListener('keydown', event => {
       if (event.key !== 'Enter') return;
@@ -371,6 +385,7 @@ function startConnection(index = 0) {
   
   layoutConnection();
   updateConnectionLiveFormula();
+  saveConnectionDraft();
 }
 
 // De spelregel staat op het moment dat hij ertoe doet: boven de drie kaarten.
@@ -384,8 +399,8 @@ function renderConnectionRule(previous) {
   rule.append(
     document.createTextNode(statsCopy('Sleep de vragen in de goede volgorde en kies het teken: ', 'Drag the questions into the right order and choose the sign: ')),
     formula,
-    document.createTextNode(statsCopy('. Alle antwoorden zijn hele getallen. Je scoort op het verband én op hoe dicht je schattingen zitten.',
-      '. Every answer is a whole number. You score on the connection and on how close your estimates are.')));
+    document.createTextNode(statsCopy('. Je mag decimalen en k voor duizendtallen invoeren. Je scoort op het verband én op hoe dicht je schattingen zitten.',
+      '. Answers may use decimals or k for thousands. You score on the connection and on how close your estimates are.')));
   if (previous) {
     const note = document.createElement('span');
     note.className = 'connection-replay-note';
@@ -415,6 +430,7 @@ function layoutConnection() {
     list.replaceChildren(cards[0], opConnector, cards[1], eqConnector, cards[2]);
   }
   updateConnectionLiveFormula();
+  saveConnectionDraft();
 }
 
 function moveConnection(question, direction) {
@@ -424,6 +440,7 @@ function moveConnection(question, direction) {
   if (target < 0 || target > 2) return;
   [order[index], order[target]] = [order[target], order[index]];
   layoutConnection();
+  saveConnectionDraft();
   const card = document.querySelector('#bkQuestionList [data-question="' + question + '"]');
   card?.querySelector('.connection-drag-handle')?.focus({ preventScroll: true });
   // Verplaatsingen blijven hoorbaar voor schermlezers, zonder een extra tekstregel.
@@ -549,16 +566,17 @@ function bindConnectionDrag(handle, card, question) {
 function submitConnection() {
   const state = connectionState;
   if (!state) return;
+  if (state.chain) { submitChainPuzzle(); return; }
   if (state.submitted) { skipConnection(); return; }
   const guesses = [0, 1, 2].map(i => parseFormattedNumber(document.getElementById('connectionAnswer' + i).value));
   const feedback = document.getElementById('bkFeedback');
   if (!validWholeAnswers(guesses)) {
-    feedback.textContent = statsCopy('Vul drie positieve gehele getallen in.', 'Enter a positive whole number for each question.'); return;
+    feedback.textContent = statsCopy('Vul voor elke vraag een positief getal in.', 'Enter a positive number for each question.'); return;
   }
   if (!state.operator) {
     feedback.textContent = statsCopy('Kies eerst een operator.', 'Choose an operator first.'); return;
   }
-  if (isEquationRequired() && !connectionEquation(state.order.map(i => guesses[i]), state.operator)) { showEquationNotice(); return; }
+  if (isEquationRequired() && !validWholeEquation(state.order.map(i => guesses[i]), state.operator)) { showEquationNotice(); return; }
   const answers = connectionAnswers(state.puzzle);
   const correct = connectionEquation(state.order.map(i => answers[i]), state.operator);
   const factor = answers.reduce((sum, answer, i) => sum + scoreVraag(guesses[i], answer), 0) / 3;
@@ -572,6 +590,7 @@ function submitConnection() {
     progress.results = progress.results.concat(result);
     localStorage.setItem(CONNECTION_PROGRESS_KEY, JSON.stringify(progress));
   }
+  localStorage.removeItem('netto_connection_draft_' + state.puzzle.id);
   state.submitted = true;
   const rule = document.getElementById('connectionRule');
   if (rule) rule.hidden = true;
@@ -633,3 +652,126 @@ function closeBreinkrakers() { showScreen('home'); }
 function renderBreinkrakersStart() { renderConnectionStart(); }
 function startBreinkrakers(index) { startConnection(index); }
 function submitBreinkrakers() { submitConnection(); }
+
+
+function saveConnectionDraft() {
+  const state = connectionState;
+  if (!state || state.submitted || state.chain) return;
+  localStorage.setItem('netto_connection_draft_' + state.puzzle.id, JSON.stringify({
+    order: state.order, operator: state.operator,
+    guesses: [0,1,2].map(i => document.getElementById('connectionAnswer' + i)?.value || '')
+  }));
+}
+
+
+// De bestaande vier-vragenbank blijft apart van de drie-vragenverbanden.
+// Beide voortgangen blijven daardoor behouden zonder opgeslagen scores om te zetten.
+let chainBankPromise;
+function loadChainBank() {
+  if (!chainBankPromise) chainBankPromise = new Promise((resolve, reject) => {
+    if (window.NETTO_BREINKRAKERS) { resolve(); return; }
+    const script = document.createElement('script');
+    script.src = new URL('data/netto_breinkrakers.js', document.baseURI).href;
+    script.onload = resolve; script.onerror = () => { chainBankPromise = null; script.remove(); reject(new Error('chain bank')); };
+    document.head.append(script);
+  });
+  return chainBankPromise;
+}
+function chainPlays() { return readStatsStorage('netto_chain_plays', {}); }
+async function openChainPuzzles(number = null) {
+  try { await loadChainBank(); } catch (_) {
+    document.getElementById('bkProgress').textContent = statsCopy('Kettingen konden niet laden. Probeer opnieuw.', 'Could not load chains. Please try again.'); return;
+  }
+  const bank = window.NETTO_BREINKRAKERS || [];
+  const plays = chainPlays();
+  const index = number === null ? Math.max(0, bank.findIndex(p => !plays[p.id])) : bank.findIndex(p => p.number === number);
+  startChainPuzzle(index);
+}
+function startChainPuzzle(index) {
+  const bank = window.NETTO_BREINKRAKERS || [], puzzle = bank[index];
+  if (!puzzle) { renderConnectionStart(); return; }
+  const draft = readStatsStorage('netto_chain_draft_' + puzzle.id, []);
+  connectionState = {chain:true, puzzle, index, submitted:false};
+  window.nettoTrack?.('puzzle_start', {mode:'connection', once:puzzle.id});
+  document.getElementById('breinkrakersScreen').classList.add('is-playing');
+  document.getElementById('breinkrakersScreen').scrollTop = 0;
+  document.getElementById('bkStart').style.display = 'none';
+  document.getElementById('bkPlay').style.display = 'flex';
+  document.getElementById('bkPuzzleLabel').textContent = '← ' + statsCopy('Ketting ', 'Chain ') + puzzle.number;
+  document.getElementById('bkCounter').textContent = (index + 1) + ' / ' + bank.length;
+  const rule = document.getElementById('connectionRule'); rule.hidden = false;
+  rule.textContent = statsCopy('Reken van links naar rechts: 2 + 3 × 4 = 20. Schat alle vier antwoorden; de tekens zijn aanwijzingen.',
+    'Calculate from left to right: 2 + 3 × 4 = 20. Estimate all four answers; the operators are clues.');
+  if (chainPlays()[puzzle.id]) rule.textContent += ' ' + statsCopy('Oefenronde: je eerste score blijft staan.', 'Practice round: your first score stays.');
+  document.getElementById('connectionLiveFormula').hidden = true;
+  document.getElementById('bkFeedback').textContent = '';
+  document.getElementById('connectionAnnouncement').textContent = '';
+  const list = document.getElementById('bkQuestionList'); list.replaceChildren();
+  const detailPuzzle = {};
+  [1,2,3,4].forEach((n, i) => {
+    const block = document.createElement('div'); block.className = 'q-block';
+    const label = document.createElement('label'); label.className = 'q-label'; label.htmlFor = 'chainAnswer' + i;
+    detailPuzzle['q'+n+'_label'] = puzzle['q'+n].label;
+    label.textContent = window.NettoI18n?.t(puzzle['q'+n].label) || puzzle['q'+n].label;
+    const wrapper = document.createElement('div'); wrapper.className = 'input-wrapper';
+    const input = document.createElement('input'); input.id = 'chainAnswer' + i; input.type = 'text';
+    input.className = 'library-answer-input daily-style-input'; input.autocomplete = 'off'; input.enterKeyHint = i < 3 ? 'next' : 'done';
+    input.placeholder = statsCopy('Jouw schatting', 'Your estimate');
+    if (typeof draft[i] === 'string') input.value = draft[i];
+    bindWholeNumberInput(input, () => localStorage.setItem('netto_chain_draft_' + puzzle.id,
+      JSON.stringify([0,1,2,3].map(j => document.getElementById('chainAnswer'+j)?.value || ''))));
+    input.addEventListener('keydown', event => {
+      if (event.key !== 'Enter' || event.isComposing) return;
+      event.preventDefault(); if (i < 3) document.getElementById('chainAnswer'+(i+1)).focus(); else submitChainPuzzle();
+    });
+    wrapper.append(input); block.append(label, wrapper); list.append(block);
+    if (i < 3) {
+      const connector = document.createElement('div'); connector.className = 'connector';
+      const badge = document.createElement('span'); badge.className = 'connector-badge' + (i === 2 ? ' eq' : '');
+      badge.textContent = [puzzle.op1,puzzle.op2,'='][i]; connector.append(badge); list.append(connector);
+    }
+  });
+  werkVraagDetailsBij(detailPuzzle, [...list.querySelectorAll('.q-block')], false);
+  const skip = document.getElementById('connectionSkip'); skip.hidden = false; skip.textContent = statsCopy('Overslaan →', 'Skip puzzle →');
+  document.getElementById('bkSubmitButton').textContent = statsCopy('Controleer mijn score', 'Check my score');
+  document.getElementById('chainAnswer0').focus({preventScroll:true});
+}
+function nextChainPuzzle() {
+  const bank = window.NETTO_BREINKRAKERS || [], plays = chainPlays(), current = connectionState?.index ?? -1;
+  for (let step=1; step<=bank.length; step++) {
+    const index = (current+step)%bank.length;
+    if (index !== current && !plays[bank[index].id]) { startChainPuzzle(index); return; }
+  }
+  renderConnectionStart();
+}
+function submitChainPuzzle() {
+  const state = connectionState; if (!state?.chain) return;
+  if (state.submitted) { nextChainPuzzle(); return; }
+  const guesses = [0,1,2,3].map(i => parseFormattedNumber(document.getElementById('chainAnswer'+i).value));
+  const feedback = document.getElementById('bkFeedback');
+  if (!validWholeAnswers(guesses)) { feedback.textContent = statsCopy('Vul vier positieve getallen in.', 'Enter four positive numbers.'); return; }
+  const calculated = calculateDailyValue(calculateDailyValue(guesses[0],guesses[1],state.puzzle.op1), guesses[2],state.puzzle.op2);
+  if (isEquationRequired() && !numbersMatch(calculated, guesses[3])) { showEquationNotice(); return; }
+  const answers = [1,2,3,4].map(n => state.puzzle['q'+n].answer);
+  const factor = answers.reduce((sum,a,i)=>sum+scoreVraag(guesses[i],a),0)/4;
+  const plays = chainPlays();
+  const previous = plays[state.puzzle.id];
+  if (!previous) { plays[state.puzzle.id] = {factor,guesses,completedAt:new Date().toISOString()}; localStorage.setItem('netto_chain_plays', JSON.stringify(plays)); }
+  localStorage.removeItem('netto_chain_draft_' + state.puzzle.id); state.submitted = true;
+  const review = {}; [1,2,3,4].forEach(n => {review['q'+n+'_label'] = state.puzzle['q'+n].label;});
+  renderPuzzleReview('bk', review, guesses, answers, factor, previous);
+  const equation = document.createElement('p'); equation.className = 'connection-rule';
+  equation.textContent = '('+fmt(answers[0])+' '+state.puzzle.op1+' '+fmt(answers[1])+') '+state.puzzle.op2+' '+fmt(answers[2])+' = '+fmt(answers[3]);
+  const share = NettoShare.button(statsCopy('Deel resultaat', 'Share result'), () => [
+    'Netto ' + statsCopy('Ketting #', 'Chain #') + state.puzzle.number + ' · ' + NettoShare.accuracy(factor) + '%',
+    NettoShare.squares(answers.map((a,i) => scoreVraag(guesses[i],a))),
+    statsCopy('Vier schattingen. Eén ketting.', 'Four estimates. One chain.'),
+    NettoShare.link('connections/chains/' + state.puzzle.number)
+  ].join('\n'));
+  document.getElementById('bkQuestionList').prepend(equation, share);
+  document.getElementById('connectionSkip').hidden = true;
+  document.getElementById('bkSubmitButton').textContent = statsCopy('Volgende ketting →', 'Next chain →');
+  document.getElementById('connectionAnnouncement').textContent = statsCopy('Gemiddelde factor ', 'Average factor ') + factor.toFixed(2) + '×. ' + equation.textContent;
+  window.nettoTrack?.('puzzle_finish', {mode:'connection', once:state.puzzle.id});
+  document.getElementById('bkSubmitButton').focus({preventScroll:true});
+}
