@@ -84,3 +84,40 @@ Deze partij: 14 met foto; 17 bewust zonder. Nog 75 Library-vragen open; de oorsp
 | Hoeveel geboden bevat de Bijbelse decaloog? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
 | Hoeveel oogleden heeft een gewone uil per oog? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
 | Wat is het atoomnummer van magnesium? | [Commons](https://commons.wikimedia.org/wiki/File:Magnesium_crystals.jpg); Warut Roonguthai; CC BY-SA 3.0 | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+
+## Library-vragen 61–90 van 135
+
+Deze partij: 11 met foto; 19 bewust zonder. Nog 45 Library-vragen open; de oorspronkelijke vervolglijst telt 248 (met overlap met Library).
+
+| Vraag | Keuze en bronvermelding | Reden |
+|---|---|---|
+| Wat is het atoomnummer van zink? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel studioalbums bracht Queen uit van Queen uit 1973 tot en met Made in Heaven uit 1995? | [Commons](https://commons.wikimedia.org/wiki/File:Queen_A_Night_At_The_Opera_(1975_Elektra_publicity_photo_02).jpg); Koh Hasebe; Distributed by Elektra Records; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel ijsreuzen telt ons zonnestelsel? | [Commons](https://commons.wikimedia.org/wiki/File:Uranus_Voyager2_color_calibrated.png); Ardenau4; CC0 | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel liter bevat een melchizedek-champagnefles? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel James Bond films met Daniel Craig verschenen er? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel landen grenzen aan Mozambique? | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Mozambique.svg); FRELIMO; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel huwelijksjaren markeert een zilveren bruiloft? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel elektronen heeft een enkelvoudig positief geladen natriumion? | [Commons](https://commons.wikimedia.org/wiki/File:Keukenzout.jpg); Choba Poncho; CC BY-SA 4.0 | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Met hoeveel schijven begint elke speler bij backgammon? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel compartimenten heeft de maag van een geit? | [Commons](https://commons.wikimedia.org/wiki/File:Nederlandse_Landgeit_geiten.jpg); Eadepoeltegroen at Dutch Wikipedia; CC BY-SA 3.0 | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel neutronen bevat een koolstof-veertienkern? | [Commons](https://commons.wikimedia.org/wiki/File:Coal_anthracite.jpg); onbekend; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel bits bevat een internetprotocoladres van versie vier? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel hoofdstukken telt de oorspronkelijke Franse editie van De kleine prins? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| In welke genummerde eeuw werd Neptunus ontdekt? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel zuilen staan aan elke korte zijde van de buitenste zuilengang van het Parthenon? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel stenen bevat een standaard dubbelzes-dominospel? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel landen grenzen aan Polen? | [Commons](https://commons.wikimedia.org/wiki/File:EU-Poland.svg); NuclearVacuum; CC BY-SA 3.0 | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel tenen heeft elke achterpoot van een gewone huiskat, zonder polydactylie? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel landen grenzen aan Oeganda? | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Uganda.svg); tobias; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel films verfilmen de zeven oorspronkelijke Harry Potter-romans, zonder Fantastic Beasts? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel huwelijksjaren markeert een robijnen bruiloft? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel harten heeft een pijlinktvis? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel werken voltooide Herakles volgens de traditionele Griekse mythe? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Wat is het atoomnummer van krypton? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel lendenwervels heeft een gewone volwassen mens? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Hoeveel noppen heeft een standaard LEGO-steen van twee bij vier aan de bovenkant? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
+| Welk nummer heeft Mozarts bekende symfonie in g-klein met catalogusnummer vijfhonderdvijftig? | [Commons](https://commons.wikimedia.org/wiki/File:Mozart-small.jpg); Barbara Krafft; Public domain | Visueel gecontroleerd portret, elementmonster of contextbeeld; bevat geen antwoordgetal of telbaar antwoord. |
+| Hoeveel seizoenen heeft de afgeronde televisieserie Breaking Bad? | [Commons](https://commons.wikimedia.org/wiki/File:Breaking_Bad_official_logo.svg); Sony Television; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Hoeveel selectiecriteria gebruikt UNESCO in totaal voor werelderfgoed? | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_UNESCO.svg); Mouagip; Public domain | Onderwerp gecontroleerd; het gevraagde aantal, de samenstelling of de waarde is niet zichtbaar. |
+| Wat is het atoomnummer van tin? | null | Geen passend vrij beeld visueel bevestigd zonder telbare antwoordonderdelen of antwoordtekst; bij twijfel bewust geen foto. |
