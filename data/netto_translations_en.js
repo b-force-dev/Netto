@@ -1220,7 +1220,7 @@ window.NETTO_TRANSLATIONS_EN = {
   "Hoeveel schilderijen uit de serie Zonnebloemen maakte Van Gogh?": "How many paintings from the series Sunflowers did Van Gogh make?",
   "Hoeveel schilderijen van Rembrandt bezit het Rijksmuseum volgens de huidige collectie-informatie?": "How many Rembrandt paintings does the Rijksmuseum own according to the current collection information?",
   "Hoeveel schilderijen worden aan Vincent van Gogh toegeschreven volgens de telling van het Van Gogh Museum?": "How many paintings are attributed to Vincent van Gogh according to the count of the Van Gogh Museum?",
-  "Hoeveel seconden zitten er in één minuut?": "How many seconds are there in one minute?",
+  "Hoeveel seconden zitten er in één minuut?": "How many seconds are in one minute?",
   "Hoeveel seizoenen heeft Breaking Bad?": "How many seasons does Breaking Bad have?",
   "Hoeveel seizoenen heeft The Sopranos?": "How many series does the completed television drama The Sopranos have?",
   "Hoeveel seizoenen heeft de serie Friends?": "How many seasons does the series Friends have?",
@@ -2957,5 +2957,17 @@ window.NETTO_TRANSLATIONS_EN = {
   "Meer dan hoeveel winkels wereldwijd noemt het Aldi-overzicht van Solomon Partners uit maart 2024?": "More than how many stores worldwide does the Solomon Partners Aldi factsheet from March 2024 report?",
   "Uit hoeveel eilanden bestaat Indonesië volgens de gerapporteerde telling in het Amerikaanse rapport Limits in the Seas, nummer 141?": "How many islands make up Indonesia according to the reported count in the US report Limits in the Seas, number 141?",
   "Hoeveel vierkante kilometer omvatte de provincie Utrecht inclusief water volgens het VU-onderzoek naar de economische impact van recreatietoervaart?": "How many square kilometres did the province of Utrecht cover including water according to the VU study of the economic impact of recreational boating?",
-  "In welk jaar vond Fessendens kerstavonduitzending plaats volgens de IEEE Milestone-gedenkplaat?": "In which year did Fessenden’s Christmas Eve broadcast take place according to the IEEE Milestone plaque?"
+  "In welk jaar vond Fessendens kerstavonduitzending plaats volgens de IEEE Milestone-gedenkplaat?": "In which year did Fessenden’s Christmas Eve broadcast take place according to the IEEE Milestone plaque?",
+  "Hoeveel meter bedroeg Felix Baumgartners spronghoogte op 14 oktober 2012 volgens de FAI, afgerond op duizendtallen?": "How many metres was Felix Baumgartner’s exit altitude on 14 October 2012 according to the FAI, rounded to the nearest thousand?",
+  "Hoeveel werkminuten telt een werkdag van acht uur, zonder pauzes?": "How many working minutes are in an eight-hour working day, excluding breaks?",
+  "Hoeveel yard lang is de langste individuele vrije-slagafstand voor kortebaanzwemmen in yards in het USA Swimming-reglement van 2024?": "How many yards long is the longest individual freestyle event listed for short-course yards in the 2024 USA Swimming rulebook?",
+  "Hoeveel punten levert de buitenste bull op bij standaard steeltipdarts?": "How many points does the outer bull score in standard steel-tip darts?",
+  "Hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen, afgerond op hele miljoenen?": "How many million square kilometres is Earth’s total surface area, including oceans, rounded to the nearest million?",
+  "Hoeveel mijlen worden genoemd in de Nederlandse titel van Jules Vernes roman over de onderzeereis van kapitein Nemo?": "How many leagues are mentioned in the title of Jules Verne’s novel about Captain Nemo’s submarine voyage?",
+  "Hoeveel witte toetsen heeft een standaardpiano met 88 toetsen?": "How many white keys does a standard 88-key piano have?",
+  "Hoeveel astronauten liepen op de maan tijdens NASA’s Apolloprogramma?": "How many astronauts walked on the Moon during NASA’s Apollo programme?",
+  "Hoeveel vakken telt de rand van een standaard Monopoly-bord?": "How many spaces are around a standard Monopoly board?",
+  "Hoeveel Oscars won The Godfather uit 1972 bij de uitreiking van 1973?": "How many Oscars did The Godfather (1972) win at the 1973 ceremony?",
+  "Hoeveel ogen heeft Odin nadat hij er één voor wijsheid opoffert in de Noorse mythologie?": "How many eyes does Odin have after sacrificing one for wisdom in Norse mythology?",
+  "Hoeveel houten wegstukken krijgt iedere speler in het standaardbasisspel Catan?": "How many wooden road pieces does each player receive in the standard Catan base game?"
 };

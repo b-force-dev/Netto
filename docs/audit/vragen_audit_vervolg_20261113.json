@@ -391,9 +391,13 @@
     "locations": "race:pool-029, breinkrakers:bk-126",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://en.wikipedia.org/wiki/Monaco",
-    "status": "nog open",
-    "reason": "39.000 is zonder peildatum en afronding niet bevestigd; actuele bevolking mag niet zonder historische bron aan het oude antwoord worden gekoppeld.",
-    "source": "https://en.wikipedia.org/wiki/Monaco"
+    "status": "vraag vervangen",
+    "reason": "Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. De FAI registreerde 38.969,4 meter: afgerond op duizendtallen 39.000.",
+    "source": "https://www.fai.org/news/baumgartner%E2%80%99s-records-ratified-fai",
+    "new": "Hoeveel meter bedroeg Felix Baumgartners spronghoogte op 14 oktober 2012 volgens de FAI, afgerond op duizendtallen?",
+    "en": "How many metres was Felix Baumgartner’s exit altitude on 14 October 2012 according to the FAI, rounded to the nearest thousand?",
+    "evidence": "De FAI registreerde 38.969,4 meter: afgerond op duizendtallen 39.000.",
+    "evidence_en": "The FAI ratified an exit altitude of 38,969.4 metres, which rounds to 39,000 to the nearest thousand."
   },
   {
     "id": "nr923",
@@ -529,9 +533,13 @@
     "locations": "race:pool-069, breinkrakers:bk-48, breinkrakers:bk-183, breinkrakers:bk-200",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://about.ikea.com/en/about-us",
-    "status": "nog open",
-    "reason": "De primaire IKEA-bron kon niet worden opgehaald. Een secundair verslag noemt 480 winkels, maar de peildatum en winkeltelling zijn nog niet tegen een primair bedrijfsverslag bevestigd.",
-    "source": "https://about.ikea.com/en/about-us"
+    "status": "vraag vervangen",
+    "reason": "Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. Een uur telt zestig minuten; acht werkuren zijn 480 werkminuten.",
+    "source": "https://www.bipm.org/en/publications/si-brochure",
+    "new": "Hoeveel werkminuten telt een werkdag van acht uur, zonder pauzes?",
+    "en": "How many working minutes are in an eight-hour working day, excluding breaks?",
+    "evidence": "Een uur telt zestig minuten; acht werkuren zijn 480 werkminuten.",
+    "evidence_en": "One hour is sixty minutes, so eight working hours contain 480 working minutes."
   },
   {
     "id": "nr1300",
@@ -555,9 +563,13 @@
     "locations": "race:pool-075, breinkrakers:bk-80, breinkrakers:bk-84, breinkrakers:bk-108, breinkrakers:bk-163",
     "issue": "Definitie, bron of afbakening vereist vervolgcontrole.",
     "url": "https://www.google.com/maps/dir/Amsterdam/Rome",
-    "status": "nog open",
-    "reason": "De oude Maps-link levert geen reproduceerbare 1650 km. Rome2Rio noemt een andere routeafstand (1621 km). Een gecontroleerd geboortejaar 1650 zou de categorie van de vraag wijzigen en in race:pool-075 twee geschiedenisvragen opleveren; geen passende vervanging toegepast.",
-    "source": "https://www.google.com/maps/dir/Amsterdam/Rome"
+    "status": "vraag vervangen",
+    "reason": "Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. Het reglement noemt 50, 100, 200, 500, 1000 en 1650 yard vrije slag; de langste is 1650.",
+    "source": "https://www.usaswimming.org/docs/default-source/governance/governance-lsc-website/rules_policies/rulebooks/2024-rulebook.pdf",
+    "new": "Hoeveel yard lang is de langste individuele vrije-slagafstand voor kortebaanzwemmen in yards in het USA Swimming-reglement van 2024?",
+    "en": "How many yards long is the longest individual freestyle event listed for short-course yards in the 2024 USA Swimming rulebook?",
+    "evidence": "Het reglement noemt 50, 100, 200, 500, 1000 en 1650 yard vrije slag; de langste is 1650.",
+    "evidence_en": "The rulebook lists freestyle distances of 50, 100, 200, 500, 1000 and 1650 yards; the longest is 1650."
   },
   {
     "id": "nr1173",
@@ -566,8 +578,8 @@
     "locations": "race:pool-078, breinkrakers:bk-35",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://www.cbs.nl/nl-nl/cijfers/detail/70072ned",
-    "status": "nog open",
-    "reason": "CBS-tabel bereikbaar, maar de bedoelde 933 duizend is zonder vastgelegde jaar- en gemeenteselectie niet bevestigd. Het elders genoemde 933.680 zou bij afronden 934 duizend worden; afronden en afkappen zijn niet hetzelfde.",
+    "status": "puzzels vervangen",
+    "reason": "Geen geschikte unieke vraag met antwoord 933 gevonden. Volledige race:pool-078 vervangen door 52 − 12 = 40; breinkrakers:bk-35 door (3 + 1) × 15 = 60. Id’s behouden. Bronnen en NL/EN-teksten: docs/audit/connection_uitbreiding_20261113.md.",
     "source": "https://www.cbs.nl/nl-nl/cijfers/detail/70072ned"
   },
   {
@@ -603,9 +615,13 @@
     "locations": "race:pool-083",
     "issue": "Veranderlijke statistiek: peildatum en meetdefinitie controleren.",
     "url": "https://en.wikipedia.org/wiki/Plate_tectonics",
-    "status": "nog open",
-    "reason": "De bron beschrijft verschillende tektonische snelheden; een wereldwijd gemiddelde van 25 mm/jaar is niet onderbouwd.",
-    "source": "https://en.wikipedia.org/wiki/Plate_tectonics"
+    "status": "vraag vervangen",
+    "reason": "Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. De buitenste bull levert 25 punten op; de binnenste bull 50.",
+    "source": "https://pdc-europe.tv/wiki/rules/",
+    "new": "Hoeveel punten levert de buitenste bull op bij standaard steeltipdarts?",
+    "en": "How many points does the outer bull score in standard steel-tip darts?",
+    "evidence": "De buitenste bull levert 25 punten op; de binnenste bull 50.",
+    "evidence_en": "The outer bull scores 25 points; the inner bull scores 50."
   },
   {
     "id": "nr456",
@@ -764,9 +780,13 @@
     "locations": "race:pool-118",
     "issue": "Definitie, bron of afbakening vereist vervolgcontrole.",
     "url": "https://www.google.com/maps/dir/Amsterdam/Parijs",
-    "status": "nog open",
-    "reason": "Geen vaste route voor 510 km. ADAC toont zowel 514 km in de kop als 519 km in de tekst; Rome2Rio noemt 502 km. Zonder vastgelegde meetpunten en route is 510 niet eenduidig. Open in race:pool-118.",
-    "source": "https://www.google.com/maps/dir/Amsterdam/Parijs"
+    "status": "vraag vervangen",
+    "reason": "Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. De CIA vermeldt 510,072 miljoen vierkante kilometer: afgerond 510 miljoen.",
+    "source": "https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf",
+    "new": "Hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen, afgerond op hele miljoenen?",
+    "en": "How many million square kilometres is Earth’s total surface area, including oceans, rounded to the nearest million?",
+    "evidence": "De CIA vermeldt 510,072 miljoen vierkante kilometer: afgerond 510 miljoen.",
+    "evidence_en": "The CIA gives a total surface area of 510.072 million square kilometres, which rounds to 510 million."
   },
   {
     "id": "nr105",
@@ -1490,9 +1510,13 @@
     "locations": "breinkrakers:bk-73",
     "issue": "Record: persoon, datum, afronding en bron nog afzonderlijk controleren.",
     "url": "https://www.guinnessworldrecords.com/world-records/largest-serving-of-soup",
-    "status": "nog open",
-    "reason": "Guinness-link geeft pagina niet gevonden. Geen bevestiging van 20.000 liter; recordmassa is zonder dichtheid niet om te rekenen naar volume.",
-    "source": "https://www.guinnessworldrecords.com/world-records/largest-serving-of-soup"
+    "status": "vraag vervangen",
+    "reason": "Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. De Engelse titel is Twenty Thousand Leagues under the Sea; de Nederlandse titel is Twintigduizend mijlen onder zee.",
+    "source": "https://www.gutenberg.org/ebooks/164",
+    "new": "Hoeveel mijlen worden genoemd in de Nederlandse titel van Jules Vernes roman over de onderzeereis van kapitein Nemo?",
+    "en": "How many leagues are mentioned in the title of Jules Verne’s novel about Captain Nemo’s submarine voyage?",
+    "evidence": "De Engelse titel is Twenty Thousand Leagues under the Sea; de Nederlandse titel is Twintigduizend mijlen onder zee.",
+    "evidence_en": "The English title is Twenty Thousand Leagues under the Sea: twenty thousand leagues."
   },
   {
     "id": "nr556",
