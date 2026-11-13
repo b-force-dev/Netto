@@ -229,13 +229,17 @@ def main():
     # Openbare, visueel gecontroleerde keuzes op vraagtekst, ook buiten de bank.
     # null betekent bewust geen foto (bijvoorbeeld omdat het beeld verklapt).
     publiek = lees(os.path.join(FOTOS, 'publieke_fotos.json'))
+    # Een afkeuring of vervanging geldt ook voor redactionele hernoemingen.
+    for _ in range(3):
+        for regel in hernoemingen if os.path.exists(hernoemd) else []:
+            oud, nieuw = regel['oud'], regel['nieuw']
+            if oud in publiek and nieuw not in publiek:
+                publiek[nieuw] = publiek[oud]
+            elif nieuw in publiek and oud not in publiek:
+                publiek[oud] = publiek[nieuw]
     for vraag, foto in publiek.items():
         if foto is None:
             uit.pop(vraag, None)
-            for regel in locals().get('hernoemingen', []):
-                if vraag in (regel['oud'], regel['nieuw']):
-                    uit.pop(regel['oud'], None)
-                    uit.pop(regel['nieuw'], None)
         else:
             uit[vraag] = {k: foto[k] for k in ('url', 'pagina', 'licentie', 'maker')}
 
