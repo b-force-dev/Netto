@@ -45,7 +45,7 @@ document.addEventListener('load', event => {
   const image = event.target;
   if (!(image instanceof HTMLImageElement) || !image.matches('.daily-photo img, .answer-reveal-photo img, .foto-credit-kaart img')) return;
   const ratio = image.naturalWidth / image.naturalHeight;
-  const graphic = /(?:logo|wordmark|diagram|\\.svg(?:[/.?]|$))/i.test(image.currentSrc);
+  const graphic = /(?:logo|wordmark|diagram|\.svg(?:[/.?]|$))/i.test(image.currentSrc);
   image.classList.toggle('photo-contain', graphic || ratio > 1.8 || ratio < 0.75);
 }, true);
 
@@ -65,19 +65,15 @@ window.resolveDailyQuestionPhoto = function (puzzle) {
       'media-011-rms-titanic-3-jpg.jpg',
       'https://commons.wikimedia.org/wiki/File:RMS_Titanic_3.jpg',
       'Francis Godolphin Osbourne Stuart', 'Public domain')],
-    [normalize('How many legs does a spider have?'), local(
-      'media-022-xysticus-spec-6890-jpg.jpg',
-      'https://commons.wikimedia.org/wiki/File:Xysticus.spec.6890.jpg',
-      'Olaf Leillinger', 'CC BY-SA 3.0')],
     [normalize('How many kilometres long is the Panama Canal?'),
       window.NETTO_FOTOS?.['Hoeveel sluizen heeft het Panamakanaal?']]
   ]);
   const data = window.NETTO_REBUILT_PUZZLES || {};
   const bank = window.NETTO_FOTOS || {};
   const byQuestion = new Map();
-  for (const review of [data.daily_review, data.library_review]) {
+  for (const review of [data.daily_review, data.library_review, data.connection_review]) {
     for (const [label, metadata] of Object.entries(review || {})) {
-      const photo = metadata.photo || bank[metadata.original || label];
+      const photo = bank[metadata.original || label];
       if (photo) byQuestion.set(normalize(label), photo);
     }
   }

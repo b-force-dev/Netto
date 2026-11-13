@@ -214,15 +214,6 @@ def main():
         uit[vraag] = {'url': gekozen['miniatuur'], 'pagina': gekozen['pagina'],
                       'licentie': gekozen['licentie'], 'maker': gekozen['maker']}
 
-    # Openbare, visueel gecontroleerde keuzes op vraagtekst, ook buiten de bank.
-    # null betekent bewust geen foto (bijvoorbeeld omdat het beeld verklapt).
-    publiek = lees(os.path.join(FOTOS, 'publieke_fotos.json'))
-    for vraag, foto in publiek.items():
-        if foto is None:
-            uit.pop(vraag, None)
-        else:
-            uit[vraag] = {k: foto[k] for k in ('url', 'pagina', 'licentie', 'maker')}
-
     # Een hernoemde vraag houdt haar foto. De fotobank sleutelt op vraagtekst;
     # zonder deze stap verdwijnt de foto stilletjes bij elke tekstcorrectie.
     hernoemd = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
@@ -234,6 +225,19 @@ def main():
             for regel in hernoemingen:
                 if regel['oud'] in uit and regel['nieuw'] not in uit:
                     uit[regel['nieuw']] = uit[regel['oud']]
+
+    # Openbare, visueel gecontroleerde keuzes op vraagtekst, ook buiten de bank.
+    # null betekent bewust geen foto (bijvoorbeeld omdat het beeld verklapt).
+    publiek = lees(os.path.join(FOTOS, 'publieke_fotos.json'))
+    for vraag, foto in publiek.items():
+        if foto is None:
+            uit.pop(vraag, None)
+            for regel in locals().get('hernoemingen', []):
+                if vraag in (regel['oud'], regel['nieuw']):
+                    uit.pop(regel['oud'], None)
+                    uit.pop(regel['nieuw'], None)
+        else:
+            uit[vraag] = {k: foto[k] for k in ('url', 'pagina', 'licentie', 'maker')}
 
     kop = ('// Netto — foto per vraag, gekoppeld op vraagtekst.\n'
            '// Gegenereerd door tools/maak_fotobestand.py\n'
