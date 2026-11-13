@@ -71,7 +71,6 @@ def main():
     rp = laad('netto_race_pool.js')
     bk = laad('netto_breinkrakers.js')
     fotos = laad('netto_fotos.js')
-
     families = dict(re.findall(r'--categorie-([a-z0-9-]+):\s*var\(--familie-([a-z]+)\)',
                                open(os.path.join(WORTEL, 'css', 'styles.css'),
                                     encoding='utf-8').read()))
@@ -91,9 +90,39 @@ def main():
             pass
 
     sets = [('daily + bibliotheek', fr['daily'] + fr['library']),
+            ('Find the Connection', fr.get('connection', [])),
             ('racepool', rp)]
 
+    # Bibliotheek en daily dragen een Engels label; de Nederlandse tekst staat
+    # in `original` van de review. Bank en fotobank sleutelen op die Nederlandse
+    # tekst, dus zonder deze vertaalslag telde elke bibliotheekfoto als "foto
+    # zonder fotovraag" en werd geen enkel bibliotheekantwoord getoetst.
+    review = {**(fr.get('daily_review') or {}), **(fr.get('library_review') or {}),
+              **(fr.get('connection_review') or {})}
+
+    def nl(label):
+        return (review.get(label) or {}).get('original') or label
+
     alles_goed = True
+    # De redactionele selecties bevatten ook nieuwe vragen die niet in het
+    # oude reviewblad staan. Vergelijk label, antwoord en NL/EN-bewijs met de
+    # selectie, zodat een vergeten gerichte regeneratie daadwerkelijk faalt.
+    english = laad('netto_bronnen_en.js')
+    for mode in ('library', 'connection'):
+        path = os.path.join(WORTEL, 'puzzels', f'{mode}_selectie_20260927.json')
+        selection = json.load(open(path, encoding='utf8'))
+        actual = {p['id']: p for p in fr[mode]}
+        for p in selection['puzzles']:
+            output = actual.get(p['id'], {})
+            for i,q in enumerate(p['questions'],1):
+                meta = review.get(q['question'], {})
+                if (output.get(f'q{i}_label') != q['question'] or
+                    output.get(f'q{i}_answer') != q['answer'] or
+                    meta.get('original') != q['original'] or
+                    meta.get('uitleg') != q['evidence'] or
+                    meta.get('uitleg_en') != english.get(q['evidence'])):
+                    print(f"FOUT selectie/vertaling {mode} {q['id']}")
+                    alles_goed = False
     for naam, ps in sets:
         fouten = Counter()
         waarschuwingen = Counter()
@@ -104,7 +133,7 @@ def main():
                 fouten['som'] += 1
             if p.get('calculation') != f"{a} {p['operator']} {b} = {c}":
                 fouten['calculation'] += 1
-            labels = [p[f'q{i}_label'] for i in (1, 2, 3)]
+            labels = [nl(p[f'q{i}_label']) for i in (1, 2, 3)]
             for l, w in zip(labels, (a, b, c)):
                 if l in bank and bank[l] != w:
                     fouten['antwoord'] += 1
@@ -140,7 +169,7 @@ def main():
                 # Codex kon zijn frontendreparaties niet committen omdat deze
                 # regel de gedeelde commitpoort blokkeerde.
                 waarschuwingen['meer dan twee fotovragen'] += 1
-            if n and not p.get('photo'):
+            if naam != 'Find the Connection' and n and not p.get('photo'):
                 fouten['fotovraag zonder foto'] += 1
             if p.get('photo') and not n:
                 fouten['foto zonder fotovraag'] += 1
@@ -212,7 +241,8 @@ def main():
     print(f'overlap daily/bibliotheek: {len(overlap)} vragen'
           f'{" — FOUT" if overlap else " (goed, ze delen een set)"}')
     print('\nALLES IN ORDE' if alles_goed and not overlap else '\nER ZIJN FOUTEN')
+    return 0 if alles_goed and not overlap else 1
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
