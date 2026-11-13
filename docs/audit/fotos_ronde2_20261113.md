@@ -184,3 +184,40 @@ Deze partij: 7 met foto; 8 bewust zonder. Nog 0 Library-vragen open; de oorspron
 ## Ook historische Library-teksten gelijkgetrokken
 
 26 aanvullende hernoemingen voor ronde 2 vastgelegd, zodat oude en nieuwe teksten dezelfde veilige fotokeuze behouden. De oude formulering over de zuilen aan de voorzijde van het Witte Huis staat apart op null. De nieuwe vraag noemt de zuidelijke portiek; die twee definities zijn niet als alias samengevoegd.
+
+## Vervolglijst, partij 1–30
+
+Deze partij: 0 met foto; 30 bewust zonder.
+
+| Vraag | Keuze en bronvermelding | Reden |
+|---|---|---|
+| Hoe lang was de langste vrouw ooit in centimeters? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel wielen heeft een Boeing 747 volgens de standaardconfiguratie? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoe oud werd de oudste hond volgens Guinness World Records in jaren? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel leden vormden de klassieke bezetting van The Beatles? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Uit hoeveel meren bestaan de Grote Meren van Noord-Amerika? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel poten heeft een standaard statief? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel torens heeft de Notre-Dame van Parijs aan de voorzijde? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoe hoog was de hoogste duik vanaf een klif in meters? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoe groot was de grootste pizza ooit in vierkante meter? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel chemische elementen telt het huidige periodiek systeem? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel stappen telt de Mayapyramide El Castillo per zijde? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel is de som van de getallen 1 tot en met 100? | null | Rekenkundige/abstracte vraag. Een schema, tabel of volledige geometrische figuur zou de uitkomst of berekening tonen; geen passende illustratie bevestigd. |
+| Hoeveel mensen deden mee aan het grootste waterballonnengevecht ooit? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoe lang is de langste levende man in centimeters? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoe lang is de langste levende vrouw in centimeters? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel graden heeft een rechte hoek? | null | Rekenkundige/abstracte vraag. Een schema, tabel of volledige geometrische figuur zou de uitkomst of berekening tonen; geen passende illustratie bevestigd. |
+| Hoe zwaar was de grootste chocoladereep ooit in kilogram? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel minuten duurde de recordplank van Josef Šálek in mei 2023, afgerond? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel deelverzamelingen heeft een verzameling met acht elementen? | null | Rekenkundige/abstracte vraag. Een schema, tabel of volledige geometrische figuur zou de uitkomst of berekening tonen; geen passende illustratie bevestigd. |
+| Hoeveel uur duurde het langste videogame-marathonrecord (stand 2026)? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel velden telt een Engels dambord van 8 bij 8? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoe hoog was het hoogste paard ooit in centimeters? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoe klein was het kleinste paard ooit in centimeters? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel wielen heeft een standaard stadsbus meestal? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel terrassen heeft de Euromast in Rotterdam totaal? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel staten telt de Verenigde Staten? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoe zwaar was de grootste kaas ooit gemaakt in kilogram? | null | Vereist een beeld van het exacte record, de genoemde recordhouder of de specifieke gebeurtenis; een willekeurig voorbeeld zou misleiden. Geen veilige vrije kandidaat bevestigd. |
+| Hoeveel uren zitten er in een standaard kalenderjaar? | null | Rekenkundige/abstracte vraag. Een schema, tabel of volledige geometrische figuur zou de uitkomst of berekening tonen; geen passende illustratie bevestigd. |
+| Hoeveel verschillende euromunten zijn er? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
+| Hoeveel genummerde vakjes heeft een Europees roulettewiel, inclusief 0? | null | Een volledig beeld maakt het gevraagde aantal onderdelen direct telbaar. Een veilige, herkenbare uitsnede is nog niet bevestigd. |
