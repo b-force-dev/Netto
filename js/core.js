@@ -2974,6 +2974,7 @@
     stuurLokaleScoresOp();
     laadLeaderboardZichtbaar();
     closeAuthModal();
+    window.NettoLive?.onSignIn();
     showNoticeToast(
       statsCopy(`Welkom terug, ${currentUser.username}! Je scores zijn gesynchroniseerd.`, `Welcome back, ${currentUser.username}! Your scores are synced.`),
       '👋', statsCopy('Ingelogd', 'Signed in'));
@@ -3374,7 +3375,9 @@
     document.getElementById('fotoCreditsScreen')?.classList.toggle('active', name === 'fotoverantwoording');
     document.getElementById('routeStatusScreen')?.classList.toggle('active', name === 'route-status');
     if (name === 'library') document.getElementById('libraryCardGrid').style.display = 'none';
-    if (name !== 'race' && raceState) {
+    // Weg uit de race: ook een duel-room verlaten (ook vanaf het eindscherm),
+    // anders blijft de tegenstander op je wachten.
+    if (name !== 'race' && (raceState || raceDuelSession)) {
       stopRaceTimer();
       raceState = null;
       if (raceDuelSession) leaveRaceRoom();
