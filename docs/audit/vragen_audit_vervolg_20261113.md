@@ -370,15 +370,19 @@ NL: Meer dan hoeveel vogelsoorten telde Colombia volgens het historische ProAves
 
 EN: More than how many bird species did Colombia have according to the historical ProAves article about its world record for bird diversity?
 
-## 28. nr264 — nog open
+## 28. nr264 — vraag vervangen
 
 Oud: Hoeveel inwoners heeft Monaco? Antwoord: **39000**.
 
-39.000 is zonder peildatum en afronding niet bevestigd; actuele bevolking mag niet zonder historische bron aan het oude antwoord worden gekoppeld.
-
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Monaco).
+Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. De FAI registreerde 38.969,4 meter: afgerond op duizendtallen 39.000.
 
 Vindplaatsen: race:pool-029, breinkrakers:bk-126.
+
+EN: How many metres was Felix Baumgartner’s exit altitude on 14 October 2012 according to the FAI, rounded to the nearest thousand?
+
+NL: Hoeveel meter bedroeg Felix Baumgartners spronghoogte op 14 oktober 2012 volgens de FAI, afgerond op duizendtallen?
+
+[Bron](https://www.fai.org/news/baumgartner%E2%80%99s-records-ratified-fai).
 
 ## 29. nr923 — aangescherpt
 
@@ -498,15 +502,19 @@ NL: Hoeveel centimeter hoog was het miniatuurpaard Thumbelina volgens Guinness, 
 
 EN: How many centimetres tall was the miniature horse Thumbelina according to Guinness, rounded?
 
-## 38. nr367 — nog open
+## 38. nr367 — vraag vervangen
 
 Oud: Hoeveel IKEA-winkels zijn er wereldwijd ongeveer? Antwoord: **480**.
 
-De primaire IKEA-bron kon niet worden opgehaald. Een secundair verslag noemt 480 winkels, maar de peildatum en winkeltelling zijn nog niet tegen een primair bedrijfsverslag bevestigd.
-
-Bron: [geraadpleegde bron](https://about.ikea.com/en/about-us).
+Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. Een uur telt zestig minuten; acht werkuren zijn 480 werkminuten.
 
 Vindplaatsen: race:pool-069, breinkrakers:bk-48, breinkrakers:bk-183, breinkrakers:bk-200.
+
+EN: How many working minutes are in an eight-hour working day, excluding breaks?
+
+NL: Hoeveel werkminuten telt een werkdag van acht uur, zonder pauzes?
+
+[Bron](https://www.bipm.org/en/publications/si-brochure).
 
 ## 39. nr1300 — aangescherpt
 
@@ -522,23 +530,25 @@ NL: Hoeveel centimeter lang was Robert Wadlow bij zijn laatste meting in juni 19
 
 EN: How many centimetres tall was Robert Wadlow at his final measurement in June 1940?
 
-## 40. nr422 — nog open
+## 40. nr422 — vraag vervangen
 
 Oud: Wat is de autorij-afstand van Amsterdam naar Rome in km? Antwoord: **1650**.
 
-De oude Maps-link levert geen reproduceerbare 1650 km. Rome2Rio noemt een andere routeafstand (1621 km). Een gecontroleerd geboortejaar 1650 zou de categorie van de vraag wijzigen en in race:pool-075 twee geschiedenisvragen opleveren; geen passende vervanging toegepast.
-
-Bron: [geraadpleegde bron](https://www.google.com/maps/dir/Amsterdam/Rome).
+Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. Het reglement noemt 50, 100, 200, 500, 1000 en 1650 yard vrije slag; de langste is 1650.
 
 Vindplaatsen: race:pool-075, breinkrakers:bk-80, breinkrakers:bk-84, breinkrakers:bk-108, breinkrakers:bk-163.
 
-## 41. nr1173 — nog open
+EN: How many yards long is the longest individual freestyle event listed for short-course yards in the 2024 USA Swimming rulebook?
+
+NL: Hoeveel yard lang is de langste individuele vrije-slagafstand voor kortebaanzwemmen in yards in het USA Swimming-reglement van 2024?
+
+[Bron](https://www.usaswimming.org/docs/default-source/governance/governance-lsc-website/rules_policies/rulebooks/2024-rulebook.pdf).
+
+## 41. nr1173 — puzzels vervangen
 
 Oud: Hoeveel duizend inwoners heeft Amsterdam? Antwoord: **933**.
 
-CBS-tabel bereikbaar, maar de bedoelde 933 duizend is zonder vastgelegde jaar- en gemeenteselectie niet bevestigd. Het elders genoemde 933.680 zou bij afronden 934 duizend worden; afronden en afkappen zijn niet hetzelfde.
-
-Bron: [geraadpleegde bron](https://www.cbs.nl/nl-nl/cijfers/detail/70072ned).
+Geen geschikte unieke vraag met antwoord 933 gevonden. Volledige race:pool-078 vervangen door 52 − 12 = 40; breinkrakers:bk-35 door (3 + 1) × 15 = 60. Id’s behouden. Bronnen en NL/EN-teksten: docs/audit/connection_uitbreiding_20261113.md.
 
 Vindplaatsen: race:pool-078, breinkrakers:bk-35.
 
@@ -566,15 +576,19 @@ NL: Hoeveel centimeter lang was de Engelse mastiff Zorba volgens de gangbare rec
 
 EN: How many centimetres long was the English Mastiff Zorba according to the commonly cited record account, rounded to the nearest ten centimetres?
 
-## 44. nr60 — nog open
+## 44. nr60 — vraag vervangen
 
 Oud: Hoeveel millimeter per jaar verschuiven de aardplaten gemiddeld? Antwoord: **25**.
 
-De bron beschrijft verschillende tektonische snelheden; een wereldwijd gemiddelde van 25 mm/jaar is niet onderbouwd.
-
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Plate_tectonics).
+Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. De buitenste bull levert 25 punten op; de binnenste bull 50.
 
 Vindplaatsen: race:pool-083.
+
+EN: How many points does the outer bull score in standard steel-tip darts?
+
+NL: Hoeveel punten levert de buitenste bull op bij standaard steeltipdarts?
+
+[Bron](https://pdc-europe.tv/wiki/rules/).
 
 ## 45. nr456 — aangescherpt
 
@@ -716,15 +730,19 @@ NL: Hoeveel vogelsoorten zijn in het Amazoneregenwoud wetenschappelijk geclassif
 
 EN: How many bird species have been scientifically classified in the Amazon rainforest according to the inventory in English Wikipedia, rounded to the nearest hundred?
 
-## 55. nr344 — nog open
+## 55. nr344 — vraag vervangen
 
 Oud: Wat is de autorij-afstand van Amsterdam naar Parijs in km? Antwoord: **510**.
 
-Geen vaste route voor 510 km. ADAC toont zowel 514 km in de kop als 519 km in de tekst; Rome2Rio noemt 502 km. Zonder vastgelegde meetpunten en route is 510 niet eenduidig. Open in race:pool-118.
-
-Bron: [geraadpleegde bron](https://www.google.com/maps/dir/Amsterdam/Parijs).
+Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. De CIA vermeldt 510,072 miljoen vierkante kilometer: afgerond 510 miljoen.
 
 Vindplaatsen: race:pool-118.
+
+EN: How many million square kilometres is Earth’s total surface area, including oceans, rounded to the nearest million?
+
+NL: Hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen, afgerond op hele miljoenen?
+
+[Bron](https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf).
 
 ## 56. nr105 — aangescherpt
 
@@ -1392,15 +1410,19 @@ NL: Hoeveel eerstelijnsbestuursgebieden heeft Argentinië, de autonome stad Buen
 
 EN: How many first-level administrative jurisdictions does Argentina have, including the autonomous city of Buenos Aires?
 
-## 105. nr1312 — nog open
+## 105. nr1312 — vraag vervangen
 
 Oud: Hoeveel liter soep bevatte de grootste kom soep ooit? Antwoord: **20000**.
 
-Guinness-link geeft pagina niet gevonden. Geen bevestiging van 20.000 liter; recordmassa is zonder dichtheid niet om te rekenen naar volume.
-
-Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/largest-serving-of-soup).
+Vervangen door een ander, gecontroleerd feit met hetzelfde antwoord. De Engelse titel is Twenty Thousand Leagues under the Sea; de Nederlandse titel is Twintigduizend mijlen onder zee.
 
 Vindplaatsen: breinkrakers:bk-73.
+
+EN: How many leagues are mentioned in the title of Jules Verne’s novel about Captain Nemo’s submarine voyage?
+
+NL: Hoeveel mijlen worden genoemd in de Nederlandse titel van Jules Vernes roman over de onderzeereis van kapitein Nemo?
+
+[Bron](https://www.gutenberg.org/ebooks/164).
 
 ## 106. nr556 — aangescherpt
 
@@ -1642,8 +1664,12 @@ EN: How many million people took part in the Hajj per year on average in 2000–
 
 ## Nog open
 
-nr264, nr367, nr422, nr1173, nr60, nr344, nr1312. Zie de afzonderlijke punten voor de reden, bron en alle betrokken puzzel-id’s.
+Geen. De zeven resterende punten zijn afgehandeld; zie de vervangingen hierboven en het uitbreidingsverslag.
 
 ## Controles
 
 Per partij: python tools/controleer_puzzels.py (ALLES IN ORDE), node tests/puzzle-library.cjs, node tests/photo-links.cjs, node tests/daily-reliability.cjs en node tests/daily-server.cjs. De partij wordt pas gecommit nadat deze controles slagen.
+
+## Afhandeling resterende zeven punten
+
+De zes vraagvervangingen behouden het antwoord. Alleen pool-078 en bk-35 zijn geheel vervangen, met behoud van id. Geen foto-alias toegevoegd; ingebakken foto’s voor vervangen onderwerpen zijn verwijderd. Daily-data is ongewijzigd. De eerdere tellingen hierboven beschrijven de oorspronkelijke audit; deze vervolgafhandeling sluit alle zeven punten.

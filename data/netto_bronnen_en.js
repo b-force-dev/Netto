@@ -1874,5 +1874,18 @@ window.NETTO_BRONNEN_EN = {
   "Het overzicht van Solomon Partners uit maart 2024 noemt meer dan 12.500 winkels wereldwijd.": "The Solomon Partners factsheet from March 2024 reports more than 12,500 stores worldwide.",
   "Het rapport Limits in the Seas, nummer 141, noemt een gerapporteerd aantal van 17.508 eilanden. Dit is geen claim over de huidige officiële telling.": "Limits in the Seas, number 141, gives a reported count of 17,508 islands. This does not claim to be the current official count.",
   "Tabel 4 van het VU-onderzoek vermeldt 1449 km² voor de provincie Utrecht, waarvan 64 km² water; dit zijn de historische grenzen in dat onderzoek.": "Table 4 of the VU study gives 1,449 square kilometres for Utrecht, including 64 square kilometres of water; these are the historical boundaries used in that study.",
-  "De IEEE Milestone dateert Fessendens uitzending op 24 december 1906; de vraag volgt expliciet die historische toeschrijving.": "The IEEE Milestone dates Fessenden’s broadcast to 24 December 1906; the question explicitly follows that historical attribution."
+  "De IEEE Milestone dateert Fessendens uitzending op 24 december 1906; de vraag volgt expliciet die historische toeschrijving.": "The IEEE Milestone dates Fessenden’s broadcast to 24 December 1906; the question explicitly follows that historical attribution.",
+  "De FAI registreerde 38.969,4 meter: afgerond op duizendtallen 39.000.": "The FAI ratified an exit altitude of 38,969.4 metres, which rounds to 39,000 to the nearest thousand.",
+  "Een uur telt zestig minuten; acht werkuren zijn 480 werkminuten.": "One hour is sixty minutes, so eight working hours contain 480 working minutes.",
+  "Het reglement noemt 50, 100, 200, 500, 1000 en 1650 yard vrije slag; de langste is 1650.": "The rulebook lists freestyle distances of 50, 100, 200, 500, 1000 and 1650 yards; the longest is 1650.",
+  "De buitenste bull levert 25 punten op; de binnenste bull 50.": "The outer bull scores 25 points; the inner bull scores 50.",
+  "De CIA vermeldt 510,072 miljoen vierkante kilometer: afgerond 510 miljoen.": "The CIA gives a total surface area of 510.072 million square kilometres, which rounds to 510 million.",
+  "De Engelse titel is Twenty Thousand Leagues under the Sea; de Nederlandse titel is Twintigduizend mijlen onder zee.": "The English title is Twenty Thousand Leagues under the Sea: twenty thousand leagues.",
+  "Een standaardpiano heeft 52 witte en 36 zwarte toetsen.": "A standard piano has 52 white keys and 36 black keys.",
+  "Tijdens zes Apollomissies liepen twaalf astronauten op de maan.": "Twelve astronauts walked on the Moon during six Apollo missions.",
+  "Een standaard Monopoly-bord telt veertig vakken.": "A standard Monopoly board has forty spaces.",
+  "The Godfather won voor beste film, beste acteur en bewerkt scenario: drie Oscars.": "The Godfather won Best Picture, Actor and Adapted Screenplay: three Oscars.",
+  "Odin offert één oog op en houdt er één over.": "Odin sacrifices one eye and has one remaining eye.",
+  "Iedere speler ontvangt vijftien wegstukken; bij de opbouw staan er twee op het bord.": "Each player receives fifteen road pieces; two are placed on the board during setup.",
+  "Een minuut is gedefinieerd als zestig seconden.": "A minute is defined as sixty seconds."
 };
