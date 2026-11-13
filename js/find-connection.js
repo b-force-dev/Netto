@@ -61,12 +61,44 @@ function openConnection() {
   renderConnectionStart();
 }
 
+function connectionResultFor(id, results = connectionProgress().results) {
+  return results.find(result => result.id === id) || null;
+}
+
+// Volgende ongespeelde puzzel ná de gegeven positie; daarna vooraan verder.
+function nextUnplayedConnection(fromIndex = -1) {
+  const gespeeld = new Set(connectionProgress().results.map(result => result.id));
+  for (let step = 1; step <= connectionPool.length; step++) {
+    const index = (fromIndex + step) % connectionPool.length;
+    if (index !== fromIndex && !gespeeld.has(connectionPool[index].id)) return index;
+  }
+  return -1;
+}
+
 function startNextConnection() {
   openConnection();
-  const gespeeld = new Set(connectionProgress().results.map(result => result.id));
-  const volgende = connectionPool.findIndex(puzzle => !gespeeld.has(puzzle.id));
+  const volgende = nextUnplayedConnection(-1);
   // Als alles gespeeld is, blijft het overzicht beschikbaar om opnieuw te spelen.
   if (volgende >= 0) startConnection(volgende);
+}
+
+function startRandomConnection() {
+  if (!connectionPool.length) openConnection();
+  const gespeeld = new Set(connectionProgress().results.map(result => result.id));
+  const open = connectionPool.map((puzzle, index) => gespeeld.has(puzzle.id) ? -1 : index).filter(index => index >= 0);
+  if (!open.length) { openConnection(); return; }
+  startConnection(open[Math.floor(Math.random() * open.length)]);
+}
+
+// Overslaan en "volgende" springen over wat je al speelde heen.
+function skipConnection() {
+  const volgende = nextUnplayedConnection(connectionState ? connectionState.index : -1);
+  if (volgende >= 0) startConnection(volgende); else renderConnectionStart();
+}
+
+function setConnectionText(id, nl, en) {
+  const element = document.getElementById(id);
+  if (element) element.textContent = statsCopy(nl, en);
 }
 
 function renderConnectionStart() {
@@ -78,13 +110,39 @@ function renderConnectionStart() {
   document.getElementById('bkStart').style.display = 'block';
   document.getElementById('bkPlay').style.display = 'none';
   const results = connectionProgress().results.filter(r => connectionPool.some(p => p.id === r.id));
+  const found = results.filter(r => r.connectionCorrect).length;
+  setConnectionText('bkSubtitle',
+    'Drie vragen, één verborgen som. Zet ze in de goede volgorde, kies het rekenteken en schat de antwoorden.',
+    'Three questions, one hidden equation. Put them in the right order, pick the operator and estimate the answers.');
+  setConnectionText('bkPlayedLabel', 'Gespeeld', 'Played');
+  setConnectionText('bkExactLabel', 'Verbanden gevonden', 'Connections found');
+  setConnectionText('bkAverageLabel', 'Gemiddelde factor', 'Average factor');
+  document.getElementById('bkStats')?.setAttribute('aria-label', statsCopy('Voortgang Find the Connection', 'Find the Connection progress'));
   document.getElementById('bkPlayedCount').textContent = results.length + '/' + connectionPool.length;
-  document.getElementById('bkExactCount').textContent = results.filter(r => r.connectionCorrect).length;
+  document.getElementById('bkExactCount').textContent = found + '/' + results.length;
   document.getElementById('bkAverageScore').textContent = results.length
     ? (results.reduce((sum, r) => sum + r.factor, 0) / results.length).toFixed(2) + '×' : '—';
-  document.getElementById('bkProgress').textContent = connectionPool.length
-    ? statsCopy('Kies een verborgen verband.', 'Choose a hidden connection.')
-    : statsCopy('Er zijn nog geen geschikte puzzels beschikbaar.', 'No suitable puzzles are available yet.');
+  const open = connectionPool.length - results.length;
+  document.getElementById('bkProgress').textContent = !connectionPool.length
+    ? statsCopy('Er zijn nog geen geschikte puzzels beschikbaar.', 'No suitable puzzles are available yet.')
+    : open > 0
+      ? statsCopy('Nog ' + open + ' van ' + connectionPool.length + ' te spelen. Gespeelde puzzels kun je opnieuw doen als oefening.',
+                  open + ' of ' + connectionPool.length + ' left to play. Played puzzles can be replayed for practice.')
+      : statsCopy('Alle ' + connectionPool.length + ' gespeeld 🎉 Kies er een om te oefenen.', 'All ' + connectionPool.length + ' played 🎉 Pick one to practise.');
+  const volgende = nextUnplayedConnection(-1);
+  const continueButton = document.getElementById('bkContinue');
+  const randomButton = document.getElementById('bkRandom');
+  if (continueButton) {
+    continueButton.hidden = volgende < 0;
+    continueButton.textContent = volgende >= 0
+      ? statsCopy(results.length ? 'Speel de volgende · #' : 'Begin bij #', results.length ? 'Play the next one · #' : 'Start with #') + connectionPool[volgende].number + ' →'
+      : '';
+  }
+  if (randomButton) {
+    randomButton.hidden = open < 2;
+    randomButton.textContent = statsCopy('Verras me', 'Surprise me');
+    randomButton.setAttribute('aria-label', statsCopy('Willekeurige ongespeelde puzzel', 'Random unplayed puzzle'));
+  }
   const grid = document.getElementById('bkCardGrid');
   grid.replaceChildren();
   connectionPool.forEach((puzzle, index) => {
@@ -99,9 +157,14 @@ function renderConnectionStart() {
       label.className = result.connectionCorrect ? 'status-correct' : 'status-incorrect';
       label.textContent = (result.connectionCorrect ? '✓ ' : '≠ ') + result.factor.toFixed(2) + '×';
     } else {
-      label.textContent = statsCopy('Open puzzel →', 'Open puzzle →');
+      label.textContent = statsCopy('Speel →', 'Play →');
     }
     button.append(number, label);
+    // Symbool en kleur zeggen hetzelfde als deze tekst; kleur is nooit het enige signaal.
+    button.setAttribute('aria-label', statsCopy('Puzzel ', 'Puzzle ') + puzzle.number + ', ' + (result
+      ? (result.connectionCorrect ? statsCopy('verband gevonden', 'connection found') : statsCopy('verband niet gevonden', 'connection not found'))
+        + ', ' + statsCopy('factor ', 'factor ') + result.factor.toFixed(2) + '×'
+      : statsCopy('nog niet gespeeld', 'not played yet')));
     button.onclick = () => startConnection(index);
     grid.append(button);
   });
@@ -236,7 +299,13 @@ function startConnection(index = 0) {
   document.getElementById('bkCounter').textContent = (index + 1) + ' / ' + connectionPool.length;
   document.getElementById('bkFeedback').textContent = '';
   document.getElementById('connectionAnnouncement').textContent = '';
-  document.getElementById('connectionSkip').hidden = false;
+  const skip = document.getElementById('connectionSkip');
+  skip.hidden = false;
+  skip.textContent = statsCopy('Overslaan →', 'Skip puzzle →');
+  // Na een eerdere inzending stond de formule op display:none en kwam nooit terug.
+  const liveFormula = document.getElementById('connectionLiveFormula');
+  if (liveFormula) liveFormula.style.removeProperty('display');
+  renderConnectionRule(connectionResultFor(puzzle.id));
   const submit = document.getElementById('bkSubmitButton');
   submit.textContent = statsCopy('Controleer mijn verband', 'Check my connection');
   const list = document.getElementById('bkQuestionList');
@@ -301,6 +370,28 @@ function startConnection(index = 0) {
   
   layoutConnection();
   updateConnectionLiveFormula();
+}
+
+// De spelregel staat op het moment dat hij ertoe doet: boven de drie kaarten.
+function renderConnectionRule(previous) {
+  const rule = document.getElementById('connectionRule');
+  if (!rule) return;
+  rule.hidden = false;
+  rule.replaceChildren();
+  const formula = document.createElement('strong');
+  formula.textContent = statsCopy('positie 1  ?  positie 2  =  uitkomst', 'position 1  ?  position 2  =  result');
+  rule.append(
+    document.createTextNode(statsCopy('Sleep de vragen in de goede volgorde en kies het teken: ', 'Drag the questions into the right order and choose the sign: ')),
+    formula,
+    document.createTextNode(statsCopy('. Alle antwoorden zijn hele getallen. Je scoort op het verband én op hoe dicht je schattingen zitten.',
+      '. Every answer is a whole number. You score on the connection and on how close your estimates are.')));
+  if (previous) {
+    const note = document.createElement('span');
+    note.className = 'connection-replay-note';
+    note.textContent = ' ' + statsCopy('Al gespeeld (' + previous.factor.toFixed(2) + '×): dit is een oefenronde, je eerste score blijft staan.',
+      'Already played (' + previous.factor.toFixed(2) + '×): this is a practice round, your first score stays.');
+    rule.append(note);
+  }
 }
 
 function layoutConnection() {
@@ -457,7 +548,7 @@ function bindConnectionDrag(handle, card, question) {
 function submitConnection() {
   const state = connectionState;
   if (!state) return;
-  if (state.submitted) { startConnection(state.index + 1); return; }
+  if (state.submitted) { skipConnection(); return; }
   const guesses = [0, 1, 2].map(i => parseFormattedNumber(document.getElementById('connectionAnswer' + i).value));
   const feedback = document.getElementById('bkFeedback');
   if (!validWholeAnswers(guesses)) {
@@ -471,38 +562,66 @@ function submitConnection() {
   const correct = connectionEquation(state.order.map(i => answers[i]), state.operator);
   const factor = answers.reduce((sum, answer, i) => sum + scoreVraag(guesses[i], answer), 0) / 3;
   const progress = connectionProgress();
+  const previous = connectionResultFor(state.puzzle.id, progress.results);
   const result = { id: state.puzzle.id, factor, connectionCorrect: correct, exact: correct && guesses.every((g, i) => isSpotOnAnswer(g, answers[i])),
     guesses: state.order.map(i => guesses[i]), answers: state.order.map(i => answers[i]), order: [...state.order],
     categories: state.order.map(i => state.puzzle.categories?.[i] || ''), operators: [state.operator], completedAt: new Date().toISOString() };
-  progress.results = progress.results.filter(r => r.id !== result.id).concat(result);
-  localStorage.setItem(CONNECTION_PROGRESS_KEY, JSON.stringify(progress));
+  // Een herhaling is een oefenronde: de eerste poging blijft de score.
+  if (!previous) {
+    progress.results = progress.results.concat(result);
+    localStorage.setItem(CONNECTION_PROGRESS_KEY, JSON.stringify(progress));
+  }
   state.submitted = true;
+  const rule = document.getElementById('connectionRule');
+  if (rule) rule.hidden = true;
   // De normale review wordt hergebruikt, in de door de speler gekozen volgorde.
   const ordered = { categories: result.categories };
   state.order.forEach((i, position) => { ordered['q' + (position + 1) + '_label'] = state.puzzle['q' + (i + 1) + '_label']; });
   renderPuzzleReview('bk', ordered, result.guesses, result.answers, factor);
   const connection = document.createElement('section'); connection.className = 'connection-verdict';
   connection.classList.toggle('is-correct', correct);
-  const title = document.createElement('h2'); title.textContent = correct ? statsCopy('✓ Verband gevonden', '✓ Connection found') : statsCopy('Verband niet gevonden', 'Connection not found');
+  const title = document.createElement('h2'); title.textContent = correct ? statsCopy('✓ Verband gevonden!', '✓ Connection found!') : statsCopy('✗ Verband niet gevonden', '✗ Connection not found');
   const equation = document.createElement('p');
-  equation.textContent = fmt(result.answers[0]) + ' ' + state.operator + ' ' + fmt(result.answers[1]) + (correct ? ' = ' : ' ≠ ') + fmt(result.answers[2]);
+  equation.textContent = (correct ? '' : statsCopy('Jouw verband: ', 'Your connection: '))
+    + fmt(result.answers[0]) + ' ' + state.operator + ' ' + fmt(result.answers[1]) + (correct ? ' = ' : ' ≠ ') + fmt(result.answers[2]);
   connection.append(title, equation);
+  let solutionText = '';
   if (!correct) {
     const solution = validConnections(answers)[0];
     const [a, b, c] = solution.order.map(i => fmt(answers[i]));
+    solutionText = a + ' ' + solution.operator + ' ' + b + ' = ' + c;
     const reveal = document.createElement('p');
-    reveal.textContent = statsCopy('Een geldig verband: ', 'A valid connection: ') + a + ' ' + solution.operator + ' ' + b + ' = ' + c;
+    reveal.textContent = statsCopy('Het verband: ', 'The connection: ') + solutionText;
     connection.append(reveal);
   }
+  const detail = document.createElement('p');
+  detail.className = 'connection-verdict-detail';
+  detail.textContent = previous
+    ? statsCopy('Oefenronde: factor ' + factor.toFixed(2) + '×. Je score blijft ' + previous.factor.toFixed(2) + '×.',
+                'Practice round: factor ' + factor.toFixed(2) + '×. Your score stays ' + previous.factor.toFixed(2) + '×.')
+    : correct
+      ? statsCopy('De drie echte antwoorden vormen precies deze som.', 'The three real answers form exactly this equation.')
+      : statsCopy('Je schattingen tellen nog steeds mee in je factor.', 'Your estimates still count towards your factor.');
+  connection.append(detail);
+  connection.tabIndex = -1;
+  connection.setAttribute('aria-labelledby', 'connectionVerdictTitle');
+  title.id = 'connectionVerdictTitle';
   document.getElementById('bkQuestionList').prepend(connection);
   feedback.textContent = '';
-  document.getElementById('connectionAnnouncement').textContent = '';
+  document.getElementById('connectionAnnouncement').textContent = (correct
+    ? statsCopy('Verband gevonden. ', 'Connection found. ') + equation.textContent
+    : statsCopy('Verband niet gevonden. Het verband is ', 'Connection not found. The connection is ') + solutionText)
+    + '. ' + statsCopy('Gemiddelde factor ', 'Average factor ') + factor.toFixed(2) + '×.';
   document.getElementById('connectionSkip').hidden = true;
   const liveFormula = document.getElementById('connectionLiveFormula');
   if (liveFormula) liveFormula.style.display = 'none';
-  document.getElementById('bkSubmitButton').textContent = state.index + 1 < connectionPool.length ? statsCopy('Volgende puzzel →', 'Next puzzle →') : statsCopy('Alle puzzels →', 'All puzzles →');
-  if (result.exact) launchConfetti();
+  const volgende = nextUnplayedConnection(state.index);
+  document.getElementById('bkSubmitButton').textContent = volgende >= 0
+    ? statsCopy('Volgende puzzel · #', 'Next puzzle · #') + connectionPool[volgende].number + ' →'
+    : statsCopy('Alles gespeeld · naar het overzicht', 'All played · back to overview');
+  if (result.exact || (correct && !previous)) launchConfetti();
   document.getElementById('breinkrakersScreen').scrollTop = 0;
+  connection.focus({ preventScroll: true });
 }
 
 // Oude routes en integraties blijven werken, zonder de oude vier-vragenmodus te laden.

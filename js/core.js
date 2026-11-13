@@ -1546,9 +1546,12 @@
   function bindWholeNumberInput(input, update) {
     let previous = input.value;
     input.addEventListener('beforeinput', event => {
-      if (event.data && /\D/.test(event.data)) event.preventDefault();
+      if (event.data && /\D/.test(event.data) && !/^\d{1,3}(?:[.,\s  ']\d{3})+$/.test(event.data.trim())) event.preventDefault();
     });
     input.addEventListener('input', () => {
+      // Een geplakt getal met duizendtallen ("1,000", "1.000", "1 000") is
+      // ondubbelzinnig een heel getal; alleen die scheidingstekens vallen weg.
+      if (/^\d{1,3}(?:[.,\s  ']\d{3})+$/.test(input.value.trim())) input.value = input.value.trim().replace(/\D/g, '');
       if (!/^\d*$/.test(input.value)) { input.value = previous; return; }
       previous = input.value;
       autoCalculatedInputs.delete(input.id);

@@ -1,0 +1,139 @@
+/* Puzzels, Daily Archive en Find the Connection: voortgang, filters en
+   doorspelen. Staat los van refinement.css zodat dit blok op zichzelf leesbaar
+   blijft; laadt erna en overschrijft alleen wat hier expliciet staat. */
+
+/* ===== Niveauknoppen met voortgang ===== */
+.library-difficulties button { position: relative; overflow: hidden; }
+.library-difficulties button b { display: block; font: inherit; }
+.library-level-bar {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 4px;
+  background: rgba(20, 22, 59, .1);
+}
+.library-level-bar::after {
+  content: ''; position: absolute; inset: 0 auto 0 0; width: var(--level-progress, 0%);
+  background: var(--green, #10B981);
+}
+.library-difficulties button.active .library-level-bar { background: rgba(255, 255, 255, .18); }
+.library-difficulties button.is-complete span::after { content: ' ✓'; }
+
+/* ===== Ga verder, verras me en filters ===== */
+.library-browse { display: grid; gap: 12px; margin: 4px 0 6px; }
+.library-browse[hidden] { display: none; }
+.library-quick-actions { display: grid; grid-template-columns: 1.4fr 1fr; gap: 10px; }
+.library-quick-actions button {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 3px;
+  min-height: 60px; padding: 12px 16px; border-radius: 11px; cursor: pointer; text-align: left;
+  border: 1px solid var(--surface-border); background: var(--surface); color: var(--ink);
+  font: 700 15px 'Space Grotesk', sans-serif;
+  transition: transform .15s ease, border-color .15s ease;
+}
+.library-quick-actions button[hidden] { display: none; }
+.library-quick-actions button b { font: inherit; }
+.library-quick-actions button span { font: 600 11px 'JetBrains Mono', monospace; letter-spacing: .02em; opacity: .8; }
+.library-quick-actions .library-continue { background: var(--accent); border-color: transparent; color: #14163B; }
+.library-quick-actions button:hover { transform: translateY(-1px); border-color: var(--bg-main, #4C519C); }
+.library-quick-actions button:focus-visible,
+.library-chip:focus-visible,
+.library-sort select:focus-visible,
+.library-empty button:focus-visible,
+.daily-archive-fallback:focus-visible,
+.bk-quick-actions button:focus-visible { outline: 3px solid var(--yellow, #FFD84A); outline-offset: 3px; }
+
+.library-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+.library-chip-group { display: flex; flex-wrap: wrap; gap: 6px; }
+.library-chip {
+  min-height: 36px; min-width: 36px; padding: 6px 12px; border-radius: 99px; cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, .28); background: transparent; color: #fff;
+  font: 600 13px 'Space Grotesk', sans-serif;
+}
+.library-chip[aria-pressed="true"] { background: #fff; border-color: #fff; color: #14163B; }
+.library-chip[aria-pressed="true"]::before { content: '✓ '; }
+.library-sort { display: inline-flex; align-items: center; gap: 8px; margin-left: auto; color: #D7DAFF; font: 600 12px 'Space Grotesk', sans-serif; }
+.library-sort select {
+  min-height: 36px; padding: 6px 10px; border-radius: 9px; border: 0;
+  background: var(--surface); color: var(--ink); font: 600 13px 'Space Grotesk', sans-serif;
+}
+.library-result-count { margin: 0; color: #D7DAFF; font: 600 11px 'JetBrains Mono', monospace; }
+
+/* ===== Kaarten ===== */
+button.library-card-button {
+  display: block; width: 100%; padding: 0; border: 0; background: none; color: inherit;
+  font: inherit; text-align: left;
+}
+.library-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; }
+.library-flip-front .library-card-operator {
+  display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 7px;
+  background: rgba(20, 22, 59, .08); color: var(--ink); font: 700 15px 'JetBrains Mono', monospace; text-transform: none;
+}
+.library-flip-front.played .library-card-operator { background: rgba(0, 0, 0, .22); color: #fff; }
+.library-flip-front .library-card-topic {
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  text-transform: none; font: 600 12px 'Space Grotesk', sans-serif; letter-spacing: 0;
+}
+.library-flip-front .library-card-status { font-weight: 700; }
+.library-empty { grid-column: 1 / -1; padding: 22px; border-radius: 12px; background: var(--surface); color: var(--ink); text-align: center; }
+.library-empty p { margin: 0 0 12px; }
+.library-empty button,
+.daily-archive-fallback {
+  min-height: 40px; padding: 8px 16px; border-radius: 9px; border: 0; cursor: pointer;
+  background: var(--bg-dark); color: #fff; font: 700 13px 'Space Grotesk', sans-serif;
+}
+
+/* ===== Puzzelscherm ===== */
+.library-replay-note {
+  margin: 0 0 10px; padding: 10px 14px; border-radius: 10px;
+  background: #FFF4B8; color: #14163B; font: 600 13px/1.45 'Space Grotesk', sans-serif;
+}
+.library-replay-note::before { content: '↻ '; }
+.library-puzzle-view .library-actions { flex-wrap: wrap; }
+.library-next-progress { flex-basis: 100%; margin: 4px 0 0; color: var(--muted, #5B6172); font: 600 12px 'JetBrains Mono', monospace; }
+
+/* ===== Daily Archive ===== */
+button.daily-archive-row { width: 100%; border: 0; border-bottom: 1px solid #E4E2DA; background: none; color: inherit; font: inherit; text-align: left; }
+button.daily-archive-row:last-child { border-bottom: 0; }
+button.daily-archive-row:focus-visible { outline: 3px solid var(--yellow, #FFD84A); outline-offset: -3px; }
+.daily-archive-empty { margin: 0; padding: 22px; color: var(--ink); font-weight: 600; }
+.daily-archive-fallback { margin: 0 22px 22px; }
+
+/* ===== Find the Connection ===== */
+.bk-quick-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 4px 0 6px; }
+.bk-quick-actions button {
+  min-height: 44px; padding: 10px 18px; border-radius: 10px; cursor: pointer;
+  border: 1px solid var(--surface-border); background: var(--surface); color: var(--ink);
+  font: 700 14px 'Space Grotesk', sans-serif;
+}
+.bk-quick-actions button.is-primary { background: var(--accent); border-color: transparent; color: #14163B; }
+.bk-quick-actions button[hidden] { display: none; }
+.connection-rule {
+  margin: 0 0 12px; padding: 10px 14px; border-radius: 10px;
+  background: rgba(20, 22, 59, .06); color: var(--ink); font: 500 13px/1.5 'Space Grotesk', sans-serif;
+}
+.connection-rule strong { font-family: 'JetBrains Mono', monospace; white-space: nowrap; }
+.connection-rule[hidden] { display: none; }
+.connection-verdict:focus { outline: none; }
+.connection-verdict:focus-visible { outline: 3px solid var(--yellow, #FFD84A); outline-offset: 3px; }
+.connection-verdict .connection-verdict-detail { font-size: 13px; opacity: .85; }
+.connection-verdict.is-correct { animation: connection-found .5s cubic-bezier(.2, 1.4, .4, 1) both; }
+@keyframes connection-found {
+  0% { transform: scale(.94); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.connection-catalog-card .status-correct::before { content: ''; }
+
+[data-theme="dark"] .connection-rule { background: rgba(255, 255, 255, .06); }
+[data-theme="dark"] .library-replay-note { background: #4A4320; color: #FFF4B8; }
+[data-theme="dark"] .library-flip-front .library-card-operator { background: rgba(255, 255, 255, .1); }
+[data-theme="dark"] button.daily-archive-row { border-bottom-color: var(--surface-border); }
+
+@media (max-width: 560px) {
+  .library-quick-actions { grid-template-columns: 1fr 1fr; }
+  .library-quick-actions button { min-height: 56px; padding: 10px 12px; font-size: 14px; }
+  .library-sort { margin-left: 0; }
+  .library-filters { gap: 8px; }
+  .library-chip { padding: 6px 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .connection-verdict.is-correct { animation: none; }
+  .library-quick-actions button:hover { transform: none; }
+}

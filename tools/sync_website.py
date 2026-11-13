@@ -25,6 +25,7 @@ MIRROR_FILES = (
     "css/live-rounds.css",
     "css/admin.css",
     "css/stats-page.css",
+    "css/puzzle-library.css",
     "js/core.js",
     "js/answer-reveal.js",
     "js/question-context.js",
