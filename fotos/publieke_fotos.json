@@ -35,7 +35,12 @@
   "Hoeveel pixels breed is een standaard 4K Ultra HD videoscherm?": null,
   "Hoeveel jaar zaten er tussen het begin en het einde van de Punische oorlogen?": null,
   "In welk jaar werd de Eerste Franse Republiek uitgeroepen?": null,
-  "Hoeveel bekende manen heeft Saturnus (stand 2026)?": null,
+  "Hoeveel bekende manen heeft Saturnus (stand 2026)?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Saturn_from_Cassini_Orbiter_%282004-10-06%29.jpg/330px-Saturn_from_Cassini_Orbiter_%282004-10-06%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Saturn_from_Cassini_Orbiter_(2004-10-06).jpg",
+    "licentie": "Public domain",
+    "maker": "NASA/JPL/Space Science Institute"
+  },
   "In welk jaar vroeg Carl Benz patent aan op zijn driewielige Motorwagen?": {
     "url": "fotos/assets/audit-20261113-1.jpg",
     "pagina": "https://commons.wikimedia.org/wiki/File:1885Benz.jpg",
@@ -151,7 +156,12 @@
   "Hoeveel mensen namen deel aan de grootste massale yogales?": null,
   "In welk jaar werd de eerste internationale telefonische verbinding gemaakt?": null,
   "Hoeveel kilometer lang is de Nederlandse kustlijn ongeveer?": null,
-  "Hoeveel procent bedraagt het standaard-btw-tarief in België?": null,
+  "Hoeveel procent bedraagt het standaard-btw-tarief in België?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/330px-Flag_of_Belgium.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Belgium.svg",
+    "licentie": "Public domain",
+    "maker": "Dbenbenn and others"
+  },
   "Hoeveel piercings had Rolf Buchholz, de man met de meeste piercings, in 2012?": null,
   "Hoeveel lemuursoorten telt Madagaskar ongeveer?": null,
   "Hoe hoog was de hoogste robot ooit gebouwd in meters?": null,
@@ -323,5 +333,233 @@
   "Hoeveel snaren heeft de klassieke Afrikaanse kora traditioneel?": null,
   "Hoeveel hoofdgroepen onderscheidt NASA in de ringen van Saturnus?": null,
   "Hoeveel kaarten bevat een standaard kaartspel met Franse kleuren, zonder jokers?": null,
-  "Hoeveel koppen had Cerberus, de mythologische hond die de onderwereld bewaakt?": null
+  "Hoeveel koppen had Cerberus, de mythologische hond die de onderwereld bewaakt?": null,
+  "Hoeveel procent van Nederland ligt onder zeeniveau?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/EU-Netherlands.svg/330px-EU-Netherlands.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:EU-Netherlands.svg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "NuclearVacuum"
+  },
+  "Hoeveel dagen zaten er tussen D-Day en de bevrijding van Parijs?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Into_the_Jaws_of_Death_23-0455M_edit.jpg/330px-Into_the_Jaws_of_Death_23-0455M_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Into_the_Jaws_of_Death_23-0455M_edit.jpg",
+    "licentie": "Public domain",
+    "maker": "Chief Photographer's Mate (CPHoM) Robert F. Sargent"
+  },
+  "Hoeveel landen grenzen aan de Dode Zee?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Dead_Sea_by_David_Shankbone.jpg/330px-Dead_Sea_by_David_Shankbone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Dead_Sea_by_David_Shankbone.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "David Shankbone"
+  },
+  "Wat is de hoogte van het Vrijheidsbeeld in New York inclusief sokkel in meters?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Statue_of_Liberty_7.jpg/330px-Statue_of_Liberty_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty_7.jpg",
+    "licentie": "Public domain",
+    "maker": "Elcobbola"
+  },
+  "Hoeveel kilogram weegt een volwassen mannetje van de Aziatische olifant gemiddeld?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/2005-bandipur-tusker.jpg/330px-2005-bandipur-tusker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:2005-bandipur-tusker.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "Yathin S Krishnappa"
+  },
+  "Hoeveel graden Celsius is het aan het oppervlak van de zon ongeveer?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/The_Sun_in_white_light.jpg/330px-The_Sun_in_white_light.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:The_Sun_in_white_light.jpg",
+    "licentie": "CC BY-SA 4.0",
+    "maker": "Matúš Motlo"
+  },
+  "Hoeveel minuten duurt een NBA-basketbalwedstrijd officieel?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kobe_Bryant_2014.jpg/330px-Kobe_Bryant_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Kobe_Bryant_2014.jpg",
+    "licentie": "CC BY-SA 2.0",
+    "maker": "Keith Allison"
+  },
+  "Hoeveel minuten officiële speeltijd heeft een rugbyunionwedstrijd?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Dragons_vs_Leinster_welsh_try_Celtic_League_9_may_2008.jpg/330px-Dragons_vs_Leinster_welsh_try_Celtic_League_9_may_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Dragons_vs_Leinster_welsh_try_Celtic_League_9_may_2008.jpg",
+    "licentie": "CC BY 2.0",
+    "maker": "https://www.flickr.com/photos/awv/ Rob Gale"
+  },
+  "In welk jaar werd de eerste iPhone uitgebracht?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/330px-Apple_logo_black.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg",
+    "licentie": "Public domain",
+    "maker": "Original: Rob Janoff"
+  },
+  "Hoeveel soorten telt de kangoeroefamilie (Macropodidae)?": {
+    "url": "fotos/assets/audit-20261113-8.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Red_Kangaroo_in_Thai_Zoo.jpg",
+    "licentie": "CC BY-SA 4.0",
+    "maker": "วิชิต กองคำ"
+  },
+  "Hoeveel vogelsoorten telt Australië?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Dromaius_novaehollandiae_-_02.jpg/330px-Dromaius_novaehollandiae_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Dromaius_novaehollandiae_-_02.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "Carlos Delgado"
+  },
+  "In welk jaar werd Argentinië onafhankelijk van Spanje?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/LocationArgentina2.svg/330px-LocationArgentina2.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:LocationArgentina2.svg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "B1mbo"
+  },
+  "Wat is de gemiddelde diepte van alle wereldzeeën en oceanen in meters?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/AntalyaSunset.JPG/330px-AntalyaSunset.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:AntalyaSunset.JPG",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "onbekend"
+  },
+  "Wat is de diameter van de aarde ongeveer?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/330px-The_Blue_Marble_%28remastered%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:The_Blue_Marble_(remastered).jpg",
+    "licentie": "Public domain",
+    "maker": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans"
+  },
+  "Hoeveel meter hoog is de Domtoren in Utrecht?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/DomTorenUtrechtNederland.jpg/330px-DomTorenUtrechtNederland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:DomTorenUtrechtNederland.jpg",
+    "licentie": "CC BY 3.0",
+    "maker": "Massimo Catarinella"
+  },
+  "Hoeveel liter melk geeft een gemiddelde Nederlandse koe per jaar?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/330px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "Kim Hansen"
+  },
+  "Hoeveel punten levert een touchdown op in American football (met extra point)?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Vince_Young_scores_a_touchdown_in_the_2005_Big_12_Championship_Game.JPG/330px-Vince_Young_scores_a_touchdown_in_the_2005_Big_12_Championship_Game.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Vince_Young_scores_a_touchdown_in_the_2005_Big_12_Championship_Game.JPG",
+    "licentie": "CC BY 2.5",
+    "maker": "Johntex"
+  },
+  "Uit hoeveel eilanden bestaat Indonesië, afgerond op duizendtallen?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/330px-Flag_of_Indonesia.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Indonesia.svg",
+    "licentie": "Public domain",
+    "maker": "Jayakatwang"
+  },
+  "In welk jaar vond de Slag bij Waterloo plaats?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Battle_of_Waterloo_1815.PNG/330px-Battle_of_Waterloo_1815.PNG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Battle_of_Waterloo_1815.PNG",
+    "licentie": "Public domain",
+    "maker": "William Sadler"
+  },
+  "Hoeveel magen heeft een koe?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/330px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "Kim Hansen"
+  },
+  "Hoeveel bijen leven er in een sterk bijenvolk in de zomer?": {
+    "url": "fotos/assets/audit-20261113-18.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Queen_Bee_(16545241268).jpg",
+    "licentie": "Public domain",
+    "maker": "U.S. Geological Survey from Reston, VA, USA"
+  },
+  "Hoeveel kilogram voedsel (bladeren, gras, takken) eet een volwassen Afrikaanse olifant per dag?": {
+    "url": "fotos/assets/audit-20261113-5.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+    "licentie": "CC BY-SA 4.0",
+    "maker": "Giles Laurent"
+  },
+  "Hoeveel kilometer moet een bijenvolk gezamenlijk vliegen om één kilo honing te produceren?": {
+    "url": "fotos/assets/audit-20261113-18.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Queen_Bee_(16545241268).jpg",
+    "licentie": "Public domain",
+    "maker": "U.S. Geological Survey from Reston, VA, USA"
+  },
+  "Hoeveel EU-lidstaten gebruikten de euro in 2025?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/330px-Flag_of_Europe.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Europe.svg",
+    "licentie": "Public domain",
+    "maker": "User:Verdy p , User:-xfi- , User:Paddu , User:Nightstallion , User:Funakoshi , User:Jeltz , User:Dbenbenn , User:Zscout3"
+  },
+  "In welk jaar werd Brazilië officieel onafhankelijk van Portugal?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Coat_of_arms_of_Brazil.svg/330px-Coat_of_arms_of_Brazil.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Brazil.svg",
+    "licentie": "Public domain",
+    "maker": "onbekend"
+  },
+  "Wat is het grootste binnenlandse waterlichaam ter wereld naar oppervlakte?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Caspian_Sea_from_orbit.jpg/330px-Caspian_Sea_from_orbit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Caspian_Sea_from_orbit.jpg",
+    "licentie": "Public domain",
+    "maker": "Jeff Schmaltz, MODIS Rapid Response Team, NASA/GSFC"
+  },
+  "Hoeveel spelers heeft een rugbyteam per ploeg op het veld (union)?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Dragons_vs_Leinster_welsh_try_Celtic_League_9_may_2008.jpg/330px-Dragons_vs_Leinster_welsh_try_Celtic_League_9_may_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Dragons_vs_Leinster_welsh_try_Celtic_League_9_may_2008.jpg",
+    "licentie": "CC BY 2.0",
+    "maker": "https://www.flickr.com/photos/awv/ Rob Gale"
+  },
+  "Hoeveel biljoen bacteriën leven er naar schatting in en op het menselijk lichaam?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Light_skin_and_hair.jpg/330px-Light_skin_and_hair.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Light_skin_and_hair.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "Paperxcrip : Helena Paffen"
+  },
+  "Hoeveel procent van de extra warmte door klimaatverandering wordt door de oceanen opgenomen?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/AntalyaSunset.JPG/330px-AntalyaSunset.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:AntalyaSunset.JPG",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "onbekend"
+  },
+  "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/330px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "Kim Hansen"
+  },
+  "Hoeveel landen grenzen aan Brazilië?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Coat_of_arms_of_Brazil.svg/330px-Coat_of_arms_of_Brazil.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Brazil.svg",
+    "licentie": "Public domain",
+    "maker": "onbekend"
+  },
+  "Hoeveel zetels telde het Australische Huis van Afgevaardigden na de verkiezingen van 2022?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/330px-Flag_of_Australia_%28converted%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Australia_(converted).svg",
+    "licentie": "Public domain",
+    "maker": "Unknown (Vector graphics image by Ian Fieggen ) (only minor code changes by uploader.)"
+  },
+  "Hoeveel miljoen kilometer is de gemiddelde afstand van de aarde tot de zon?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/The_Sun_in_white_light.jpg/330px-The_Sun_in_white_light.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:The_Sun_in_white_light.jpg",
+    "licentie": "CC BY-SA 4.0",
+    "maker": "Matúš Motlo"
+  },
+  "Hoeveel soldaten namen aan beide kanten samen deel aan de Slag bij Waterloo?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Battle_of_Waterloo_1815.PNG/330px-Battle_of_Waterloo_1815.PNG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Battle_of_Waterloo_1815.PNG",
+    "licentie": "Public domain",
+    "maker": "William Sadler"
+  },
+  "Hoeveel paar chromosomen heeft een kat?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Cat_poster_2.jpg/330px-Cat_poster_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Cat_poster_2.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "Alvesgaspar (compilation)"
+  },
+  "Hoeveel chromosomen telt een gezonde menselijke cel?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Light_skin_and_hair.jpg/330px-Light_skin_and_hair.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Light_skin_and_hair.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "Paperxcrip : Helena Paffen"
+  },
+  "Hoeveel boeken bevat de Hebreeuwse Bijbel volgens de joodse indeling?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Torah_and_jad.jpg/330px-Torah_and_jad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Torah_and_jad.jpg",
+    "licentie": "CC BY 2.5",
+    "maker": "No machine-readable author provided. Merlin assumed (based on copyright claims)."
+  },
+  "Hoeveel seizoenen telde de serie The Office US?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Dunder_mifflin_banner_scranton.jpg/330px-Dunder_mifflin_banner_scranton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Dunder_mifflin_banner_scranton.jpg",
+    "licentie": "CC BY 3.0",
+    "maker": "tomdobb"
+  }
 }
