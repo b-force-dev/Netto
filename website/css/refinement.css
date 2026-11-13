@@ -3228,3 +3228,13 @@ body:has(#screen-puzzle.active, #libraryScreen.active, #breinkrakersScreen.activ
 
 /* OpenAEC-special: het logo past heel in het fotokader in plaats van bijgesneden te worden. */
 .puzzelfoto-logo .daily-photo img { object-fit: contain; padding: 8px; background: #FFFFFF; }
+
+/* Keep logos and extreme aspect ratios whole without changing frame dimensions. */
+.daily-photo img.photo-contain,
+.answer-reveal-photo img.photo-contain,
+.foto-credit-kaart img.photo-contain {
+  object-fit: contain;
+  box-sizing: border-box;
+  padding: 6px;
+  background: #f5f5f5;
+}
