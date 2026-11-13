@@ -1,16 +1,20 @@
 # Netto 🧩
 
-Een quiz-puzzelgame waar je vragen uit een vragenbank (1.000+ vragen) combineert tot rekensommen: `a × b = c`, `a ÷ b + c = d` en meer.
+Een dagelijks schatspel: je schat drie feiten waarvan de antwoorden samen een som vormen (`a × b = c`). Het verband helpt je slimmer te gokken.
+
+**Engels is de hoofdtaal** (internationale spelers); Nederlands is de tweede taal. De Daily is het hart van het spel; de andere spelvormen zijn er voor wie daarna wil doorspelen.
 
 ## Spelmodi
 
 | Modus | Beschrijving |
 |---|---|
-| **Dagpuzzel** | Elke dag één officiële puzzel, met streak en deelbare score |
-| **Puzzels (Library)** | 237 puzzels over vier niveaus, direct speelbaar zonder unlocks. Elke vraag komt in de hele set precies één keer voor |
+| **Daily** | Elke dag één officiële puzzel, met streak en deelbare score. De planning en de antwoorden staan alleen in Supabase; zie `docs/audit/daily_planning_20261113.md` voor het bijvullen |
+| **Puzzels (Library)** | 49 nagekeken puzzels over vier niveaus (stand november 2026), direct speelbaar, met voortgang per niveau. Elke vraag komt in de hele set precies één keer voor |
 | **Puzzel Race** | 5 minuten, zoveel mogelijk puzzels exact oplossen — van makkelijk naar moeilijk, met directe feedback en eindscore. Ook **1v1-duel** via room-code (Supabase Realtime) |
 | **Breinkrakers** | Kettingpuzzels van 4 vragen: `a op1 b op2 c = d`, **van links naar rechts** gelezen. `2 + 3 × 4` is hier dus 20 en niet 14 |
-| **Daily Archive** | 35 genummerde dagpuzzels uit het archief; ze delen hun vragenset met Puzzels |
+| **Find the Connection** | 20 puzzels waarin je het verband tussen drie vragen zoekt |
+| **Live rondes** | Groepsspel: dezelfde puzzel, dezelfde klok |
+| **Daily Archive** | Eerdere Dailies opnieuw spelen (vanaf de server, telt niet mee voor de ranglijst) |
 
 ## Structuur
 
@@ -45,7 +49,14 @@ daarna `python tools/sync_website.py`.
 - `js/puzzle-modes.js` — generieke puzzelweergave, Library en Breinkrakers;
 - `js/race.js` — solo-race, themasets en online 1v1;
 - `js/submissions.js` — vraag- en puzzelinsturingen;
-- `js/library.js` — kaarten, archief, modals en algemene pagina-acties.
+- `js/library.js` — kaarten, archief, modals en algemene pagina-acties;
+- `js/home.js` + `css/home.css` — de startpagina met het voorbeeld;
+- `js/tutorial.js` + `css/tutorial.css` — de oefenronde van 30 seconden;
+- `js/share.js` + `css/share.css` — delen van uitslagen (deelmenu, klembord);
+- `js/answer-reveal.js` + `css/answer-reveal.css` — de reveal en het resultaat;
+- `js/usage.js` — privacyvriendelijke bezoekersmeting (zie `docs/usage-measurement.md`);
+- `js/keyboard.js` — toetsenbordbediening (Enter, Esc);
+- `css/desktop.css` en `css/mobile.css` — verfijning per schermbreedte, als laatste geladen.
 
 De bestanden worden als gewone scripts in vaste volgorde geladen. Daardoor blijft de bestaande frontend zonder bundler werken.
 
@@ -66,9 +77,10 @@ niet hoort te onthouden.
 
 ## Website-kopie synchroniseren
 
-Werk alleen in de project-root. Werk daarna de zelfstandige kopie bij en controleer hem:
+Werk alleen in de project-root. Werk daarna de cacheversies en de zelfstandige kopie bij en controleer hem:
 
 ```bash
+python tools/verhoog_versies.py
 python tools/sync_website.py
 python tools/sync_website.py --check
 ```
