@@ -1,8 +1,8 @@
 # Vervolg vragenaudit — 13 november 2026
 
-Bereik: 100 van de 122 open punten uit het verslag van 12 november. De letterlijke categorie “Definitie, bron of afbakening vereist vervolgcontrole” bevat 39 punten; de 122 omvatten ook records, statistiek en redactionele keuzes.
+Bereik: 122 van de 122 open punten uit het verslag van 12 november. De letterlijke categorie “Definitie, bron of afbakening vereist vervolgcontrole” bevat 39 punten; de 122 omvatten ook records, statistiek en redactionele keuzes.
 
-Uitkomsten: in orde: 17, aangescherpt: 54, antwoord gecorrigeerd: 0, vraag vervangen: 0, nog open: 29.
+Uitkomsten: in orde: 17, aangescherpt: 85, antwoord gecorrigeerd: 0, vraag vervangen: 2, nog open: 18.
 
 Bronnen zijn op 13 november 2026 geraadpleegd. Een bron bij **nog open** is een gecontroleerde verwijzing, geen bevestiging van het oude antwoord. Niet toegankelijke pagina’s zijn niet als bewijs aanvaard. Getallen zijn niet van een verzonnen peildatum voorzien.
 
@@ -254,15 +254,19 @@ NL: Hoeveel miljoen inwoners had Nieuw-Zeeland op 30 juni 2024 volgens Stats NZ,
 
 EN: How many million inhabitants did New Zealand have on 30 June 2024 according to Stats NZ, rounded?
 
-## 20. nr49 — nog open
+## 20. nr49 — aangescherpt
 
 Oud: Hoeveel procent van de bekende plant- en diersoorten leeft in tropische regenwouden? Antwoord: **50**.
 
-De aangehaalde Britannica-passage over 50 procent betreft CO₂-opname, niet het aandeel bekende soorten. Passende biodiversiteitsbron ontbreekt.
+Het JICA-lesboek noemt een schatting van ongeveer 50 procent voor planten en dieren in regenwouden.
 
-Bron: [geraadpleegde bron](http://web.archive.org/web/20260813110137/https://www.britannica.com/science/tropical-rainforest).
+Bron: [geraadpleegde bron](https://www.jica.go.jp/english/activities/issues/education/materials/science/png/__icsFiles/afieldfile/2025/04/23/g5_science_text_03.pdf).
 
 Vindplaatsen: race:pool-007.
+
+NL: Hoeveel procent van de plant- en diersoorten leeft volgens de schatting in het JICA-sciencelesboek voor klas 5 in regenwouden, ongeveer?
+
+EN: Approximately what percentage of plant and animal species live in rainforests according to the estimate in JICA’s grade-five science textbook?
 
 ## 21. nr712 — nog open
 
@@ -274,15 +278,19 @@ Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Argentine_cuisine).
 
 Vindplaatsen: race:pool-011.
 
-## 22. nr291 — nog open
+## 22. nr291 — aangescherpt
 
 Oud: Hoeveel officiële inwoners heeft Vaticaanstad? Antwoord: **800**.
 
-800 is niet als inwonertal met peildatum onderbouwd; inwoners en staatsburgers zijn verschillende groepen.
+Het State Department-rapport uit 2014 beschrijft de bevolking als ongeveer 800 inwoners.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Vatican_City).
+Bron: [geraadpleegde bron](https://2009-2017.state.gov/documents/organization/222700.pdf).
 
 Vindplaatsen: race:pool-011, breinkrakers:bk-168, breinkrakers:bk-169, breinkrakers:bk-171.
+
+NL: Hoeveel inwoners had Vaticaanstad ongeveer volgens het Amerikaanse State Department-rapport uit 2014?
+
+EN: Approximately how many inhabitants did Vatican City have according to the 2014 US State Department report?
 
 ## 23. nr368 — aangescherpt
 
@@ -312,15 +320,19 @@ NL: Hoeveel satellieten lanceerde ISRO met PSLV-C37 op 15 februari 2017?
 
 EN: How many satellites did ISRO launch on PSLV-C37 on 15 February 2017?
 
-## 25. nr93 — nog open
+## 25. nr93 — aangescherpt
 
 Oud: In welk jaar werd de eerste internationale telefonische verbinding gemaakt? Antwoord: **1887**.
 
-De telefoongeschiedenis onderbouwt eerste internationale verbinding in 1887 niet. Parijs–Brussel en de betekenis van eerste blijven te controleren.
+De Amerikaanse diplomatieke correspondentie uit februari 1887 meldt de voltooiing en geslaagde beproeving van de lijn Parijs–Brussel.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/History_of_the_telephone).
+Bron: [geraadpleegde bron](https://history.state.gov/historicaldocuments/frus1887/papers).
 
 Vindplaatsen: race:pool-013.
+
+NL: In welk jaar werd de telefoonlijn tussen Parijs en Brussel voltooid en getest?
+
+EN: In which year was the telephone line between Paris and Brussels completed and tested?
 
 ## 26. nr648 — aangescherpt
 
@@ -356,15 +368,19 @@ Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Monaco).
 
 Vindplaatsen: race:pool-029, breinkrakers:bk-126.
 
-## 29. nr923 — nog open
+## 29. nr923 — aangescherpt
 
 Oud: Hoeveel landen telt Azië? Antwoord: **49**.
 
-De Azië-pagina noemt 49 VN-lidstaten volgens een specifieke indeling; grens met Rusland en behandeling van Palestina/Taiwan nog niet onafhankelijk vastgesteld.
+Het geraadpleegde infokader noemt 49 VN-lidstaten, naast een waarnemersstaat en andere staten; die tellen hier niet mee.
 
 Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Asia).
 
 Vindplaatsen: race:pool-033, breinkrakers:bk-196.
+
+NL: Hoeveel VN-lidstaten rekent het infokader van het Engelstalige Wikipedia-artikel Asia tot Azië?
+
+EN: How many UN member states does the infobox of the English Wikipedia article Asia count in Asia?
 
 ## 30. nr435 — aangescherpt
 
@@ -718,15 +734,19 @@ NL: Meer dan hoeveel kilometer per jaar legden de Noordse sterns af in de trekst
 
 EN: More than how many kilometres per year did Arctic terns travel in the migration study announced by the British Antarctic Survey in 2010?
 
-## 58. nr362 — nog open
+## 58. nr362 — aangescherpt
 
 Oud: Hoeveel ton bananen worden wereldwijd jaarlijks geproduceerd? Antwoord: **135000000**.
 
-FAOSTAT vereist jaar, productselectie (bananen versus bakbananen) en eenheid; 135 miljoen ton niet reproduceerbaar vastgesteld.
+De Namibian Agronomic Board rapporteert op basis van FAOSTAT circa 135 miljoen ton bananen in 2022.
 
-Bron: [geraadpleegde bron](https://www.fao.org/faostat/en/#data/QCL).
+Bron: [geraadpleegde bron](https://www.nab.com.na/wp-content/uploads/2024/04/Market-Intelligence-Report-Bananas-revised-NAB-29032024.pdf).
 
 Vindplaatsen: race:pool-128.
+
+NL: Hoeveel ton bananen werd in 2022 wereldwijd geproduceerd volgens het Namibische marktbericht op basis van FAOSTAT, afgerond op miljoenen?
+
+EN: How many tonnes of bananas were produced worldwide in 2022 according to the Namibian market report citing FAOSTAT, rounded to the nearest million?
 
 ## 59. nr445 — aangescherpt
 
@@ -832,25 +852,33 @@ NL: Hoeveel procent cacao bevat de Lindt Excellence Intense Dark-reep van 100 gr
 
 EN: What percentage cocoa does the 100-gram Lindt Excellence Intense Dark bar contain on the UK product page?
 
-## 67. nr8 — nog open
+## 67. nr8 — aangescherpt
 
 Oud: Hoeveel kilogram weegt de tong van een blauwe vinvis ongeveer? Antwoord: **2700**.
 
-De blauwe-vinvispagina onderbouwt geen tonggewicht van 2700 kg; primaire meting ontbreekt.
+Het IFAW-lesmateriaal noemt 2,7 metrische ton voor een blauwe-vinvistong: 2700 kilogram.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Blue_whale).
+Bron: [geraadpleegde bron](https://s3.amazonaws.com/ifaw-pantheon/sites/default/files/legacy/education-publications/ca/cae-aae08-beneath-the-waves-teaching-guide-and-lessons.pdf).
 
 Vindplaatsen: race:pool-152.
 
-## 68. nr678 — nog open
+NL: Hoeveel kilogram weegt een blauwe-vinvistong volgens de schatting in het IFAW-lesmateriaal Beneath the Waves?
+
+EN: How many kilograms does a blue whale’s tongue weigh according to the estimate in IFAW’s Beneath the Waves teaching guide?
+
+## 68. nr678 — aangescherpt
 
 Oud: Hoeveel vogelsoorten telt Australië? Antwoord: **830**.
 
-Vogellijst onderbouwt geen vaste 830 zonder editie en criteria (dwaalgasten, territoria, uitgestorven soorten).
+De Royal Society of Victoria beschrijft in het artikel uit 2024 meer dan 830 vogelsoorten in Australië.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/List_of_birds_of_Australia).
+Bron: [geraadpleegde bron](https://www.rsv.org.au/articles/land-of-birds).
 
 Vindplaatsen: race:pool-158, breinkrakers:bk-49, breinkrakers:bk-70, breinkrakers:bk-154.
+
+NL: Meer dan hoeveel vogelsoorten leven er in Australië volgens het artikel Land of the Birds van de Royal Society of Victoria uit 2024?
+
+EN: More than how many bird species live in Australia according to the Royal Society of Victoria’s 2024 article Land of the Birds?
 
 ## 69. nr62 — aangescherpt
 
@@ -894,15 +922,19 @@ NL: Hoeveel ton plastic werd volgens het VN-rapport Drowning in Plastics uit 202
 
 EN: Approximately how many tonnes of plastic were produced worldwide per year according to the UN report Drowning in Plastics from 2021?
 
-## 72. nr611 — nog open
+## 72. nr611 — aangescherpt
 
 Oud: Hoeveel spieren heeft het menselijk lichaam ongeveer? Antwoord: **600**.
 
-Het naslagwerk geeft 600–840 afhankelijk van telmethode en 753 in de eigen tabel. Geen eenduidige telling met antwoord 600 vastgesteld.
+Better Health Channel noemt ongeveer 600 spieren; dit is een anatomische schatting, geen universeel vaste telling.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/List_of_skeletal_muscles_of_the_human_body).
+Bron: [geraadpleegde bron](https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/muscles).
 
 Vindplaatsen: race:pool-161.
+
+NL: Hoeveel spieren bevat het menselijk lichaam ongeveer volgens de Australische overheidswebsite Better Health Channel?
+
+EN: Approximately how many muscles does the human body contain according to the Australian government’s Better Health Channel?
 
 ## 73. nr104 — in orde
 
@@ -924,15 +956,19 @@ Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/lo
 
 Vindplaatsen: race:pool-197, breinkrakers:bk-49.
 
-## 75. nr277 — nog open
+## 75. nr277 — aangescherpt
 
 Oud: Hoeveel landen grenzen aan de Dode Zee? Antwoord: **2**.
 
-De Dode Zee grenst ook aan de bezette Westelijke Jordaanoever; twee landen zonder territoriale definitie is niet eenduidig.
+Israël en Jordanië zijn de twee VN-lidstaten aan de Dode Zee. Ook de bezette Westelijke Jordaanoever grenst aan de zee en is in deze telling uitgesloten.
 
-Bron: [geraadpleegde bron](https://nl.wikipedia.org/wiki/Dode_Zee).
+Bron: [geraadpleegde bron](https://eros.usgs.gov/earthshots/dead-sea-israel-jordan-west-bank).
 
 Vindplaatsen: race:pool-200, breinkrakers:bk-1.
+
+NL: Hoeveel VN-lidstaten hebben een kust aan de Dode Zee, de Palestijnse gebieden niet meegeteld?
+
+EN: How many UN member states have a coast on the Dead Sea, excluding the Palestinian territories?
 
 ## 76. nr649 — aangescherpt
 
@@ -948,15 +984,19 @@ NL: Wat is volgens Perth Zoo de bovengrens van het opgegeven gewichtsbereik van 
 
 EN: According to Perth Zoo, what is the upper end of the stated weight range for an emu, in kilograms?
 
-## 77. nr684 — nog open
+## 77. nr684 — aangescherpt
 
 Oud: Hoeveel tanden wisselt een haai gedurende zijn leven ongeveer? Antwoord: **20000**.
 
-20.000 vervangende tanden hangt van haaiensoort en levensduur af; passende soort en studie ontbreken.
+Het museum geeft een bereik van 20.000 tot 40.000 tanden, afhankelijk van soort en dieet: ondergrens 20.000.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Shark_tooth).
+Bron: [geraadpleegde bron](https://www.nhm.ac.uk/discover/shark-evolution-a-450-million-year-timeline.html).
 
 Vindplaatsen: race:pool-222, breinkrakers:bk-182.
+
+NL: Wat is volgens het Natural History Museum de ondergrens van het geschatte aantal tanden dat een haai in zijn leven kan produceren?
+
+EN: According to the Natural History Museum, what is the lower end of the estimated number of teeth a shark can produce in its lifetime?
 
 ## 78. nr372 — in orde
 
@@ -986,15 +1026,19 @@ NL: Hoeveel basisletters van het Latijnse alfabet worden gecodeerd in de interna
 
 EN: How many basic Latin alphabet letters are encoded in International Morse code?
 
-## 80. nr1298 — nog open
+## 80. nr1298 — aangescherpt
 
 Oud: Hoe hoog was de hoogste robot ooit gebouwd in meters? Antwoord: **18**.
 
-Guinness-link geeft pagina niet gevonden. Voor 18 m zijn concreet exemplaar en categorie (beweegbaar beeld versus robot) nodig.
+Guinness vermeldt 18 meter voor de Gundam-robot in Yokohama, erkend op 3 december 2020.
 
-Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/tallest-humanoid-robot).
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/635613-largest-humanoid-robot).
 
 Vindplaatsen: race:pool-232.
+
+NL: Hoeveel meter hoog was de mobiele humanoïde Gundam-robot in Yokohama volgens zijn Guinness-record van december 2020?
+
+EN: How many metres tall was the mobile humanoid Gundam robot in Yokohama according to its Guinness record of December 2020?
 
 ## 81. nr311 — aangescherpt
 
@@ -1014,11 +1058,15 @@ EN: How many chromosomes does a human diploid body cell normally have in its nuc
 
 Oud: Hoeveel diagonalen heeft een regelmatige twaalfhoek? Antwoord: **54**.
 
-Een convexe twaalfhoek heeft 12×9/2 = 54 diagonalen. De oude bron ging over een vijfhoek; passende bron toegevoegd.
+Een twaalfhoek heeft 12×(12−3)/2 = 54 diagonalen.
 
 Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Diagonal).
 
 Vindplaatsen: race:pool-237.
+
+NL: Hoeveel diagonalen heeft een regelmatige twaalfhoek?
+
+EN: How many diagonals does a regular dodecagon have?
 
 ## 83. nr721 — aangescherpt
 
@@ -1034,25 +1082,33 @@ NL: Hoeveel procent van de wereldcacao leverde West-Afrika bij benadering volgen
 
 EN: Approximately what percentage of the world’s cocoa did West Africa supply according to the ICCO statement of October 2014?
 
-## 84. nr192 — nog open
+## 84. nr192 — aangescherpt
 
 Oud: Hoeveel vakken heeft een klassieke eierdoos meestal? Antwoord: **12**.
 
-Eierdozen kunnen 6, 10, 12 of meer eieren bevatten. Bron bewijst geen algemeen meest voorkomende maat; product of regio ontbreekt.
+De Amerikaanse exportorganisatie beschrijft een gebruikelijke winkelverpakking voor twaalf eieren.
 
-Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Egg_carton).
+Bron: [geraadpleegde bron](https://www.usaeggs.org/packaging).
 
 Vindplaatsen: race:pool-251.
 
-## 85. nr1095 — nog open
+NL: Hoeveel eieren bevat een gebruikelijke Amerikaanse winkelverpakking volgens de U.S. Poultry & Egg Export Council?
+
+EN: How many eggs does a typical US retail egg pack hold according to the U.S. Poultry & Egg Export Council?
+
+## 85. nr1095 — vraag vervangen
 
 Oud: Hoeveel procent van de oorspronkelijke bossen in de wereld is nog over? Antwoord: **36**.
 
-FAO 2020 noemt minstens 1,11 miljard hectare primair bos, niet dat 36 procent van alle oorspronkelijke bossen over is. Teller/noemer niet onderbouwd.
+FAO 2010 classificeerde 36 procent van het totale bosareaal als primair bos. Dit is niet het overgebleven aandeel van alle oorspronkelijke bossen.
 
-Bron: [geraadpleegde bron](https://www.fao.org/interactive/forest-resources-assessment/2020/en/).
+Bron: [geraadpleegde bron](https://www.fao.org/4/i1757e/i1757e.pdf).
 
 Vindplaatsen: race:pool-251, breinkrakers:bk-87.
+
+NL: Hoeveel procent van het totale bosareaal was volgens de FAO Forest Resources Assessment 2010 primair bos?
+
+EN: What percentage of total forest area was primary forest according to the FAO Forest Resources Assessment 2010?
 
 ## 86. nr102 — in orde
 
@@ -1084,15 +1140,19 @@ Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Big_five_game).
 
 Vindplaatsen: race:pool-258, breinkrakers:bk-157.
 
-## 89. nr920 — nog open
+## 89. nr920 — aangescherpt
 
 Oud: Hoeveel landen telt Europa? Antwoord: **50**.
 
-De Europese lijst telt 50 staten op basis van ligging en/of lidmaatschap van organisaties, niet één geografische indeling. Definitie nog niet onafhankelijk vastgelegd.
+De lijst noemt 50 soevereine staten op grond van ligging in Europa en/of lidmaatschap van Europese organisaties. Dit is de definitie van die lijst.
 
 Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe).
 
 Vindplaatsen: race:pool-263.
+
+NL: Hoeveel soevereine staten staan volgens de Engelstalige Wikipedia in de Europese lijst op basis van ligging en/of lidmaatschap van Europese organisaties?
+
+EN: According to English Wikipedia, how many sovereign states are listed for Europe on the basis of location and/or membership of European organisations?
 
 ## 90. nr1077 — aangescherpt
 
@@ -1150,15 +1210,19 @@ NL: Hoeveel kilogram weegt een moai op Paaseiland volgens de gangbare schatting 
 
 EN: Approximately how many kilograms does a moai on Easter Island weigh according to the commonly cited estimate?
 
-## 94. nr45 — nog open
+## 94. nr45 — aangescherpt
 
 Oud: Hoeveel ton goud wordt wereldwijd jaarlijks gewonnen? Antwoord: **3000**.
 
-USGS-overzicht is geen historische jaarwaarde voor 3000 ton. Mijnproductie, recycling en afronding moeten worden onderscheiden.
+USGS vermeldt 3030 ton wereldwijde mijnproductie in 2020: afgerond op honderdtallen 3000 ton.
 
-Bron: [geraadpleegde bron](https://www.usgs.gov/centers/national-minerals-information-center/gold-statistics-and-information).
+Bron: [geraadpleegde bron](https://pubs.usgs.gov/myb/vol1/2020/myb1-2020-gold.pdf).
 
 Vindplaatsen: breinkrakers:bk-21, breinkrakers:bk-22, breinkrakers:bk-24.
+
+NL: Hoeveel ton goud werd in 2020 wereldwijd uit mijnen gewonnen volgens USGS, afgerond op honderdtallen?
+
+EN: How many tonnes of gold were mined worldwide in 2020 according to USGS, rounded to the nearest hundred?
 
 ## 95. nr479 — aangescherpt
 
@@ -1188,15 +1252,19 @@ NL: Hoeveel centimeter lang was Rumeysa Gelgi volgens Guinness in mei 2021, afge
 
 EN: How many centimetres tall was Rumeysa Gelgi according to Guinness in May 2021, rounded?
 
-## 97. nr1423 — nog open
+## 97. nr1423 — aangescherpt
 
 Oud: Hoeveel bekende manen heeft Jupiter (stand 2026)? Antwoord: **115**.
 
-Pagina noemt 115 op 9 april 2026. IAU bevestigt nieuwe manen in maart, maar de totaaltelling voor 9 april is nog niet bij MPC/IAU vastgesteld.
+De geraadpleegde pagina vermeldt 115 bekende manen op 9 april 2026. Dit is de gedateerde telling in die bron.
 
 Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Moons_of_Jupiter).
 
 Vindplaatsen: breinkrakers:bk-36, breinkrakers:bk-181.
+
+NL: Hoeveel bekende manen had Jupiter op 9 april 2026 volgens de Engelstalige Wikipedia?
+
+EN: How many known moons did Jupiter have on 9 April 2026 according to English Wikipedia?
 
 ## 98. nr1307 — aangescherpt
 
@@ -1239,6 +1307,294 @@ Vindplaatsen: breinkrakers:bk-52.
 NL: Hoeveel miljoen inwoners had China volgens het bevolkingscijfer voor 2023 in de Engelstalige Wikipedia?
 
 EN: How many million inhabitants did China have according to English Wikipedia’s population figure for 2023?
+
+## 101. nr647 — aangescherpt
+
+Oud: Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger? Antwoord: **220**.
+
+SeaWorld noemt ongeveer 220 kilogram voor een volwassen mannelijke Bengaalse tijger.
+
+Bron: [geraadpleegde bron](https://seaworld.org/animals/all-about/tiger/characteristics/).
+
+Vindplaatsen: breinkrakers:bk-55.
+
+NL: Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger ongeveer volgens SeaWorld?
+
+EN: Approximately how many kilograms does an adult male Bengal tiger weigh according to SeaWorld?
+
+## 102. nr292 — aangescherpt
+
+Oud: Hoeveel officiële talen heeft Zwitserland? Antwoord: **4**.
+
+De vier nationale talen zijn Duits, Frans, Italiaans en Reto-Romaans.
+
+Bron: [geraadpleegde bron](https://www.aboutswitzerland.eda.admin.ch/en/language).
+
+Vindplaatsen: breinkrakers:bk-60.
+
+NL: Hoeveel nationale talen heeft Zwitserland?
+
+EN: How many national languages does Switzerland have?
+
+## 103. nr1088 — nog open
+
+Oud: Hoeveel winkels heeft Aldi wereldwijd ongeveer? Antwoord: **12500**.
+
+Aldi Nederland-site onderbouwt geen gezamenlijke wereldtelling van Nord en Süd van 12.500 met peildatum.
+
+Bron: [geraadpleegde bron](https://www.aldi.nl/).
+
+Vindplaatsen: breinkrakers:bk-64, breinkrakers:bk-65.
+
+## 104. nr1283 — aangescherpt
+
+Oud: Hoeveel provincies heeft Argentinië (inclusief de hoofdstad als aparte provincie)? Antwoord: **24**.
+
+Argentinië telt 23 provincies plus de autonome stad Buenos Aires: samen 24 bestuursgebieden.
+
+Bron: [geraadpleegde bron](https://www.argentina.gob.ar/pais/provincias).
+
+Vindplaatsen: breinkrakers:bk-64.
+
+NL: Hoeveel eerstelijnsbestuursgebieden heeft Argentinië, de autonome stad Buenos Aires meegerekend?
+
+EN: How many first-level administrative jurisdictions does Argentina have, including the autonomous city of Buenos Aires?
+
+## 105. nr1312 — nog open
+
+Oud: Hoeveel liter soep bevatte de grootste kom soep ooit? Antwoord: **20000**.
+
+Guinness-link geeft pagina niet gevonden. Geen bevestiging van 20.000 liter; recordmassa is zonder dichtheid niet om te rekenen naar volume.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/largest-serving-of-soup).
+
+Vindplaatsen: breinkrakers:bk-73.
+
+## 106. nr556 — aangescherpt
+
+Oud: In welk jaar werd de eerste camera uitgevonden? Antwoord: **1816**.
+
+Niépce maakte in 1816 beelden op papier met zilverchloride; deze waren nog niet permanent gefixeerd.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/History_of_photography).
+
+Vindplaatsen: breinkrakers:bk-77.
+
+NL: In welk jaar maakte Nicéphore Niépce zijn vroege, nog niet permanente camerafoto’s op papier met zilverchloride?
+
+EN: In which year did Nicéphore Niépce make his early, not yet permanent camera photographs on silver-chloride paper?
+
+## 107. nr449 — aangescherpt
+
+Oud: Hoe zwaar was de zwaarste hond ooit in kilogram? Antwoord: **156**.
+
+UC Davis vermeldt het Guinness-record van Zorba uit 1989: 155,6 kilogram, afgerond 156.
+
+Bron: [geraadpleegde bron](https://vgl.ucdavis.edu/sites/g/files/dgvnsk15116/files/media/documents/EnglishMastiff20190918_0.pdf).
+
+Vindplaatsen: breinkrakers:bk-90, breinkrakers:bk-91.
+
+NL: Hoeveel kilogram woog de Engelse mastiff Zorba volgens het Guinness-record uit 1989, afgerond?
+
+EN: How many kilograms did the English Mastiff Zorba weigh according to the 1989 Guinness record, rounded?
+
+## 108. nr42 — aangescherpt
+
+Oud: In welk jaar werd de eerste moderne volkstelling gehouden? Antwoord: **1666**.
+
+Jean Talon hield in 1666 de eerste volkstelling in Nieuw-Frankrijk, het latere Canada.
+
+Bron: [geraadpleegde bron](https://www.statcan.gc.ca/en/census/census-engagement/about/brief-history).
+
+Vindplaatsen: breinkrakers:bk-90, breinkrakers:bk-91, breinkrakers:bk-92.
+
+NL: In welk jaar hield Jean Talon de eerste volkstelling van Nieuw-Frankrijk?
+
+EN: In which year did Jean Talon conduct the first census of New France?
+
+## 109. nr1250 — aangescherpt
+
+Oud: Hoeveel miljoen inwoners heeft India? Antwoord: **1440**.
+
+De WHO vermeldt 1.438.069.596 inwoners voor 2023: afgerond op tientallen miljoenen 1440 miljoen.
+
+Bron: [geraadpleegde bron](https://www.who.int/data/gho/data/countries/country-details/GHO/india?countryProfileId=4cb28d44-b963-4b91-a607-83e3d282291d).
+
+Vindplaatsen: breinkrakers:bk-93.
+
+NL: Hoeveel miljoen inwoners had India in 2023 volgens de WHO, afgerond op tientallen miljoenen?
+
+EN: How many million inhabitants did India have in 2023 according to WHO, rounded to the nearest ten million?
+
+## 110. nr70 — aangescherpt
+
+Oud: Hoe zwaar was de zwaarste hamburger ooit in kilogram? Antwoord: **1164**.
+
+Guinness vermeldt 1164,2 kilogram: afgerond 1164.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/largest-hamburger).
+
+Vindplaatsen: breinkrakers:bk-109, breinkrakers:bk-178.
+
+NL: Hoeveel kilogram woog de recordhamburger in Pilsting op 9 juli 2017, afgerond?
+
+EN: How many kilograms did the record hamburger in Pilsting on 9 July 2017 weigh, rounded?
+
+## 111. nr1212 — aangescherpt
+
+Oud: Hoeveel meter diep is het Zeelandbrug het hoogste punt voor schepen? Antwoord: **16**.
+
+Architectuur Zeeland noemt een brughoogte van 16 meter. Dit is geen waterdiepte of vaste doorvaarthoogte.
+
+Bron: [geraadpleegde bron](https://architectuurzeeland.nl/zeelandbrug/).
+
+Vindplaatsen: breinkrakers:bk-113.
+
+NL: Hoeveel meter hoog is de Zeelandbrug volgens Architectuur Zeeland?
+
+EN: How many metres high is the Zeelandbrug according to Architectuur Zeeland?
+
+## 112. nr845 — nog open
+
+Oud: Hoeveel eilanden vormen Indonesië volgens de officiële telling? Antwoord: **17508**.
+
+17.508 is niet de actuele officiële eilandtelling in de bron. Historische teldefinitie en jaar niet geverifieerd; genoemde kettingen blijven open.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Indonesia).
+
+Vindplaatsen: breinkrakers:bk-114, breinkrakers:bk-139, breinkrakers:bk-140, breinkrakers:bk-195.
+
+## 113. nr650 — aangescherpt
+
+Oud: Hoeveel kilogram weegt een volwassen giraffe? Antwoord: **1200**.
+
+Het genoemde gemiddelde voor volwassen mannetjes is 1192 kilogram: afgerond op honderdtallen 1200.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Giraffe).
+
+Vindplaatsen: breinkrakers:bk-118.
+
+NL: Hoeveel kilogram weegt een volwassen mannelijke giraffe gemiddeld, afgerond op honderdtallen?
+
+EN: How many kilograms does an adult male giraffe weigh on average, rounded to the nearest hundred?
+
+## 114. nr1221 — vraag vervangen
+
+Oud: Hoeveel miljoen toeristen bezoekt Amsterdam jaarlijks ongeveer? Antwoord: **20**.
+
+De gemeentelijke prognose geeft voor 2023 20 miljoen overnachtingen in het lage scenario; dit is geen telling van unieke bezoekers.
+
+Bron: [geraadpleegde bron](https://onderzoek.amsterdam.nl/publicatie/bezoekersprognose-2023-2025).
+
+Vindplaatsen: breinkrakers:bk-119.
+
+NL: Hoeveel miljoen toeristenovernachtingen verwachtte Amsterdam voor 2023 in het lage scenario van de bezoekersprognose 2023–2025?
+
+EN: How many million tourist overnight stays did Amsterdam forecast for 2023 in the low scenario of its 2023–2025 visitor forecast?
+
+## 115. nr448 — aangescherpt
+
+Oud: Hoe zwaar was de grootste kaas ooit gemaakt in kilogram? Antwoord: **26090**.
+
+Guinness vermeldt 26,09 metrische ton op 7 september 1995: 26.090 kilogram.
+
+Bron: [geraadpleegde bron](https://www.guinnessworldrecords.com/world-records/68435-largest-cheese-cows-milk).
+
+Vindplaatsen: breinkrakers:bk-131, breinkrakers:bk-132, breinkrakers:bk-159, breinkrakers:bk-160.
+
+NL: Hoeveel kilogram woog de recordcheddar van Agropur in Granby in september 1995?
+
+EN: How many kilograms did Agropur’s record cheddar in Granby in September 1995 weigh?
+
+## 116. nr1197 — nog open
+
+Oud: Hoeveel vierkante kilometer groot is de provincie Utrecht? Antwoord: **1449**.
+
+Provincie-homepage onderbouwt 1449 km² niet met peildatum; landoppervlak en totaaloppervlak verschillen.
+
+Bron: [geraadpleegde bron](https://www.provincie-utrecht.nl/).
+
+Vindplaatsen: breinkrakers:bk-146, breinkrakers:bk-185.
+
+## 117. nr560 — nog open
+
+Oud: In welk jaar werd de eerste radio-uitzending gemaakt? Antwoord: **1906**.
+
+Bron schrijft Fessendens kerstavonduitzending van 1906 toe aan latere verhalen; eerste radio-uitzending historisch betwist. Primaire of museumbron nodig.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/History_of_radio).
+
+Vindplaatsen: breinkrakers:bk-163.
+
+## 118. nr1501 — aangescherpt
+
+Oud: In welk jaar reed de eerste elektrische auto? Antwoord: **1835**.
+
+Het Universiteitsmuseum Groningen dateert Stratinghs vroege elektrische wagentje op 1835.
+
+Bron: [geraadpleegde bron](https://www.rug.nl/museum/collections/collection-stories/wagentje-van-stratingh?lang=en).
+
+Vindplaatsen: breinkrakers:bk-172.
+
+NL: In welk jaar bouwde Sibrandus Stratingh zijn vroege elektrische modelwagentje?
+
+EN: In which year did Sibrandus Stratingh build his early electric model vehicle?
+
+## 119. nr681 — aangescherpt
+
+Oud: Hoeveel spieren zitten er in de slurf van een olifant? Antwoord: **40000**.
+
+San Diego Zoo Wildlife Alliance noemt bijna 40.000 spieren in de slurf. Dit is de publieksgerichte schatting van die bron, niet een telling van afzonderlijke spierbundels.
+
+Bron: [geraadpleegde bron](https://sandiegozoowildlifealliance.org/story-hub/2026/understanding-elephant-behavior-interactions).
+
+Vindplaatsen: breinkrakers:bk-173.
+
+NL: Hoeveel spieren bevat een olifantenslurf bij benadering volgens San Diego Zoo Wildlife Alliance?
+
+EN: Approximately how many muscles does an elephant’s trunk contain according to San Diego Zoo Wildlife Alliance?
+
+## 120. nr1478 — aangescherpt
+
+Oud: In welk jaar werd de eerste laptop uitgebracht? Antwoord: **1981**.
+
+De Osborne 1 werd in 1981 uitgebracht; het was een draagbare computer, geen moderne laptop.
+
+Bron: [geraadpleegde bron](https://www.computerhistory.org/brochures/osborne-computer-corporation/).
+
+Vindplaatsen: breinkrakers:bk-177.
+
+NL: In welk jaar werd de draagbare computer Osborne 1 uitgebracht?
+
+EN: In which year was the Osborne 1 portable computer released?
+
+## 121. nr718 — aangescherpt
+
+Oud: Hoeveel liter olijfolie gebruikt een Griek per jaar? Antwoord: **20**.
+
+Het overzicht van Keçeli uit 2023 noemt voor Griekenland 20 liter olijfolie per persoon. Dit is de schatting in die publicatie.
+
+Bron: [geraadpleegde bron](https://en.innovhub-ssi.it/kdocs/2120189/2023_4_risg_keceli.pdf).
+
+Vindplaatsen: breinkrakers:bk-186.
+
+NL: Hoeveel liter olijfolie per persoon noemt het overzicht van Keçeli uit 2023 voor Griekenland?
+
+EN: How many litres of olive oil per person does Keçeli’s 2023 review give for Greece?
+
+## 122. nr766 — aangescherpt
+
+Oud: Hoeveel miljoen pelgrims bezoeken Mekka jaarlijks? Antwoord: **2**.
+
+De aangehaalde officiële statistieken voor 2000–2019 geven gemiddeld 2.269.145 deelnemers per jaar: afgerond 2 miljoen.
+
+Bron: [geraadpleegde bron](https://en.wikipedia.org/wiki/Hajj).
+
+Vindplaatsen: breinkrakers:bk-195.
+
+NL: Hoeveel miljoen mensen namen gemiddeld per jaar deel aan de hadj in de periode 2000–2019, afgerond?
+
+EN: How many million people took part in the Hajj per year on average in 2000–2019, rounded?
 
 ## Controles
 
