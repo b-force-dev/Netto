@@ -3,6 +3,20 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
 const core = fs.readFileSync('js/core.js', 'utf8');
+const race = fs.readFileSync('js/race.js', 'utf8');
+const handlers = [];
+const keys = vm.createContext({
+  document: { getElementById: () => ({ addEventListener: (_, fn) => handlers.push(fn) }) },
+  bindWholeNumberInput: () => {}, updateDailyDerivedInput: () => {}
+});
+vm.runInContext(core.slice(core.indexOf('  function initInputs()'), core.indexOf('  function scoreVraag')), keys);
+vm.runInContext(race.slice(race.indexOf('  function nettoNumberKeydown'), race.indexOf('  function raceDurationText')), keys);
+keys.initInputs();
+for (const key of ['.', ',', 'k', 'm', 'b', 'g']) {
+  const event = { key, preventDefault: () => assert.fail(`Blocked typed ${key}`) };
+  handlers.forEach(handler => handler(event));
+  keys.nettoNumberKeydown(event, {}, () => assert.fail('Unexpected submit'));
+}
 let locale = 'en', values, notices = [];
 const context = vm.createContext({
   window: { NettoI18n: { locale: () => locale } },

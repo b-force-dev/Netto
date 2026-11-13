@@ -144,17 +144,10 @@
     submit();
   }
 
-  // Alleen een echt getypt teken geeft de "cijfers gevraagd"-hint. Mobiele
-  // toetsenborden sturen vaak 'Unidentified'; bindWholeNumberInput filtert daarna.
+  // Enter navigeert; normale tekens volgen dezelfde parser als geplakte invoer.
   function nettoNumberKeydown(event, input, onEnter) {
     if (event.key === 'Enter') { event.preventDefault(); if (!event.repeat) onEnter(); return; }
-    if (event.isComposing || event.ctrlKey || event.metaKey || event.altKey || event.key.length !== 1) return;
-    if (!/\d/.test(event.key)) {
-      event.preventDefault();
-      input.classList.add('shake');
-      setTimeout(() => input.classList.remove('shake'), 400);
-      showSarcasticToast();
-    }
+    // Laat de volledige invoer staan; de gedeelde parser valideert bij inleveren.
   }
 
   function raceDurationText(seconds) {

@@ -1630,31 +1630,15 @@
       const input = document.getElementById(id);
       bindWholeNumberInput(input, updateDailyDerivedInput);
       
-      // Detecteer letters bij keydown
-      input.addEventListener('keydown', (e) => {
-        // Navigatie met Enter
-        if (e.key === 'Enter') {
-          const arr = dailyQuestionOrder().map(i => 'g' + (i + 1));
-          const index = arr.indexOf(id);
-          if (index < arr.length - 1) {
-            document.getElementById(arr[index + 1]).focus();
-          } else {
-            checkAnswers();
-          }
-          return;
-        }
-
-        // Toegestane besturingstoetsen
-        const allowed = ['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'Tab', 'Enter', 'Home', 'End'];
-        if (allowed.includes(e.key) || e.ctrlKey || e.metaKey) return;
-
-        // Als er een letter of ongeldig teken wordt ingedrukt
-        if (!/\d/.test(e.key)) {
-          e.preventDefault();
-          input.classList.add('shake');
-          setTimeout(() => input.classList.remove('shake'), 400);
-          showSarcasticToast();
-        }
+      // Typen en plakken volgen dezelfde parser, inclusief lokale tekens en k/m/b.
+      input.addEventListener('keydown', e => {
+        if (e.key !== 'Enter' || e.isComposing) return;
+        e.preventDefault();
+        if (e.repeat) return;
+        const order = dailyQuestionOrder().map(i => 'g' + (i + 1));
+        const index = order.indexOf(id);
+        if (index < order.length - 1) document.getElementById(order[index + 1]).focus();
+        else checkAnswers();
       });
 
       // Formatteer bij invoer
