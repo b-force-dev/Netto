@@ -1,6 +1,11 @@
 {
   "Hoeveel poten heeft een kreeftachtige van de orde Isopoda?": null,
-  "Hoeveel kamers heeft het menselijk hart?": null,
+  "Hoeveel kamers heeft het menselijk hart?": {
+    "url": "fotos/assets/media-004-2000-human-heart-photo-jpg.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:2000_Human_Heart_Photo.jpg",
+    "licentie": "CC BY 4.0",
+    "maker": "OpenStax Anatomy and Physiology"
+  },
   "Hoeveel paar ribben heeft een mens normaal?": null,
   "Hoeveel gekleurde vierkantjes telt een standaard Rubik's kubus aan de buitenkant?": null,
   "Hoeveel genummerde scorevakken heeft een dartbord?": null,
@@ -10,7 +15,12 @@
   "Hoeveel elektronen deelt een enkelvoudige covalente binding?": null,
   "Hoeveel toetsen heeft een standaard computertoetsenbord ongeveer?": null,
   "Hoeveel leden telt het Britse Lagerhuis?": null,
-  "Hoeveel letters heeft het Griekse alfabet?": null,
+  "Hoeveel letters heeft het Griekse alfabet?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/InscriptieTherm.jpg/330px-InscriptieTherm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:InscriptieTherm.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "Napoleon Vier at Dutch Wikipedia"
+  },
   "Hoeveel procent van het Amazoneregenwoud ligt ongeveer in Brazilië?": null,
   "Hoeveel gram per kubieke centimeter is de dichtheid van water ongeveer?": null,
   "Hoeveel kleuren heeft de vlag van Zuid-Afrika?": null,
@@ -155,7 +165,12 @@
   "Hoeveel liter olijfolie gebruikt een Griek per jaar?": null,
   "Hoeveel mensen namen deel aan de grootste massale yogales?": null,
   "In welk jaar werd de eerste internationale telefonische verbinding gemaakt?": null,
-  "Hoeveel kilometer lang is de Nederlandse kustlijn ongeveer?": null,
+  "Hoeveel kilometer lang is de Nederlandse kustlijn ongeveer?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Sand_suppletion_on_the_Dutch_coast.jpg/330px-Sand_suppletion_on_the_Dutch_coast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Sand_suppletion_on_the_Dutch_coast.jpg",
+    "licentie": "CC BY 2.0",
+    "maker": "inyucho"
+  },
   "Hoeveel procent bedraagt het standaard-btw-tarief in België?": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/330px-Flag_of_Belgium.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Belgium.svg",
@@ -165,10 +180,20 @@
   "Hoeveel piercings had Rolf Buchholz, de man met de meeste piercings, in 2012?": null,
   "Hoeveel lemuursoorten telt Madagaskar ongeveer?": null,
   "Hoe hoog was de hoogste robot ooit gebouwd in meters?": null,
-  "Hoeveel elektronen heeft een chloride-ion, Cl⁻?": null,
+  "Hoeveel elektronen heeft een chloride-ion, Cl⁻?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Chlorine_in_bottle.jpg/330px-Chlorine_in_bottle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Chlorine_in_bottle.jpg",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "W. Oelen"
+  },
   "Hoeveel tekens bevat het Japanse hiragana?": null,
   "Hoeveel naamvallen heeft het Duits?": null,
-  "Hoeveel jaar kan een reuzenschildpad ongeveer oud worden?": null,
+  "Hoeveel jaar kan een reuzenschildpad ongeveer oud worden?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Tortuga_gigante_de_San_Crist%C3%B3bal_%28Chelonoidis_chathamensis%29%2C_isla_Santa_Cruz%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-26%2C_DD_16.JPG/330px-Tortuga_gigante_de_San_Crist%C3%B3bal_%28Chelonoidis_chathamensis%29%2C_isla_Santa_Cruz%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-26%2C_DD_16.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Tortuga_gigante_de_San_Crist%C3%B3bal_(Chelonoidis_chathamensis),_isla_Santa_Cruz,_islas_Gal%C3%A1pagos,_Ecuador,_2015-07-26,_DD_16.JPG",
+    "licentie": "CC BY-SA 4.0",
+    "maker": "Diego Delso"
+  },
   "Hoeveel kilogram woog de zwaarste pompoen ter wereld eind 2025?": null,
   "Hoeveel gram suiker zit er in een blikje Coca-Cola van 330 ml?": null,
   "Hoeveel gram suiker zit er in een Amerikaans blikje Coca-Cola van 355 ml?": null,
@@ -561,5 +586,91 @@
     "pagina": "https://commons.wikimedia.org/wiki/File:Dunder_mifflin_banner_scranton.jpg",
     "licentie": "CC BY 3.0",
     "maker": "tomdobb"
-  }
+  },
+  "Hoeveel afleveringen heeft de miniserie Chernobyl?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Chernobylreactor_1.jpg/330px-Chernobylreactor_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Chernobylreactor_1.jpg",
+    "licentie": "CC BY 2.0",
+    "maker": "Carl Montgomery"
+  },
+  "Hoeveel EU-lidstaten gebruiken de euro (2026)?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Euro_coins_%2807%29.jpg/330px-Euro_coins_%2807%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Euro_coins_(07).jpg",
+    "licentie": "CC BY 4.0",
+    "maker": "Lukasz Kobus - European Commission"
+  },
+  "Hoeveel hertz is de toonhoogte van de standaard a in de muziek?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Steinway_Vienna_002.JPG/330px-Steinway_Vienna_002.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Steinway_Vienna_002.JPG",
+    "licentie": "CC BY-SA 3.0",
+    "maker": "Gryffindor"
+  },
+  "Hoeveel boeken telt de oorspronkelijke The Hunger Games-reeks?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Hunger_Games_%28Scholastic_Inc._YA_novel_series%29_logo.webp/330px-The_Hunger_Games_%28Scholastic_Inc._YA_novel_series%29_logo.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:The_Hunger_Games_(Scholastic_Inc._YA_novel_series)_logo.webp",
+    "licentie": "Public domain",
+    "maker": "Scholastic Inc"
+  },
+  "Hoeveel Space Shuttle-orbiters bouwde NASA voor ruimtevluchten, zonder Enterprise?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Space_Shuttle_Columbia_launching.jpg/330px-Space_Shuttle_Columbia_launching.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Space_Shuttle_Columbia_launching.jpg",
+    "maker": "NASA",
+    "licentie": "Public domain"
+  },
+  "Hoeveel gouden medailles won Australië op de Olympische Zomerspelen van Parijs in 2024?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/330px-Flag_of_Australia_%28converted%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Australia_(converted).svg",
+    "licentie": "Public domain",
+    "maker": "Unknown (Vector graphics image by Ian Fieggen ) (only minor code changes by uploader.)"
+  },
+  "Hoeveel zetels telt het Nieuw-Zeelandse parlement normaal, zonder overhangzetels?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/330px-Flag_of_New_Zealand.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Zealand.svg",
+    "licentie": "Public domain",
+    "maker": "Original: Albert Hastings Markham Vector: Zscout370 , Hugh Jass , s. File history"
+  },
+  "Hoeveel procent van de oorspronkelijke bossen in de wereld is nog over?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/View_from_Bukit_Terisek.jpg/330px-View_from_Bukit_Terisek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:View_from_Bukit_Terisek.jpg",
+    "licentie": "CC BY 2.0",
+    "maker": "Sze Ning from Malaysia"
+  },
+  "Welk percentage van het wereldwijde cement wordt geproduceerd in China?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Betonmortel_bedrijven_Cementbouw.JPG/330px-Betonmortel_bedrijven_Cementbouw.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Betonmortel_bedrijven_Cementbouw.JPG",
+    "licentie": "CC BY-SA 4.0",
+    "maker": "Marion Golsteijn"
+  },
+  "Hoeveel landen ondertekenden de UNESCO-grondwet in 1945?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_UNESCO.svg/330px-Flag_of_UNESCO.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_UNESCO.svg",
+    "licentie": "Public domain",
+    "maker": "Mouagip"
+  },
+  "Hoeveel fysieke spoorlijnen telt de New York City Subway volgens de gangbare indeling?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/MTA_NYC_Subway_1_train_leaving_125th_St.jpg/330px-MTA_NYC_Subway_1_train_leaving_125th_St.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:MTA_NYC_Subway_1_train_leaving_125th_St.jpg",
+    "licentie": "CC BY-SA 4.0",
+    "maker": "Mtattrain"
+  },
+  "In welk jaar werd het eerste succesvolle vaccin ontwikkeld?": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Smallpox_vaccine.jpg/330px-Smallpox_vaccine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Smallpox_vaccine.jpg",
+    "licentie": "Public domain",
+    "maker": "Photo Credit: James Gathany Content Providers(s): CDC"
+  },
+  "Hoeveel armen heeft de gewone vijfarmige zeester?": null,
+  "Hoeveel bulten heeft een dromedaris?": null,
+  "Hoeveel kleuren heeft een standaard Rubiks kubus?": null,
+  "Hoeveel kleuren heeft de vlag van België?": null,
+  "Hoeveel pionnen heeft iedere speler bij de start van schaken?": null,
+  "Hoeveel snaren heeft een standaard basgitaar?": null,
+  "Hoeveel snaren heeft een standaard viool?": null,
+  "Uit hoeveel verschillende basen bestaat DNA?": null,
+  "Hoeveel hoofdgoden telt de Griekse mythologie op de berg Olympus (de Twaalf Olympiërs)?": null,
+  "Hoeveel planeten in ons zonnestelsel hebben ringen?": null,
+  "Hoeveel meter is één internationale zeemijl exact?": null,
+  "Hoeveel minaretten heeft de Blauwe Moskee in Istanbul?": null,
+  "Hoeveel planeten staan dichter bij de zon dan de aarde?": null,
+  "Hoeveel botten heeft een volwassen menselijke schedel volgens de gebruikelijke anatomische indeling?": null
 }
