@@ -96,7 +96,7 @@
 
   // Builds the question cards and drives the sequential reveal. Calls
   // onComplete once every answer is shown (immediately when instant).
-  function buildReveal({ questions, guesses, answers, operator, units = [], photo = null }, list, { instant, onComplete, onStep }) {
+  function buildReveal({ questions, guesses, answers, operator, units = [], photo = null, fast = false }, list, { instant, onComplete, onStep }) {
     const numbers = [];
     questions.forEach((question, index) => {
       if (index) {
@@ -230,8 +230,10 @@
     let stopped = false;
     let completed = false;
     const timers = new Set();
+    // Losse puzzels krijgen dezelfde onthulling, maar ruim twee keer zo vlot.
+    const pace = fast ? .4 : 1;
     const later = (fn, ms) => {
-      const timer = setTimeout(() => { timers.delete(timer); if (!stopped) fn(); }, ms);
+      const timer = setTimeout(() => { timers.delete(timer); if (!stopped) fn(); }, ms * pace);
       timers.add(timer);
     };
     const settle = (index, announce) => {
@@ -294,7 +296,7 @@
       const lockEvery = motion ? Math.min(130, 480 / Math.max(1, places.length)) : 0;
       const started = performance.now();
       const spin = () => {
-        const elapsed = performance.now() - started;
+        const elapsed = (performance.now() - started) / pace;
         const locked = elapsed < spinFor ? 0 : Math.floor((elapsed - spinFor) / Math.max(1, lockEvery)) + 1;
         if (!motion || locked >= places.length) {
           settle(index, true);
@@ -399,8 +401,7 @@
     skip.className = 'answer-reveal-skip';
     skip.textContent = copy('Sla over →', 'Skip →');
     header.append(skip);
-    const legend = element('p', 'answer-reveal-legend', copy('Midden = juist · stip = jouw schatting', 'Centre = actual · dot = your estimate'));
-    section.append(header, legend, list);
+    section.append(header, list);
     container.prepend(section);
     const bar = () => document.querySelector('.topbar')?.offsetHeight || 0;
     const scrollBy = top => window.scrollTo({ top: window.scrollY + top, behavior: reducedMotion() ? 'auto' : 'smooth' });
@@ -468,8 +469,7 @@
       });
       opts.onDone?.();
     };
-    heading.textContent = opts.instant ? copy('Je antwoorden.', 'Your answers.')
-      : copy('De onthulling.', 'The reveal.');
+    heading.textContent = copy('Je antwoorden.', 'Your answers.');
     if (!opts.instant) {
       container.classList.add('is-answer-revealing');
       document.addEventListener('keydown', skipKeys);
@@ -505,7 +505,7 @@
     const header = document.createElement('header');
     header.className = 'answer-reveal-header';
     const eyebrow = document.createElement('span');
-    eyebrow.textContent = copy('NETTO · DE ONTHULLING', 'NETTO · THE REVEAL');
+    eyebrow.textContent = copy('ANTWOORDEN', 'ANSWERS');
     const heading = document.createElement('h1');
     heading.textContent = copy('Tijd om de antwoorden te verbinden.', 'Let’s connect the answers.');
     header.append(eyebrow, heading);
@@ -520,8 +520,7 @@
     button.type = 'button';
     button.textContent = copy('Sla over →', 'Skip →');
     footer.append(score, button);
-    const legend = element('p', 'answer-reveal-legend', copy('Midden = juist · stip = jouw schatting', 'Centre = actual · dot = your estimate'));
-    shell.append(header, legend, list, footer);
+    shell.append(header, list, footer);
     overlay.append(shell);
     document.body.append(overlay);
     overlay.showModal();
