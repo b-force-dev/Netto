@@ -97,3 +97,8 @@
 a.home-mode-card { text-decoration: none; }
 .home-daily-card .hero-headline .home-title-first { color: #fff; }
 .home-daily-card > .daily-verouderd { margin: 14px 0 0; max-width: 68ch; position: relative; z-index: 1; }
+
+/* Omschrijving op de spelvormkaarten: compact, zoals op de live site. */
+@media (max-width: 640px) {
+  html .home-content.lp .home-modes .home-mode-body small { font-size: 12.5px; line-height: 1.4; }
+}
