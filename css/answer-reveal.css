@@ -249,3 +249,22 @@ body:has(#screen-puzzle.active.is-review) .calculator-toggle { display:none; }
 [data-theme="dark"] .answer-reveal-yours b,
 [data-theme="dark"] .answer-reveal-detail .vraag-bron p { color:var(--ink); }
 [data-theme="dark"] .answer-reveal-yours em { color:#7be0c0; }
+
+/* Rustige onderkant van de Daily-uitslag: delen bovenaan, daaronder één rij
+   met twee gelijke knoppen, en afteller + archief op één regel. */
+#results .daily-result-summary .daily-result-actions { grid-template-columns:1fr; }
+#results .daily-result-summary .daily-result-navigation { display:grid; grid-template-columns:1fr 1fr; gap:10px; width:100%; margin:14px 0 0; }
+#results .daily-result-summary .daily-result-navigation > button,
+#screen-puzzle #results .daily-result-summary .daily-result-navigation .btn-leaderboard-open { display:inline-flex; align-items:center; justify-content:center; gap:8px; width:100%; min-width:0; min-height:46px; margin:0; padding:8px 12px; border:1px solid var(--surface-border); border-radius:10px; background:var(--surface); color:var(--ink); font:600 14px 'Space Grotesk',sans-serif; cursor:pointer; }
+#results .daily-result-summary .daily-result-navigation > button:hover { border-color:var(--ink); }
+#results .daily-result-summary .daily-result-footer { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:6px 16px; }
+#results .daily-result-summary .daily-result-footer > .daily-result-navigation { flex:1 1 100%; }
+#results .daily-result-summary .daily-result-footer > #dailyResultCountdown { margin:12px 0 0; }
+#results .daily-result-summary .daily-archive-link { width:auto; min-height:32px; margin:12px 0 0; padding:4px 0; border:0; background:none; color:var(--text-muted); font:500 13px 'Space Grotesk',sans-serif; text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
+#results .daily-result-summary .daily-archive-link svg { display:none; }
+#results .daily-result-summary .daily-archive-link:hover { color:var(--ink); background:none; }
+
+/* Puzzeluitslag: hoofdknop gaat door, nabespreking is een rustige tekstlink. */
+.answer-reveal-footer.has-next { flex-wrap:wrap; }
+.answer-reveal-more { flex:1 1 100%; background:none !important; color:#656b7d !important; padding:4px 0 !important; text-align:right; text-decoration:underline; text-underline-offset:3px; font-weight:500 !important; }
+[data-theme="dark"] .answer-reveal-more { color:#b9bfe0 !important; }

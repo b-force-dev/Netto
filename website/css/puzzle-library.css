@@ -147,3 +147,12 @@ button.daily-archive-row:focus-visible { outline: 3px solid var(--yellow, #FFD84
 /* De kaart is een knop met spans erin; de binnenkant moet een blok zijn,
    anders valt de hoogte weg en klapt de kaart in. */
 .library-flip-card-inner { display: block; }
+
+/* Find the Connection: nabespreking per vraag achter één rustige regel. */
+.connection-review-more { margin: 4px 0 0; }
+.connection-review-more > summary { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 4px 0; color: var(--text-muted); font: 500 14px 'Space Grotesk', sans-serif; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; list-style: none; }
+.connection-review-more > summary::-webkit-details-marker { display: none; }
+.connection-review-more > summary::after { content: '↓'; text-decoration: none; }
+.connection-review-more[open] > summary::after { content: '↑'; }
+.connection-review-more > summary:hover { color: var(--ink); }
+.connection-review-more > .puzzle-review-question { margin-top: 12px; }

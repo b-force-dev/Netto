@@ -550,10 +550,20 @@
       const note = document.createElement('p');
       note.textContent = opts.factor === 1
         ? copy('Perfect. Elk antwoord precies goed.', 'Perfect. Every answer exactly right.')
-        : copy('Dichter bij ' + factorText(1) + ' is beter. ' + factorText(1) + ' betekent dat elk antwoord exact is.',
-          'Closer to ' + factorText(1) + ' is better. ' + factorText(1) + ' means every answer is exact.');
-      score.append(label, value, note);
-      button.textContent = copy('Bekijk antwoorden & bronnen →', 'Review answers & sources →');
+        : copy('Dichter bij ' + factorText(1) + ' is beter.', 'Closer to ' + factorText(1) + ' is better.');
+      score.append(label, value);
+      if (opts.factor === 1) score.append(note);
+      if (opts.onNext) {
+        // Rustig einde: meteen door, de uitgebreide nabespreking is een keuze.
+        button.textContent = opts.nextLabel || copy('Volgende puzzel →', 'Next puzzle →');
+        const meer = element('button', 'answer-reveal-more', copy('Antwoorden & bronnen', 'Answers & sources'));
+        meer.type = 'button';
+        meer.addEventListener('click', event => { event.stopImmediatePropagation(); close(); });
+        footer.append(meer);
+        footer.classList.add('has-next');
+      } else {
+        button.textContent = copy('Bekijk antwoorden & bronnen →', 'Review answers & sources →');
+      }
       shell.classList.add('is-complete');
     };
     const controller = buildReveal(opts, list, { instant:false, onComplete: done });
@@ -568,7 +578,9 @@
       if (controller.isComplete()) close(); else controller.finish();
     });
     button.addEventListener('click', () => {
-      if (controller.isComplete()) close(); else controller.finish();
+      if (!controller.isComplete()) { controller.finish(); return; }
+      close();
+      opts.onNext?.();
     });
     // Tikken op de antwoorden slaat de animatie over, net als bij de Daily.
     list.addEventListener('click', () => controller.finish());

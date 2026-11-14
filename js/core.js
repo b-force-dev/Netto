@@ -2671,6 +2671,13 @@
     next.textContent = todayOpen ? statsCopy('Speel de Daily van vandaag →', 'Play today’s Daily →')
       : statsCopy('Meer puzzels →', 'More puzzles →');
     next.onclick = () => (todayOpen ? window.NettoRoutes.openToday() : openPuzzles());
+    // Eén rij met twee rustige knoppen in plaats van een stapel: verder spelen
+    // en de ranglijst. Het archief wordt een tekstlink naast de afteller.
+    const ranglijst = summary.querySelector('.btn-leaderboard-open');
+    if (ranglijst && ranglijst.parentElement !== navigation) next.after(ranglijst);
+    const archief = summary.querySelector('.daily-archive-link');
+    const afteller = document.getElementById('dailyResultCountdown');
+    if (archief && afteller && archief.previousElementSibling !== afteller) afteller.after(archief);
   }
 
   // Nauwkeurigheid per vraag naast de totaalscore, in de volgorde van de kaarten.

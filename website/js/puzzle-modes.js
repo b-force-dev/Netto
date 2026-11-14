@@ -198,9 +198,13 @@
     // De reveal geeft de focus terug aan wat vóór het openen focus had; de
     // inleverknop bestaat dan niet meer, dus eerst naar de volgende actie.
     document.querySelector('#' + prefix + 'PuzzleView .puzzel-hoofdactie')?.focus({ preventScroll: true });
+    const verder = document.querySelector('#' + prefix + 'PuzzleView .puzzel-hoofdactie');
     if (prefix === 'library') showAnswerReveal({
       questions: [active.q1_label, active.q2_label, active.q3_label],
-      guesses, answers, operator: active.operator || '×', factor
+      guesses, answers, operator: active.operator || '×', factor,
+      // Na de onthulling meteen door; de nabespreking blijft één tik verder.
+      onNext: verder ? () => verder.click() : null,
+      nextLabel: verder?.textContent
     });
   }
 

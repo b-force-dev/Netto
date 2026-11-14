@@ -601,7 +601,6 @@ function submitConnection() {
     + fmt(result.answers[0]) + ' ' + state.operator + ' ' + fmt(result.answers[1]) + (correct ? ' = ' : ' ≠ ') + fmt(result.answers[2]);
   connection.append(title, equation);
   let solutionText = '';
-  connection.append(NettoShare.connectionButton(state.puzzle, result));
   if (!correct) {
     const solution = validConnections(answers)[0];
     const [a, b, c] = solution.order.map(i => fmt(answers[i]));
@@ -615,14 +614,25 @@ function submitConnection() {
   detail.textContent = previous
     ? statsCopy('Oefenronde: factor ' + factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×. Je score blijft ' + previous.factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×.',
                 'Practice round: factor ' + factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×. Your score stays ' + previous.factor.toLocaleString(nettoNumberLocale(), { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '×.')
-    : correct
-      ? statsCopy('De drie echte antwoorden vormen precies deze som.', 'The three real answers form exactly this equation.')
-      : statsCopy('Je schattingen tellen nog steeds mee in je factor.', 'Your estimates still count towards your factor.');
-  connection.append(detail);
+    : '';
+  if (detail.textContent) connection.append(detail);
+  connection.append(NettoShare.connectionButton(state.puzzle, result));
   connection.tabIndex = -1;
   connection.setAttribute('aria-labelledby', 'connectionVerdictTitle');
   title.id = 'connectionVerdictTitle';
-  document.getElementById('bkQuestionList').prepend(connection);
+  const lijst = document.getElementById('bkQuestionList');
+  // Rustige uitslag: het oordeel en de score in beeld, de nabespreking per
+  // vraag achter één tik.
+  const kaarten = [...lijst.querySelectorAll('.puzzle-review-question')];
+  if (kaarten.length) {
+    const meer = document.createElement('details');
+    meer.className = 'connection-review-more';
+    const kop = document.createElement('summary');
+    kop.textContent = statsCopy('Antwoorden & bronnen', 'Answers & sources');
+    kaarten[0].before(meer);
+    meer.append(kop, ...kaarten);
+  }
+  lijst.prepend(connection);
   feedback.textContent = '';
   document.getElementById('connectionAnnouncement').textContent = (correct
     ? statsCopy('Verband gevonden. ', 'Connection found. ') + equation.textContent
