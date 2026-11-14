@@ -102,3 +102,6 @@ a.home-mode-card { text-decoration: none; }
 @media (max-width: 640px) {
   html .home-content.lp .home-modes .home-mode-body small { font-size: 12.5px; line-height: 1.4; }
 }
+
+/* Kaartjes "More from Netto" zijn links: geen onderstreping. */
+a.home-more-card, a.home-more-card:hover { text-decoration: none; }
