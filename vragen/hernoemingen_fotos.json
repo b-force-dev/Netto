@@ -1503,5 +1503,305 @@
     "id": "q971",
     "oud": "Hoeveel tijdzones telt India als één land?",
     "nieuw": "Hoeveel tijdzones gebruikt India?"
+  },
+  {
+    "id": "bank-888",
+    "oud": "Hoeveel landen grenzen aan Honduras?",
+    "nieuw": "How many countries share a land border with Honduras?"
+  },
+  {
+    "id": "bank-524",
+    "oud": "Hoeveel astronauten liepen op de maan tijdens Apollo 11?",
+    "nieuw": "How many astronauts walked on the Moon during Apollo 11?"
+  },
+  {
+    "id": "bank-222",
+    "oud": "Hoeveel jaar liggen tussen de bouwstart van de Hagia Sophia in 532 en de voltooiing in 537?",
+    "nieuw": "How many years separate the start of Hagia Sophia’s construction in 532 from its completion in 537?"
+  },
+  {
+    "id": "bank-578",
+    "oud": "Hoeveel passagiersterminals waren op London Heathrow in gebruik in 2024?",
+    "nieuw": "How many passenger terminals were in use at London Heathrow in 2024?"
+  },
+  {
+    "id": "bank-293",
+    "oud": "Hoeveel officiële burgerlijke tijdzones gebruikt het Chinese vasteland?",
+    "nieuw": "How many official civil time zones does mainland China use?"
+  },
+  {
+    "id": "bank-1109",
+    "oud": "Hoeveel traditionele hoofdstijlen van Cubaanse rumba worden gewoonlijk onderscheiden?",
+    "nieuw": "How many principal traditional styles of Cuban rumba are commonly distinguished?"
+  },
+  {
+    "id": "bank-1393",
+    "oud": "Hoeveel pogingen krijgt een olympische gewichtheffer per onderdeel, trekken en stoten?",
+    "nieuw": "How many attempts is an Olympic weightlifter allowed in each lift, the snatch and the clean and jerk?"
+  },
+  {
+    "id": "bank-874",
+    "oud": "Hoeveel landen grenzen aan Angola, inclusief de exclave Cabinda?",
+    "nieuw": "How many countries share a land border with Angola, including its Cabinda exclave?"
+  },
+  {
+    "id": "bank-1282",
+    "oud": "Hoeveel officiële talen erkende Zuid-Afrika na de toevoeging van Zuid-Afrikaanse Gebarentaal in 2023?",
+    "nieuw": "How many official languages did South Africa recognise after adding South African Sign Language in 2023?"
+  },
+  {
+    "id": "bank-1114",
+    "oud": "Hoeveel nummer-éénsingles behaalden de Beatles in de Amerikaanse Billboard Hot 100?",
+    "nieuw": "How many number-one singles did the Beatles achieve on the US Billboard Hot 100?"
+  },
+  {
+    "id": "bank-927",
+    "oud": "Over hoeveel landen strekt de UNESCO-werelderfgoedlocatie Struveboog zich uit?",
+    "nieuw": "Across how many countries does UNESCO’s Struve Geodetic Arc World Heritage site extend?"
+  },
+  {
+    "id": "bank-819",
+    "oud": "Hoeveel torens vormen de Petronas Twin Towers in Kuala Lumpur?",
+    "nieuw": "How many towers make up Kuala Lumpur’s Petronas Twin Towers?"
+  },
+  {
+    "id": "bank-1592",
+    "oud": "Hoeveel romans telt Philip Pullmans oorspronkelijke reeks His Dark Materials, zonder begeleidende boeken?",
+    "nieuw": "How many novels are in Philip Pullman’s original His Dark Materials sequence, excluding companion books?"
+  },
+  {
+    "id": "bank-500",
+    "oud": "Hoeveel punten levert een rake vrije worp bij basketbal op?",
+    "nieuw": "How many points does a successful free throw score in basketball?"
+  },
+  {
+    "id": "bank-1496",
+    "oud": "Hoeveel rijwielen heeft een gewone auto, zonder reservewiel?",
+    "nieuw": "How many road wheels does a conventional car have, excluding a spare wheel?"
+  },
+  {
+    "id": "bank-1590",
+    "oud": "Hoeveel hoofdstukken telt The Great Gatsby van F. Scott Fitzgerald?",
+    "nieuw": "How many chapters does F. Scott Fitzgerald’s The Great Gatsby have?"
+  },
+  {
+    "id": "bank-1595",
+    "oud": "Wat is de som van de getallen op tegenoverliggende zijden van een standaard zeszijdige dobbelsteen?",
+    "nieuw": "What is the sum of the numbers on opposite faces of a standard six-sided die?"
+  },
+  {
+    "id": "bank-881",
+    "oud": "Hoeveel landen grenzen aan Costa Rica?",
+    "nieuw": "How many countries share a land border with Costa Rica?"
+  },
+  {
+    "id": "bank-245",
+    "oud": "Hoeveel hoofdtorens heeft de Tower Bridge in Londen?",
+    "nieuw": "How many main towers does London’s Tower Bridge have?"
+  },
+  {
+    "id": "bank-287",
+    "oud": "Hoeveel constituerende landen vormen het Verenigd Koninkrijk?",
+    "nieuw": "How many constituent countries make up the United Kingdom?"
+  },
+  {
+    "id": "bank-1594",
+    "oud": "Hoeveel rijen vakjes telt een standaard Othello-bord?",
+    "nieuw": "How many rows of squares are on a standard Othello board?"
+  },
+  {
+    "id": "bank-890",
+    "oud": "Hoeveel landen grenzen aan Kameroen?",
+    "nieuw": "How many countries share a land border with Cameroon?"
+  },
+  {
+    "id": "bank-1262",
+    "oud": "Hoeveel jaar duurt een gewone ambtstermijn in het Amerikaanse Huis van Afgevaardigden?",
+    "nieuw": "How many years is a regular term in the US House of Representatives?"
+  },
+  {
+    "id": "bank-538",
+    "oud": "Hoeveel letters telt de topleveldomeinnaam com, zonder de punt?",
+    "nieuw": "How many letters are in the top-level domain name com, excluding the dot?"
+  },
+  {
+    "id": "bank-1597",
+    "oud": "Hoeveel ribben heeft een tetraëder?",
+    "nieuw": "How many edges does a tetrahedron have?"
+  },
+  {
+    "id": "bank-1071",
+    "oud": "In hoeveel landen liggen de UNESCO-locaties van de Great Spa Towns of Europe?",
+    "nieuw": "In how many countries are the Great Spa Towns of Europe UNESCO sites located?"
+  },
+  {
+    "id": "bank-1593",
+    "oud": "Hoeveel kaarten bevat iedere kleur in een standaardspel van 52 kaarten met Franse kleuren, zonder jokers?",
+    "nieuw": "How many cards belong to each suit in a standard 52-card French-suited deck, excluding jokers?"
+  },
+  {
+    "id": "bank-699",
+    "oud": "Hoeveel lidstaten telt de G7, zonder de Europese Unie?",
+    "nieuw": "How many member countries are in the G7, excluding the European Union?"
+  },
+  {
+    "id": "bank-464",
+    "oud": "Hoeveel verschillende chemische elementen bevat natriumwaterstofcarbonaat, NaHCO₃?",
+    "nieuw": "How many different chemical elements are in sodium hydrogen carbonate, NaHCO₃?"
+  },
+  {
+    "id": "bank-1396",
+    "oud": "Hoeveel punten levert een geslaagde fieldgoal op bij American football in de NFL?",
+    "nieuw": "How many points does a successful field goal score in NFL American football?"
+  },
+  {
+    "id": "bank-295",
+    "oud": "Hoeveel staten heeft Australië, zonder territoria?",
+    "nieuw": "How many states does Australia have, excluding territories?"
+  },
+  {
+    "id": "bank-586",
+    "oud": "Hoeveel wielen heeft een gewone solomotorfiets, zonder zijspan?",
+    "nieuw": "How many wheels does a conventional solo motorcycle have, excluding a sidecar?"
+  },
+  {
+    "id": "bank-1008",
+    "oud": "Hoeveel landen richtten de NAVO op in 1949?",
+    "nieuw": "How many countries founded NATO in 1949?"
+  },
+  {
+    "id": "bank-1115",
+    "oud": "Hoeveel genummerde pianosonates componeerde Ludwig van Beethoven?",
+    "nieuw": "How many numbered piano sonatas did Ludwig van Beethoven compose?"
+  },
+  {
+    "id": "bank-466",
+    "oud": "Hoeveel verschillende chemische elementen bevat koolstofdioxide, CO₂?",
+    "nieuw": "How many different chemical elements are in carbon dioxide, CO₂?"
+  },
+  {
+    "id": "bank-583",
+    "oud": "Hoeveel rijtuigen vormen een Eurostar e320-trein?",
+    "nieuw": "How many carriages make up a Eurostar e320 train?"
+  },
+  {
+    "id": "bank-347",
+    "oud": "Hoeveel centrale scènes uit Genesis schilderde Michelangelo op het plafond van de Sixtijnse Kapel?",
+    "nieuw": "How many central scenes from Genesis did Michelangelo paint on the Sistine Chapel ceiling?"
+  },
+  {
+    "id": "bank-897",
+    "oud": "Hoeveel landen grenzen aan Nigeria?",
+    "nieuw": "How many countries share a land border with Nigeria?"
+  },
+  {
+    "id": "bank-324",
+    "oud": "Hoeveel Britse koloniën vormden de oorspronkelijke Verenigde Staten?",
+    "nieuw": "How many British colonies became the original United States?"
+  },
+  {
+    "id": "bank-1596",
+    "oud": "Hoeveel hoekpunten heeft een kubus?",
+    "nieuw": "How many vertices does a cube have?"
+  },
+  {
+    "id": "bank-1484",
+    "oud": "Hoeveel sterren telt de nationale vlag van de Volksrepubliek China?",
+    "nieuw": "How many stars are on the national flag of the People’s Republic of China?"
+  },
+  {
+    "id": "bank-1591",
+    "oud": "Hoeveel romans vormen de voltooide ruimtetrilogie van C. S. Lewis?",
+    "nieuw": "How many novels make up C. S. Lewis’s completed Space Trilogy?"
+  },
+  {
+    "id": "bank-241",
+    "oud": "Hoeveel hoofdpiramides vormen het piramidecomplex van Gizeh?",
+    "nieuw": "How many principal pyramids form the Giza pyramid complex?"
+  },
+  {
+    "id": "bank-880",
+    "oud": "Hoeveel landen grenzen aan de Democratische Republiek Congo, inclusief over het Tanganyikameer?",
+    "nieuw": "How many countries border the Democratic Republic of the Congo, including across Lake Tanganyika?"
+  },
+  {
+    "id": "bank-390",
+    "oud": "Hoeveel genummerde pianoconcerten telt de gebruikelijke nummering van Mozarts pianoconcerten?",
+    "nieuw": "How many numbered piano concertos are in Mozart’s standard concerto numbering?"
+  },
+  {
+    "id": "bank-1588",
+    "oud": "Hoeveel hoofdstukken telt Emma van Jane Austen over alle drie de delen?",
+    "nieuw": "How many chapters are in Jane Austen’s Emma across all three volumes?"
+  },
+  {
+    "id": "bank-423",
+    "oud": "Hoeveel advocaten-generaal telde het Hof van Justitie van de Europese Unie in 2024?",
+    "nieuw": "How many Advocates General did the Court of Justice of the European Union have in 2024?"
+  },
+  {
+    "id": "bank-902",
+    "oud": "Hoeveel landen grenzen aan Peru?",
+    "nieuw": "How many countries share a land border with Peru?"
+  },
+  {
+    "id": "bank-1413",
+    "oud": "Hoeveel teams speelden in de NBA in het seizoen 2024–25?",
+    "nieuw": "How many teams played in the NBA in the 2024–25 season?"
+  },
+  {
+    "id": "bank-882",
+    "oud": "Hoeveel landen grenzen aan Ecuador?",
+    "nieuw": "How many countries share a land border with Ecuador?"
+  },
+  {
+    "id": "bank-1253",
+    "oud": "Hoeveel departementen heeft Colombia, zonder het hoofdstedelijke district Bogotá?",
+    "nieuw": "How many departments does Colombia have, excluding the capital district of Bogotá?"
+  },
+  {
+    "id": "bank-1589",
+    "oud": "Hoeveel genummerde hoofdstukken telt Dracula van Bram Stoker, zonder de afsluitende notitie?",
+    "nieuw": "How many numbered chapters does Bram Stoker’s Dracula have, excluding its closing note?"
+  },
+  {
+    "id": "bank-1599",
+    "oud": "Hoeveel oudsten omringen de troon in Openbaring 4:4?",
+    "nieuw": "How many elders surround the throne in Revelation 4:4?"
+  },
+  {
+    "id": "bank-910",
+    "oud": "Hoeveel landen grenzen aan Venezuela?",
+    "nieuw": "How many countries share a land border with Venezuela?"
+  },
+  {
+    "id": "bank-1586",
+    "oud": "Na hoeveel opeenvolgende zetten van iedere speler zonder pionzet of slag mag de speler die aan zet is volgens FIDE remise claimen?",
+    "nieuw": "After how many consecutive moves by each player without a pawn move or capture may the player to move claim a draw under FIDE rules?"
+  },
+  {
+    "id": "bank-895",
+    "oud": "Hoeveel landen grenzen aan Nicaragua?",
+    "nieuw": "How many countries share a land border with Nicaragua?"
+  },
+  {
+    "id": "bank-1598",
+    "oud": "Hoeveel jaar telt een eeuw?",
+    "nieuw": "How many years make up one century?"
+  },
+  {
+    "id": "bank-1454",
+    "oud": "Hoeveel beelden per seconde telt de traditionele standaardprojectiesnelheid van geluidsfilm in de bioscoop?",
+    "nieuw": "How many frames per second is the standard traditional sound-film cinema projection rate?"
+  },
+  {
+    "id": "bank-1264",
+    "oud": "Hoeveel landen gebruikten de Centraal-Afrikaanse CFA-frank in 2024?",
+    "nieuw": "How many countries used the Central African CFA franc in 2024?"
+  },
+  {
+    "id": "bank-964",
+    "oud": "Hoeveel deelstaten vormen de Federale Staten van Micronesië?",
+    "nieuw": "How many states form the Federated States of Micronesia?"
   }
 ]
