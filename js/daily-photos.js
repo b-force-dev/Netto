@@ -39,6 +39,17 @@ window.NETTO_DAILY_PHOTOS = [
 
 window.NETTO_DAILY_PHOTO_DIR = 'fotos/assets/';
 
+// Fixed frames keep their space while the image loads. Preserve the complete
+// subject for logos, diagrams and very wide panoramas; ordinary photos fill
+// the frame, also when they are portrait.
+document.addEventListener('load', event => {
+  const image = event.target;
+  if (!(image instanceof HTMLImageElement) || !image.matches('.daily-photo img, .answer-reveal-photo img, .foto-credit-kaart img')) return;
+  const ratio = image.naturalWidth / image.naturalHeight;
+  const graphic = /(?:logo|wordmark|diagram|\.svg(?:[/.?]|$))/i.test(image.currentSrc);
+  image.classList.toggle('photo-contain', graphic || ratio > 2.6);
+}, true);
+
 // Resolve by the question itself, including minor editorial wording changes.
 // These explicit subjects cover gaps in the reviewed photo bank. Existing
 // local assets keep today's Titanic and the spider puzzle independent of CDN.
@@ -55,19 +66,15 @@ window.resolveDailyQuestionPhoto = function (puzzle) {
       'media-011-rms-titanic-3-jpg.jpg',
       'https://commons.wikimedia.org/wiki/File:RMS_Titanic_3.jpg',
       'Francis Godolphin Osbourne Stuart', 'Public domain')],
-    [normalize('How many legs does a spider have?'), local(
-      'media-022-xysticus-spec-6890-jpg.jpg',
-      'https://commons.wikimedia.org/wiki/File:Xysticus.spec.6890.jpg',
-      'Olaf Leillinger', 'CC BY-SA 3.0')],
     [normalize('How many kilometres long is the Panama Canal?'),
       window.NETTO_FOTOS?.['Hoeveel sluizen heeft het Panamakanaal?']]
   ]);
   const data = window.NETTO_REBUILT_PUZZLES || {};
   const bank = window.NETTO_FOTOS || {};
   const byQuestion = new Map();
-  for (const review of [data.daily_review, data.library_review]) {
+  for (const review of [data.daily_review, data.library_review, data.connection_review]) {
     for (const [label, metadata] of Object.entries(review || {})) {
-      const photo = metadata.photo || bank[metadata.original || label];
+      const photo = bank[metadata.original || label];
       if (photo) byQuestion.set(normalize(label), photo);
     }
   }

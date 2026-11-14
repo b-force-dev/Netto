@@ -1,16 +1,20 @@
 # Netto 🧩
 
-Een quiz-puzzelgame waar je vragen uit een vragenbank (1.000+ vragen) combineert tot rekensommen: `a × b = c`, `a ÷ b + c = d` en meer.
+Een dagelijks schatspel: je schat drie feiten waarvan de antwoorden samen een som vormen (`a × b = c`). Het verband helpt je slimmer te gokken.
+
+**Engels is de hoofdtaal** (internationale spelers); Nederlands is de tweede taal. De Daily is het hart van het spel; de andere spelvormen zijn er voor wie daarna wil doorspelen.
 
 ## Spelmodi
 
 | Modus | Beschrijving |
 |---|---|
-| **Dagpuzzel** | Elke dag één officiële puzzel, met streak en deelbare score |
-| **Puzzels (Library)** | 237 puzzels over vier niveaus, direct speelbaar zonder unlocks. Elke vraag komt in de hele set precies één keer voor |
+| **Daily** | Elke dag één officiële puzzel, met streak en deelbare score. De planning en de antwoorden staan alleen in Supabase; zie `docs/audit/daily_planning_20261113.md` voor het bijvullen |
+| **Puzzels (Library)** | 112 nagekeken puzzels over vier niveaus (stand november 2026), direct speelbaar, met voortgang per niveau. Elke vraag komt in de hele set precies één keer voor |
 | **Puzzel Race** | 5 minuten, zoveel mogelijk puzzels exact oplossen — van makkelijk naar moeilijk, met directe feedback en eindscore. Ook **1v1-duel** via room-code (Supabase Realtime) |
 | **Breinkrakers** | Kettingpuzzels van 4 vragen: `a op1 b op2 c = d`, **van links naar rechts** gelezen. `2 + 3 × 4` is hier dus 20 en niet 14 |
-| **Daily Archive** | 35 genummerde dagpuzzels uit het archief; ze delen hun vragenset met Puzzels |
+| **Find the Connection** | 60 puzzels waarin je het verband tussen drie vragen zoekt |
+| **Live rondes** | Groepsspel: dezelfde puzzel, dezelfde klok |
+| **Daily Archive** | Eerdere Dailies opnieuw spelen (vanaf de server, telt niet mee voor de ranglijst) |
 
 ## Structuur
 
@@ -45,15 +49,38 @@ daarna `python tools/sync_website.py`.
 - `js/puzzle-modes.js` — generieke puzzelweergave, Library en Breinkrakers;
 - `js/race.js` — solo-race, themasets en online 1v1;
 - `js/submissions.js` — vraag- en puzzelinsturingen;
-- `js/library.js` — kaarten, archief, modals en algemene pagina-acties.
+- `js/library.js` — kaarten, archief, modals en algemene pagina-acties;
+- `js/home.js` + `css/home.css` — de startpagina met het voorbeeld;
+- `js/tutorial.js` + `css/tutorial.css` — de oefenronde van 30 seconden;
+- `js/share.js` + `css/share.css` — delen van uitslagen (deelmenu, klembord);
+- `js/answer-reveal.js` + `css/answer-reveal.css` — de reveal en het resultaat;
+- `js/usage.js` — privacyvriendelijke bezoekersmeting (zie `docs/usage-measurement.md`);
+- `js/keyboard.js` — toetsenbordbediening (Enter, Esc);
+- `css/desktop.css` en `css/mobile.css` — verfijning per schermbreedte, als laatste geladen.
 
 De bestanden worden als gewone scripts in vaste volgorde geladen. Daardoor blijft de bestaande frontend zonder bundler werken.
 
+## Installeerbare app (PWA)
+
+Netto is te installeren op het beginscherm en onthoudt niets offline wat het
+niet hoort te onthouden.
+
+- `manifest.webmanifest` en `icons/` — naam, kleuren, snelkoppelingen (Daily, Race).
+  De iconen worden gemaakt uit `favicon.svg` met `python tools/maak_pwa_iconen.py`.
+- `sw.js` — service worker: HTML netwerk-eerst (offline: `offline.html`), Supabase
+  nooit aangeraakt, statische bestanden stale-while-revalidate. Alleen `VERSION`
+  ophogen als de logica verandert. Lokaal registreert hij niet, tenzij je `?sw=1`
+  achter het adres zet; `?sw=0` haalt hem en zijn caches weg (noodrem).
+- `js/pwa.js` + `css/pwa.css` — registratie, themakleur per thema, een
+  installatiehint en een agenda-herinnering (.ics of Google Agenda) onder het
+  Daily-resultaat. Geen web-push: daar is geen server voor.
+
 ## Website-kopie synchroniseren
 
-Werk alleen in de project-root. Werk daarna de zelfstandige kopie bij en controleer hem:
+Werk alleen in de project-root. Werk daarna de cacheversies en de zelfstandige kopie bij en controleer hem:
 
 ```bash
+python tools/verhoog_versies.py
 python tools/sync_website.py
 python tools/sync_website.py --check
 ```
@@ -129,8 +156,8 @@ Auth en score-sync draaien op Supabase (`bqatnnouxkjdzvvhqbly`). De anon key in
 
 **Spelen kan zonder account.** De dagpuzzel, de puzzels, de catalogus, de
 breinkrakers en de solo-race werken uitgelogd; scores staan dan in localStorage.
-Een account is nodig voor drie dingen: het leaderboard, online duels en het
-insturen van vragen. Wie inlogt stuurt zijn lokaal gespeelde dagpuzzels alsnog
+Een account is nodig voor het leaderboard, Live Rondes (zolang anonieme logins uit staan) en het
+insturen van vragen. Online raceduels werken ook als gast. Wie inlogt stuurt zijn lokaal gespeelde dagpuzzels alsnog
 op (`stuurLokaleScoresOp` in `js/core.js`), zodat die niet verloren gaan.
 
 Accounts: e-mail + wachtwoord, minimaal 6 tekens, met wachtwoord-vergeten-flow

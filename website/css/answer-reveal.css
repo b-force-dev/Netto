@@ -7,10 +7,11 @@
 .answer-reveal-question { padding:15px 18px; border:1px solid #e3e4f7; border-radius:13px; background:#f8eef2; }
 .answer-reveal-question:nth-of-type(2) { background:#edf5ef; }
 .answer-reveal-question:nth-of-type(3) { background:#eeeffa; }
-.answer-reveal-question h2 { font-size:15px; font-weight:550; line-height:1.4; margin:0 0 12px; }
+.answer-reveal-head { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:12px; }
+.answer-reveal-question h2 { flex:1; min-width:0; font-size:15px; font-weight:550; line-height:1.4; margin:0; }
 .answer-reveal-values { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
 .answer-reveal-values > div { min-width:0; }
-.answer-reveal-values span { display:block; font-size:11px; color:#656b7d; margin-bottom:3px; }
+.answer-reveal-values > div > span { display:block; font-size:11px; color:#656b7d; margin-bottom:3px; }
 .answer-reveal-values strong { display:block; font-size:clamp(22px,3.5vw,32px); font-weight:700; font-variant-numeric:tabular-nums; line-height:1.2; overflow-wrap:anywhere; }
 .answer-reveal-actual { border-left:1px solid #14163b18; padding-left:20px; }
 .answer-reveal-actual strong { color:#252fb6; }
@@ -30,7 +31,7 @@
 .answer-reveal-footer button:focus-visible { outline:3px solid #ffd84a; outline-offset:4px; }
 .answer-reveal-announcement { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
 @keyframes reveal-tick { from { transform:translateY(-2px); opacity:.6; } to { transform:translateY(2px); opacity:1; } }
-@media(max-height:760px) and (min-width:650px) { .answer-reveal { padding:14px; } .answer-reveal-sheet { min-height:calc(100dvh - 28px); padding:20px 28px; } .answer-reveal-header { margin-bottom:12px; } .answer-reveal-question { padding:11px 16px; } .answer-reveal-question h2 { margin-bottom:8px; } .answer-reveal-values strong { font-size:26px; } .answer-reveal-footer { min-height:90px; padding-top:12px; } }
+@media(max-height:760px) and (min-width:650px) { .answer-reveal { padding:14px; } .answer-reveal-sheet { min-height:calc(100dvh - 28px); padding:20px 28px; } .answer-reveal-header { margin-bottom:12px; } .answer-reveal-question { padding:11px 16px; } .answer-reveal-head { margin-bottom:8px; } .answer-reveal-values strong { font-size:26px; } .answer-reveal-footer { min-height:90px; padding-top:12px; } }
 @media(max-width:649px) { .answer-reveal { padding:10px; } .answer-reveal-sheet { padding:20px 16px; border-radius:18px; min-height:calc(100dvh - 20px); } .answer-reveal-question { padding:12px; } .answer-reveal-question h2 { font-size:14px; } .answer-reveal-footer { flex-wrap:wrap; gap:12px; } .answer-reveal-footer button { width:100%; } }
 @media(prefers-reduced-motion:reduce) { .answer-reveal * { animation:none !important; } }
 
@@ -41,22 +42,20 @@
 /* Compact genoeg dat alle drie de vragen tijdens de reveal in beeld passen. */
 .answer-reveal-inline .answer-reveal-header { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:14px; }
 .answer-reveal-inline .answer-reveal-question { padding:12px 18px; }
-.answer-reveal-inline .answer-reveal-question h2 { margin-bottom:8px; }
+.answer-reveal-inline .answer-reveal-head { margin-bottom:8px; }
 .answer-reveal-inline .answer-reveal-values strong { font-size:clamp(22px,3vw,28px); }
-.answer-reveal-inline .answer-reveal-verdict { margin-top:6px; }
 .answer-reveal-inline .answer-reveal-connector { height:26px; }
 .answer-reveal-inline .answer-reveal-connector span { width:24px; height:24px; border-radius:7px; font-size:13px; }
-.answer-reveal-inline .answer-reveal-foot { margin-top:6px; }
-.answer-reveal-verdict { margin:10px 0 0; min-height:1.4em; font:600 12px/1.4 'JetBrains Mono',ui-monospace,monospace; color:#656b7d; opacity:0; transition:opacity .3s ease; }
+.answer-reveal-verdict { margin:0; min-height:1.4em; font:600 12px/1.4 'JetBrains Mono',ui-monospace,monospace; color:var(--tone-ink,#656b7d); opacity:0; transition:opacity .3s ease; }
 .answer-reveal-question.is-revealed .answer-reveal-verdict { opacity:1; }
-.answer-reveal-question.is-exact .answer-reveal-verdict { color:#07835e; }
 .answer-reveal-skip { flex-shrink:0; margin:0; border:0; border-radius:10px; padding:8px 4px 8px 12px; background:transparent; color:#656b7d; font:600 13px/1.4 inherit; font-family:inherit; cursor:pointer; }
 .answer-reveal-skip:hover { color:#14163b; }
 .answer-reveal-skip:focus-visible { outline:3px solid #ffd84a; outline-offset:3px; }
 
 /* Na de reveal: elke kaart klapt zijn uitleg en bron uit. */
-.answer-reveal-foot { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:10px; }
-.answer-reveal-foot .answer-reveal-verdict { margin:0; }
+.answer-reveal-foot { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:8px; }
+/* De knop komt pas na de reveal; zijn plek staat er al, dus niets verspringt. */
+.answer-reveal-inline .answer-reveal-foot { min-height:36px; }
 .answer-reveal-question.is-expandable { cursor:pointer; transition:box-shadow .2s ease, border-color .2s ease; }
 .answer-reveal-question.is-expandable:hover { border-color:#c9cbef; box-shadow:0 6px 18px #14163b14; }
 .answer-reveal-toggle { min-height:36px; display:inline-flex; align-items:center; gap:6px; flex-shrink:0; border:0; border-radius:8px; padding:6px 10px; background:#ffffffb3; color:#14163b; font:600 12px/1.3 inherit; font-family:inherit; cursor:pointer; }
@@ -78,5 +77,194 @@
 #results > .answer-reveal-inline.is-complete:not(.is-instant) ~ .daily-result-summary .daily-score-bar i { animation:answer-reveal-bar .9s cubic-bezier(.2,.7,.2,1) .25s both; }
 @keyframes answer-reveal-bar { from { transform:scaleX(0); } to { transform:scaleX(1); } }
 @keyframes answer-reveal-rest { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
-@media(max-width:649px) { .answer-reveal-inline .answer-reveal-question { padding:12px; } .answer-reveal-foot { flex-wrap:wrap; } .answer-reveal-toggle { min-height:44px; padding:8px 12px; } }
+/* Telefoon: compact genoeg dat drie kaarten en de som samen in beeld passen. De hele kaart is tikbaar, dus de knop mag 40px zijn. */
+@media(max-width:649px) { .answer-reveal-inline .answer-reveal-header { margin-bottom:10px; } .answer-reveal-inline .answer-reveal-question { padding:11px 12px; } .answer-reveal-inline .answer-reveal-connector { height:22px; } .answer-reveal-inline .answer-reveal-foot { min-height:40px; margin-top:4px; } .answer-reveal-toggle { min-height:40px; padding:8px 12px; } .answer-reveal-inline .answer-reveal-payoff { margin-top:10px; } }
 @media(prefers-reduced-motion:reduce) { #results > .answer-reveal-inline ~ *, #results .daily-score-bar i { animation:none !important; } .answer-reveal-verdict, .answer-reveal-chevron { transition:none; } }
+
+/* Eenheid achter het getal, klein en rustig. */
+.answer-reveal-values strong small { margin-left:.4em; font-size:.5em; font-weight:600; letter-spacing:0; color:#656b7d; white-space:nowrap; }
+
+/* Foto bij de vraag: klein, vaste maat, tik om te vergroten. */
+.answer-reveal-photo { flex-shrink:0; width:44px; height:44px; margin:0; padding:0; border:1px solid #14163b1f; border-radius:9px; overflow:hidden; background:#fff; cursor:zoom-in; }
+.answer-reveal-photo img { display:block; width:100%; height:100%; object-fit:cover; }
+.answer-reveal-photo:focus-visible { outline:3px solid #ffd84a; outline-offset:2px; }
+
+/* Hoe dichtbij: het midden is het juiste antwoord, de stip jouw antwoord.
+   Logaritmische as: twee keer te hoog staat even ver als de helft te laag. */
+.answer-reveal-question { --tone:#252fb6; }
+.answer-reveal-question[data-tone="exact"], .answer-reveal-question[data-tone="great"] { --tone:#07835e; --tone-ink:#07835e; }
+.answer-reveal-question[data-tone="good"] { --tone:#d99a06; --tone-ink:#8a5a00; }
+.answer-reveal-question[data-tone="fair"] { --tone:#e8590c; --tone-ink:#b54708; }
+.answer-reveal-question[data-tone="far"] { --tone:#d92d20; --tone-ink:#b42318; }
+.answer-reveal-meter { display:flex; align-items:center; gap:9px; margin-top:10px; height:14px; }
+.answer-reveal-end { flex-shrink:0; font:600 10px/1 'JetBrains Mono',ui-monospace,monospace; color:#8b8fa6; }
+.answer-reveal-track { position:relative; flex:1; height:6px; border-radius:999px; background:#14163b17; }
+.answer-reveal-tick { position:absolute; top:1px; bottom:1px; width:1px; margin-left:-.5px; background:#14163b2e; }
+.answer-reveal-centre { position:absolute; left:50%; top:-4px; bottom:-4px; width:2px; margin-left:-1px; border-radius:2px; background:#14163b; }
+.answer-reveal-fill { position:absolute; top:0; bottom:0; left:50%; width:0; border-radius:999px; background:var(--tone); opacity:.32; transition:left .5s cubic-bezier(.2,.7,.2,1), width .5s cubic-bezier(.2,.7,.2,1); }
+.answer-reveal-dot { position:absolute; left:50%; top:50%; box-sizing:border-box; width:14px; height:14px; margin:-7px 0 0 -7px; border:2px solid #fff; border-radius:50%; background:var(--tone); box-shadow:0 1px 3px #14163b47; opacity:0; transform:scale(.3); transition:left .5s cubic-bezier(.2,.7,.2,1), opacity .15s ease, transform .3s cubic-bezier(.2,1.5,.4,1); }
+.answer-reveal-question.is-revealed .answer-reveal-dot { opacity:1; transform:none; }
+/* Meer dan 8× ernaast: de stip blijft aan de rand en het eindlabel kleurt mee. */
+.answer-reveal-question.is-off-high .answer-reveal-end:last-child, .answer-reveal-question.is-off-low .answer-reveal-end:first-child { color:var(--tone-ink); }
+.answer-reveal-question.is-exact .answer-reveal-dot { box-shadow:0 0 0 4px #07835e33; }
+
+/* De kaart die aan de beurt is licht even op; de operator erna volgt. */
+.answer-reveal-question { transition:border-color .25s ease, box-shadow .25s ease; }
+.answer-reveal-question.is-revealing { border-color:#252fb6; box-shadow:0 0 0 3px #252fb61f; }
+.answer-reveal-connector span { transition:opacity .3s ease, transform .3s cubic-bezier(.2,1.5,.4,1); }
+.answer-reveal-question:not(.is-revealed) + .answer-reveal-connector span { opacity:.35; transform:scale(.85); }
+
+/* De som: de drie juiste antwoorden op één regel, jouw eigen som eronder. */
+.answer-reveal-payoff { position:relative; margin-top:14px; padding:12px 18px 13px; border:1px solid #e3e4f7; border-radius:13px; background:#f4f5fb; color:#14163b; transition:border-color .3s ease, box-shadow .3s ease, background-color .3s ease; }
+.answer-reveal-payoff-label { display:block; margin-bottom:6px; font:600 10px/1.4 'JetBrains Mono',ui-monospace,monospace; letter-spacing:.13em; text-transform:uppercase; color:#656b7d; }
+.answer-reveal-equation, .answer-reveal-yours { display:flex; align-items:center; flex-wrap:wrap; margin:0; font-variant-numeric:tabular-nums; }
+.answer-reveal-equation { gap:6px 10px; font-size:clamp(21px,3vw,27px); font-weight:700; line-height:1.2; letter-spacing:-.02em; }
+.answer-reveal-equation b { font-weight:700; color:#a3a4ba; }
+.answer-reveal-equation b.is-known { color:#252fb6; animation:answer-reveal-pop .35s cubic-bezier(.2,1.5,.4,1); }
+.answer-reveal-equation i { display:grid; place-items:center; width:22px; height:22px; border-radius:7px; background:#252fb6; color:#fff; font-size:13px; font-style:normal; font-weight:700; letter-spacing:0; }
+.answer-reveal-equation i.is-equals { background:#14163b; }
+.answer-reveal-yours { gap:2px 6px; margin-top:6px; font-size:13px; line-height:1.4; color:#656b7d; }
+.answer-reveal-yours span { margin-right:4px; font:600 10px/1.4 'JetBrains Mono',ui-monospace,monospace; letter-spacing:.13em; text-transform:uppercase; }
+.answer-reveal-yours b { font-weight:600; color:#14163b; }
+.answer-reveal-yours i { font-style:normal; }
+.answer-reveal-yours em { font-style:normal; font-weight:700; color:#07835e; }
+.answer-reveal-payoff.is-landed { border-color:#252fb6; background:#fff; box-shadow:0 0 0 3px #252fb614; }
+.answer-reveal-inline:not(.is-instant) .answer-reveal-payoff.is-landed, .answer-reveal-sheet .answer-reveal-payoff.is-landed { animation:answer-reveal-land .5s cubic-bezier(.2,1.3,.4,1); }
+@keyframes answer-reveal-pop { from { transform:scale(.6); opacity:.2; } to { transform:none; opacity:1; } }
+@keyframes answer-reveal-land { 0% { transform:scale(1); } 40% { transform:scale(1.025); } 100% { transform:scale(1); } }
+
+/* Score in de kop van de antwoorden: één oogopslag, één tik naar het paneel. */
+.answer-reveal-score-pill { flex-shrink:0; display:inline-flex; align-items:baseline; gap:8px; min-height:36px; margin:0; padding:6px 12px; border:1px solid var(--surface-border,#e3e4f7); border-radius:999px; background:transparent; color:var(--ink,#14163b); font:500 12px/1.3 inherit; font-family:inherit; cursor:pointer; }
+.answer-reveal-score-pill span { color:var(--text-muted,#656b7d); }
+.answer-reveal-score-pill strong { font-size:15px; font-weight:700; font-variant-numeric:tabular-nums; }
+.answer-reveal-score-pill:hover { border-color:var(--ink,#14163b); }
+.answer-reveal-score-pill:focus-visible { outline:3px solid #ffd84a; outline-offset:3px; }
+/* Na een verse reveal verschijnt hij pas als de grote score is opgelopen. */
+.answer-reveal-inline:not(.is-instant) .answer-reveal-score-pill { animation:answer-reveal-rest .45s ease 1.1s both; }
+.answer-reveal-inline:not(.is-complete) { cursor:pointer; }
+
+/* Smalle kaart: schaal en som blijven op één regel. */
+@media(max-width:649px) { .answer-reveal-payoff { padding:11px 12px 12px; } .answer-reveal-equation { gap:6px 8px; } .answer-reveal-score-pill span { display:none; } .answer-reveal-photo { width:40px; height:40px; } }
+/* De modal van gewone puzzels moet op één scherm blijven passen. */
+.answer-reveal-sheet .answer-reveal-payoff { margin-top:12px; padding:9px 18px 10px; }
+.answer-reveal-sheet .answer-reveal-payoff-label { margin-bottom:3px; }
+.answer-reveal-sheet .answer-reveal-yours { margin-top:3px; }
+.answer-reveal-sheet .answer-reveal-questions { cursor:pointer; }
+.answer-reveal-sheet.is-complete .answer-reveal-questions { cursor:auto; }
+@media(max-width:649px) { .answer-reveal-sheet .answer-reveal-payoff { padding:9px 12px 10px; } }
+
+/* ===== Scorepaneel van de Daily ===== */
+/* Oordeel onder de score: beloning bij een goede dag, een knipoog bij een slechte. */
+#screen-puzzle #results .daily-result-summary #scoreBadgeMsg { display:block; margin:2px 0 0; color:var(--ink); font:600 17px/1.3 'Space Grotesk',sans-serif; letter-spacing:-.01em; text-wrap:balance; }
+#screen-puzzle #results .daily-result-summary #scoreBadgeMsg:empty { display:none; }
+#results .daily-result-streak { display:inline-flex; align-items:center; gap:6px; margin-top:6px; padding:5px 11px; border-radius:999px; background:color-mix(in srgb, var(--accent,#ffd84a) 24%, transparent); color:var(--ink); font:500 13px/1.4 'Space Grotesk',sans-serif; }
+#results .daily-result-streak[hidden] { display:none; }
+/* Volgorde in het scoreblok: score, oordeel, uitleg van de factor, reeks. */
+#screen-puzzle #results .daily-result-summary #scoreBadgeMsg { order:1; }
+#screen-puzzle #results .daily-result-summary .score-badge-factor { order:2; }
+#results .daily-result-streak { order:3; }
+/* Oordeel en reeks wachten tot de score is opgelopen. */
+#results .daily-result-summary #scoreBadgeMsg, #results .daily-result-streak { transition:opacity .4s ease, transform .4s ease; }
+#results .daily-result-summary.is-score-pending #scoreBadgeMsg, #results .daily-result-summary.is-score-pending .daily-result-streak { opacity:0; transform:translateY(4px); }
+/* Bijna perfect: de score krijgt een korte gloed. Perfect houdt de confetti. */
+#results .daily-result-summary #scoreBadge { transform-origin:left center; }
+#results .daily-result-summary.is-score-fresh #scoreBadge[data-tone="precise"] { animation:daily-score-glow 1.1s ease 1 both; }
+@keyframes daily-score-glow { 0% { text-shadow:0 0 0 #10b98100; transform:scale(1); } 35% { text-shadow:0 0 22px #10b98180; transform:scale(1.04); } 100% { text-shadow:0 0 0 #10b98100; transform:scale(1); } }
+/* Balken per vraag in dezelfde kleurstappen als de schaal op de kaarten. */
+#results .daily-score-line[data-tone="great"] .daily-score-bar i { background:#07835e; }
+#results .daily-score-line[data-tone="good"] .daily-score-bar i { background:#d99a06; }
+#results .daily-score-line[data-tone="fair"] .daily-score-bar i { background:#e8590c; }
+#results .daily-score-line[data-tone="far"] .daily-score-bar i { background:#d92d20; }
+[data-theme="dark"] #results .daily-score-line[data-tone="great"] .daily-score-bar i { background:#34d399; }
+[data-theme="dark"] #results .daily-score-line[data-tone="good"] .daily-score-bar i { background:#f5c044; }
+[data-theme="dark"] #results .daily-score-line[data-tone="fair"] .daily-score-bar i { background:#fb923c; }
+[data-theme="dark"] #results .daily-score-line[data-tone="far"] .daily-score-bar i { background:#f87171; }
+/* Vervolgstap vooraan in de voetregel, iets nadrukkelijker dan Home en Archive. */
+#results .daily-result-summary .daily-home-button.daily-next-button { border-color:color-mix(in srgb, var(--ink) 45%, transparent); font-weight:600; }
+#results .daily-result-summary .daily-home-button.daily-next-button:hover { border-color:var(--ink); }
+/* Telefoon: de vervolgstap krijgt een eigen regel, Home en Archive delen de volgende. */
+@media(max-width:649px) { #results .daily-result-summary .daily-result-navigation { width:100%; } #results .daily-result-summary .daily-result-navigation .daily-home-button { flex:1 1 0; justify-content:center; white-space:nowrap; } #results .daily-result-summary .daily-result-navigation .daily-home-button.daily-next-button { flex:1 0 100%; } }
+/* Gast: de status is tegelijk de weg naar het leaderboard. */
+#results #dailyScoreSyncStatus .daily-status-login { margin:0; padding:4px 0; border:0; background:none; color:var(--ink); font:inherit; font-weight:600; text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
+#results #dailyScoreSyncStatus .daily-status-login:focus-visible { outline:2px solid var(--ink); outline-offset:3px; border-radius:4px; }
+/* De rekenmachineknop heeft na het inleveren niets meer te doen en stond over het paneel. */
+body:has(#screen-puzzle.active.is-review) .calculator-toggle { display:none; }
+
+@media(prefers-reduced-motion:reduce) {
+  .answer-reveal-fill, .answer-reveal-dot, .answer-reveal-question, .answer-reveal-connector span, .answer-reveal-payoff, #results .daily-result-summary #scoreBadgeMsg, #results .daily-result-streak { transition:none; }
+  .answer-reveal-equation b.is-known, .answer-reveal-payoff.is-landed, .answer-reveal-score-pill, #results .daily-result-summary #scoreBadge { animation:none !important; }
+}
+
+/* Reserve the final number's dimensions even while it is still a question mark. */
+.answer-reveal-actual strong { display:inline-grid; max-width:100%; grid-template-columns:minmax(0,max-content) auto; }
+.answer-reveal-actual .answer-reveal-number, .answer-reveal-reserve { grid-area:1 / 1; min-width:0; }
+.answer-reveal-reserve { visibility:hidden; pointer-events:none; }
+.answer-reveal-values strong small { grid-area:1 / 2; align-self:baseline; }
+.answer-reveal-foot .answer-reveal-verdict { flex:1; min-width:0; overflow-wrap:anywhere; }
+.answer-reveal-legend { margin:-4px 0 12px; color:var(--text-muted); font-size:11px; line-height:1.4; }
+.answer-reveal-yours .answer-reveal-computed { flex-basis:100%; margin-top:2px; font:inherit; letter-spacing:0; text-transform:none; }
+.answer-reveal-equation b { overflow-wrap:anywhere; min-width:0; }
+.answer-reveal-detail { overflow-wrap:anywhere; }
+.answer-reveal-inline { scroll-margin-top:74px; }
+.daily-result-summary { scroll-margin-top:74px; }
+
+/* Same quiet surfaces and readable accents in both colour schemes. */
+[data-theme="dark"] .answer-reveal-sheet { background:var(--surface); color:var(--ink); }
+[data-theme="dark"] .answer-reveal-question,
+[data-theme="dark"] .answer-reveal-inline .answer-reveal-question { background:var(--surface-2); border-color:var(--surface-border); color:var(--ink); }
+[data-theme="dark"] .answer-reveal-question:nth-of-type(2) { background:color-mix(in srgb, var(--surface-2) 92%, #5fc9a9); }
+[data-theme="dark"] .answer-reveal-question:nth-of-type(3) { background:color-mix(in srgb, var(--surface-2) 92%, #a9b3e6); }
+[data-theme="dark"] .answer-reveal-actual strong,
+[data-theme="dark"] .answer-reveal-equation b.is-known,
+[data-theme="dark"] .answer-reveal-score strong,
+[data-theme="dark"] .answer-reveal-detail .vraag-bron a { color:#bfc5ff; }
+[data-theme="dark"] .answer-reveal-question[data-tone="exact"],
+[data-theme="dark"] .answer-reveal-question[data-tone="great"] { --tone:#34d399; --tone-ink:#7be0c0; }
+[data-theme="dark"] .answer-reveal-question[data-tone="good"] { --tone:#f5c044; --tone-ink:#f5c044; }
+[data-theme="dark"] .answer-reveal-question[data-tone="fair"] { --tone:#fb923c; --tone-ink:#ffb47c; }
+[data-theme="dark"] .answer-reveal-question[data-tone="far"] { --tone:#f87171; --tone-ink:#ffaaaa; }
+[data-theme="dark"] .answer-reveal-question.is-exact .answer-reveal-actual strong { color:#7be0c0; }
+[data-theme="dark"] .answer-reveal-values > div > span,
+[data-theme="dark"] .answer-reveal-values strong small,
+[data-theme="dark"] .answer-reveal-end,
+[data-theme="dark"] .answer-reveal-payoff-label,
+[data-theme="dark"] .answer-reveal-yours,
+[data-theme="dark"] .answer-reveal-skip,
+[data-theme="dark"] .answer-reveal-header > span,
+[data-theme="dark"] .answer-reveal-score > span,
+[data-theme="dark"] .answer-reveal-score p,
+[data-theme="dark"] .answer-reveal-detail-empty { color:var(--text-muted); }
+[data-theme="dark"] .answer-reveal-toggle { background:#141b4566; color:var(--ink); }
+[data-theme="dark"] .answer-reveal-toggle:hover { background:#141b45; }
+[data-theme="dark"] .answer-reveal-track { background:#a9b3e633; }
+[data-theme="dark"] .answer-reveal-tick { background:#a9b3e666; }
+[data-theme="dark"] .answer-reveal-centre { background:var(--ink); }
+[data-theme="dark"] .answer-reveal-actual,
+[data-theme="dark"] .answer-reveal-detail { border-color:var(--surface-border); }
+[data-theme="dark"] .answer-reveal-connector::before,
+[data-theme="dark"] .answer-reveal-connector::after { background:var(--surface-border); }
+[data-theme="dark"] .answer-reveal-payoff { background:var(--surface-2); color:var(--ink); border-color:var(--surface-border); }
+[data-theme="dark"] .answer-reveal-payoff.is-landed,
+[data-theme="dark"] .answer-reveal-question.is-revealing { border-color:#a9b3e6; box-shadow:0 0 0 3px #a9b3e61a; }
+[data-theme="dark"] .answer-reveal-yours b,
+[data-theme="dark"] .answer-reveal-detail .vraag-bron p { color:var(--ink); }
+[data-theme="dark"] .answer-reveal-yours em { color:#7be0c0; }
+
+/* Rustige onderkant van de Daily-uitslag: delen bovenaan, daaronder één rij
+   met twee gelijke knoppen, en afteller + archief op één regel. */
+#results .daily-result-summary .daily-result-actions { grid-template-columns:1fr; }
+#results .daily-result-summary .daily-result-navigation { display:grid; grid-template-columns:1fr 1fr; gap:10px; width:100%; margin:14px 0 0; }
+#results .daily-result-summary .daily-result-navigation > button,
+#screen-puzzle #results .daily-result-summary .daily-result-navigation .btn-leaderboard-open { display:inline-flex; align-items:center; justify-content:center; gap:8px; width:100%; min-width:0; min-height:46px; margin:0; padding:8px 12px; border:1px solid var(--surface-border); border-radius:10px; background:var(--surface); color:var(--ink); font:600 14px 'Space Grotesk',sans-serif; cursor:pointer; }
+#results .daily-result-summary .daily-result-navigation > button:hover { border-color:var(--ink); }
+#results .daily-result-summary .daily-result-footer { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:6px 16px; }
+#results .daily-result-summary .daily-result-footer > .daily-result-navigation { flex:1 1 100%; }
+#results .daily-result-summary .daily-result-footer > #dailyResultCountdown { margin:12px 0 0; }
+#results .daily-result-summary .daily-archive-link { width:auto; min-height:32px; margin:12px 0 0; padding:4px 0; border:0; background:none; color:var(--text-muted); font:500 13px 'Space Grotesk',sans-serif; text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
+#results .daily-result-summary .daily-archive-link svg { display:none; }
+#results .daily-result-summary .daily-archive-link:hover { color:var(--ink); background:none; }
+
+/* Puzzeluitslag: hoofdknop gaat door, nabespreking is een rustige tekstlink. */
+.answer-reveal-footer.has-next { flex-wrap:wrap; }
+.answer-reveal-more { flex:1 1 100%; background:none !important; color:#656b7d !important; padding:4px 0 !important; text-align:right; text-decoration:underline; text-underline-offset:3px; font-weight:500 !important; }
+[data-theme="dark"] .answer-reveal-more { color:#b9bfe0 !important; }

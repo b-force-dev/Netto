@@ -17,7 +17,7 @@ let time = 100000, puzzleRenders = 0;
 const context = vm.createContext({
   document: {getElementById: element, addEventListener() {}},
   window: {}, currentUser: {id: 'me'}, statsCopy: (nl, en) => en,
-  escapeHtml: String, nettoNumberLocale: () => 'en-GB',
+  escapeHtml: String, nettoInviteUrl: () => 'https://example.test/live-rounds/?join=ABC234', nettoNumberLocale: () => 'en-GB',
   Date: class extends Date { static now() { return time; } },
   clearInterval() {}, sessionStorage: {getItem() { return ''; }}
 });

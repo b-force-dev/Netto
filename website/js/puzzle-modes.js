@@ -13,8 +13,10 @@
       hoofdactie.textContent = ingeleverd ? 'Speel meer puzzels →' : 'Controleer mijn score';
       hoofdactie.onclick = ingeleverd ? () => openPuzzles() : () => submitPuzzleView(prefix);
       navigatie.replaceChildren(hoofdactie);
+      if (ingeleverd) navigatie.append(NettoShare.libraryButton());
       return;
     }
+    if (bibliotheek) { werkBibliotheekNavigatieBij(navigatie, ingeleverd); return; }
     const reeks = bibliotheek ? libraryPuzzles.filter(p => p.difficulty === selectedDifficulty) : catalogusPuzzleList;
     const index = bibliotheek ? libraryIndex : catalogusPuzzleIndex;
     const verplaats = stap => bibliotheek ? libraryMove(stap) : catalogusPuzzleMove(stap);
@@ -29,6 +31,7 @@
       ? laatste ? () => bibliotheek ? openPuzzles() : openCatalogusLibrary() : () => verplaats(1)
       : () => submitPuzzleView(prefix);
     navigatie.replaceChildren(hoofdactie);
+    if (ingeleverd) navigatie.append(NettoShare.libraryButton());
     if (!ingeleverd) {
       const overslaan = document.createElement('button');
       overslaan.type = 'button';
@@ -39,9 +42,72 @@
     }
   }
 
+  // Na een resultaat meteen door naar de volgende puzzel die je nog niet
+  // speelde, zonder eerst terug naar de lijst te hoeven.
+  function werkBibliotheekNavigatieBij(navigatie, ingeleverd) {
+    const huidige = libraryActivePuzzle;
+    const volgende = nextUnplayedLibraryPuzzle(huidige?.id);
+    const knop = (tekst, actie, klasse = '') => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      if (klasse) button.className = klasse;
+      button.textContent = tekst;
+      button.onclick = actie;
+      return button;
+    };
+    const naarOverzicht = () => openPuzzles();
+    const naarVolgende = () => openLibraryPuzzle(volgende);
+    const volgendeTekst = volgende
+      ? statsCopy('Volgende puzzel', 'Next puzzle') + ' · #' + volgende.number + (volgende.difficulty !== huidige?.difficulty ? ' ' + libraryLevelName(volgende.difficulty) : '') + ' →'
+      : statsCopy('Alle puzzels gespeeld · naar het overzicht', 'All puzzles played · back to overview');
+    if (ingeleverd) {
+      navigatie.replaceChildren(
+        knop(volgendeTekst, volgende ? naarVolgende : naarOverzicht, 'puzzel-hoofdactie puzzel-verder'),
+        knop(statsCopy('Alle puzzels', 'All puzzles'), naarOverzicht));
+      const niveau = huidige?.difficulty || selectedDifficulty;
+      const rest = libraryLevelSummary(niveau);
+      const voortgang = document.createElement('p');
+      voortgang.className = 'library-next-progress';
+      voortgang.textContent = rest.played >= rest.total
+        ? statsCopy(libraryLevelName(niveau) + ' is helemaal gespeeld 🎉', libraryLevelName(niveau) + ' completed 🎉')
+        : statsCopy('Nog ' + (rest.total - rest.played) + ' van ' + rest.total + ' te spelen in ' + libraryLevelName(niveau) + '.',
+                    (rest.total - rest.played) + ' of ' + rest.total + ' left in ' + libraryLevelName(niveau) + '.');
+      navigatie.append(NettoShare.libraryButton(), voortgang);
+      return;
+    }
+    navigatie.replaceChildren(knop(statsCopy('Controleer mijn score', 'Check my score'), () => submitPuzzleView('library'), 'puzzel-hoofdactie'));
+    // Overslaan navigeert alleen: het levert geen antwoord of score in.
+    navigatie.append(knop(statsCopy('Overslaan →', 'Skip puzzle →'), volgende ? naarVolgende : naarOverzicht));
+  }
+
+  // Enter gaat naar het volgende lege veld en levert in als alles is
+  // ingevuld, net als in de Daily.
+  function bindPuzzleEnterFlow(prefix) {
+    const ids = [0, 1, 2].map(i => prefix + 'Answer' + i);
+    ids.forEach((id, index) => {
+      document.getElementById(id)?.addEventListener('keydown', event => {
+        if (event.key !== 'Enter' || event.isComposing) return;
+        event.preventDefault();
+        const inputs = ids.map(other => document.getElementById(other));
+        const leeg = inputs.slice(index + 1).concat(inputs.slice(0, index)).find(input => input && !input.value);
+        if (leeg) leeg.focus();
+        else submitPuzzleView(prefix);
+      });
+    });
+  }
+
+  // Een puzzel die je al speelde, speel je opnieuw als oefenronde: je kent de
+  // antwoorden dan al, dus de eerste score blijft staan.
+  function libraryEerdereScore(p) {
+    if (!p || p.id === OPENAEC_SPECIAL_ID) return null;
+    const play = libraryPlayFor(p);
+    return libraryFactorOf(play) !== null ? play : null;
+  }
+
   function renderPuzzleView(prefix, p, progressLabel, moveAction) {
     const listEl = document.getElementById(prefix + 'QuestionList');
     if (!listEl || !p) return;
+    window.nettoTrack?.('puzzle_start', { mode:prefix === 'library' ? 'library' : 'catalogus', once:p.id });
     const progress = document.getElementById(prefix + 'Progress');
     if (prefix === 'library') {
       const badge = document.createElement('button');
@@ -71,12 +137,34 @@
       progress.replaceChildren(badge, moeilijkheid);
     } else progress.textContent = progressLabel;
     document.getElementById(prefix + 'Equation').style.display = 'none';
-    const autoCalcNote = localStorage.getItem('netto_auto_calc_note_seen') === 'true' ? '' : `<div class="auto-calc-note" role="status" aria-live="polite">↳ Antwoorden worden automatisch berekend als de berekening klopt.</div>`;
-    listEl.innerHTML = [[p.q1_label,p.q1_answer],[p.q2_label,p.q2_answer],[p.q3_label,p.q3_answer]].map((q,i) => `<div class="q-block"><div class="q-label">${q[0] || 'Vraag niet beschikbaar'}</div><div class="input-wrapper"><input type="text" class="library-answer-input daily-style-input" id="${prefix}Answer${i}" name="netto-schatting-${i}" inputmode="numeric" placeholder="Jouw schatting" autocomplete="off" autocorrect="off" spellcheck="false" data-lpignore="true"></div></div>${i < 2 ? `<div class="connector"><div class="connector-line"></div><div class="connector-badge ${i === 1 ? 'eq' : ''}">${i === 0 ? (p.operator || '×') : '='}</div><div class="connector-line"></div></div>` : ''}`).join('') + autoCalcNote;
+    const autoCalcNote = localStorage.getItem('netto_auto_calc_note_seen') === 'true' ? '' : `<div class="auto-calc-note" role="status" aria-live="polite">↳ ${statsCopy('Antwoorden worden automatisch berekend als de berekening klopt.', 'Answers are calculated automatically when the equation matches.')}</div>`;
+    listEl.innerHTML = [[p.q1_label,p.q1_answer],[p.q2_label,p.q2_answer],[p.q3_label,p.q3_answer]].map((q,i) => `<div class="q-block"><label class="q-label" for="${prefix}Answer${i}">${q[0] || statsCopy('Vraag niet beschikbaar', 'Question unavailable')}</label><div class="input-wrapper"><input type="text" class="library-answer-input daily-style-input" id="${prefix}Answer${i}" name="netto-schatting-${i}" inputmode="numeric" pattern="[0-9]*" enterkeyhint="${i < 2 ? 'next' : 'done'}" placeholder="${statsCopy('Jouw schatting', 'Your estimate')}" autocomplete="off" autocorrect="off" spellcheck="false" data-lpignore="true"></div></div>${i < 2 ? `<div class="connector"><div class="connector-line"></div><div class="connector-badge ${i === 1 ? 'eq' : ''}">${i === 0 ? (p.operator || '×') : '='}</div><div class="connector-line"></div></div>` : ''}`).join('') + autoCalcNote;
     if (autoCalcNote) localStorage.setItem('netto_auto_calc_note_seen', 'true');
     if (prefix === 'library') libraryActivePuzzle = p; else catalogusActivePuzzle = p;
     renderPuzzelfoto(listEl, p);
     bindDerivedInputs(prefix, p.operator || '×');
+    bindPuzzleEnterFlow(prefix);
+    const draftKey = 'netto_puzzle_draft_' + prefix + '_' + p.id;
+    const draft = readStatsStorage(draftKey, []);
+    [0,1,2].forEach(i => {
+      const input = document.getElementById(prefix + 'Answer' + i);
+      if (typeof draft[i] === 'string') input.value = draft[i];
+      input.addEventListener('input', () => {
+        localStorage.setItem(draftKey, JSON.stringify([0,1,2].map(j => document.getElementById(prefix + 'Answer' + j).value)));
+      });
+    });
+    if (prefix === 'library') {
+      const eerder = libraryEerdereScore(p);
+      if (eerder) {
+        const banner = document.createElement('p');
+        banner.className = 'library-replay-note';
+        const factor = libraryFactorOf(eerder);
+        banner.textContent = statsCopy(
+          'Al gespeeld: ' + formatLibraryFactor(factor) + ' (' + libraryRating(factor) + '). Dit is een oefenronde; je eerste score blijft staan.',
+          'Already played: ' + formatLibraryFactor(factor) + ' (' + libraryRating(factor) + '). This is a practice round; your first score stays.');
+        listEl.prepend(banner);
+      }
+    }
     werkPuzzelNavigatieBij(prefix, false);
   }
 
@@ -88,7 +176,7 @@
     const guesses = inputs.map(input => parseFormattedNumber(input.value));
     if (!validWholeAnswers(guesses)) {
       showNoticeToast(
-        statsCopy('Vul alle drie de vragen in met een heel getal groter dan 0.', 'Enter a whole number greater than 0 for all three questions.'),
+        statsCopy('Vul alle drie de vragen in met een getal groter dan 0.', 'Enter a number greater than 0 for all three questions.'),
         '✏️', statsCopy('Antwoorden ontbreken', 'Complete your answers'));
       return;
     }
@@ -96,30 +184,47 @@
     const answers = [active.q1_answer,active.q2_answer,active.q3_answer];
     const factor = answers.reduce((sum,a,i) => sum + scoreVraag(guesses[i],a),0) / 3;
     if (guesses.every((guess, i) => isSpotOnAnswer(guess, answers[i]))) launchConfetti();
-    const plays = JSON.parse(localStorage.getItem('netto_library_plays') || '{}'); plays[active.id] = { factor, guesses, completedAt:new Date().toISOString() }; localStorage.setItem('netto_library_plays',JSON.stringify(plays));
+    const eerder = prefix === 'library' ? libraryEerdereScore(active) : null;
+    if (!eerder) {
+      const plays = getSavedLibraryPlays(); plays[active.id] = { factor, guesses, completedAt:new Date().toISOString() }; localStorage.setItem('netto_library_plays',JSON.stringify(plays));
+    }
+    localStorage.removeItem('netto_puzzle_draft_' + prefix + '_' + active.id);
     updateContinuePuzzleButton();
-    renderPuzzleReview(prefix, active, guesses, answers, factor);
+    window.nettoTrack?.('puzzle_finish', { mode:prefix === 'library' ? 'library' : 'catalogus', once:active.id });
+    renderPuzzleReview(prefix, active, guesses, answers, factor, eerder);
     werkPuzzelNavigatieBij(prefix, true);
-    syncLibraryPlay(active, guesses[0], guesses[1], guesses[2], factor);
+    if (!eerder) syncLibraryPlay(active, guesses[0], guesses[1], guesses[2], factor);
     if (prefix === 'library') renderLibraryCards(); else renderCatalogusPuzzles();
+    // De reveal geeft de focus terug aan wat vóór het openen focus had; de
+    // inleverknop bestaat dan niet meer, dus eerst naar de volgende actie.
+    document.querySelector('#' + prefix + 'PuzzleView .puzzel-hoofdactie')?.focus({ preventScroll: true });
+    const verder = document.querySelector('#' + prefix + 'PuzzleView .puzzel-hoofdactie');
     if (prefix === 'library') showAnswerReveal({
       questions: [active.q1_label, active.q2_label, active.q3_label],
-      guesses, answers, operator: active.operator || '×', factor
+      guesses, answers, operator: active.operator || '×', factor,
+      // Na de onthulling meteen door; de nabespreking blijft één tik verder.
+      onNext: verder ? () => verder.click() : null,
+      nextLabel: verder?.textContent
     });
   }
 
-  function renderPuzzleReview(prefix, puzzle, guesses, answers, factor) {
+  function renderPuzzleReview(prefix, puzzle, guesses, answers, factor, eerder = null) {
     const list = document.getElementById(prefix + 'QuestionList');
     list.replaceChildren();
     const summary = document.createElement('section');
     summary.className = 'puzzle-review-summary';
+    summary.setAttribute('role', 'status');
+    summary.setAttribute('aria-live', 'polite');
     summary.setAttribute('aria-label', statsCopy('Puzzelresultaat', 'Puzzle result'));
     const label = document.createElement('span');
     label.textContent = statsCopy('Gemiddelde factor', 'Average factor');
     const score = document.createElement('strong');
-    score.textContent = factor.toFixed(2) + '×';
+    score.textContent = formatLibraryFactor(factor);
     const detail = document.createElement('span');
-    detail.textContent = statsCopy('Dichter bij 1.00× is beter.', 'Closer to 1.00× is better.');
+    const oud = eerder ? libraryFactorOf(eerder) : null;
+    detail.textContent = oud !== null
+      ? statsCopy('Oefenronde. Je score blijft ' + formatLibraryFactor(oud) + '.', 'Practice round. Your score stays ' + formatLibraryFactor(oud) + '.')
+      : libraryRating(factor) + ' · ' + statsCopy('Dichter bij 1,00× is beter.', 'Closer to 1.00× is better.');
     summary.append(label, score, detail);
     list.appendChild(summary);
     answers.forEach((answer, index) => {
@@ -133,7 +238,7 @@
       const exact = isSpotOnAnswer(guesses[index], answer);
       verdict.className = 'puzzle-review-verdict' + (exact ? ' is-exact' : '');
       verdict.textContent = exact ? statsCopy('✓ Exact goed', '✓ Exactly right')
-        : scoreVraag(guesses[index], answer).toFixed(2) + '× ' + (guesses[index] < answer
+        : formatLibraryFactor(scoreVraag(guesses[index], answer)) + ' ' + (guesses[index] < answer
           ? statsCopy('te laag', 'too low') : statsCopy('te hoog', 'too high'));
       header.append(number, verdict);
       const question = document.createElement('h3');
@@ -272,6 +377,7 @@
     openLibraryScreen('library');
     const view = document.getElementById('libraryPuzzleView');
     if (!view) return;
+    setLibraryBrowseVisible(false);
     ['libraryStats', 'libraryDifficulties', 'libraryCardGrid', 'dailyPuzzleList'].forEach(id => {
       const element = document.getElementById(id);
       if (element) element.style.display = 'none';
@@ -429,7 +535,7 @@
     const isLibrary = mode === 'library';
     document.getElementById('libraryDifficulties').style.display = isLibrary ? 'grid' : 'none';
     document.getElementById('libraryCardGrid').style.display = isLibrary ? 'grid' : 'none';
-    document.getElementById('libraryDifficulties').querySelectorAll('button').forEach((button, index) => { const level = ['easy','intermediate','hard','extremely-hard'][index]; const count = libraryPuzzles.filter(p => p.difficulty === level).length; button.innerHTML = `${level === 'extremely-hard' ? 'Extremely Hard' : level[0].toUpperCase() + level.slice(1)}<span>${count}</span>`; button.disabled = false; button.classList.toggle('active', level === selectedDifficulty); });
+    setLibraryBrowseVisible(isLibrary);
     document.getElementById('libraryPuzzleView').style.display = 'none';
     document.getElementById('dailyPuzzleList').style.display = isLibrary ? 'none' : 'block';
     document.getElementById('libraryPageKicker').textContent = isLibrary ? 'NETTO · PUZZELS' : 'NETTO · DAILY ARCHIVE';
@@ -437,10 +543,15 @@
     document.getElementById('librarySubtitle').textContent = isLibrary ? 'Kies een moeilijkheid en speel alle puzzels.' : 'Elke dagpuzzel sinds dag één. Speel ze opnieuw.';
     renderLibraryStats();
     if (mode === 'daily') renderDailyArchive();
-    else { renderLibraryCards(); loadLibraryFromSupabase(); }
+    else {
+      renderLibraryCards(); loadLibraryFromSupabase();
+      // Terug uit een puzzel: zet de focus op de kaart waar je vandaan kwam.
+      const vorige = libraryActivePuzzle?.id && document.querySelector('#libraryCardGrid [data-puzzle-id="' + libraryActivePuzzle.id + '"]');
+      if (vorige) requestAnimationFrame(() => { vorige.focus({ preventScroll: true }); vorige.scrollIntoView({ block: 'center' }); });
+    }
   }
-  function openAbout() { closeMenu(); showScreen('library'); document.getElementById('libraryScreen').classList.add('active'); document.getElementById('libraryPageKicker').textContent='NETTO · OVER'; document.getElementById('libraryTitle').textContent='Over Netto'; document.getElementById('librarySubtitle').textContent='Het idee achter het spel.'; document.getElementById('libraryDifficulties').style.display='none'; document.getElementById('dailyPuzzleList').style.display='none'; document.getElementById('libraryPuzzleView').style.display='none'; document.getElementById('libraryStats').style.display='none'; document.getElementById('dailyDateControls').style.display='none'; document.getElementById('howPanel').style.display='none'; document.getElementById('aboutPanel').style.display='block'; }
-  function openHowItWorks() { closeMenu(); showScreen('library'); document.getElementById('libraryScreen').classList.add('active'); document.getElementById('libraryPageKicker').textContent='NETTO · UITLEG'; document.getElementById('libraryTitle').textContent='Hoe werkt het?'; document.getElementById('librarySubtitle').textContent='Drie schattingen. Eén formule. De laagste factor wint.'; document.getElementById('libraryDifficulties').style.display='none'; document.getElementById('dailyPuzzleList').style.display='none'; document.getElementById('libraryPuzzleView').style.display='none'; document.getElementById('libraryStats').style.display='none'; document.getElementById('dailyDateControls').style.display='none'; document.getElementById('aboutPanel').style.display='none'; document.getElementById('howPanel').style.display='block'; }
+  function openAbout() { closeMenu(); showScreen('library'); document.getElementById('libraryScreen').classList.add('active'); document.getElementById('libraryPageKicker').textContent='NETTO · OVER'; document.getElementById('libraryTitle').textContent='Over Netto'; document.getElementById('librarySubtitle').textContent='Het idee achter het spel.'; document.getElementById('libraryDifficulties').style.display='none'; document.getElementById('dailyPuzzleList').style.display='none'; document.getElementById('libraryPuzzleView').style.display='none'; document.getElementById('libraryStats').style.display='none'; document.getElementById('dailyDateControls').style.display='none'; document.getElementById('howPanel').style.display='none'; setLibraryBrowseVisible(false); document.getElementById('aboutPanel').style.display='block'; }
+  function openHowItWorks() { closeMenu(); showScreen('library'); document.getElementById('libraryScreen').classList.add('active'); document.getElementById('libraryPageKicker').textContent='NETTO · UITLEG'; document.getElementById('libraryTitle').textContent='Hoe werkt het?'; document.getElementById('librarySubtitle').textContent='Drie schattingen. Eén formule. De laagste factor wint.'; document.getElementById('libraryDifficulties').style.display='none'; document.getElementById('dailyPuzzleList').style.display='none'; document.getElementById('libraryPuzzleView').style.display='none'; document.getElementById('libraryStats').style.display='none'; document.getElementById('dailyDateControls').style.display='none'; document.getElementById('aboutPanel').style.display='none'; setLibraryBrowseVisible(false); document.getElementById('howPanel').style.display='block'; }
   function closeLibraryScreen() { document.getElementById('libraryScreen').classList.remove('active'); showScreen('home'); }
   function closeLibrary() { closeLibraryScreen(); }
 

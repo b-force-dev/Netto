@@ -2594,129 +2594,6 @@ body:has(#screen-puzzle.active, #libraryScreen.active, #breinkrakersScreen.activ
   #bkPlay .connection-actions { flex-direction: column; }
 }
 
-/* Twee zelfstandige startpagina-proeven; de bestaande layout blijft de standaard. */
-.home-preview-switcher { display: none; }
-html[data-landing-preview] .home-preview-switcher {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 7px;
-  margin: 0 0 16px;
-  color: #D6DCF9;
-  font: 700 11px 'JetBrains Mono', monospace;
-  letter-spacing: .02em;
-}
-.home-preview-switcher span { margin-right: 7px; opacity: .8; }
-.home-preview-switcher a {
-  padding: 7px 11px;
-  border: 1px solid rgba(255,255,255,.3);
-  border-radius: 8px;
-  color: #fff;
-  text-decoration: none;
-}
-.home-preview-switcher a:hover,
-.home-preview-switcher a:focus-visible,
-html[data-landing-preview="editorial"] .home-preview-switcher [data-preview="editorial"],
-html[data-landing-preview="playboard"] .home-preview-switcher [data-preview="playboard"] {
-  color: #151944;
-  background: var(--accent);
-  border-color: var(--accent);
-}
-
-/* Editorial: één breed podium voor de Daily, de twee vervolgstappen eronder. */
-html[data-landing-preview="editorial"] .home-landing-grid { grid-template-columns: 1fr; }
-html[data-landing-preview="editorial"] .home-daily-card {
-  min-height: 390px;
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(220px, .75fr);
-  grid-template-rows: auto 1fr auto;
-  align-items: center;
-  column-gap: 26px;
-  background: linear-gradient(128deg, #171B46 2%, #20266B 100%);
-}
-html[data-landing-preview="editorial"] .home-daily-topline { grid-column: 1 / -1; }
-html[data-landing-preview="editorial"] .home-daily-copy { grid-column: 1; grid-row: 2; margin: 20px 0; }
-html[data-landing-preview="editorial"] .home-daily-card .hero-headline { font-size: clamp(42px, 4.5vw, 66px); }
-html[data-landing-preview="editorial"] .home-equation {
-  grid-column: 2;
-  grid-row: 2 / 4;
-  justify-content: center;
-  align-self: center;
-  margin: 0;
-  padding: 30px 16px;
-  border: 1px solid rgba(255,255,255,.15);
-  border-radius: 16px;
-  background: rgba(255,255,255,.055);
-}
-html[data-landing-preview="editorial"] .home-daily-card .hero-cta { grid-column: 1; grid-row: 3; justify-self: start; }
-html[data-landing-preview="editorial"] .home-quick-actions { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; }
-html[data-landing-preview="editorial"] .home-quick-card { min-height: 150px; }
-html[data-landing-preview="editorial"] .home-quick-card strong { max-width: none; font-size: 21px; }
-
-/* Playboard: de Daily en snelle acties links, de spelmodi als rustige rechterkolom. */
-@media (min-width: 1000px) {
-  html[data-landing-preview="playboard"] .home-content {
-    display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr);
-    grid-template-areas: "preview preview" "daily modes" "quick modes" "more more";
-    column-gap: 18px;
-    align-items: stretch;
-  }
-  html[data-landing-preview="playboard"] .home-preview-switcher { grid-area: preview; }
-  html[data-landing-preview="playboard"] .home-landing-grid { display: contents; }
-  html[data-landing-preview="playboard"] .home-daily-card { grid-area: daily; min-height: 380px; }
-  html[data-landing-preview="playboard"] .home-daily-copy { margin-top: 32px; }
-  html[data-landing-preview="playboard"] .home-daily-card .hero-headline { font-size: clamp(42px, 4.3vw, 58px); }
-  html[data-landing-preview="playboard"] .home-quick-actions {
-    grid-area: quick;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 12px;
-    margin-top: 12px;
-  }
-  html[data-landing-preview="playboard"] .home-quick-card { min-height: 138px; padding: 18px; }
-  html[data-landing-preview="playboard"] .home-quick-card strong { font-size: 18px; }
-  html[data-landing-preview="playboard"] .home-quick-detail { font-size: 11px; }
-  html[data-landing-preview="playboard"] .home-modes {
-    grid-area: modes;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    margin: 0;
-    padding: 24px;
-    border: 1px solid rgba(255,255,255,.18);
-    border-radius: 20px;
-    background: rgba(16,20,61,.38);
-  }
-  html[data-landing-preview="playboard"] .home-modes-heading { align-items: flex-start; margin-bottom: 20px; }
-  html[data-landing-preview="playboard"] .home-modes-heading h2 { font-size: 24px; }
-  html[data-landing-preview="playboard"] .home-how-link { white-space: nowrap; }
-  html[data-landing-preview="playboard"] .home-modes-grid { grid-template-columns: 1fr; flex: 1; }
-  html[data-landing-preview="playboard"] .home-mode-card {
-    min-height: 0;
-    display: grid;
-    grid-template-columns: 38px minmax(0,1fr);
-    align-items: center;
-    gap: 13px;
-    padding: 13px 16px;
-  }
-  html[data-landing-preview="playboard"] .home-mode-card::before { width: 3px; height: 100%; transform: scaleY(.25); transform-origin: top; }
-  html[data-landing-preview="playboard"] .home-mode-card:hover::before,
-  html[data-landing-preview="playboard"] .home-mode-card:focus-visible::before { transform: scaleY(1); }
-  html[data-landing-preview="playboard"] .home-mode-arrow { top: 50%; transform: translateY(-50%); }
-  html[data-landing-preview="playboard"] .home-more { grid-area: more; }
-}
-
-@media (max-width: 700px) {
-  html[data-landing-preview="editorial"] .home-daily-card { display: flex; min-height: 0; }
-  html[data-landing-preview="editorial"] .home-daily-copy { margin: 30px 0 0; }
-  html[data-landing-preview="editorial"] .home-equation { align-self: stretch; justify-content: flex-start; margin: 22px 0; padding: 14px; }
-  html[data-landing-preview="editorial"] .home-daily-card .hero-cta { margin-top: 0; }
-  html[data-landing-preview="editorial"] .home-quick-actions { grid-template-columns: 1fr; }
-  html[data-landing-preview="editorial"] .home-quick-card { min-height: 120px; }
-  html[data-landing-preview="editorial"] .home-quick-card strong { font-size: 18px; }
-}
-
 /* Chrome met een smallere werkruimte: de Daily blijft leidend en de titel kan ademen. */
 @media (min-width: 761px) and (max-width: 980px) {
   .home-landing-grid { grid-template-columns: 1fr; }
@@ -3351,3 +3228,13 @@ html[data-landing-preview="editorial"] .home-quick-card strong { max-width: none
 
 /* OpenAEC-special: het logo past heel in het fotokader in plaats van bijgesneden te worden. */
 .puzzelfoto-logo .daily-photo img { object-fit: contain; padding: 8px; background: #FFFFFF; }
+
+/* Keep logos and extreme aspect ratios whole without changing frame dimensions. */
+.daily-photo img.photo-contain,
+.answer-reveal-photo img.photo-contain,
+.foto-credit-kaart img.photo-contain {
+  object-fit: contain;
+  box-sizing: border-box;
+  padding: 6px;
+  background: #f5f5f5;
+}

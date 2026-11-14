@@ -70,6 +70,31 @@
     'Taal, uiterlijk en weergave': 'Language and appearance',
     'Over ons': 'About us',
     'Het idee achter het spel': 'The idea behind the game',
+    // Home (landingpagina)
+    'Elke dag drie weetjesvragen. Hun antwoorden vormen samen een som, dus elke goede schatting helpt je bij de volgende.': 'Three trivia questions a day. Their answers fit together in one equation, so every good estimate helps you with the next.',
+    'Gratis · geen account nodig · elke dag een nieuwe puzzel': 'Free · no account needed · a new puzzle every day',
+    'Categorieën van de Daily': 'Categories of the Daily',
+    'Vandaag ·': 'Today ·',
+    'Voorbeeld': 'Example',
+    'Met hoeveel spelers staat een voetbalteam op het veld?': 'How many players does a football team have on the pitch?',
+    'Weet je er twee, dan reken je de derde uit.': 'Know two and you can work out the third.',
+    'Opnieuw afspelen': 'Replay',
+    'Verder spelen': 'Keep playing',
+    'Jouw cijfers': 'Your numbers',
+    'Extra puzzels in vier niveaus, van makkelijk tot extreem moeilijk.': 'Extra puzzles in four levels, from easy to extremely hard.',
+    'Je krijgt drie vragen en zoekt zelf de som die ze verbindt.': 'You get three questions and find the equation that links them.',
+    'Los in 3, 5 of 10 minuten zoveel mogelijk puzzels op.': 'Solve as many puzzles as you can in 3, 5 or 10 minutes.',
+    'Dezelfde puzzel, dezelfde klok. Wie zit het dichtst bij?': 'Same puzzle, same clock. Who gets closest?',
+    'Dag gemist? Speel elke eerdere Daily opnieuw.': 'Missed a day? Replay every earlier Daily.',
+    'Bekijk wie vandaag het dichtst bij zat.': 'See who came closest today.',
+    'Solo of 1 tegen 1': 'Solo or 1 v 1',
+    'Elke dag': 'Every day',
+    'Netto in cijfers': 'Netto in numbers',
+    'Daily’s in het archief': 'Dailies in the archive',
+    'extra puzzels': 'extra puzzles',
+    'verbanden om te vinden': 'connections to find',
+    'Alle vragen zijn door B-Force gemaakt en gecontroleerd.': 'Every question is written and checked by B-Force.',
+    'Het dagelijkse schattingsspel.': 'The daily estimation game.',
     'Elke dagpuzzel sinds dag één. Speel ze opnieuw.': 'Every Daily since day one. Play them again.',
     'dagpuzzels': 'daily puzzles',
     'Los zoveel mogelijk puzzels op voordat de tijd om is. Kies je tijd en hoe precies je moet schatten.': 'Solve as many puzzles as you can before time runs out. Choose your time and how close your estimates need to be.',
@@ -81,6 +106,11 @@
     'Netjes': 'Close',
     'Ruim': 'Relaxed',
     'Grof': 'Broad',
+    '1,00×': '1.00×',
+    '1,25×': '1.25×',
+    '1,50×': '1.50×',
+    '2,00×': '2.00×',
+    '3,00×': '3.00×',
     '1,00× Perfect': '1.00× Exact',
     '1,10× Scherp': '1.10× Precise',
     '1,25× Netjes': '1.25× Close',
@@ -239,6 +269,7 @@
     'Netto maakt nieuwsgierigheid speelbaar. We verbinden alledaagse feiten met slimme rekensommen, zodat je niet alleen gokt, maar leert denken in verhoudingen.': 'Netto makes curiosity playable. We connect everyday facts through clever calculations, so you learn to think in proportions instead of merely guessing.',
     'Elke puzzel is een kleine ontdekking: drie vragen, één verband en altijd een kans om dichter bij de waarheid te komen.': 'Every puzzle is a small discovery: three questions, one connection and always a chance to get closer to the truth.',
     'Een spel over goed schatten.': 'A game about estimating well.',
+    'We meten bezoeken en spelacties met een willekeurige browsercode in lokale opslag, zonder cookies of opgeslagen IP-adressen; Do Not Track en Global Privacy Control schakelen dit uit.': 'We count visits and game actions using a random browser code in local storage, without cookies or stored IP addresses; Do Not Track and Global Privacy Control disable this.',
     'Je hoeft niet ieder feit te kennen. Netto beloont logisch nadenken, gevoel voor verhoudingen en een goede gok op het juiste moment.': 'You do not need to know every fact. Netto rewards logic, a feel for proportions and a well-judged guess.',
     'B-Force maakt en controleert de vragen. Zie je iets dat scherper kan? Stuur je eigen vraag in; de beste komen terug in het spel.': 'B-Force writes and checks the questions. Found something that could be sharper? Submit your own question; the best ones make it into the game.',
     'Het idee achter het spel.': 'The idea behind the game.',
@@ -337,6 +368,17 @@
     '📋 Kopieer': '📋 Copy',
     'Verbinden…': 'Connecting…',
     'Start duel →': 'Start duel →',
+    'Uitnodiging delen': 'Share invite',
+    '📋 Kopieer code': '📋 Copy code',
+    'Stuur deze link, bijvoorbeeld via WhatsApp. Je vriend doet mee zonder account.': 'Send this link, for example via WhatsApp. Your friend can join without an account.',
+    'Uitnodigingslink': 'Invite link',
+    'Maak je klaar…': 'Get ready…',
+    'Enter springt naar het volgende lege vak en levert in zodra alles is ingevuld.': 'Enter jumps to the next empty box and submits once everything is filled in.',
+    '← Puzzel Race-menu': '← Puzzle Race menu',
+    'Een duel is 1 tegen 1: dezelfde puzzels, dezelfde klok. Wie de meeste goed heeft, wint. Met een groep? Speel': 'A duel is one against one: same puzzles, same clock. Most correct answers wins. Playing with a group? Try',
+    'Link delen': 'Share link',
+    'Stuur deze link naar je vrienden. Met de link komen ze meteen in deze room.': 'Send this link to your friends. It takes them straight into this room.',
+    'De host start zodra iedereen er is. Iedereen krijgt tegelijk dezelfde puzzel; wie het dichtst bij zit, wint de ronde.': 'The host starts once everyone is here. Everyone gets the same puzzle at the same time; whoever comes closest wins the round.',
     'Annuleren': 'Cancel',
     'tijd over': 'time left',
     'goed': 'correct',
@@ -363,6 +405,15 @@
     'NETTO · SETTINGS': 'NETTO · SETTINGS',
     'NETTO · INSTELLINGEN': 'NETTO · SETTINGS',
     'Taal': 'Language',
+    'Stuur deze link, bijvoorbeeld via WhatsApp.': 'Send this link, for example via WhatsApp.',
+    'Thema': 'Theme',
+    'Alles door elkaar': 'Mixed questions',
+    'Natuur': 'Nature',
+    'Wetenschap en techniek': 'Science and technology',
+    'Cultuur en geschiedenis': 'Culture and history',
+    'Sport en spellen': 'Sports and games',
+    'Elke puzzel bevat minstens één vraag uit je thema.': 'Each puzzle includes at least one question from your theme.',
+    'Speel opnieuw met deze groep →': 'Play again with this group →',
     'Website-taal': 'Website language',
     'Kies Engels of Nederlands. Je keuze wordt op dit apparaat onthouden.': 'Choose English or Dutch. Your choice is saved on this device.',
     'Uiterlijk': 'Appearance',
@@ -447,7 +498,7 @@
     '3–20 tekens': '3–20 characters',
     'E-mailadres': 'Email address',
     'Wachtwoord': 'Password',
-    'Minimaal 6 tekens': 'At least 8 characters',
+    'Minimaal 6 tekens': 'At least 6 characters',
     'Nog geen account?': 'No account yet?',
     'Registreer gratis': 'Sign up free',
     'Wachtwoord vergeten?': 'Forgot your password?',
@@ -687,15 +738,20 @@
   });
 
   document.documentElement.lang = language;
-  if (language === 'en') {
-    if (document.title === 'Netto · dagelijkse schatting') document.title = ui['Netto · dagelijkse schatting'];
-    const description = document.querySelector('meta[name="description"]');
-    if (description) description.content = ui['Schat drie feiten, vind het verband. Elke dag een nieuwe puzzel.'];
-    document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach((meta) => { meta.content = ui['Netto · dagelijkse schatting']; });
-    document.querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]').forEach((meta) => { meta.content = ui['Drie vragen. Eén verband. Elke dag een nieuwe puzzel.']; });
+  // De statische kop (titel, beschrijving, deelkaarten) en de crawlbare tekst zijn Engels,
+  // de standaardtaal. Elementen met data-nl dragen de Nederlandse versie; die zetten we
+  // hier in als de speler Nederlands heeft gekozen. tools/seo.py schrijft die attributen.
+  function applyDutchText(root) {
+    root.querySelectorAll('[data-nl]').forEach((element) => {
+      const text = element.dataset.nl;
+      if (element.tagName === 'META') element.content = text;
+      else element.textContent = text;
+    });
   }
+  if (language === 'nl') applyDutchText(document.head);
 
   document.addEventListener('DOMContentLoaded', () => {
+    if (language === 'nl') applyDutchText(document.body);
     translateTree(document.body);
     updateLanguageControls();
     const observer = new MutationObserver((mutations) => {

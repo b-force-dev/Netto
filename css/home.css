@@ -1,0 +1,104 @@
+/* Netto home — aanvullingen op de home uit styles.css en refinement.css:
+   de voettekst met taal- en themakeuze, en een paar kleine correcties. */
+
+.home-content.lp {
+  --lp-ink: #fff;
+  --lp-soft: #C9CEF2;
+  --lp-line: rgba(255, 255, 255, .14);
+  --lp-card: rgba(255, 255, 255, .06);
+  padding-bottom: 0;
+  color: var(--lp-ink);
+}
+.lp-wordmark {
+  display: inline-block;
+  padding: 5px 11px 6px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #14163B;
+  font: 400 17px/1 'Archivo Black', sans-serif;
+  letter-spacing: -.01em;
+}
+
+/* ---------- Voettekst ---------- */
+.lp-footer {
+  display: grid;
+  gap: 24px;
+  margin-top: 44px;
+  padding: 26px 0 8px;
+  border-top: 1px solid var(--lp-line);
+  color: var(--lp-soft);
+}
+.lp-footer-brand p { margin: 12px 0 2px; color: #fff; font-size: 14px; }
+.lp-footer-brand small { font: 500 11px 'JetBrains Mono', monospace; letter-spacing: .06em; }
+.lp-footer-nav { display: flex; flex-wrap: wrap; gap: 2px 20px; }
+.lp-footer-nav button {
+  min-height: 40px;
+  padding: 8px 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+.lp-footer-nav button:hover { color: var(--accent); text-decoration: underline; }
+.lp-footer-prefs { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.lp-language { display: inline-flex; padding: 3px; border: 1px solid var(--lp-line); border-radius: 10px; background: rgba(13, 16, 70, .25); }
+.lp-language button {
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 7px;
+  background: none;
+  color: var(--lp-soft);
+  font: 600 13px 'Space Grotesk', sans-serif;
+  cursor: pointer;
+}
+.lp-language button:hover { color: #fff; }
+.lp-language button.is-active { background: #fff; color: #14163B; }
+.lp-theme {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 8px 14px;
+  border: 1px solid var(--lp-line);
+  border-radius: 10px;
+  background: rgba(13, 16, 70, .25);
+  color: #fff;
+  font: 600 13px 'Space Grotesk', sans-serif;
+  cursor: pointer;
+}
+.lp-theme svg { width: 16px; height: 16px; }
+.lp-theme:hover { border-color: rgba(255, 255, 255, .4); }
+.lp-theme[aria-checked="true"] { border-color: var(--accent); color: var(--accent); }
+
+/* Eén zichtbare focusring voor alles wat op de home klikbaar is. */
+.lp :is(button, a):focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+[data-theme="dark"] .lp-language, [data-theme="dark"] .lp-theme { background: rgba(10, 14, 44, .3); }
+
+/* ---------- Vanaf klein tablet ---------- */
+@media (min-width: 560px) {
+  .lp-footer { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); }
+  .lp-footer-prefs { grid-column: 1 / -1; }
+}
+
+/* ---------- Breed: uitleg links, voorbeeld rechts ---------- */
+@media (min-width: 900px) {
+  .lp-footer { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) auto; align-items: start; margin-top: 52px; padding-top: 30px; }
+  .lp-footer-prefs { grid-column: auto; justify-content: flex-end; }
+}
+.lp-footer-nav a { color: inherit; font: inherit; text-decoration: none; padding: 8px 0; }
+.lp-footer-nav a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+
+/* De home volgt weer het rustige ontwerp uit styles.css en refinement.css;
+   hier staat alleen wat daar bovenop komt. */
+a.home-mode-card { text-decoration: none; }
+.home-daily-card .hero-headline .home-title-first { color: #fff; }
+.home-daily-card > .daily-verouderd { margin: 14px 0 0; max-width: 68ch; position: relative; z-index: 1; }
+
+/* Omschrijving op de spelvormkaarten: compact, zoals op de live site. */
+@media (max-width: 640px) {
+  html .home-content.lp .home-modes .home-mode-body small { font-size: 12.5px; line-height: 1.4; }
+}

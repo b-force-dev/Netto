@@ -18,7 +18,7 @@ Wat er wordt getoetst:
   kleur        rapporteert gedeelde kleurfamilies als visuele waarschuwing
   icoon        rapporteert gedeelde iconen als visuele waarschuwing
   fotos        hoogstens twee fotovragen per puzzel
-  fotoveld     draagt een puzzel met fotovragen ook echt een foto
+  fotoveld     valideer actuele fotobank; meld verouderde ingebakken velden
   bewerking    zijn de vier bewerkingen ongeveer gelijk verdeeld
   niveau       zijn de vier moeilijkheden ongeveer gelijk verdeeld
 """
@@ -71,7 +71,6 @@ def main():
     rp = laad('netto_race_pool.js')
     bk = laad('netto_breinkrakers.js')
     fotos = laad('netto_fotos.js')
-
     families = dict(re.findall(r'--categorie-([a-z0-9-]+):\s*var\(--familie-([a-z]+)\)',
                                open(os.path.join(WORTEL, 'css', 'styles.css'),
                                     encoding='utf-8').read()))
@@ -91,9 +90,48 @@ def main():
             pass
 
     sets = [('daily + bibliotheek', fr['daily'] + fr['library']),
+            ('Find the Connection', fr.get('connection', [])),
             ('racepool', rp)]
 
+    # Bibliotheek en daily dragen een Engels label; de Nederlandse tekst staat
+    # in `original` van de review. Bank en fotobank sleutelen op die Nederlandse
+    # tekst, dus zonder deze vertaalslag telde elke bibliotheekfoto als "foto
+    # zonder fotovraag" en werd geen enkel bibliotheekantwoord getoetst.
+    review = {**(fr.get('daily_review') or {}), **(fr.get('library_review') or {}),
+              **(fr.get('connection_review') or {})}
+
+    def nl(label):
+        return (review.get(label) or {}).get('original') or label
+
     alles_goed = True
+    # De redactionele selecties bevatten ook nieuwe vragen die niet in het
+    # oude reviewblad staan. Vergelijk label, antwoord en NL/EN-bewijs met de
+    # selectie, zodat een vergeten gerichte regeneratie daadwerkelijk faalt.
+    english = laad('netto_bronnen_en.js')
+    for mode in ('library', 'connection'):
+        path = os.path.join(WORTEL, 'puzzels', f'{mode}_selectie_20260927.json')
+        selection = json.load(open(path, encoding='utf8'))
+        actual = {p['id']: p for p in fr[mode]}
+        for p in selection['puzzles']:
+            output = actual.get(p['id'], {})
+            for i,q in enumerate(p['questions'],1):
+                meta = review.get(q['question'], {})
+                if (output.get(f'q{i}_label') != q['question'] or
+                    output.get(f'q{i}_answer') != q['answer'] or
+                    meta.get('original') != q['original'] or
+                    meta.get('uitleg') != q['evidence'] or
+                    meta.get('uitleg_en') != english.get(q['evidence'])):
+                    print(f"FOUT selectie/vertaling {mode} {q['id']}")
+                    alles_goed = False
+                if q['id'].startswith('bank-') and (
+                    bank.get(q['original']) != q['answer'] or
+                    not q.get('verified_on') or
+                    not q.get('evidence_en') or
+                    q['evidence_en'] != english.get(q['evidence']) or
+                    meta.get('bron') != q['source']
+                ):
+                    print(f"FOUT gecontroleerde bankaanvulling {mode} {q['id']}")
+                    alles_goed = False
     for naam, ps in sets:
         fouten = Counter()
         waarschuwingen = Counter()
@@ -104,7 +142,7 @@ def main():
                 fouten['som'] += 1
             if p.get('calculation') != f"{a} {p['operator']} {b} = {c}":
                 fouten['calculation'] += 1
-            labels = [p[f'q{i}_label'] for i in (1, 2, 3)]
+            labels = [nl(p[f'q{i}_label']) for i in (1, 2, 3)]
             for l, w in zip(labels, (a, b, c)):
                 if l in bank and bank[l] != w:
                     fouten['antwoord'] += 1
@@ -120,6 +158,8 @@ def main():
                 fouten['dubbele eenheid'] += 1
             if len({families.get(sleutel(x)) for x in cats}) < 3:
                 waarschuwingen['gedeelde kleurfamilie'] += 1
+                if any(qid.startswith('bank-') for qid in p.get('question_ids', [])):
+                    fouten['gedeelde kleurfamilie in nieuwe puzzel'] += 1
             if len({iconen.get(x, 'idea') for x in cats}) < 3:
                 waarschuwingen['gedeeld icoon'] += 1
             n = sum(1 for l in labels if l in fotos)
@@ -140,10 +180,21 @@ def main():
                 # Codex kon zijn frontendreparaties niet committen omdat deze
                 # regel de gedeelde commitpoort blokkeerde.
                 waarschuwingen['meer dan twee fotovragen'] += 1
-            if n and not p.get('photo'):
-                fouten['fotovraag zonder foto'] += 1
+            if naam != 'Find the Connection' and n and not p.get('photo'):
+                # photo-credits.js zoekt nu ook zonder ingebakken veld in de
+                # actuele bank. Nieuwe keuzes vereisen geen puzzelregeneratie.
+                waarschuwingen['foto via actuele bank'] += 1
             if p.get('photo') and not n:
-                fouten['foto zonder fotovraag'] += 1
+                # Afgekeurde ingebakken foto's worden door nogInDeBank geweerd.
+                waarschuwingen['verouderd fotoveld genegeerd'] += 1
+            for label in labels:
+                foto = fotos.get(label)
+                if foto is None:
+                    continue
+                if not all(str(foto.get(k, '')).strip() for k in ('url', 'pagina', 'maker', 'licentie')):
+                    fouten['fotobank mist bronvermelding'] += 1
+                if foto.get('url', '').startswith('fotos/assets/') and not os.path.isfile(os.path.join(WORTEL, foto['url'])):
+                    fouten['fotobank verwijst naar ontbrekend bestand'] += 1
 
         ops = Counter(p['operator'] for p in ps)
         niv = Counter(p['difficulty'] for p in ps)
@@ -212,7 +263,8 @@ def main():
     print(f'overlap daily/bibliotheek: {len(overlap)} vragen'
           f'{" — FOUT" if overlap else " (goed, ze delen een set)"}')
     print('\nALLES IN ORDE' if alles_goed and not overlap else '\nER ZIJN FOUTEN')
+    return 0 if alles_goed and not overlap else 1
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

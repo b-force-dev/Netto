@@ -10,11 +10,11 @@ async function test(supported,requireEquation,showAnswers) {
   const calls=[];
   const button={disabled:false};
   const context=vm.createContext({window:{},document:{addEventListener(){},getElementById:id=>nodes[id]},
-    statsCopy:(nl,en)=>en,escapeHtml:String,
+    statsCopy:(nl,en)=>en,escapeHtml:String,currentUser:{id:"tester"},
     supabaseClient:{rpc:async()=>({data:supported?{lobbyOptions:true}:{available:true},error:null})},
     capture:options=>calls.push(options)});
   vm.runInContext(source.replace('  window.NettoLive=',`
-    requireLogin=()=>true;
+    ensurePlayer=async()=>true;
     request=async(action,options)=>capture(options);
     window.testCreate=create;
     window.NettoLive=`),context);

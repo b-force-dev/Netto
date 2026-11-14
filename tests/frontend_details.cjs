@@ -13,12 +13,19 @@ function veld(id) {
   if (!velden.has(id)) velden.set(id, {value:'',textContent:'',attributen:{},style:{setProperty(){}},setAttribute(k,v){this.attributen[k]=v;},querySelector(){return veld(id+'Range');},querySelectorAll(){return [];}});
   return velden.get(id);
 }
-const context = vm.createContext({Intl, Date, window: {},
+const context = vm.createContext({Intl, Date, window: {}, REBUILT_DATA: {},
   nettoNumberLocale: () => 'nl-NL', statsCopy: (nl, en) => nl,
   localStorage:{getItem:k=>opslag.get(k)??null,setItem:(k,v)=>opslag.set(k,v)},
   document:{getElementById:veld}
 });
-vm.runInContext(core.slice(core.indexOf('  const VRAAG_EENHEDEN'),core.indexOf('  function categorieKleurVariabele')),context);
+// Snijd een stuk uit de broncode; een verdwenen merkteken moet hard falen in
+// plaats van stilletjes de rest van het bestand mee te nemen.
+function stuk(bron, begin, eind) {
+  const van = bron.indexOf(begin), tot = bron.indexOf(eind, van);
+  assert.ok(van >= 0 && tot > van, 'merkteken ontbreekt: ' + (van < 0 ? begin : eind));
+  return bron.slice(van, tot);
+}
+vm.runInContext(stuk(core, '  const VRAAG_EENHEDEN', '  function puzzelKleurset'),context);
 vm.runInContext(core.slice(core.indexOf('  function nettoDagSleutel'),core.indexOf('  // Geen const:')),context);
 vm.runInContext(race.slice(race.indexOf('  const RACE_TOTAL_SECONDS'),race.indexOf('  let raceQueue')),context);
 vm.runInContext(race.slice(race.indexOf('  function getRaceModeConfig'),race.indexOf('  function raceDurationMeta')),context);
@@ -38,7 +45,9 @@ for (const [vraag, verwacht] of [
   ['Welk percentage is water?', '%']
 ]) assert.equal(context.eenheidUit(vraag), verwacht, vraag);
 console.log('Eenheden, afkortingen en schaalwoorden kloppen.');
-const sleutels=['perfect','scherp','netjes','ruim','grof'];
+// De standen komen uit race.js zelf, zodat een nieuwe of geschrapte stand de test niet laat verouderen.
+const sleutels=Array.from(vm.runInContext('RACE_TOLERANTIE_VOLGORDE',context));
+assert.ok(sleutels.length>=3);
 for(const mode of ['solo','online']) {
   context.saveRaceModeConfig(mode,{durationKey:'blitz'});
   sleutels.forEach((key,index)=>{
@@ -55,7 +64,9 @@ for(const mode of ['solo','online']) {
 }
 assert.ok(opslag.has('netto_race_mode_config'));
 context.selectRaceTolerantie('solo','onbekend');
-assert.equal(context.getRaceModeConfig('solo').toleranceKey,'grof');
-console.log('Vijf standen, uitleg, aria en bestaande opslag blijven gelijk.');
-for(const [tijd,dag] of [['2026-09-08T10:59:59Z','2026-09-07'],['2026-09-08T11:00:00Z','2026-09-08'],['2026-01-08T11:59:59Z','2026-01-07'],['2026-01-08T12:00:00Z','2026-01-08']])assert.equal(context.nettoDagSleutel(new Date(tijd)),dag);
-console.log('Dagwissel om 12:00 Londen klopt in zomer- en wintertijd.');
+// Een onbekende stand laat de laatst gekozen geldige stand staan.
+assert.equal(context.getRaceModeConfig('solo').toleranceKey,sleutels[sleutels.length-1]);
+console.log(sleutels.length+' standen, uitleg, aria en bestaande opslag blijven gelijk.');
+// De daily wisselt om middernacht Londense tijd (zie nettoDagSleutel in core.js).
+for(const [tijd,dag] of [['2026-09-07T22:59:59Z','2026-09-07'],['2026-09-07T23:00:00Z','2026-09-08'],['2026-01-07T23:59:59Z','2026-01-07'],['2026-01-08T00:00:00Z','2026-01-08']])assert.equal(context.nettoDagSleutel(new Date(tijd)),dag);
+console.log('Dagwissel om middernacht Londen klopt in zomer- en wintertijd.');

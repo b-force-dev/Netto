@@ -1,0 +1,457 @@
+[
+ {
+  "id": "nr606",
+  "oud": "Hoeveel liter bloed stroomt er ongeveer door een volwassen lichaam?",
+  "nieuw": "Hoeveel liter bloed heeft een volwassen mens ongeveer?"
+ },
+ {
+  "id": "nr607",
+  "oud": "Hoeveel liter zuurstof ademt een mens gemiddeld per dag in?",
+  "nieuw": "Hoeveel liter zuurstof verbruikt een volwassen mens gemiddeld per dag?"
+ },
+ {
+  "id": "q200",
+  "oud": "Hoeveel boeken bevat de originele The Hunger Games-trilogie?",
+  "nieuw": "Hoeveel boeken telt de oorspronkelijke The Hunger Games-reeks?"
+ },
+ {
+  "id": "nr150",
+  "oud": "Hoeveel bulten heeft een kameel?",
+  "nieuw": "Hoeveel bulten heeft een Bactrische kameel?"
+ },
+ {
+  "id": "nr646",
+  "oud": "Hoeveel kilogram weegt een volwassen Aziatische olifant?",
+  "nieuw": "Hoeveel kilogram weegt een volwassen mannetje van de Aziatische olifant gemiddeld?"
+ },
+ {
+  "id": "nr175",
+  "oud": "Hoeveel landen zijn lid van de G20?",
+  "nieuw": "Hoeveel landen zijn lid van de G20 (de EU en de Afrikaanse Unie niet meegeteld)?"
+ },
+ {
+  "id": "nr1222",
+  "oud": "Hoeveel ml bevat een standaard Nederlandse borrelglas jenever?",
+  "nieuw": "Hoeveel milliliter gaat er in een standaard Nederlands borrelglas jenever?"
+ },
+ {
+  "id": "nr191",
+  "oud": "Hoeveel suikerklontjes zitten er volgens de standaardverpakking in een blikje Coca-Cola van 330 ml?",
+  "nieuw": "Hoeveel suikerklontjes van 4 gram komen overeen met de suiker in een blikje cola van 330 ml (afgerond)?"
+ },
+ {
+  "id": "nr203",
+  "oud": "Hoeveel films telt de originele Back to the Future-trilogie?",
+  "nieuw": "Hoeveel Back to the Future-films zijn er gemaakt?"
+ },
+ {
+  "id": "nr204",
+  "oud": "Hoeveel films telt de originele The Matrix-trilogie?",
+  "nieuw": "Hoeveel Matrix-films verschenen er vóór The Matrix Resurrections (2021)?"
+ },
+ {
+  "id": "nr205",
+  "oud": "Hoeveel films vormen de originele Jurassic Park-trilogie?",
+  "nieuw": "Hoeveel Jurassic Park-films verschenen er vóór Jurassic World (2015)?"
+ },
+ {
+  "id": "nr207",
+  "oud": "Hoeveel seizoenen van The Simpsons waren er uitgezonden (stand 2026)?",
+  "nieuw": "Hoeveel seizoenen van The Simpsons waren er in juli 2026 uitgezonden?"
+ },
+ {
+  "id": "nr760",
+  "oud": "Hoeveel geboden telt de Thora volgens de miswot-telling?",
+  "nieuw": "Hoeveel geboden en verboden telt de Thora volgens de joodse traditie?"
+ },
+ {
+  "id": "nr61",
+  "oud": "Hoe hoog is de Euromast in Rotterdam?",
+  "nieuw": "Hoeveel meter hoog is de Euromast in Rotterdam?"
+ },
+ {
+  "id": "nr220",
+  "oud": "Hoeveel bogen heeft de Sydney Harbour Bridge?",
+  "nieuw": "Uit hoeveel parallelle boogspanten bestaat de boog van de Sydney Harbour Bridge?"
+ },
+ {
+  "id": "nr778",
+  "oud": "Hoeveel kilometer lang is de Golden Gate Bridge hoofdspanssegment?",
+  "nieuw": "Hoeveel meter lang is de hoofdoverspanning van de Golden Gate Bridge?"
+ },
+ {
+  "id": "nr96",
+  "oud": "Hoeveel meter hoog is de Golden Gate Bridge boven het water?",
+  "nieuw": "Hoeveel meter steken de torens van de Golden Gate Bridge boven het water uit?"
+ },
+ {
+  "id": "nr1189",
+  "oud": "Hoeveel meter lang is het hoofdspansegment van de Van Brienenoordbrug?",
+  "nieuw": "Hoeveel meter overspant de boog van de Van Brienenoordbrug, afgerond op honderdtallen?"
+ },
+ {
+  "id": "nr816",
+  "oud": "Hoeveel tegels bedekken het dak van het Sydney Opera House?",
+  "nieuw": "Hoeveel tegels bedekken ongeveer het dak van het Sydney Opera House?"
+ },
+ {
+  "id": "nr823",
+  "oud": "Hoeveel verdiepingen heeft de Gran Torre Santiago in Chili (tallest in Latijns-Amerika)?",
+  "nieuw": "Hoeveel verdiepingen heeft de Gran Torre Santiago in Chili, het hoogste gebouw van Zuid-Amerika?"
+ },
+ {
+  "id": "nr824",
+  "oud": "Hoeveel verdiepingen heeft de Q1 Tower in Gold Coast (tallest in Australië)?",
+  "nieuw": "Hoeveel verdiepingen heeft de Q1 Tower aan de Gold Coast in Australië?"
+ },
+ {
+  "id": "nr838",
+  "oud": "Hoeveel duizend inwoners heeft Luxemburg?",
+  "nieuw": "Ruim hoeveel duizend inwoners had Luxemburg op 1 januari 2023?"
+ },
+ {
+  "id": "nr853",
+  "oud": "Hoeveel duizend kilometer lang is de Australische kustlijn?",
+  "nieuw": "Hoeveel duizend kilometer lang is de kustlijn van het Australische vasteland?"
+ },
+ {
+  "id": "nr843",
+  "oud": "Hoeveel eilanden telt Indonesië officieel (2024)?",
+  "nieuw": "Uit hoeveel eilanden bestaat Indonesië, afgerond op duizendtallen?"
+ },
+ {
+  "id": "nr947",
+  "oud": "Hoeveel miljoen inwoners heeft Brazilië?",
+  "nieuw": "Hoeveel miljoen inwoners had Brazilië in 2024?"
+ },
+ {
+  "id": "q974",
+  "oud": "Hoeveel van de Grote Meren liggen in de VS en Canada samen?",
+  "nieuw": "Uit hoeveel meren bestaan de Grote Meren van Noord-Amerika?"
+ },
+ {
+  "id": "N67",
+  "oud": "How many islands make up the Maldives?",
+  "nieuw": "Uit hoeveel eilanden bestaan de Malediven?"
+ },
+ {
+  "id": "q307",
+  "oud": "Op welke hoogte ligt het Titicacameer ongeveer boven zeeniveau?",
+  "nieuw": "Op hoeveel meter boven zeeniveau ligt het Titicacameer ongeveer?"
+ },
+ {
+  "id": "q991",
+  "oud": "Hoeveel dagen duurde de D-Day-invasie tot de bevrijding van Parijs?",
+  "nieuw": "Hoeveel dagen zaten er tussen D-Day en de bevrijding van Parijs?"
+ },
+ {
+  "id": "nr992",
+  "oud": "Hoeveel dagen duurde de Slag bij Verdun?",
+  "nieuw": "Hoeveel dagen duurde de Slag bij Verdun ongeveer?"
+ },
+ {
+  "id": "nr1013",
+  "oud": "Hoeveel presidenten hebben de Verenigde Staten gehad tot en met Joe Biden?",
+  "nieuw": "De hoeveelste president van de Verenigde Staten was Joe Biden?"
+ },
+ {
+  "id": "nr1016",
+  "oud": "Hoeveel schepen had de Atheense vloot tijdens de Slag bij Salamis ongeveer?",
+  "nieuw": "Hoeveel schepen telde de Griekse vloot tijdens de Slag bij Salamis ongeveer?"
+ },
+ {
+  "id": "nr1020",
+  "oud": "Hoeveel soldaten telde het Britse leger bij de Slag bij Waterloo ongeveer?",
+  "nieuw": "Hoeveel soldaten telde het Brits-geallieerde leger van Wellington bij Waterloo ongeveer?"
+ },
+ {
+  "id": "N40",
+  "oud": "How many houses were destroyed in the Great Fire of London?",
+  "nieuw": "Hoeveel huizen werden verwoest bij de Grote Brand van Londen?"
+ },
+ {
+  "id": "N35",
+  "oud": "How many kilometers long was the Berlin Wall?",
+  "nieuw": "Hoeveel kilometer lang was de Berlijnse Muur?"
+ },
+ {
+  "id": "N72",
+  "oud": "How many passengers sailed on the Mayflower to America?",
+  "nieuw": "Hoeveel passagiers voeren met de Mayflower naar Amerika?"
+ },
+ {
+  "id": "N38",
+  "oud": "How many seconds did the first successful powered airplane flight last?",
+  "nieuw": "Hoeveel seconden duurde de eerste geslaagde gemotoriseerde vlucht?"
+ },
+ {
+  "id": "nr1058",
+  "oud": "In welk year ontdekte Columbus Amerika (de eerste reis)?",
+  "nieuw": "In welk jaar bereikte Columbus op zijn eerste reis Amerika?"
+ },
+ {
+  "id": "nr306",
+  "oud": "In welk jaar werd de eerste volledige kaart van de wereldbol gemaakt?",
+  "nieuw": "In welk jaar maakte Martin Behaim de oudste bewaard gebleven globe?"
+ },
+ {
+  "id": "nr1042",
+  "oud": "In welk jaar werd Colombia onafhankelijk van Spanje?",
+  "nieuw": "In welk jaar riep Colombia zijn onafhankelijkheid van Spanje uit?"
+ },
+ {
+  "id": "nr629",
+  "oud": "In welk jaar werd de eerste universiteit ter wereld gesticht volgens de traditionele telling?",
+  "nieuw": "In welk jaar werd de Al-Qarawiyyin in Fez gesticht, de oudste nog bestaande universiteit?"
+ },
+ {
+  "id": "nr1064",
+  "oud": "Hoeveel UNESCO-werelderfgoedlocaties heeft China (stand 2026)?",
+  "nieuw": "Hoeveel UNESCO-werelderfgoedlocaties had China in 2025?"
+ },
+ {
+  "id": "nr1065",
+  "oud": "Hoeveel UNESCO-werelderfgoedlocaties heeft Duitsland (stand 2026)?",
+  "nieuw": "Hoeveel UNESCO-werelderfgoedlocaties had Duitsland in 2025?"
+ },
+ {
+  "id": "nr1165",
+  "oud": "Hoeveel etsen worden aan Rembrandt toegeschreven in de catalogus van het Rijksmuseum?",
+  "nieuw": "Hoeveel etsen maakte Rembrandt ongeveer?"
+ },
+ {
+  "id": "nr354",
+  "oud": "Hoeveel schilderijen uit de serie Zonnebloemen maakte Van Gogh?",
+  "nieuw": "Hoeveel versies van Zonnebloemen in een vaas schilderde Van Gogh in Arles?"
+ },
+ {
+  "id": "nr814",
+  "oud": "Hoeveel stenen beelden staan er in het Terracottaleger ongeveer?",
+  "nieuw": "Hoeveel beelden telt het Terracottaleger ongeveer?"
+ },
+ {
+  "id": "nr1086",
+  "oud": "Welk percentage van het wereldwijde staal wordt geproduceerd in China?",
+  "nieuw": "Welk percentage van het wereldwijde staal werd in 2023 in China geproduceerd?"
+ },
+ {
+  "id": "nr372",
+  "oud": "Hoeveel miljoen ton plastic afval lekt jaarlijks in de oceaan volgens een gangbare schatting?",
+  "nieuw": "Hoeveel miljoen ton plastic afval lekt jaarlijks in rivieren, meren en zeeën, volgens de ondergrens van de VN-schatting?"
+ },
+ {
+  "id": "nr400",
+  "oud": "Hoeveel facetten (geslepen vlakjes) heeft een standaard ronde briljant geslepen diamant?",
+  "nieuw": "Hoeveel facetten heeft een rond briljant geslepen diamant, zonder de punt (culet) mee te tellen?"
+ },
+ {
+  "id": "nr386",
+  "oud": "Hoeveel Grammy-nominaties had Beyoncé volgens de Grammy’s vóór de uitreiking van 2025?",
+  "nieuw": "Hoeveel Grammy-nominaties had Beyoncé in totaal bij de uitreiking van februari 2025?"
+ },
+ {
+  "id": "q1130",
+  "oud": "Hoeveel studioalbums bracht Taylor Swift uit tot 2024?",
+  "nieuw": "Hoeveel studioalbums met nieuw werk had Taylor Swift eind 2025 uitgebracht?"
+ },
+ {
+  "id": "q404",
+  "oud": "Hoeveel kilometer per uur waait wind bij windkracht 8 volgens de schaal van Beaufort?",
+  "nieuw": "Wat is de hoogste windsnelheid in kilometer per uur die nog bij windkracht 8 hoort?"
+ },
+ {
+  "id": "nr1254",
+  "oud": "Hoeveel departementen telt Peru?",
+  "nieuw": "In hoeveel regio's is Peru bestuurlijk verdeeld?"
+ },
+ {
+  "id": "nr1266",
+  "oud": "Hoeveel landen nemen er deel aan de Schengenzone (2024)?",
+  "nieuw": "Hoeveel landen horen bij de Schengenzone (2026)?"
+ },
+ {
+  "id": "nr1294",
+  "oud": "Hoeveel zetels telt het Australische Huis van Afgevaardigden?",
+  "nieuw": "Hoeveel zetels telde het Australische Huis van Afgevaardigden na de verkiezingen van 2022?"
+ },
+ {
+  "id": "nr1293",
+  "oud": "Hoeveel zetels telt de Nieuw-Zeelandse Kamer van Afgevaardigden?",
+  "nieuw": "Hoeveel zetels telt het Nieuw-Zeelandse parlement normaal, zonder overhangzetels?"
+ },
+ {
+  "id": "nr71",
+  "oud": "Hoe zwaar was de zwaarste pompoen ooit in kilogram?",
+  "nieuw": "Hoeveel kilogram woog de zwaarste pompoen ter wereld eind 2025?"
+ },
+ {
+  "id": "nr452",
+  "oud": "Hoeveel marathons liep de persoon met het record voor de meeste marathons?",
+  "nieuw": "Hoeveel marathons had de Duitser Horst Preisler eind 2004 gelopen?"
+ },
+ {
+  "id": "nr454",
+  "oud": "Hoeveel piercings had de persoon met de meeste piercings ooit?",
+  "nieuw": "Hoeveel piercings had Rolf Buchholz, de man met de meeste piercings, in 2012?"
+ },
+ {
+  "id": "nr1316",
+  "oud": "Hoeveel hotels heeft Hilton wereldwijd ongeveer?",
+  "nieuw": "Hoeveel hotels had Hilton eind 2023 wereldwijd ongeveer?"
+ },
+ {
+  "id": "nr1317",
+  "oud": "Hoeveel miljoen passagiers verwerkt Atlanta Airport (Hartsfield-Jackson, de drukste luchthaven ter wereld) per jaar?",
+  "nieuw": "Ruim hoeveel miljoen passagiers verwerkte Atlanta Airport, de drukste luchthaven ter wereld, in 2023?"
+ },
+ {
+  "id": "nr491",
+  "oud": "Hoeveel vakjes heeft een standaard Mens-erger-je-niet-bord?",
+  "nieuw": "Hoeveel vakjes telt de looproute rond een standaard Mens-erger-je-niet-bord?"
+ },
+ {
+  "id": "N19",
+  "oud": "How many minutes does a full day-and-night cycle last in Minecraft?",
+  "nieuw": "Hoeveel minuten duurt een volledige dag-en-nachtcyclus in Minecraft?"
+ },
+ {
+  "id": "q1360",
+  "oud": "Hoeveel keer won Argentinië de FIFA World Cup voetbal bij de mannen (2024)?",
+  "nieuw": "Hoeveel keer won Argentinië het WK voetbal bij de mannen, tot en met 2026?"
+ },
+ {
+  "id": "q1363",
+  "oud": "Hoeveel keer won Brazilië de FIFA World Cup voetbal bij de mannen (2024)?",
+  "nieuw": "Hoeveel keer won Brazilië het WK voetbal bij de mannen, tot en met 2026?"
+ },
+ {
+  "id": "q1364",
+  "oud": "Hoeveel keer won Duitsland de FIFA World Cup?",
+  "nieuw": "Hoeveel keer won Duitsland het WK voetbal bij de mannen, tot en met 2026?"
+ },
+ {
+  "id": "q1377",
+  "oud": "Hoeveel landen doen mee aan het FIFA World Cup 2026?",
+  "nieuw": "Hoeveel landen deden mee aan het WK voetbal van 2026?"
+ },
+ {
+  "id": "q1420",
+  "oud": "Hoeveel NASA-mannetjes missies naar de maan (Apollo) landden er daadwerkelijk?",
+  "nieuw": "Hoeveel Apollo-missies landden met astronauten op de maan?"
+ },
+ {
+  "id": "nr349",
+  "oud": "Hoeveel dwergplaneten worden in de NASA-overview genoemd?",
+  "nieuw": "Hoeveel dwergplaneten erkent de Internationale Astronomische Unie officieel?"
+ },
+ {
+  "id": "nr516",
+  "oud": "Hoeveel bekende manen heeft Saturnus officieel (stand 2026)?",
+  "nieuw": "Hoeveel bekende manen had Saturnus in maart 2026?"
+ },
+ {
+  "id": "nr526",
+  "oud": "Hoeveel officiële ringen heeft Uranus?",
+  "nieuw": "Hoeveel bekende ringen heeft Uranus?"
+ },
+ {
+  "id": "nr1441",
+  "oud": "Wat is de diameter van de Aarde over de evenaar in kilometers?",
+  "nieuw": "Hoeveel kilometer is de gemiddelde diameter van de aarde?"
+ },
+ {
+  "id": "nr1445",
+  "oud": "Wat is de geschatte temperatuur aan het oppervlak van de zon?",
+  "nieuw": "Hoeveel graden Celsius is het aan het oppervlak van de zon ongeveer?"
+ },
+ {
+  "id": "nr956",
+  "oud": "Hoeveel talen erkent India als officiële taal?",
+  "nieuw": "Hoeveel talen staan in de Achtste Bijlage van de Indiase grondwet?"
+ },
+ {
+  "id": "nr550",
+  "oud": "Hoeveel watt laadt een standaard iPhone snellader?",
+  "nieuw": "Hoeveel watt levert de standaard USB-C-lader van Apple voor de iPhone?"
+ },
+ {
+  "id": "nr1474",
+  "oud": "In welk jaar werd de eerste computer met een microprocessor ontwikkeld?",
+  "nieuw": "In welk jaar kwam de eerste commerciële microprocessor, de Intel 4004, uit?"
+ },
+ {
+  "id": "nr1455",
+  "oud": "Hoeveel kilometer per uur haalt de Shanghai Maglev?",
+  "nieuw": "Hoeveel kilometer per uur haalde de Shanghai Maglev in de reguliere dienst tot 2021?"
+ },
+ {
+  "id": "q576",
+  "oud": "Hoeveel metrolijnen heeft de Parijse metro?",
+  "nieuw": "Hoeveel metrolijnen had de Parijse metro in 2025?"
+ },
+ {
+  "id": "N53",
+  "oud": "How many kilometers per hour could Concorde reach?",
+  "nieuw": "Hoeveel kilometer per uur kon de Concorde halen?"
+ },
+ {
+  "id": "nr590",
+  "oud": "In welk jaar voer de eerste moderne onderzeeër succesvol?",
+  "nieuw": "In welk jaar maakte Robert Fultons onderzeeër Nautilus zijn eerste proefvaart?"
+ },
+ {
+  "id": "nr1488",
+  "oud": "Hoeveel miljoen nieuwe personenauto’s worden er wereldwijd per jaar geproduceerd?",
+  "nieuw": "Hoeveel miljoen motorvoertuigen werden er in 2022 wereldwijd geproduceerd?"
+ },
+ {
+  "id": "q698",
+  "oud": "Hoeveel landen gebruiken de euro als officiële munt?",
+  "nieuw": "Hoeveel EU-lidstaten gebruiken de euro (2026)?"
+ },
+ {
+  "id": "q698",
+  "oud": "Hoeveel landen gebruiken de euro als officiële munt?",
+  "nieuw": "Hoeveel EU-lidstaten gebruikten de euro in 2025?"
+ },
+ {
+  "id": "q773",
+  "oud": "Hoeveel ingangen heeft het Colosseum?",
+  "nieuw": "Hoeveel genummerde publieksingangen had het Colosseum?"
+ },
+ {
+  "id": "q773",
+  "oud": "Hoeveel ingangen heeft het Colosseum?",
+  "nieuw": "Hoeveel ingangen had het Colosseum?"
+ },
+ {
+  "id": "q1249",
+  "oud": "Hoeveel miljoen inwoners heeft China?",
+  "nieuw": "Hoeveel miljoen inwoners heeft China volgens de VN-schatting voor 2025?"
+ },
+ {
+  "id": "q1309",
+  "oud": "Hoe zwaar was de zwaarste schildpad ooit in kilogram?",
+  "nieuw": "Hoeveel kilogram woog de zwaarste lederschildpad ooit, volgens Guinness World Records?"
+ },
+ {
+  "id": "q1309",
+  "oud": "Hoe zwaar was de zwaarste schildpad ooit in kilogram?",
+  "nieuw": "Hoeveel kilogram woog de zwaarste schildpad ooit, volgens het National Museum Wales?"
+ },
+ {
+  "id": "q128",
+  "oud": "Wat is de totale geschatte lengte van alle bloedvaten in een volwassen menselijk lichaam in kilometers?",
+  "nieuw": "Hoeveel kilometer zijn alle bloedvaten van een volwassene samen lang, volgens de bekende schatting van 60.000 mijl?"
+ },
+ {
+  "id": "q1439",
+  "oud": "Wat is de baansnelheid van het ISS ongeveer?",
+  "nieuw": "Hoeveel kilometer per uur is de baansnelheid van het ISS, afgerond op duizendtallen?"
+ },
+ {
+  "id": "q1439",
+  "oud": "Wat is de baansnelheid van het ISS ongeveer?",
+  "nieuw": "Hoeveel kilometer per uur is de baansnelheid van het ISS ongeveer?"
+ }
+]

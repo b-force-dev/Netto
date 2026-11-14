@@ -1,0 +1,2747 @@
+[
+  {
+    "id": "nr606",
+    "oud": "Hoeveel liter bloed stroomt er ongeveer door een volwassen lichaam?",
+    "nieuw": "Hoeveel liter bloed heeft een volwassen mens ongeveer?"
+  },
+  {
+    "id": "nr607",
+    "oud": "Hoeveel liter zuurstof ademt een mens gemiddeld per dag in?",
+    "nieuw": "Hoeveel liter zuurstof verbruikt een volwassen mens gemiddeld per dag?"
+  },
+  {
+    "id": "q200",
+    "oud": "Hoeveel boeken bevat de originele The Hunger Games-trilogie?",
+    "nieuw": "Hoeveel boeken telt de oorspronkelijke The Hunger Games-reeks?"
+  },
+  {
+    "id": "nr150",
+    "oud": "Hoeveel bulten heeft een kameel?",
+    "nieuw": "Hoeveel bulten heeft een Bactrische kameel?"
+  },
+  {
+    "id": "nr646",
+    "oud": "Hoeveel kilogram weegt een volwassen Aziatische olifant?",
+    "nieuw": "Hoeveel kilogram weegt een volwassen mannetje van de Aziatische olifant gemiddeld?"
+  },
+  {
+    "id": "nr175",
+    "oud": "Hoeveel landen zijn lid van de G20?",
+    "nieuw": "Hoeveel landen zijn lid van de G20 (de EU en de Afrikaanse Unie niet meegeteld)?"
+  },
+  {
+    "id": "nr1222",
+    "oud": "Hoeveel ml bevat een standaard Nederlandse borrelglas jenever?",
+    "nieuw": "Hoeveel milliliter gaat er in een standaard Nederlands borrelglas jenever?"
+  },
+  {
+    "id": "nr191",
+    "oud": "Hoeveel suikerklontjes zitten er volgens de standaardverpakking in een blikje Coca-Cola van 330 ml?",
+    "nieuw": "Hoeveel suikerklontjes van 4 gram komen overeen met de suiker in een blikje cola van 330 ml (afgerond)?"
+  },
+  {
+    "id": "nr203",
+    "oud": "Hoeveel films telt de originele Back to the Future-trilogie?",
+    "nieuw": "Hoeveel Back to the Future-films zijn er gemaakt?"
+  },
+  {
+    "id": "nr204",
+    "oud": "Hoeveel films telt de originele The Matrix-trilogie?",
+    "nieuw": "Hoeveel Matrix-films verschenen er vóór The Matrix Resurrections (2021)?"
+  },
+  {
+    "id": "nr205",
+    "oud": "Hoeveel films vormen de originele Jurassic Park-trilogie?",
+    "nieuw": "Hoeveel Jurassic Park-films verschenen er vóór Jurassic World (2015)?"
+  },
+  {
+    "id": "nr207",
+    "oud": "Hoeveel seizoenen van The Simpsons waren er uitgezonden (stand 2026)?",
+    "nieuw": "Hoeveel seizoenen van The Simpsons waren er in juli 2026 uitgezonden?"
+  },
+  {
+    "id": "nr760",
+    "oud": "Hoeveel geboden telt de Thora volgens de miswot-telling?",
+    "nieuw": "Hoeveel geboden en verboden telt de Thora volgens de joodse traditie?"
+  },
+  {
+    "id": "nr61",
+    "oud": "Hoe hoog is de Euromast in Rotterdam?",
+    "nieuw": "Hoeveel meter hoog is de Euromast in Rotterdam?"
+  },
+  {
+    "id": "nr220",
+    "oud": "Hoeveel bogen heeft de Sydney Harbour Bridge?",
+    "nieuw": "Uit hoeveel parallelle boogspanten bestaat de boog van de Sydney Harbour Bridge?"
+  },
+  {
+    "id": "nr778",
+    "oud": "Hoeveel kilometer lang is de Golden Gate Bridge hoofdspanssegment?",
+    "nieuw": "Hoeveel meter lang is de hoofdoverspanning van de Golden Gate Bridge?"
+  },
+  {
+    "id": "nr96",
+    "oud": "Hoeveel meter hoog is de Golden Gate Bridge boven het water?",
+    "nieuw": "Hoeveel meter steken de torens van de Golden Gate Bridge boven het water uit?"
+  },
+  {
+    "id": "nr1189",
+    "oud": "Hoeveel meter lang is het hoofdspansegment van de Van Brienenoordbrug?",
+    "nieuw": "Hoeveel meter overspant de boog van de Van Brienenoordbrug, afgerond op honderdtallen?"
+  },
+  {
+    "id": "nr816",
+    "oud": "Hoeveel tegels bedekken het dak van het Sydney Opera House?",
+    "nieuw": "Hoeveel tegels bedekken ongeveer het dak van het Sydney Opera House?"
+  },
+  {
+    "id": "nr823",
+    "oud": "Hoeveel verdiepingen heeft de Gran Torre Santiago in Chili (tallest in Latijns-Amerika)?",
+    "nieuw": "Hoeveel verdiepingen heeft de Gran Torre Santiago in Chili, het hoogste gebouw van Zuid-Amerika?"
+  },
+  {
+    "id": "nr824",
+    "oud": "Hoeveel verdiepingen heeft de Q1 Tower in Gold Coast (tallest in Australië)?",
+    "nieuw": "Hoeveel verdiepingen heeft de Q1 Tower aan de Gold Coast in Australië?"
+  },
+  {
+    "id": "nr838",
+    "oud": "Hoeveel duizend inwoners heeft Luxemburg?",
+    "nieuw": "Ruim hoeveel duizend inwoners had Luxemburg op 1 januari 2023?"
+  },
+  {
+    "id": "nr853",
+    "oud": "Hoeveel duizend kilometer lang is de Australische kustlijn?",
+    "nieuw": "Hoeveel duizend kilometer lang is de kustlijn van het Australische vasteland?"
+  },
+  {
+    "id": "nr843",
+    "oud": "Hoeveel eilanden telt Indonesië officieel (2024)?",
+    "nieuw": "Uit hoeveel eilanden bestaat Indonesië, afgerond op duizendtallen?"
+  },
+  {
+    "id": "nr947",
+    "oud": "Hoeveel miljoen inwoners heeft Brazilië?",
+    "nieuw": "Hoeveel miljoen inwoners had Brazilië in 2024?"
+  },
+  {
+    "id": "q974",
+    "oud": "Hoeveel van de Grote Meren liggen in de VS en Canada samen?",
+    "nieuw": "Uit hoeveel meren bestaan de Grote Meren van Noord-Amerika?"
+  },
+  {
+    "id": "N67",
+    "oud": "How many islands make up the Maldives?",
+    "nieuw": "Uit hoeveel eilanden bestaan de Malediven?"
+  },
+  {
+    "id": "q307",
+    "oud": "Op welke hoogte ligt het Titicacameer ongeveer boven zeeniveau?",
+    "nieuw": "Op hoeveel meter boven zeeniveau ligt het Titicacameer ongeveer?"
+  },
+  {
+    "id": "q991",
+    "oud": "Hoeveel dagen duurde de D-Day-invasie tot de bevrijding van Parijs?",
+    "nieuw": "Hoeveel dagen zaten er tussen D-Day en de bevrijding van Parijs?"
+  },
+  {
+    "id": "nr992",
+    "oud": "Hoeveel dagen duurde de Slag bij Verdun?",
+    "nieuw": "Hoeveel dagen duurde de Slag bij Verdun ongeveer?"
+  },
+  {
+    "id": "nr1013",
+    "oud": "Hoeveel presidenten hebben de Verenigde Staten gehad tot en met Joe Biden?",
+    "nieuw": "De hoeveelste president van de Verenigde Staten was Joe Biden?"
+  },
+  {
+    "id": "nr1016",
+    "oud": "Hoeveel schepen had de Atheense vloot tijdens de Slag bij Salamis ongeveer?",
+    "nieuw": "Hoeveel schepen telde de Griekse vloot tijdens de Slag bij Salamis ongeveer?"
+  },
+  {
+    "id": "nr1020",
+    "oud": "Hoeveel soldaten telde het Britse leger bij de Slag bij Waterloo ongeveer?",
+    "nieuw": "Hoeveel soldaten telde het Brits-geallieerde leger van Wellington bij Waterloo ongeveer?"
+  },
+  {
+    "id": "N40",
+    "oud": "How many houses were destroyed in the Great Fire of London?",
+    "nieuw": "Hoeveel huizen werden verwoest bij de Grote Brand van Londen?"
+  },
+  {
+    "id": "N35",
+    "oud": "How many kilometers long was the Berlin Wall?",
+    "nieuw": "Hoeveel kilometer lang was de Berlijnse Muur?"
+  },
+  {
+    "id": "N72",
+    "oud": "How many passengers sailed on the Mayflower to America?",
+    "nieuw": "Hoeveel passagiers voeren met de Mayflower naar Amerika?"
+  },
+  {
+    "id": "N38",
+    "oud": "How many seconds did the first successful powered airplane flight last?",
+    "nieuw": "Hoeveel seconden duurde de eerste geslaagde gemotoriseerde vlucht?"
+  },
+  {
+    "id": "nr1058",
+    "oud": "In welk year ontdekte Columbus Amerika (de eerste reis)?",
+    "nieuw": "In welk jaar bereikte Columbus op zijn eerste reis Amerika?"
+  },
+  {
+    "id": "nr306",
+    "oud": "In welk jaar werd de eerste volledige kaart van de wereldbol gemaakt?",
+    "nieuw": "In welk jaar maakte Martin Behaim de oudste bewaard gebleven globe?"
+  },
+  {
+    "id": "nr1042",
+    "oud": "In welk jaar werd Colombia onafhankelijk van Spanje?",
+    "nieuw": "In welk jaar riep Colombia zijn onafhankelijkheid van Spanje uit?"
+  },
+  {
+    "id": "nr629",
+    "oud": "In welk jaar werd de eerste universiteit ter wereld gesticht volgens de traditionele telling?",
+    "nieuw": "In welk jaar werd de Al-Qarawiyyin in Fez gesticht, de oudste nog bestaande universiteit?"
+  },
+  {
+    "id": "nr1064",
+    "oud": "Hoeveel UNESCO-werelderfgoedlocaties heeft China (stand 2026)?",
+    "nieuw": "Hoeveel UNESCO-werelderfgoedlocaties had China in 2025?"
+  },
+  {
+    "id": "nr1065",
+    "oud": "Hoeveel UNESCO-werelderfgoedlocaties heeft Duitsland (stand 2026)?",
+    "nieuw": "Hoeveel UNESCO-werelderfgoedlocaties had Duitsland in 2025?"
+  },
+  {
+    "id": "nr1165",
+    "oud": "Hoeveel etsen worden aan Rembrandt toegeschreven in de catalogus van het Rijksmuseum?",
+    "nieuw": "Hoeveel etsen maakte Rembrandt ongeveer?"
+  },
+  {
+    "id": "nr354",
+    "oud": "Hoeveel schilderijen uit de serie Zonnebloemen maakte Van Gogh?",
+    "nieuw": "Hoeveel versies van Zonnebloemen in een vaas schilderde Van Gogh in Arles?"
+  },
+  {
+    "id": "nr814",
+    "oud": "Hoeveel stenen beelden staan er in het Terracottaleger ongeveer?",
+    "nieuw": "Hoeveel beelden telt het Terracottaleger ongeveer?"
+  },
+  {
+    "id": "nr1086",
+    "oud": "Welk percentage van het wereldwijde staal wordt geproduceerd in China?",
+    "nieuw": "Welk percentage van het wereldwijde staal werd in 2023 in China geproduceerd?"
+  },
+  {
+    "id": "nr372",
+    "oud": "Hoeveel miljoen ton plastic afval lekt jaarlijks in de oceaan volgens een gangbare schatting?",
+    "nieuw": "Hoeveel miljoen ton plastic afval lekt jaarlijks in rivieren, meren en zeeën, volgens de ondergrens van de VN-schatting?"
+  },
+  {
+    "id": "nr400",
+    "oud": "Hoeveel facetten (geslepen vlakjes) heeft een standaard ronde briljant geslepen diamant?",
+    "nieuw": "Hoeveel facetten heeft een rond briljant geslepen diamant, zonder de punt (culet) mee te tellen?"
+  },
+  {
+    "id": "nr386",
+    "oud": "Hoeveel Grammy-nominaties had Beyoncé volgens de Grammy’s vóór de uitreiking van 2025?",
+    "nieuw": "Hoeveel Grammy-nominaties had Beyoncé in totaal bij de uitreiking van februari 2025?"
+  },
+  {
+    "id": "q1130",
+    "oud": "Hoeveel studioalbums bracht Taylor Swift uit tot 2024?",
+    "nieuw": "Hoeveel studioalbums met nieuw werk had Taylor Swift eind 2025 uitgebracht?"
+  },
+  {
+    "id": "q404",
+    "oud": "Hoeveel kilometer per uur waait wind bij windkracht 8 volgens de schaal van Beaufort?",
+    "nieuw": "Wat is de hoogste windsnelheid in kilometer per uur die nog bij windkracht 8 hoort?"
+  },
+  {
+    "id": "nr1254",
+    "oud": "Hoeveel departementen telt Peru?",
+    "nieuw": "In hoeveel regio's is Peru bestuurlijk verdeeld?"
+  },
+  {
+    "id": "nr1266",
+    "oud": "Hoeveel landen nemen er deel aan de Schengenzone (2024)?",
+    "nieuw": "Hoeveel landen horen bij de Schengenzone (2026)?"
+  },
+  {
+    "id": "nr1294",
+    "oud": "Hoeveel zetels telt het Australische Huis van Afgevaardigden?",
+    "nieuw": "Hoeveel zetels telde het Australische Huis van Afgevaardigden na de verkiezingen van 2022?"
+  },
+  {
+    "id": "nr1293",
+    "oud": "Hoeveel zetels telt de Nieuw-Zeelandse Kamer van Afgevaardigden?",
+    "nieuw": "Hoeveel zetels telt het Nieuw-Zeelandse parlement normaal, zonder overhangzetels?"
+  },
+  {
+    "id": "nr71",
+    "oud": "Hoe zwaar was de zwaarste pompoen ooit in kilogram?",
+    "nieuw": "Hoeveel kilogram woog de zwaarste pompoen ter wereld eind 2025?"
+  },
+  {
+    "id": "nr452",
+    "oud": "Hoeveel marathons liep de persoon met het record voor de meeste marathons?",
+    "nieuw": "Hoeveel marathons had de Duitser Horst Preisler eind 2004 gelopen?"
+  },
+  {
+    "id": "nr454",
+    "oud": "Hoeveel piercings had de persoon met de meeste piercings ooit?",
+    "nieuw": "Hoeveel piercings had Rolf Buchholz, de man met de meeste piercings, in 2012?"
+  },
+  {
+    "id": "nr1316",
+    "oud": "Hoeveel hotels heeft Hilton wereldwijd ongeveer?",
+    "nieuw": "Hoeveel hotels had Hilton eind 2023 wereldwijd ongeveer?"
+  },
+  {
+    "id": "nr1317",
+    "oud": "Hoeveel miljoen passagiers verwerkt Atlanta Airport (Hartsfield-Jackson, de drukste luchthaven ter wereld) per jaar?",
+    "nieuw": "Ruim hoeveel miljoen passagiers verwerkte Atlanta Airport, de drukste luchthaven ter wereld, in 2023?"
+  },
+  {
+    "id": "nr491",
+    "oud": "Hoeveel vakjes heeft een standaard Mens-erger-je-niet-bord?",
+    "nieuw": "Hoeveel vakjes telt de looproute rond een standaard Mens-erger-je-niet-bord?"
+  },
+  {
+    "id": "N19",
+    "oud": "How many minutes does a full day-and-night cycle last in Minecraft?",
+    "nieuw": "Hoeveel minuten duurt een volledige dag-en-nachtcyclus in Minecraft?"
+  },
+  {
+    "id": "q1360",
+    "oud": "Hoeveel keer won Argentinië de FIFA World Cup voetbal bij de mannen (2024)?",
+    "nieuw": "Hoeveel keer won Argentinië het WK voetbal bij de mannen, tot en met 2026?"
+  },
+  {
+    "id": "q1363",
+    "oud": "Hoeveel keer won Brazilië de FIFA World Cup voetbal bij de mannen (2024)?",
+    "nieuw": "Hoeveel keer won Brazilië het WK voetbal bij de mannen, tot en met 2026?"
+  },
+  {
+    "id": "q1364",
+    "oud": "Hoeveel keer won Duitsland de FIFA World Cup?",
+    "nieuw": "Hoeveel keer won Duitsland het WK voetbal bij de mannen, tot en met 2026?"
+  },
+  {
+    "id": "q1377",
+    "oud": "Hoeveel landen doen mee aan het FIFA World Cup 2026?",
+    "nieuw": "Hoeveel landen deden mee aan het WK voetbal van 2026?"
+  },
+  {
+    "id": "q1420",
+    "oud": "Hoeveel NASA-mannetjes missies naar de maan (Apollo) landden er daadwerkelijk?",
+    "nieuw": "Hoeveel Apollo-missies landden met astronauten op de maan?"
+  },
+  {
+    "id": "nr349",
+    "oud": "Hoeveel dwergplaneten worden in de NASA-overview genoemd?",
+    "nieuw": "Hoeveel dwergplaneten erkent de Internationale Astronomische Unie officieel?"
+  },
+  {
+    "id": "nr516",
+    "oud": "Hoeveel bekende manen heeft Saturnus officieel (stand 2026)?",
+    "nieuw": "Hoeveel bekende manen had Saturnus in maart 2026?"
+  },
+  {
+    "id": "nr526",
+    "oud": "Hoeveel officiële ringen heeft Uranus?",
+    "nieuw": "Hoeveel bekende ringen heeft Uranus?"
+  },
+  {
+    "id": "nr1441",
+    "oud": "Wat is de diameter van de Aarde over de evenaar in kilometers?",
+    "nieuw": "Hoeveel kilometer is de gemiddelde diameter van de aarde?"
+  },
+  {
+    "id": "nr1445",
+    "oud": "Wat is de geschatte temperatuur aan het oppervlak van de zon?",
+    "nieuw": "Hoeveel graden Celsius is het aan het oppervlak van de zon ongeveer?"
+  },
+  {
+    "id": "nr956",
+    "oud": "Hoeveel talen erkent India als officiële taal?",
+    "nieuw": "Hoeveel talen staan in de Achtste Bijlage van de Indiase grondwet?"
+  },
+  {
+    "id": "nr550",
+    "oud": "Hoeveel watt laadt een standaard iPhone snellader?",
+    "nieuw": "Hoeveel watt levert de standaard USB-C-lader van Apple voor de iPhone?"
+  },
+  {
+    "id": "nr1474",
+    "oud": "In welk jaar werd de eerste computer met een microprocessor ontwikkeld?",
+    "nieuw": "In welk jaar kwam de eerste commerciële microprocessor, de Intel 4004, uit?"
+  },
+  {
+    "id": "nr1455",
+    "oud": "Hoeveel kilometer per uur haalt de Shanghai Maglev?",
+    "nieuw": "Hoeveel kilometer per uur haalde de Shanghai Maglev in de reguliere dienst tot 2021?"
+  },
+  {
+    "id": "q576",
+    "oud": "Hoeveel metrolijnen heeft de Parijse metro?",
+    "nieuw": "Hoeveel metrolijnen had de Parijse metro in 2025?"
+  },
+  {
+    "id": "N53",
+    "oud": "How many kilometers per hour could Concorde reach?",
+    "nieuw": "Hoeveel kilometer per uur kon de Concorde halen?"
+  },
+  {
+    "id": "nr590",
+    "oud": "In welk jaar voer de eerste moderne onderzeeër succesvol?",
+    "nieuw": "In welk jaar maakte Robert Fultons onderzeeër Nautilus zijn eerste proefvaart?"
+  },
+  {
+    "id": "nr1488",
+    "oud": "Hoeveel miljoen nieuwe personenauto’s worden er wereldwijd per jaar geproduceerd?",
+    "nieuw": "Hoeveel miljoen motorvoertuigen werden er in 2022 wereldwijd geproduceerd?"
+  },
+  {
+    "id": "q698",
+    "oud": "Hoeveel landen gebruiken de euro als officiële munt?",
+    "nieuw": "Hoeveel EU-lidstaten gebruiken de euro (2026)?"
+  },
+  {
+    "id": "q698",
+    "oud": "Hoeveel landen gebruiken de euro als officiële munt?",
+    "nieuw": "Hoeveel EU-lidstaten gebruikten de euro in 2025?"
+  },
+  {
+    "id": "q773",
+    "oud": "Hoeveel ingangen heeft het Colosseum?",
+    "nieuw": "Hoeveel genummerde publieksingangen had het Colosseum?"
+  },
+  {
+    "id": "q773",
+    "oud": "Hoeveel ingangen heeft het Colosseum?",
+    "nieuw": "Hoeveel ingangen had het Colosseum?"
+  },
+  {
+    "id": "q1249",
+    "oud": "Hoeveel miljoen inwoners heeft China?",
+    "nieuw": "Hoeveel miljoen inwoners heeft China volgens de VN-schatting voor 2025?"
+  },
+  {
+    "id": "q1309",
+    "oud": "Hoe zwaar was de zwaarste schildpad ooit in kilogram?",
+    "nieuw": "Hoeveel kilogram woog de zwaarste lederschildpad ooit, volgens Guinness World Records?"
+  },
+  {
+    "id": "q1309",
+    "oud": "Hoe zwaar was de zwaarste schildpad ooit in kilogram?",
+    "nieuw": "Hoeveel kilogram woog de zwaarste schildpad ooit, volgens het National Museum Wales?"
+  },
+  {
+    "id": "q128",
+    "oud": "Wat is de totale geschatte lengte van alle bloedvaten in een volwassen menselijk lichaam in kilometers?",
+    "nieuw": "Hoeveel kilometer zijn alle bloedvaten van een volwassene samen lang, volgens de bekende schatting van 60.000 mijl?"
+  },
+  {
+    "id": "q1439",
+    "oud": "Wat is de baansnelheid van het ISS ongeveer?",
+    "nieuw": "Hoeveel kilometer per uur is de baansnelheid van het ISS, afgerond op duizendtallen?"
+  },
+  {
+    "id": "q1439",
+    "oud": "Wat is de baansnelheid van het ISS ongeveer?",
+    "nieuw": "Hoeveel kilometer per uur is de baansnelheid van het ISS ongeveer?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel beelden staan er op de top van de Brandenburger Tor?",
+    "nieuw": "Hoeveel paarden en godinnen beeldt de quadriga op de Brandenburger Tor samen uit?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel meter sprintt een schaatser op de kortebaan-afstand?",
+    "nieuw": "Hoeveel meter is de kortste individuele olympische langebaanschaatsafstand?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "In welk jaar reed de eerste auto met een verbrandingsmotor?",
+    "nieuw": "In welk jaar vroeg Carl Benz patent aan op zijn driewielige Motorwagen?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoe lang duurde de langste plank ooit in minuten?",
+    "nieuw": "Hoeveel minuten duurde de recordplank van Josef Šálek in mei 2023, afgerond?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel push-ups werden er in 24 uur uitgevoerd bij het huidige record?",
+    "nieuw": "Hoeveel push-ups deed Charles Servizio in 24 uur in april 1993, afgerond op duizendtallen?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoe lang was de langste hotdog ooit in meters?",
+    "nieuw": "Ruim hoeveel meter lang was de recordhotdog van Novex in Paraguay in 2011?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel metrolijnen heeft de New York City Subway?",
+    "nieuw": "Hoeveel fysieke spoorlijnen telt de New York City Subway volgens de gangbare indeling?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel meter breed mag een internationaal voetbalveld maximaal zijn?",
+    "nieuw": "Hoeveel meter breed mag een voetbalveld maximaal zijn buiten internationale wedstrijden?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel megabytes zitten er volgens de binaire definitie in één gigabyte?",
+    "nieuw": "Hoeveel mebibytes (MiB) zitten er in één gibibyte (GiB)?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel discipelen had Jezus volgens de Bijbel?",
+    "nieuw": "Hoeveel apostelen koos Jezus volgens de evangeliën?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel procent van het Amazonebekken ligt ongeveer in Brazilië?",
+    "nieuw": "Hoeveel procent van het Amazoneregenwoud ligt ongeveer in Brazilië?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel mensen dienden in totaal in het Amerikaanse leger tijdens de Tweede Wereldoorlog?",
+    "nieuw": "Hoeveel mensen dienden in de Amerikaanse strijdkrachten tijdens de Tweede Wereldoorlog, afgerond op miljoenen?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel miljoen inwoners heeft China volgens de VN-schatting voor 2025?",
+    "nieuw": "Hoeveel miljoen inwoners had China volgens de VN-schatting voor 2025, afgerond?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel meter ligt de Dode Zee ongeveer onder zeeniveau?",
+    "nieuw": "Hoeveel meter onder zeeniveau lag de waterspiegel van de Dode Zee op 1 juli 2026?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel winkels heeft Lidl wereldwijd ongeveer?",
+    "nieuw": "Hoeveel winkels had Lidl wereldwijd in september 2026?"
+  },
+  {
+    "id": "vervolg",
+    "oud": "Hoeveel kilometer lang is de langste grot ter wereld, Mammoth Cave, ongeveer?",
+    "nieuw": "Hoeveel kilometer gekarteerde gangen had Mammoth Cave volgens de NPS in 2024 ongeveer?"
+  },
+  {
+    "id": "q945",
+    "oud": "Hoeveel miljoen inwoners heeft Argentinië?",
+    "nieuw": "Hoeveel miljoen inwoners had Argentinië volgens de VN-schatting voor 2025, afgerond?"
+  },
+  {
+    "id": "q645",
+    "oud": "Hoeveel kilogram weegt een volwassen mannetjesolifant in Afrika?",
+    "nieuw": "Hoeveel kilogram weegt een volgroeide mannelijke Afrikaanse savanneolifant gemiddeld onder optimale groeiomstandigheden, ongeveer?"
+  },
+  {
+    "id": "q952",
+    "oud": "Hoeveel miljoen inwoners heeft Peru?",
+    "nieuw": "Hoeveel miljoen inwoners telde Peru bij de volkstelling van 2025, afgerond?"
+  },
+  {
+    "id": "q455",
+    "oud": "Hoeveel punten scoorde een team in de hoogste basketbalscore ooit?",
+    "nieuw": "Hoeveel punten scoorden de Detroit Pistons tegen de Denver Nuggets op 13 december 1983?"
+  },
+  {
+    "id": "q946",
+    "oud": "Hoeveel miljoen inwoners heeft Australië?",
+    "nieuw": "Hoeveel miljoen inwoners had Australië op 30 juni 2024 volgens het Australian Bureau of Statistics, afgerond?"
+  },
+  {
+    "id": "q1309",
+    "oud": "Hoeveel kilogram woog de zwaarste lederschildpad ooit, volgens Guinness World Records?",
+    "nieuw": "Hoeveel kilogram woog de lederschildpad die in september 1988 bij Harlech werd gevonden volgens Guinness, afgerond?"
+  },
+  {
+    "id": "q690",
+    "oud": "Hoeveel kilogram weegt een volwassen mannelijke Amerikaanse bizon?",
+    "nieuw": "Hoeveel kilogram kan een mannelijke Amerikaanse bizon volgens de National Park Service wegen, afgerond op honderdtallen?"
+  },
+  {
+    "id": "q686",
+    "oud": "Hoeveel uur per dag slaapt een koala?",
+    "nieuw": "Hoeveel uur per dag kan een koala volgens San Diego Zoo slapen?"
+  },
+  {
+    "id": "q069",
+    "oud": "Hoe lang was de langste vrouw ooit in centimeters?",
+    "nieuw": "Hoeveel centimeter lang was Zeng Jinlian bij haar laatste meting in 1982, afgerond?"
+  },
+  {
+    "id": "q450",
+    "oud": "Hoeveel kilogram weegt een gemiddeld stenen blok van de Piramide van Cheops?",
+    "nieuw": "Hoeveel kilogram weegt een stenen blok van de Piramide van Cheops gemiddeld, ongeveer?"
+  },
+  {
+    "id": "q948",
+    "oud": "Hoeveel miljoen inwoners heeft Chili?",
+    "nieuw": "Hoeveel miljoen inwoners had Chili volgens de VN-schatting voor 2025, afgerond?"
+  },
+  {
+    "id": "q447",
+    "oud": "Hoe oud werd de oudste hond volgens Guinness World Records in jaren?",
+    "nieuw": "Hoeveel volle jaren oud werd de Australische hond Bluey volgens Guinness?"
+  },
+  {
+    "id": "q951",
+    "oud": "Hoeveel miljoen inwoners heeft Nieuw-Zeeland?",
+    "nieuw": "Hoeveel miljoen inwoners had Nieuw-Zeeland op 30 juni 2024 volgens Stats NZ, afgerond?"
+  },
+  {
+    "id": "nr368",
+    "oud": "Hoeveel Starbucks-winkels zijn er wereldwijd ongeveer?",
+    "nieuw": "Hoeveel Starbucks-winkels waren er wereldwijd aan het einde van boekjaar 2024, afgerond op tienduizendtallen?"
+  },
+  {
+    "id": "nr1435",
+    "oud": "Hoeveel satellieten lanceerde India in één enkele raket als record (2017)?",
+    "nieuw": "Hoeveel satellieten lanceerde ISRO met PSLV-C37 op 15 februari 2017?"
+  },
+  {
+    "id": "nr648",
+    "oud": "Hoeveel kilogram weegt een volwassen nijlpaard?",
+    "nieuw": "Hoeveel kilogram weegt een volwassen mannelijk nijlpaard gemiddeld, afgerond op honderdtallen?"
+  },
+  {
+    "id": "nr435",
+    "oud": "Hoe hoog was de hoogste hond ooit in centimeters?",
+    "nieuw": "Hoeveel centimeter hoog was de Duitse dog Zeus bij de schouder in oktober 2011, afgerond?"
+  },
+  {
+    "id": "nr1313",
+    "oud": "Hoeveel mensen deden mee aan het grootste waterballonnengevecht ooit?",
+    "nieuw": "Hoeveel deelnemers telde het recordwaterballonnengevecht in Lexington op 27 augustus 2011?"
+  },
+  {
+    "id": "nr651",
+    "oud": "Hoeveel kilogram weegt een volwassen mannelijke jaguar?",
+    "nieuw": "Hoeveel kilogram weegt een mannelijke jaguar in de Braziliaanse Pantanal gemiddeld volgens Animal Diversity Web?"
+  },
+  {
+    "id": "nr653",
+    "oud": "Hoeveel kilogram weegt een volwassen wombat?",
+    "nieuw": "Hoeveel kilogram weegt een zuidelijke breedneuswombat gemiddeld volgens Redz Zoo?"
+  },
+  {
+    "id": "nr377",
+    "oud": "Hoeveel procent van het voedsel dat wereldwijd wordt geproduceerd gaat verloren of wordt verspild?",
+    "nieuw": "Hoeveel procent van het voor menselijke consumptie geproduceerde voedsel ging volgens de FAO-studie uit 2011 verloren of werd verspild, afgerond?"
+  },
+  {
+    "id": "nr438",
+    "oud": "Hoe klein was het kleinste paard ooit in centimeters?",
+    "nieuw": "Hoeveel centimeter hoog was het miniatuurpaard Thumbelina volgens Guinness, afgerond?"
+  },
+  {
+    "id": "nr1300",
+    "oud": "Hoe lang was de langste man ooit in centimeters?",
+    "nieuw": "Hoeveel centimeter lang was Robert Wadlow bij zijn laatste meting in juni 1940?"
+  },
+  {
+    "id": "nr456",
+    "oud": "Hoeveel uur duurde het langste videogame-marathonrecord (stand 2026)?",
+    "nieuw": "Hoeveel uur duurde de videogamemarathon van Szabolcs Csépe in oktober 2024?"
+  },
+  {
+    "id": "nr687",
+    "oud": "Hoeveel uur per dag slaapt een leeuw gemiddeld?",
+    "nieuw": "Hoeveel uur per dag is een leeuw ongeveer inactief?"
+  },
+  {
+    "id": "nr440",
+    "oud": "Hoe lang is de langste levende man in centimeters?",
+    "nieuw": "Hoeveel centimeter lang was Sultan Kösen volgens zijn Guinness-meting in februari 2011?"
+  },
+  {
+    "id": "nr1096",
+    "oud": "Hoeveel procent van de wetlands is sinds 1700 wereldwijd verdwenen?",
+    "nieuw": "Hoeveel procent van de natuurlijke wetlands was volgens de Ramsar-infographic voor Wereldwetlandsdag 2022 sinds de achttiende eeuw verdwenen?"
+  },
+  {
+    "id": "nr596",
+    "oud": "Hoeveel mogelijke worpen zijn er met drie gewone dobbelstenen?",
+    "nieuw": "Hoeveel geordende uitkomsten zijn er bij één worp met drie gewone zeszijdige dobbelstenen?"
+  },
+  {
+    "id": "nr378",
+    "oud": "Hoeveel procent van het wereldwijde waterverbruik gaat naar landbouw?",
+    "nieuw": "Hoeveel procent van de wereldwijde wateronttrekkingen gaat volgens de FAO bij benadering naar landbouw?"
+  },
+  {
+    "id": "nr680",
+    "oud": "Hoeveel vogelsoorten telt het Amazonegebied?",
+    "nieuw": "Hoeveel vogelsoorten zijn in het Amazoneregenwoud wetenschappelijk geclassificeerd volgens de inventaris in de Engelstalige Wikipedia, afgerond op honderdtallen?"
+  },
+  {
+    "id": "nr105",
+    "oud": "Hoeveel manieren kun je 3 renners op een podium van 8 deelnemers indelen?",
+    "nieuw": "Op hoeveel manieren kunnen goud, zilver en brons worden verdeeld onder acht renners, zonder gedeelde plaatsen?"
+  },
+  {
+    "id": "nr157",
+    "oud": "Hoeveel kilometer legt de Noordse stern jaarlijks trekafstand af?",
+    "nieuw": "Meer dan hoeveel kilometer per jaar legden de Noordse sterns af in de trekstudie die de British Antarctic Survey in 2010 bekendmaakte?"
+  },
+  {
+    "id": "nr445",
+    "oud": "Hoe lang was de langste kat ooit in centimeters?",
+    "nieuw": "Hoeveel centimeter lang was de huiskat Stewie bij zijn recordmeting in augustus 2010?"
+  },
+  {
+    "id": "nr1311",
+    "oud": "Hoeveel jongleurs deden mee aan het grootste jongleerrecord?",
+    "nieuw": "Hoeveel deelnemers jongleerden tegelijk bij het Guinness-record in Edinburgh op 7 augustus 1998?"
+  },
+  {
+    "id": "nr652",
+    "oud": "Hoeveel kilogram weegt een volwassen witte neushoorn?",
+    "nieuw": "Wat is volgens de EAZA-richtlijn uit 2018 de bovengrens van het opgegeven gewichtsbereik voor een volwassen vrouwelijke witte neushoorn, in kilogram?"
+  },
+  {
+    "id": "nr437",
+    "oud": "Hoe hoog was het hoogste paard ooit in centimeters?",
+    "nieuw": "Hoeveel centimeter schofthoogte vermeldt Guinness voor het paard Sampson op vierjarige leeftijd?"
+  },
+  {
+    "id": "nr67",
+    "oud": "Hoe lang duurde de langste voetbalwedstrijd ooit in minuten?",
+    "nieuw": "Hoeveel minuten duurde de voetbalwedstrijd Stockport County–Doncaster Rovers op 30 maart 1946?"
+  },
+  {
+    "id": "nr720",
+    "oud": "Hoeveel procent cacao heeft standaard pure chocolade?",
+    "nieuw": "Hoeveel procent cacao bevat de Lindt Excellence Intense Dark-reep van 100 gram op de Britse productpagina?"
+  },
+  {
+    "id": "nr62",
+    "oud": "Hoeveel kilometer fietst een Nederlander gemiddeld per jaar?",
+    "nieuw": "Hoeveel kilometer fietste een inwoner van Nederland van zes jaar of ouder gemiddeld in 2023 volgens het CBS?"
+  },
+  {
+    "id": "nr363",
+    "oud": "Hoeveel ton koper wordt wereldwijd jaarlijks geproduceerd?",
+    "nieuw": "Hoeveel ton koper werd volgens de schatting voor 2023 wereldwijd uit mijnen gewonnen, ongeveer?"
+  },
+  {
+    "id": "nr1081",
+    "oud": "Hoeveel ton plastic wordt wereldwijd jaarlijks geproduceerd?",
+    "nieuw": "Hoeveel ton plastic werd volgens het VN-rapport Drowning in Plastics uit 2021 wereldwijd per jaar geproduceerd, ongeveer?"
+  },
+  {
+    "id": "nr649",
+    "oud": "Hoeveel kilogram weegt een volwassen emoe?",
+    "nieuw": "Wat is volgens Perth Zoo de bovengrens van het opgegeven gewichtsbereik van een emoe, in kilogram?"
+  },
+  {
+    "id": "nr540",
+    "oud": "Hoeveel letters had het oorspronkelijke Morsealfabet ongeveer?",
+    "nieuw": "Hoeveel basisletters van het Latijnse alfabet worden gecodeerd in de internationale morsecode?"
+  },
+  {
+    "id": "nr311",
+    "oud": "Hoeveel chromosomen telt een gezonde menselijke cel?",
+    "nieuw": "Hoeveel chromosomen heeft een menselijke diploïde lichaamscel normaal in de celkern?"
+  },
+  {
+    "id": "nr721",
+    "oud": "Hoeveel procent van de wereldcacao komt uit West-Afrika?",
+    "nieuw": "Hoeveel procent van de wereldcacao leverde West-Afrika bij benadering volgens de ICCO-verklaring uit oktober 2014?"
+  },
+  {
+    "id": "nr1077",
+    "oud": "Hoeveel procent van de wereldwijde landbouwgrond wordt geïrrigeerd?",
+    "nieuw": "Hoeveel procent van het wereldwijde beteelde land werd volgens het FAO-feitenoverzicht uit 2015 geïrrigeerd?"
+  },
+  {
+    "id": "nr434",
+    "oud": "Hoe groot was de grootste pizza ooit in vierkante meter?",
+    "nieuw": "Hoeveel vierkante meter groot was de recordpizza van Airrack in Los Angeles in januari 2023, afgerond?"
+  },
+  {
+    "id": "nr1219",
+    "oud": "Hoeveel miljard euro bedraagt het Nederlandse defensiebudget?",
+    "nieuw": "Hoeveel miljard euro had Nederland voor defensie-uitgaven in 2024 begroot volgens de aankondiging op Prinsjesdag 2023, afgerond?"
+  },
+  {
+    "id": "nr1062",
+    "oud": "Hoeveel kilogram weegt de Moai-beelden op Paaseiland gemiddeld?",
+    "nieuw": "Hoeveel kilogram weegt een moai op Paaseiland volgens de gangbare schatting ongeveer?"
+  },
+  {
+    "id": "nr479",
+    "oud": "Hoeveel dorpen krijgt iedere speler bij de start van Catan?",
+    "nieuw": "Hoeveel houten dorpsstukken krijgt iedere speler in het basisspel Catan?"
+  },
+  {
+    "id": "nr441",
+    "oud": "Hoe lang is de langste levende vrouw in centimeters?",
+    "nieuw": "Hoeveel centimeter lang was Rumeysa Gelgi volgens Guinness in mei 2021, afgerond?"
+  },
+  {
+    "id": "nr1307",
+    "oud": "Hoe zwaar was de grootste chocoladereep ooit in kilogram?",
+    "nieuw": "Hoeveel kilogram woog de chocoladereep van Thorntons uit 2011 volgens Guinness, afgerond?"
+  },
+  {
+    "id": "nr411",
+    "oud": "Hoeveel kg afval produceert een Nederlander gemiddeld per jaar?",
+    "nieuw": "Hoeveel kilogram huishoudelijk afval zamelden Nederlandse gemeenten in 2025 per inwoner in volgens de voorlopige CBS-cijfers?"
+  },
+  {
+    "id": "nr1249",
+    "oud": "Hoeveel miljoen inwoners heeft China?",
+    "nieuw": "Hoeveel miljoen inwoners had China volgens het bevolkingscijfer voor 2023 in de Engelstalige Wikipedia?"
+  },
+  {
+    "id": "nr49",
+    "oud": "Hoeveel procent van de bekende plant- en diersoorten leeft in tropische regenwouden?",
+    "nieuw": "Hoeveel procent van de plant- en diersoorten leeft volgens de schatting in het JICA-sciencelesboek voor klas 5 in regenwouden, ongeveer?"
+  },
+  {
+    "id": "nr291",
+    "oud": "Hoeveel officiële inwoners heeft Vaticaanstad?",
+    "nieuw": "Hoeveel inwoners had Vaticaanstad ongeveer volgens het Amerikaanse State Department-rapport uit 2014?"
+  },
+  {
+    "id": "nr93",
+    "oud": "In welk jaar werd de eerste internationale telefonische verbinding gemaakt?",
+    "nieuw": "In welk jaar werd de telefoonlijn tussen Parijs en Brussel voltooid en getest?"
+  },
+  {
+    "id": "nr923",
+    "oud": "Hoeveel landen telt Azië?",
+    "nieuw": "Hoeveel VN-lidstaten rekent het infokader van het Engelstalige Wikipedia-artikel Asia tot Azië?"
+  },
+  {
+    "id": "nr362",
+    "oud": "Hoeveel ton bananen worden wereldwijd jaarlijks geproduceerd?",
+    "nieuw": "Hoeveel ton bananen werd in 2022 wereldwijd geproduceerd volgens het Namibische marktbericht op basis van FAOSTAT, afgerond op miljoenen?"
+  },
+  {
+    "id": "nr8",
+    "oud": "Hoeveel kilogram weegt de tong van een blauwe vinvis ongeveer?",
+    "nieuw": "Hoeveel kilogram weegt een blauwe-vinvistong volgens de schatting in het IFAW-lesmateriaal Beneath the Waves?"
+  },
+  {
+    "id": "nr678",
+    "oud": "Hoeveel vogelsoorten telt Australië?",
+    "nieuw": "Meer dan hoeveel vogelsoorten leven er in Australië volgens het artikel Land of the Birds van de Royal Society of Victoria uit 2024?"
+  },
+  {
+    "id": "nr611",
+    "oud": "Hoeveel spieren heeft het menselijk lichaam ongeveer?",
+    "nieuw": "Hoeveel spieren bevat het menselijk lichaam ongeveer volgens de Australische overheidswebsite Better Health Channel?"
+  },
+  {
+    "id": "nr277",
+    "oud": "Hoeveel landen grenzen aan de Dode Zee?",
+    "nieuw": "Hoeveel VN-lidstaten hebben een kust aan de Dode Zee, de Palestijnse gebieden niet meegeteld?"
+  },
+  {
+    "id": "nr684",
+    "oud": "Hoeveel tanden wisselt een haai gedurende zijn leven ongeveer?",
+    "nieuw": "Wat is volgens het Natural History Museum de ondergrens van het geschatte aantal tanden dat een haai in zijn leven kan produceren?"
+  },
+  {
+    "id": "nr1298",
+    "oud": "Hoe hoog was de hoogste robot ooit gebouwd in meters?",
+    "nieuw": "Hoeveel meter hoog was de mobiele humanoïde Gundam-robot in Yokohama volgens zijn Guinness-record van december 2020?"
+  },
+  {
+    "id": "nr192",
+    "oud": "Hoeveel vakken heeft een klassieke eierdoos meestal?",
+    "nieuw": "Hoeveel eieren bevat een gebruikelijke Amerikaanse winkelverpakking volgens de U.S. Poultry & Egg Export Council?"
+  },
+  {
+    "id": "nr1095",
+    "oud": "Hoeveel procent van de oorspronkelijke bossen in de wereld is nog over?",
+    "nieuw": "Hoeveel procent van het totale bosareaal was volgens de FAO Forest Resources Assessment 2010 primair bos?"
+  },
+  {
+    "id": "nr920",
+    "oud": "Hoeveel landen telt Europa?",
+    "nieuw": "Hoeveel soevereine staten staan volgens de Engelstalige Wikipedia in de Europese lijst op basis van ligging en/of lidmaatschap van Europese organisaties?"
+  },
+  {
+    "id": "nr45",
+    "oud": "Hoeveel ton goud wordt wereldwijd jaarlijks gewonnen?",
+    "nieuw": "Hoeveel ton goud werd in 2020 wereldwijd uit mijnen gewonnen volgens USGS, afgerond op honderdtallen?"
+  },
+  {
+    "id": "nr1423",
+    "oud": "Hoeveel bekende manen heeft Jupiter (stand 2026)?",
+    "nieuw": "Hoeveel bekende manen had Jupiter op 9 april 2026 volgens de Engelstalige Wikipedia?"
+  },
+  {
+    "id": "nr647",
+    "oud": "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger?",
+    "nieuw": "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger ongeveer volgens SeaWorld?"
+  },
+  {
+    "id": "nr292",
+    "oud": "Hoeveel officiële talen heeft Zwitserland?",
+    "nieuw": "Hoeveel nationale talen heeft Zwitserland?"
+  },
+  {
+    "id": "nr1283",
+    "oud": "Hoeveel provincies heeft Argentinië (inclusief de hoofdstad als aparte provincie)?",
+    "nieuw": "Hoeveel eerstelijnsbestuursgebieden heeft Argentinië, de autonome stad Buenos Aires meegerekend?"
+  },
+  {
+    "id": "nr556",
+    "oud": "In welk jaar werd de eerste camera uitgevonden?",
+    "nieuw": "In welk jaar maakte Nicéphore Niépce zijn vroege, nog niet permanente camerafoto’s op papier met zilverchloride?"
+  },
+  {
+    "id": "nr449",
+    "oud": "Hoe zwaar was de zwaarste hond ooit in kilogram?",
+    "nieuw": "Hoeveel kilogram woog de Engelse mastiff Zorba volgens het Guinness-record uit 1989, afgerond?"
+  },
+  {
+    "id": "nr42",
+    "oud": "In welk jaar werd de eerste moderne volkstelling gehouden?",
+    "nieuw": "In welk jaar hield Jean Talon de eerste volkstelling van Nieuw-Frankrijk?"
+  },
+  {
+    "id": "nr1250",
+    "oud": "Hoeveel miljoen inwoners heeft India?",
+    "nieuw": "Hoeveel miljoen inwoners had India in 2023 volgens de WHO, afgerond op tientallen miljoenen?"
+  },
+  {
+    "id": "nr70",
+    "oud": "Hoe zwaar was de zwaarste hamburger ooit in kilogram?",
+    "nieuw": "Hoeveel kilogram woog de recordhamburger in Pilsting op 9 juli 2017, afgerond?"
+  },
+  {
+    "id": "nr1212",
+    "oud": "Hoeveel meter diep is het Zeelandbrug het hoogste punt voor schepen?",
+    "nieuw": "Hoeveel meter hoog is de Zeelandbrug volgens Architectuur Zeeland?"
+  },
+  {
+    "id": "nr650",
+    "oud": "Hoeveel kilogram weegt een volwassen giraffe?",
+    "nieuw": "Hoeveel kilogram weegt een volwassen mannelijke giraffe gemiddeld, afgerond op honderdtallen?"
+  },
+  {
+    "id": "nr1221",
+    "oud": "Hoeveel miljoen toeristen bezoekt Amsterdam jaarlijks ongeveer?",
+    "nieuw": "Hoeveel miljoen toeristenovernachtingen verwachtte Amsterdam voor 2023 in het lage scenario van de bezoekersprognose 2023–2025?"
+  },
+  {
+    "id": "nr448",
+    "oud": "Hoe zwaar was de grootste kaas ooit gemaakt in kilogram?",
+    "nieuw": "Hoeveel kilogram woog de recordcheddar van Agropur in Granby in september 1995?"
+  },
+  {
+    "id": "nr1501",
+    "oud": "In welk jaar reed de eerste elektrische auto?",
+    "nieuw": "In welk jaar bouwde Sibrandus Stratingh zijn vroege elektrische modelwagentje?"
+  },
+  {
+    "id": "nr681",
+    "oud": "Hoeveel spieren zitten er in de slurf van een olifant?",
+    "nieuw": "Hoeveel spieren bevat een olifantenslurf bij benadering volgens San Diego Zoo Wildlife Alliance?"
+  },
+  {
+    "id": "nr1478",
+    "oud": "In welk jaar werd de eerste laptop uitgebracht?",
+    "nieuw": "In welk jaar werd de draagbare computer Osborne 1 uitgebracht?"
+  },
+  {
+    "id": "nr718",
+    "oud": "Hoeveel liter olijfolie gebruikt een Griek per jaar?",
+    "nieuw": "Hoeveel liter olijfolie per persoon noemt het overzicht van Keçeli uit 2023 voor Griekenland?"
+  },
+  {
+    "id": "nr766",
+    "oud": "Hoeveel miljoen pelgrims bezoeken Mekka jaarlijks?",
+    "nieuw": "Hoeveel miljoen mensen namen gemiddeld per jaar deel aan de hadj in de periode 2000–2019, afgerond?"
+  },
+  {
+    "id": "q074",
+    "oud": "Hoeveel LEGO-steentjes worden er wereldwijd per seconde gemaakt?",
+    "nieuw": "Hoeveel LEGO-steentjes per seconde noemde een medewerker tijdens het fabrieksbezoek dat Der Standard in juni 2020 beschreef?"
+  },
+  {
+    "id": "nr712",
+    "oud": "Hoeveel kilogram rundvlees eet een Argentijn per jaar?",
+    "nieuw": "Hoeveel kilogram rundvlees werd in Argentinië in 2020 per inwoner geconsumeerd volgens het landbouwministerie, afgerond?"
+  },
+  {
+    "id": "nr679",
+    "oud": "Hoeveel vogelsoorten telt Colombia, het land met de meeste ter wereld?",
+    "nieuw": "Meer dan hoeveel vogelsoorten telde Colombia volgens het historische ProAves-artikel over zijn wereldrecord aan vogeldiversiteit?"
+  },
+  {
+    "id": "nr443",
+    "oud": "Hoe lang was de langste hond ooit in centimeters?",
+    "nieuw": "Hoeveel centimeter lang was de Engelse mastiff Zorba volgens de gangbare recordbeschrijving, afgerond op tientallen centimeters?"
+  },
+  {
+    "id": "nr546",
+    "oud": "Hoeveel duizend zoekopdrachten verwerkt Google wereldwijd per seconde?",
+    "nieuw": "Hoeveel duizend zoekopdrachten per seconde verwerkt Google volgens de schatting in The MFA Guide uit 2024?"
+  },
+  {
+    "id": "nr1209",
+    "oud": "Hoeveel liter melk geeft een gemiddelde Nederlandse koe per jaar?",
+    "nieuw": "Hoeveel kilogram melk per koe bedroeg het rollend jaargemiddelde van Erve Westerhof in de CRV-bedrijfsreportage?"
+  },
+  {
+    "id": "nr722",
+    "oud": "Hoeveel procent van de wereldkoffie komt uit Brazilië?",
+    "nieuw": "Hoeveel procent van de wereldwijde koffieproductie kwam in 2017 uit Brazilië volgens de studie Brazilian Coffee Industry van FGV?"
+  },
+  {
+    "id": "nr1088",
+    "oud": "Hoeveel winkels heeft Aldi wereldwijd ongeveer?",
+    "nieuw": "Meer dan hoeveel winkels wereldwijd noemt het Aldi-overzicht van Solomon Partners uit maart 2024?"
+  },
+  {
+    "id": "nr845",
+    "oud": "Hoeveel eilanden vormen Indonesië volgens de officiële telling?",
+    "nieuw": "Uit hoeveel eilanden bestaat Indonesië volgens de gerapporteerde telling in het Amerikaanse rapport Limits in the Seas, nummer 141?"
+  },
+  {
+    "id": "nr1197",
+    "oud": "Hoeveel vierkante kilometer groot is de provincie Utrecht?",
+    "nieuw": "Hoeveel vierkante kilometer omvatte de provincie Utrecht inclusief water volgens het VU-onderzoek naar de economische impact van recreatietoervaart?"
+  },
+  {
+    "id": "nr560",
+    "oud": "In welk jaar werd de eerste radio-uitzending gemaakt?",
+    "nieuw": "In welk jaar vond Fessendens kerstavonduitzending plaats volgens de IEEE Milestone-gedenkplaat?"
+  },
+  {
+    "id": "foto-library-ronde2-3",
+    "oud": "Hoeveel spelers staan er per team op het veld bij American football?",
+    "nieuw": "Hoeveel spelers staan per ploeg op het veld bij American football op volle sterkte?"
+  },
+  {
+    "id": "foto-library-ronde2-4",
+    "oud": "Hoeveel bedrijven stonden bij de oprichting in de Dow Jones Industrial Average?",
+    "nieuw": "Hoeveel bedrijven telde de Dow Jones Industrial Average bij de start in 1896?"
+  },
+  {
+    "id": "foto-library-ronde2-9",
+    "oud": "Hoeveel edelwaarheden kent het boeddhisme?",
+    "nieuw": "Hoeveel edele waarheden staan centraal in de traditionele boeddhistische leer?"
+  },
+  {
+    "id": "foto-library-ronde2-11",
+    "oud": "Hoeveel vleugels heeft een kever?",
+    "nieuw": "Hoeveel vleugels heeft een typische volwassen kever, inclusief de dekschilden?"
+  },
+  {
+    "id": "foto-library-ronde2-13",
+    "oud": "Hoeveel verschillende sommen kun je gooien met twee gewone dobbelstenen?",
+    "nieuw": "Hoeveel verschillende sommen kun je gooien met twee gewone zeszijdige dobbelstenen?"
+  },
+  {
+    "id": "foto-library-ronde2-15",
+    "oud": "Hoeveel naamvallen heeft het Latijn volgens de traditionele grammaticale indeling?",
+    "nieuw": "Hoeveel hoofdnaamvallen worden traditioneel bij Latijn onderwezen, zonder de locativus?"
+  },
+  {
+    "id": "foto-library-ronde2-23",
+    "oud": "Hoeveel bovengrondse verdiepingen heeft het Witte Huis?",
+    "nieuw": "Hoeveel bovengrondse niveaus heeft de residentie van het Witte Huis, inclusief de begane grond?"
+  },
+  {
+    "id": "foto-library-ronde2-30",
+    "oud": "Hoeveel landen grenzen landinwaarts aan de Kaspische Zee?",
+    "nieuw": "Hoeveel landen hebben een kust aan de Kaspische Zee?"
+  },
+  {
+    "id": "foto-library-ronde2-31",
+    "oud": "Uit hoeveel leden bestaat de VN-Veiligheidsraad in totaal?",
+    "nieuw": "Hoeveel lidstaten telt de Veiligheidsraad van de Verenigde Naties in totaal?"
+  },
+  {
+    "id": "foto-library-ronde2-34",
+    "oud": "In hoeveel officiële James Bond-films speelde Roger Moore de hoofdrol?",
+    "nieuw": "In hoeveel door Eon geproduceerde James Bond-films speelde Roger Moore Bond?"
+  },
+  {
+    "id": "foto-library-ronde2-38",
+    "oud": "Hoeveel jaar zwierf Odysseus rond voordat hij terugkeerde naar Ithaka?",
+    "nieuw": "Hoeveel jaar duurde de terugreis van Odysseus na de Trojaanse Oorlog in Homerus’ Odyssee?"
+  },
+  {
+    "id": "foto-library-ronde2-54",
+    "oud": "Hoeveel jaren duurt een termijn van een Amerikaanse senator?",
+    "nieuw": "Hoeveel jaar duurt een volledige termijn van een senator van de Verenigde Staten?"
+  },
+  {
+    "id": "foto-library-ronde2-59",
+    "oud": "Hoeveel geboden bevat de traditionele christelijke indeling van de Tien Geboden?",
+    "nieuw": "Hoeveel geboden bevat de Bijbelse decaloog?"
+  },
+  {
+    "id": "foto-library-ronde2-62",
+    "oud": "Hoeveel studioalbums bracht Queen uit?",
+    "nieuw": "Hoeveel studioalbums bracht Queen uit van Queen uit 1973 tot en met Made in Heaven uit 1995?"
+  },
+  {
+    "id": "foto-library-ronde2-68",
+    "oud": "Hoeveel elektronen heeft een natriumion, Na⁺?",
+    "nieuw": "Hoeveel elektronen heeft een enkelvoudig positief geladen natriumion?"
+  },
+  {
+    "id": "foto-library-ronde2-70",
+    "oud": "Hoeveel kamers heeft de maag van een geit?",
+    "nieuw": "Hoeveel compartimenten heeft de maag van een geit?"
+  },
+  {
+    "id": "foto-library-ronde2-71",
+    "oud": "Hoeveel neutronen heeft koolstof-14?",
+    "nieuw": "Hoeveel neutronen bevat een koolstof-veertienkern?"
+  },
+  {
+    "id": "foto-library-ronde2-75",
+    "oud": "Hoeveel zuilen heeft het Parthenon aan de korte zijde?",
+    "nieuw": "Hoeveel zuilen staan aan elke korte zijde van de buitenste zuilengang van het Parthenon?"
+  },
+  {
+    "id": "foto-library-ronde2-83",
+    "oud": "Hoeveel opdrachten (werken) moest Hercules voltooien volgens de Griekse mythologie?",
+    "nieuw": "Hoeveel werken voltooide Herakles volgens de traditionele Griekse mythe?"
+  },
+  {
+    "id": "foto-library-ronde2-88",
+    "oud": "Hoeveel seizoenen heeft Breaking Bad?",
+    "nieuw": "Hoeveel seizoenen heeft de afgeronde televisieserie Breaking Bad?"
+  },
+  {
+    "id": "foto-library-ronde2-95",
+    "oud": "Hoeveel poten heeft een insect?",
+    "nieuw": "Hoeveel poten heeft een typisch volwassen insect?"
+  },
+  {
+    "id": "foto-library-ronde2-96",
+    "oud": "Hoeveel nummers staan er op het album Thriller van Michael Jackson?",
+    "nieuw": "Hoeveel nummers staan op de oorspronkelijke uitgave van Michael Jacksons Thriller uit 1982?"
+  },
+  {
+    "id": "foto-library-ronde2-112",
+    "oud": "Hoeveel domeinen noemt UNESCO voor immaterieel cultureel erfgoed?",
+    "nieuw": "Hoeveel brede domeinen van immaterieel cultureel erfgoed noemt het UNESCO-verdrag uit 2003?"
+  },
+  {
+    "id": "foto-library-ronde2-113",
+    "oud": "Hoeveel grondstoffenkaarten zitten er in het basisspel van Catan?",
+    "nieuw": "Hoeveel grondstoffenkaarten bevat het standaard Catan-basisspel voor drie of vier spelers?"
+  },
+  {
+    "id": "foto-library-ronde2-131",
+    "oud": "Hoeveel keer won Brazilië de Copa América tot 2024?",
+    "nieuw": "Hoeveel Copa América-titels had Brazilië eind 2024 gewonnen?"
+  },
+  {
+    "id": "foto-library-ronde2-135",
+    "oud": "Uit hoeveel landen bestaat de UNESCO-site Het architectonische werk van Le Corbusier?",
+    "nieuw": "Over hoeveel landen is het werelderfgoed Het architectonische werk van Le Corbusier verspreid?"
+  },
+  {
+    "id": "q945",
+    "oud": "Hoeveel miljoen inwoners had Argentinië volgens de VN-schatting voor 2025, afgerond?",
+    "nieuw": "Hoeveel miljoen inwoners had Argentinië naar schatting in 2025?"
+  },
+  {
+    "id": "q946",
+    "oud": "Hoeveel miljoen inwoners had Australië op 30 juni 2024 volgens het Australian Bureau of Statistics, afgerond?",
+    "nieuw": "Hoeveel miljoen inwoners had Australië op 30 juni 2024, afgerond?"
+  },
+  {
+    "id": "q948",
+    "oud": "Hoeveel miljoen inwoners had Chili volgens de VN-schatting voor 2025, afgerond?",
+    "nieuw": "Hoeveel miljoen inwoners had Chili naar schatting in 2025?"
+  },
+  {
+    "id": "q951",
+    "oud": "Hoeveel miljoen inwoners had Nieuw-Zeeland op 30 juni 2024 volgens Stats NZ, afgerond?",
+    "nieuw": "Hoeveel miljoen inwoners had Nieuw-Zeeland op 30 juni 2024, afgerond?"
+  },
+  {
+    "id": "q455",
+    "oud": "Hoeveel punten scoorden de Detroit Pistons tegen de Denver Nuggets op 13 december 1983?",
+    "nieuw": "Hoeveel punten scoorden de Pistons tegen de Nuggets op 13 december 1983?"
+  },
+  {
+    "id": "q1309",
+    "oud": "Hoeveel kilogram woog de lederschildpad die in september 1988 bij Harlech werd gevonden volgens Guinness, afgerond?",
+    "nieuw": "Hoeveel kilogram woog de lederschildpad uit Harlech in september 1988, afgerond?"
+  },
+  {
+    "id": "q686",
+    "oud": "Hoeveel uur per dag kan een koala volgens San Diego Zoo slapen?",
+    "nieuw": "Hoeveel uur per dag kan een koala slapen?"
+  },
+  {
+    "id": "q450",
+    "oud": "Hoeveel kilogram weegt een stenen blok van de Piramide van Cheops gemiddeld, ongeveer?",
+    "nieuw": "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld, ongeveer?"
+  },
+  {
+    "id": "q447",
+    "oud": "Hoeveel volle jaren oud werd de Australische hond Bluey volgens Guinness?",
+    "nieuw": "Hoeveel volle jaren oud werd de Australische hond Bluey?"
+  },
+  {
+    "id": "nr712",
+    "oud": "Hoeveel kilogram rundvlees werd in Argentinië in 2020 per inwoner geconsumeerd volgens het landbouwministerie, afgerond?",
+    "nieuw": "Hoeveel kilogram rundvlees at men in Argentinië per inwoner in 2020, afgerond?"
+  },
+  {
+    "id": "nr291",
+    "oud": "Hoeveel inwoners had Vaticaanstad ongeveer volgens het Amerikaanse State Department-rapport uit 2014?",
+    "nieuw": "Hoeveel inwoners had Vaticaanstad ongeveer volgens het Amerikaanse rapport uit 2014?"
+  },
+  {
+    "id": "nr368",
+    "oud": "Hoeveel Starbucks-winkels waren er wereldwijd aan het einde van boekjaar 2024, afgerond op tienduizendtallen?",
+    "nieuw": "Hoeveel Starbucks-winkels waren er eind boekjaar 2024, afgerond op tienduizendtallen?"
+  },
+  {
+    "id": "nr651",
+    "oud": "Hoeveel kilogram weegt een mannelijke jaguar in de Braziliaanse Pantanal gemiddeld volgens Animal Diversity Web?",
+    "nieuw": "Hoeveel kilogram weegt een mannelijke jaguar in de Pantanal gemiddeld?"
+  },
+  {
+    "id": "nr653",
+    "oud": "Hoeveel kilogram weegt een zuidelijke breedneuswombat gemiddeld volgens Redz Zoo?",
+    "nieuw": "Hoeveel kilogram weegt een zuidelijke breedneuswombat gemiddeld?"
+  },
+  {
+    "id": "nr377",
+    "oud": "Hoeveel procent van het voor menselijke consumptie geproduceerde voedsel ging volgens de FAO-studie uit 2011 verloren of werd verspild, afgerond?",
+    "nieuw": "Hoeveel procent van ons voedsel ging verloren of werd verspild in de FAO-studie uit 2011?"
+  },
+  {
+    "id": "nr438",
+    "oud": "Hoeveel centimeter hoog was het miniatuurpaard Thumbelina volgens Guinness, afgerond?",
+    "nieuw": "Hoeveel centimeter hoog was het miniatuurpaard Thumbelina, afgerond?"
+  },
+  {
+    "id": "nr440",
+    "oud": "Hoeveel centimeter lang was Sultan Kösen volgens zijn Guinness-meting in februari 2011?",
+    "nieuw": "Hoeveel centimeter lang was Sultan Kösen bij zijn meting in februari 2011?"
+  },
+  {
+    "id": "nr378",
+    "oud": "Hoeveel procent van de wereldwijde wateronttrekkingen gaat volgens de FAO bij benadering naar landbouw?",
+    "nieuw": "Hoeveel procent van de wereldwijde wateronttrekkingen gaat ongeveer naar landbouw?"
+  },
+  {
+    "id": "nr105",
+    "oud": "Op hoeveel manieren kunnen goud, zilver en brons worden verdeeld onder acht renners, zonder gedeelde plaatsen?",
+    "nieuw": "Op hoeveel manieren kun je goud, zilver en brons verdelen onder acht renners, zonder gelijke plaatsen?"
+  },
+  {
+    "id": "nr157",
+    "oud": "Meer dan hoeveel kilometer per jaar legden de Noordse sterns af in de trekstudie die de British Antarctic Survey in 2010 bekendmaakte?",
+    "nieuw": "Meer dan hoeveel kilometer per jaar trokken Noordse sterns in de BAS-studie uit 2010?"
+  },
+  {
+    "id": "nr362",
+    "oud": "Hoeveel ton bananen werd in 2022 wereldwijd geproduceerd volgens het Namibische marktbericht op basis van FAOSTAT, afgerond op miljoenen?",
+    "nieuw": "Hoeveel ton bananen produceerde de wereld in 2022, afgerond op miljoenen?"
+  },
+  {
+    "id": "nr445",
+    "oud": "Hoeveel centimeter lang was de huiskat Stewie bij zijn recordmeting in augustus 2010?",
+    "nieuw": "Hoeveel centimeter lang was de kat Stewie bij zijn recordmeting in augustus 2010?"
+  },
+  {
+    "id": "nr1311",
+    "oud": "Hoeveel deelnemers jongleerden tegelijk bij het Guinness-record in Edinburgh op 7 augustus 1998?",
+    "nieuw": "Hoeveel mensen jongleerden tegelijk bij het record in Edinburgh op 7 augustus 1998?"
+  },
+  {
+    "id": "nr437",
+    "oud": "Hoeveel centimeter schofthoogte vermeldt Guinness voor het paard Sampson op vierjarige leeftijd?",
+    "nieuw": "Hoeveel centimeter schofthoogte had het paard Sampson op vierjarige leeftijd?"
+  },
+  {
+    "id": "nr8",
+    "oud": "Hoeveel kilogram weegt een blauwe-vinvistong volgens de schatting in het IFAW-lesmateriaal Beneath the Waves?",
+    "nieuw": "Hoeveel kilogram weegt een blauwe-vinvistong naar schatting?"
+  },
+  {
+    "id": "nr62",
+    "oud": "Hoeveel kilometer fietste een inwoner van Nederland van zes jaar of ouder gemiddeld in 2023 volgens het CBS?",
+    "nieuw": "Hoeveel kilometer fietste een Nederlandse inwoner van zes jaar of ouder gemiddeld in 2023?"
+  },
+  {
+    "id": "nr363",
+    "oud": "Hoeveel ton koper werd volgens de schatting voor 2023 wereldwijd uit mijnen gewonnen, ongeveer?",
+    "nieuw": "Hoeveel ton koper werd in 2023 wereldwijd uit mijnen gewonnen, ongeveer?"
+  },
+  {
+    "id": "nr1081",
+    "oud": "Hoeveel ton plastic werd volgens het VN-rapport Drowning in Plastics uit 2021 wereldwijd per jaar geproduceerd, ongeveer?",
+    "nieuw": "Hoeveel ton plastic werd jaarlijks geproduceerd volgens het VN-rapport uit 2021, ongeveer?"
+  },
+  {
+    "id": "nr611",
+    "oud": "Hoeveel spieren bevat het menselijk lichaam ongeveer volgens de Australische overheidswebsite Better Health Channel?",
+    "nieuw": "Hoeveel spieren bevat het menselijk lichaam ongeveer?"
+  },
+  {
+    "id": "nr277",
+    "oud": "Hoeveel VN-lidstaten hebben een kust aan de Dode Zee, de Palestijnse gebieden niet meegeteld?",
+    "nieuw": "Hoeveel VN-lidstaten hebben een kust aan de Dode Zee?"
+  },
+  {
+    "id": "nr1298",
+    "oud": "Hoeveel meter hoog was de mobiele humanoïde Gundam-robot in Yokohama volgens zijn Guinness-record van december 2020?",
+    "nieuw": "Hoeveel meter hoog was de mobiele Gundam-robot in Yokohama bij zijn record in december 2020?"
+  },
+  {
+    "id": "nr721",
+    "oud": "Hoeveel procent van de wereldcacao leverde West-Afrika bij benadering volgens de ICCO-verklaring uit oktober 2014?",
+    "nieuw": "Hoeveel procent van de wereldcacao leverde West-Afrika ongeveer volgens ICCO in 2014?"
+  },
+  {
+    "id": "nr192",
+    "oud": "Hoeveel eieren bevat een gebruikelijke Amerikaanse winkelverpakking volgens de U.S. Poultry & Egg Export Council?",
+    "nieuw": "Hoeveel eieren zitten er in een gebruikelijke Amerikaanse winkelverpakking?"
+  },
+  {
+    "id": "nr722",
+    "oud": "Hoeveel procent van de wereldwijde koffieproductie kwam in 2017 uit Brazilië volgens de studie Brazilian Coffee Industry van FGV?",
+    "nieuw": "Hoeveel procent van de wereldwijde koffieproductie kwam in 2017 uit Brazilië?"
+  },
+  {
+    "id": "nr1077",
+    "oud": "Hoeveel procent van het wereldwijde beteelde land werd volgens het FAO-feitenoverzicht uit 2015 geïrrigeerd?",
+    "nieuw": "Hoeveel procent van het wereldwijd beteelde land werd geïrrigeerd volgens FAO in 2015?"
+  },
+  {
+    "id": "nr1219",
+    "oud": "Hoeveel miljard euro had Nederland voor defensie-uitgaven in 2024 begroot volgens de aankondiging op Prinsjesdag 2023, afgerond?",
+    "nieuw": "Hoeveel miljard euro begrootte Nederland voor defensie in 2024 op Prinsjesdag 2023, afgerond?"
+  },
+  {
+    "id": "nr1062",
+    "oud": "Hoeveel kilogram weegt een moai op Paaseiland volgens de gangbare schatting ongeveer?",
+    "nieuw": "Hoeveel kilogram weegt een moai op Paaseiland naar schatting?"
+  },
+  {
+    "id": "nr45",
+    "oud": "Hoeveel ton goud werd in 2020 wereldwijd uit mijnen gewonnen volgens USGS, afgerond op honderdtallen?",
+    "nieuw": "Hoeveel ton goud werd in 2020 wereldwijd gewonnen, afgerond op honderdtallen?"
+  },
+  {
+    "id": "nr441",
+    "oud": "Hoeveel centimeter lang was Rumeysa Gelgi volgens Guinness in mei 2021, afgerond?",
+    "nieuw": "Hoeveel centimeter lang was Rumeysa Gelgi in mei 2021, afgerond?"
+  },
+  {
+    "id": "nr1423",
+    "oud": "Hoeveel bekende manen had Jupiter op 9 april 2026 volgens de Engelstalige Wikipedia?",
+    "nieuw": "Hoeveel bekende manen had Jupiter op 9 april 2026?"
+  },
+  {
+    "id": "nr1307",
+    "oud": "Hoeveel kilogram woog de chocoladereep van Thorntons uit 2011 volgens Guinness, afgerond?",
+    "nieuw": "Hoeveel kilogram woog de chocoladereep van Thorntons uit 2011, afgerond?"
+  },
+  {
+    "id": "nr411",
+    "oud": "Hoeveel kilogram huishoudelijk afval zamelden Nederlandse gemeenten in 2025 per inwoner in volgens de voorlopige CBS-cijfers?",
+    "nieuw": "Hoeveel kg huishoudelijk afval zamelden Nederlandse gemeenten per inwoner in 2025 in, voorlopig?"
+  },
+  {
+    "id": "nr1249",
+    "oud": "Hoeveel miljoen inwoners had China volgens het bevolkingscijfer voor 2023 in de Engelstalige Wikipedia?",
+    "nieuw": "Hoeveel miljoen inwoners had China in 2023 volgens Wikipedia?"
+  },
+  {
+    "id": "nr647",
+    "oud": "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger ongeveer volgens SeaWorld?",
+    "nieuw": "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger ongeveer?"
+  },
+  {
+    "id": "nr1283",
+    "oud": "Hoeveel eerstelijnsbestuursgebieden heeft Argentinië, de autonome stad Buenos Aires meegerekend?",
+    "nieuw": "Hoeveel eerstelijnsbestuursgebieden heeft Argentinië, inclusief de stad Buenos Aires?"
+  },
+  {
+    "id": "nr449",
+    "oud": "Hoeveel kilogram woog de Engelse mastiff Zorba volgens het Guinness-record uit 1989, afgerond?",
+    "nieuw": "Hoeveel kilogram woog de Engelse mastiff Zorba bij zijn record in 1989, afgerond?"
+  },
+  {
+    "id": "nr1250",
+    "oud": "Hoeveel miljoen inwoners had India in 2023 volgens de WHO, afgerond op tientallen miljoenen?",
+    "nieuw": "Hoeveel miljoen inwoners had India in 2023, afgerond op tientallen miljoenen?"
+  },
+  {
+    "id": "nr681",
+    "oud": "Hoeveel spieren bevat een olifantenslurf bij benadering volgens San Diego Zoo Wildlife Alliance?",
+    "nieuw": "Hoeveel spieren bevat een olifantenslurf ongeveer?"
+  },
+  {
+    "id": "nr560",
+    "oud": "In welk jaar vond Fessendens kerstavonduitzending plaats volgens de IEEE Milestone-gedenkplaat?",
+    "nieuw": "In welk jaar vond Fessendens kerstavonduitzending plaats volgens de IEEE-gedenkplaat?"
+  },
+  {
+    "id": "q017",
+    "oud": "Hoeveel hoofdgoden telt de Griekse mythologie op de berg Olympus (de Twaalf Olympiërs)?",
+    "nieuw": "Hoeveel hoofdgoden wonen op de Olympus in de Griekse mythologie?"
+  },
+  {
+    "id": "q337",
+    "oud": "In welk jaar bereikte Christoffel Columbus volgens de traditionele Europese geschiedschrijving Amerika?",
+    "nieuw": "In welk jaar bereikte Columbus Amerika volgens de traditionele geschiedschrijving?"
+  },
+  {
+    "id": "q271",
+    "oud": "Hoeveel kilometer gekarteerde gangen had Mammoth Cave volgens de NPS in 2024 ongeveer?",
+    "nieuw": "Hoeveel kilometer gekarteerde gangen had Mammoth Cave in 2024 ongeveer?"
+  },
+  {
+    "id": "q783",
+    "oud": "Hoeveel kilometer staaldraad zit er in beide hoofdkabels van de Golden Gate Bridge samen?",
+    "nieuw": "Hoeveel kilometer staaldraad bevatten de twee hoofdkabels van de Golden Gate Bridge samen?"
+  },
+  {
+    "id": "q251",
+    "oud": "Hoeveel zware stenen kalksteenblokken zijn er gebruikt om de Grote Piramide van Gizeh (Cheops) te bouwen?",
+    "nieuw": "Hoeveel kalksteenblokken zijn gebruikt voor de Grote Piramide van Gizeh?"
+  },
+  {
+    "id": "q1011",
+    "oud": "Hoeveel mensen dienden in de Amerikaanse strijdkrachten tijdens de Tweede Wereldoorlog, afgerond op miljoenen?",
+    "nieuw": "Hoeveel mensen dienden in de Amerikaanse strijdkrachten in WO II, afgerond op miljoenen?"
+  },
+  {
+    "id": "bank-502",
+    "oud": "Hoeveel spelers staan er per team bij zaalhandbal op het veld, inclusief de keeper?",
+    "nieuw": "Hoeveel spelers staan per team bij zaalhandbal op het veld, op volle sterkte en inclusief keeper?"
+  },
+  {
+    "id": "bank-1406",
+    "oud": "Hoeveel spelers staan bij ijshockey op volle sterkte samen op het ijs, inclusief beide keepers?",
+    "nieuw": "Hoeveel spelers staan bij ijshockey op volle sterkte samen op het ijs, inclusief keepers?"
+  },
+  {
+    "id": "bank-1404",
+    "oud": "Hoeveel spelers staan per ploeg op het veld bij veldhockey op volle sterkte, inclusief keeper?",
+    "nieuw": "Hoeveel spelers heeft een veldhockeyteam op volle sterkte op het veld, inclusief keeper?"
+  },
+  {
+    "id": "bank-701",
+    "oud": "Hoeveel coupures bevatte de eerste reeks eurobankbiljetten, inclusief het biljet van vijfhonderd euro?",
+    "nieuw": "Hoeveel coupures telde de eerste reeks eurobankbiljetten, inclusief 500 euro?"
+  },
+  {
+    "id": "bank-1544",
+    "oud": "Welk nummer heeft Mozarts bekende symfonie in g-klein met catalogusnummer vijfhonderdvijftig?",
+    "nieuw": "Welk nummer heeft Mozarts bekende symfonie in g-klein, KV 550?"
+  },
+  {
+    "id": "bank-348",
+    "oud": "Hoeveel brede domeinen van immaterieel cultureel erfgoed noemt het UNESCO-verdrag uit 2003?",
+    "nieuw": "Hoeveel brede domeinen van immaterieel erfgoed noemt het UNESCO-verdrag uit 2003?"
+  },
+  {
+    "id": "q109",
+    "oud": "Hoeveel botten heeft een volwassen menselijke schedel volgens de gebruikelijke anatomische indeling?",
+    "nieuw": "Hoeveel botten heeft een volwassen menselijke schedel volgens de gebruikelijke indeling?"
+  },
+  {
+    "id": "q498",
+    "oud": "Hoeveel minuten officiële speeltijd heeft een basketbalwedstrijd volgens de NBA-regels?",
+    "nieuw": "Hoeveel minuten officiële speeltijd heeft een NBA-basketbalwedstrijd?"
+  },
+  {
+    "id": "bank-507",
+    "oud": "Hoeveel spelers per team liggen er bij standaardwaterpolo op volle sterkte in het water, inclusief de keeper?",
+    "nieuw": "Hoeveel spelers liggen per waterpoloteam op volle sterkte in het water, inclusief keeper?"
+  },
+  {
+    "id": "bank-1352",
+    "oud": "Hoeveel innings zijn gepland in een standaardwedstrijd Major League Baseball, zonder extra innings?",
+    "nieuw": "Hoeveel innings telt een standaardwedstrijd Major League Baseball, zonder extra innings?"
+  },
+  {
+    "id": "bank-487",
+    "oud": "Hoeveel stippen, inclusief power pellets, telt het eerste doolhof van het oorspronkelijke Pac-Man-arcadespel?",
+    "nieuw": "Hoeveel stippen, inclusief power pellets, telt het eerste doolhof van de originele arcade-Pac-Man?"
+  },
+  {
+    "id": "bank-1385",
+    "oud": "Hoeveel minuten reguliere speeltijd heeft een standaard seniorenwedstrijd ijshockey, zonder verlenging?",
+    "nieuw": "Hoeveel minuten reguliere speeltijd heeft een standaard seniorenwedstrijd ijshockey?"
+  },
+  {
+    "id": "q148",
+    "oud": "Hoeveel armen heeft de gewone vijfarmige zeester?",
+    "nieuw": "Hoeveel armen heeft een gewone zeester?"
+  },
+  {
+    "id": "q1001",
+    "oud": "Hoeveel jaar duurde de apartheid in Zuid-Afrika (1948-1994)?",
+    "nieuw": "Hoeveel jaar duurde de apartheid in Zuid-Afrika?"
+  },
+  {
+    "id": "q971",
+    "oud": "Hoeveel tijdzones telt India als één land?",
+    "nieuw": "Hoeveel tijdzones gebruikt India?"
+  },
+  {
+    "id": "bank-888",
+    "oud": "Hoeveel landen grenzen aan Honduras?",
+    "nieuw": "How many countries share a land border with Honduras?"
+  },
+  {
+    "id": "bank-524",
+    "oud": "Hoeveel astronauten liepen op de maan tijdens Apollo 11?",
+    "nieuw": "How many astronauts walked on the Moon during Apollo 11?"
+  },
+  {
+    "id": "bank-222",
+    "oud": "Hoeveel jaar liggen tussen de bouwstart van de Hagia Sophia in 532 en de voltooiing in 537?",
+    "nieuw": "How many years separate the start of Hagia Sophia’s construction in 532 from its completion in 537?"
+  },
+  {
+    "id": "bank-578",
+    "oud": "Hoeveel passagiersterminals waren op London Heathrow in gebruik in 2024?",
+    "nieuw": "How many passenger terminals were in use at London Heathrow in 2024?"
+  },
+  {
+    "id": "bank-293",
+    "oud": "Hoeveel officiële burgerlijke tijdzones gebruikt het Chinese vasteland?",
+    "nieuw": "How many official civil time zones does mainland China use?"
+  },
+  {
+    "id": "bank-1109",
+    "oud": "Hoeveel traditionele hoofdstijlen van Cubaanse rumba worden gewoonlijk onderscheiden?",
+    "nieuw": "How many principal traditional styles of Cuban rumba are commonly distinguished?"
+  },
+  {
+    "id": "bank-1393",
+    "oud": "Hoeveel pogingen krijgt een olympische gewichtheffer per onderdeel, trekken en stoten?",
+    "nieuw": "How many attempts is an Olympic weightlifter allowed in each lift, the snatch and the clean and jerk?"
+  },
+  {
+    "id": "bank-874",
+    "oud": "Hoeveel landen grenzen aan Angola, inclusief de exclave Cabinda?",
+    "nieuw": "How many countries share a land border with Angola, including its Cabinda exclave?"
+  },
+  {
+    "id": "bank-1282",
+    "oud": "Hoeveel officiële talen erkende Zuid-Afrika na de toevoeging van Zuid-Afrikaanse Gebarentaal in 2023?",
+    "nieuw": "How many official languages did South Africa recognise after adding South African Sign Language in 2023?"
+  },
+  {
+    "id": "bank-1114",
+    "oud": "Hoeveel nummer-éénsingles behaalden de Beatles in de Amerikaanse Billboard Hot 100?",
+    "nieuw": "How many number-one singles did the Beatles achieve on the US Billboard Hot 100?"
+  },
+  {
+    "id": "bank-927",
+    "oud": "Over hoeveel landen strekt de UNESCO-werelderfgoedlocatie Struveboog zich uit?",
+    "nieuw": "Across how many countries does UNESCO’s Struve Geodetic Arc World Heritage site extend?"
+  },
+  {
+    "id": "bank-819",
+    "oud": "Hoeveel torens vormen de Petronas Twin Towers in Kuala Lumpur?",
+    "nieuw": "How many towers make up Kuala Lumpur’s Petronas Twin Towers?"
+  },
+  {
+    "id": "bank-1592",
+    "oud": "Hoeveel romans telt Philip Pullmans oorspronkelijke reeks His Dark Materials, zonder begeleidende boeken?",
+    "nieuw": "How many novels are in Philip Pullman’s original His Dark Materials sequence, excluding companion books?"
+  },
+  {
+    "id": "bank-500",
+    "oud": "Hoeveel punten levert een rake vrije worp bij basketbal op?",
+    "nieuw": "How many points does a successful free throw score in basketball?"
+  },
+  {
+    "id": "bank-1496",
+    "oud": "Hoeveel rijwielen heeft een gewone auto, zonder reservewiel?",
+    "nieuw": "How many road wheels does a conventional car have, excluding a spare wheel?"
+  },
+  {
+    "id": "bank-1590",
+    "oud": "Hoeveel hoofdstukken telt The Great Gatsby van F. Scott Fitzgerald?",
+    "nieuw": "How many chapters does F. Scott Fitzgerald’s The Great Gatsby have?"
+  },
+  {
+    "id": "bank-1595",
+    "oud": "Wat is de som van de getallen op tegenoverliggende zijden van een standaard zeszijdige dobbelsteen?",
+    "nieuw": "What is the sum of the numbers on opposite faces of a standard six-sided die?"
+  },
+  {
+    "id": "bank-881",
+    "oud": "Hoeveel landen grenzen aan Costa Rica?",
+    "nieuw": "How many countries share a land border with Costa Rica?"
+  },
+  {
+    "id": "bank-245",
+    "oud": "Hoeveel hoofdtorens heeft de Tower Bridge in Londen?",
+    "nieuw": "How many main towers does London’s Tower Bridge have?"
+  },
+  {
+    "id": "bank-287",
+    "oud": "Hoeveel constituerende landen vormen het Verenigd Koninkrijk?",
+    "nieuw": "How many constituent countries make up the United Kingdom?"
+  },
+  {
+    "id": "bank-1594",
+    "oud": "Hoeveel rijen vakjes telt een standaard Othello-bord?",
+    "nieuw": "How many rows of squares are on a standard Othello board?"
+  },
+  {
+    "id": "bank-890",
+    "oud": "Hoeveel landen grenzen aan Kameroen?",
+    "nieuw": "How many countries share a land border with Cameroon?"
+  },
+  {
+    "id": "bank-1262",
+    "oud": "Hoeveel jaar duurt een gewone ambtstermijn in het Amerikaanse Huis van Afgevaardigden?",
+    "nieuw": "How many years is a regular term in the US House of Representatives?"
+  },
+  {
+    "id": "bank-538",
+    "oud": "Hoeveel letters telt de topleveldomeinnaam com, zonder de punt?",
+    "nieuw": "How many letters are in the top-level domain name com, excluding the dot?"
+  },
+  {
+    "id": "bank-1597",
+    "oud": "Hoeveel ribben heeft een tetraëder?",
+    "nieuw": "How many edges does a tetrahedron have?"
+  },
+  {
+    "id": "bank-1071",
+    "oud": "In hoeveel landen liggen de UNESCO-locaties van de Great Spa Towns of Europe?",
+    "nieuw": "In how many countries are the Great Spa Towns of Europe UNESCO sites located?"
+  },
+  {
+    "id": "bank-1593",
+    "oud": "Hoeveel kaarten bevat iedere kleur in een standaardspel van 52 kaarten met Franse kleuren, zonder jokers?",
+    "nieuw": "How many cards belong to each suit in a standard 52-card French-suited deck, excluding jokers?"
+  },
+  {
+    "id": "bank-699",
+    "oud": "Hoeveel lidstaten telt de G7, zonder de Europese Unie?",
+    "nieuw": "How many member countries are in the G7, excluding the European Union?"
+  },
+  {
+    "id": "bank-464",
+    "oud": "Hoeveel verschillende chemische elementen bevat natriumwaterstofcarbonaat, NaHCO₃?",
+    "nieuw": "How many different chemical elements are in sodium hydrogen carbonate, NaHCO₃?"
+  },
+  {
+    "id": "bank-1396",
+    "oud": "Hoeveel punten levert een geslaagde fieldgoal op bij American football in de NFL?",
+    "nieuw": "How many points does a successful field goal score in NFL American football?"
+  },
+  {
+    "id": "bank-295",
+    "oud": "Hoeveel staten heeft Australië, zonder territoria?",
+    "nieuw": "How many states does Australia have, excluding territories?"
+  },
+  {
+    "id": "bank-586",
+    "oud": "Hoeveel wielen heeft een gewone solomotorfiets, zonder zijspan?",
+    "nieuw": "How many wheels does a conventional solo motorcycle have, excluding a sidecar?"
+  },
+  {
+    "id": "bank-1008",
+    "oud": "Hoeveel landen richtten de NAVO op in 1949?",
+    "nieuw": "How many countries founded NATO in 1949?"
+  },
+  {
+    "id": "bank-1115",
+    "oud": "Hoeveel genummerde pianosonates componeerde Ludwig van Beethoven?",
+    "nieuw": "How many numbered piano sonatas did Ludwig van Beethoven compose?"
+  },
+  {
+    "id": "bank-466",
+    "oud": "Hoeveel verschillende chemische elementen bevat koolstofdioxide, CO₂?",
+    "nieuw": "How many different chemical elements are in carbon dioxide, CO₂?"
+  },
+  {
+    "id": "bank-583",
+    "oud": "Hoeveel rijtuigen vormen een Eurostar e320-trein?",
+    "nieuw": "How many carriages make up a Eurostar e320 train?"
+  },
+  {
+    "id": "bank-347",
+    "oud": "Hoeveel centrale scènes uit Genesis schilderde Michelangelo op het plafond van de Sixtijnse Kapel?",
+    "nieuw": "How many central scenes from Genesis did Michelangelo paint on the Sistine Chapel ceiling?"
+  },
+  {
+    "id": "bank-897",
+    "oud": "Hoeveel landen grenzen aan Nigeria?",
+    "nieuw": "How many countries share a land border with Nigeria?"
+  },
+  {
+    "id": "bank-324",
+    "oud": "Hoeveel Britse koloniën vormden de oorspronkelijke Verenigde Staten?",
+    "nieuw": "How many British colonies became the original United States?"
+  },
+  {
+    "id": "bank-1596",
+    "oud": "Hoeveel hoekpunten heeft een kubus?",
+    "nieuw": "How many vertices does a cube have?"
+  },
+  {
+    "id": "bank-1484",
+    "oud": "Hoeveel sterren telt de nationale vlag van de Volksrepubliek China?",
+    "nieuw": "How many stars are on the national flag of the People’s Republic of China?"
+  },
+  {
+    "id": "bank-1591",
+    "oud": "Hoeveel romans vormen de voltooide ruimtetrilogie van C. S. Lewis?",
+    "nieuw": "How many novels make up C. S. Lewis’s completed Space Trilogy?"
+  },
+  {
+    "id": "bank-241",
+    "oud": "Hoeveel hoofdpiramides vormen het piramidecomplex van Gizeh?",
+    "nieuw": "How many principal pyramids form the Giza pyramid complex?"
+  },
+  {
+    "id": "bank-880",
+    "oud": "Hoeveel landen grenzen aan de Democratische Republiek Congo, inclusief over het Tanganyikameer?",
+    "nieuw": "How many countries border the Democratic Republic of the Congo, including across Lake Tanganyika?"
+  },
+  {
+    "id": "bank-390",
+    "oud": "Hoeveel genummerde pianoconcerten telt de gebruikelijke nummering van Mozarts pianoconcerten?",
+    "nieuw": "How many numbered piano concertos are in Mozart’s standard concerto numbering?"
+  },
+  {
+    "id": "bank-1588",
+    "oud": "Hoeveel hoofdstukken telt Emma van Jane Austen over alle drie de delen?",
+    "nieuw": "How many chapters are in Jane Austen’s Emma across all three volumes?"
+  },
+  {
+    "id": "bank-423",
+    "oud": "Hoeveel advocaten-generaal telde het Hof van Justitie van de Europese Unie in 2024?",
+    "nieuw": "How many Advocates General did the Court of Justice of the European Union have in 2024?"
+  },
+  {
+    "id": "bank-902",
+    "oud": "Hoeveel landen grenzen aan Peru?",
+    "nieuw": "How many countries share a land border with Peru?"
+  },
+  {
+    "id": "bank-1413",
+    "oud": "Hoeveel teams speelden in de NBA in het seizoen 2024–25?",
+    "nieuw": "How many teams played in the NBA in the 2024–25 season?"
+  },
+  {
+    "id": "bank-882",
+    "oud": "Hoeveel landen grenzen aan Ecuador?",
+    "nieuw": "How many countries share a land border with Ecuador?"
+  },
+  {
+    "id": "bank-1253",
+    "oud": "Hoeveel departementen heeft Colombia, zonder het hoofdstedelijke district Bogotá?",
+    "nieuw": "How many departments does Colombia have, excluding the capital district of Bogotá?"
+  },
+  {
+    "id": "bank-1589",
+    "oud": "Hoeveel genummerde hoofdstukken telt Dracula van Bram Stoker, zonder de afsluitende notitie?",
+    "nieuw": "How many numbered chapters does Bram Stoker’s Dracula have, excluding its closing note?"
+  },
+  {
+    "id": "bank-1599",
+    "oud": "Hoeveel oudsten omringen de troon in Openbaring 4:4?",
+    "nieuw": "How many elders surround the throne in Revelation 4:4?"
+  },
+  {
+    "id": "bank-910",
+    "oud": "Hoeveel landen grenzen aan Venezuela?",
+    "nieuw": "How many countries share a land border with Venezuela?"
+  },
+  {
+    "id": "bank-1586",
+    "oud": "Na hoeveel opeenvolgende zetten van iedere speler zonder pionzet of slag mag de speler die aan zet is volgens FIDE remise claimen?",
+    "nieuw": "After how many consecutive moves by each player without a pawn move or capture may the player to move claim a draw under FIDE rules?"
+  },
+  {
+    "id": "bank-895",
+    "oud": "Hoeveel landen grenzen aan Nicaragua?",
+    "nieuw": "How many countries share a land border with Nicaragua?"
+  },
+  {
+    "id": "bank-1598",
+    "oud": "Hoeveel jaar telt een eeuw?",
+    "nieuw": "How many years make up one century?"
+  },
+  {
+    "id": "bank-1454",
+    "oud": "Hoeveel beelden per seconde telt de traditionele standaardprojectiesnelheid van geluidsfilm in de bioscoop?",
+    "nieuw": "How many frames per second is the standard traditional sound-film cinema projection rate?"
+  },
+  {
+    "id": "bank-1264",
+    "oud": "Hoeveel landen gebruikten de Centraal-Afrikaanse CFA-frank in 2024?",
+    "nieuw": "How many countries used the Central African CFA franc in 2024?"
+  },
+  {
+    "id": "bank-964",
+    "oud": "Hoeveel deelstaten vormen de Federale Staten van Micronesië?",
+    "nieuw": "How many states form the Federated States of Micronesia?"
+  },
+  {
+    "id": "q1401",
+    "oud": "Hoeveel speelminuten duurt een officiële voetbalwedstrijd zonder verlenging?",
+    "nieuw": "Hoeveel minuten duurt een voetbalwedstrijd zonder verlenging?"
+  },
+  {
+    "id": "q885",
+    "oud": "Hoeveel landen grenzen aan Frankrijk (vasteland excl. overzeese gebieden)?",
+    "nieuw": "Hoeveel landen grenzen aan het Franse vasteland?"
+  },
+  {
+    "id": "q601",
+    "oud": "Hoeveel basissmaken worden in de moderne smaakleer onderscheiden?",
+    "nieuw": "Hoeveel basissmaken kunnen we onderscheiden?"
+  },
+  {
+    "id": "q757",
+    "oud": "Hoeveel apostelen koos Jezus volgens de evangeliën?",
+    "nieuw": "Hoeveel apostelen koos Jezus?"
+  },
+  {
+    "id": "q945",
+    "oud": "Hoeveel miljoen inwoners had Argentinië naar schatting in 2025?",
+    "nieuw": "Hoeveel miljoen inwoners had Argentinië in 2025?"
+  },
+  {
+    "id": "q786",
+    "oud": "Hoeveel meter hoog is de Elizabeth Tower, de toren van Big Ben?",
+    "nieuw": "Hoeveel meter hoog is de toren van Big Ben?"
+  },
+  {
+    "id": "q645",
+    "oud": "Hoeveel kilogram weegt een volgroeide mannelijke Afrikaanse savanneolifant gemiddeld onder optimale groeiomstandigheden, ongeveer?",
+    "nieuw": "Hoeveel kilogram weegt een mannelijke savanneolifant gemiddeld bij optimale groei?"
+  },
+  {
+    "id": "q1137",
+    "oud": "Hoeveel kilometer boven de aarde ligt de Kármánlijn, de grens van de ruimte?",
+    "nieuw": "Hoeveel kilometer boven de aarde ligt de Kármánlijn?"
+  },
+  {
+    "id": "q960",
+    "oud": "Hoeveel procent van het Amazoneregenwoud ligt ongeveer in Brazilië?",
+    "nieuw": "Hoeveel procent van het Amazoneregenwoud ligt in Brazilië?"
+  },
+  {
+    "id": "q1331",
+    "oud": "Hoeveel gekleurde vierkantjes telt een standaard Rubik's kubus aan de buitenkant?",
+    "nieuw": "Hoeveel gekleurde vierkantjes zitten er op een Rubiks kubus?"
+  },
+  {
+    "id": "q1433",
+    "oud": "Hoeveel minuten duurt een volledige baan van het ISS rond de aarde ongeveer?",
+    "nieuw": "Hoeveel minuten duurt een volledige baan van het ISS rond de aarde?"
+  },
+  {
+    "id": "q328",
+    "oud": "Hoeveel schepen telde de Spaanse Armada volgens de gebruikelijke telling?",
+    "nieuw": "Hoeveel schepen telde de Spaanse Armada?"
+  },
+  {
+    "id": "q952",
+    "oud": "Hoeveel miljoen inwoners telde Peru bij de volkstelling van 2025, afgerond?",
+    "nieuw": "Hoeveel miljoen inwoners telde Peru bij de volkstelling van 2025?"
+  },
+  {
+    "id": "q511",
+    "oud": "Hoeveel aardse jaren duurt een jaar op Neptunus ongeveer?",
+    "nieuw": "Hoeveel aardse jaren duurt een jaar op Neptunus?"
+  },
+  {
+    "id": "q1037",
+    "oud": "In welk jaar viel het West-Romeinse Rijk traditioneel?",
+    "nieuw": "In welk jaar viel het West-Romeinse Rijk?"
+  },
+  {
+    "id": "q513",
+    "oud": "Hoeveel astronauten hebben er in de geschiedenis op de maan gelopen?",
+    "nieuw": "Hoeveel astronauten hebben op de maan gelopen?"
+  },
+  {
+    "id": "q307",
+    "oud": "Op hoeveel meter boven zeeniveau ligt het Titicacameer ongeveer?",
+    "nieuw": "Op hoeveel meter boven zeeniveau ligt het Titicacameer?"
+  },
+  {
+    "id": "q1249",
+    "oud": "Hoeveel miljoen inwoners had China volgens de VN-schatting voor 2025, afgerond?",
+    "nieuw": "Hoeveel miljoen inwoners had China in 2025?"
+  },
+  {
+    "id": "q337",
+    "oud": "In welk jaar bereikte Columbus Amerika volgens de traditionele geschiedschrijving?",
+    "nieuw": "In welk jaar bereikte Columbus Amerika?"
+  },
+  {
+    "id": "q946",
+    "oud": "Hoeveel miljoen inwoners had Australië op 30 juni 2024, afgerond?",
+    "nieuw": "Hoeveel miljoen inwoners had Australië in 2024?"
+  },
+  {
+    "id": "q574",
+    "oud": "Hoeveel meter lang is een Airbus A380 ongeveer?",
+    "nieuw": "Hoeveel meter lang is een Airbus A380?"
+  },
+  {
+    "id": "q1309",
+    "oud": "Hoeveel kilogram woog de lederschildpad uit Harlech in september 1988, afgerond?",
+    "nieuw": "Hoeveel kilogram woog de lederschildpad uit Harlech in 1988?"
+  },
+  {
+    "id": "q256",
+    "oud": "Wat is de lengte van het Suezkanaal in Egypte in kilometers?",
+    "nieuw": "Hoeveel kilometer lang is het Suezkanaal?"
+  },
+  {
+    "id": "q242",
+    "oud": "Hoeveel toeschouwers konden er tegelijk plaatsnemen in het Colosseum in het Oude Rome?",
+    "nieuw": "Hoeveel toeschouwers pasten er in het Colosseum?"
+  },
+  {
+    "id": "q467",
+    "oud": "Hoeveel graden Celsius is het smeltpunt van aluminium ongeveer?",
+    "nieuw": "Hoeveel graden Celsius is het smeltpunt van aluminium?"
+  },
+  {
+    "id": "q690",
+    "oud": "Hoeveel kilogram kan een mannelijke Amerikaanse bizon volgens de National Park Service wegen, afgerond op honderdtallen?",
+    "nieuw": "Hoeveel kilogram kan een mannelijke Amerikaanse bizon wegen?"
+  },
+  {
+    "id": "q589",
+    "oud": "In welk jaar vroeg Carl Benz patent aan op zijn driewielige Motorwagen?",
+    "nieuw": "In welk jaar vroeg Carl Benz patent aan op zijn Motorwagen?"
+  },
+  {
+    "id": "q273",
+    "oud": "Hoeveel kilometer lang is het Himalayagebergte ongeveer?",
+    "nieuw": "Hoeveel kilometer lang is het Himalayagebergte?"
+  },
+  {
+    "id": "q512",
+    "oud": "Hoeveel aardse uren duurt één volledige draai van Jupiter ongeveer?",
+    "nieuw": "Hoeveel aardse uren duurt één volledige draai van Jupiter?"
+  },
+  {
+    "id": "q1012",
+    "oud": "Hoeveel mensen stierven bij de uitbarsting van de Vesuvius in Pompeï volgens een veelgebruikte schatting?",
+    "nieuw": "Hoeveel mensen stierven bij de uitbarsting van de Vesuvius in Pompeï?"
+  },
+  {
+    "id": "q290",
+    "oud": "Hoeveel meter onder zeeniveau ligt het diepste punt van de Noordzee ongeveer?",
+    "nieuw": "Hoeveel meter onder zeeniveau ligt het diepste punt van de Noordzee?"
+  },
+  {
+    "id": "q074",
+    "oud": "Hoeveel LEGO-steentjes per seconde noemde een medewerker tijdens het fabrieksbezoek dat Der Standard in juni 2020 beschreef?",
+    "nieuw": "Hoeveel LEGO-steentjes werden er per seconde gemaakt in 2020?"
+  },
+  {
+    "id": "q225",
+    "oud": "Hoeveel kilogram weegt de Great Bell, de grote klok van Big Ben?",
+    "nieuw": "Hoeveel kilogram weegt de klok van Big Ben?"
+  },
+  {
+    "id": "q271",
+    "oud": "Hoeveel kilometer gekarteerde gangen had Mammoth Cave in 2024 ongeveer?",
+    "nieuw": "Hoeveel kilometer gekarteerde gangen had Mammoth Cave in 2024?"
+  },
+  {
+    "id": "q404",
+    "oud": "Wat is de hoogste windsnelheid in kilometer per uur die nog bij windkracht 8 hoort?",
+    "nieuw": "Hoeveel kilometer per uur is de bovengrens van windkracht 8?"
+  },
+  {
+    "id": "q935",
+    "oud": "Hoeveel meter hoog is Mount Kosciuszko, het hoogste punt van Australië?",
+    "nieuw": "Hoeveel meter hoog is Mount Kosciuszko?"
+  },
+  {
+    "id": "q069",
+    "oud": "Hoeveel centimeter lang was Zeng Jinlian bij haar laatste meting in 1982, afgerond?",
+    "nieuw": "Hoeveel centimeter lang was Zeng Jinlian in 1982?"
+  },
+  {
+    "id": "q272",
+    "oud": "Hoeveel kilometer lang is het Great Barrier Reef ongeveer?",
+    "nieuw": "Hoeveel kilometer lang is het Great Barrier Reef?"
+  },
+  {
+    "id": "q523",
+    "oud": "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus ongeveer bereiken?",
+    "nieuw": "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?"
+  },
+  {
+    "id": "q828",
+    "oud": "Hoeveel zuilen had het oorspronkelijke Parthenon volgens de klassieke indeling?",
+    "nieuw": "Hoeveel zuilen had het oorspronkelijke Parthenon?"
+  },
+  {
+    "id": "q128",
+    "oud": "Hoeveel kilometer zijn alle bloedvaten van een volwassene samen lang, volgens de bekende schatting van 60.000 mijl?",
+    "nieuw": "Hoeveel kilometer lang zijn alle bloedvaten van een volwassene samen?"
+  },
+  {
+    "id": "q114",
+    "oud": "Hoeveel haren heeft een mens gemiddeld op zijn hoofd (afgerond)?",
+    "nieuw": "Hoeveel haren heeft een mens gemiddeld op zijn hoofd?"
+  },
+  {
+    "id": "q081",
+    "oud": "Hoeveel aardse uren duurt één volledige draai van Mars ongeveer?",
+    "nieuw": "Hoeveel aardse uren duurt één volledige draai van Mars?"
+  },
+  {
+    "id": "q1439",
+    "oud": "Hoeveel kilometer per uur is de baansnelheid van het ISS, afgerond op duizendtallen?",
+    "nieuw": "Hoeveel kilometer per uur is de baansnelheid van het ISS?"
+  },
+  {
+    "id": "q783",
+    "oud": "Hoeveel kilometer staaldraad bevatten de twee hoofdkabels van de Golden Gate Bridge samen?",
+    "nieuw": "Hoeveel kilometer staaldraad zit er in de hoofdkabels van de Golden Gate Bridge?"
+  },
+  {
+    "id": "q288",
+    "oud": "Hoeveel liter water stroomt er gemiddeld per seconde over de Niagarawatervallen?",
+    "nieuw": "Hoeveel liter water stroomt per seconde over de Niagarawatervallen?"
+  },
+  {
+    "id": "q299",
+    "oud": "Hoeveel vierkante kilometer is de Sahara ongeveer groot?",
+    "nieuw": "Hoeveel vierkante kilometer is de Sahara groot?"
+  },
+  {
+    "id": "q308",
+    "oud": "Wat is de lengte van de rivier de Amazone in kilometers?",
+    "nieuw": "Hoeveel kilometer lang is de Amazone?"
+  },
+  {
+    "id": "q450",
+    "oud": "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld, ongeveer?",
+    "nieuw": "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld?"
+  },
+  {
+    "id": "q1011",
+    "oud": "Hoeveel mensen dienden in de Amerikaanse strijdkrachten in WO II, afgerond op miljoenen?",
+    "nieuw": "Hoeveel mensen dienden in de Amerikaanse strijdkrachten in WO II?"
+  },
+  {
+    "id": "bank-746",
+    "oud": "Hoeveel themaparken had Walt Disney World in Florida in 2025, zonder waterparken?",
+    "nieuw": "Hoeveel themaparken had Walt Disney World in Florida in 2025?"
+  },
+  {
+    "id": "bank-1342",
+    "oud": "Hoeveel Europacup I- en Champions League-titels had AC Milan eind 2024 gewonnen?",
+    "nieuw": "Hoeveel Europacup I- en Champions League-titels had AC Milan eind 2024?"
+  },
+  {
+    "id": "bank-1341",
+    "oud": "Hoeveel Australian Open-titels in het mannenenkelspel had Novak Djokovic eind 2024 gewonnen?",
+    "nieuw": "Hoeveel Australian Open-titels in het enkelspel had Djokovic eind 2024?"
+  },
+  {
+    "id": "bank-14",
+    "oud": "Hoeveel afleveringen telt de oorspronkelijke televisieserie Fawlty Towers?",
+    "nieuw": "Hoeveel afleveringen telt de oorspronkelijke serie Fawlty Towers?"
+  },
+  {
+    "id": "bank-1343",
+    "oud": "Hoeveel Europacup I- en Champions League-titels had Real Madrid eind 2024 gewonnen?",
+    "nieuw": "Hoeveel Europacup I- en Champions League-titels had Real Madrid eind 2024?"
+  },
+  {
+    "id": "bank-739",
+    "oud": "Hoeveel Star Wars films uit de Skywalker Saga verschenen er?",
+    "nieuw": "Hoeveel Star Wars-films telt de Skywalker Saga?"
+  },
+  {
+    "id": "bank-175",
+    "oud": "Hoeveel afzonderlijke landen zijn lid van de G20, zonder de Europese Unie en de Afrikaanse Unie?",
+    "nieuw": "Hoeveel landen zijn lid van de G20?"
+  },
+  {
+    "id": "bank-502",
+    "oud": "Hoeveel spelers staan per team bij zaalhandbal op het veld, op volle sterkte en inclusief keeper?",
+    "nieuw": "Hoeveel spelers staan per team op het veld bij zaalhandbal?"
+  },
+  {
+    "id": "bank-73",
+    "oud": "Hoeveel protonen heeft een neutraal atoom van goud?",
+    "nieuw": "Hoeveel protonen heeft een goudatoom?"
+  },
+  {
+    "id": "bank-461",
+    "oud": "Hoeveel elementen waren eind 2025 officieel erkend in het periodiek systeem?",
+    "nieuw": "Hoeveel elementen telde het periodiek systeem eind 2025?"
+  },
+  {
+    "id": "bank-108",
+    "oud": "Hoeveel botten heeft een normaal volwassen skelet volgens de standaard anatomische telling?",
+    "nieuw": "Hoeveel botten heeft een volwassen mens?"
+  },
+  {
+    "id": "bank-483",
+    "oud": "Hoeveel ontwikkelingskaarten bevat het standaard Catan-basisspel voor drie of vier spelers?",
+    "nieuw": "Hoeveel ontwikkelingskaarten zitten er in het Catan-basisspel?"
+  },
+  {
+    "id": "bank-236",
+    "oud": "Hoeveel meter lang is de Brooklyn Bridge van Centre Street in Manhattan tot Sands Street in Brooklyn, afgerond op hele meters?",
+    "nieuw": "Hoeveel meter lang is de Brooklyn Bridge van Centre Street tot Sands Street?"
+  },
+  {
+    "id": "bank-1408",
+    "oud": "Hoeveel spelers staan per ploeg op het veld bij American football op volle sterkte?",
+    "nieuw": "Hoeveel spelers staan per team op het veld bij American football?"
+  },
+  {
+    "id": "bank-587",
+    "oud": "Hoeveel wielen heeft een gewone fiets, zonder zijwieltjes?",
+    "nieuw": "Hoeveel wielen heeft een gewone fiets?"
+  },
+  {
+    "id": "bank-1482",
+    "oud": "Hoeveel landen zijn partij bij de Alpenconventie, zonder de Europese Unie?",
+    "nieuw": "Hoeveel landen zijn partij bij de Alpenconventie?"
+  },
+  {
+    "id": "bank-1456",
+    "oud": "Hoeveel primaire kleuren gebruikt het additieve rood-groen-blauwe kleurenmodel voor beeldschermen?",
+    "nieuw": "Hoeveel primaire kleuren gebruikt het RGB-kleurenmodel?"
+  },
+  {
+    "id": "bank-1406",
+    "oud": "Hoeveel spelers staan bij ijshockey op volle sterkte samen op het ijs, inclusief keepers?",
+    "nieuw": "Hoeveel spelers staan er bij ijshockey in totaal op het ijs?"
+  },
+  {
+    "id": "bank-1578",
+    "oud": "Hoeveel tenen heeft elke voorpoot van een gewone huiskat, zonder polydactylie?",
+    "nieuw": "Hoeveel tenen heeft een huiskat aan elke voorpoot?"
+  },
+  {
+    "id": "bank-1404",
+    "oud": "Hoeveel spelers heeft een veldhockeyteam op volle sterkte op het veld, inclusief keeper?",
+    "nieuw": "Hoeveel spelers staan per team op het veld bij veldhockey?"
+  },
+  {
+    "id": "bank-826",
+    "oud": "Hoeveel bovengrondse niveaus heeft de residentie van het Witte Huis, inclusief de begane grond?",
+    "nieuw": "Hoeveel bovengrondse verdiepingen heeft de residentie van het Witte Huis?"
+  },
+  {
+    "id": "bank-701",
+    "oud": "Hoeveel coupures telde de eerste reeks eurobankbiljetten, inclusief 500 euro?",
+    "nieuw": "Hoeveel coupures telde de eerste reeks eurobankbiljetten?"
+  },
+  {
+    "id": "bank-433",
+    "oud": "Hoeveel lidstaten telt de Veiligheidsraad van de Verenigde Naties in totaal?",
+    "nieuw": "Hoeveel landen zitten er in de VN-Veiligheidsraad?"
+  },
+  {
+    "id": "bank-762",
+    "oud": "Hoeveel jaar duurde de terugreis van Odysseus na de Trojaanse Oorlog in Homerus’ Odyssee?",
+    "nieuw": "Hoeveel jaar duurde Odysseus' terugreis na de Trojaanse Oorlog?"
+  },
+  {
+    "id": "bank-1540",
+    "oud": "Hoeveel nummers staan op het oorspronkelijke Beatles-album Abbey Road uit 1969, inclusief Her Majesty?",
+    "nieuw": "Hoeveel nummers staan op het oorspronkelijke Beatles-album Abbey Road?"
+  },
+  {
+    "id": "bank-573",
+    "oud": "Hoeveel lijnen had de London Underground in 2025, zonder Elizabeth line en Overground?",
+    "nieuw": "Hoeveel lijnen had de London Underground in 2025?"
+  },
+  {
+    "id": "bank-356",
+    "oud": "Uit hoeveel kuuroorden bestaat de UNESCO-site The Great Spa Towns of Europe?",
+    "nieuw": "Uit hoeveel kuuroorden bestaat The Great Spa Towns of Europe?"
+  },
+  {
+    "id": "bank-1569",
+    "oud": "Hoeveel Amerikaanse theelepels vormen één Amerikaanse eetlepel?",
+    "nieuw": "Hoeveel Amerikaanse theelepels gaan er in één Amerikaanse eetlepel?"
+  },
+  {
+    "id": "bank-1261",
+    "oud": "Hoeveel jaar duurt een volledige termijn van een senator van de Verenigde Staten?",
+    "nieuw": "Hoeveel jaar duurt een volledige termijn van een Amerikaanse senator?"
+  },
+  {
+    "id": "bank-396",
+    "oud": "Hoeveel studioalbums bracht Queen uit van Queen uit 1973 tot en met Made in Heaven uit 1995?",
+    "nieuw": "Hoeveel studioalbums bracht Queen uit van 1973 tot en met 1995?"
+  },
+  {
+    "id": "bank-1528",
+    "oud": "Hoeveel bits bevat een internetprotocoladres van versie vier?",
+    "nieuw": "Hoeveel bits bevat een IPv4-adres?"
+  },
+  {
+    "id": "bank-1549",
+    "oud": "In welke genummerde eeuw werd Neptunus ontdekt?",
+    "nieuw": "In welke eeuw werd Neptunus ontdekt?"
+  },
+  {
+    "id": "bank-829",
+    "oud": "Hoeveel zuilen staan aan elke korte zijde van de buitenste zuilengang van het Parthenon?",
+    "nieuw": "Hoeveel zuilen staan aan elke korte kant van het Parthenon?"
+  },
+  {
+    "id": "bank-1579",
+    "oud": "Hoeveel tenen heeft elke achterpoot van een gewone huiskat, zonder polydactylie?",
+    "nieuw": "Hoeveel tenen heeft een huiskat aan elke achterpoot?"
+  },
+  {
+    "id": "bank-741",
+    "oud": "Hoeveel films verfilmen de zeven oorspronkelijke Harry Potter-romans, zonder Fantastic Beasts?",
+    "nieuw": "Hoeveel films zijn er van de oorspronkelijke Harry Potter-boeken?"
+  },
+  {
+    "id": "bank-764",
+    "oud": "Hoeveel werken voltooide Herakles volgens de traditionele Griekse mythe?",
+    "nieuw": "Hoeveel werken voltooide Herakles in de Griekse mythologie?"
+  },
+  {
+    "id": "bank-743",
+    "oud": "Hoeveel seizoenen heeft de afgeronde televisieserie Breaking Bad?",
+    "nieuw": "Hoeveel seizoenen heeft Breaking Bad?"
+  },
+  {
+    "id": "bank-1525",
+    "oud": "Wat is de standaardfrequentie van het elektriciteitsnet in de Verenigde Staten, in hertz?",
+    "nieuw": "Hoeveel hertz is de netfrequentie in de Verenigde Staten?"
+  },
+  {
+    "id": "bank-1552",
+    "oud": "Hoeveel uur zijn twee dagen van elk vierentwintig uur?",
+    "nieuw": "Hoeveel uur zijn twee dagen?"
+  },
+  {
+    "id": "bank-1332",
+    "oud": "Hoeveel grondstoffenkaarten bevat het standaard Catan-basisspel voor drie of vier spelers?",
+    "nieuw": "Hoeveel grondstoffenkaarten zitten er in het Catan-basisspel?"
+  },
+  {
+    "id": "bank-1547",
+    "oud": "Hoeveel sterrenbeelden erkent de Internationale Astronomische Unie officieel?",
+    "nieuw": "Hoeveel officiële sterrenbeelden zijn er?"
+  },
+  {
+    "id": "bank-1542",
+    "oud": "Welk nummer heeft Haydns laatste genummerde symfonie, de Londense symfonie?",
+    "nieuw": "Welk nummer heeft Haydns Londense symfonie?"
+  },
+  {
+    "id": "bank-585",
+    "oud": "Hoeveel wielen heeft een Formule 1-auto volgens de regels uit 2025?",
+    "nieuw": "Hoeveel wielen heeft een Formule 1-auto?"
+  },
+  {
+    "id": "bank-1398",
+    "oud": "Hoeveel punten levert een touchdown op bij American football, vóór een conversiepoging?",
+    "nieuw": "Hoeveel punten levert een touchdown op bij American football?"
+  },
+  {
+    "id": "bank-1527",
+    "oud": "Hoeveel bits bevat een internetprotocoladres van versie zes?",
+    "nieuw": "Hoeveel bits bevat een IPv6-adres?"
+  },
+  {
+    "id": "bank-831",
+    "oud": "Over hoeveel landen is het werelderfgoed Het architectonische werk van Le Corbusier verspreid?",
+    "nieuw": "Over hoeveel landen is het werelderfgoed van Le Corbusier verspreid?"
+  },
+  {
+    "id": "q948",
+    "oud": "Hoeveel miljoen inwoners had Chili naar schatting in 2025?",
+    "nieuw": "Hoeveel miljoen inwoners had Chili in 2025?"
+  },
+  {
+    "id": "q584",
+    "oud": "Hoeveel wielen heeft een Boeing 747 volgens de standaardconfiguratie?",
+    "nieuw": "Hoeveel wielen heeft een Boeing 747?"
+  },
+  {
+    "id": "q469",
+    "oud": "Hoeveel gram per kubieke centimeter is de dichtheid van water ongeveer?",
+    "nieuw": "Hoeveel gram per kubieke centimeter is de dichtheid van water?"
+  },
+  {
+    "id": "q109",
+    "oud": "Hoeveel botten heeft een volwassen menselijke schedel volgens de gebruikelijke indeling?",
+    "nieuw": "Hoeveel botten heeft een volwassen menselijke schedel?"
+  },
+  {
+    "id": "q184",
+    "oud": "Hoeveel gram koolhydraten bevat een Amerikaanse McDonald’s Big Mac?",
+    "nieuw": "Hoeveel gram koolhydraten bevat een Amerikaanse McDonald's Big Mac?"
+  },
+  {
+    "id": "q447",
+    "oud": "Hoeveel volle jaren oud werd de Australische hond Bluey?",
+    "nieuw": "Hoeveel jaar oud werd de Australische hond Bluey?"
+  },
+  {
+    "id": "q432",
+    "oud": "Hoeveel oorspronkelijke leden had de NAVO bij de oprichting in 1949?",
+    "nieuw": "Hoeveel oprichtende leden had de NAVO in 1949?"
+  },
+  {
+    "id": "q080",
+    "oud": "Hoeveel aardse dagen duurt één volledige draai van Venus ongeveer?",
+    "nieuw": "Hoeveel aardse dagen duurt één volledige draai van Venus?"
+  },
+  {
+    "id": "N19",
+    "oud": "Hoeveel minuten duurt een volledige dag-en-nachtcyclus in Minecraft?",
+    "nieuw": "Hoeveel minuten duurt een dag-en-nachtcyclus in Minecraft?"
+  },
+  {
+    "id": "q1134",
+    "oud": "Hoeveel decibel veroorzaakt een gemiddeld gesprek op normale toon?",
+    "nieuw": "Hoeveel decibel is een normaal gesprek?"
+  },
+  {
+    "id": "q951",
+    "oud": "Hoeveel miljoen inwoners had Nieuw-Zeeland op 30 juni 2024, afgerond?",
+    "nieuw": "Hoeveel miljoen inwoners had Nieuw-Zeeland in 2024?"
+  },
+  {
+    "id": "bank-507",
+    "oud": "Hoeveel spelers liggen per waterpoloteam op volle sterkte in het water, inclusief keeper?",
+    "nieuw": "Hoeveel spelers liggen per waterpoloteam in het water?"
+  },
+  {
+    "id": "bank-1007",
+    "oud": "Hoeveel landen ondertekenden in 1957 het Verdrag van Rome tot oprichting van de EEG?",
+    "nieuw": "Hoeveel landen ondertekenden het EEG-Verdrag van Rome in 1957?"
+  },
+  {
+    "id": "bank-112",
+    "oud": "Hoeveel chromosomen heeft een gewone tuinerwt Pisum sativum in een lichaamscel?",
+    "nieuw": "Hoeveel chromosomen heeft een lichaamscel van een tuinerwt?"
+  },
+  {
+    "id": "bank-1483",
+    "oud": "Hoeveel provincies heeft Canada, zonder de territoria?",
+    "nieuw": "Hoeveel provincies heeft Canada?"
+  },
+  {
+    "id": "bank-1352",
+    "oud": "Hoeveel innings telt een standaardwedstrijd Major League Baseball, zonder extra innings?",
+    "nieuw": "Hoeveel innings telt een gewone wedstrijd Major League Baseball?"
+  },
+  {
+    "id": "bank-1421",
+    "oud": "Hoeveel Space Shuttle-orbiters bouwde NASA voor ruimtevluchten, zonder Enterprise?",
+    "nieuw": "Hoeveel Space Shuttles bouwde NASA voor ruimtevluchten?"
+  },
+  {
+    "id": "bank-1453",
+    "oud": "Hoeveel bits bevat een byte volgens de moderne standaarddefinitie?",
+    "nieuw": "Hoeveel bits bevat een byte?"
+  },
+  {
+    "id": "bank-215",
+    "oud": "Hoeveel werelden verbindt Yggdrasil in de traditionele voorstelling van de Noorse mythologie?",
+    "nieuw": "Hoeveel werelden verbindt Yggdrasil in de Noorse mythologie?"
+  },
+  {
+    "id": "bank-666",
+    "oud": "Hoeveel paar chromosomen heeft een fruitvlieg Drosophila melanogaster?",
+    "nieuw": "Hoeveel paar chromosomen heeft een fruitvlieg?"
+  },
+  {
+    "id": "bank-481",
+    "oud": "Hoeveel genummerde vakjes heeft een Europees roulettewiel met één nul, inclusief nul?",
+    "nieuw": "Hoeveel vakjes heeft een Europees roulettewiel?"
+  },
+  {
+    "id": "bank-487",
+    "oud": "Hoeveel stippen, inclusief power pellets, telt het eerste doolhof van de originele arcade-Pac-Man?",
+    "nieuw": "Hoeveel stippen telt het eerste Pac-Man-doolhof, inclusief power pellets?"
+  },
+  {
+    "id": "bank-468",
+    "oud": "Bij hoeveel graden Celsius smelt zuiver tin ongeveer, afgerond op een hele graad?",
+    "nieuw": "Bij hoeveel graden Celsius smelt zuiver tin?"
+  },
+  {
+    "id": "bank-997",
+    "oud": "Hoeveel jaar duurde de Amerikaanse Onafhankelijkheidsoorlog ongeveer?",
+    "nieuw": "Hoeveel jaar duurde de Amerikaanse Onafhankelijkheidsoorlog?"
+  },
+  {
+    "id": "bank-201",
+    "oud": "Hoeveel films telt de oorspronkelijke Godfather-reeks van Francis Ford Coppola?",
+    "nieuw": "Hoeveel films telt Coppola's oorspronkelijke Godfather-reeks?"
+  },
+  {
+    "id": "bank-1132",
+    "oud": "Hoeveel genummerde symfonieën voltooide Johannes Brahms?",
+    "nieuw": "Hoeveel symfonieën voltooide Johannes Brahms?"
+  },
+  {
+    "id": "bank-747",
+    "oud": "Hoeveel minuten duurt de bioscoopversie van Avatar: The Way of Water (2022)?",
+    "nieuw": "Hoeveel minuten duurt de bioscoopversie van Avatar: The Way of Water?"
+  },
+  {
+    "id": "bank-86",
+    "oud": "Hoeveel letters heeft het Hebreeuwse alfabet, zonder aparte eindvormen mee te tellen?",
+    "nieuw": "Hoeveel letters heeft het Hebreeuwse alfabet?"
+  },
+  {
+    "id": "bank-212",
+    "oud": "Hoeveel koppen had Cerberus, de mythologische hond die de onderwereld bewaakt?",
+    "nieuw": "Hoeveel koppen heeft Cerberus in de Griekse mythologie?"
+  },
+  {
+    "id": "bank-992",
+    "oud": "Hoeveel dagen duurde de Slag bij Verdun ongeveer?",
+    "nieuw": "Hoeveel dagen duurde de Slag bij Verdun?"
+  },
+  {
+    "id": "bank-1385",
+    "oud": "Hoeveel minuten reguliere speeltijd heeft een standaard seniorenwedstrijd ijshockey?",
+    "nieuw": "Hoeveel minuten reguliere speeltijd heeft een ijshockeywedstrijd?"
+  },
+  {
+    "id": "bank-1348",
+    "oud": "Hoeveel gouden medailles won Australië op de Olympische Zomerspelen van Parijs in 2024?",
+    "nieuw": "Hoeveel gouden medailles won Australië op de Spelen van Parijs in 2024?"
+  },
+  {
+    "id": "nr49",
+    "oud": "Hoeveel procent van de plant- en diersoorten leeft volgens de schatting in het JICA-sciencelesboek voor klas 5 in regenwouden, ongeveer?",
+    "nieuw": "Hoeveel procent van de plant- en diersoorten leeft in regenwouden?"
+  },
+  {
+    "id": "nr712",
+    "oud": "Hoeveel kilogram rundvlees at men in Argentinië per inwoner in 2020, afgerond?",
+    "nieuw": "Hoeveel kilogram rundvlees at men in Argentinië per inwoner in 2020?"
+  },
+  {
+    "id": "nr291",
+    "oud": "Hoeveel inwoners had Vaticaanstad ongeveer volgens het Amerikaanse rapport uit 2014?",
+    "nieuw": "Hoeveel inwoners had Vaticaanstad in 2014?"
+  },
+  {
+    "id": "nr368",
+    "oud": "Hoeveel Starbucks-winkels waren er eind boekjaar 2024, afgerond op tienduizendtallen?",
+    "nieuw": "Hoeveel Starbucks-winkels waren er eind boekjaar 2024?"
+  },
+  {
+    "id": "nr648",
+    "oud": "Hoeveel kilogram weegt een volwassen mannelijk nijlpaard gemiddeld, afgerond op honderdtallen?",
+    "nieuw": "Hoeveel kilogram weegt een volwassen mannelijk nijlpaard gemiddeld?"
+  },
+  {
+    "id": "nr679",
+    "oud": "Meer dan hoeveel vogelsoorten telde Colombia volgens het historische ProAves-artikel over zijn wereldrecord aan vogeldiversiteit?",
+    "nieuw": "Meer dan hoeveel vogelsoorten telde Colombia in de ProAves-inventaris?"
+  },
+  {
+    "id": "nr435",
+    "oud": "Hoeveel centimeter hoog was de Duitse dog Zeus bij de schouder in oktober 2011, afgerond?",
+    "nieuw": "Hoeveel centimeter schofthoogte had de Duitse dog Zeus in 2011?"
+  },
+  {
+    "id": "nr1313",
+    "oud": "Hoeveel deelnemers telde het recordwaterballonnengevecht in Lexington op 27 augustus 2011?",
+    "nieuw": "Hoeveel mensen deden mee aan het waterballonnenrecord in Lexington in 2011?"
+  },
+  {
+    "id": "nr377",
+    "oud": "Hoeveel procent van ons voedsel ging verloren of werd verspild in de FAO-studie uit 2011?",
+    "nieuw": "Hoeveel procent van ons voedsel gaat verloren of wordt verspild?"
+  },
+  {
+    "id": "nr438",
+    "oud": "Hoeveel centimeter hoog was het miniatuurpaard Thumbelina, afgerond?",
+    "nieuw": "Hoeveel centimeter hoog was het miniatuurpaard Thumbelina?"
+  },
+  {
+    "id": "nr1300",
+    "oud": "Hoeveel centimeter lang was Robert Wadlow bij zijn laatste meting in juni 1940?",
+    "nieuw": "Hoeveel centimeter lang was Robert Wadlow?"
+  },
+  {
+    "id": "nr443",
+    "oud": "Hoeveel centimeter lang was de Engelse mastiff Zorba volgens de gangbare recordbeschrijving, afgerond op tientallen centimeters?",
+    "nieuw": "Hoeveel centimeter lang was de Engelse mastiff Zorba?"
+  },
+  {
+    "id": "nr687",
+    "oud": "Hoeveel uur per dag is een leeuw ongeveer inactief?",
+    "nieuw": "Hoeveel uur per dag is een leeuw inactief?"
+  },
+  {
+    "id": "nr546",
+    "oud": "Hoeveel duizend zoekopdrachten per seconde verwerkt Google volgens de schatting in The MFA Guide uit 2024?",
+    "nieuw": "Hoeveel duizend zoekopdrachten per seconde verwerkte Google in 2024?"
+  },
+  {
+    "id": "nr440",
+    "oud": "Hoeveel centimeter lang was Sultan Kösen bij zijn meting in februari 2011?",
+    "nieuw": "Hoeveel centimeter lang was Sultan Kösen in 2011?"
+  },
+  {
+    "id": "nr1096",
+    "oud": "Hoeveel procent van de natuurlijke wetlands was volgens de Ramsar-infographic voor Wereldwetlandsdag 2022 sinds de achttiende eeuw verdwenen?",
+    "nieuw": "Hoeveel procent van de natuurlijke wetlands verdween tussen 1700 en 2022?"
+  },
+  {
+    "id": "nr378",
+    "oud": "Hoeveel procent van de wereldwijde wateronttrekkingen gaat ongeveer naar landbouw?",
+    "nieuw": "Hoeveel procent van de wereldwijde wateronttrekkingen gaat naar landbouw?"
+  },
+  {
+    "id": "nr680",
+    "oud": "Hoeveel vogelsoorten zijn in het Amazoneregenwoud wetenschappelijk geclassificeerd volgens de inventaris in de Engelstalige Wikipedia, afgerond op honderdtallen?",
+    "nieuw": "Hoeveel vogelsoorten zijn er geteld in het Amazoneregenwoud?"
+  },
+  {
+    "id": "nr105",
+    "oud": "Op hoeveel manieren kun je goud, zilver en brons verdelen onder acht renners, zonder gelijke plaatsen?",
+    "nieuw": "Op hoeveel manieren kunnen acht renners goud, zilver en brons verdelen?"
+  },
+  {
+    "id": "nr157",
+    "oud": "Meer dan hoeveel kilometer per jaar trokken Noordse sterns in de BAS-studie uit 2010?",
+    "nieuw": "Meer dan hoeveel kilometer per jaar trekken Noordse sterns?"
+  },
+  {
+    "id": "nr362",
+    "oud": "Hoeveel ton bananen produceerde de wereld in 2022, afgerond op miljoenen?",
+    "nieuw": "Hoeveel ton bananen produceerde de wereld in 2022?"
+  },
+  {
+    "id": "nr445",
+    "oud": "Hoeveel centimeter lang was de kat Stewie bij zijn recordmeting in augustus 2010?",
+    "nieuw": "Hoeveel centimeter lang was de kat Stewie bij zijn record in 2010?"
+  },
+  {
+    "id": "nr1311",
+    "oud": "Hoeveel mensen jongleerden tegelijk bij het record in Edinburgh op 7 augustus 1998?",
+    "nieuw": "Hoeveel mensen jongleerden tegelijk bij het record in Edinburgh in 1998?"
+  },
+  {
+    "id": "nr652",
+    "oud": "Wat is volgens de EAZA-richtlijn uit 2018 de bovengrens van het opgegeven gewichtsbereik voor een volwassen vrouwelijke witte neushoorn, in kilogram?",
+    "nieuw": "Hoeveel kilogram kan een volwassen vrouwelijke witte neushoorn wegen?"
+  },
+  {
+    "id": "nr720",
+    "oud": "Hoeveel procent cacao bevat de Lindt Excellence Intense Dark-reep van 100 gram op de Britse productpagina?",
+    "nieuw": "Hoeveel procent cacao bevat de Britse Lindt Excellence Intense Dark-reep?"
+  },
+  {
+    "id": "nr8",
+    "oud": "Hoeveel kilogram weegt een blauwe-vinvistong naar schatting?",
+    "nieuw": "Hoeveel kilogram weegt een blauwe-vinvistong?"
+  },
+  {
+    "id": "nr678",
+    "oud": "Meer dan hoeveel vogelsoorten leven er in Australië volgens het artikel Land of the Birds van de Royal Society of Victoria uit 2024?",
+    "nieuw": "Meer dan hoeveel vogelsoorten telde Australië in 2024?"
+  },
+  {
+    "id": "nr363",
+    "oud": "Hoeveel ton koper werd in 2023 wereldwijd uit mijnen gewonnen, ongeveer?",
+    "nieuw": "Hoeveel ton koper werd in 2023 wereldwijd uit mijnen gewonnen?"
+  },
+  {
+    "id": "nr1081",
+    "oud": "Hoeveel ton plastic werd jaarlijks geproduceerd volgens het VN-rapport uit 2021, ongeveer?",
+    "nieuw": "Hoeveel ton plastic produceerde de wereld jaarlijks rond 2021?"
+  },
+  {
+    "id": "nr611",
+    "oud": "Hoeveel spieren bevat het menselijk lichaam ongeveer?",
+    "nieuw": "Hoeveel spieren bevat het menselijk lichaam?"
+  },
+  {
+    "id": "nr649",
+    "oud": "Wat is volgens Perth Zoo de bovengrens van het opgegeven gewichtsbereik van een emoe, in kilogram?",
+    "nieuw": "Hoeveel kilogram kan een emoe wegen?"
+  },
+  {
+    "id": "nr684",
+    "oud": "Wat is volgens het Natural History Museum de ondergrens van het geschatte aantal tanden dat een haai in zijn leven kan produceren?",
+    "nieuw": "Hoeveel tanden kan een haai in zijn leven produceren, minstens?"
+  },
+  {
+    "id": "nr540",
+    "oud": "Hoeveel basisletters van het Latijnse alfabet worden gecodeerd in de internationale morsecode?",
+    "nieuw": "Hoeveel letters kent de internationale morsecode?"
+  },
+  {
+    "id": "nr1298",
+    "oud": "Hoeveel meter hoog was de mobiele Gundam-robot in Yokohama bij zijn record in december 2020?",
+    "nieuw": "Hoeveel meter hoog was de mobiele Gundam-robot in Yokohama in 2020?"
+  },
+  {
+    "id": "nr311",
+    "oud": "Hoeveel chromosomen heeft een menselijke diploïde lichaamscel normaal in de celkern?",
+    "nieuw": "Hoeveel chromosomen heeft een menselijke lichaamscel normaal in de celkern?"
+  },
+  {
+    "id": "nr721",
+    "oud": "Hoeveel procent van de wereldcacao leverde West-Afrika ongeveer volgens ICCO in 2014?",
+    "nieuw": "Hoeveel procent van de wereldcacao leverde West-Afrika in 2014?"
+  },
+  {
+    "id": "nr1077",
+    "oud": "Hoeveel procent van het wereldwijd beteelde land werd geïrrigeerd volgens FAO in 2015?",
+    "nieuw": "Hoeveel procent van alle beteelde landbouwgrond wordt geïrrigeerd?"
+  },
+  {
+    "id": "nr434",
+    "oud": "Hoeveel vierkante meter groot was de recordpizza van Airrack in Los Angeles in januari 2023, afgerond?",
+    "nieuw": "Hoeveel vierkante meter groot was Airracks recordpizza uit 2023?"
+  },
+  {
+    "id": "nr1219",
+    "oud": "Hoeveel miljard euro begrootte Nederland voor defensie in 2024 op Prinsjesdag 2023, afgerond?",
+    "nieuw": "Hoeveel miljard euro begrootte Nederland in 2023 voor defensie in 2024?"
+  },
+  {
+    "id": "nr1062",
+    "oud": "Hoeveel kilogram weegt een moai op Paaseiland naar schatting?",
+    "nieuw": "Hoeveel kilogram weegt een moai op Paaseiland?"
+  },
+  {
+    "id": "nr45",
+    "oud": "Hoeveel ton goud werd in 2020 wereldwijd gewonnen, afgerond op honderdtallen?",
+    "nieuw": "Hoeveel ton goud werd in 2020 wereldwijd gewonnen?"
+  },
+  {
+    "id": "nr441",
+    "oud": "Hoeveel centimeter lang was Rumeysa Gelgi in mei 2021, afgerond?",
+    "nieuw": "Hoeveel centimeter lang was Rumeysa Gelgi in 2021?"
+  },
+  {
+    "id": "nr1307",
+    "oud": "Hoeveel kilogram woog de chocoladereep van Thorntons uit 2011, afgerond?",
+    "nieuw": "Hoeveel kilogram woog de chocoladereep van Thorntons uit 2011?"
+  },
+  {
+    "id": "nr411",
+    "oud": "Hoeveel kg huishoudelijk afval zamelden Nederlandse gemeenten per inwoner in 2025 in, voorlopig?",
+    "nieuw": "Hoeveel kilogram huishoudelijk afval werd per inwoner ingezameld in Nederland in 2025?"
+  },
+  {
+    "id": "nr1249",
+    "oud": "Hoeveel miljoen inwoners had China in 2023 volgens Wikipedia?",
+    "nieuw": "Hoeveel miljoen inwoners had China in 2023?"
+  },
+  {
+    "id": "nr647",
+    "oud": "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger ongeveer?",
+    "nieuw": "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger?"
+  },
+  {
+    "id": "nr1088",
+    "oud": "Meer dan hoeveel winkels wereldwijd noemt het Aldi-overzicht van Solomon Partners uit maart 2024?",
+    "nieuw": "Meer dan hoeveel winkels had Aldi wereldwijd in 2024?"
+  },
+  {
+    "id": "nr556",
+    "oud": "In welk jaar maakte Nicéphore Niépce zijn vroege, nog niet permanente camerafoto’s op papier met zilverchloride?",
+    "nieuw": "In welk jaar maakte Niépce zijn eerste niet-permanente camerafoto's?"
+  },
+  {
+    "id": "nr449",
+    "oud": "Hoeveel kilogram woog de Engelse mastiff Zorba bij zijn record in 1989, afgerond?",
+    "nieuw": "Hoeveel kilogram woog de Engelse mastiff Zorba bij zijn record in 1989?"
+  },
+  {
+    "id": "nr1250",
+    "oud": "Hoeveel miljoen inwoners had India in 2023, afgerond op tientallen miljoenen?",
+    "nieuw": "Hoeveel miljoen inwoners had India in 2023?"
+  },
+  {
+    "id": "nr70",
+    "oud": "Hoeveel kilogram woog de recordhamburger in Pilsting op 9 juli 2017, afgerond?",
+    "nieuw": "Hoeveel kilogram woog de recordhamburger in Pilsting in 2017?"
+  },
+  {
+    "id": "nr1212",
+    "oud": "Hoeveel meter hoog is de Zeelandbrug volgens Architectuur Zeeland?",
+    "nieuw": "Hoeveel meter hoog is de Zeelandbrug?"
+  },
+  {
+    "id": "nr845",
+    "oud": "Uit hoeveel eilanden bestaat Indonesië volgens de gerapporteerde telling in het Amerikaanse rapport Limits in the Seas, nummer 141?",
+    "nieuw": "Uit hoeveel eilanden bestaat Indonesië volgens Limits in the Seas 141?"
+  },
+  {
+    "id": "nr650",
+    "oud": "Hoeveel kilogram weegt een volwassen mannelijke giraffe gemiddeld, afgerond op honderdtallen?",
+    "nieuw": "Hoeveel kilogram weegt een volwassen mannelijke giraffe gemiddeld?"
+  },
+  {
+    "id": "nr448",
+    "oud": "Hoeveel kilogram woog de recordcheddar van Agropur in Granby in september 1995?",
+    "nieuw": "Hoeveel kilogram woog de recordcheddar uit Granby in 1995?"
+  },
+  {
+    "id": "nr1197",
+    "oud": "Hoeveel vierkante kilometer omvatte de provincie Utrecht inclusief water volgens het VU-onderzoek naar de economische impact van recreatietoervaart?",
+    "nieuw": "Hoeveel vierkante kilometer groot is de provincie Utrecht, inclusief water?"
+  },
+  {
+    "id": "nr560",
+    "oud": "In welk jaar vond Fessendens kerstavonduitzending plaats volgens de IEEE-gedenkplaat?",
+    "nieuw": "In welk jaar vond Fessendens kerstavonduitzending plaats?"
+  },
+  {
+    "id": "nr681",
+    "oud": "Hoeveel spieren bevat een olifantenslurf ongeveer?",
+    "nieuw": "Hoeveel spieren bevat een olifantenslurf?"
+  },
+  {
+    "id": "nr718",
+    "oud": "Hoeveel liter olijfolie per persoon noemt het overzicht van Keçeli uit 2023 voor Griekenland?",
+    "nieuw": "Hoeveel liter olijfolie per persoon noemt het overzicht uit 2023 voor Griekenland?"
+  },
+  {
+    "id": "nr766",
+    "oud": "Hoeveel miljoen mensen namen gemiddeld per jaar deel aan de hadj in de periode 2000–2019, afgerond?",
+    "nieuw": "Hoeveel miljoen mensen namen gemiddeld per jaar deel aan de hadj in de periode 2000–2019?"
+  }
+]

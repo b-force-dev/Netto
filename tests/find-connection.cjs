@@ -2,7 +2,8 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
-const context = vm.createContext({});
+// Een lege window volstaat: zonder document bindt het script geen toetsenbordhandlers.
+const context = vm.createContext({ window: {} });
 vm.runInContext(fs.readFileSync(require('node:path').join(__dirname, '../js/find-connection.js'), 'utf8'), context);
 const valid = values => JSON.parse(JSON.stringify(context.validConnections(values)));
 const equation = context.connectionEquation;
