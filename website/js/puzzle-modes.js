@@ -198,14 +198,6 @@
     // De reveal geeft de focus terug aan wat vóór het openen focus had; de
     // inleverknop bestaat dan niet meer, dus eerst naar de volgende actie.
     document.querySelector('#' + prefix + 'PuzzleView .puzzel-hoofdactie')?.focus({ preventScroll: true });
-    const verder = document.querySelector('#' + prefix + 'PuzzleView .puzzel-hoofdactie');
-    if (prefix === 'library') showAnswerReveal({
-      questions: [active.q1_label, active.q2_label, active.q3_label],
-      guesses, answers, operator: active.operator || '×', factor,
-      // Na de onthulling meteen door; de nabespreking blijft één tik verder.
-      onNext: verder ? () => verder.click() : null,
-      nextLabel: verder?.textContent
-    });
   }
 
   function renderPuzzleReview(prefix, puzzle, guesses, answers, factor, eerder = null) {
@@ -224,9 +216,21 @@
     const oud = eerder ? libraryFactorOf(eerder) : null;
     detail.textContent = oud !== null
       ? statsCopy('Oefenronde. Je score blijft ' + formatLibraryFactor(oud) + '.', 'Practice round. Your score stays ' + formatLibraryFactor(oud) + '.')
-      : libraryRating(factor) + ' · ' + statsCopy('Dichter bij 1,00× is beter.', 'Closer to 1.00× is better.');
+      : libraryRating(factor);
     summary.append(label, score, detail);
     list.appendChild(summary);
+    if (prefix === 'library' && typeof mountAnswerReveal === 'function') {
+      // Eén nabespreking: korte onthulling per vraag in de pagina zelf, met
+      // uitleg en bron in de kaart. Terug en Volgende blijven gewoon staan.
+      const labels = [1, 2, 3].map(i => puzzle['q' + i + '_label']);
+      mountAnswerReveal(list, {
+        questions: labels, guesses, answers, operator: puzzle.operator || '×',
+        units: labels.map(label => (typeof eenheidUit === 'function' ? eenheidUit(label) : '')),
+        details: labels.map(label => (typeof maakBronBlok === 'function' ? maakBronBlok(label) : null)),
+        fast: true
+      });
+      return;
+    }
     answers.forEach((answer, index) => {
       const card = document.createElement('article');
       card.className = 'library-question puzzle-review-question';
