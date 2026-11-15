@@ -17,6 +17,8 @@ MANIFEST = ROOT / 'puzzels/library_selectie_20260927.json'
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--selection', type=Path, default=MANIFEST)
+    parser.add_argument('--library-only', action='store_true',
+                        help='Werk alleen de Library-puzzeldata bij; behoud bronnen en vertaalbestanden.')
     args = parser.parse_args()
     selection = json.loads(args.selection.read_text(encoding='utf8'))
     daily = json.loads((ROOT / 'puzzels/daily_selectie_20260927.json').read_text(encoding='utf8'))
@@ -48,6 +50,8 @@ def main():
         assert all(type(n) is int and 0 < n <= 9007199254740991 for n in (a, b, c))
         assert {'+': a+b == c, '−': a-b == c, '×': a*b == c, '÷': a == b*c}[p['operator']]
         entry = {k: p[k] for k in ('id', 'number', 'operator', 'difficulty', 'difficulty_score')}
+        if p.get('difficulty_review'):
+            entry['difficulty_review'] = p['difficulty_review']
         entry.update(name=f"Puzzle #{p['number']}", categories=[q['category'] for q in questions],
                      calculation=f"{a} {p['operator']} {b} = {c}",
                      question_ids=[q['id'] for q in questions], edition=selection['edition'])
@@ -71,11 +75,11 @@ def main():
         data['connection'] = data['library'] + data.get('reserve', [])
     data.update(library=puzzles, reserve=[], library_edition=selection['edition'], library_review=metadata)
     data_path.write_text('// Gegenereerde puzzels; gecontroleerde reeksen via tools/maak_review_dailies.py en tools/maak_review_library.py.\nwindow.NETTO_REBUILT_PUZZLES = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n', encoding='utf8')
-    for filename, variable, values, indent in (
+    for filename, variable, values, indent in (() if args.library_only else (
         ('netto_bronnen_en.js', 'NETTO_BRONNEN_EN', translations, None),
         ('netto_translations_en.js', 'NETTO_TRANSLATIONS_EN', labels, 2),
         ('netto_bronnen.js', 'NETTO_BRONNEN', sources, None),
-    ):
+    )):
         path = ROOT / 'data' / filename
         old = path.read_text(encoding='utf8')
         prefix = old[:old.index('{')]

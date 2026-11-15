@@ -1,0 +1,967 @@
+[
+  {
+    "id": "new-b-001",
+    "fact_key": "mercury_diameter_km",
+    "question_nl": "Hoeveel kilometer bedraagt de diameter van Mercurius, afgerond op hele kilometers?",
+    "question_en": "How many kilometres is Mercury's diameter, rounded to whole kilometres?",
+    "answer": 4879,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 4879,
+    "source_unit": "km",
+    "play_unit": "km",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 km (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA-tabel: diameter van Mercurius 4879 km.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "NASA-diameterdefinitie gebruiken; bij gas- en ijsreuzen betreft dit wolkentoppen, geen vaste grond."
+    ]
+  },
+  {
+    "id": "new-b-002",
+    "fact_key": "venus_diameter_km",
+    "question_nl": "Hoeveel kilometer bedraagt de diameter van Venus, afgerond op hele kilometers?",
+    "question_en": "How many kilometres is Venus's diameter, rounded to whole kilometres?",
+    "answer": 12104,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 12104,
+    "source_unit": "km",
+    "play_unit": "km",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 km (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA-tabel: diameter van Venus 12104 km.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "NASA-diameterdefinitie gebruiken; bij gas- en ijsreuzen betreft dit wolkentoppen, geen vaste grond."
+    ]
+  },
+  {
+    "id": "new-b-003",
+    "fact_key": "saturn_diameter_km",
+    "question_nl": "Hoeveel kilometer bedraagt de diameter van Saturnus, afgerond op hele kilometers?",
+    "question_en": "How many kilometres is Saturn's diameter, rounded to whole kilometres?",
+    "answer": 120536,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 120536,
+    "source_unit": "km",
+    "play_unit": "km",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 km (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA-tabel: diameter van Saturnus 120536 km.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "NASA-diameterdefinitie gebruiken; bij gas- en ijsreuzen betreft dit wolkentoppen, geen vaste grond."
+    ]
+  },
+  {
+    "id": "new-b-004",
+    "fact_key": "uranus_diameter_km",
+    "question_nl": "Hoeveel kilometer bedraagt de diameter van Uranus, afgerond op hele kilometers?",
+    "question_en": "How many kilometres is Uranus's diameter, rounded to whole kilometres?",
+    "answer": 51118,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 51118,
+    "source_unit": "km",
+    "play_unit": "km",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 km (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA-tabel: diameter van Uranus 51118 km.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "NASA-diameterdefinitie gebruiken; bij gas- en ijsreuzen betreft dit wolkentoppen, geen vaste grond."
+    ]
+  },
+  {
+    "id": "new-b-005",
+    "fact_key": "neptune_diameter_km",
+    "question_nl": "Hoeveel kilometer bedraagt de diameter van Neptunus, afgerond op hele kilometers?",
+    "question_en": "How many kilometres is Neptune's diameter, rounded to whole kilometres?",
+    "answer": 49528,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 49528,
+    "source_unit": "km",
+    "play_unit": "km",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 km (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA-tabel: diameter van Neptunus 49528 km.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "NASA-diameterdefinitie gebruiken; bij gas- en ijsreuzen betreft dit wolkentoppen, geen vaste grond."
+    ]
+  },
+  {
+    "id": "new-b-006",
+    "fact_key": "pluto_diameter_km",
+    "question_nl": "Hoeveel kilometer bedraagt de diameter van Pluto, afgerond op hele kilometers?",
+    "question_en": "How many kilometres is Pluto's diameter, rounded to whole kilometres?",
+    "answer": 2376,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 2376,
+    "source_unit": "km",
+    "play_unit": "km",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 km (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA-tabel: diameter van Pluto 2376 km.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "NASA-diameterdefinitie gebruiken; bij gas- en ijsreuzen betreft dit wolkentoppen, geen vaste grond."
+    ]
+  },
+  {
+    "id": "new-b-007",
+    "fact_key": "earth_mean_density_kgm3",
+    "question_nl": "Hoeveel kilogram per kubieke meter is de gemiddelde dichtheid van de aarde, afgerond?",
+    "question_en": "What is the mean density of Earth in kilograms per cubic metre, rounded?",
+    "answer": 5514,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 5514,
+    "source_unit": "kg/m³",
+    "play_unit": "kg/m³",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 kg/m³ (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA vermeldt een gemiddelde dichtheid van 5514 kg/m³.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde van de hele planeet of maan; niet de dichtheid van één gesteente of atmosferische laag.",
+      "Dichtheid is een minder direct voorstelbaar concept; redactioneel beoordelen."
+    ]
+  },
+  {
+    "id": "new-b-008",
+    "fact_key": "moon_mean_density_kgm3",
+    "question_nl": "Hoeveel kilogram per kubieke meter is de gemiddelde dichtheid van de maan, afgerond?",
+    "question_en": "What is the mean density of Moon in kilograms per cubic metre, rounded?",
+    "answer": 3340,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 3340,
+    "source_unit": "kg/m³",
+    "play_unit": "kg/m³",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 kg/m³ (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA vermeldt een gemiddelde dichtheid van 3340 kg/m³.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde van de hele planeet of maan; niet de dichtheid van één gesteente of atmosferische laag.",
+      "Dichtheid is een minder direct voorstelbaar concept; redactioneel beoordelen."
+    ]
+  },
+  {
+    "id": "new-b-009",
+    "fact_key": "mars_mean_density_kgm3",
+    "question_nl": "Hoeveel kilogram per kubieke meter is de gemiddelde dichtheid van Mars, afgerond?",
+    "question_en": "What is the mean density of Mars in kilograms per cubic metre, rounded?",
+    "answer": 3934,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 3934,
+    "source_unit": "kg/m³",
+    "play_unit": "kg/m³",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 kg/m³ (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA vermeldt een gemiddelde dichtheid van 3934 kg/m³.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde van de hele planeet of maan; niet de dichtheid van één gesteente of atmosferische laag.",
+      "Dichtheid is een minder direct voorstelbaar concept; redactioneel beoordelen."
+    ]
+  },
+  {
+    "id": "new-b-010",
+    "fact_key": "jupiter_mean_density_kgm3",
+    "question_nl": "Hoeveel kilogram per kubieke meter is de gemiddelde dichtheid van Jupiter, afgerond?",
+    "question_en": "What is the mean density of Jupiter in kilograms per cubic metre, rounded?",
+    "answer": 1326,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 1326,
+    "source_unit": "kg/m³",
+    "play_unit": "kg/m³",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 kg/m³ (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA vermeldt een gemiddelde dichtheid van 1326 kg/m³.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde van de hele planeet of maan; niet de dichtheid van één gesteente of atmosferische laag.",
+      "Dichtheid is een minder direct voorstelbaar concept; redactioneel beoordelen."
+    ]
+  },
+  {
+    "id": "new-b-011",
+    "fact_key": "saturn_mean_density_kgm3",
+    "question_nl": "Hoeveel kilogram per kubieke meter is de gemiddelde dichtheid van Saturnus, afgerond?",
+    "question_en": "What is the mean density of Saturn in kilograms per cubic metre, rounded?",
+    "answer": 687,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 687,
+    "source_unit": "kg/m³",
+    "play_unit": "kg/m³",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 kg/m³ (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA vermeldt een gemiddelde dichtheid van 687 kg/m³.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde van de hele planeet of maan; niet de dichtheid van één gesteente of atmosferische laag.",
+      "Dichtheid is een minder direct voorstelbaar concept; redactioneel beoordelen."
+    ]
+  },
+  {
+    "id": "new-b-012",
+    "fact_key": "earth_escape_velocity_ms",
+    "question_nl": "Hoeveel meter per seconde is de ontsnappingssnelheid van de aarde, ongeveer?",
+    "question_en": "What is the escape velocity from Earth in metres per second, approximately?",
+    "answer": 11200,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 11.2,
+    "source_unit": "km/s",
+    "play_unit": "m/s",
+    "rounding_rule": "Bronwaarde × 1000; afronden op het dichtstbijzijnde veelvoud van 1 m/s (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA geeft 11.2 km/s; vermenigvuldigen met duizend levert meter per seconde.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Ideale ontsnappingssnelheid; geen lanceersnelheid inclusief luchtweerstand of raketroute.",
+      "Bij gasreuzen is het referentieniveau de conventionele planeetgrens."
+    ]
+  },
+  {
+    "id": "new-b-013",
+    "fact_key": "venus_escape_velocity_ms",
+    "question_nl": "Hoeveel meter per seconde is de ontsnappingssnelheid van Venus, ongeveer?",
+    "question_en": "What is the escape velocity from Venus in metres per second, approximately?",
+    "answer": 10400,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 10.4,
+    "source_unit": "km/s",
+    "play_unit": "m/s",
+    "rounding_rule": "Bronwaarde × 1000; afronden op het dichtstbijzijnde veelvoud van 1 m/s (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA geeft 10.4 km/s; vermenigvuldigen met duizend levert meter per seconde.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Ideale ontsnappingssnelheid; geen lanceersnelheid inclusief luchtweerstand of raketroute.",
+      "Bij gasreuzen is het referentieniveau de conventionele planeetgrens."
+    ]
+  },
+  {
+    "id": "new-b-014",
+    "fact_key": "jupiter_escape_velocity_ms",
+    "question_nl": "Hoeveel meter per seconde is de ontsnappingssnelheid van Jupiter, ongeveer?",
+    "question_en": "What is the escape velocity from Jupiter in metres per second, approximately?",
+    "answer": 59500,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 59.5,
+    "source_unit": "km/s",
+    "play_unit": "m/s",
+    "rounding_rule": "Bronwaarde × 1000; afronden op het dichtstbijzijnde veelvoud van 1 m/s (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA geeft 59.5 km/s; vermenigvuldigen met duizend levert meter per seconde.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Ideale ontsnappingssnelheid; geen lanceersnelheid inclusief luchtweerstand of raketroute.",
+      "Bij gasreuzen is het referentieniveau de conventionele planeetgrens."
+    ]
+  },
+  {
+    "id": "new-b-015",
+    "fact_key": "saturn_escape_velocity_ms",
+    "question_nl": "Hoeveel meter per seconde is de ontsnappingssnelheid van Saturnus, ongeveer?",
+    "question_en": "What is the escape velocity from Saturn in metres per second, approximately?",
+    "answer": 35500,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 35.5,
+    "source_unit": "km/s",
+    "play_unit": "m/s",
+    "rounding_rule": "Bronwaarde × 1000; afronden op het dichtstbijzijnde veelvoud van 1 m/s (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA geeft 35.5 km/s; vermenigvuldigen met duizend levert meter per seconde.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Ideale ontsnappingssnelheid; geen lanceersnelheid inclusief luchtweerstand of raketroute.",
+      "Bij gasreuzen is het referentieniveau de conventionele planeetgrens."
+    ]
+  },
+  {
+    "id": "new-b-016",
+    "fact_key": "uranus_escape_velocity_ms",
+    "question_nl": "Hoeveel meter per seconde is de ontsnappingssnelheid van Uranus, ongeveer?",
+    "question_en": "What is the escape velocity from Uranus in metres per second, approximately?",
+    "answer": 21300,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 21.3,
+    "source_unit": "km/s",
+    "play_unit": "m/s",
+    "rounding_rule": "Bronwaarde × 1000; afronden op het dichtstbijzijnde veelvoud van 1 m/s (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA geeft 21.3 km/s; vermenigvuldigen met duizend levert meter per seconde.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Ideale ontsnappingssnelheid; geen lanceersnelheid inclusief luchtweerstand of raketroute.",
+      "Bij gasreuzen is het referentieniveau de conventionele planeetgrens."
+    ]
+  },
+  {
+    "id": "new-b-017",
+    "fact_key": "neptune_escape_velocity_ms",
+    "question_nl": "Hoeveel meter per seconde is de ontsnappingssnelheid van Neptunus, ongeveer?",
+    "question_en": "What is the escape velocity from Neptune in metres per second, approximately?",
+    "answer": 23500,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 23.5,
+    "source_unit": "km/s",
+    "play_unit": "m/s",
+    "rounding_rule": "Bronwaarde × 1000; afronden op het dichtstbijzijnde veelvoud van 1 m/s (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA geeft 23.5 km/s; vermenigvuldigen met duizend levert meter per seconde.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Ideale ontsnappingssnelheid; geen lanceersnelheid inclusief luchtweerstand of raketroute.",
+      "Bij gasreuzen is het referentieniveau de conventionele planeetgrens."
+    ]
+  },
+  {
+    "id": "new-b-018",
+    "fact_key": "mercury_solar_day_hours",
+    "question_nl": "Hoeveel aardse uren duurt op Mercurius een zonnedag van middag tot middag, afgerond?",
+    "question_en": "How many Earth hours is a solar day from noon to noon on Mercury, rounded?",
+    "answer": 4223,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 4222.6,
+    "source_unit": "hours",
+    "play_unit": "uur",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 uur (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA Length of Day: 4222.6 aardse uren.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Zonnedag is iets anders dan de rotatieduur ten opzichte van de sterren; die twee niet verwisselen."
+    ]
+  },
+  {
+    "id": "new-b-019",
+    "fact_key": "venus_solar_day_hours",
+    "question_nl": "Hoeveel aardse uren duurt op Venus een zonnedag van middag tot middag, afgerond?",
+    "question_en": "How many Earth hours is a solar day from noon to noon on Venus, rounded?",
+    "answer": 2802,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 2802.0,
+    "source_unit": "hours",
+    "play_unit": "uur",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 uur (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA Length of Day: 2802.0 aardse uren.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Zonnedag is iets anders dan de rotatieduur ten opzichte van de sterren; die twee niet verwisselen."
+    ]
+  },
+  {
+    "id": "new-b-020",
+    "fact_key": "moon_solar_day_hours",
+    "question_nl": "Hoeveel aardse uren duurt op de maan een zonnedag van middag tot middag, afgerond?",
+    "question_en": "How many Earth hours is a solar day from noon to noon on the Moon, rounded?",
+    "answer": 709,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 708.7,
+    "source_unit": "hours",
+    "play_unit": "uur",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 uur (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA Length of Day: 708.7 aardse uren.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Zonnedag is iets anders dan de rotatieduur ten opzichte van de sterren; die twee niet verwisselen."
+    ]
+  },
+  {
+    "id": "new-b-021",
+    "fact_key": "mercury_orbital_period_days",
+    "question_nl": "Hoeveel aardse dagen duurt een volledige omloop van Mercurius om de zon, afgerond?",
+    "question_en": "How many Earth days does Mercury take to orbit the Sun, rounded?",
+    "answer": 88,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 88,
+    "source_unit": "days",
+    "play_unit": "dagen",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 dagen (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA Orbital Period: 88 dagen.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gebruik de huidige tabeldefinitie voor de omlooptijd; andere NASA-uitgaven kunnen licht afwijken."
+    ]
+  },
+  {
+    "id": "new-b-022",
+    "fact_key": "saturn_orbital_period_days",
+    "question_nl": "Hoeveel aardse dagen duurt een volledige omloop van Saturnus om de zon, afgerond?",
+    "question_en": "How many Earth days does Saturn take to orbit the Sun, rounded?",
+    "answer": 10747,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 10747,
+    "source_unit": "days",
+    "play_unit": "dagen",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 dagen (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA Orbital Period: 10747 dagen.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gebruik de huidige tabeldefinitie voor de omlooptijd; andere NASA-uitgaven kunnen licht afwijken."
+    ]
+  },
+  {
+    "id": "new-b-023",
+    "fact_key": "uranus_orbital_period_days",
+    "question_nl": "Hoeveel aardse dagen duurt een volledige omloop van Uranus om de zon, afgerond?",
+    "question_en": "How many Earth days does Uranus take to orbit the Sun, rounded?",
+    "answer": 30589,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 30589,
+    "source_unit": "days",
+    "play_unit": "dagen",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 dagen (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA Orbital Period: 30589 dagen.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gebruik de huidige tabeldefinitie voor de omlooptijd; andere NASA-uitgaven kunnen licht afwijken."
+    ]
+  },
+  {
+    "id": "new-b-024",
+    "fact_key": "mercury_sun_distance_million_km",
+    "question_nl": "Hoeveel miljoen kilometer is de gemiddelde afstand van Mercurius tot de zon, afgerond?",
+    "question_en": "How many million kilometres is Mercury's mean distance from the Sun, rounded?",
+    "answer": 58,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 57.9,
+    "source_unit": "million km",
+    "play_unit": "miljoen km",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 miljoen km (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA Distance from Sun: 57.9 miljoen km.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde baanmaat, niet de actuele afstand op een gekozen datum."
+    ]
+  },
+  {
+    "id": "new-b-025",
+    "fact_key": "venus_sun_distance_million_km",
+    "question_nl": "Hoeveel miljoen kilometer is de gemiddelde afstand van Venus tot de zon, afgerond?",
+    "question_en": "How many million kilometres is Venus's mean distance from the Sun, rounded?",
+    "answer": 108,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 108.2,
+    "source_unit": "million km",
+    "play_unit": "miljoen km",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 miljoen km (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA Distance from Sun: 108.2 miljoen km.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde baanmaat, niet de actuele afstand op een gekozen datum."
+    ]
+  },
+  {
+    "id": "new-b-026",
+    "fact_key": "uranus_sun_distance_million_km",
+    "question_nl": "Hoeveel miljoen kilometer is de gemiddelde afstand van Uranus tot de zon, afgerond?",
+    "question_en": "How many million kilometres is Uranus's mean distance from the Sun, rounded?",
+    "answer": 2867,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "source_value": 2867,
+    "source_unit": "million km",
+    "play_unit": "miljoen km",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 miljoen km (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA Distance from Sun: 2867 miljoen km.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde baanmaat, niet de actuele afstand op een gekozen datum."
+    ]
+  },
+  {
+    "id": "new-b-027",
+    "fact_key": "sun_earth_mass_ratio",
+    "question_nl": "Hoeveel aardmassa’s zijn ongeveer nodig om de massa van de zon te evenaren?",
+    "question_en": "Approximately how many Earth masses equal the mass of the Sun?",
+    "answer": 330000,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://science.nasa.gov/sun/facts/",
+    "source_value": 330000,
+    "source_unit": "Earth masses",
+    "play_unit": "aardmassa’s",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 aardmassa’s (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA vergelijkt de zonnemassa met ruim 330.000 aardmassa’s.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Afgeronde vergelijking; niet verwarren met de bestaande vraag over hoeveel aardvolumes in de zon passen."
+    ]
+  },
+  {
+    "id": "new-b-028",
+    "fact_key": "sun_corona_temperature_c",
+    "question_nl": "Tot ongeveer hoeveel graden Celsius kan de corona van de zon oplopen?",
+    "question_en": "About how many degrees Celsius can the Sun's corona reach?",
+    "answer": 2000000,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://science.nasa.gov/sun/facts/",
+    "source_value": 2000000,
+    "source_unit": "°C",
+    "play_unit": "°C",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 °C (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA noemt voor de corona temperaturen tot ongeveer twee miljoen graden Celsius.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Corona, niet fotosfeer of kern; temperatuur varieert sterk per gebied."
+    ]
+  },
+  {
+    "id": "new-b-029",
+    "fact_key": "sun_galactic_orbit_million_years",
+    "question_nl": "Hoeveel miljoen jaar duurt een omloop van de zon rond het centrum van de Melkweg ongeveer?",
+    "question_en": "About how many million years does the Sun take to orbit the centre of the Milky Way?",
+    "answer": 230,
+    "category": "Wetenschap & technologie",
+    "source_url": "https://science.nasa.gov/sun/facts/",
+    "source_value": 230,
+    "source_unit": "million years",
+    "play_unit": "miljoen jaar",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 miljoen jaar (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NASA noemt ongeveer 230 miljoen jaar voor een omloop om het Melkwegcentrum.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Bronwaarde is een wetenschappelijke benadering; geen exact onveranderlijk meetgetal."
+    ]
+  },
+  {
+    "id": "new-b-030",
+    "fact_key": "sherman_trunk_volume_m3",
+    "question_nl": "Hoeveel kubieke meter hout bevat de stam van de General Sherman-boom ongeveer?",
+    "question_en": "About how many cubic metres of wood are in the General Sherman tree's trunk?",
+    "answer": 1487,
+    "category": "Natuur",
+    "source_url": "https://www.nps.gov/seki/learn/nature/sherman.htm",
+    "source_value": 1486.6,
+    "source_unit": "m³",
+    "play_unit": "m³",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 m³ (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "De NPS-statistiek voor deze eigenschap geeft 1486.6 m³.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Een specifieke benoemde boom; geen gemiddelde voor alle reuzensequoia’s.",
+      "Boommetingen kunnen tussen meetrondes licht veranderen."
+    ]
+  },
+  {
+    "id": "new-b-031",
+    "fact_key": "sherman_height_m",
+    "question_nl": "Hoeveel meter hoog is de General Sherman-boom, afgerond?",
+    "question_en": "How many metres tall is the General Sherman tree, rounded?",
+    "answer": 84,
+    "category": "Natuur",
+    "source_url": "https://www.nps.gov/seki/learn/nature/sherman.htm",
+    "source_value": 83.8,
+    "source_unit": "m",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "De NPS-statistiek voor deze eigenschap geeft 83.8 m.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Een specifieke benoemde boom; geen gemiddelde voor alle reuzensequoia’s.",
+      "Boommetingen kunnen tussen meetrondes licht veranderen."
+    ]
+  },
+  {
+    "id": "new-b-032",
+    "fact_key": "sherman_ground_circumference_m",
+    "question_nl": "Hoeveel meter is de omtrek van de General Sherman-boom aan de grond, afgerond?",
+    "question_en": "How many metres is the General Sherman tree's circumference at ground level, rounded?",
+    "answer": 31,
+    "category": "Natuur",
+    "source_url": "https://www.nps.gov/seki/learn/nature/sherman.htm",
+    "source_value": 31.1,
+    "source_unit": "m",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "De NPS-statistiek voor deze eigenschap geeft 31.1 m.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Een specifieke benoemde boom; geen gemiddelde voor alle reuzensequoia’s.",
+      "Boommetingen kunnen tussen meetrondes licht veranderen."
+    ]
+  },
+  {
+    "id": "new-b-033",
+    "fact_key": "sherman_crown_spread_m",
+    "question_nl": "Hoeveel meter bedraagt de gemiddelde kroonbreedte van de General Sherman-boom, afgerond?",
+    "question_en": "How many metres is the General Sherman tree's average crown spread, rounded?",
+    "answer": 33,
+    "category": "Natuur",
+    "source_url": "https://www.nps.gov/seki/learn/nature/sherman.htm",
+    "source_value": 32.5,
+    "source_unit": "m",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "De NPS-statistiek voor deze eigenschap geeft 32.5 m.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Een specifieke benoemde boom; geen gemiddelde voor alle reuzensequoia’s.",
+      "Boommetingen kunnen tussen meetrondes licht veranderen."
+    ]
+  },
+  {
+    "id": "new-b-034",
+    "fact_key": "humpback_max_length_m",
+    "question_nl": "Hoeveel meter lang kan een bultrug ongeveer worden, afgerond?",
+    "question_en": "About how many metres long can a humpback whale grow, rounded?",
+    "answer": 18,
+    "category": "Natuur",
+    "source_url": "https://www.fisheries.noaa.gov/species/humpback-whale",
+    "source_value": 60,
+    "source_unit": "feet",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 0.3048; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NOAA noemt een lengte tot ongeveer zestig voet; omrekening met 0,3048 meter per voet.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Bovengrens bij benadering; niet gemiddelde volwassen lengte."
+    ]
+  },
+  {
+    "id": "new-b-035",
+    "fact_key": "humpback_gestation_months",
+    "question_nl": "Hoeveel maanden duurt de draagtijd van een bultrug ongeveer?",
+    "question_en": "About how many months is a humpback whale's gestation?",
+    "answer": 11,
+    "category": "Natuur",
+    "source_url": "https://www.fisheries.noaa.gov/species/humpback-whale",
+    "source_value": 11,
+    "source_unit": "months",
+    "play_unit": "maanden",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 maanden (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NOAA beschrijft een draagtijd van ongeveer elf maanden.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Bronwaarde is een wetenschappelijke benadering; geen exact onveranderlijk meetgetal."
+    ]
+  },
+  {
+    "id": "new-b-036",
+    "fact_key": "humpback_lifespan_upper_years",
+    "question_nl": "Tot ongeveer hoeveel jaar reikt de levensduur van een bultrug volgens NOAA?",
+    "question_en": "About how many years does the upper end of a humpback whale's lifespan reach, according to NOAA?",
+    "answer": 90,
+    "category": "Natuur",
+    "source_url": "https://www.fisheries.noaa.gov/species/humpback-whale",
+    "source_value": 90,
+    "source_unit": "years, upper end of 80–90 range",
+    "play_unit": "jaar",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 jaar (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NOAA geeft als levensduur ongeveer tachtig tot negentig jaar.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Bovenkant van een gebruikelijke schattingsrange; geen bewezen individueel leeftijdsrecord."
+    ]
+  },
+  {
+    "id": "new-b-037",
+    "fact_key": "humpback_alaska_hawaii_trip_days",
+    "question_nl": "In hoeveel dagen kunnen sommige bultruggen de tocht van Alaska naar Hawaï al afleggen?",
+    "question_en": "In as few as how many days can some humpback whales travel from Alaska to Hawaii?",
+    "answer": 28,
+    "category": "Natuur",
+    "source_url": "https://www.fisheries.noaa.gov/species/humpback-whale",
+    "source_value": 28,
+    "source_unit": "days",
+    "play_unit": "dagen",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 dagen (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NOAA vermeldt dat sommige bultruggen de circa drieduizend mijl lange tocht in slechts 28 dagen afleggen.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Voorbeeld van een snelle tocht van sommige dieren, geen universele gemiddelde reisduur."
+    ]
+  },
+  {
+    "id": "new-b-038",
+    "fact_key": "sperm_male_max_length_m",
+    "question_nl": "Hoeveel meter lang kan een mannelijke potvis volgens NOAA ongeveer worden, afgerond?",
+    "question_en": "About how many metres long can a male sperm whale grow, according to NOAA, rounded?",
+    "answer": 16,
+    "category": "Natuur",
+    "source_url": "https://www.fisheries.noaa.gov/species/sperm-whale",
+    "source_value": 52,
+    "source_unit": "feet",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 0.3048; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NOAA noemt voor mannetjes circa 52 voet; omrekening met 0,3048 meter per voet.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "NOAA-profielmaat voor mannetjes, geen absolute recordlengte."
+    ]
+  },
+  {
+    "id": "new-b-039",
+    "fact_key": "sperm_lifespan_years",
+    "question_nl": "Tot ongeveer hoeveel jaar kan een potvis volgens NOAA leven?",
+    "question_en": "Up to about how many years can a sperm whale live, according to NOAA?",
+    "answer": 60,
+    "category": "Natuur",
+    "source_url": "https://www.fisheries.noaa.gov/species/sperm-whale",
+    "source_value": 60,
+    "source_unit": "years",
+    "play_unit": "jaar",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 jaar (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NOAA geeft een levensduur tot ongeveer zestig jaar.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Levensduurschatting; geen garantie voor elk dier en geen harde biologische bovengrens."
+    ]
+  },
+  {
+    "id": "new-b-040",
+    "fact_key": "sperm_dive_duration_minutes",
+    "question_nl": "Hoeveel minuten kan een gewone diepe voedselduik van een potvis volgens NOAA duren?",
+    "question_en": "How many minutes can a sperm whale's routine deep feeding dive last, according to NOAA?",
+    "answer": 45,
+    "category": "Natuur",
+    "source_url": "https://www.fisheries.noaa.gov/species/sperm-whale",
+    "source_value": 45,
+    "source_unit": "minutes",
+    "play_unit": "minuten",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 minuten (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NOAA beschrijft gebruikelijke diepe voedselduiken die 45 minuten kunnen duren.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Dit is een gebruikelijke diepe duik, niet het maximale duikrecord."
+    ]
+  },
+  {
+    "id": "new-b-041",
+    "fact_key": "sperm_gestation_upper_months",
+    "question_nl": "Tot ongeveer hoeveel maanden duurt de draagtijd van een potvis volgens NOAA?",
+    "question_en": "Up to about how many months is a sperm whale's gestation, according to NOAA?",
+    "answer": 16,
+    "category": "Natuur",
+    "source_url": "https://www.fisheries.noaa.gov/species/sperm-whale",
+    "source_value": 16,
+    "source_unit": "months, upper end of 14–16 range",
+    "play_unit": "maanden",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 maanden (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NOAA geeft voor de draagtijd een bereik van veertien tot zestien maanden.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Bovengrens van de beschreven normale range, geen exacte vaste duur."
+    ]
+  },
+  {
+    "id": "new-b-042",
+    "fact_key": "hoover_height_m",
+    "question_nl": "Hoeveel meter hoog is de Hooverdam vanaf de fundering, afgerond?",
+    "question_en": "How many metres high is Hoover Dam from its foundation, rounded?",
+    "answer": 221,
+    "category": "Bouw & techniek",
+    "source_url": "https://www.usbr.gov/projects/index.php?id=122",
+    "source_value": 726.4,
+    "source_unit": "ft",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 0.3048; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "Bureau of Reclamation vermeldt 726.4 voet; één voet is 0,3048 meter.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Exact benoemde damafmeting; hoogte boven fundering is iets anders dan waterdiepte."
+    ]
+  },
+  {
+    "id": "new-b-043",
+    "fact_key": "hoover_crest_length_m",
+    "question_nl": "Hoeveel meter lang is de kruin van de Hooverdam, afgerond?",
+    "question_en": "How many metres long is Hoover Dam's crest, rounded?",
+    "answer": 379,
+    "category": "Bouw & techniek",
+    "source_url": "https://www.usbr.gov/projects/index.php?id=122",
+    "source_value": 1244,
+    "source_unit": "ft",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 0.3048; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "Bureau of Reclamation vermeldt 1244 voet; één voet is 0,3048 meter.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Exact benoemde damafmeting; hoogte boven fundering is iets anders dan waterdiepte."
+    ]
+  },
+  {
+    "id": "new-b-044",
+    "fact_key": "hoover_base_thickness_m",
+    "question_nl": "Hoeveel meter dik is de Hooverdam aan de basis, afgerond?",
+    "question_en": "How many metres thick is Hoover Dam at its base, rounded?",
+    "answer": 201,
+    "category": "Bouw & techniek",
+    "source_url": "https://www.usbr.gov/projects/index.php?id=122",
+    "source_value": 660,
+    "source_unit": "ft",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 0.3048; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "Bureau of Reclamation vermeldt 660 voet; één voet is 0,3048 meter.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Exact benoemde damafmeting; hoogte boven fundering is iets anders dan waterdiepte."
+    ]
+  },
+  {
+    "id": "new-b-045",
+    "fact_key": "hoover_crest_width_m",
+    "question_nl": "Hoeveel meter breed is de kruin van de Hooverdam, afgerond?",
+    "question_en": "How many metres wide is Hoover Dam's crest, rounded?",
+    "answer": 14,
+    "category": "Bouw & techniek",
+    "source_url": "https://www.usbr.gov/projects/index.php?id=122",
+    "source_value": 45,
+    "source_unit": "ft",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 0.3048; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "Bureau of Reclamation vermeldt 45 voet; één voet is 0,3048 meter.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Exact benoemde damafmeting; hoogte boven fundering is iets anders dan waterdiepte."
+    ]
+  },
+  {
+    "id": "new-b-046",
+    "fact_key": "hoover_dam_concrete_m3",
+    "question_nl": "Hoeveel kubieke meter beton bevat de Hooverdam zelf, afgerond op honderdduizendtallen?",
+    "question_en": "How many cubic metres of concrete are in Hoover Dam itself, rounded to the nearest hundred thousand?",
+    "answer": 2500000,
+    "category": "Bouw & techniek",
+    "source_url": "https://www.usbr.gov/projects/index.php?id=122",
+    "source_value": 3250000,
+    "source_unit": "cubic yards",
+    "play_unit": "m³",
+    "rounding_rule": "Bronwaarde × 0.764554857984; afronden op het dichtstbijzijnde veelvoud van 100000 m³ (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "Bureau of Reclamation geeft 3,25 miljoen kubieke yard voor de dam zelf, exclusief bijbehorende werken.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Alleen de dam: niet het hogere totaal inclusief centrale en bijkomende bouwwerken."
+    ]
+  },
+  {
+    "id": "new-b-047",
+    "fact_key": "grand_canyon_max_width_km",
+    "question_nl": "Hoeveel kilometer breed is de Grand Canyon op het breedste punt tussen de randen, afgerond?",
+    "question_en": "How many kilometres wide is the Grand Canyon at its widest rim-to-rim point, rounded?",
+    "answer": 29,
+    "category": "Aardrijkskunde",
+    "source_url": "https://home.nps.gov/grca/learn/management/statistics.htm",
+    "source_value": 28.8,
+    "source_unit": "km",
+    "play_unit": "km",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 km (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NPS Park Statistics: 28.8 km voor deze afgebakende maat.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde of maximum zoals expliciet gevraagd; niet verwarren met bestaande maximale diepte of totale canyonlengte."
+    ]
+  },
+  {
+    "id": "new-b-048",
+    "fact_key": "grand_canyon_average_depth_m",
+    "question_nl": "Hoeveel meter diep is de Grand Canyon gemiddeld volgens de NPS, ongeveer?",
+    "question_en": "About how many metres deep is the Grand Canyon on average, according to the NPS?",
+    "answer": 1600,
+    "category": "Aardrijkskunde",
+    "source_url": "https://home.nps.gov/grca/learn/management/statistics.htm",
+    "source_value": 1.6,
+    "source_unit": "km",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 1000; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NPS Park Statistics: 1.6 km voor deze afgebakende maat.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde of maximum zoals expliciet gevraagd; niet verwarren met bestaande maximale diepte of totale canyonlengte."
+    ]
+  },
+  {
+    "id": "new-b-049",
+    "fact_key": "colorado_canyon_average_width_m",
+    "question_nl": "Hoeveel meter breed is de Colorado gemiddeld binnen Grand Canyon National Park?",
+    "question_en": "How many metres wide is the Colorado River on average within Grand Canyon National Park?",
+    "answer": 90,
+    "category": "Aardrijkskunde",
+    "source_url": "https://home.nps.gov/grca/learn/management/statistics.htm",
+    "source_value": 90,
+    "source_unit": "m",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NPS Park Statistics: 90 m voor deze afgebakende maat.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Gemiddelde of maximum zoals expliciet gevraagd; niet verwarren met bestaande maximale diepte of totale canyonlengte."
+    ]
+  },
+  {
+    "id": "new-b-050",
+    "fact_key": "global_ocean_average_depth_m",
+    "question_nl": "Hoeveel meter diep is de oceaan gemiddeld volgens NOAA, ongeveer?",
+    "question_en": "About how many metres deep is the ocean on average, according to NOAA?",
+    "answer": 3682,
+    "category": "Aardrijkskunde",
+    "source_url": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+    "source_value": 3682,
+    "source_unit": "m",
+    "play_unit": "m",
+    "rounding_rule": "Bronwaarde × 1; afronden op het dichtstbijzijnde veelvoud van 1 m (halve waarden omhoog). Vastgelegd vóór matching.",
+    "evidence_nl": "NOAA vermeldt een wereldgemiddelde oceaandiepte van ongeveer 3682 meter.",
+    "checked_on": "2026-11-15",
+    "verification": "page_read",
+    "risks": [
+      "Wereldgemiddelde; niet de diepste plek of alleen de Pacifische Oceaan."
+    ]
+  }
+]
