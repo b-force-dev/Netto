@@ -1,0 +1,2031 @@
+[
+  {
+    "candidate_id": "a-001",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld?",
+      "Hoeveel klinknagels zaten er naar schatting in de romp van de Titanic?"
+    ],
+    "answers": [
+      1200,
+      2500,
+      3000000
+    ],
+    "operator": "×",
+    "score": 5,
+    "reason_nl": "Speekselproductie is onverwacht groot, een piramideblok is voorstelbaar zwaar en Titanic-klinknagels zorgen voor een sterke miljoenen-onthulling.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr119: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr450: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr227: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://nl.wikipedia.org/wiki/Piramide_van_Cheops",
+      "https://en.wikipedia.org/wiki/RMS_Titanic"
+    ],
+    "source_bank_ids": [
+      "nr119",
+      "nr450",
+      "nr227"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-002",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is de Amazone?",
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel kilometer staaldraad zit er in de hoofdkabels van de Golden Gate Bridge?"
+    ],
+    "answers": [
+      6400,
+      20,
+      128000
+    ],
+    "operator": "×",
+    "score": 5,
+    "reason_nl": "De Amazone geeft een denkbare duizenden-schaal, koalaslaap een biologisch anker en de brugkabels leveren de verrassing in afstand.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr686: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Amazon_River",
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/"
+    ],
+    "source_bank_ids": [
+      "nr308",
+      "nr686",
+      "nr783"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-005",
+    "question_texts_nl": [
+      "Hoeveel centimeter meten de dunne en dikke darm samen, volledig uitgestrekt?",
+      "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?",
+      "Hoeveel kilometer lang is de Donau?"
+    ],
+    "answers": [
+      750,
+      2100,
+      2850
+    ],
+    "operator": "+",
+    "score": 5,
+    "reason_nl": "Darm-lengte is vanuit het lichaam te benaderen; Neptunuswind en de Donau vragen schaalgevoel in heel andere onderwerpen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Human_gastrointestinal_tract",
+      "https://nl.wikipedia.org/wiki/Neptunus_%28planeet%29",
+      "https://en.wikipedia.org/wiki/Danube"
+    ],
+    "source_bank_ids": [
+      "nr110",
+      "nr523",
+      "nr854"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-006",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel meter diep kan de potvis duiken?",
+      "Hoeveel liter water stroomt per seconde over de Niagarawatervallen?"
+    ],
+    "answers": [
+      1200,
+      2000,
+      2400000
+    ],
+    "operator": "×",
+    "score": 5,
+    "reason_nl": "Dagelijkse speekselproductie en een potvisduik zijn lichamelijk voorstelbaar maar onzeker; het waterdebiet maakt de eindonthulling groot.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr119: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr156: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://nl.wikipedia.org/wiki/Potvis",
+      "https://en.wikipedia.org/wiki/Niagara_Falls"
+    ],
+    "source_bank_ids": [
+      "nr119",
+      "nr156",
+      "nr288"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-010",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt een blauwe-vinvistong?",
+      "Hoeveel kilometer lang is het Great Barrier Reef?",
+      "Hoeveel kilometer lang was de Romeinse rijksgrens, de Roman Limes, volgens UNESCO ongeveer?"
+    ],
+    "answers": [
+      2700,
+      2300,
+      5000
+    ],
+    "operator": "+",
+    "score": 5,
+    "reason_nl": "Een walvistong is een verrassend gewicht; rif en Romeinse grens geven verschillende soorten afstand om te vergelijken.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr320: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://s3.amazonaws.com/ifaw-pantheon/sites/default/files/legacy/education-publications/ca/cae-aae08-beneath-the-waves-teaching-guide-and-lessons.pdf",
+      "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
+      "https://whc.unesco.org/en/list/430/"
+    ],
+    "source_bank_ids": [
+      "nr8",
+      "nr272",
+      "nr320"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-011",
+    "question_texts_nl": [
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?",
+      "Hoeveel kilometer lang is de Yangtze ongeveer?",
+      "Hoeveel kilogram kan een mannelijke Amerikaanse bizon wegen?"
+    ],
+    "answers": [
+      7200,
+      6300,
+      900
+    ],
+    "operator": "−",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr605: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr268: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr690: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Cardiac_output",
+      "http://web.archive.org/web/20260831052738/https://www.britannica.com/place/Yangtze-River",
+      "https://www.nps.gov/articles/15-facts-about-bison.htm"
+    ],
+    "source_bank_ids": [
+      "nr605",
+      "nr268",
+      "nr690"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-013",
+    "question_texts_nl": [
+      "Wat weegt het hart van een volwassen Blauwe Vinvis in kilogram?",
+      "Hoeveel kilometer lang is het Victoriameer ongeveer?",
+      "Hoeveel centimeter hoog is Michelangelo’s David?"
+    ],
+    "answers": [
+      180,
+      337,
+      517
+    ],
+    "operator": "+",
+    "score": 5,
+    "reason_nl": "Een walvishart kun je niet precies kennen, maar wel fysiek proberen voor te stellen; het meer en het David-beeld hebben verschillende schaalankers.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr274: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Blue_whale",
+      "https://en.wikipedia.org/wiki/Lake_Victoria",
+      "https://en.wikipedia.org/wiki/David_(Michelangelo)"
+    ],
+    "source_bank_ids": [
+      "nr168",
+      "nr274",
+      "nr345"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-015",
+    "question_texts_nl": [
+      "Hoeveel klinknagels zaten er naar schatting in de romp van de Titanic?",
+      "Hoeveel liter water kan een kameel in één keer drinken?",
+      "Hoeveel graden Celsius kan een bliksemschicht bereiken?"
+    ],
+    "answers": [
+      3000000,
+      100,
+      30000
+    ],
+    "operator": "÷",
+    "score": 5,
+    "reason_nl": "Klinknagels en bliksemtemperatuur laten factor-twee-fouten toe; drinkvermogen van een kameel is een voorstelbaar biologisch anker.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr227: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr658: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr1135: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/RMS_Titanic",
+      "https://nl.wikipedia.org/wiki/Kameel",
+      "https://en.wikipedia.org/wiki/Lightning"
+    ],
+    "source_bank_ids": [
+      "nr227",
+      "nr658",
+      "nr1135"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-018",
+    "question_texts_nl": [
+      "Hoeveel haren heeft een mens gemiddeld op zijn hoofd?",
+      "Hoeveel meter per uur kruipen tuinslakken maximaal?",
+      "Hoeveel kilometer breed is de Sahara van noord naar zuid ongeveer op het breedste punt?"
+    ],
+    "answers": [
+      100000,
+      50,
+      2000
+    ],
+    "operator": "÷",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr114: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr665: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr849: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Hair_follicle",
+      "https://en.wikipedia.org/wiki/Cornu_aspersum",
+      "https://www.britannica.com/place/Sahara-desert-Africa"
+    ],
+    "source_bank_ids": [
+      "nr114",
+      "nr665",
+      "nr849"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-022",
+    "question_texts_nl": [
+      "Hoeveel graden Celsius is het smeltpunt van aluminium?",
+      "Hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen, afgerond op hele miljoenen?",
+      "Hoeveel ton weegt een volwassen blauwe vinvis?"
+    ],
+    "answers": [
+      660,
+      510,
+      150
+    ],
+    "operator": "−",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Aluminium",
+      "https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf",
+      "https://nl.wikipedia.org/wiki/Blauwe_vinvis"
+    ],
+    "source_bank_ids": [
+      "nr467",
+      "nr344",
+      "nr691"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-024",
+    "question_texts_nl": [
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?",
+      "Hoeveel kilogram weegt een moai op Paaseiland?",
+      "Hoeveel graden Celsius is het aan het oppervlak van de zon ongeveer?"
+    ],
+    "answers": [
+      18000,
+      12500,
+      5500
+    ],
+    "operator": "−",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Extra bronrisico nr1062: definitie, schaal of meetperiode kan de gespeelde waarde sterk be?nvloeden.",
+      "Afbakening/variatie bij nr1445: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Human_skin",
+      "https://en.wikipedia.org/wiki/Moai",
+      "https://science.nasa.gov/sun/facts/"
+    ],
+    "source_bank_ids": [
+      "nr612",
+      "nr1062",
+      "nr1445"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-026",
+    "question_texts_nl": [
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?",
+      "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld?",
+      "Hoeveel kilometer lang is de Kongo?"
+    ],
+    "answers": [
+      7200,
+      2500,
+      4700
+    ],
+    "operator": "−",
+    "score": 5,
+    "reason_nl": "Hartbloed per dag voelt verrassend groot; piramideblokken helpen de orde van grootte van de Kongo te toetsen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr605: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr450: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Cardiac_output",
+      "https://nl.wikipedia.org/wiki/Piramide_van_Cheops",
+      "https://nl.wikipedia.org/wiki/Kongo_%28rivier%29"
+    ],
+    "source_bank_ids": [
+      "nr605",
+      "nr450",
+      "nr860"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-031",
+    "question_texts_nl": [
+      "Hoeveel liter water stroomt per seconde over de Niagarawatervallen?",
+      "Op hoeveel kilometer hoogte boven de aarde draait het ISS gemiddeld?",
+      "Hoeveel kilogram weegt een mannelijke savanneolifant gemiddeld bij optimale groei?"
+    ],
+    "answers": [
+      2400000,
+      400,
+      6000
+    ],
+    "operator": "÷",
+    "score": 5,
+    "reason_nl": "Waterdebiet, baanhoogte en olifantgewicht zijn herkenbare beelden met veel onzekerheid, waardoor de som werkelijk nuttig kan zijn.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr534: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr645: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Niagara_Falls",
+      "https://en.wikipedia.org/wiki/International_Space_Station",
+      "https://en.wikipedia.org/wiki/African_bush_elephant"
+    ],
+    "source_bank_ids": [
+      "nr288",
+      "nr534",
+      "nr645"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-033",
+    "question_texts_nl": [
+      "Wat is de hoogte van de Burj Khalifa in Dubai in meters?",
+      "Wat is de totale lengte van alle onderzeese internetkabels op aarde in duizend kilometer?",
+      "Hoeveel meter hoog is Mount Kosciuszko?"
+    ],
+    "answers": [
+      828,
+      1400,
+      2228
+    ],
+    "operator": "+",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Burj_Khalifa",
+      "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+      "https://nl.wikipedia.org/wiki/Mount_Kosciuszko"
+    ],
+    "source_bank_ids": [
+      "nr43",
+      "nr95",
+      "nr935"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-034",
+    "question_texts_nl": [
+      "Hoeveel kamers heeft Buckingham Palace?",
+      "Hoeveel kilometer per uur is de geluidssnelheid op zeeniveau afgerond?",
+      "Hoeveel kilogram kan een volwassen vrouwelijke witte neushoorn wegen?"
+    ],
+    "answers": [
+      775,
+      1225,
+      2000
+    ],
+    "operator": "+",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr652: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Buckingham_Palace",
+      "https://nl.wikipedia.org/wiki/Geluidssnelheid",
+      "https://eazawebsite-prod.s3.nl-ams.scw.cloud/uploads/2018_EAZA_Best_Practice_Guidelines_White_rhinoceros_NV_feefd99e0e.pdf"
+    ],
+    "source_bank_ids": [
+      "nr18",
+      "nr59",
+      "nr652"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-035",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is Taipei 101?",
+      "Hoeveel kilogram weegt een volwassen mannelijke giraffe gemiddeld?",
+      "Hoeveel meter breed zijn de Victoriawatervallen?"
+    ],
+    "answers": [
+      508,
+      1200,
+      1708
+    ],
+    "operator": "+",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr650: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Taipei_101",
+      "https://en.wikipedia.org/wiki/Giraffe",
+      "https://nl.wikipedia.org/wiki/Victoriawatervallen"
+    ],
+    "source_bank_ids": [
+      "nr231",
+      "nr650",
+      "nr929"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-039",
+    "question_texts_nl": [
+      "Hoeveel centimeter meten de dunne en dikke darm samen, volledig uitgestrekt?",
+      "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger?",
+      "Hoeveel soldaten vochten tijdens de Slag om Gettysburg ongeveer mee?"
+    ],
+    "answers": [
+      750,
+      220,
+      165000
+    ],
+    "operator": "×",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr334: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Human_gastrointestinal_tract",
+      "https://seaworld.org/animals/all-about/tiger/characteristics/",
+      "https://www.nps.gov/gett/learn/historyculture/index.htm"
+    ],
+    "source_bank_ids": [
+      "nr110",
+      "nr647",
+      "nr334"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-041",
+    "question_texts_nl": [
+      "Hoeveel kilometer moet een bijenvolk gezamenlijk vliegen om één kilo honing te produceren?",
+      "Hoeveel kilometer breed is de Kalahariwoestijn ongeveer?",
+      "Hoeveel miljard sterren telt ons Melkwegstelsel naar schatting?"
+    ],
+    "answers": [
+      90000,
+      900,
+      100
+    ],
+    "operator": "÷",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Extra bronrisico nr654: definitie, schaal of meetperiode kan de gespeelde waarde sterk be?nvloeden.",
+      "Afbakening/variatie bij nr859: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr1432: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Extra bronrisico nr1432: definitie, schaal of meetperiode kan de gespeelde waarde sterk be?nvloeden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Honey",
+      "https://en.wikipedia.org/wiki/Kalahari_Desert",
+      "https://science.nasa.gov/universe/galaxies/milky-way/"
+    ],
+    "source_bank_ids": [
+      "nr654",
+      "nr859",
+      "nr1432"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-044",
+    "question_texts_nl": [
+      "Hoeveel aardse dagen duurt één volledige draai van Venus?",
+      "Hoeveel gram koolhydraten bevat een Amerikaanse McDonald's Big Mac?",
+      "Hoeveel meter diep is de Challengerdiepte in de Marianentrog?"
+    ],
+    "answers": [
+      243,
+      45,
+      10935
+    ],
+    "operator": "×",
+    "score": 5,
+    "reason_nl": "De trage Venusrotatie en Challenger-diepte zijn sterke verrassingsfeiten; suiker in een blikje biedt een alledaags schatanker.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Venus_%28planeet%29",
+      "https://en.wikipedia.org/wiki/Big_Mac",
+      "https://en.wikipedia.org/wiki/Challenger_Deep"
+    ],
+    "source_bank_ids": [
+      "nr80",
+      "nr184",
+      "nr1138"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-049",
+    "question_texts_nl": [
+      "Hoeveel dagen doet de planeet Mars erover om rond de zon te draaien?",
+      "Hoeveel centimeter hoog is Michelangelo’s David?",
+      "Hoeveel centimeter hoog wordt een volwassen emoe?"
+    ],
+    "answers": [
+      687,
+      517,
+      170
+    ],
+    "operator": "−",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Mars_%28planeet%29",
+      "https://en.wikipedia.org/wiki/David_(Michelangelo)",
+      "https://en.wikipedia.org/wiki/Emu"
+    ],
+    "source_bank_ids": [
+      "nr82",
+      "nr345",
+      "nr635"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-060",
+    "question_texts_nl": [
+      "Hoeveel ton goud werd in 2020 wereldwijd gewonnen?",
+      "Wat is de totale geschatte lengte van alle bloedvaten in een volwassen menselijk lichaam in kilometers?",
+      "Hoeveel vierkante kilometer is de oppervlakte van IJsland ongeveer?"
+    ],
+    "answers": [
+      3000,
+      100000,
+      103000
+    ],
+    "operator": "+",
+    "score": 5,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Extra bronrisico nr45: definitie, schaal of meetperiode kan de gespeelde waarde sterk be?nvloeden.",
+      "Afbakening/variatie bij nr128: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Extra bronrisico nr128: definitie, schaal of meetperiode kan de gespeelde waarde sterk be?nvloeden.",
+      "Afbakening/variatie bij nr300: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://pubs.usgs.gov/myb/vol1/2020/myb1-2020-gold.pdf",
+      "https://en.wikipedia.org/wiki/Circulatory_system",
+      "https://nl.wikipedia.org/wiki/IJsland"
+    ],
+    "source_bank_ids": [
+      "nr45",
+      "nr128",
+      "nr300"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-063",
+    "question_texts_nl": [
+      "Hoeveel miljard neuronen (zenuwcellen) bevat het menselijk brein naar schatting?",
+      "Hoeveel centimeter breed is de Mona Lisa?",
+      "Hoeveel meter hoog is de Grote Piramide van Gizeh nu?"
+    ],
+    "answers": [
+      86,
+      53,
+      139
+    ],
+    "operator": "+",
+    "score": 5,
+    "reason_nl": "Brein, schilderij en piramide zijn bekende onderwerpen waarvan je de aantallen en afmetingen waarschijnlijk niet exact weet.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr3: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/19226510/",
+      "https://nl.wikipedia.org/wiki/Mona_Lisa",
+      "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+    ],
+    "source_bank_ids": [
+      "nr3",
+      "nr44",
+      "nr792"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-003",
+    "question_texts_nl": [
+      "Hoeveel haren heeft een mens gemiddeld op zijn hoofd?",
+      "Meer dan hoeveel kilometer per jaar trekken Noordse sterns?",
+      "Hoeveel graden Celsius kan een bliksemschicht bereiken?"
+    ],
+    "answers": [
+      100000,
+      70000,
+      30000
+    ],
+    "operator": "−",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr114: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr1135: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Hair_follicle",
+      "https://www.bas.ac.uk/news/arctic-terns-confirmed-to-have-the-longest-animal-migration-in-the-world/",
+      "https://en.wikipedia.org/wiki/Lightning"
+    ],
+    "source_bank_ids": [
+      "nr114",
+      "nr157",
+      "nr1135"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-004",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt de klok van Big Ben?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?",
+      "Hoeveel vierkante kilometer is de oppervlakte van het Baikalmeer ongeveer?"
+    ],
+    "answers": [
+      13700,
+      18000,
+      31700
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr978: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Big_Ben",
+      "https://en.wikipedia.org/wiki/Human_skin",
+      "https://en.wikipedia.org/wiki/Lake_Baikal"
+    ],
+    "source_bank_ids": [
+      "nr225",
+      "nr612",
+      "nr978"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-007",
+    "question_texts_nl": [
+      "Hoeveel hotels had Hilton eind 2023 wereldwijd ongeveer?",
+      "Hoeveel eitjes kan een koninginnenbij per dag leggen?",
+      "Hoeveel graden Celsius is het aan het oppervlak van de zon ongeveer?"
+    ],
+    "answers": [
+      7500,
+      2000,
+      5500
+    ],
+    "operator": "−",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr1316: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Extra bronrisico nr1316: definitie, schaal of meetperiode kan de gespeelde waarde sterk be?nvloeden.",
+      "Afbakening/variatie bij nr639: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr1445: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://stories.hilton.com/",
+      "https://en.wikipedia.org/wiki/Queen_bee",
+      "https://science.nasa.gov/sun/facts/"
+    ],
+    "source_bank_ids": [
+      "nr1316",
+      "nr639",
+      "nr1445"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-009",
+    "question_texts_nl": [
+      "Hoeveel meter bedroeg Felix Baumgartners spronghoogte op 14 oktober 2012 volgens de FAI, afgerond op duizendtallen?",
+      "Hoeveel kilometer lang is de Andes ongeveer?",
+      "Hoeveel push-ups deed Charles Servizio in 24 uur in april 1993, afgerond op duizendtallen?"
+    ],
+    "answers": [
+      39000,
+      7000,
+      46000
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr852: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.fai.org/news/baumgartner%E2%80%99s-records-ratified-fai",
+      "https://en.wikipedia.org/wiki/Andes",
+      "https://www.guinnessworldrecords.com/world-records/most-push-ups-in-24-hours"
+    ],
+    "source_bank_ids": [
+      "nr264",
+      "nr852",
+      "nr1314"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-012",
+    "question_texts_nl": [
+      "Hoeveel meter onder zeeniveau ligt het diepste punt van de Noordzee?",
+      "Hoeveel liter zuurstof verbruikt een volwassen mens gemiddeld per dag?",
+      "Hoeveel kilogram voedsel (bladeren, gras, takken) eet een volwassen Afrikaanse olifant per dag?"
+    ],
+    "answers": [
+      700,
+      550,
+      150
+    ],
+    "operator": "−",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr607: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Noordzee",
+      "https://en.wikipedia.org/wiki/Breathing",
+      "https://en.wikipedia.org/wiki/African_bush_elephant"
+    ],
+    "source_bank_ids": [
+      "nr290",
+      "nr607",
+      "nr644"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-014",
+    "question_texts_nl": [
+      "Hoeveel inwoners had Vaticaanstad in 2014?",
+      "Hoeveel uren duurde de historische Apollo 11-missie naar de maan?",
+      "Hoeveel soldaten namen deel aan de landing in Normandië op D-Day?"
+    ],
+    "answers": [
+      800,
+      195,
+      156000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://2009-2017.state.gov/documents/organization/222700.pdf",
+      "https://en.wikipedia.org/wiki/Apollo_11",
+      "https://en.wikipedia.org/wiki/Normandy_landings"
+    ],
+    "source_bank_ids": [
+      "nr291",
+      "nr530",
+      "nr1019"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-017",
+    "question_texts_nl": [
+      "Hoeveel miljard kilometer legt licht af in één lichtjaar, afgerond?",
+      "Hoeveel meter lang is het Millauviaduct in Frankrijk?",
+      "Hoeveel kilometer lang was de historische Zijderoute ongeveer?"
+    ],
+    "answers": [
+      9460,
+      2460,
+      7000
+    ],
+    "operator": "−",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr1006: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Light-year",
+      "https://en.wikipedia.org/wiki/Millau_Viaduct",
+      "https://en.wikipedia.org/wiki/Silk_Road"
+    ],
+    "source_bank_ids": [
+      "nr525",
+      "nr237",
+      "nr1006"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-019",
+    "question_texts_nl": [
+      "Hoeveel kilometer gekarteerde gangen had Mammoth Cave in 2024?",
+      "Hoeveel centimeter lang was Rumeysa Gelgi in 2021?",
+      "Hoeveel kilogram staal zit er ongeveer in een gemiddelde auto?"
+    ],
+    "answers": [
+      685,
+      215,
+      900
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr1076: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.nps.gov/maca/learn/management/statistics.htm",
+      "https://www.guinnessworldrecords.com/world-records/tallest-woman-living",
+      "https://en.wikipedia.org/wiki/Automotive_industry"
+    ],
+    "source_bank_ids": [
+      "nr271",
+      "nr441",
+      "nr1076"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-023",
+    "question_texts_nl": [
+      "Hoeveel treden heeft het Empire State Building van straatniveau tot het observatiedek?",
+      "Wat is de geschatte leeftijd van de planeet Aarde in miljoenen jaren?",
+      "Hoeveel kilometer lang is de Amazone?"
+    ],
+    "answers": [
+      1860,
+      4540,
+      6400
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr84: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.esbnyc.com/about/facts-figures",
+      "https://en.wikipedia.org/wiki/Age_of_the_Earth",
+      "https://en.wikipedia.org/wiki/Amazon_River"
+    ],
+    "source_bank_ids": [
+      "nr24",
+      "nr84",
+      "nr308"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-025",
+    "question_texts_nl": [
+      "Hoeveel hertz is de toonhoogte van de standaard a in de muziek?",
+      "Hoeveel meter hoog is Mount Everest?",
+      "Hoeveel kilometer lang is de Trans-Siberische spoorlijn?"
+    ],
+    "answers": [
+      440,
+      8849,
+      9289
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://www.iso.org/standard/3601.html",
+      "https://nl.wikipedia.org/wiki/Mount_Everest",
+      "https://nl.wikipedia.org/wiki/Trans-Siberische_spoorlijn"
+    ],
+    "source_bank_ids": [
+      "nr401",
+      "nr933",
+      "nr1487"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-028",
+    "question_texts_nl": [
+      "Hoeveel kilogram aluminium zit er ongeveer in een gemiddelde auto?",
+      "Hoeveel kilogram weegt een volwassen mannetje van de Aziatische olifant gemiddeld?",
+      "Hoeveel kilometer lang is de Niger?"
+    ],
+    "answers": [
+      200,
+      4000,
+      4200
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr359: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr646: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Aluminium",
+      "https://en.wikipedia.org/wiki/Asian_elephant",
+      "https://en.wikipedia.org/wiki/Niger_River"
+    ],
+    "source_bank_ids": [
+      "nr359",
+      "nr646",
+      "nr863"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-029",
+    "question_texts_nl": [
+      "Hoeveel liter water gebruikt een gemiddeld huishouden per persoon per dag in Nederland?",
+      "Wat is de lengte van de rivier de Nijl in kilometers?",
+      "Hoeveel kilometer is de diameter van Mars ongeveer?"
+    ],
+    "answers": [
+      129,
+      6650,
+      6779
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr415: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr1427: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.waterspiegel.nl/",
+      "https://en.wikipedia.org/wiki/Nile",
+      "https://en.wikipedia.org/wiki/Mars"
+    ],
+    "source_bank_ids": [
+      "nr415",
+      "nr982",
+      "nr1427"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-030",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is Mount Cook (Aoraki)?",
+      "Hoeveel centimeter lang was de Engelse mastiff Zorba?",
+      "Wat is de diameter van de Maan in kilometers?"
+    ],
+    "answers": [
+      3724,
+      250,
+      3474
+    ],
+    "operator": "−",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Mount_Cook",
+      "https://en.wikipedia.org/wiki/List_of_individual_dogs",
+      "https://en.wikipedia.org/wiki/Moon"
+    ],
+    "source_bank_ids": [
+      "nr932",
+      "nr443",
+      "nr1442"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-046",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is het Tanganyikameer ongeveer?",
+      "Hoeveel kilometer per uur haalt een cheetah op zijn snelst?",
+      "Hoeveel passagiers kan een Boeing 777-300ER maximaal vervoeren?"
+    ],
+    "answers": [
+      660,
+      110,
+      550
+    ],
+    "operator": "−",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr870: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr655: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr1490: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "http://web.archive.org/web/20260330211104/https://www.britannica.com/place/Lake-Tanganyika",
+      "https://en.wikipedia.org/wiki/Cheetah",
+      "https://nl.wikipedia.org/wiki/Boeing_777"
+    ],
+    "source_bank_ids": [
+      "nr870",
+      "nr655",
+      "nr1490"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-055",
+    "question_texts_nl": [
+      "Hoeveel gram eiwit bevat een Amerikaanse McDonald’s Big Mac?",
+      "Hoeveel kilogram weegt een mannelijke jaguar in de Pantanal gemiddeld?",
+      "Hoeveel kilometer lang is het Himalayagebergte?"
+    ],
+    "answers": [
+      25,
+      100,
+      2500
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr651: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Big_Mac",
+      "https://animaldiversity.org/accounts/Panthera_onca/",
+      "http://web.archive.org/web/20260902043756/https://www.britannica.com/place/Himalayas"
+    ],
+    "source_bank_ids": [
+      "nr11",
+      "nr651",
+      "nr273"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-058",
+    "question_texts_nl": [
+      "Hoeveel aardse uren duurt één volledige draai van Mars?",
+      "Hoeveel stenen staan er in de Stonehenge-hoofdstructuur ongeveer overeind?",
+      "Hoeveel meter diep kan de potvis duiken?"
+    ],
+    "answers": [
+      25,
+      80,
+      2000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. De onderwerpen zijn voorstelbaar zonder dat je hun exacte waarde hoeft te kennen.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr815: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr156: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://science.nasa.gov/mars/facts/",
+      "https://nl.wikipedia.org/wiki/Stonehenge",
+      "https://nl.wikipedia.org/wiki/Potvis"
+    ],
+    "source_bank_ids": [
+      "nr81",
+      "nr815",
+      "nr156"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-008",
+    "question_texts_nl": [
+      "Hoeveel soldaten namen aan beide kanten samen deel aan de Slag bij Waterloo?",
+      "Wat is de totale geschatte lengte van alle bloedvaten in een volwassen menselijk lichaam in kilometers?",
+      "Hoeveel kilometer moet een bijenvolk gezamenlijk vliegen om één kilo honing te produceren?"
+    ],
+    "answers": [
+      190000,
+      100000,
+      90000
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr128: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Extra bronrisico nr128: definitie, schaal of meetperiode kan de gespeelde waarde sterk be?nvloeden.",
+      "Extra bronrisico nr654: definitie, schaal of meetperiode kan de gespeelde waarde sterk be?nvloeden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Battle_of_Waterloo",
+      "https://en.wikipedia.org/wiki/Circulatory_system",
+      "https://en.wikipedia.org/wiki/Honey"
+    ],
+    "source_bank_ids": [
+      "nr330",
+      "nr128",
+      "nr654"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-016",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is Japan van noord naar zuid ongeveer?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?",
+      "Hoeveel ton bommen werd tijdens de Blitz op Londen afgeworpen?"
+    ],
+    "answers": [
+      3000,
+      15000,
+      18000
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr265: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Geography_of_Japan",
+      "https://en.wikipedia.org/wiki/Water_footprint",
+      "https://en.wikipedia.org/wiki/The_Blitz"
+    ],
+    "source_bank_ids": [
+      "nr265",
+      "nr371",
+      "nr1022"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-020",
+    "question_texts_nl": [
+      "Hoeveel vierkante kilometer is het Victoriameer ongeveer?",
+      "Hoeveel kilogram weegt een volwassen mannelijk nijlpaard gemiddeld?",
+      "Hoeveel soldaten telde het Brits-geallieerde leger van Wellington bij Waterloo ongeveer?"
+    ],
+    "answers": [
+      69500,
+      1500,
+      68000
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr979: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr648: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr1020: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Lake_Victoria",
+      "https://en.wikipedia.org/wiki/Hippopotamus",
+      "http://web.archive.org/web/20260812125235/https://www.britannica.com/event/Battle-of-Waterloo"
+    ],
+    "source_bank_ids": [
+      "nr979",
+      "nr648",
+      "nr1020"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-021",
+    "question_texts_nl": [
+      "Hoeveel aardse dagen duurt een jaar op Jupiter ongeveer?",
+      "Hoeveel meter lang is de Brooklyn Bridge van Centre Street tot Sands Street?",
+      "Hoeveel kilometer lang is de Murray?"
+    ],
+    "answers": [
+      4333,
+      1825,
+      2508
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr509: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://science.nasa.gov/jupiter/facts/",
+      "https://en.wikipedia.org/wiki/Brooklyn_Bridge",
+      "https://nl.wikipedia.org/wiki/Murray_%28rivier%29"
+    ],
+    "source_bank_ids": [
+      "nr509",
+      "nr236",
+      "nr862"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-027",
+    "question_texts_nl": [
+      "Hoeveel soldaten telde het leger van Napoleon tijdens de invasie van Rusland?",
+      "Hoeveel aardse dagen duurt een jaar op Venus ongeveer?",
+      "Hoeveel ton bananen produceerde de wereld in 2022?"
+    ],
+    "answers": [
+      600000,
+      225,
+      135000000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr510: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Extra bronrisico nr362: definitie, schaal of meetperiode kan de gespeelde waarde sterk be?nvloeden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/French_invasion_of_Russia",
+      "https://science.nasa.gov/venus/venus-facts/",
+      "https://www.nab.com.na/wp-content/uploads/2024/04/Market-Intelligence-Report-Bananas-revised-NAB-29032024.pdf"
+    ],
+    "source_bank_ids": [
+      "nr332",
+      "nr510",
+      "nr362"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-032",
+    "question_texts_nl": [
+      "Hoeveel soldaten vochten tijdens de Slag bij Verdun ongeveer mee?",
+      "Hoeveel dagen duurt de zwangerschap van een varken?",
+      "Hoeveel kilometer is de gemiddelde afstand van Mars tot de zon?"
+    ],
+    "answers": [
+      2000000,
+      114,
+      228000000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr333: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr521: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Slag_om_Verdun",
+      "https://en.wikipedia.org/wiki/Domestic_pig",
+      "https://en.wikipedia.org/wiki/Mars"
+    ],
+    "source_bank_ids": [
+      "nr333",
+      "nr1075",
+      "nr521"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-036",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is de Ganges?",
+      "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?",
+      "Hoeveel delen CO₂ per miljoen delen lucht mat NASA in 2024?"
+    ],
+    "answers": [
+      2525,
+      2100,
+      425
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Ganges",
+      "https://nl.wikipedia.org/wiki/Neptunus_%28planeet%29",
+      "https://climate.nasa.gov/vital-signs/carbon-dioxide/"
+    ],
+    "source_bank_ids": [
+      "nr855",
+      "nr523",
+      "nr1090"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-037",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt een blauwe-vinvistong?",
+      "Hoeveel dagen duurt de zwangerschap van een geit?",
+      "Hoeveel Amerikaanse militairen kwamen tijdens de Tweede Wereldoorlog om het leven?"
+    ],
+    "answers": [
+      2700,
+      150,
+      405000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://s3.amazonaws.com/ifaw-pantheon/sites/default/files/legacy/education-publications/ca/cae-aae08-beneath-the-waves-teaching-guide-and-lessons.pdf",
+      "https://en.wikipedia.org/wiki/Goat",
+      "https://www.nationalww2museum.org/students-teachers/student-resources/research-starters/research-starters-worldwide-deaths-world-war"
+    ],
+    "source_bank_ids": [
+      "nr8",
+      "nr1074",
+      "nr986"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-038",
+    "question_texts_nl": [
+      "Hoeveel traptreden beklim je naar de 86e verdieping van het Empire State Building?",
+      "Hoeveel dagen duurt de draagtijd van een olifant ongeveer?",
+      "Hoeveel kilogram woog de zwaarste schildpad ooit, volgens het National Museum Wales?"
+    ],
+    "answers": [
+      1576,
+      660,
+      916
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr636: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Empire_State_Building",
+      "https://en.wikipedia.org/wiki/Elephant",
+      "https://museum.wales/articles/1009/The-largest-turtle-in-the-world"
+    ],
+    "source_bank_ids": [
+      "nr246",
+      "nr636",
+      "nr1309"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-040",
+    "question_texts_nl": [
+      "Hoeveel kilogram woog de zwaarste pompoen ter wereld eind 2025?",
+      "Hoeveel meter hoog is Angel Falls ongeveer?",
+      "Hoeveel dagen duurde de Slag bij Verdun?"
+    ],
+    "answers": [
+      1279,
+      979,
+      300
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr34: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.guinnessworldrecords.com/news/2026/10/pumpkinpalooza-how-the-worlds-biggest-pumpkin-record-fell-twice-in-one-week",
+      "http://web.archive.org/web/20260801160109/https://www.britannica.com/place/Angel-Falls",
+      "https://en.wikipedia.org/wiki/Battle_of_Verdun"
+    ],
+    "source_bank_ids": [
+      "nr71",
+      "nr34",
+      "nr992"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-042",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is het Suezkanaal?",
+      "Ruim hoeveel duizend inwoners had Luxemburg op 1 januari 2023?",
+      "Hoeveel passagiers kan een Airbus A380 maximaal vervoeren?"
+    ],
+    "answers": [
+      193,
+      660,
+      853
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr1489: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Suezkanaal",
+      "https://statistiques.public.lu/en/actualites/2023/stn21-population-2023.html",
+      "https://nl.wikipedia.org/wiki/Airbus_A380"
+    ],
+    "source_bank_ids": [
+      "nr571",
+      "nr838",
+      "nr1489"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-043",
+    "question_texts_nl": [
+      "Hoeveel meter lang is de hoofdoverspanning van de Golden Gate Bridge?",
+      "Hoeveel kilogram rundvlees at men in Argentinië per inwoner in 2020?",
+      "Hoeveel kilometer lang is de Rijn?"
+    ],
+    "answers": [
+      1280,
+      50,
+      1230
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+      "https://www.magyp.gob.ar/sitio/areas/aves/informes/boletines/_archivos/000000_Datos%20Hist%C3%B3ricos/000083_Nro%2083%20Anuario%20Avicola%202020.pdf",
+      "https://en.wikipedia.org/wiki/Rhine"
+    ],
+    "source_bank_ids": [
+      "nr778",
+      "nr712",
+      "nr865"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-045",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is het Baikalmeer ongeveer?",
+      "Hoeveel kilogram huishoudelijk afval werd per inwoner ingezameld in Nederland in 2025?",
+      "Hoeveel meter hoog is de Cairo Tower?"
+    ],
+    "answers": [
+      636,
+      449,
+      187
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr31: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Lake_Baikal",
+      "https://www.cbs.nl/nl-nl/cijfers/detail/83558NED",
+      "https://nl.wikipedia.org/wiki/Cairo_Tower"
+    ],
+    "source_bank_ids": [
+      "nr31",
+      "nr411",
+      "nr799"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-047",
+    "question_texts_nl": [
+      "Hoeveel kilometer gekarteerde gangen had Mammoth Cave in 2024?",
+      "Hoeveel kilometer per uur rijdt een hogesnelheidstrein zoals de TGV maximaal in reguliere dienst?",
+      "Hoeveel stappen telt El Castillo van Chichen Itza in totaal inclusief de top?"
+    ],
+    "answers": [
+      685,
+      320,
+      365
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr572: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.nps.gov/maca/learn/management/statistics.htm",
+      "https://en.wikipedia.org/wiki/TGV",
+      "https://en.wikipedia.org/wiki/El_Castillo,_Chichen_Itza"
+    ],
+    "source_bank_ids": [
+      "nr271",
+      "nr572",
+      "nr812"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-048",
+    "question_texts_nl": [
+      "Hoeveel centimeter schofthoogte had het paard Sampson op vierjarige leeftijd?",
+      "Hoeveel miljoen inwoners had Brazilië in 2024?",
+      "Hoeveel kilometer per uur haalde de Shanghai Maglev in de reguliere dienst tot 2021?"
+    ],
+    "answers": [
+      219,
+      212,
+      431
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://www.guinnessworldrecords.com/news/2019/2/prodigious-pets-five-of-the-worlds-biggest-domestic-animals-558800",
+      "https://nl.wikipedia.org/wiki/Brazili%C3%AB",
+      "https://en.wikipedia.org/wiki/Shanghai_maglev_train"
+    ],
+    "source_bank_ids": [
+      "nr437",
+      "nr947",
+      "nr1455"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-050",
+    "question_texts_nl": [
+      "Hoeveel meter ligt de Dode Zee ongeveer onder zeeniveau?",
+      "Hoeveel delen CO₂ per miljoen delen lucht zat er rond het pre-industriële referentiejaar in de atmosfeer?",
+      "Hoeveel miljoen kilometer is de gemiddelde afstand van de aarde tot de zon?"
+    ],
+    "answers": [
+      430,
+      280,
+      150
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr944: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Afbakening/variatie bij nr1444: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Dode_Zee",
+      "https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere",
+      "https://nl.wikipedia.org/wiki/Aarde_%28planeet%29"
+    ],
+    "source_bank_ids": [
+      "nr944",
+      "nr1091",
+      "nr1444"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-051",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is de Petronas Twin Tower?",
+      "Hoeveel meter hoog is Uluru?",
+      "Ruim hoeveel miljoen passagiers verwerkte Atlanta Airport, de drukste luchthaven ter wereld, in 2023?"
+    ],
+    "answers": [
+      452,
+      348,
+      104
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Petronas_Towers",
+      "https://nl.wikipedia.org/wiki/Uluru",
+      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport"
+    ],
+    "source_bank_ids": [
+      "nr793",
+      "nr936",
+      "nr1317"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-052",
+    "question_texts_nl": [
+      "Hoeveel treden telt de wenteltrap in het Vrijheidsbeeld naar de kroon?",
+      "Hoeveel centimeter lang was Zeng Jinlian in 1982?",
+      "Hoeveel meter hoog zijn de Victoriawatervallen?"
+    ],
+    "answers": [
+      354,
+      246,
+      108
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Statue_of_Liberty",
+      "https://www.guinnessworldrecords.com/world-records/tallest-woman",
+      "https://whc.unesco.org/en/list/509/"
+    ],
+    "source_bank_ids": [
+      "nr247",
+      "nr69",
+      "nr943"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-053",
+    "question_texts_nl": [
+      "Hoeveel uur duurde de videogamemarathon van Szabolcs Csépe in oktober 2024?",
+      "Hoeveel aardse jaren duurt een jaar op Neptunus?",
+      "Hoeveel meter hoog is de Sydney Tower?"
+    ],
+    "answers": [
+      144,
+      165,
+      309
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://www.guinnessworldrecords.com/world-records/longest-video-games-marathon",
+      "https://science.nasa.gov/neptune/facts/",
+      "https://nl.wikipedia.org/wiki/Sydney_Tower"
+    ],
+    "source_bank_ids": [
+      "nr456",
+      "nr511",
+      "nr796"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-054",
+    "question_texts_nl": [
+      "Hoeveel dagen duurde de reis van de Mayflower naar Noord-Amerika?",
+      "Hoeveel gram suiker zit er in een Amerikaans blikje Coca-Cola van 355 ml?",
+      "Hoeveel kilometer lang is de Zambezi?"
+    ],
+    "answers": [
+      66,
+      39,
+      2574
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://plimoth.org/learn/just-kids/homework-help/mayflower",
+      "https://en.wikipedia.org/wiki/Coca-Cola",
+      "https://en.wikipedia.org/wiki/Zambezi"
+    ],
+    "source_bank_ids": [
+      "nr38",
+      "nr707",
+      "nr866"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-056",
+    "question_texts_nl": [
+      "Hoeveel dagen duurt de zwangerschap van een koe?",
+      "Hoeveel miljoen kubieke meter aarde werd er uitgegraven voor de bouw van het Panamakanaal?",
+      "Hoeveel meter lang is een Airbus A380?"
+    ],
+    "answers": [
+      283,
+      210,
+      73
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Cattle",
+      "https://en.wikipedia.org/wiki/Panama_Canal",
+      "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a380"
+    ],
+    "source_bank_ids": [
+      "nr357",
+      "nr238",
+      "nr574"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-057",
+    "question_texts_nl": [
+      "Hoeveel kilometer per uur is de geluidssnelheid op zeeniveau afgerond?",
+      "Hoeveel jaar duurde de bouw van de Dom van Keulen?",
+      "Hoeveel meter diep is de Grand Canyon op het diepste punt?"
+    ],
+    "answers": [
+      1225,
+      632,
+      1857
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Geluidssnelheid",
+      "https://en.wikipedia.org/wiki/Cologne_Cathedral",
+      "https://en.wikipedia.org/wiki/Grand_Canyon"
+    ],
+    "source_bank_ids": [
+      "nr59",
+      "nr774",
+      "nr930"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-059",
+    "question_texts_nl": [
+      "Bij hoeveel graden Celsius smelt zuiver tin?",
+      "Hoeveel kamers heeft het Witte Huis?",
+      "Hoeveel wagons had de langste passagierstrein ooit?"
+    ],
+    "answers": [
+      232,
+      132,
+      100
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Tin",
+      "https://nl.wikipedia.org/wiki/Witte_Huis_%28Washington%29",
+      "https://www.guinnessworldrecords.com/world-records/longest-passenger-train"
+    ],
+    "source_bank_ids": [
+      "nr468",
+      "nr224",
+      "nr1315"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-061",
+    "question_texts_nl": [
+      "Hoeveel vierkante kilometer is de Noordzee ongeveer groot?",
+      "Hoeveel jaar duurde de apartheid in Zuid-Afrika?",
+      "Hoeveel kilogram weegt een moai op Paaseiland?"
+    ],
+    "answers": [
+      575000,
+      46,
+      12500
+    ],
+    "operator": "÷",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr298: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren.",
+      "Extra bronrisico nr1062: definitie, schaal of meetperiode kan de gespeelde waarde sterk be?nvloeden."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Noordzee",
+      "https://nl.wikipedia.org/wiki/Apartheid_in_Zuid-Afrika",
+      "https://en.wikipedia.org/wiki/Moai"
+    ],
+    "source_bank_ids": [
+      "nr298",
+      "nr1001",
+      "nr1062"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-062",
+    "question_texts_nl": [
+      "Hoeveel dagen duurt de zwangerschap van een schaap?",
+      "Hoeveel kilometer per uur is de bovengrens van windkracht 8?",
+      "Hoeveel meter hoog is de Taj Mahal?"
+    ],
+    "answers": [
+      147,
+      74,
+      73
+    ],
+    "operator": "−",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Sheep",
+      "https://nl.wikipedia.org/wiki/Schaal_van_Beaufort",
+      "https://en.wikipedia.org/wiki/Taj_Mahal"
+    ],
+    "source_bank_ids": [
+      "nr358",
+      "nr404",
+      "nr797"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-064",
+    "question_texts_nl": [
+      "Hoeveel jaar duurde de bouw van de Taj Mahal?",
+      "Hoeveel ton bommen werd tijdens de Blitz op Londen afgeworpen?",
+      "Hoeveel vierkante kilometer is de oppervlakte van Japan ongeveer?"
+    ],
+    "answers": [
+      21,
+      18000,
+      378000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd.",
+      "Afbakening/variatie bij nr301: bronwaarde, normale waarde versus maximum en afronding inhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://asi.nic.in/taj-mahal/",
+      "https://en.wikipedia.org/wiki/The_Blitz",
+      "https://en.wikipedia.org/wiki/Geography_of_Japan"
+    ],
+    "source_bank_ids": [
+      "nr223",
+      "nr1022",
+      "nr301"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  },
+  {
+    "candidate_id": "a-065",
+    "question_texts_nl": [
+      "Hoeveel gram suiker zit er in een blikje Coca-Cola van 330 ml?",
+      "Hoeveel centimeter hoog is de Mona Lisa?",
+      "Hoeveel centimeter schofthoogte had de Duitse dog Zeus in 2011?"
+    ],
+    "answers": [
+      35,
+      77,
+      112
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "Drie verschillende onderwerpen met minimaal twee onzekere grootheden; de relatie helpt de schattingen op onderlinge schaal te toetsen. Deze combinatie is een reservekandidaat: afbakening en aantrekkelijkheid vragen extra redactie.",
+    "risks": [
+      "Bestaande bankbron overgenomen; niet in deze kandidaatronde extern geverifieerd."
+    ],
+    "source_urls": [
+      "https://www.coca-cola.com/ng/en/about-us/faq/how-much-sugar-is-in-cocacola-original-taste",
+      "https://nl.wikipedia.org/wiki/Mona_Lisa",
+      "https://www.guinnessworldrecords.com/world-records/tallest-dog-ever"
+    ],
+    "source_bank_ids": [
+      "nr12",
+      "nr346",
+      "nr435"
+    ],
+    "verification": "candidate_existing_sources_not_reverified"
+  }
+]

@@ -1,0 +1,1934 @@
+[
+  {
+    "candidate_id": "b-0269",
+    "question_texts_nl": [
+      "Op hoeveel kilometer hoogte boven de aarde draait het ISS gemiddeld?",
+      "Hoeveel kilogram weegt een mannelijke savanneolifant gemiddeld bij optimale groei?",
+      "Hoeveel liter water stroomt per seconde over de Niagarawatervallen?"
+    ],
+    "answers": [
+      400,
+      6000,
+      2400000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "Je kunt een olifant, een ruimtestation en een waterval voorstellen, maar niet vanzelf hun schaal. De 400 kilometer en 6000 kilogram laten het verbazingwekkende debiet van 2,4 miljoen liter per seconde ontstaan.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/International_Space_Station",
+      "https://en.wikipedia.org/wiki/African_bush_elephant",
+      "https://en.wikipedia.org/wiki/Niagara_Falls"
+    ]
+  },
+  {
+    "candidate_id": "b-0113",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld?",
+      "Hoeveel klinknagels zaten er naar schatting in de romp van de Titanic?"
+    ],
+    "answers": [
+      1200,
+      2500,
+      3000000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "Een dagelijks lichaamsproces, een massief piramideblok en de bouw van de Titanic leveren drie ver uiteenliggende schalen. De vermenigvuldiging maakt van 1200 en 2500 een verrassende drie miljoen.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://nl.wikipedia.org/wiki/Piramide_van_Cheops",
+      "https://en.wikipedia.org/wiki/RMS_Titanic"
+    ]
+  },
+  {
+    "candidate_id": "b-0182",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is de Amazone?",
+      "Hoeveel kilogram kan een mannelijke Amerikaanse bizon wegen?",
+      "Hoeveel ton ijzer werd gebruikt voor de Eiffeltoren?"
+    ],
+    "answers": [
+      6400,
+      900,
+      7300
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "Een grote rivier, een zwaar dier en het materiaal van een beroemde toren zijn tastbaar zonder dat je hun getallen kent. De optelling 6400 + 900 = 7300 is rekenkundig eenvoudig, zodat de uitdaging in het schatten blijft.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Amazon_River",
+      "https://www.nps.gov/articles/15-facts-about-bison.htm",
+      "https://www.toureiffel.paris/en/the-monument/key-figures"
+    ]
+  },
+  {
+    "candidate_id": "b-0169",
+    "question_texts_nl": [
+      "Hoeveel kilometer gekarteerde gangen had Mammoth Cave in 2024?",
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel kilogram weegt de klok van Big Ben?"
+    ],
+    "answers": [
+      685,
+      20,
+      13700
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "Hoeveel grotgangen passen numeriek tussen de slaaptijd van een koala en het gewicht van een beroemde klok? Alle onderwerpen zijn voorstelbaar, de grootte van Mammoth Cave en Big Ben blijven verrassend.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://www.nps.gov/maca/learn/management/statistics.htm",
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://en.wikipedia.org/wiki/Big_Ben"
+    ]
+  },
+  {
+    "candidate_id": "b-0123",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel kilogram weegt een moai op Paaseiland?",
+      "Hoeveel kilogram weegt de klok van Big Ben?"
+    ],
+    "answers": [
+      1200,
+      12500,
+      13700
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "Dagelijkse speekselproductie en het gewicht van een moai lopen ver uiteen, maar samen vormen ze het gewicht van Big Ben. De som helpt de schaal afwegen zonder ingewikkeld rekenen.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://en.wikipedia.org/wiki/Moai",
+      "https://en.wikipedia.org/wiki/Big_Ben"
+    ]
+  },
+  {
+    "candidate_id": "b-0171",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is het Great Barrier Reef?",
+      "Op hoeveel kilometer hoogte boven de aarde draait het ISS gemiddeld?",
+      "Hoeveel kilogram weegt een blauwe-vinvistong?"
+    ],
+    "answers": [
+      2300,
+      400,
+      2700
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "Riflengte en ISS-hoogte zijn bekende onderwerpen met onbekende afmetingen; de zware tong van een blauwe vinvis geeft de onthulling een sterk tastbaar verrassingseffect.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
+      "https://en.wikipedia.org/wiki/International_Space_Station",
+      "https://s3.amazonaws.com/ifaw-pantheon/sites/default/files/legacy/education-publications/ca/cae-aae08-beneath-the-waves-teaching-guide-and-lessons.pdf"
+    ]
+  },
+  {
+    "candidate_id": "b-0021",
+    "question_texts_nl": [
+      "Hoeveel procent van de plant- en diersoorten leeft in regenwouden?",
+      "Hoeveel meter per uur kruipen tuinslakken maximaal?",
+      "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld?"
+    ],
+    "answers": [
+      50,
+      50,
+      2500
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 50 tot 2500; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://www.jica.go.jp/english/activities/issues/education/materials/science/png/__icsFiles/afieldfile/2025/04/23/g5_science_text_03.pdf",
+      "https://en.wikipedia.org/wiki/Cornu_aspersum",
+      "https://nl.wikipedia.org/wiki/Piramide_van_Cheops"
+    ]
+  },
+  {
+    "candidate_id": "b-0033",
+    "question_texts_nl": [
+      "Hoeveel procent van de plant- en diersoorten leeft in regenwouden?",
+      "Hoeveel dagen zaten er tussen D-Day en de bevrijding van Parijs?",
+      "Hoeveel kilogram weegt een volwassen mannetje van de Aziatische olifant gemiddeld?"
+    ],
+    "answers": [
+      50,
+      80,
+      4000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 50 tot 4000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://www.jica.go.jp/english/activities/issues/education/materials/science/png/__icsFiles/afieldfile/2025/04/23/g5_science_text_03.pdf",
+      "https://nl.wikipedia.org/wiki/Bevrijding_van_Parijs",
+      "https://en.wikipedia.org/wiki/Asian_elephant"
+    ]
+  },
+  {
+    "candidate_id": "b-0101",
+    "question_texts_nl": [
+      "Hoeveel haren heeft een mens gemiddeld op zijn hoofd?",
+      "Hoeveel kilogram weegt een volwassen mannetje van de Aziatische olifant gemiddeld?",
+      "Hoeveel ton plastic produceerde de wereld jaarlijks rond 2021?"
+    ],
+    "answers": [
+      100000,
+      4000,
+      400000000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 4000 tot 400000000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Hair_follicle",
+      "https://en.wikipedia.org/wiki/Asian_elephant",
+      "https://www.basel.int/Portals/4/Basel%20Convention/docs/plastic%20waste/UNEP-CHW-LEAFLET-PUB-Brochure-DrowningInPlastics-2021.English.pdf"
+    ]
+  },
+  {
+    "candidate_id": "b-0215",
+    "question_texts_nl": [
+      "Hoeveel procent van de atmosfeer bestaat ongeveer uit zuurstof?",
+      "Hoeveel liter water kan een kameel in één keer drinken?",
+      "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?"
+    ],
+    "answers": [
+      21,
+      100,
+      2100
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 21 tot 2100; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Zuurstof_%28element%29",
+      "https://nl.wikipedia.org/wiki/Kameel",
+      "https://nl.wikipedia.org/wiki/Neptunus_%28planeet%29"
+    ]
+  },
+  {
+    "candidate_id": "b-0370",
+    "question_texts_nl": [
+      "Hoeveel kilometer per uur sprint een jaguar?",
+      "Hoeveel minuten duurt een volledige baan van het ISS rond de aarde?",
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?"
+    ],
+    "answers": [
+      80,
+      90,
+      7200
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 80 tot 7200; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Rondgepompt dagvolume is een afleiding uit rustdebiet, niet de hoeveelheid bloed die iemand bezit."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Jaguar",
+      "https://nl.wikipedia.org/wiki/Baan_%28hemellichaam%29",
+      "https://en.wikipedia.org/wiki/Cardiac_output"
+    ]
+  },
+  {
+    "candidate_id": "b-0431",
+    "question_texts_nl": [
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel miljoen zakken koffie produceert Brazilië per jaar?",
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?"
+    ],
+    "answers": [
+      20,
+      60,
+      1200
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 20 tot 1200; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://en.wikipedia.org/wiki/Coffee_production_in_Brazil",
+      "https://en.wikipedia.org/wiki/Saliva"
+    ]
+  },
+  {
+    "candidate_id": "b-0437",
+    "question_texts_nl": [
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel procent van het Amazoneregenwoud ligt in Brazilië?",
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?"
+    ],
+    "answers": [
+      20,
+      60,
+      1200
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 20 tot 1200; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://en.wikipedia.org/wiki/Amazon_rainforest",
+      "https://en.wikipedia.org/wiki/Saliva"
+    ]
+  },
+  {
+    "candidate_id": "b-0438",
+    "question_texts_nl": [
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel kilogram staal zit er ongeveer in een gemiddelde auto?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?"
+    ],
+    "answers": [
+      20,
+      900,
+      18000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 20 tot 18000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://en.wikipedia.org/wiki/Automotive_industry",
+      "https://en.wikipedia.org/wiki/Human_skin"
+    ]
+  },
+  {
+    "candidate_id": "b-0439",
+    "question_texts_nl": [
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel kilogram staal zit er ongeveer in een gemiddelde auto?",
+      "Hoeveel ton bommen werd tijdens de Blitz op Londen afgeworpen?"
+    ],
+    "answers": [
+      20,
+      900,
+      18000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 20 tot 18000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://en.wikipedia.org/wiki/Automotive_industry",
+      "https://en.wikipedia.org/wiki/The_Blitz"
+    ]
+  },
+  {
+    "candidate_id": "b-0583",
+    "question_texts_nl": [
+      "Hoeveel dagen zaten er tussen D-Day en de bevrijding van Parijs?",
+      "Hoeveel minuten duurt een volledige baan van het ISS rond de aarde?",
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?"
+    ],
+    "answers": [
+      80,
+      90,
+      7200
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 80 tot 7200; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Rondgepompt dagvolume is een afleiding uit rustdebiet, niet de hoeveelheid bloed die iemand bezit."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Bevrijding_van_Parijs",
+      "https://nl.wikipedia.org/wiki/Baan_%28hemellichaam%29",
+      "https://en.wikipedia.org/wiki/Cardiac_output"
+    ]
+  },
+  {
+    "candidate_id": "b-0115",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel kilometer per uur sprint een jaguar?",
+      "Hoeveel meter lang is de hoofdoverspanning van de Golden Gate Bridge?"
+    ],
+    "answers": [
+      1200,
+      80,
+      1280
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 80 tot 1280; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://en.wikipedia.org/wiki/Jaguar",
+      "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+    ]
+  },
+  {
+    "candidate_id": "b-0118",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel kilogram kan een mannelijke Amerikaanse bizon wegen?",
+      "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?"
+    ],
+    "answers": [
+      1200,
+      900,
+      2100
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 900 tot 2100; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://www.nps.gov/articles/15-facts-about-bison.htm",
+      "https://nl.wikipedia.org/wiki/Neptunus_%28planeet%29"
+    ]
+  },
+  {
+    "candidate_id": "b-0121",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel dagen zaten er tussen D-Day en de bevrijding van Parijs?",
+      "Hoeveel meter lang is de hoofdoverspanning van de Golden Gate Bridge?"
+    ],
+    "answers": [
+      1200,
+      80,
+      1280
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 80 tot 1280; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://nl.wikipedia.org/wiki/Bevrijding_van_Parijs",
+      "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+    ]
+  },
+  {
+    "candidate_id": "b-0180",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is de Amazone?",
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel kilometer staaldraad zit er in de hoofdkabels van de Golden Gate Bridge?"
+    ],
+    "answers": [
+      6400,
+      20,
+      128000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 20 tot 128000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Amazon_River",
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/"
+    ]
+  },
+  {
+    "candidate_id": "b-0267",
+    "question_texts_nl": [
+      "Op hoeveel kilometer hoogte boven de aarde draait het ISS gemiddeld?",
+      "Hoeveel kilogram voedsel (bladeren, gras, takken) eet een volwassen Afrikaanse olifant per dag?",
+      "Hoeveel liter zuurstof verbruikt een volwassen mens gemiddeld per dag?"
+    ],
+    "answers": [
+      400,
+      150,
+      550
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 150 tot 550; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/International_Space_Station",
+      "https://en.wikipedia.org/wiki/African_bush_elephant",
+      "https://en.wikipedia.org/wiki/Breathing"
+    ]
+  },
+  {
+    "candidate_id": "b-0289",
+    "question_texts_nl": [
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?",
+      "Hoeveel kilogram weegt een mannelijke jaguar in de Pantanal gemiddeld?",
+      "Hoeveel ton ijzer werd gebruikt voor de Eiffeltoren?"
+    ],
+    "answers": [
+      7200,
+      100,
+      7300
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 100 tot 7300; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Rondgepompt dagvolume is een afleiding uit rustdebiet, niet de hoeveelheid bloed die iemand bezit."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Cardiac_output",
+      "https://animaldiversity.org/accounts/Panthera_onca/",
+      "https://www.toureiffel.paris/en/the-monument/key-figures"
+    ]
+  },
+  {
+    "candidate_id": "b-0335",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger?",
+      "Hoeveel meter hoog is de Eiffeltoren met antenne?",
+      "Hoeveel liter zuurstof verbruikt een volwassen mens gemiddeld per dag?"
+    ],
+    "answers": [
+      220,
+      330,
+      550
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 220 tot 550; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://seaworld.org/animals/all-about/tiger/characteristics/",
+      "https://nl.wikipedia.org/wiki/Eiffeltoren",
+      "https://en.wikipedia.org/wiki/Breathing"
+    ]
+  },
+  {
+    "candidate_id": "b-0342",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt een volwassen mannelijke giraffe gemiddeld?",
+      "Hoeveel dagen zaten er tussen D-Day en de bevrijding van Parijs?",
+      "Hoeveel meter lang is de hoofdoverspanning van de Golden Gate Bridge?"
+    ],
+    "answers": [
+      1200,
+      80,
+      1280
+    ],
+    "operator": "+",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 80 tot 1280; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Giraffe",
+      "https://nl.wikipedia.org/wiki/Bevrijding_van_Parijs",
+      "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+    ]
+  },
+  {
+    "candidate_id": "b-0003",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt een blauwe-vinvistong?",
+      "Hoeveel toeschouwers pasten er in het Colosseum?",
+      "Hoeveel ton bananen produceerde de wereld in 2022?"
+    ],
+    "answers": [
+      2700,
+      50000,
+      135000000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 2700 tot 135000000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern."
+    ],
+    "source_urls": [
+      "https://s3.amazonaws.com/ifaw-pantheon/sites/default/files/legacy/education-publications/ca/cae-aae08-beneath-the-waves-teaching-guide-and-lessons.pdf",
+      "https://nl.wikipedia.org/wiki/Colosseum",
+      "https://www.nab.com.na/wp-content/uploads/2024/04/Market-Intelligence-Report-Bananas-revised-NAB-29032024.pdf"
+    ]
+  },
+  {
+    "candidate_id": "b-0024",
+    "question_texts_nl": [
+      "Hoeveel procent van de plant- en diersoorten leeft in regenwouden?",
+      "Hoeveel miljoen zakken koffie produceert Brazilië per jaar?",
+      "Hoeveel ton goud werd in 2020 wereldwijd gewonnen?"
+    ],
+    "answers": [
+      50,
+      60,
+      3000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 50 tot 3000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://www.jica.go.jp/english/activities/issues/education/materials/science/png/__icsFiles/afieldfile/2025/04/23/g5_science_text_03.pdf",
+      "https://en.wikipedia.org/wiki/Coffee_production_in_Brazil",
+      "https://pubs.usgs.gov/myb/vol1/2020/myb1-2020-gold.pdf"
+    ]
+  },
+  {
+    "candidate_id": "b-0097",
+    "question_texts_nl": [
+      "Hoeveel centimeter meten de dunne en dikke darm samen, volledig uitgestrekt?",
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?"
+    ],
+    "answers": [
+      750,
+      20,
+      15000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 20 tot 15000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Human_gastrointestinal_tract",
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://en.wikipedia.org/wiki/Water_footprint"
+    ]
+  },
+  {
+    "candidate_id": "b-0148",
+    "question_texts_nl": [
+      "Wat weegt het hart van een volwassen Blauwe Vinvis in kilogram?",
+      "Hoeveel kilometer boven de aarde ligt de Kármánlijn?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?"
+    ],
+    "answers": [
+      180,
+      100,
+      18000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 100 tot 18000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Blue_whale",
+      "https://nl.wikipedia.org/wiki/K%C3%A1rm%C3%A1nlijn",
+      "https://en.wikipedia.org/wiki/Human_skin"
+    ]
+  },
+  {
+    "candidate_id": "b-0284",
+    "question_texts_nl": [
+      "Hoeveel kilometer per uur rijdt een hogesnelheidstrein zoals de TGV maximaal in reguliere dienst?",
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel kilometer lang is de Amazone?"
+    ],
+    "answers": [
+      320,
+      20,
+      6400
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 20 tot 6400; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/TGV",
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://en.wikipedia.org/wiki/Amazon_River"
+    ]
+  },
+  {
+    "candidate_id": "b-0287",
+    "question_texts_nl": [
+      "Hoeveel meter lang is een Airbus A380?",
+      "Hoeveel liter water kan een kameel in één keer drinken?",
+      "Hoeveel ton ijzer werd gebruikt voor de Eiffeltoren?"
+    ],
+    "answers": [
+      73,
+      100,
+      7300
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 73 tot 7300; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern."
+    ],
+    "source_urls": [
+      "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a380",
+      "https://nl.wikipedia.org/wiki/Kameel",
+      "https://www.toureiffel.paris/en/the-monument/key-figures"
+    ]
+  },
+  {
+    "candidate_id": "b-0380",
+    "question_texts_nl": [
+      "Hoeveel liter water kan een kameel in één keer drinken?",
+      "Hoeveel dagen duurt de zwangerschap van een geit?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?"
+    ],
+    "answers": [
+      100,
+      150,
+      15000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 100 tot 15000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Kameel",
+      "https://en.wikipedia.org/wiki/Goat",
+      "https://en.wikipedia.org/wiki/Water_footprint"
+    ]
+  },
+  {
+    "candidate_id": "b-0408",
+    "question_texts_nl": [
+      "Hoeveel meter per uur kruipen tuinslakken maximaal?",
+      "Hoeveel miljoen zakken koffie produceert Brazilië per jaar?",
+      "Hoeveel ton goud werd in 2020 wereldwijd gewonnen?"
+    ],
+    "answers": [
+      50,
+      60,
+      3000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 50 tot 3000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Cornu_aspersum",
+      "https://en.wikipedia.org/wiki/Coffee_production_in_Brazil",
+      "https://pubs.usgs.gov/myb/vol1/2020/myb1-2020-gold.pdf"
+    ]
+  },
+  {
+    "candidate_id": "b-0416",
+    "question_texts_nl": [
+      "Hoeveel meter per uur kruipen tuinslakken maximaal?",
+      "Hoeveel dagen duurde de Slag bij Verdun?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?"
+    ],
+    "answers": [
+      50,
+      300,
+      15000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 50 tot 15000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Cornu_aspersum",
+      "https://en.wikipedia.org/wiki/Battle_of_Verdun",
+      "https://en.wikipedia.org/wiki/Water_footprint"
+    ]
+  },
+  {
+    "candidate_id": "b-0432",
+    "question_texts_nl": [
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel procent van de wereldwijde koffieproductie kwam in 2017 uit Brazilië?",
+      "Hoeveel meter onder zeeniveau ligt het diepste punt van de Noordzee?"
+    ],
+    "answers": [
+      20,
+      35,
+      700
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 20 tot 700; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://agro.fgv.br/sites/default/files/2023-03/coffe_fgv_ENG.pdf",
+      "https://nl.wikipedia.org/wiki/Noordzee"
+    ]
+  },
+  {
+    "candidate_id": "b-0461",
+    "question_texts_nl": [
+      "Hoeveel kilogram kan een mannelijke Amerikaanse bizon wegen?",
+      "Hoeveel liter olijfolie per persoon noemt het overzicht uit 2023 voor Griekenland?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?"
+    ],
+    "answers": [
+      900,
+      20,
+      18000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 20 tot 18000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://www.nps.gov/articles/15-facts-about-bison.htm",
+      "https://en.innovhub-ssi.it/kdocs/2120189/2023_4_risg_keceli.pdf",
+      "https://en.wikipedia.org/wiki/Human_skin"
+    ]
+  },
+  {
+    "candidate_id": "b-0478",
+    "question_texts_nl": [
+      "Hoeveel ton weegt een volwassen blauwe vinvis?",
+      "Hoeveel kilometer boven de aarde ligt de Kármánlijn?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?"
+    ],
+    "answers": [
+      150,
+      100,
+      15000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 100 tot 15000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Blauwe_vinvis",
+      "https://nl.wikipedia.org/wiki/K%C3%A1rm%C3%A1nlijn",
+      "https://en.wikipedia.org/wiki/Water_footprint"
+    ]
+  },
+  {
+    "candidate_id": "b-0485",
+    "question_texts_nl": [
+      "Hoeveel miljoen zakken koffie produceert Brazilië per jaar?",
+      "Hoeveel dagen duurde de Slag bij Verdun?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?"
+    ],
+    "answers": [
+      60,
+      300,
+      18000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 60 tot 18000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Coffee_production_in_Brazil",
+      "https://en.wikipedia.org/wiki/Battle_of_Verdun",
+      "https://en.wikipedia.org/wiki/Human_skin"
+    ]
+  },
+  {
+    "candidate_id": "b-0490",
+    "question_texts_nl": [
+      "Hoeveel miljoen zakken koffie produceert Brazilië per jaar?",
+      "Hoeveel kilometer van de Maas ligt in Nederland?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?"
+    ],
+    "answers": [
+      60,
+      250,
+      15000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 60 tot 15000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Coffee_production_in_Brazil",
+      "https://www.rijkswaterstaat.nl/water/vaarwegenoverzicht/maas",
+      "https://en.wikipedia.org/wiki/Water_footprint"
+    ]
+  },
+  {
+    "candidate_id": "b-0510",
+    "question_texts_nl": [
+      "Hoeveel kilogram rundvlees at men in Argentinië per inwoner in 2020?",
+      "Hoeveel procent van het Amazoneregenwoud ligt in Brazilië?",
+      "Hoeveel ton goud werd in 2020 wereldwijd gewonnen?"
+    ],
+    "answers": [
+      50,
+      60,
+      3000
+    ],
+    "operator": "×",
+    "score": 4,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 50 tot 3000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern."
+    ],
+    "source_urls": [
+      "https://www.magyp.gob.ar/sitio/areas/aves/informes/boletines/_archivos/000000_Datos%20Hist%C3%B3ricos/000083_Nro%2083%20Anuario%20Avicola%202020.pdf",
+      "https://en.wikipedia.org/wiki/Amazon_rainforest",
+      "https://pubs.usgs.gov/myb/vol1/2020/myb1-2020-gold.pdf"
+    ]
+  },
+  {
+    "candidate_id": "b-0120",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel miljoen inwoners heeft Mexico?",
+      "Hoeveel soldaten namen deel aan de landing in Normandië op D-Day?"
+    ],
+    "answers": [
+      1200,
+      130,
+      156000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 130 tot 156000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://www.inegi.org.mx/",
+      "https://en.wikipedia.org/wiki/Normandy_landings"
+    ]
+  },
+  {
+    "candidate_id": "b-0145",
+    "question_texts_nl": [
+      "Wat weegt het hart van een volwassen Blauwe Vinvis in kilogram?",
+      "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?",
+      "Hoeveel vierkante kilometer is de oppervlakte van Japan ongeveer?"
+    ],
+    "answers": [
+      180,
+      2100,
+      378000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 180 tot 378000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Blue_whale",
+      "https://nl.wikipedia.org/wiki/Neptunus_%28planeet%29",
+      "https://en.wikipedia.org/wiki/Geography_of_Japan"
+    ]
+  },
+  {
+    "candidate_id": "b-0146",
+    "question_texts_nl": [
+      "Wat weegt het hart van een volwassen Blauwe Vinvis in kilogram?",
+      "Hoeveel procent van de wereldwijde koffieproductie kwam in 2017 uit Brazilië?",
+      "Hoeveel kilometer lang is de Yangtze ongeveer?"
+    ],
+    "answers": [
+      180,
+      35,
+      6300
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 35 tot 6300; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Blue_whale",
+      "https://agro.fgv.br/sites/default/files/2023-03/coffe_fgv_ENG.pdf",
+      "http://web.archive.org/web/20260831052738/https://www.britannica.com/place/Yangtze-River"
+    ]
+  },
+  {
+    "candidate_id": "b-0150",
+    "question_texts_nl": [
+      "Wat weegt het hart van een volwassen Blauwe Vinvis in kilogram?",
+      "Hoeveel procent van de Nederlanders woont in de Randstad?",
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?"
+    ],
+    "answers": [
+      180,
+      40,
+      7200
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 40 tot 7200; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Rondgepompt dagvolume is een afleiding uit rustdebiet, niet de hoeveelheid bloed die iemand bezit."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Blue_whale",
+      "https://www.cbs.nl/nl-nl/cijfers/detail/70072ned",
+      "https://en.wikipedia.org/wiki/Cardiac_output"
+    ]
+  },
+  {
+    "candidate_id": "b-0159",
+    "question_texts_nl": [
+      "Hoeveel klinknagels zaten er naar schatting in de romp van de Titanic?",
+      "Op hoeveel kilometer hoogte boven de aarde draait het ISS gemiddeld?",
+      "Hoeveel ton maïs werd wereldwijd geproduceerd in 2023?"
+    ],
+    "answers": [
+      3000000,
+      400,
+      1200000000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 400 tot 1200000000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/RMS_Titanic",
+      "https://en.wikipedia.org/wiki/International_Space_Station",
+      "https://www.fao.org/faostat/en/#data/QCL"
+    ]
+  },
+  {
+    "candidate_id": "b-0160",
+    "question_texts_nl": [
+      "Hoeveel klinknagels zaten er naar schatting in de romp van de Titanic?",
+      "Hoeveel kilogram weegt een volwassen mannelijk nijlpaard gemiddeld?",
+      "Hoeveel kilometer is de gemiddelde afstand van Neptunus tot de zon?"
+    ],
+    "answers": [
+      3000000,
+      1500,
+      4500000000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 1500 tot 4500000000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/RMS_Titanic",
+      "https://en.wikipedia.org/wiki/Hippopotamus",
+      "https://en.wikipedia.org/wiki/Neptune"
+    ]
+  },
+  {
+    "candidate_id": "b-0174",
+    "question_texts_nl": [
+      "Hoeveel vierkante kilometer is het Arctische zee-ijs in de zomer ongeveer minimaal?",
+      "Hoeveel kilogram weegt een mannelijke jaguar in de Pantanal gemiddeld?",
+      "Hoeveel ton plastic produceerde de wereld jaarlijks rond 2021?"
+    ],
+    "answers": [
+      4000000,
+      100,
+      400000000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 100 tot 400000000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://nsidc.org/arcticseaicenews/",
+      "https://animaldiversity.org/accounts/Panthera_onca/",
+      "https://www.basel.int/Portals/4/Basel%20Convention/docs/plastic%20waste/UNEP-CHW-LEAFLET-PUB-Brochure-DrowningInPlastics-2021.English.pdf"
+    ]
+  },
+  {
+    "candidate_id": "b-0189",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang was de Romeinse rijksgrens, de Roman Limes, volgens UNESCO ongeveer?",
+      "Hoeveel uur per dag kan een koala slapen?",
+      "Hoeveel haren heeft een mens gemiddeld op zijn hoofd?"
+    ],
+    "answers": [
+      5000,
+      20,
+      100000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 20 tot 100000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://whc.unesco.org/en/list/430/",
+      "https://animals.sandiegozoo.org/animals/koala",
+      "https://en.wikipedia.org/wiki/Hair_follicle"
+    ]
+  },
+  {
+    "candidate_id": "b-0201",
+    "question_texts_nl": [
+      "Hoeveel kilogram aluminium zit er ongeveer in een gemiddelde auto?",
+      "Hoeveel minuten duurt een volledige baan van het ISS rond de aarde?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?"
+    ],
+    "answers": [
+      200,
+      90,
+      18000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 90 tot 18000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Aluminium",
+      "https://nl.wikipedia.org/wiki/Baan_%28hemellichaam%29",
+      "https://en.wikipedia.org/wiki/Human_skin"
+    ]
+  },
+  {
+    "candidate_id": "b-0203",
+    "question_texts_nl": [
+      "Hoeveel procent van de wereldbevolking werkt direct of indirect in de landbouw?",
+      "Hoeveel kilogram weegt een mannelijke savanneolifant gemiddeld bij optimale groei?",
+      "Hoeveel soldaten namen deel aan de landing in Normandië op D-Day?"
+    ],
+    "answers": [
+      26,
+      6000,
+      156000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 26 tot 156000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://www.fao.org/statistics/en/",
+      "https://en.wikipedia.org/wiki/African_bush_elephant",
+      "https://en.wikipedia.org/wiki/Normandy_landings"
+    ]
+  },
+  {
+    "candidate_id": "b-0213",
+    "question_texts_nl": [
+      "Hoeveel procent van de atmosfeer bestaat ongeveer uit zuurstof?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?",
+      "Hoeveel vierkante kilometer is de oppervlakte van Japan ongeveer?"
+    ],
+    "answers": [
+      21,
+      18000,
+      378000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 21 tot 378000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Zuurstof_%28element%29",
+      "https://en.wikipedia.org/wiki/Human_skin",
+      "https://en.wikipedia.org/wiki/Geography_of_Japan"
+    ]
+  },
+  {
+    "candidate_id": "b-0218",
+    "question_texts_nl": [
+      "Hoeveel procent van de extra warmte door klimaatverandering wordt door de oceanen opgenomen?",
+      "Hoeveel kilometer per uur sprint een jaguar?",
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?"
+    ],
+    "answers": [
+      90,
+      80,
+      7200
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 80 tot 7200; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Rondgepompt dagvolume is een afleiding uit rustdebiet, niet de hoeveelheid bloed die iemand bezit."
+    ],
+    "source_urls": [
+      "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-5/",
+      "https://en.wikipedia.org/wiki/Jaguar",
+      "https://en.wikipedia.org/wiki/Cardiac_output"
+    ]
+  },
+  {
+    "candidate_id": "b-0228",
+    "question_texts_nl": [
+      "Hoeveel procent van de wereldwijde wateronttrekkingen gaat naar landbouw?",
+      "Hoeveel meter kan een blauwe vinvis ongeveer lang worden?",
+      "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?"
+    ],
+    "answers": [
+      70,
+      30,
+      2100
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 30 tot 2100; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://www.fao.org/4/t0800e/t0800e0a.htm",
+      "https://nl.wikipedia.org/wiki/Blauwe_vinvis",
+      "https://nl.wikipedia.org/wiki/Neptunus_%28planeet%29"
+    ]
+  },
+  {
+    "candidate_id": "b-0229",
+    "question_texts_nl": [
+      "Hoeveel kilometer per seconde draait de aarde om de zon?",
+      "Hoeveel meter kan een blauwe vinvis ongeveer lang worden?",
+      "Hoeveel kilogram staal zit er ongeveer in een gemiddelde auto?"
+    ],
+    "answers": [
+      30,
+      30,
+      900
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 30 tot 900; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Aarde_%28planeet%29",
+      "https://nl.wikipedia.org/wiki/Blauwe_vinvis",
+      "https://en.wikipedia.org/wiki/Automotive_industry"
+    ]
+  },
+  {
+    "candidate_id": "b-0243",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld?",
+      "Hoeveel procent van het totale bosareaal was volgens de FAO Forest Resources Assessment 2010 primair bos?",
+      "Hoeveel kilometer moet een bijenvolk gezamenlijk vliegen om één kilo honing te produceren?"
+    ],
+    "answers": [
+      2500,
+      36,
+      90000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 36 tot 90000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Piramide_van_Cheops",
+      "https://www.fao.org/4/i1757e/i1757e.pdf",
+      "https://en.wikipedia.org/wiki/Honey"
+    ]
+  },
+  {
+    "candidate_id": "b-0256",
+    "question_texts_nl": [
+      "Hoeveel aardse dagen duurt een jaar op Venus ongeveer?",
+      "Hoeveel kilometer per uur sprint een jaguar?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?"
+    ],
+    "answers": [
+      225,
+      80,
+      18000
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 80 tot 18000; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://science.nasa.gov/venus/venus-facts/",
+      "https://en.wikipedia.org/wiki/Jaguar",
+      "https://en.wikipedia.org/wiki/Human_skin"
+    ]
+  },
+  {
+    "candidate_id": "b-0004",
+    "question_texts_nl": [
+      "Hoeveel ton goud werd in 2020 wereldwijd gewonnen?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?"
+    ],
+    "answers": [
+      3000,
+      15000,
+      18000
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 3000 tot 18000; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern."
+    ],
+    "source_urls": [
+      "https://pubs.usgs.gov/myb/vol1/2020/myb1-2020-gold.pdf",
+      "https://en.wikipedia.org/wiki/Water_footprint",
+      "https://en.wikipedia.org/wiki/Human_skin"
+    ]
+  },
+  {
+    "candidate_id": "b-0032",
+    "question_texts_nl": [
+      "Hoeveel procent van de plant- en diersoorten leeft in regenwouden?",
+      "Hoeveel kilometer lang is de Rijn?",
+      "Hoeveel meter lang is de hoofdoverspanning van de Golden Gate Bridge?"
+    ],
+    "answers": [
+      50,
+      1230,
+      1280
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 50 tot 1280; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern."
+    ],
+    "source_urls": [
+      "https://www.jica.go.jp/english/activities/issues/education/materials/science/png/__icsFiles/afieldfile/2025/04/23/g5_science_text_03.pdf",
+      "https://en.wikipedia.org/wiki/Rhine",
+      "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+    ]
+  },
+  {
+    "candidate_id": "b-0147",
+    "question_texts_nl": [
+      "Wat weegt het hart van een volwassen Blauwe Vinvis in kilogram?",
+      "Hoeveel meter hoog is de Eiffeltoren met antenne?",
+      "Hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen, afgerond op hele miljoenen?"
+    ],
+    "answers": [
+      180,
+      330,
+      510
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 180 tot 510; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Blue_whale",
+      "https://nl.wikipedia.org/wiki/Eiffeltoren",
+      "https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf"
+    ]
+  },
+  {
+    "candidate_id": "b-0262",
+    "question_texts_nl": [
+      "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?",
+      "Hoeveel kilogram kan een mannelijke Amerikaanse bizon wegen?",
+      "Hoeveel ton goud werd in 2020 wereldwijd gewonnen?"
+    ],
+    "answers": [
+      2100,
+      900,
+      3000
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 900 tot 3000; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Neptunus_%28planeet%29",
+      "https://www.nps.gov/articles/15-facts-about-bison.htm",
+      "https://pubs.usgs.gov/myb/vol1/2020/myb1-2020-gold.pdf"
+    ]
+  },
+  {
+    "candidate_id": "b-0463",
+    "question_texts_nl": [
+      "Hoeveel kilogram kan een mannelijke Amerikaanse bizon wegen?",
+      "Hoeveel meter hoog is de Eiffeltoren met antenne?",
+      "Hoeveel kilometer lang is de Rijn?"
+    ],
+    "answers": [
+      900,
+      330,
+      1230
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 330 tot 1230; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://www.nps.gov/articles/15-facts-about-bison.htm",
+      "https://nl.wikipedia.org/wiki/Eiffeltoren",
+      "https://en.wikipedia.org/wiki/Rhine"
+    ]
+  },
+  {
+    "candidate_id": "b-0100",
+    "question_texts_nl": [
+      "Hoeveel haren heeft een mens gemiddeld op zijn hoofd?",
+      "Hoeveel liter water stroomt per seconde over de Niagarawatervallen?",
+      "Hoeveel klinknagels houden de metalen delen van de Eiffeltoren bij elkaar?"
+    ],
+    "answers": [
+      100000,
+      2400000,
+      2500000
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 100000 tot 2500000; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Hair_follicle",
+      "https://en.wikipedia.org/wiki/Niagara_Falls",
+      "https://en.wikipedia.org/wiki/Eiffel_Tower"
+    ]
+  },
+  {
+    "candidate_id": "b-0268",
+    "question_texts_nl": [
+      "Op hoeveel kilometer hoogte boven de aarde draait het ISS gemiddeld?",
+      "Hoeveel kilogram weegt een mannelijke savanneolifant gemiddeld bij optimale groei?",
+      "Hoeveel kilometer lang is de Amazone?"
+    ],
+    "answers": [
+      400,
+      6000,
+      6400
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 400 tot 6400; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/International_Space_Station",
+      "https://en.wikipedia.org/wiki/African_bush_elephant",
+      "https://en.wikipedia.org/wiki/Amazon_River"
+    ]
+  },
+  {
+    "candidate_id": "b-0343",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt een volwassen mannelijke giraffe gemiddeld?",
+      "Hoeveel kilogram staal zit er ongeveer in een gemiddelde auto?",
+      "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?"
+    ],
+    "answers": [
+      1200,
+      900,
+      2100
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 900 tot 2100; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Giraffe",
+      "https://en.wikipedia.org/wiki/Automotive_industry",
+      "https://nl.wikipedia.org/wiki/Neptunus_%28planeet%29"
+    ]
+  },
+  {
+    "candidate_id": "b-0002",
+    "question_texts_nl": [
+      "Hoeveel miljard neuronen (zenuwcellen) bevat het menselijk brein naar schatting?",
+      "Hoeveel kilometer per uur haalt een cheetah op zijn snelst?",
+      "Hoeveel miljard kilometer legt licht af in één lichtjaar, afgerond?"
+    ],
+    "answers": [
+      86,
+      110,
+      9460
+    ],
+    "operator": "×",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 86 tot 9460; de exacte vermenigvuldiging laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/19226510/",
+      "https://en.wikipedia.org/wiki/Cheetah",
+      "https://en.wikipedia.org/wiki/Light-year"
+    ]
+  },
+  {
+    "candidate_id": "b-0099",
+    "question_texts_nl": [
+      "Hoeveel centimeter meten de dunne en dikke darm samen, volledig uitgestrekt?",
+      "Hoeveel ton weegt een volwassen blauwe vinvis?",
+      "Hoeveel kilogram staal zit er ongeveer in een gemiddelde auto?"
+    ],
+    "answers": [
+      750,
+      150,
+      900
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 150 tot 900; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Human_gastrointestinal_tract",
+      "https://nl.wikipedia.org/wiki/Blauwe_vinvis",
+      "https://en.wikipedia.org/wiki/Automotive_industry"
+    ]
+  },
+  {
+    "candidate_id": "b-0117",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel meter kan een blauwe vinvis ongeveer lang worden?",
+      "Hoeveel kilometer lang is de Rijn?"
+    ],
+    "answers": [
+      1200,
+      30,
+      1230
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 30 tot 1230; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://nl.wikipedia.org/wiki/Blauwe_vinvis",
+      "https://en.wikipedia.org/wiki/Rhine"
+    ]
+  },
+  {
+    "candidate_id": "b-0122",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel dagen duurde de Slag bij Verdun?",
+      "Hoeveel kilogram weegt een volwassen mannelijk nijlpaard gemiddeld?"
+    ],
+    "answers": [
+      1200,
+      300,
+      1500
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 300 tot 1500; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://en.wikipedia.org/wiki/Battle_of_Verdun",
+      "https://en.wikipedia.org/wiki/Hippopotamus"
+    ]
+  },
+  {
+    "candidate_id": "b-0155",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt de klok van Big Ben?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?",
+      "Hoeveel vierkante kilometer is de oppervlakte van het Baikalmeer ongeveer?"
+    ],
+    "answers": [
+      13700,
+      18000,
+      31700
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 13700 tot 31700; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Big_Ben",
+      "https://en.wikipedia.org/wiki/Human_skin",
+      "https://en.wikipedia.org/wiki/Lake_Baikal"
+    ]
+  },
+  {
+    "candidate_id": "b-0156",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt de klok van Big Ben?",
+      "Hoeveel ton bommen werd tijdens de Blitz op Londen afgeworpen?",
+      "Hoeveel vierkante kilometer is de oppervlakte van het Baikalmeer ongeveer?"
+    ],
+    "answers": [
+      13700,
+      18000,
+      31700
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 13700 tot 31700; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Big_Ben",
+      "https://en.wikipedia.org/wiki/The_Blitz",
+      "https://en.wikipedia.org/wiki/Lake_Baikal"
+    ]
+  },
+  {
+    "candidate_id": "b-0162",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is Japan van noord naar zuid ongeveer?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?"
+    ],
+    "answers": [
+      3000,
+      15000,
+      18000
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 3000 tot 18000; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Geography_of_Japan",
+      "https://en.wikipedia.org/wiki/Water_footprint",
+      "https://en.wikipedia.org/wiki/Human_skin"
+    ]
+  },
+  {
+    "candidate_id": "b-0163",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is Japan van noord naar zuid ongeveer?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?",
+      "Hoeveel ton bommen werd tijdens de Blitz op Londen afgeworpen?"
+    ],
+    "answers": [
+      3000,
+      15000,
+      18000
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 3000 tot 18000; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Geography_of_Japan",
+      "https://en.wikipedia.org/wiki/Water_footprint",
+      "https://en.wikipedia.org/wiki/The_Blitz"
+    ]
+  },
+  {
+    "candidate_id": "b-0167",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is de Yangtze ongeveer?",
+      "Hoeveel kilogram kan een mannelijke Amerikaanse bizon wegen?",
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?"
+    ],
+    "answers": [
+      6300,
+      900,
+      7200
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 900 tot 7200; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Rondgepompt dagvolume is een afleiding uit rustdebiet, niet de hoeveelheid bloed die iemand bezit."
+    ],
+    "source_urls": [
+      "http://web.archive.org/web/20260831052738/https://www.britannica.com/place/Yangtze-River",
+      "https://www.nps.gov/articles/15-facts-about-bison.htm",
+      "https://en.wikipedia.org/wiki/Cardiac_output"
+    ]
+  },
+  {
+    "candidate_id": "b-0242",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld?",
+      "Hoeveel kilometer lang is de Kongo?",
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?"
+    ],
+    "answers": [
+      2500,
+      4700,
+      7200
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 2500 tot 7200; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Rondgepompt dagvolume is een afleiding uit rustdebiet, niet de hoeveelheid bloed die iemand bezit."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Piramide_van_Cheops",
+      "https://nl.wikipedia.org/wiki/Kongo_%28rivier%29",
+      "https://en.wikipedia.org/wiki/Cardiac_output"
+    ]
+  },
+  {
+    "candidate_id": "b-0261",
+    "question_texts_nl": [
+      "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?",
+      "Hoeveel spieren bevat het menselijk lichaam?",
+      "Hoeveel kilogram weegt een blauwe-vinvistong?"
+    ],
+    "answers": [
+      2100,
+      600,
+      2700
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 600 tot 2700; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Spieren versus spierbundels/spierfascikels controleren vóór publicatie."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Neptunus_%28planeet%29",
+      "https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/muscles",
+      "https://s3.amazonaws.com/ifaw-pantheon/sites/default/files/legacy/education-publications/ca/cae-aae08-beneath-the-waves-teaching-guide-and-lessons.pdf"
+    ]
+  },
+  {
+    "candidate_id": "b-0104",
+    "question_texts_nl": [
+      "Hoeveel haren heeft een mens gemiddeld op zijn hoofd?",
+      "Hoeveel kilometer moet een bijenvolk gezamenlijk vliegen om één kilo honing te produceren?",
+      "Hoeveel soldaten namen aan beide kanten samen deel aan de Slag bij Waterloo?"
+    ],
+    "answers": [
+      100000,
+      90000,
+      190000
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 90000 tot 190000; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Hair_follicle",
+      "https://en.wikipedia.org/wiki/Honey",
+      "https://en.wikipedia.org/wiki/Battle_of_Waterloo"
+    ]
+  },
+  {
+    "candidate_id": "b-0314",
+    "question_texts_nl": [
+      "Hoeveel dagen duurt de draagtijd van een olifant ongeveer?",
+      "Hoeveel miljoen inwoners had Australië in 2024?",
+      "Hoeveel dagen doet de planeet Mars erover om rond de zon te draaien?"
+    ],
+    "answers": [
+      660,
+      27,
+      687
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 27 tot 687; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden.",
+      "Peildatum/meetdefinitie of schattingsmethode controleren; bankwaarde niet als tijdloze exacte constante behandelen."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Elephant",
+      "https://www.abs.gov.au/media-centre/media-releases/australias-population-grows-21-cent",
+      "https://nl.wikipedia.org/wiki/Mars_%28planeet%29"
+    ]
+  },
+  {
+    "candidate_id": "b-0585",
+    "question_texts_nl": [
+      "Hoeveel dagen duurde de Slag bij Verdun?",
+      "Hoeveel kilogram staal zit er ongeveer in een gemiddelde auto?",
+      "Hoeveel kilogram weegt een volwassen mannelijke giraffe gemiddeld?"
+    ],
+    "answers": [
+      300,
+      900,
+      1200
+    ],
+    "operator": "+",
+    "score": 3,
+    "reason_nl": "De combinatie vraagt een schatting van drie verschillende onderwerpen. De antwoorden variëren van 300 tot 1200; de exacte optelling laat je de schaal van je schattingen tegen elkaar afwegen. Minstens twee onderwerpen hebben geen vanzelfsprekend exact antwoord.",
+    "risks": [
+      "Bestaande bankbronnen overgenomen; deze zoekronde bevestigt de feiten niet extern.",
+      "Gemiddelde, maximum en normale waarde expliciet afbakenen; voorkom schijnprecisie bij variabele grootheden."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Battle_of_Verdun",
+      "https://en.wikipedia.org/wiki/Automotive_industry",
+      "https://en.wikipedia.org/wiki/Giraffe"
+    ]
+  }
+]

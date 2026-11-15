@@ -1,0 +1,2545 @@
+[
+  {
+    "candidate_id": "C-008",
+    "question_texts_nl": [
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel meter diep kan de potvis duiken?",
+      "Hoeveel liter water stroomt per seconde over de Niagarawatervallen?"
+    ],
+    "answers": [
+      1200,
+      2000,
+      2400000
+    ],
+    "operator": "×",
+    "score": 5,
+    "reason_nl": "Speeksel per dag, een duikende potvis en Niagara zijn drie levendige beelden. De stap van milliliters naar miljoenen liters geeft een sterke onthulling; alle drie zijn zonder rekenverband lastig nauwkeurig te schatten.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://nl.wikipedia.org/wiki/Potvis",
+      "https://en.wikipedia.org/wiki/Niagara_Falls"
+    ],
+    "bank_ids": [
+      119,
+      156,
+      288
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-013",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is de Amazone?",
+      "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld?",
+      "Hoeveel mensen dienden in de Amerikaanse strijdkrachten in WO II?"
+    ],
+    "answers": [
+      6400,
+      2500,
+      16000000
+    ],
+    "operator": "×",
+    "score": 5,
+    "reason_nl": "De door de gebruiker gekozen referentie: rivierlengte, blokgewicht en miljoenen militairen hebben elk een voorstelbare schaal maar geen vanzelfsprekend antwoord. Twee plausibele schattingen begrenzen de derde.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Amazon_River",
+      "https://nl.wikipedia.org/wiki/Piramide_van_Cheops",
+      "https://www.nationalww2museum.org/war/wwii-veteran-statistics"
+    ],
+    "bank_ids": [
+      308,
+      450,
+      1011
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-070",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is het Empire State Building inclusief antenne?",
+      "Hoeveel kilometer per uur is de bovengrens van windkracht 8?",
+      "Hoeveel centimeter hoog is Michelangelo’s David?"
+    ],
+    "answers": [
+      443,
+      74,
+      517
+    ],
+    "operator": "+",
+    "score": 5,
+    "reason_nl": "Een beroemde wolkenkrabber, stormwindsnelheid en Michelangelo’s David zijn voorstelbaar en niet vanzelf exact bekend. Vooral het beeld in centimeters kan spelers flink verrassen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Empire_State_Building",
+      "https://nl.wikipedia.org/wiki/Schaal_van_Beaufort",
+      "https://en.wikipedia.org/wiki/David_(Michelangelo)"
+    ],
+    "bank_ids": [
+      232,
+      404,
+      345
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-016",
+    "question_texts_nl": [
+      "Hoeveel centimeter lang was de Engelse mastiff Zorba?",
+      "Hoeveel meter per uur kruipen tuinslakken maximaal?",
+      "Hoeveel kilogram weegt een moai op Paaseiland?"
+    ],
+    "answers": [
+      250,
+      50,
+      12500
+    ],
+    "operator": "×",
+    "score": 4.5,
+    "reason_nl": "Een enorme hond, een kruipende slak en een massief stenen beeld geven drie tastbare schatbeelden. De slakkensnelheid in meter per uur is verrassend; beeldgewicht kan gemakkelijk een factor drie verkeerd worden geschat.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/List_of_individual_dogs",
+      "https://en.wikipedia.org/wiki/Cornu_aspersum",
+      "https://en.wikipedia.org/wiki/Moai"
+    ],
+    "bank_ids": [
+      443,
+      665,
+      1062
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-023",
+    "question_texts_nl": [
+      "Hoeveel uur duurde de videogamemarathon van Szabolcs Csépe in oktober 2024?",
+      "Hoeveel meter per uur kruipen tuinslakken maximaal?",
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?"
+    ],
+    "answers": [
+      144,
+      50,
+      7200
+    ],
+    "operator": "×",
+    "score": 4.5,
+    "reason_nl": "Een absurd lange gamemarathon, een slak en de dagelijkse hoeveelheid rondgepompt bloed geven drie sterke onthullingen. Duur en snelheid kunnen het moeilijk voorstelbare bloedvolume ontsluiten.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://www.guinnessworldrecords.com/world-records/longest-video-games-marathon",
+      "https://en.wikipedia.org/wiki/Cornu_aspersum",
+      "https://en.wikipedia.org/wiki/Cardiac_output"
+    ],
+    "bank_ids": [
+      456,
+      665,
+      605
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-030",
+    "question_texts_nl": [
+      "Hoeveel miljard neuronen (zenuwcellen) bevat het menselijk brein naar schatting?",
+      "Hoeveel kilometer per uur haalt een cheetah op zijn snelst?",
+      "Hoeveel miljard kilometer legt licht af in één lichtjaar, afgerond?"
+    ],
+    "answers": [
+      86,
+      110,
+      9460
+    ],
+    "operator": "×",
+    "score": 4.5,
+    "reason_nl": "Breinneuronen, cheetahsnelheid en een lichtjaar combineren drie verschillende schalen. Het gebruik van miljarden is expliciet maar vraagt zorgvuldige eenheden; geen van de drie is een triviale telvraag.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/19226510/",
+      "https://en.wikipedia.org/wiki/Cheetah",
+      "https://en.wikipedia.org/wiki/Light-year"
+    ],
+    "bank_ids": [
+      3,
+      655,
+      525
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-040",
+    "question_texts_nl": [
+      "Hoeveel LEGO-steentjes werden er per seconde gemaakt in 2020?",
+      "Hoeveel milliliter speeksel produceert een mens gemiddeld per dag?",
+      "Hoeveel kilogram weegt een blok van de Piramide van Cheops gemiddeld?"
+    ],
+    "answers": [
+      1300,
+      1200,
+      2500
+    ],
+    "operator": "+",
+    "score": 4.5,
+    "reason_nl": "Een fabriek die LEGO-steentjes uitspuugt, dagelijkse speekselproductie en een piramideblok zijn direct voorstelbaar. De getallen liggen dicht genoeg voor optellen maar zijn onafhankelijk onzeker.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://www.derstandard.at/story/2000117920314/oefters-fast-pleite-jetzt-verkauft-lego-mehr-steine-als-je",
+      "https://en.wikipedia.org/wiki/Saliva",
+      "https://nl.wikipedia.org/wiki/Piramide_van_Cheops"
+    ],
+    "bank_ids": [
+      74,
+      119,
+      450
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-048",
+    "question_texts_nl": [
+      "Hoeveel dagen duurde de reis van de Mayflower naar Noord-Amerika?",
+      "Hoe oud werd de oudste kat ooit in jaren?",
+      "Hoeveel kilometer lang is de Murray?"
+    ],
+    "answers": [
+      66,
+      38,
+      2508
+    ],
+    "operator": "×",
+    "score": 4.5,
+    "reason_nl": "Mayflower-reis, de oudste kat en een lange rivier geven drie verschillende schatstrategieën. De kat is een licht anker, terwijl de rivierlengte aanzienlijk moeilijker te benaderen is.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://plimoth.org/learn/just-kids/homework-help/mayflower",
+      "https://www.guinnessworldrecords.com/world-records/oldest-cat-ever",
+      "https://nl.wikipedia.org/wiki/Murray_%28rivier%29"
+    ],
+    "bank_ids": [
+      38,
+      1306,
+      862
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-057",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is Angel Falls ongeveer?",
+      "Hoeveel centimeter lang was Zeng Jinlian in 1982?",
+      "Hoeveel kilometer per uur is de geluidssnelheid op zeeniveau afgerond?"
+    ],
+    "answers": [
+      979,
+      246,
+      1225
+    ],
+    "operator": "+",
+    "score": 4.5,
+    "reason_nl": "Watervalhoogte, een uitzonderlijk lange persoon en geluidssnelheid laten drie visuele/alledaagse referenties botsen. De persoon biedt houvast zonder de waterval en snelheid meteen te verraden.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "http://web.archive.org/web/20260801160109/https://www.britannica.com/place/Angel-Falls",
+      "https://www.guinnessworldrecords.com/world-records/tallest-woman",
+      "https://nl.wikipedia.org/wiki/Geluidssnelheid"
+    ],
+    "bank_ids": [
+      34,
+      69,
+      59
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-068",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is One World Trade Center?",
+      "Hoeveel uur duurde de videogamemarathon van Szabolcs Csépe in oktober 2024?",
+      "Hoeveel kilometer gekarteerde gangen had Mammoth Cave in 2024?"
+    ],
+    "answers": [
+      541,
+      144,
+      685
+    ],
+    "operator": "+",
+    "score": 4.5,
+    "reason_nl": "Wolkenkrabber, gamemarathon en honderden kilometers ondergrondse gangen leveren herkenbare beelden op. Het grottenstelsel is de verrassende schaal die door de andere twee beter te schatten wordt.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/One_World_Trade_Center",
+      "https://www.guinnessworldrecords.com/world-records/longest-video-games-marathon",
+      "https://www.nps.gov/maca/learn/management/statistics.htm"
+    ],
+    "bank_ids": [
+      230,
+      456,
+      271
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-072",
+    "question_texts_nl": [
+      "Hoeveel miljoen kubieke meter aarde werd er uitgegraven voor de bouw van het Panamakanaal?",
+      "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger?",
+      "Hoeveel meter ligt de Dode Zee ongeveer onder zeeniveau?"
+    ],
+    "answers": [
+      210,
+      220,
+      430
+    ],
+    "operator": "+",
+    "score": 4.5,
+    "reason_nl": "Uitgegraven aarde, een tijger en de Dode Zee zijn breed voorstelbaar. Het Panamakanaalvolume is lastig maar de andere twee begrenzen het; schaaleenheid miljoen m³ moet extra duidelijk zijn.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Panama_Canal",
+      "https://seaworld.org/animals/all-about/tiger/characteristics/",
+      "https://nl.wikipedia.org/wiki/Dode_Zee"
+    ],
+    "bank_ids": [
+      238,
+      647,
+      944
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-076",
+    "question_texts_nl": [
+      "Hoeveel dagen duurt de zwangerschap van een schaap?",
+      "Hoeveel meter lang is een Airbus A380?",
+      "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger?"
+    ],
+    "answers": [
+      147,
+      73,
+      220
+    ],
+    "operator": "+",
+    "score": 4.5,
+    "reason_nl": "Draagtijd, vliegtuiglengte en tijgergewicht geven drie concrete mentale beelden. Geen rond cijfer verklapt de som; een goede schatting van twee grootheden scherpt de derde aan.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Sheep",
+      "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a380",
+      "https://seaworld.org/animals/all-about/tiger/characteristics/"
+    ],
+    "bank_ids": [
+      358,
+      574,
+      647
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-001",
+    "question_texts_nl": [
+      "Hoeveel kilogram aluminium zit er ongeveer in een gemiddelde auto?",
+      "Hoeveel kilogram weegt een volwassen mannelijke rode reuzenkangoeroe maximaal?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?"
+    ],
+    "answers": [
+      200,
+      90,
+      18000
+    ],
+    "operator": "×",
+    "score": 4.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Aluminium",
+      "https://en.wikipedia.org/wiki/Red_kangaroo",
+      "https://en.wikipedia.org/wiki/Human_skin"
+    ],
+    "bank_ids": [
+      359,
+      643,
+      612
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-002",
+    "question_texts_nl": [
+      "Hoeveel centimeter lang was de Engelse mastiff Zorba?",
+      "Hoeveel kilogram weegt een mannelijke jaguar in de Pantanal gemiddeld?",
+      "Hoeveel kilometer lang is de kustlijn van Noorwegen ongeveer, inclusief eilanden?"
+    ],
+    "answers": [
+      250,
+      100,
+      25000
+    ],
+    "operator": "×",
+    "score": 4.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/List_of_individual_dogs",
+      "https://animaldiversity.org/accounts/Panthera_onca/",
+      "https://www.cia.gov/the-world-factbook/countries/norway/"
+    ],
+    "bank_ids": [
+      443,
+      651,
+      270
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-003",
+    "question_texts_nl": [
+      "Hoeveel aardse dagen duurt een jaar op Venus ongeveer?",
+      "Hoeveel stenen staan er in de Stonehenge-hoofdstructuur ongeveer overeind?",
+      "Hoeveel vierkante centimeter is de totale oppervlakte van je huid?"
+    ],
+    "answers": [
+      225,
+      80,
+      18000
+    ],
+    "operator": "×",
+    "score": 4.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://science.nasa.gov/venus/venus-facts/",
+      "https://nl.wikipedia.org/wiki/Stonehenge",
+      "https://en.wikipedia.org/wiki/Human_skin"
+    ],
+    "bank_ids": [
+      510,
+      815,
+      612
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-005",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt een mannelijke jaguar in de Pantanal gemiddeld?",
+      "Hoeveel miljoen kilometer is de gemiddelde afstand van de aarde tot de zon?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?"
+    ],
+    "answers": [
+      100,
+      150,
+      15000
+    ],
+    "operator": "×",
+    "score": 4.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim."
+    ],
+    "source_urls": [
+      "https://animaldiversity.org/accounts/Panthera_onca/",
+      "https://nl.wikipedia.org/wiki/Aarde_%28planeet%29",
+      "https://en.wikipedia.org/wiki/Water_footprint"
+    ],
+    "bank_ids": [
+      651,
+      1444,
+      371
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-011",
+    "question_texts_nl": [
+      "Hoeveel vleugelslagen per seconde kan een kolibrie in volle vlucht maken?",
+      "Hoeveel aardse dagen duurt een jaar op Venus ongeveer?",
+      "Hoeveel ton bommen werd tijdens de Blitz op Londen afgeworpen?"
+    ],
+    "answers": [
+      80,
+      225,
+      18000
+    ],
+    "operator": "×",
+    "score": 4.2,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Hummingbird",
+      "https://science.nasa.gov/venus/venus-facts/",
+      "https://en.wikipedia.org/wiki/The_Blitz"
+    ],
+    "bank_ids": [
+      167,
+      510,
+      1022
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-012",
+    "question_texts_nl": [
+      "Hoeveel meter onder zeeniveau ligt het diepste punt van de Noordzee?",
+      "Hoeveel miljard sterren telt ons Melkwegstelsel naar schatting?",
+      "Meer dan hoeveel kilometer per jaar trekken Noordse sterns?"
+    ],
+    "answers": [
+      700,
+      100,
+      70000
+    ],
+    "operator": "×",
+    "score": 4.2,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Noordzee",
+      "https://science.nasa.gov/universe/galaxies/milky-way/",
+      "https://www.bas.ac.uk/news/arctic-terns-confirmed-to-have-the-longest-animal-migration-in-the-world/"
+    ],
+    "bank_ids": [
+      290,
+      1432,
+      157
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-015",
+    "question_texts_nl": [
+      "Hoeveel kilogram aluminium zit er ongeveer in een gemiddelde auto?",
+      "Hoeveel push-ups deed Charles Servizio in 24 uur in april 1993, afgerond op duizendtallen?",
+      "Hoeveel vierkante kilometer is de Sahara groot?"
+    ],
+    "answers": [
+      200,
+      46000,
+      9200000
+    ],
+    "operator": "×",
+    "score": 4.2,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Aluminium",
+      "https://www.guinnessworldrecords.com/world-records/most-push-ups-in-24-hours",
+      "https://en.wikipedia.org/wiki/Sahara"
+    ],
+    "bank_ids": [
+      359,
+      1314,
+      299
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-017",
+    "question_texts_nl": [
+      "Hoeveel kilogram weegt een volwassen mannelijke giraffe gemiddeld?",
+      "Hoeveel mensen stierven bij de uitbarsting van de Vesuvius in Pompeï?",
+      "Hoeveel liter water stroomt per seconde over de Niagarawatervallen?"
+    ],
+    "answers": [
+      1200,
+      2000,
+      2400000
+    ],
+    "operator": "×",
+    "score": 4.2,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Giraffe",
+      "https://en.wikipedia.org/wiki/Mount_Vesuvius",
+      "https://en.wikipedia.org/wiki/Niagara_Falls"
+    ],
+    "bank_ids": [
+      650,
+      1012,
+      288
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-018",
+    "question_texts_nl": [
+      "Hoeveel liter water kan een kameel in één keer drinken?",
+      "Hoeveel dagen duurt de zwangerschap van een geit?",
+      "Hoeveel liter water is volgens de gangbare berekening nodig om één kilogram rundvlees te produceren?"
+    ],
+    "answers": [
+      100,
+      150,
+      15000
+    ],
+    "operator": "×",
+    "score": 4.2,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Kameel",
+      "https://en.wikipedia.org/wiki/Goat",
+      "https://en.wikipedia.org/wiki/Water_footprint"
+    ],
+    "bank_ids": [
+      658,
+      1074,
+      371
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-021",
+    "question_texts_nl": [
+      "Hoeveel dagen duurt de zwangerschap van een geit?",
+      "Hoeveel miljard LEGO-steentjes zijn er sinds 1958 wereldwijd in totaal geproduceerd?",
+      "Hoeveel kilometer moet een bijenvolk gezamenlijk vliegen om één kilo honing te produceren?"
+    ],
+    "answers": [
+      150,
+      600,
+      90000
+    ],
+    "operator": "×",
+    "score": 4.2,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Goat",
+      "https://en.wikipedia.org/wiki/Lego",
+      "https://en.wikipedia.org/wiki/Honey"
+    ],
+    "bank_ids": [
+      1074,
+      1336,
+      654
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-022",
+    "question_texts_nl": [
+      "Hoeveel jaar duurde de regering van Elizabeth II?",
+      "Hoeveel kilogram weegt een volwassen mannelijke rode reuzenkangoeroe maximaal?",
+      "Hoeveel kilometer lang is de Yangtze ongeveer?"
+    ],
+    "answers": [
+      70,
+      90,
+      6300
+    ],
+    "operator": "×",
+    "score": 4.1,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Elizabeth_II",
+      "https://en.wikipedia.org/wiki/Red_kangaroo",
+      "http://web.archive.org/web/20260831052738/https://www.britannica.com/place/Yangtze-River"
+    ],
+    "bank_ids": [
+      318,
+      643,
+      268
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-024",
+    "question_texts_nl": [
+      "Hoeveel liter water kan een kameel in één keer drinken?",
+      "Hoeveel meter diep ligt de fundering van de Burj Khalifa ongeveer?",
+      "Hoeveel kilometer lang was de Romeinse rijksgrens, de Roman Limes, volgens UNESCO ongeveer?"
+    ],
+    "answers": [
+      100,
+      50,
+      5000
+    ],
+    "operator": "×",
+    "score": 4.1,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Kameel",
+      "https://en.wikipedia.org/wiki/Burj_Khalifa",
+      "https://whc.unesco.org/en/list/430/"
+    ],
+    "bank_ids": [
+      658,
+      785,
+      320
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-025",
+    "question_texts_nl": [
+      "Hoeveel miljoen zakken koffie produceert Brazilië per jaar?",
+      "Hoeveel meter diep ligt de fundering van de Burj Khalifa ongeveer?",
+      "Hoeveel kilometer lang is Japan van noord naar zuid ongeveer?"
+    ],
+    "answers": [
+      60,
+      50,
+      3000
+    ],
+    "operator": "×",
+    "score": 4.1,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Coffee_production_in_Brazil",
+      "https://en.wikipedia.org/wiki/Burj_Khalifa",
+      "https://en.wikipedia.org/wiki/Geography_of_Japan"
+    ],
+    "bank_ids": [
+      710,
+      785,
+      265
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-027",
+    "question_texts_nl": [
+      "Hoeveel kilogram woog de Engelse mastiff Zorba bij zijn record in 1989?",
+      "Hoeveel kilometer van de Maas ligt in Nederland?",
+      "Hoeveel meter bedroeg Felix Baumgartners spronghoogte op 14 oktober 2012 volgens de FAI, afgerond op duizendtallen?"
+    ],
+    "answers": [
+      156,
+      250,
+      39000
+    ],
+    "operator": "×",
+    "score": 3.9,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://vgl.ucdavis.edu/sites/g/files/dgvnsk15116/files/media/documents/EnglishMastiff20190918_0.pdf",
+      "https://www.rijkswaterstaat.nl/water/vaarwegenoverzicht/maas",
+      "https://www.fai.org/news/baumgartner%E2%80%99s-records-ratified-fai"
+    ],
+    "bank_ids": [
+      449,
+      1185,
+      264
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-029",
+    "question_texts_nl": [
+      "Hoeveel kilometer van de Maas ligt in Nederland?",
+      "Hoeveel centimeter lang was Robert Wadlow?",
+      "Hoeveel soldaten telde het Brits-geallieerde leger van Wellington bij Waterloo ongeveer?"
+    ],
+    "answers": [
+      250,
+      272,
+      68000
+    ],
+    "operator": "×",
+    "score": 3.9,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.rijkswaterstaat.nl/water/vaarwegenoverzicht/maas",
+      "https://www.guinnessworldrecords.com/world-records/tallest-man-ever",
+      "http://web.archive.org/web/20260812125235/https://www.britannica.com/event/Battle-of-Waterloo"
+    ],
+    "bank_ids": [
+      1185,
+      1300,
+      1020
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-033",
+    "question_texts_nl": [
+      "Hoeveel aardse dagen duurt één volledige draai van Venus?",
+      "Hoeveel gram koolhydraten bevat een Amerikaanse McDonald's Big Mac?",
+      "Hoeveel meter diep is de Challengerdiepte in de Marianentrog?"
+    ],
+    "answers": [
+      243,
+      45,
+      10935
+    ],
+    "operator": "×",
+    "score": 3.8,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Venus_%28planeet%29",
+      "https://en.wikipedia.org/wiki/Big_Mac",
+      "https://en.wikipedia.org/wiki/Challenger_Deep"
+    ],
+    "bank_ids": [
+      80,
+      184,
+      1138
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-036",
+    "question_texts_nl": [
+      "Hoeveel duizend knipperbewegingen met je ogen maak je gemiddeld per dag?",
+      "Hoeveel stenen staan er in de Stonehenge-hoofdstructuur ongeveer overeind?",
+      "Hoeveel kilogram weegt een volwassen mannelijke giraffe gemiddeld?"
+    ],
+    "answers": [
+      15,
+      80,
+      1200
+    ],
+    "operator": "×",
+    "score": 3.7,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.aao.org/eye-health/tips-prevention/how-often-do-you-blink",
+      "https://nl.wikipedia.org/wiki/Stonehenge",
+      "https://en.wikipedia.org/wiki/Giraffe"
+    ],
+    "bank_ids": [
+      2,
+      815,
+      650
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-037",
+    "question_texts_nl": [
+      "Hoeveel duizend knipperbewegingen met je ogen maak je gemiddeld per dag?",
+      "Hoe lang was de langste taart ooit in kilometer?",
+      "Hoeveel miljoen kilometer is de gemiddelde afstand van de aarde tot de zon?"
+    ],
+    "answers": [
+      15,
+      10,
+      150
+    ],
+    "operator": "×",
+    "score": 3.7,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.aao.org/eye-health/tips-prevention/how-often-do-you-blink",
+      "https://www.guinnessworldrecords.com/world-records/longest-cake",
+      "https://nl.wikipedia.org/wiki/Aarde_%28planeet%29"
+    ],
+    "bank_ids": [
+      2,
+      1302,
+      1444
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-038",
+    "question_texts_nl": [
+      "Hoeveel procent van de plant- en diersoorten leeft in regenwouden?",
+      "Hoeveel procent van het menselijk lichaam bestaat ongeveer uit water?",
+      "Hoeveel kilometer lang is Japan van noord naar zuid ongeveer?"
+    ],
+    "answers": [
+      50,
+      60,
+      3000
+    ],
+    "operator": "×",
+    "score": 3.7,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.jica.go.jp/english/activities/issues/education/materials/science/png/__icsFiles/afieldfile/2025/04/23/g5_science_text_03.pdf",
+      "https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body",
+      "https://en.wikipedia.org/wiki/Geography_of_Japan"
+    ],
+    "bank_ids": [
+      49,
+      609,
+      265
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-039",
+    "question_texts_nl": [
+      "Hoeveel miljard neuronen (zenuwcellen) bevat het menselijk brein naar schatting?",
+      "Hoeveel centimeter lang was Sultan Kösen in 2011?",
+      "Hoeveel kilometer lang is het Victoriameer ongeveer?"
+    ],
+    "answers": [
+      86,
+      251,
+      337
+    ],
+    "operator": "+",
+    "score": 3.6,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/19226510/",
+      "https://www.guinnessworldrecords.com/world-records/tallest-man-living",
+      "https://en.wikipedia.org/wiki/Lake_Victoria"
+    ],
+    "bank_ids": [
+      3,
+      440,
+      274
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-041",
+    "question_texts_nl": [
+      "Hoeveel LEGO-steentjes werden er per seconde gemaakt in 2020?",
+      "Hoeveel kilometer lang was de Romeinse rijksgrens, de Roman Limes, volgens UNESCO ongeveer?",
+      "Hoeveel kilometer lang is de Yangtze ongeveer?"
+    ],
+    "answers": [
+      1300,
+      5000,
+      6300
+    ],
+    "operator": "+",
+    "score": 3.6,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://www.derstandard.at/story/2000117920314/oefters-fast-pleite-jetzt-verkauft-lego-mehr-steine-als-je",
+      "https://whc.unesco.org/en/list/430/",
+      "http://web.archive.org/web/20260831052738/https://www.britannica.com/place/Yangtze-River"
+    ],
+    "bank_ids": [
+      74,
+      320,
+      268
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-042",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is de Grand Canyon ongeveer?",
+      "Ruim hoeveel miljoen passagiers verwerkte Atlanta Airport, de drukste luchthaven ter wereld, in 2023?",
+      "Hoeveel liter zuurstof verbruikt een volwassen mens gemiddeld per dag?"
+    ],
+    "answers": [
+      446,
+      104,
+      550
+    ],
+    "operator": "+",
+    "score": 3.6,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Grand_Canyon",
+      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "https://en.wikipedia.org/wiki/Breathing"
+    ],
+    "bank_ids": [
+      266,
+      1317,
+      607
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-043",
+    "question_texts_nl": [
+      "Hoeveel liter zuurstof verbruikt een volwassen mens gemiddeld per dag?",
+      "Hoeveel kilometer per uur haalt een cheetah op zijn snelst?",
+      "Hoeveel kilometer lang is het Tanganyikameer ongeveer?"
+    ],
+    "answers": [
+      550,
+      110,
+      660
+    ],
+    "operator": "+",
+    "score": 3.6,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Breathing",
+      "https://en.wikipedia.org/wiki/Cheetah",
+      "http://web.archive.org/web/20260330211104/https://www.britannica.com/place/Lake-Tanganyika"
+    ],
+    "bank_ids": [
+      607,
+      655,
+      870
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-045",
+    "question_texts_nl": [
+      "Hoeveel kilo weegt een koningspinguin?",
+      "Hoeveel kilogram rundvlees at men in Argentinië per inwoner in 2020?",
+      "Hoeveel centimeter meten de dunne en dikke darm samen, volledig uitgestrekt?"
+    ],
+    "answers": [
+      15,
+      50,
+      750
+    ],
+    "operator": "×",
+    "score": 3.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/King_penguin",
+      "https://www.magyp.gob.ar/sitio/areas/aves/informes/boletines/_archivos/000000_Datos%20Hist%C3%B3ricos/000083_Nro%2083%20Anuario%20Avicola%202020.pdf",
+      "https://en.wikipedia.org/wiki/Human_gastrointestinal_tract"
+    ],
+    "bank_ids": [
+      7,
+      712,
+      110
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-046",
+    "question_texts_nl": [
+      "Hoeveel kilo weegt een koningspinguin?",
+      "Hoeveel delen CO₂ per miljoen delen lucht zat er rond het pre-industriële referentiejaar in de atmosfeer?",
+      "Hoeveel kilometer lang is de Niger?"
+    ],
+    "answers": [
+      15,
+      280,
+      4200
+    ],
+    "operator": "×",
+    "score": 3.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/King_penguin",
+      "https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere",
+      "https://en.wikipedia.org/wiki/Niger_River"
+    ],
+    "bank_ids": [
+      7,
+      1091,
+      863
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-047",
+    "question_texts_nl": [
+      "Hoeveel dagen duurde de reis van de Mayflower naar Noord-Amerika?",
+      "Hoe lang was de langste taart ooit in kilometer?",
+      "Hoeveel dagen duurt de draagtijd van een olifant ongeveer?"
+    ],
+    "answers": [
+      66,
+      10,
+      660
+    ],
+    "operator": "×",
+    "score": 3.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://plimoth.org/learn/just-kids/homework-help/mayflower",
+      "https://www.guinnessworldrecords.com/world-records/longest-cake",
+      "https://en.wikipedia.org/wiki/Elephant"
+    ],
+    "bank_ids": [
+      38,
+      1302,
+      636
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-052",
+    "question_texts_nl": [
+      "Hoeveel jaar duurde de apartheid in Zuid-Afrika?",
+      "Hoeveel meter hoog was de mobiele Gundam-robot in Yokohama in 2020?",
+      "Wat is de hoogte van de Burj Khalifa in Dubai in meters?"
+    ],
+    "answers": [
+      46,
+      18,
+      828
+    ],
+    "operator": "×",
+    "score": 3.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Apartheid_in_Zuid-Afrika",
+      "https://www.guinnessworldrecords.com/world-records/635613-largest-humanoid-robot",
+      "https://nl.wikipedia.org/wiki/Burj_Khalifa"
+    ],
+    "bank_ids": [
+      1001,
+      1298,
+      43
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-053",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is de CN Tower?",
+      "Hoeveel jaar duurde de Honderdjarige Oorlog daadwerkelijk?",
+      "Hoeveel kilogram woog de recordportie friet in Boise op 2 oktober 2026, afgerond?"
+    ],
+    "answers": [
+      553,
+      116,
+      669
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/CN_Tower",
+      "https://nl.wikipedia.org/wiki/Honderdjarige_Oorlog",
+      "https://www.guinnessworldrecords.com/world-records/largest-serving-of-chips-fries"
+    ],
+    "bank_ids": [
+      20,
+      317,
+      1308
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-054",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is de CN Tower?",
+      "Hoeveel dagen duurt de zwangerschap van een schaap?",
+      "Hoeveel meter onder zeeniveau ligt het diepste punt van de Noordzee?"
+    ],
+    "answers": [
+      553,
+      147,
+      700
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/CN_Tower",
+      "https://en.wikipedia.org/wiki/Sheep",
+      "https://nl.wikipedia.org/wiki/Noordzee"
+    ],
+    "bank_ids": [
+      20,
+      358,
+      290
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-055",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is het Baikalmeer ongeveer?",
+      "Hoeveel gram weegt een standaard Mars reep?",
+      "Hoeveel dagen doet de planeet Mars erover om rond de zon te draaien?"
+    ],
+    "answers": [
+      636,
+      51,
+      687
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Lake_Baikal",
+      "https://nl.wikipedia.org/wiki/Mars_%28reep%29",
+      "https://nl.wikipedia.org/wiki/Mars_%28planeet%29"
+    ],
+    "bank_ids": [
+      31,
+      186,
+      82
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-056",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is het Baikalmeer ongeveer?",
+      "Hoeveel dagen duurt de zwangerschap van een varken?",
+      "Hoeveel centimeter meten de dunne en dikke darm samen, volledig uitgestrekt?"
+    ],
+    "answers": [
+      636,
+      114,
+      750
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Lake_Baikal",
+      "https://en.wikipedia.org/wiki/Domestic_pig",
+      "https://en.wikipedia.org/wiki/Human_gastrointestinal_tract"
+    ],
+    "bank_ids": [
+      31,
+      1075,
+      110
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-058",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is Angel Falls ongeveer?",
+      "Hoeveel centimeter hoog is de Mona Lisa?",
+      "Hoe groot was het grootste permanente IMAX-scherm in vierkante meter?"
+    ],
+    "answers": [
+      979,
+      77,
+      1056
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "http://web.archive.org/web/20260801160109/https://www.britannica.com/place/Angel-Falls",
+      "https://nl.wikipedia.org/wiki/Mona_Lisa",
+      "https://en.wikipedia.org/wiki/IMAX_Sydney"
+    ],
+    "bank_ids": [
+      34,
+      346,
+      66
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-059",
+    "question_texts_nl": [
+      "Wat is de hoogte van de Burj Khalifa in Dubai in meters?",
+      "Wat is de totale lengte van alle onderzeese internetkabels op aarde in duizend kilometer?",
+      "Hoeveel meter hoog is Mount Kosciuszko?"
+    ],
+    "answers": [
+      828,
+      1400,
+      2228
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Burj_Khalifa",
+      "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+      "https://nl.wikipedia.org/wiki/Mount_Kosciuszko"
+    ],
+    "bank_ids": [
+      43,
+      95,
+      935
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-060",
+    "question_texts_nl": [
+      "Hoeveel centimeter breed is de Mona Lisa?",
+      "Hoeveel meter steken de torens van de Golden Gate Bridge boven het water uit?",
+      "Hoeveel delen CO₂ per miljoen delen lucht zat er rond het pre-industriële referentiejaar in de atmosfeer?"
+    ],
+    "answers": [
+      53,
+      227,
+      280
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Mona_Lisa",
+      "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+      "https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere"
+    ],
+    "bank_ids": [
+      44,
+      96,
+      1091
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-061",
+    "question_texts_nl": [
+      "Hoeveel centimeter breed is de Mona Lisa?",
+      "Hoeveel gram weegt een standaard Mars reep?",
+      "Ruim hoeveel miljoen passagiers verwerkte Atlanta Airport, de drukste luchthaven ter wereld, in 2023?"
+    ],
+    "answers": [
+      53,
+      51,
+      104
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Mona_Lisa",
+      "https://nl.wikipedia.org/wiki/Mars_%28reep%29",
+      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport"
+    ],
+    "bank_ids": [
+      44,
+      186,
+      1317
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-063",
+    "question_texts_nl": [
+      "Hoeveel centimeter lang was Zeng Jinlian in 1982?",
+      "Hoeveel meter hoog is de Euromast vanaf de grond tot de top van de Space Tower?",
+      "Hoeveel kilometer per uur haalde de Shanghai Maglev in de reguliere dienst tot 2021?"
+    ],
+    "answers": [
+      246,
+      185,
+      431
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://www.guinnessworldrecords.com/world-records/tallest-woman",
+      "https://nl.wikipedia.org/wiki/Euromast",
+      "https://en.wikipedia.org/wiki/Shanghai_maglev_train"
+    ],
+    "bank_ids": [
+      69,
+      1214,
+      1455
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-065",
+    "question_texts_nl": [
+      "Hoeveel aardse dagen duurt één volledige draai van Venus?",
+      "Ruim hoeveel meter lang was de recordhotdog van Novex in Paraguay in 2011?",
+      "Hoeveel kilometer lang is de Grand Canyon ongeveer?"
+    ],
+    "answers": [
+      243,
+      203,
+      446
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Venus_%28planeet%29",
+      "https://www.guinnessworldrecords.com/world-records/longest-hot-dog",
+      "https://en.wikipedia.org/wiki/Grand_Canyon"
+    ],
+    "bank_ids": [
+      80,
+      444,
+      266
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-066",
+    "question_texts_nl": [
+      "Wat is de geschatte leeftijd van de planeet Aarde in miljoenen jaren?",
+      "Hoeveel meter lang is het Millauviaduct in Frankrijk?",
+      "Hoeveel kilometer lang is de Andes ongeveer?"
+    ],
+    "answers": [
+      4540,
+      2460,
+      7000
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Age_of_the_Earth",
+      "https://en.wikipedia.org/wiki/Millau_Viaduct",
+      "https://en.wikipedia.org/wiki/Andes"
+    ],
+    "bank_ids": [
+      84,
+      237,
+      852
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-067",
+    "question_texts_nl": [
+      "Hoeveel meter steken de torens van de Golden Gate Bridge boven het water uit?",
+      "Hoeveel dagen duurt de zwangerschap van een koe?",
+      "Hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen, afgerond op hele miljoenen?"
+    ],
+    "answers": [
+      227,
+      283,
+      510
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+      "https://en.wikipedia.org/wiki/Cattle",
+      "https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf"
+    ],
+    "bank_ids": [
+      96,
+      357,
+      344
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-069",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is Taipei 101?",
+      "Hoeveel kilogram kan een volwassen vrouwelijke witte neushoorn wegen?",
+      "Hoeveel kilometer lang is de Murray?"
+    ],
+    "answers": [
+      508,
+      2000,
+      2508
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Taipei_101",
+      "https://eazawebsite-prod.s3.nl-ams.scw.cloud/uploads/2018_EAZA_Best_Practice_Guidelines_White_rhinoceros_NV_feefd99e0e.pdf",
+      "https://nl.wikipedia.org/wiki/Murray_%28rivier%29"
+    ],
+    "bank_ids": [
+      231,
+      652,
+      862
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-071",
+    "question_texts_nl": [
+      "Hoeveel meter lang is het Millauviaduct in Frankrijk?",
+      "Hoeveel kilometer lang was de historische Zijderoute ongeveer?",
+      "Hoeveel miljard kilometer legt licht af in één lichtjaar, afgerond?"
+    ],
+    "answers": [
+      2460,
+      7000,
+      9460
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Millau_Viaduct",
+      "https://en.wikipedia.org/wiki/Silk_Road",
+      "https://en.wikipedia.org/wiki/Light-year"
+    ],
+    "bank_ids": [
+      237,
+      1006,
+      525
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-073",
+    "question_texts_nl": [
+      "Hoeveel miljoen kubieke meter aarde werd er uitgegraven voor de bouw van het Panamakanaal?",
+      "Hoeveel dagen duurde de Slag bij Verdun?",
+      "Hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen, afgerond op hele miljoenen?"
+    ],
+    "answers": [
+      210,
+      300,
+      510
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Panama_Canal",
+      "https://en.wikipedia.org/wiki/Battle_of_Verdun",
+      "https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf"
+    ],
+    "bank_ids": [
+      238,
+      992,
+      344
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-074",
+    "question_texts_nl": [
+      "Wat is de hoogte van het Vrijheidsbeeld in New York inclusief sokkel in meters?",
+      "Hoeveel centimeter hoog is de Mona Lisa?",
+      "Hoeveel centimeter hoog wordt een volwassen emoe?"
+    ],
+    "answers": [
+      93,
+      77,
+      170
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Vrijheidsbeeld_%28New_York%29",
+      "https://nl.wikipedia.org/wiki/Mona_Lisa",
+      "https://en.wikipedia.org/wiki/Emu"
+    ],
+    "bank_ids": [
+      255,
+      346,
+      635
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-077",
+    "question_texts_nl": [
+      "Hoeveel centimeter schofthoogte had de Duitse dog Zeus in 2011?",
+      "Hoeveel dagen duurt de zwangerschap van een varken?",
+      "Hoeveel kilometer lang is het metronet van Mexico-Stad?"
+    ],
+    "answers": [
+      112,
+      114,
+      226
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren."
+    ],
+    "source_urls": [
+      "https://www.guinnessworldrecords.com/world-records/tallest-dog-ever",
+      "https://en.wikipedia.org/wiki/Domestic_pig",
+      "https://en.wikipedia.org/wiki/Mexico_City_Metro"
+    ],
+    "bank_ids": [
+      435,
+      1075,
+      780
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-078",
+    "question_texts_nl": [
+      "Hoeveel centimeter lang was Rumeysa Gelgi in 2021?",
+      "Hoeveel miljoen motorvoertuigen werden er in 2022 wereldwijd geproduceerd?",
+      "Hoeveel meter overspant de boog van de Van Brienenoordbrug, afgerond op honderdtallen?"
+    ],
+    "answers": [
+      215,
+      85,
+      300
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim."
+    ],
+    "source_urls": [
+      "https://www.guinnessworldrecords.com/world-records/tallest-woman-living",
+      "https://www.oica.net/production-statistics/",
+      "https://nl.wikipedia.org/wiki/Van_Brienenoordbrug"
+    ],
+    "bank_ids": [
+      441,
+      1488,
+      1189
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-080",
+    "question_texts_nl": [
+      "Hoeveel kilometer per uur sprint een jaguar?",
+      "Hoeveel miljoen motorvoertuigen werden er in 2022 wereldwijd geproduceerd?",
+      "Hoeveel aardse jaren duurt een jaar op Neptunus?"
+    ],
+    "answers": [
+      80,
+      85,
+      165
+    ],
+    "operator": "+",
+    "score": 3.4,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Jaguar",
+      "https://www.oica.net/production-statistics/",
+      "https://science.nasa.gov/neptune/facts/"
+    ],
+    "bank_ids": [
+      656,
+      1488,
+      511
+    ],
+    "editorial_review": "candidate"
+  },
+  {
+    "candidate_id": "C-004",
+    "question_texts_nl": [
+      "Hoeveel kilometer per uur rijdt een hogesnelheidstrein zoals de TGV maximaal in reguliere dienst?",
+      "Hoeveel kilogram weegt een moai op Paaseiland?",
+      "Hoeveel vierkante kilometer is het Arctische zee-ijs in de zomer ongeveer minimaal?"
+    ],
+    "answers": [
+      320,
+      12500,
+      4000000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/TGV",
+      "https://en.wikipedia.org/wiki/Moai",
+      "https://nsidc.org/arcticseaicenews/"
+    ],
+    "bank_ids": [
+      572,
+      1062,
+      302
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-006",
+    "question_texts_nl": [
+      "Hoeveel kilometer breed is de Kalahariwoestijn ongeveer?",
+      "Hoeveel miljard sterren telt ons Melkwegstelsel naar schatting?",
+      "Hoeveel kilometer moet een bijenvolk gezamenlijk vliegen om één kilo honing te produceren?"
+    ],
+    "answers": [
+      900,
+      100,
+      90000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Kalahari_Desert",
+      "https://science.nasa.gov/universe/galaxies/milky-way/",
+      "https://en.wikipedia.org/wiki/Honey"
+    ],
+    "bank_ids": [
+      859,
+      1432,
+      654
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-007",
+    "question_texts_nl": [
+      "Wat is de totale lengte van alle onderzeese internetkabels op aarde in duizend kilometer?",
+      "Hoeveel kilometer lang is de Kanaaltunnel?",
+      "Meer dan hoeveel kilometer per jaar trekken Noordse sterns?"
+    ],
+    "answers": [
+      1400,
+      50,
+      70000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+      "https://en.wikipedia.org/wiki/Channel_Tunnel",
+      "https://www.bas.ac.uk/news/arctic-terns-confirmed-to-have-the-longest-animal-migration-in-the-world/"
+    ],
+    "bank_ids": [
+      95,
+      570,
+      157
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-009",
+    "question_texts_nl": [
+      "Wat is de totale geschatte lengte van alle bloedvaten in een volwassen menselijk lichaam in kilometers?",
+      "Hoeveel kilometer per uur rijdt een hogesnelheidstrein zoals de TGV maximaal in reguliere dienst?",
+      "Hoeveel mensen bezochten de Wereldtentoonstelling van 1889 in Parijs?"
+    ],
+    "answers": [
+      100000,
+      320,
+      32000000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Circulatory_system",
+      "https://en.wikipedia.org/wiki/TGV",
+      "https://en.wikipedia.org/wiki/Exposition_Universelle_(1889)"
+    ],
+    "bank_ids": [
+      128,
+      572,
+      1009
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-010",
+    "question_texts_nl": [
+      "Hoeveel meter diep kan de potvis duiken?",
+      "Hoeveel kilometer lang is de Kanaaltunnel?",
+      "Wat is de totale geschatte lengte van alle bloedvaten in een volwassen menselijk lichaam in kilometers?"
+    ],
+    "answers": [
+      2000,
+      50,
+      100000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Potvis",
+      "https://en.wikipedia.org/wiki/Channel_Tunnel",
+      "https://en.wikipedia.org/wiki/Circulatory_system"
+    ],
+    "bank_ids": [
+      156,
+      570,
+      128
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-014",
+    "question_texts_nl": [
+      "Hoeveel jaar duurde de regering van Elizabeth II?",
+      "Hoeveel delen CO₂ per miljoen delen lucht mat NASA in 2024?",
+      "Hoeveel kilometer lang is de kustlijn van Japan ongeveer?"
+    ],
+    "answers": [
+      70,
+      425,
+      29750
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Elizabeth_II",
+      "https://climate.nasa.gov/vital-signs/carbon-dioxide/",
+      "https://en.wikipedia.org/wiki/Geography_of_Japan"
+    ],
+    "bank_ids": [
+      318,
+      1090,
+      269
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-019",
+    "question_texts_nl": [
+      "Hoeveel miljoen zakken koffie produceert Brazilië per jaar?",
+      "Hoeveel meter overspant de boog van de Van Brienenoordbrug, afgerond op honderdtallen?",
+      "Hoeveel ton bommen werd tijdens de Blitz op Londen afgeworpen?"
+    ],
+    "answers": [
+      60,
+      300,
+      18000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Coffee_production_in_Brazil",
+      "https://nl.wikipedia.org/wiki/Van_Brienenoordbrug",
+      "https://en.wikipedia.org/wiki/The_Blitz"
+    ],
+    "bank_ids": [
+      710,
+      1189,
+      1022
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-020",
+    "question_texts_nl": [
+      "Hoeveel meter hoog is kasteel Neuschwanstein?",
+      "Hoeveel miljard LEGO-steentjes zijn er sinds 1958 wereldwijd in totaal geproduceerd?",
+      "Hoeveel meter bedroeg Felix Baumgartners spronghoogte op 14 oktober 2012 volgens de FAI, afgerond op duizendtallen?"
+    ],
+    "answers": [
+      65,
+      600,
+      39000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Neuschwanstein_Castle",
+      "https://en.wikipedia.org/wiki/Lego",
+      "https://www.fai.org/news/baumgartner%E2%80%99s-records-ratified-fai"
+    ],
+    "bank_ids": [
+      801,
+      1336,
+      264
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-026",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is de kustlijn van Noorwegen ongeveer, inclusief eilanden?",
+      "Hoeveel liter bloed pompt een mensenhart gemiddeld per dag rond?",
+      "Hoeveel ton suiker wordt wereldwijd jaarlijks geproduceerd?"
+    ],
+    "answers": [
+      25000,
+      7200,
+      180000000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://www.cia.gov/the-world-factbook/countries/norway/",
+      "https://en.wikipedia.org/wiki/Cardiac_output",
+      "https://www.fao.org/faostat/en/#data/QCL"
+    ],
+    "bank_ids": [
+      270,
+      605,
+      365
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-028",
+    "question_texts_nl": [
+      "Hoeveel delen CO₂ per miljoen delen lucht mat NASA in 2024?",
+      "Hoeveel kilometer lang is de Betuweroute goederenspoorlijn?",
+      "Hoeveel soldaten telde het Brits-geallieerde leger van Wellington bij Waterloo ongeveer?"
+    ],
+    "answers": [
+      425,
+      160,
+      68000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://climate.nasa.gov/vital-signs/carbon-dioxide/",
+      "https://nl.wikipedia.org/wiki/Betuweroute",
+      "http://web.archive.org/web/20260812125235/https://www.britannica.com/event/Battle-of-Waterloo"
+    ],
+    "bank_ids": [
+      1090,
+      1181,
+      1020
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-031",
+    "question_texts_nl": [
+      "Hoeveel meter hoog zijn de torens van de Brooklyn Bridge?",
+      "Hoeveel kilogram rundvlees at men in Argentinië per inwoner in 2020?",
+      "Hoeveel kilometer lang is de Niger?"
+    ],
+    "answers": [
+      84,
+      50,
+      4200
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Brooklyn_Bridge",
+      "https://www.magyp.gob.ar/sitio/areas/aves/informes/boletines/_archivos/000000_Datos%20Hist%C3%B3ricos/000083_Nro%2083%20Anuario%20Avicola%202020.pdf",
+      "https://en.wikipedia.org/wiki/Niger_River"
+    ],
+    "bank_ids": [
+      234,
+      712,
+      863
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-032",
+    "question_texts_nl": [
+      "Hoeveel vierkante kilometer is het Arctische zee-ijs in de zomer ongeveer minimaal?",
+      "Hoeveel dagen duurde de Slag bij Verdun?",
+      "Hoeveel ton maïs werd wereldwijd geproduceerd in 2023?"
+    ],
+    "answers": [
+      4000000,
+      300,
+      1200000000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://nsidc.org/arcticseaicenews/",
+      "https://en.wikipedia.org/wiki/Battle_of_Verdun",
+      "https://www.fao.org/faostat/en/#data/QCL"
+    ],
+    "bank_ids": [
+      302,
+      992,
+      364
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-034",
+    "question_texts_nl": [
+      "Hoeveel kilometer gekarteerde gangen had Mammoth Cave in 2024?",
+      "Hoeveel miljoen toeristenovernachtingen verwachtte Amsterdam voor 2023 in het lage scenario van de bezoekersprognose 2023–2025?",
+      "Hoeveel kilogram weegt de klok van Big Ben?"
+    ],
+    "answers": [
+      685,
+      20,
+      13700
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://www.nps.gov/maca/learn/management/statistics.htm",
+      "https://onderzoek.amsterdam.nl/publicatie/bezoekersprognose-2023-2025",
+      "https://en.wikipedia.org/wiki/Big_Ben"
+    ],
+    "bank_ids": [
+      271,
+      1221,
+      225
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-035",
+    "question_texts_nl": [
+      "Hoeveel kilometer lang is het Great Barrier Reef?",
+      "Hoeveel miljoen toeristenovernachtingen verwachtte Amsterdam voor 2023 in het lage scenario van de bezoekersprognose 2023–2025?",
+      "Hoeveel push-ups deed Charles Servizio in 24 uur in april 1993, afgerond op duizendtallen?"
+    ],
+    "answers": [
+      2300,
+      20,
+      46000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
+      "https://onderzoek.amsterdam.nl/publicatie/bezoekersprognose-2023-2025",
+      "https://www.guinnessworldrecords.com/world-records/most-push-ups-in-24-hours"
+    ],
+    "bank_ids": [
+      272,
+      1221,
+      1314
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-044",
+    "question_texts_nl": [
+      "Hoeveel mensen bezochten de Wereldtentoonstelling van 1889 in Parijs?",
+      "Hoeveel kilometer lang is de HSL-Zuid hogesnelheidslijn?",
+      "Hoeveel ton cement wordt wereldwijd jaarlijks geproduceerd?"
+    ],
+    "answers": [
+      32000000,
+      125,
+      4000000000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Exposition_Universelle_(1889)",
+      "https://en.wikipedia.org/wiki/HSL-Zuid",
+      "https://www.usgs.gov/centers/national-minerals-information-center/cement-statistics-and-information"
+    ],
+    "bank_ids": [
+      1009,
+      1184,
+      1080
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-049",
+    "question_texts_nl": [
+      "Hoeveel procent van de plant- en diersoorten leeft in regenwouden?",
+      "Hoeveel procent van het Amazoneregenwoud ligt in Brazilië?",
+      "Hoeveel ton goud werd in 2020 wereldwijd gewonnen?"
+    ],
+    "answers": [
+      50,
+      60,
+      3000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://www.jica.go.jp/english/activities/issues/education/materials/science/png/__icsFiles/afieldfile/2025/04/23/g5_science_text_03.pdf",
+      "https://en.wikipedia.org/wiki/Amazon_rainforest",
+      "https://pubs.usgs.gov/myb/vol1/2020/myb1-2020-gold.pdf"
+    ],
+    "bank_ids": [
+      49,
+      960,
+      45
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-050",
+    "question_texts_nl": [
+      "Hoeveel aardse uren duurt één volledige draai van Mars?",
+      "Hoeveel vleugelslagen per seconde kan een kolibrie in volle vlucht maken?",
+      "Hoeveel mensen stierven bij de uitbarsting van de Vesuvius in Pompeï?"
+    ],
+    "answers": [
+      25,
+      80,
+      2000
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://science.nasa.gov/mars/facts/",
+      "https://en.wikipedia.org/wiki/Hummingbird",
+      "https://en.wikipedia.org/wiki/Mount_Vesuvius"
+    ],
+    "bank_ids": [
+      81,
+      167,
+      1012
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-051",
+    "question_texts_nl": [
+      "Hoeveel aardse uren duurt één volledige draai van Mars?",
+      "Hoeveel meter lang is een Airbus A380?",
+      "Hoeveel meter lang is de Brooklyn Bridge van Centre Street tot Sands Street?"
+    ],
+    "answers": [
+      25,
+      73,
+      1825
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://science.nasa.gov/mars/facts/",
+      "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a380",
+      "https://en.wikipedia.org/wiki/Brooklyn_Bridge"
+    ],
+    "bank_ids": [
+      81,
+      574,
+      236
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-062",
+    "question_texts_nl": [
+      "Hoeveel kilometer per uur is de geluidssnelheid op zeeniveau afgerond?",
+      "Hoeveel dagen duurt de zwangerschap van een koe?",
+      "Hoeveel mensen jongleerden tegelijk bij het record in Edinburgh in 1998?"
+    ],
+    "answers": [
+      1225,
+      283,
+      1508
+    ],
+    "operator": "+",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Geluidssnelheid",
+      "https://en.wikipedia.org/wiki/Cattle",
+      "https://www.guinnessworldrecords.com/world-records/68643-most-people-juggling-simultaneously"
+    ],
+    "bank_ids": [
+      59,
+      357,
+      1311
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-064",
+    "question_texts_nl": [
+      "Hoeveel kilogram woog de zwaarste pompoen ter wereld eind 2025?",
+      "Hoeveel centimeter hoog wordt een volwassen emoe?",
+      "Hoeveel vierkante kilometer groot is de provincie Utrecht, inclusief water?"
+    ],
+    "answers": [
+      1279,
+      170,
+      1449
+    ],
+    "operator": "+",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://www.guinnessworldrecords.com/news/2026/10/pumpkinpalooza-how-the-worlds-biggest-pumpkin-record-fell-twice-in-one-week",
+      "https://en.wikipedia.org/wiki/Emu",
+      "https://spinlab.vu.nl/wp-content/uploads/2016/09/Onderzoek_economische_impact_recreatietoervaart_Def_VU_Romy_Hoogeveen.pdf"
+    ],
+    "bank_ids": [
+      71,
+      635,
+      1197
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-075",
+    "question_texts_nl": [
+      "Hoeveel jaar duurde de Honderdjarige Oorlog daadwerkelijk?",
+      "Hoeveel duizend zoekopdrachten per seconde verwerkte Google in 2024?",
+      "Hoeveel centimeter lang was Rumeysa Gelgi in 2021?"
+    ],
+    "answers": [
+      116,
+      99,
+      215
+    ],
+    "operator": "+",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Snelheid, piek of record is gevoelig voor meetdefinitie en conditie.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://nl.wikipedia.org/wiki/Honderdjarige_Oorlog",
+      "https://www.mediafederation.org.au/images/Educational-Guidelines/mfaguide/MFA_2024_TheMFAGuide_V1_200524.pdf",
+      "https://www.guinnessworldrecords.com/world-records/tallest-woman-living"
+    ],
+    "bank_ids": [
+      317,
+      546,
+      441
+    ],
+    "editorial_review": "reserve"
+  },
+  {
+    "candidate_id": "C-079",
+    "question_texts_nl": [
+      "Hoeveel procent van het menselijk lichaam bestaat ongeveer uit water?",
+      "Hoeveel kilometer lang is de HSL-Zuid hogesnelheidslijn?",
+      "Hoeveel hotels had Hilton eind 2023 wereldwijd ongeveer?"
+    ],
+    "answers": [
+      60,
+      125,
+      7500
+    ],
+    "operator": "×",
+    "score": 2.5,
+    "reason_nl": "Drie voorstelbare onderwerpen uit verschillende categorieën. De schaal van minstens twee antwoorden moet worden geschat; het verband laat je een te grote of te kleine inschatting bijstellen.",
+    "risks": [
+      "Bronnen en bestaande antwoorden overgenomen uit reviewbank; niet opnieuw extern geverifieerd.",
+      "Schaal, peildatum, gemiddelde of maximum en afronding vóór publicatie broninhoudelijk controleren.",
+      "Veranderlijke statistiek: expliciete peildatum vereist; geen tijdloze claim.",
+      "Redactionele reserve: te veranderlijk, arbitrair, lokaal of minder sterk houvast; alleen opnemen na extra beoordeling."
+    ],
+    "source_urls": [
+      "https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body",
+      "https://en.wikipedia.org/wiki/HSL-Zuid",
+      "https://stories.hilton.com/"
+    ],
+    "bank_ids": [
+      609,
+      1184,
+      1316
+    ],
+    "editorial_review": "reserve"
+  }
+]
