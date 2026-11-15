@@ -2,8 +2,8 @@
 
 ## Harde afspraken
 
-- Doel: 100 puzzels met samen 300 verschillende vragen.
-- Elke vraag en elk semantisch bronfeit komt maximaal eenmaal in de nieuwe reeks voor.
+- Doel: maximaal 100 puzzels; liever minder dan zwakke of onbetrouwbare combinaties.
+- Elke vraag komt maximaal eenmaal voor. Varianten van een onderwerp, zoals chromosomen en chromosomenparen, mogen wel; hetzelfde antwoordfeit tweemaal niet.
 - Overlap met de bestaande Library mag; deze selectie vervangt die niet automatisch.
 - Legendary: drie sterke vragen. Bijna legendary: twee sterke en één normale.
 - Normaal: één sterke en twee normale. Drie normale vragen worden niet opgenomen.
@@ -21,9 +21,13 @@
 
 `selectie.json` is de uiteindelijke redactionele set. De begrijpelijke weergave staat in `docs/audit/legendary_selectie.md`. Het bestand vermeldt eerlijk wanneer een tussenselectie het doel van 100 nog niet haalt.
 
+`redactie.json` bewaart de 300 NL/EN-redacties, de oorspronkelijke combinaties van commit `376e308`, beoordelingen per vraag en redenen om puzzels te schrappen. Het oudere solverbestand `tier_selectie_a.json` reproduceert die opgeslagen selectie niet; daarom heeft de vastgelegde oorspronkelijke selectie voorrang. Bankantwoorden, IDs en oorspronkelijke bronlinks blijven intact. Een nieuwe controlebron staat apart onder `source_review`.
+
 ## Bronnen en publicatie
 
 De bestaande bank bevat bronlinks en bewijszinnen, maar die zijn niet allemaal opnieuw extern gecontroleerd. De selectie is daarom voorbereide inhoud, geen automatische publicatie of certificering. Controleer voor publicatie bronwaarde, peildatum, meetdefinitie, afronding en Engelse vraagtekst. Een gelijkheid tussen speelgetallen maakt benaderde natuurwaarden niet exact.
+
+`verified` betekent extern bevestigd; `verified_rounded` vermeldt de bronwaarde en omrekening of bestaande afronding. `checked_unresolved` betekent een controlepoging zonder voldoende bewijs. `rejected_incorrect` en `rejected_ambiguous` onderbouwen een afwijzing. Geen van deze laatste drie statussen mag in de selectie staan. Normale vragen die niet opnieuw onderzocht zijn houden `requires_external_review`; een oude banknotitie telt niet als nieuwe controle. Alle vragen uit de oorspronkelijke twee hoogste tiers hebben een controlerecord; een onopgeloste vraag leidt tot het schrappen van haar combinatie.
 
 Dagpuzzelplanning en toekomstige antwoorden uit de server worden niet gebruikt. De website laadt deze werkbestanden niet in.
 
@@ -33,6 +37,9 @@ De zoektools gebruiken Python, pandas/openpyxl en SciPy (getest met SciPy 1.16.3
 
 ```powershell
 python tools/controleer_legendary.py
+python tools/maak_legendary_selectie.py --check
 ```
+
+Zonder `--check` genereert `maak_legendary_selectie.py` de selectie en het auditverslag opnieuw uit de vastgelegde redactie. Het wijzigt geen antwoorden en publiceert niets. De controles toetsen ook lege Engelse teksten, bekende vertaalfouten, uniciteit per ID en bronfeit, exacte sommen, tiers en bewijsmetadata. De nummering bewaart de oorspronkelijke puzzelnummers, inclusief gaten na schrappen.
 
 De zoekruimte kan opnieuw worden onderzocht met de `legendary_search_*.py`-scripts. Een tijdbegrensde solver levert niet altijd exact dezelfde selectie of een bewezen optimum; solverstatus en beperkingen horen daarom bij het resultaat.

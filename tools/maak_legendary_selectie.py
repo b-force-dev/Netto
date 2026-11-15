@@ -142,15 +142,102 @@ def report(data):
              'Harde regel: elke vraag en elk bronfeit komt maximaal in één puzzel voor. Een tekort wordt gemeld, niet met herhaling opgevuld.',
              '', '| Nr. | Vragen | Som | Agents | Waarom |', '|---|---|---|---|---|']
     for p in puzzles:
-        questions = '<br>'.join('[' + q['question_nl'].replace('|', '/') + '](' + q['source_url'] + ')' for q in p['questions'])
+        questions = '<br>'.join('[' + q['question_nl'].replace('|', '/') + '](' + q.get('source_review', {}).get('source_url', q['source_url']) + ')' for q in p['questions'])
         reason = next(iter(p['agents'].values()))['reason_nl'].replace('|', '/')
         tier = p.get('tier', 'voorlopig')
         lines.append(f"| {p['number']} ({tier}) | {questions} | {p['calculation']} | {', '.join(sorted(p['agents']))} | {reason} |")
+    if 'editorial_audit' in data:
+        audit = data['editorial_audit']
+        lines[4:7] = [
+            'Alle 300 oorspronkelijke Engelse teksten zijn geredigeerd, inclusief 14 ontbrekende teksten. Ook Nederlandse vragen zijn ingekort en verduidelijkt.',
+            'Elke vraag maximaal eenmaal; varianten van hetzelfde onderwerp (bijvoorbeeld chromosomen en chromosomenparen) mogen naast elkaar bestaan.',
+            'Antwoorden en bankherkomst zijn ongewijzigd. De website laadt deze reeks niet; niets is gepubliceerd.',
+        ]
+        lines += ['', '## Eindcontrole ' + audit['review_date'], '',
+                  '| Tier | Voor | Na |', '|---|---:|---:|']
+        for tier in ('legendary', 'near-legendary', 'normal'):
+            lines.append(f"| {tier} | {audit['before_tiers'].get(tier, 0)} | {data['tier_counts'].get(tier, 0)} |")
+        lines += ['', f"{len(audit['excluded_puzzles'])} puzzels / {3 * len(audit['excluded_puzzles'])} vragen geschrapt; 0 vragen vervangen. Teksten van geschrapte vragen staan ook in `puzzels/legendary/redactie.json`.",
+                  f"{audit['review_attempts']} vragen extern onderzocht; {audit['confirmed_facts']} bevestigd (inclusief expliciet beschreven afrondingen); {audit['rejected_facts']} afgewezen; {audit['unresolved_facts']} niet voldoende bevestigd.",
+                  'Alle vragen uit de oorspronkelijke legendary- en bijna-legendary-puzzels zijn onderzocht, ook wanneer de puzzel afviel. Een bronopvraag zonder passende bewijszin telt niet als bevestiging.',
+                  'Normale vragen zonder nieuwe controle behouden requires_external_review. De banknotities zijn geen nieuwe feitencontrole.',
+                  f"In de overgebleven reeks: {sum(q['source_status'] in ('verified', 'verified_rounded') for p in puzzles for q in p['questions'])} bevestigde vragen en {sum(q['source_status'] == 'requires_external_review' for p in puzzles for q in p['questions'])} normale vragen zonder nieuwe externe bevestiging.",
+                  'Een schatting blijft een schatting: de bewijszin vermeldt de bronwaarde, omrekening en afronding. De rekensom met de bestaande speelgetallen is wel exact.',
+                  'Sterkte is opnieuw beoordeeld: eenvoudige telvragen, bekende ankers en historische telweetjes zijn normaal. Daardoor zijn ook bevestigde puzzels naar een lagere tier verplaatst.',
+                  '', '### Geschrapte combinaties', '', '| Oorspronkelijk nr. | Reden |', '|---|---|']
+        for number, reason in audit['excluded_puzzles'].items():
+            lines.append(f'| {number} | {reason} |')
+        lines += ['', '### Feitencontrole per vraag', '',
+                  'Bewijszinnen zijn Nederlandse parafrases van de geraadpleegde webbronnen. Een lege bewijszin betekent dat bevestiging ontbreekt; dat is geen bewijs dat het bankantwoord onjuist is.',
+                  '', '| Bank-ID | Status | Datum | Bron en bewijs / beperking |', '|---|---|---|---|']
+        for id, review in audit['fact_reviews'].items():
+            note = (review['evidence_nl'] or review.get('review_note_nl', '')).replace('|', '/')
+            lines.append(f"| {id} | {review['source_status']} | {review['checked_on']} | [Bron]({review['source_url']}) — {note} |")
     lines += ['', '## Publicatiepoort', '',
               'Controleer per feit bronwaarde, definitie, schaal, afronding en NL/EN; laat een tweede redacteur de combinatie beoordelen. Een exact kloppende som maakt een benaderd feit niet exact.',
               'Gebruik deze reeks afzonderlijk: bestaande Library-uniciteit en gespeelde puzzel-IDs mogen niet stilzwijgend worden overschreven.',
               f"Afgewezen voorstellen door structuurcontrole: {len(data['rejected_proposals'])}. Details in de JSON.", '']
     return '\n'.join(lines)
+
+
+def load_editorial_base():
+    """The saved 376e308 selection differs from the older solver input."""
+    editorial = json.loads((FOLDER / 'redactie.json').read_text(encoding='utf8'))
+    data = editorial['original_selection']
+    bank = load_bank()
+    for puzzle in data['puzzles']:
+        puzzle['questions'] = [{**bank[q['question_nl']], **q} for q in puzzle['questions']]
+    return data
+
+
+def apply_editorial(data):
+    """Apply the versioned editorial decisions without altering bank answers."""
+    path = FOLDER / 'redactie.json'
+    if not path.exists():
+        return data
+    editorial = json.loads(path.read_text(encoding='utf8'))
+    selected = []
+    for puzzle in data['puzzles']:
+        if str(puzzle['number']) in editorial['excluded_puzzles']:
+            continue
+        puzzle['original_tier'] = puzzle['tier']
+        for question in puzzle['questions']:
+            question['bank_question_nl'] = question['question_nl']
+            edit = editorial['question_edits'][question['id']]
+            assert set(edit) <= {'question_nl', 'question_en', 'quality', 'quality_reason_nl'}
+            question.update(edit)
+            review = editorial['fact_reviews'].get(question['id'])
+            if review:
+                question['source_status'] = review['source_status']
+                question['source_review'] = review
+            # A family marks related facts, not necessarily identical questions.
+            # Different answers (e.g. 46 chromosomes / 23 pairs) remain allowed.
+            question['semantic_keys'] = [
+                key + ':' + str(question['answer']) if key.startswith('reviewfamily:') else key
+                for key in question['semantic_keys']]
+        strong = sum(q['quality'] == 'strong' for q in puzzle['questions'])
+        puzzle['tier'] = {3: 'legendary', 2: 'near-legendary', 1: 'normal'}.get(strong)
+        assert puzzle['tier'], 'Three normal questions are forbidden'
+        description = '1 sterke schaalvraag' if strong == 1 else f'{strong} sterke schaalvragen'
+        puzzle['agents']['a-tier']['reason_nl'] = description + '; overige vragen zijn normale ankers. Redactioneel herbeoordeeld.'
+        selected.append(puzzle)
+    data['puzzles'] = selected
+    data['edition'] = editorial['edition']
+    data['shortfall'] = max(0, data['requested_count'] - len(selected))
+    data['tier_counts'] = dict(Counter(p['tier'] for p in selected))
+    data['selection_policy'] = 'At most 100; quality and confirmed facts take precedence. Each question once; related facts with distinct answers allowed. No all-normal puzzles.'
+    data['source_policy'] = 'Bank answers unchanged. Per-question web reviews distinguish confirmed, rounded, rejected and unresolved facts. Normal questions may still require external review.'
+    reviews = editorial['fact_reviews']
+    statuses = Counter(r['source_status'] for r in reviews.values())
+    data['editorial_audit'] = {
+        'review_date': editorial['review_date'], 'before_tiers': editorial['before_tiers'],
+        'excluded_puzzles': editorial['excluded_puzzles'], 'fact_reviews': reviews,
+        'review_attempts': len(reviews),
+        'confirmed_facts': statuses['verified'] + statuses['verified_rounded'],
+        'unresolved_facts': statuses['checked_unresolved'],
+        'rejected_facts': sum(n for s, n in statuses.items() if s.startswith('rejected_')),
+    }
+    return data
 
 
 def build_tiers(count):
@@ -218,7 +305,14 @@ def main():
     parser.add_argument('--check', action='store_true')
     parser.add_argument('--raw', action='store_true', help='Explore the original proposal pool instead of the final tier selection.')
     args = parser.parse_args()
-    data = build(args.count) if args.raw or not (FOLDER / 'tier_selectie_a.json').exists() else build_tiers(args.count)
+    if args.raw:
+        data = build(args.count)
+    elif (FOLDER / 'redactie.json').exists():
+        if args.count != 100:
+            parser.error('The reviewed baseline has target 100; use --raw to explore other counts.')
+        data = apply_editorial(load_editorial_base())
+    else:
+        data = build_tiers(args.count)
     outputs = {FOLDER / 'selectie.json': json.dumps(data, ensure_ascii=False, indent=2) + '\n',
                ROOT / 'docs/audit/legendary_selectie.md': report(data)}
     for path, content in outputs.items():
