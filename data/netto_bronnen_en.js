@@ -1947,5 +1947,8 @@ window.NETTO_BRONNEN_EN = {
   "Een eeuw is een periode van honderd jaar.": "A century is a period of one hundred years.",
   "De traditionele standaard voor geluidsfilm is 24 beelden per seconde.": "The traditional standard for sound-film projection is 24 frames per second.",
   "Kameroen, de Centraal-Afrikaanse Republiek, Tsjaad, Congo-Brazzaville, Equatoriaal-Guinea en Gabon: zes landen.": "Cameroon, the Central African Republic, Chad, the Republic of the Congo, Equatorial Guinea and Gabon: six countries.",
-  "Yap, Chuuk, Pohnpei en Kosrae vormen vier deelstaten.": "Yap, Chuuk, Pohnpei and Kosrae form four states."
+  "Yap, Chuuk, Pohnpei en Kosrae vormen vier deelstaten.": "Yap, Chuuk, Pohnpei and Kosrae form four states.",
+  "De gewone zeester (Asterias rubens) heeft normaal vijf armen; zeldzame exemplaren hebben vier tot acht armen.": "The common starfish (Asterias rubens) normally has five arms; rare individuals have four to eight arms.",
+  "Een traditionele Italiaanse cappuccino bevat één espresso van ongeveer 25 milliliter. Het Istituto Espresso Italiano specificeert 25 milliliter espresso voor zijn gecertificeerde cappuccino.": "A traditional Italian cappuccino contains one espresso of about 25 millilitres. The Istituto Espresso Italiano specifies 25 millilitres of espresso for its certified cappuccino.",
+  "Een natriumion Na⁺ heeft elf protonen en tien elektronen: het neutrale natriumatoom heeft één elektron afgestaan.": "A sodium ion, Na⁺, has eleven protons and ten electrons: the neutral sodium atom has lost one electron."
 };

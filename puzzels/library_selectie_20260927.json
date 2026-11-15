@@ -542,8 +542,8 @@
           "question": "How many shots of espresso are traditionally used in a cappuccino?",
           "subtitle": "Traditional Italian-style cappuccino.",
           "answer": 1,
-          "evidence": "Klassiek een shot; veel zaken gebruiken er twee. Met \"klassiek\" erbij is de vraag eenduidig.",
-          "source": "https://en.wikipedia.org/wiki/Cappuccino",
+          "evidence": "Een traditionele Italiaanse cappuccino bevat één espresso van ongeveer 25 milliliter. Het Istituto Espresso Italiano specificeert 25 milliliter espresso voor zijn gecertificeerde cappuccino.",
+          "source": "https://iei.coffee/en/espresso-italiano-certificato/",
           "notes": null,
           "photo": {
             "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Cappuccino_in_original.jpg/330px-Cappuccino_in_original.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -565,9 +565,9 @@
           "question": "How many arms does a common starfish have?",
           "subtitle": null,
           "answer": 5,
-          "evidence": "De gewone zeester heeft vijf armen; de vraag noemt de vijfarmige soort expliciet.",
-          "source": "https://oceanservice.noaa.gov/facts/seastars.html",
-          "notes": "Species and scope still need tightening.",
+          "evidence": "De gewone zeester (Asterias rubens) heeft normaal vijf armen; zeldzame exemplaren hebben vier tot acht armen.",
+          "source": "https://www.marlin.ac.uk/species/detail/1194/common_starfish_asterias_rubens",
+          "notes": "Common starfish means Asterias rubens; five arms is its normal anatomy, not a universal rule for all sea stars.",
           "photo": null,
           "unit_group": "arms",
           "group": "q148",
@@ -4773,14 +4773,21 @@
       ],
       "note": "Bronnen opnieuw gecontroleerd op 13 november 2026; drie verschillende kleurfamilies en eenheden. De bekende ankers helpen bij de derde schatting.",
       "origin": null,
-      "difficulty": "easy",
-      "difficulty_score": 30,
+      "difficulty": "hard",
+      "difficulty_score": null,
       "photo": {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Animal_Farm_-_1st_edition.jpg/330px-Animal_Farm_-_1st_edition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "pagina": "https://commons.wikimedia.org/wiki/File:Animal_Farm_-_1st_edition.jpg",
         "licentie": "Public domain",
         "maker": "Unknown author Unknown author",
         "vraag": 1
+      },
+      "difficulty_review": {
+        "basis": "editorial",
+        "reason": "Three specific counts (Animal Farm chapters, Sopranos seasons and countries on Lake Tanganyika) provide no broad everyday anchor.",
+        "legacy_difficulty": "easy",
+        "legacy_score": 30,
+        "calibrated_with_players": false
       }
     },
     {
@@ -5941,12 +5948,19 @@
         }
       ],
       "operator": "−",
-      "difficulty": "easy",
+      "difficulty": "hard",
       "number": 70,
       "id": "f7037e8a-bdb9-586a-b1f2-a688f09653d3",
-      "difficulty_score": 25,
+      "difficulty_score": null,
       "origin": null,
-      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting."
+      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting.",
+      "difficulty_review": {
+        "basis": "editorial",
+        "reason": "Cheese maturation, Alpine Convention parties and Buddhist Noble Truths require specific knowledge despite the small numbers.",
+        "legacy_difficulty": "easy",
+        "legacy_score": 25,
+        "calibrated_with_players": false
+      }
     },
     {
       "questions": [
@@ -6295,12 +6309,19 @@
         }
       ],
       "operator": "−",
-      "difficulty": "easy",
+      "difficulty": "hard",
       "number": 76,
       "id": "7d7a2a23-efa9-5900-b171-9635b928af46",
-      "difficulty_score": 25,
+      "difficulty_score": null,
       "origin": null,
-      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting."
+      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting.",
+      "difficulty_review": {
+        "basis": "editorial",
+        "reason": "Colombian tiple strings, Mali neighbours and Dickens staves are three niche counts without a broad estimation anchor.",
+        "legacy_difficulty": "easy",
+        "legacy_score": 25,
+        "calibrated_with_players": false
+      }
     },
     {
       "questions": [
@@ -6413,12 +6434,19 @@
         }
       ],
       "operator": "−",
-      "difficulty": "intermediate",
+      "difficulty": "hard",
       "number": 78,
       "id": "e925f060-7dba-5799-a2a0-fff5045a33d3",
-      "difficulty_score": 48,
+      "difficulty_score": null,
       "origin": null,
-      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting."
+      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting.",
+      "difficulty_review": {
+        "basis": "editorial",
+        "reason": "The UN Security Council is an anchor, but Salmanazar capacity and Northern Vietnamese tones add two specialist counts.",
+        "legacy_difficulty": "intermediate",
+        "legacy_score": 48,
+        "calibrated_with_players": false
+      }
     },
     {
       "questions": [
@@ -6708,12 +6736,19 @@
         }
       ],
       "operator": "+",
-      "difficulty": "intermediate",
+      "difficulty": "hard",
       "number": 83,
       "id": "982b8cb9-943e-56f8-a1e8-ea0c9d944655",
-      "difficulty_score": 48,
+      "difficulty_score": null,
       "origin": null,
-      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting."
+      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting.",
+      "difficulty_review": {
+        "basis": "editorial",
+        "reason": "Niger neighbours, European spa towns and Ulysses episodes offer little everyday estimation support.",
+        "legacy_difficulty": "intermediate",
+        "legacy_score": 48,
+        "calibrated_with_players": false
+      }
     },
     {
       "questions": [
@@ -7593,12 +7628,19 @@
         }
       ],
       "operator": "×",
-      "difficulty": "extremely-hard",
+      "difficulty": "easy",
       "number": 98,
       "id": "7747ff43-9a65-58b4-a66d-a209b58badc0",
-      "difficulty_score": 90,
+      "difficulty_score": null,
       "origin": null,
-      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting."
+      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting.",
+      "difficulty_review": {
+        "basis": "editorial",
+        "reason": "Ten millimetres per centimetre and the fifty-year golden wedding anniversary provide two accessible anchors for the border count.",
+        "legacy_difficulty": "extremely-hard",
+        "legacy_score": 90,
+        "calibrated_with_players": false
+      }
     },
     {
       "questions": [
@@ -8124,12 +8166,19 @@
         }
       ],
       "operator": "÷",
-      "difficulty": "extremely-hard",
+      "difficulty": "easy",
       "number": 107,
       "id": "3fce7b0b-7372-5673-9da6-97901dd9a1dd",
-      "difficulty_score": 90,
+      "difficulty_score": null,
       "origin": null,
-      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting."
+      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting.",
+      "difficulty_review": {
+        "basis": "editorial",
+        "reason": "One hundred euro cents and five planets beyond Earth help infer the twenty-faced die; the division is simple.",
+        "legacy_difficulty": "extremely-hard",
+        "legacy_score": 90,
+        "calibrated_with_players": false
+      }
     },
     {
       "questions": [
@@ -8183,12 +8232,19 @@
         }
       ],
       "operator": "−",
-      "difficulty": "extremely-hard",
+      "difficulty": "intermediate",
       "number": 108,
       "id": "309d550f-74b9-533c-add6-b8865348a7bb",
-      "difficulty_score": 90,
+      "difficulty_score": null,
       "origin": null,
-      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting."
+      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting.",
+      "difficulty_review": {
+        "basis": "editorial",
+        "reason": "Four Formula One wheels and one hundred draughts-board squares help infer the unfamiliar Haydn symphony number.",
+        "legacy_difficulty": "extremely-hard",
+        "legacy_score": 90,
+        "calibrated_with_players": false
+      }
     },
     {
       "questions": [
@@ -8242,12 +8298,19 @@
         }
       ],
       "operator": "÷",
-      "difficulty": "extremely-hard",
+      "difficulty": "easy",
       "number": 109,
       "id": "85988bb0-dd0d-536d-aa5a-ed7bfc1858b6",
-      "difficulty_score": 90,
+      "difficulty_score": null,
       "origin": null,
-      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting."
+      "note": "Ronde 2: bronnen gecontroleerd op 13 november 2026; drie categorieën, kleurfamilies en eenheden. Niveau is een redactionele inschatting.",
+      "difficulty_review": {
+        "basis": "editorial",
+        "reason": "One hundred and twenty minutes in two hours and six touchdown points help infer calcium atomic number twenty.",
+        "legacy_difficulty": "extremely-hard",
+        "legacy_score": 90,
+        "calibrated_with_players": false
+      }
     },
     {
       "questions": [
