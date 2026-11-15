@@ -143,7 +143,7 @@ def report(data):
              '', '| Nr. | Vragen | Som | Agents | Waarom |', '|---|---|---|---|---|']
     for p in puzzles:
         questions = '<br>'.join('[' + q['question_nl'].replace('|', '/') + '](' + q.get('source_review', {}).get('source_url', q['source_url']) + ')' for q in p['questions'])
-        reason = next(iter(p['agents'].values()))['reason_nl'].replace('|', '/')
+        reason = p.get('play_review', {}).get('reason_nl', next(iter(p['agents'].values()))['reason_nl']).replace('|', '/')
         tier = p.get('tier', 'voorlopig')
         lines.append(f"| {p['number']} ({tier}) | {questions} | {p['calculation']} | {', '.join(sorted(p['agents']))} | {reason} |")
     if 'editorial_audit' in data:
@@ -151,13 +151,14 @@ def report(data):
         lines[4:7] = [
             'Alle 300 oorspronkelijke Engelse teksten zijn geredigeerd, inclusief 14 ontbrekende teksten. Ook Nederlandse vragen zijn ingekort en verduidelijkt.',
             'Elke vraag maximaal eenmaal; varianten van hetzelfde onderwerp (bijvoorbeeld chromosomen en chromosomenparen) mogen naast elkaar bestaan.',
-            'Antwoorden en bankherkomst zijn ongewijzigd. De website laadt deze reeks niet; niets is gepubliceerd.',
+            'Speelantwoorden en sommen zijn ongewijzigd. Vervangvragen behouden hun eigen bankherkomst. De website laadt deze reeks niet; niets is gepubliceerd.',
         ]
         lines += ['', '## Eindcontrole ' + audit['review_date'], '',
                   '| Tier | Voor | Na |', '|---|---:|---:|']
         for tier in ('legendary', 'near-legendary', 'normal'):
             lines.append(f"| {tier} | {audit['before_tiers'].get(tier, 0)} | {data['tier_counts'].get(tier, 0)} |")
-        lines += ['', f"{len(audit['excluded_puzzles'])} puzzels / {3 * len(audit['excluded_puzzles'])} vragen geschrapt; 0 vragen vervangen. Teksten van geschrapte vragen staan ook in `puzzels/legendary/redactie.json`.",
+        replacements = audit.get('question_replacements', {})
+        lines += ['', f"{len(audit['excluded_puzzles'])} oorspronkelijke combinaties geschrapt; {len(replacements)} vragen vervangen door bankvragen met hetzelfde antwoord. Oorspronkelijke teksten blijven in `puzzels/legendary/redactie.json`.",
                   f"{audit['review_attempts']} vragen extern onderzocht; {audit['confirmed_facts']} bevestigd (inclusief expliciet beschreven afrondingen); {audit['rejected_facts']} afgewezen; {audit['unresolved_facts']} niet voldoende bevestigd.",
                   'Alle vragen uit de oorspronkelijke legendary- en bijna-legendary-puzzels zijn onderzocht, ook wanneer de puzzel afviel. Een bronopvraag zonder passende bewijszin telt niet als bevestiging.',
                   'Normale vragen zonder nieuwe controle behouden requires_external_review. De banknotities zijn geen nieuwe feitencontrole.',
@@ -173,6 +174,19 @@ def report(data):
         for id, review in audit['fact_reviews'].items():
             note = (review['evidence_nl'] or review.get('review_note_nl', '')).replace('|', '/')
             lines.append(f"| {id} | {review['source_status']} | {review['checked_on']} | [Bron]({review['source_url']}) — {note} |")
+    if 'player_review' in data:
+        review = data['player_review']
+        lines += ['', '## Spelersselectie', '',
+                  'Drie onafhankelijke spelersreviews van de oorspronkelijke 70: LEUK / TWIJFEL / NIET LEUK. Dit is een speelplezierselectie, geen nieuwe feitencontrole van alle behouden vragen.',
+                  'Vast behouden op verzoek: ' + ', '.join(map(str, review['consensus_kept'])) + '.',
+                  'De 22 twijfelgevallen zijn opnieuw beoordeeld; alleen overtuigende verbeteringen zijn opgenomen.',
+                  '', '| Nr. | Besluit | Reden |', '|---|---|---|']
+        for number, decision in review['reconsidered'].items():
+            lines.append(f"| {number} | {decision['decision']} | {decision['reason_nl']} |")
+        lines += ['', '### Vervangvragen met hetzelfde antwoord', '',
+                  '| Oud bank-ID | Nieuw bank-ID | Nieuwe vraag |', '|---|---|---|']
+        for old_id, replacement in data['editorial_audit'].get('question_replacements', {}).items():
+            lines.append(f"| {old_id} | {replacement['replacement_id']} | {replacement['question_nl']} |")
     lines += ['', '## Publicatiepoort', '',
               'Controleer per feit bronwaarde, definitie, schaal, afronding en NL/EN; laat een tweede redacteur de combinatie beoordelen. Een exact kloppende som maakt een benaderd feit niet exact.',
               'Gebruik deze reeks afzonderlijk: bestaande Library-uniciteit en gespeelde puzzel-IDs mogen niet stilzwijgend worden overschreven.',
@@ -196,14 +210,26 @@ def apply_editorial(data):
     if not path.exists():
         return data
     editorial = json.loads(path.read_text(encoding='utf8'))
+    bank_by_id = {q['id']: q for q in load_bank().values()}
+    replacements = editorial.get('question_replacements', {})
     selected = []
     for puzzle in data['puzzles']:
         if str(puzzle['number']) in editorial['excluded_puzzles']:
             continue
         puzzle['original_tier'] = puzzle['tier']
-        for question in puzzle['questions']:
+        for index, question in enumerate(puzzle['questions']):
+            replacement = replacements.get(question['id'])
+            if replacement:
+                old_id, old_answer = question['id'], question['answer']
+                question = dict(bank_by_id[replacement['replacement_id']])
+                assert question['answer'] == old_answer, f'Replacement answer drift: {old_id}'
+                question['semantic_keys'] = [f"nr:{question['id'][2:]}",
+                    f"sourcevalue:{question['source_url'].rstrip('/')}:{question['answer']}"]
+                question['replaces_question_id'] = old_id
+                puzzle['questions'][index] = question
             question['bank_question_nl'] = question['question_nl']
-            edit = editorial['question_edits'][question['id']]
+            edit = ({key: replacement[key] for key in ('question_nl', 'question_en', 'quality', 'quality_reason_nl')}
+                    if replacement else editorial['question_edits'][question['id']])
             assert set(edit) <= {'question_nl', 'question_en', 'quality', 'quality_reason_nl'}
             question.update(edit)
             review = editorial['fact_reviews'].get(question['id'])
@@ -220,6 +246,10 @@ def apply_editorial(data):
         assert puzzle['tier'], 'Three normal questions are forbidden'
         description = '1 sterke schaalvraag' if strong == 1 else f'{strong} sterke schaalvragen'
         puzzle['agents']['a-tier']['reason_nl'] = description + '; overige vragen zijn normale ankers. Redactioneel herbeoordeeld.'
+        player_review = editorial.get('player_review', {})
+        decision = player_review.get('reconsidered', {}).get(str(puzzle['number']))
+        if decision:
+            puzzle['play_review'] = decision
         selected.append(puzzle)
     data['puzzles'] = selected
     data['edition'] = editorial['edition']
@@ -227,11 +257,14 @@ def apply_editorial(data):
     data['tier_counts'] = dict(Counter(p['tier'] for p in selected))
     data['selection_policy'] = 'At most 100; quality and confirmed facts take precedence. Each question once; related facts with distinct answers allowed. No all-normal puzzles.'
     data['source_policy'] = 'Bank answers unchanged. Per-question web reviews distinguish confirmed, rounded, rejected and unresolved facts. Normal questions may still require external review.'
+    if 'player_review' in editorial:
+        data['player_review'] = editorial['player_review']
     reviews = editorial['fact_reviews']
     statuses = Counter(r['source_status'] for r in reviews.values())
     data['editorial_audit'] = {
         'review_date': editorial['review_date'], 'before_tiers': editorial['before_tiers'],
         'excluded_puzzles': editorial['excluded_puzzles'], 'fact_reviews': reviews,
+        'question_replacements': replacements,
         'review_attempts': len(reviews),
         'confirmed_facts': statuses['verified'] + statuses['verified_rounded'],
         'unresolved_facts': statuses['checked_unresolved'],

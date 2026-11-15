@@ -1,8 +1,8 @@
 {
-  "edition": "legendary-redactie-2026-11-15",
+  "edition": "legendary-spelersselectie-2026-11-15",
   "status": "editorial_candidates_not_published",
   "requested_count": 100,
-  "shortfall": 63,
+  "shortfall": 70,
   "selection_policy": "At most 100; quality and confirmed facts take precedence. Each question once; related facts with distinct answers allowed. No all-normal puzzles.",
   "source_policy": "Bank answers unchanged. Per-question web reviews distinguish confirmed, rounded, rejected and unresolved facts. Normal questions may still require external review.",
   "quality_policy": "Strong whitelist is a broad editorial scale filter, not independently reviewed legendary approval. Normal whitelist deliberately uses accessible knowledge; no zero-strong triples. Source-value and text aliases enforce conservative semantic uniqueness.",
@@ -20,9 +20,9 @@
   },
   "selection_input_sha256": "c2eed7af0d76d6aec35be3476aa2ced72a77f1805f102aac8131aa70a60ea2d1",
   "tier_counts": {
-    "normal": 22,
-    "near-legendary": 9,
-    "legendary": 6
+    "near-legendary": 12,
+    "normal": 11,
+    "legendary": 7
   },
   "unique_proposed_triples": 29614,
   "rejected_proposals": [],
@@ -30,7 +30,7 @@
     {
       "id": "legendary-78406a563421",
       "number": 3,
-      "tier": "normal",
+      "tier": "near-legendary",
       "status": "editorial_candidate",
       "questions": [
         {
@@ -41,7 +41,7 @@
           "category": "Dieren",
           "source_url": "https://s3.amazonaws.com/ifaw-pantheon/sites/default/files/legacy/education-publications/ca/cae-aae08-beneath-the-waves-teaching-guide-and-lessons.pdf",
           "evidence_nl": "Het IFAW-lesmateriaal noemt 2,7 metrische ton voor een blauwe-vinvistong: 2700 kilogram.",
-          "source_status": "requires_external_review",
+          "source_status": "verified_rounded",
           "recorded_bank_control": null,
           "recorded_source_confidence": "handmatig",
           "quality": "strong",
@@ -52,37 +52,49 @@
             "sourcevalue:s3.amazonaws.com/ifaw-pantheon/sites/default/files/legacy/education-publications/ca/cae-aae08-beneath-the-waves-teaching-guide-and-lessons.pdf:2700",
             "reviewfamily:question-83587928bcdc6c30:2700"
           ],
-          "bank_question_nl": "Hoeveel kilogram weegt een blauwe-vinvistong?"
+          "bank_question_nl": "Hoeveel kilogram weegt een blauwe-vinvistong?",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-15",
+            "source_url": "https://nammco.no/blue-whale/",
+            "evidence_nl": "NAMMCO noemt ongeveer 2,7 metrische ton voor een blauwe-vinvistong: het bestaande bankantwoord 2700 kg is een benaderde massa, geen exact uniform diergewicht."
+          }
         },
         {
-          "id": "nr177",
-          "question_nl": "Hoeveel lidstaten telt de Europese Unie?",
-          "question_en": "How many member states are in the European Union?",
+          "id": "nr946",
+          "question_nl": "Hoeveel miljoen inwoners had Australië op 30 juni 2024?",
+          "question_en": "How many million people lived in Australia on 30 June 2024?",
           "answer": 27,
-          "category": "Politiek en recht",
-          "source_url": "https://nl.wikipedia.org/wiki/Europese_Unie",
-          "evidence_nl": "De Europese Unie (EU) is een uit 27 Europese landen bestaand statenverband.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
+          "category": "Geografie",
+          "source_url": "https://www.abs.gov.au/media-centre/media-releases/australias-population-grows-21-cent",
+          "evidence_nl": "Het ABS rapporteerde 27,2 miljoen inwoners op 30 juni 2024: afgerond 27 miljoen.",
+          "source_status": "verified_rounded",
+          "recorded_bank_control": "Wikidata: klopt",
           "recorded_source_confidence": "hoog",
-          "quality": "normal",
-          "quality_reason_nl": "Toegankelijk alledaags, sportief, cultureel of schoolkennis-anker; geen specialistische hoofdstuk- of atoomnummervulling.",
           "semantic_keys": [
-            "nr:177",
-            "text:hoeveel lidstaten telt de europese unie?",
-            "sourcevalue:nl.wikipedia.org/wiki/europese_unie:27"
+            "nr:946",
+            "sourcevalue:https://www.abs.gov.au/media-centre/media-releases/australias-population-grows-21-cent:27"
           ],
-          "bank_question_nl": "Hoeveel lidstaten telt de Europese Unie?"
+          "replaces_question_id": "nr177",
+          "bank_question_nl": "Hoeveel miljoen inwoners had Australië in 2024?",
+          "quality": "strong",
+          "quality_reason_nl": "Een landbevolking biedt herkenbare maar onzekere schaal in plaats van een bekend lidstatenaantal.",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.abs.gov.au/media-centre/media-releases/australias-population-grows-21-cent",
+            "evidence_nl": "ABS noemt 27,2 miljoen inwoners op 30 juni 2024; het bestaande bankantwoord op hele miljoenen is 27."
+          }
         },
         {
           "id": "nr1315",
-          "question_nl": "Hoeveel wagons had de langste passagierstrein ooit?",
-          "question_en": "How many carriages did the longest passenger train have?",
+          "question_nl": "Hoeveel rijtuigen telde de Zwitserse recordpassagierstrein op 29 oktober 2022?",
+          "question_en": "How many carriages made up the Swiss record passenger train on 29 October 2022?",
           "answer": 100,
           "category": "Records en vergelijkingen",
           "source_url": "https://www.guinnessworldrecords.com/world-records/longest-passenger-train",
           "evidence_nl": "De langste passagierstrein telde honderd rijtuigen (Zwitserland, 2022).",
-          "source_status": "requires_external_review",
+          "source_status": "verified",
           "recorded_bank_control": null,
           "recorded_source_confidence": "handmatig",
           "quality": "normal",
@@ -93,7 +105,13 @@
             "sourcevalue:guinnessworldrecords.com/world-records/longest-passenger-train:100",
             "reviewfamily:question-7467cdcae1e94667:100"
           ],
-          "bank_question_nl": "Hoeveel wagons had de langste passagierstrein ooit?"
+          "bank_question_nl": "Hoeveel wagons had de langste passagierstrein ooit?",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.rhb.ch/en/projects-and-dossiers/world-record/",
+            "evidence_nl": "Rhätische Bahn beschrijft de recordrit van 29 oktober 2022 met 25 treinstellen en in totaal 100 rijtuigen; de vraag gaat expliciet over die rit."
+          }
         }
       ],
       "operator": "÷",
@@ -101,14 +119,18 @@
       "agents": {
         "a-tier": {
           "score": 3,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
+          "reason_nl": "2 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
         }
       },
       "risks": [
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "normal"
+      "original_tier": "normal",
+      "play_review": {
+        "decision": "verbeterd",
+        "reason_nl": "EU-lidstaten vervangen door de bevolking van Australië (27 miljoen). Het treinrecord is afgebakend tot de Zwitserse recordrit van 2022."
+      }
     },
     {
       "id": "legendary-1fb3bb252f5e",
@@ -368,7 +390,11 @@
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "normal"
+      "original_tier": "normal",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "De 88 pianotoetsen blijven als toegestaan bekend anker; paleiskamers en het Marsjaar bieden twee onzekere schattingen."
+      }
     },
     {
       "id": "legendary-b86fd1292ab2",
@@ -570,7 +596,11 @@
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "legendary"
+      "original_tier": "legendary",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "De 160 verdiepingen geven houvast voor de trappenschatting. Het kleine verschil is gevoelig, maar de voorstelbare klifsprong begrenst beide grote getallen."
+      }
     },
     {
       "id": "legendary-cecaa373f3ff",
@@ -757,110 +787,9 @@
       "original_tier": "normal"
     },
     {
-      "id": "legendary-ab554e4dab27",
-      "number": 14,
-      "tier": "near-legendary",
-      "status": "editorial_candidate",
-      "questions": [
-        {
-          "id": "nr38",
-          "question_nl": "Hoeveel dagen duurde de reis van de Mayflower naar Noord-Amerika?",
-          "question_en": "How many days did the Mayflower's Atlantic crossing take?",
-          "answer": 66,
-          "category": "Geschiedenis",
-          "source_url": "https://plimoth.org/learn/just-kids/homework-help/mayflower",
-          "evidence_nl": "After more than two months (66 days) at sea, the Pilgrims finally arrived at Cape Cod on November 11, 1620.",
-          "source_status": "verified",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "hoog",
-          "quality": "normal",
-          "quality_reason_nl": "Bekend anker of tel-/historisch weetje; geen zelfstandige sterke schaalvraag.",
-          "semantic_keys": [
-            "nr:38",
-            "text:hoeveel dagen duurde de reis van de mayflower naar noord-amerika?",
-            "sourcevalue:plimoth.org/learn/just-kids/homework-help/mayflower:66",
-            "reviewfamily:question-60621995edddc87c:66"
-          ],
-          "bank_question_nl": "Hoeveel dagen duurde de reis van de Mayflower naar Noord-Amerika?",
-          "source_review": {
-            "source_status": "verified",
-            "checked_on": "2026-11-15",
-            "source_url": "https://plimoth.org/for-students/homework-help/mayflower-and-mayflower-compact",
-            "evidence_nl": "Plimoth Patuxet beschrijft de Atlantische overtocht als een reis van 66 dagen."
-          }
-        },
-        {
-          "id": "nr70",
-          "question_nl": "Hoeveel kilogram woog de recordhamburger in Pilsting in 2017?",
-          "question_en": "How much did the record hamburger made in Pilsting in 2017 weigh, in kilograms?",
-          "answer": 1164,
-          "category": "Records en vergelijkingen",
-          "source_url": "https://www.guinnessworldrecords.com/world-records/largest-hamburger",
-          "evidence_nl": "Guinness vermeldt 1164,2 kilogram: afgerond 1164.",
-          "source_status": "verified_rounded",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "strong",
-          "quality_reason_nl": "Fysieke/schaalvraag met een voorstelbaar onderwerp en onzeker antwoord.",
-          "semantic_keys": [
-            "nr:70",
-            "text:hoeveel kilogram woog de recordhamburger in pilsting in 2017?",
-            "sourcevalue:guinnessworldrecords.com/world-records/largest-hamburger:1164"
-          ],
-          "bank_question_nl": "Hoeveel kilogram woog de recordhamburger in Pilsting in 2017?",
-          "source_review": {
-            "source_status": "verified_rounded",
-            "checked_on": "2026-11-15",
-            "source_url": "https://www.guinnessworldrecords.com/world-records/largest-hamburger",
-            "evidence_nl": "Guinness registreert de Pilsting-hamburger op 9 juli 2017 met 1164,2 kg; op hele kilogrammen 1164."
-          }
-        },
-        {
-          "id": "nr865",
-          "question_nl": "Hoeveel kilometer lang is de Rijn?",
-          "question_en": "How long is the Rhine, in kilometres?",
-          "answer": 1230,
-          "category": "Geografie",
-          "source_url": "https://en.wikipedia.org/wiki/Rhine",
-          "evidence_nl": "De Rijn is ongeveer 1230 kilometer lang.",
-          "source_status": "verified_rounded",
-          "recorded_bank_control": "Wikidata: klopt",
-          "recorded_source_confidence": "hoog",
-          "quality": "strong",
-          "quality_reason_nl": "Breed voorstelbare fysieke of astronomische schaal met plausibele grote onzekerheid; geef de bedoelde definitie en eenheid duidelijk.",
-          "semantic_keys": [
-            "nr:865",
-            "text:hoeveel kilometer lang is de rijn?",
-            "sourcevalue:en.wikipedia.org/wiki/rhine:1230",
-            "reviewfamily:question-1c34983c0ff4e919:1230"
-          ],
-          "bank_question_nl": "Hoeveel kilometer lang is de Rijn?",
-          "source_review": {
-            "source_status": "verified_rounded",
-            "checked_on": "2026-11-15",
-            "source_url": "https://en.wikipedia.org/wiki/Rhine",
-            "evidence_nl": "De Rijn is in de bron circa 1230 km lang; oudere 1320-km-opgaven berusten op een fout."
-          }
-        }
-      ],
-      "operator": "+",
-      "calculation": "66 + 1164 = 1230",
-      "agents": {
-        "a-tier": {
-          "score": 5,
-          "reason_nl": "2 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
-        }
-      },
-      "risks": [
-        "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
-        "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
-      ],
-      "original_tier": "legendary"
-    },
-    {
       "id": "legendary-2c193b776a3d",
       "number": 15,
-      "tier": "normal",
+      "tier": "near-legendary",
       "status": "editorial_candidate",
       "questions": [
         {
@@ -871,7 +800,7 @@
           "category": "Gebouwen en infrastructuur",
           "source_url": "https://nl.wikipedia.org/wiki/Burj_Khalifa",
           "evidence_nl": "Op 17 januari 2009 bereikte de toren zijn hoogste punt, met een hoogte van 828 meter.",
-          "source_status": "requires_external_review",
+          "source_status": "verified",
           "recorded_bank_control": null,
           "recorded_source_confidence": "hoog",
           "quality": "strong",
@@ -882,27 +811,39 @@
             "sourcevalue:nl.wikipedia.org/wiki/burj_khalifa:828",
             "reviewfamily:question-ee0b64645e0fe563:828"
           ],
-          "bank_question_nl": "Wat is de hoogte van de Burj Khalifa in Dubai in meters?"
+          "bank_question_nl": "Wat is de hoogte van de Burj Khalifa in Dubai in meters?",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.burjkhalifa.ae/en/assets/FACT-SHEET.pdf",
+            "evidence_nl": "De officiële factsheet geeft een totale hoogte van 828 meter voor Burj Khalifa."
+          }
         },
         {
-          "id": "nr311",
-          "question_nl": "Hoeveel chromosomen heeft een menselijke lichaamscel normaal in de celkern?",
-          "question_en": "How many chromosomes does the nucleus of a typical human body cell contain?",
+          "id": "nr945",
+          "question_nl": "Hoeveel miljoen inwoners had Argentinië in 2025?",
+          "question_en": "What was Argentina's population in 2025, in millions?",
           "answer": 46,
-          "category": "Biologie & gezondheid",
-          "source_url": "https://www.genome.gov/genetics-glossary/Chromosome",
-          "evidence_nl": "Een normale diploïde menselijke lichaamscel heeft 23 chromosomenparen, samen 46; geslachtscellen en kernloze rode bloedcellen vallen buiten deze vraag.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Toegankelijk alledaags, sportief, cultureel of schoolkennis-anker; geen specialistische hoofdstuk- of atoomnummervulling.",
+          "category": "Geografie",
+          "source_url": "https://data.un.org/en/iso/AR.html",
+          "evidence_nl": "UNData geeft 45.851 duizend inwoners voor 2025: afgerond 46 miljoen.",
+          "source_status": "verified_rounded",
+          "recorded_bank_control": "Wikidata: klopt",
+          "recorded_source_confidence": "hoog",
           "semantic_keys": [
-            "nr:311",
-            "text:hoeveel chromosomen heeft een menselijke lichaamscel normaal in de celkern?",
-            "sourcevalue:genome.gov/genetics-glossary/chromosome:46"
+            "nr:945",
+            "sourcevalue:https://data.un.org/en/iso/AR.html:46"
           ],
-          "bank_question_nl": "Hoeveel chromosomen heeft een menselijke lichaamscel normaal in de celkern?"
+          "replaces_question_id": "nr311",
+          "bank_question_nl": "Hoeveel miljoen inwoners had Argentinië in 2025?",
+          "quality": "strong",
+          "quality_reason_nl": "Een voorstelbare landbevolking vervangt een exact schoolkennisanker.",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-15",
+            "source_url": "https://data.un.org/legacy/en/iso/ar.html",
+            "evidence_nl": "UNData noemt 45.851 duizend inwoners voor Argentinië in 2025; op hele miljoenen is het bestaande bankantwoord 46."
+          }
         },
         {
           "id": "nr1298",
@@ -912,7 +853,7 @@
           "category": "Records en vergelijkingen",
           "source_url": "https://www.guinnessworldrecords.com/world-records/635613-largest-humanoid-robot",
           "evidence_nl": "Guinness vermeldt 18 meter voor de Gundam-robot in Yokohama, erkend op 3 december 2020.",
-          "source_status": "requires_external_review",
+          "source_status": "verified",
           "recorded_bank_control": null,
           "recorded_source_confidence": "natellen",
           "quality": "normal",
@@ -923,7 +864,13 @@
             "sourcevalue:guinnessworldrecords.com/world-records/635613-largest-humanoid-robot:18",
             "reviewfamily:question-e14967b5d1a9d9f0:18"
           ],
-          "bank_question_nl": "Hoeveel meter hoog was de mobiele Gundam-robot in Yokohama in 2020?"
+          "bank_question_nl": "Hoeveel meter hoog was de mobiele Gundam-robot in Yokohama in 2020?",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.guinnessworldrecords.jp/world-records/635613-largest-humanoid-robot",
+            "evidence_nl": "Guinness registreert de mobiele humanoïde Gundamrobot in Yokohama op 3 december 2020 als 18 meter hoog."
+          }
         }
       ],
       "operator": "÷",
@@ -931,14 +878,18 @@
       "agents": {
         "a-tier": {
           "score": 3,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
+          "reason_nl": "2 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
         }
       },
       "risks": [
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "normal"
+      "original_tier": "normal",
+      "play_review": {
+        "decision": "verbeterd",
+        "reason_nl": "Chromosomen vervangen door de bevolking van Argentinië (46 miljoen); toren, bevolking en robot geven twee brede schalen naast een kleine fysieke maat."
+      }
     },
     {
       "id": "legendary-1de456b9aaf9",
@@ -1040,89 +991,6 @@
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
       "original_tier": "legendary"
-    },
-    {
-      "id": "legendary-328608f71050",
-      "number": 22,
-      "tier": "normal",
-      "status": "editorial_candidate",
-      "questions": [
-        {
-          "id": "nr79",
-          "question_nl": "Hoeveel spelers staan er per team op het veld bij honkbal?",
-          "question_en": "How many players does a baseball team have on the field?",
-          "answer": 9,
-          "category": "Sport",
-          "source_url": "https://www.mlb.com/glossary/rules",
-          "evidence_nl": "Een honkbalteam heeft negen spelers in het veld.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Toegankelijk alledaags, sportief, cultureel of schoolkennis-anker; geen specialistische hoofdstuk- of atoomnummervulling.",
-          "semantic_keys": [
-            "nr:79",
-            "text:hoeveel spelers staan er per team op het veld bij honkbal?",
-            "sourcevalue:mlb.com/glossary/rules:9"
-          ],
-          "bank_question_nl": "Hoeveel spelers staan er per team op het veld bij honkbal?"
-        },
-        {
-          "id": "nr449",
-          "question_nl": "Hoeveel kilogram woog de Engelse mastiff Zorba bij zijn record in 1989?",
-          "question_en": "How much did Zorba the mastiff weigh at his 1989 record, in kilograms?",
-          "answer": 156,
-          "category": "Records en vergelijkingen",
-          "source_url": "https://vgl.ucdavis.edu/sites/g/files/dgvnsk15116/files/media/documents/EnglishMastiff20190918_0.pdf",
-          "evidence_nl": "UC Davis vermeldt het Guinness-record van Zorba uit 1989: 155,6 kilogram, afgerond 156.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Recordmassa van een benoemde hond is een specifiek record; normaal als leuke verrassing.",
-          "semantic_keys": [
-            "nr:449",
-            "text:hoeveel kilogram woog de engelse mastiff zorba bij zijn record in 1989?",
-            "sourcevalue:vgl.ucdavis.edu/sites/g/files/dgvnsk15116/files/media/documents/englishmastiff20190918_0.pdf:156",
-            "reviewfamily:question-35aa30af185fa033:156"
-          ],
-          "bank_question_nl": "Hoeveel kilogram woog de Engelse mastiff Zorba bij zijn record in 1989?"
-        },
-        {
-          "id": "nr511",
-          "question_nl": "Hoeveel aardse jaren duurt een jaar op Neptunus?",
-          "question_en": "How many Earth years does Neptune take to orbit the Sun?",
-          "answer": 165,
-          "category": "Sterrenkunde & ruimte",
-          "source_url": "https://science.nasa.gov/neptune/facts/",
-          "evidence_nl": "And Neptune makes a complete orbit around the Sun (a year in Neptunian time) in about 165 Earth years (60,190 Earth days).",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "hoog",
-          "quality": "strong",
-          "quality_reason_nl": "Breed voorstelbare fysieke of astronomische schaal met plausibele grote onzekerheid; geef de bedoelde definitie en eenheid duidelijk.",
-          "semantic_keys": [
-            "nr:511",
-            "text:hoeveel aardse jaren duurt een jaar op neptunus?",
-            "sourcevalue:science.nasa.gov/neptune/facts:165",
-            "reviewfamily:question-d9f9aad4e873b0d7:165"
-          ],
-          "bank_question_nl": "Hoeveel aardse jaren duurt een jaar op Neptunus?"
-        }
-      ],
-      "operator": "+",
-      "calculation": "9 + 156 = 165",
-      "agents": {
-        "a-tier": {
-          "score": 3,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
-        }
-      },
-      "risks": [
-        "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
-        "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
-      ],
-      "original_tier": "normal"
     },
     {
       "id": "legendary-8e9c36e3b6f8",
@@ -1429,74 +1297,81 @@
       "original_tier": "near-legendary"
     },
     {
-      "id": "legendary-12d115ccc5ae",
-      "number": 28,
+      "id": "legendary-532c44899a1f",
+      "number": 27,
       "tier": "normal",
       "status": "editorial_candidate",
       "questions": [
         {
-          "id": "nr945",
-          "question_nl": "Hoeveel miljoen inwoners had Argentinië in 2025?",
-          "question_en": "What was Argentina's population in 2025, in millions?",
-          "answer": 46,
-          "category": "Geografie",
-          "source_url": "https://data.un.org/en/iso/AR.html",
-          "evidence_nl": "UNData geeft 45.851 duizend inwoners voor 2025: afgerond 46 miljoen.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": "Wikidata: klopt",
-          "recorded_source_confidence": "hoog",
-          "quality": "strong",
-          "quality_reason_nl": "Fysieke/schaalvraag met een voorstelbaar onderwerp en onzeker antwoord.",
-          "semantic_keys": [
-            "nr:945",
-            "text:hoeveel miljoen inwoners had argentinië in 2025?",
-            "sourcevalue:data.un.org/en/iso/ar.html:46"
-          ],
-          "bank_question_nl": "Hoeveel miljoen inwoners had Argentinië in 2025?"
-        },
-        {
-          "id": "nr109",
-          "question_nl": "Hoeveel botten heeft een volwassen menselijke schedel?",
-          "question_en": "How many bones make up an adult human skull?",
-          "answer": 22,
+          "id": "nr107",
+          "question_nl": "Hoeveel botten bevat één menselijke hand inclusief de pols?",
+          "question_en": "How many bones are in one human hand, including the wrist?",
+          "answer": 27,
           "category": "Biologie & gezondheid",
-          "source_url": "https://en.wikipedia.org/wiki/Human_skull",
-          "evidence_nl": "De schedel telt 22 botten: acht schedelbeenderen en veertien aangezichtsbeenderen.",
+          "source_url": "https://en.wikipedia.org/wiki/Hand",
+          "evidence_nl": "De menselijke hand telt 27 botten, de polsbeentjes meegerekend.",
           "source_status": "requires_external_review",
           "recorded_bank_control": null,
           "recorded_source_confidence": "handmatig",
           "quality": "normal",
           "quality_reason_nl": "Toegankelijk alledaags, sportief, cultureel of schoolkennis-anker; geen specialistische hoofdstuk- of atoomnummervulling.",
           "semantic_keys": [
-            "nr:109",
-            "text:hoeveel botten heeft een volwassen menselijke schedel?",
-            "sourcevalue:en.wikipedia.org/wiki/human_skull:22"
+            "nr:107",
+            "text:hoeveel botten bevat één menselijke hand inclusief de pols?",
+            "sourcevalue:en.wikipedia.org/wiki/hand:27"
           ],
-          "bank_question_nl": "Hoeveel botten heeft een volwassen menselijke schedel?"
+          "bank_question_nl": "Hoeveel botten bevat één menselijke hand inclusief de pols?"
         },
         {
-          "id": "nr1101",
-          "question_nl": "Hoeveel karaat is puur goud?",
-          "question_en": "What is the carat rating of pure gold?",
-          "answer": 24,
-          "category": "Mode en lifestyle",
-          "source_url": "https://nl.wikipedia.org/wiki/Goud",
-          "evidence_nl": "Het massagehalte aan goud van sieraden wordt gemeten in karaat; zuiver goud is 24 karaat.",
+          "id": "nr797",
+          "question_nl": "Hoeveel meter hoog is de Taj Mahal?",
+          "question_en": "How tall is the Taj Mahal, in metres?",
+          "answer": 73,
+          "category": "Gebouwen en infrastructuur",
+          "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal",
+          "evidence_nl": "| height = cvt|73|m|ft",
           "source_status": "requires_external_review",
+          "recorded_bank_control": "Wikidata: klopt",
+          "recorded_source_confidence": "hoog",
+          "quality": "strong",
+          "quality_reason_nl": "Breed voorstelbare fysieke of astronomische schaal met plausibele grote onzekerheid; geef de bedoelde definitie en eenheid duidelijk.",
+          "semantic_keys": [
+            "nr:797",
+            "text:hoeveel meter hoog is de taj mahal?",
+            "sourcevalue:en.wikipedia.org/wiki/taj_mahal:73",
+            "reviewfamily:question-8a55bb07ec5cd4f6:73"
+          ],
+          "bank_question_nl": "Hoeveel meter hoog is de Taj Mahal?"
+        },
+        {
+          "id": "nr1137",
+          "question_nl": "Hoeveel kilometer boven zeeniveau ligt de Kármánlijn?",
+          "question_en": "How high above sea level is the Kármán line, in kilometres?",
+          "answer": 100,
+          "category": "Sterrenkunde & ruimte",
+          "source_url": "https://nl.wikipedia.org/wiki/K%C3%A1rm%C3%A1nlijn",
+          "evidence_nl": "De kármánlijn is een denkbeeldige grens op een hoogte van 100 kilometer boven de Aarde.",
+          "source_status": "verified",
           "recorded_bank_control": null,
           "recorded_source_confidence": "hoog",
-          "quality": "normal",
-          "quality_reason_nl": "Toegankelijk alledaags, sportief, cultureel of schoolkennis-anker; geen specialistische hoofdstuk- of atoomnummervulling.",
           "semantic_keys": [
-            "nr:1101",
-            "text:hoeveel karaat is puur goud?",
-            "sourcevalue:nl.wikipedia.org/wiki/goud:24"
+            "nr:1137",
+            "sourcevalue:https://nl.wikipedia.org/wiki/K%C3%A1rm%C3%A1nlijn:100"
           ],
-          "bank_question_nl": "Hoeveel karaat is puur goud?"
+          "replaces_question_id": "nr1136",
+          "bank_question_nl": "Hoeveel kilometer boven de aarde ligt de Kármánlijn?",
+          "quality": "normal",
+          "quality_reason_nl": "Een vastgelegde conventie, geen gemeten natuurlijke grens; bruikbaar hoogteanker zonder te doen alsof de waarde biologisch of fysisch varieert.",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.fai.org/news/statement-about-karman-line",
+            "evidence_nl": "FAI gebruikt de Kármánlijn op 100 km hoogte als conventionele ruimtegrens; geen universele natuurlijke of juridische grens."
+          }
         }
       ],
-      "operator": "−",
-      "calculation": "46 − 22 = 24",
+      "operator": "+",
+      "calculation": "27 + 73 = 100",
       "agents": {
         "a-tier": {
           "score": 3,
@@ -1507,7 +1382,11 @@
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "normal"
+      "original_tier": "normal",
+      "play_review": {
+        "decision": "verbeterd",
+        "reason_nl": "Kookpunt vervangen door de hoogte van de Kármánlijn (100 km). De standaardtelling van handbotten blijft het telanker naast gebouw- en hoogteschaal."
+      }
     },
     {
       "id": "legendary-e3c0c68327ec",
@@ -1611,190 +1490,6 @@
       "original_tier": "near-legendary"
     },
     {
-      "id": "legendary-9defcdf92067",
-      "number": 36,
-      "tier": "normal",
-      "status": "editorial_candidate",
-      "questions": [
-        {
-          "id": "nr530",
-          "question_nl": "Hoeveel uren duurde de historische Apollo 11-missie naar de maan?",
-          "question_en": "How many hours did the Apollo 11 mission last?",
-          "answer": 195,
-          "category": "Sterrenkunde & ruimte",
-          "source_url": "https://en.wikipedia.org/wiki/Apollo_11",
-          "evidence_nl": "De missie duurde 195 uur en 18 minuten.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "strong",
-          "quality_reason_nl": "Herkenbaar onderwerp met een onzekere maar voorstelbare grootte; een nauwkeurige schatting kan voldoening geven, na bronafbakening.",
-          "semantic_keys": [
-            "nr:530",
-            "text:hoeveel uren duurde de historische apollo 11-missie naar de maan?",
-            "sourcevalue:en.wikipedia.org/wiki/apollo_11:195",
-            "reviewfamily:question-5c72ae2a58233b28:195"
-          ],
-          "bank_question_nl": "Hoeveel uren duurde de historische Apollo 11-missie naar de maan?"
-        },
-        {
-          "id": "nr163",
-          "question_nl": "Hoeveel poten heeft een spin?",
-          "question_en": "How many legs do spiders have?",
-          "answer": 8,
-          "category": "Dieren",
-          "source_url": "https://en.wikipedia.org/wiki/Spider",
-          "evidence_nl": "Spinnen hebben acht poten; dat onderscheidt ze van insecten.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Toegankelijk alledaags, sportief, cultureel of schoolkennis-anker; geen specialistische hoofdstuk- of atoomnummervulling.",
-          "semantic_keys": [
-            "nr:163",
-            "text:hoeveel poten heeft een spin?",
-            "sourcevalue:en.wikipedia.org/wiki/spider:8"
-          ],
-          "bank_question_nl": "Hoeveel poten heeft een spin?"
-        },
-        {
-          "id": "nr799",
-          "question_nl": "Hoeveel meter hoog is de Cairo Tower?",
-          "question_en": "How tall is Cairo Tower, in metres?",
-          "answer": 187,
-          "category": "Gebouwen en infrastructuur",
-          "source_url": "https://nl.wikipedia.org/wiki/Cairo_Tower",
-          "evidence_nl": "De Cairo Tower is 187 meter hoog.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": "Wikidata: klopt",
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Cairo Tower is minder breed herkenbaar; een normale gebouwhoogteschatting.",
-          "semantic_keys": [
-            "nr:799",
-            "text:hoeveel meter hoog is de cairo tower?",
-            "sourcevalue:nl.wikipedia.org/wiki/cairo_tower:187",
-            "reviewfamily:question-3fb92f9864eaa41a:187"
-          ],
-          "bank_question_nl": "Hoeveel meter hoog is de Cairo Tower?"
-        }
-      ],
-      "operator": "−",
-      "calculation": "195 − 8 = 187",
-      "agents": {
-        "a-tier": {
-          "score": 3,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
-        }
-      },
-      "risks": [
-        "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
-        "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
-      ],
-      "original_tier": "normal"
-    },
-    {
-      "id": "legendary-34da188ddc33",
-      "number": 38,
-      "tier": "normal",
-      "status": "editorial_candidate",
-      "questions": [
-        {
-          "id": "nr167",
-          "question_nl": "Hoeveel vleugelslagen per seconde kan een kolibrie in volle vlucht maken?",
-          "question_en": "How many times a second can a hummingbird beat its wings?",
-          "answer": 80,
-          "category": "Dieren",
-          "source_url": "https://en.wikipedia.org/wiki/Hummingbird",
-          "evidence_nl": "Kolibries halen tot ongeveer 80 vleugelslagen per seconde.",
-          "source_status": "verified_rounded",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "strong",
-          "quality_reason_nl": "Herkenbaar onderwerp met een onzekere maar voorstelbare grootte; een nauwkeurige schatting kan voldoening geven, na bronafbakening.",
-          "semantic_keys": [
-            "nr:167",
-            "text:hoeveel vleugelslagen per seconde kan een kolibrie in volle vlucht maken?",
-            "sourcevalue:en.wikipedia.org/wiki/hummingbird:80",
-            "reviewfamily:question-881805258461d192:80"
-          ],
-          "bank_question_nl": "Hoeveel vleugelslagen per seconde kan een kolibrie in volle vlucht maken?",
-          "source_review": {
-            "source_status": "verified_rounded",
-            "checked_on": "2026-11-15",
-            "source_url": "https://en.wikipedia.org/wiki/Hummingbird",
-            "evidence_nl": "De bron noemt tot 80 vleugelslagen per seconde voor typische kolibries; soorten verschillen sterk."
-          }
-        },
-        {
-          "id": "nr609",
-          "question_nl": "Welk percentage van het lichaam van een volwassen man bestaat uit water?",
-          "question_en": "What percentage of an adult man's body is water?",
-          "answer": 60,
-          "category": "Biologie & gezondheid",
-          "source_url": "https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body",
-          "evidence_nl": "Up to 60% of the human adult body is water.",
-          "source_status": "verified_rounded",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "hoog",
-          "quality": "normal",
-          "quality_reason_nl": "Bekend anker of tel-/historisch weetje; geen zelfstandige sterke schaalvraag.",
-          "semantic_keys": [
-            "nr:609",
-            "text:hoeveel procent van het menselijk lichaam bestaat ongeveer uit water?",
-            "sourcevalue:usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body:60",
-            "reviewfamily:question-fe5ddd01ba5648c6:60"
-          ],
-          "bank_question_nl": "Hoeveel procent van het menselijk lichaam bestaat ongeveer uit water?",
-          "source_review": {
-            "source_status": "verified_rounded",
-            "checked_on": "2026-11-15",
-            "source_url": "https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body",
-            "evidence_nl": "USGS noemt circa 60% voor volwassen mannen en circa 55% voor volwassen vrouwen; 60% is geen universeel menselijk percentage."
-          }
-        },
-        {
-          "id": "nr948",
-          "question_nl": "Hoeveel miljoen inwoners had Chili in 2025?",
-          "question_en": "What was Chile's population in 2025, in millions?",
-          "answer": 20,
-          "category": "Geografie",
-          "source_url": "https://data.un.org/legacy/en/iso/cl.html",
-          "evidence_nl": "UNData vermeldt 19.860 duizend inwoners in 2025: afgerond 20 miljoen.",
-          "source_status": "verified_rounded",
-          "recorded_bank_control": "Wikidata: klopt",
-          "recorded_source_confidence": "hoog",
-          "quality": "normal",
-          "quality_reason_nl": "Bekend anker of tel-/historisch weetje; geen zelfstandige sterke schaalvraag.",
-          "semantic_keys": [
-            "nr:948",
-            "text:hoeveel miljoen inwoners had chili in 2025?",
-            "sourcevalue:data.un.org/legacy/en/iso/cl.html:20"
-          ],
-          "bank_question_nl": "Hoeveel miljoen inwoners had Chili in 2025?",
-          "source_review": {
-            "source_status": "verified_rounded",
-            "checked_on": "2026-11-15",
-            "source_url": "https://data.un.org/legacy/en/iso/cl.html",
-            "evidence_nl": "UNData geeft een projectie van 19.860.000 inwoners voor Chili in 2025; op miljoenen 20."
-          }
-        }
-      ],
-      "operator": "−",
-      "calculation": "80 − 60 = 20",
-      "agents": {
-        "a-tier": {
-          "score": 5,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
-        }
-      },
-      "risks": [
-        "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
-        "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
-      ],
-      "original_tier": "legendary"
-    },
-    {
       "id": "legendary-219f41fc845b",
       "number": 40,
       "tier": "normal",
@@ -1888,18 +1583,18 @@
     {
       "id": "legendary-661ea5f68a42",
       "number": 48,
-      "tier": "normal",
+      "tier": "near-legendary",
       "status": "editorial_candidate",
       "questions": [
         {
           "id": "nr224",
-          "question_nl": "Hoeveel kamers heeft het Witte Huis?",
-          "question_en": "How many rooms are in the White House?",
+          "question_nl": "Hoeveel kamers telt het woongebouw van het Witte Huis?",
+          "question_en": "How many rooms are in the White House Executive Residence?",
           "answer": 132,
           "category": "Gebouwen en infrastructuur",
           "source_url": "https://nl.wikipedia.org/wiki/Witte_Huis_%28Washington%29",
           "evidence_nl": "In cijfers omvat het Witte Huis:\n\n6 verdiepingen waarvan 2 ondergronds\n5111 m² vloeroppervlakte\n132 kamers\n412 deuren\n147 ramen\n35 toiletten\n28 open haarden\n8 trappen\n3 liften\n1 bowlinghal\n1 filmzaal\n1 zwembad\n1 basketbalveld\n1 tennisveld\n1 staatsbalzaal\n\n\nGalerij\n\n\nZie ook\nWitte Huis (Moskou)\n\n\nExt",
-          "source_status": "requires_external_review",
+          "source_status": "verified",
           "recorded_bank_control": null,
           "recorded_source_confidence": "hoog",
           "quality": "normal",
@@ -1910,48 +1605,65 @@
             "sourcevalue:nl.wikipedia.org/wiki/witte_huis_(washington):132",
             "reviewfamily:question-a9edac6f1e2c2e1d:132"
           ],
-          "bank_question_nl": "Hoeveel kamers heeft het Witte Huis?"
+          "bank_question_nl": "Hoeveel kamers heeft het Witte Huis?",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.whitehouse.gov/About-the-white-house/The-white-house/",
+            "evidence_nl": "Het Witte Huis noemt 132 kamers voor de Executive Residence, inclusief 35 badkamers en verdeeld over zes niveaus; niet alle gebouwen van het complex."
+          }
         },
         {
-          "id": "nr435",
-          "question_nl": "Hoeveel centimeter schofthoogte had de Duitse dog Zeus in 2011?",
-          "question_en": "How tall was Zeus the Great Dane at the shoulder in 2011, in centimetres?",
+          "id": "nr1213",
+          "question_nl": "Hoe hoog is de Domtoren in Utrecht, in meters?",
+          "question_en": "How tall is Utrecht's Dom Tower, in metres?",
           "answer": 112,
-          "category": "Records en vergelijkingen",
-          "source_url": "https://www.guinnessworldrecords.com/world-records/tallest-dog-ever",
-          "evidence_nl": "Guinness vermeldt 111,8 centimeter op 4 oktober 2011: afgerond 112.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Een benoemde recordhond is een arbitraire individuele meting.",
+          "category": "Gebouwen en infrastructuur",
+          "source_url": "https://nl.wikipedia.org/wiki/Dom_van_Utrecht",
+          "evidence_nl": "De 112,32 meter hoge Domtoren is de hoogste kerktoren van Nederland en het hoogste gebouw van Utrecht.",
+          "source_status": "verified_rounded",
+          "recorded_bank_control": "Wikidata: geen waarde",
+          "recorded_source_confidence": "hoog",
           "semantic_keys": [
-            "nr:435",
-            "text:hoeveel centimeter schofthoogte had de duitse dog zeus in 2011?",
-            "sourcevalue:guinnessworldrecords.com/world-records/tallest-dog-ever:112",
-            "reviewfamily:question-a29fe57759522ccf:112"
+            "nr:1213",
+            "sourcevalue:https://nl.wikipedia.org/wiki/Dom_van_Utrecht:112"
           ],
-          "bank_question_nl": "Hoeveel centimeter schofthoogte had de Duitse dog Zeus in 2011?"
+          "replaces_question_id": "nr435",
+          "bank_question_nl": "Hoeveel meter hoog is de Domtoren in Utrecht?",
+          "quality": "strong",
+          "quality_reason_nl": "Een herkenbare toren met een beredeneerbare maar onzekere hoogte.",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.domtoren.nl/het-verhaal/",
+            "evidence_nl": "De officiële Domtorensite geeft 112,32 meter; het bestaande bankantwoord op hele meters is 112."
+          }
         },
         {
-          "id": "nr687",
-          "question_nl": "Hoeveel uur per dag is een leeuw inactief?",
-          "question_en": "How many hours a day does a lion spend resting?",
+          "id": "nr948",
+          "question_nl": "Hoeveel miljoen inwoners had Chili in 2025?",
+          "question_en": "What was Chile's population in 2025, in millions?",
           "answer": 20,
-          "category": "Dieren",
-          "source_url": "https://en.wikipedia.org/wiki/Lion",
-          "evidence_nl": "Leeuwen zijn ongeveer twintig uur per dag inactief; dat omvat rusten en is niet uitsluitend slaap.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "strong",
-          "quality_reason_nl": "Fysieke/schaalvraag met een voorstelbaar onderwerp en onzeker antwoord.",
+          "category": "Geografie",
+          "source_url": "https://data.un.org/legacy/en/iso/cl.html",
+          "evidence_nl": "UNData vermeldt 19.860 duizend inwoners in 2025: afgerond 20 miljoen.",
+          "source_status": "verified_rounded",
+          "recorded_bank_control": "Wikidata: klopt",
+          "recorded_source_confidence": "hoog",
           "semantic_keys": [
-            "nr:687",
-            "text:hoeveel uur per dag is een leeuw inactief?",
-            "sourcevalue:en.wikipedia.org/wiki/lion:20"
+            "nr:948",
+            "sourcevalue:https://data.un.org/legacy/en/iso/cl.html:20"
           ],
-          "bank_question_nl": "Hoeveel uur per dag is een leeuw inactief?"
+          "replaces_question_id": "nr687",
+          "bank_question_nl": "Hoeveel miljoen inwoners had Chili in 2025?",
+          "quality": "strong",
+          "quality_reason_nl": "Een landbevolking met peiljaar vervangt een onbepaald dierlijk daggemiddelde.",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-15",
+            "source_url": "https://data.un.org/legacy/en/iso/cl.html",
+            "evidence_nl": "UNData geeft 19.860 duizend inwoners voor Chili in 2025; op hele miljoenen is het bestaande bankantwoord 20."
+          }
         }
       ],
       "operator": "−",
@@ -1959,14 +1671,18 @@
       "agents": {
         "a-tier": {
           "score": 3,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
+          "reason_nl": "2 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
         }
       },
       "risks": [
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "normal"
+      "original_tier": "normal",
+      "play_review": {
+        "decision": "verbeterd",
+        "reason_nl": "Zeus vervangen door de Utrechtse Domtoren (112 m), leeuwenrust door Chili (20 miljoen). Drie afgebakende gebouw- en bevolkingsschalen."
+      }
     },
     {
       "id": "legendary-b07634251a34",
@@ -2104,8 +1820,8 @@
         },
         {
           "id": "nr445",
-          "question_nl": "Hoeveel centimeter lang was de kat Stewie bij zijn record in 2010?",
-          "question_en": "How long was Stewie the cat at his 2010 record, in centimetres?",
+          "question_nl": "Hoeveel centimeter mat de kat Stewie van neus tot staartpunt bij zijn record in 2010?",
+          "question_en": "How long was Stewie the cat from nose to tail tip at his 2010 record, in centimetres?",
           "answer": 123,
           "category": "Records en vergelijkingen",
           "source_url": "https://dev-micro.guinnessworldrecords.com/records/showcase/animals/cats",
@@ -2130,8 +1846,8 @@
         },
         {
           "id": "nr647",
-          "question_nl": "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger?",
-          "question_en": "How much does an adult male Bengal tiger weigh, in kilograms?",
+          "question_nl": "Wat is het typische gewicht van een volwassen mannelijke Bengaalse tijger, in kilogram?",
+          "question_en": "What is the typical weight of an adult male Bengal tiger, in kilograms?",
           "answer": 220,
           "category": "Dieren",
           "source_url": "https://seaworld.org/animals/all-about/tiger/characteristics/",
@@ -2168,7 +1884,11 @@
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "legendary"
+      "original_tier": "legendary",
+      "play_review": {
+        "decision": "verbeterd",
+        "reason_nl": "Stewie gemeten van neus tot staartpunt; tijgergewicht als typisch gewicht omschreven. De drie fysieke schalen blijven intact."
+      }
     },
     {
       "id": "legendary-b6f851b2b519",
@@ -2357,135 +2077,161 @@
       "original_tier": "normal"
     },
     {
-      "id": "legendary-f27b189c4dcb",
-      "number": 56,
-      "tier": "normal",
+      "id": "legendary-eaff0d16bdb4",
+      "number": 57,
+      "tier": "near-legendary",
       "status": "editorial_candidate",
       "questions": [
         {
-          "id": "nr247",
-          "question_nl": "Hoeveel treden telt de wenteltrap in het Vrijheidsbeeld naar de kroon?",
-          "question_en": "How many steps lead to the Statue of Liberty's crown?",
-          "answer": 354,
+          "id": "nr253",
+          "question_nl": "Wat is de dakhoogte van het Empire State Building in New York in meters?",
+          "question_en": "How high is the Empire State Building's roof, in metres?",
+          "answer": 381,
           "category": "Gebouwen en infrastructuur",
-          "source_url": "https://en.wikipedia.org/wiki/Statue_of_Liberty",
-          "evidence_nl": "De wenteltrap naar de kroon telt 354 treden.",
-          "source_status": "requires_external_review",
+          "source_url": "https://nl.wikipedia.org/wiki/Empire_State_Building",
+          "evidence_nl": "Het Empire State Building is een 381 meter hoge wolkenkrabber in New York.",
+          "source_status": "verified",
           "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Een specifiek trappenaantal is nichekennis.",
-          "semantic_keys": [
-            "nr:247",
-            "text:hoeveel treden telt de wenteltrap in het vrijheidsbeeld naar de kroon?",
-            "sourcevalue:en.wikipedia.org/wiki/statue_of_liberty:354",
-            "reviewfamily:question-e462d9ee14ed78bc:354"
-          ],
-          "bank_question_nl": "Hoeveel treden telt de wenteltrap in het Vrijheidsbeeld naar de kroon?"
-        },
-        {
-          "id": "nr404",
-          "question_nl": "Hoeveel kilometer per uur is de bovengrens van windkracht 8?",
-          "question_en": "What is the upper speed of a force 8 wind, in kilometres per hour?",
-          "answer": 74,
-          "category": "Natuurkunde",
-          "source_url": "https://nl.wikipedia.org/wiki/Schaal_van_Beaufort",
-          "evidence_nl": "Windkracht 8 loopt van 62 tot 74 kilometer per uur.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
+          "recorded_source_confidence": "hoog",
           "quality": "strong",
-          "quality_reason_nl": "Breed voorstelbare fysieke of astronomische schaal met plausibele grote onzekerheid; geef de bedoelde definitie en eenheid duidelijk.",
+          "quality_reason_nl": "Fysieke/schaalvraag met een voorstelbaar onderwerp en onzeker antwoord.",
           "semantic_keys": [
-            "nr:404",
-            "text:hoeveel kilometer per uur is de bovengrens van windkracht 8?",
-            "sourcevalue:nl.wikipedia.org/wiki/schaal_van_beaufort:74",
-            "reviewfamily:question-9c96780ad191c25e:74"
+            "nr:253",
+            "text:wat is de dakhoogte van het empire state building in new york in meters?",
+            "sourcevalue:nl.wikipedia.org/wiki/empire_state_building:381"
           ],
-          "bank_question_nl": "Hoeveel kilometer per uur is de bovengrens van windkracht 8?"
+          "bank_question_nl": "Wat is de dakhoogte van het Empire State Building in New York in meters?",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://nl.wikipedia.org/wiki/Empire_State_Building",
+            "evidence_nl": "De bron noemt een dakhoogte van 381 m voor het Empire State Building."
+          }
         },
         {
-          "id": "nr1091",
-          "question_nl": "Hoeveel delen CO₂ per miljoen bevatte de lucht vóór de industrialisatie?",
-          "question_en": "How many parts per million of CO₂ were in pre-industrial air?",
-          "answer": 280,
-          "category": "Milieu en duurzaamheid",
-          "source_url": "https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere",
-          "evidence_nl": "De pre-industriele concentratie wordt op ongeveer 280 ppm gesteld.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
+          "id": "nr1507",
+          "question_nl": "Hoeveel millimeter is één centimeter?",
+          "question_en": "How many millimetres are in a centimetre?",
+          "answer": 10,
+          "category": "Wiskunde",
+          "source_url": "https://en.wikipedia.org/wiki/Centimetre",
+          "evidence_nl": "Eén centimeter is tien millimeter.",
+          "source_status": "verified",
+          "recorded_bank_control": "Gecontroleerd 2026-11-13",
           "recorded_source_confidence": "handmatig",
           "quality": "normal",
-          "quality_reason_nl": "CO2 in ppm vraagt vakkennis en is minder direct voorstelbaar zonder uitleg.",
+          "quality_reason_nl": "Toegankelijk alledaags, sportief, cultureel of schoolkennis-anker; geen specialistische hoofdstuk- of atoomnummervulling.",
           "semantic_keys": [
-            "nr:1091",
-            "text:hoeveel delen co₂ per miljoen delen lucht zat er rond het pre-industriële referentiejaar in de atmosfeer?",
-            "sourcevalue:en.wikipedia.org/wiki/carbon_dioxide_in_earth's_atmosphere:280",
-            "reviewfamily:question-397b6d04e0d86a87:280"
+            "nr:1507",
+            "text:hoeveel millimeter is één centimeter?",
+            "sourcevalue:en.wikipedia.org/wiki/centimetre:10"
           ],
-          "bank_question_nl": "Hoeveel delen CO₂ per miljoen delen lucht zat er rond het pre-industriële referentiejaar in de atmosfeer?"
+          "bank_question_nl": "Hoeveel millimeter is één centimeter?",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://en.wikipedia.org/wiki/Centimetre",
+            "evidence_nl": "In de eenhedentabel is één centimeter gelijk aan tien millimeter."
+          }
+        },
+        {
+          "id": "nr307",
+          "question_nl": "Op hoeveel meter boven zeeniveau ligt het Titicacameer?",
+          "question_en": "How high above sea level is Lake Titicaca, in metres?",
+          "answer": 3810,
+          "category": "Geografie",
+          "source_url": "http://web.archive.org/web/20260310132911/https://www.britannica.com/place/Lake-Titicaca",
+          "evidence_nl": "Lake Titicaca , the world’s highest lake navigable to large vessels , lying at 12,500 feet (3,810 metres) above sea level in the Andes Mountains of South America , astride the border between Peru to the west and Bolivia to the east.",
+          "source_status": "verified_rounded",
+          "recorded_bank_control": null,
+          "recorded_source_confidence": "hoog",
+          "quality": "strong",
+          "quality_reason_nl": "Fysieke/schaalvraag met een voorstelbaar onderwerp en onzeker antwoord.",
+          "semantic_keys": [
+            "nr:307",
+            "text:op hoeveel meter boven zeeniveau ligt het titicacameer?",
+            "sourcevalue:web.archive.org/web/20260310132911/https://www.britannica.com/place/lake-titicaca:3810"
+          ],
+          "bank_question_nl": "Op hoeveel meter boven zeeniveau ligt het Titicacameer?",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.unesco.org/en/articles/titicaca-sacred-lake-reveals-its-secrets-0",
+            "evidence_nl": "UNESCO beschrijft het Titicacameer op 3810 m boven zeeniveau."
+          }
         }
       ],
-      "operator": "−",
-      "calculation": "354 − 74 = 280",
+      "operator": "×",
+      "calculation": "381 × 10 = 3810",
       "agents": {
         "a-tier": {
-          "score": 3,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
+          "score": 4,
+          "reason_nl": "2 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
         }
       },
       "risks": [
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "normal"
+      "original_tier": "near-legendary"
     },
     {
       "id": "legendary-f835a1c3ef9b",
       "number": 58,
-      "tier": "normal",
+      "tier": "legendary",
       "status": "editorial_candidate",
       "questions": [
         {
-          "id": "nr991",
-          "question_nl": "Hoeveel dagen zaten er tussen D-Day en de bevrijding van Parijs?",
-          "question_en": "How many days passed between D-Day and the liberation of Paris?",
+          "id": "nr772",
+          "question_nl": "Hoeveel boogopeningen telde elk van de onderste drie gevelringen van het Colosseum oorspronkelijk?",
+          "question_en": "How many arches originally formed each of the Colosseum's three lower facade tiers?",
           "answer": 80,
-          "category": "Geschiedenis",
-          "source_url": "https://nl.wikipedia.org/wiki/Bevrijding_van_Parijs",
-          "evidence_nl": "D-Day was op 6 juni 1944; Parijs werd op 25 augustus 1944 bevrijd: 80 dagen later.",
-          "source_status": "requires_external_review",
+          "category": "Gebouwen en infrastructuur",
+          "source_url": "https://en.wikipedia.org/wiki/Colosseum",
+          "evidence_nl": "Elke van de onderste drie verdiepingen telt tachtig bogen.",
+          "source_status": "verified",
           "recorded_bank_control": null,
-          "recorded_source_confidence": "hoog",
-          "quality": "normal",
-          "quality_reason_nl": "Tussen twee historische datums tellen is een normaal kennisanker.",
+          "recorded_source_confidence": "handmatig",
           "semantic_keys": [
-            "nr:991",
-            "text:hoeveel dagen zaten er tussen d-day en de bevrijding van parijs?",
-            "sourcevalue:nl.wikipedia.org/wiki/bevrijding_van_parijs:80",
-            "reviewfamily:question-2cdfdc9a15f70b02:80"
+            "nr:772",
+            "sourcevalue:https://en.wikipedia.org/wiki/Colosseum:80"
           ],
-          "bank_question_nl": "Hoeveel dagen zaten er tussen D-Day en de bevrijding van Parijs?"
+          "replaces_question_id": "nr991",
+          "bank_question_nl": "Hoeveel boogsegmenten telt het Colosseum per verdieping?",
+          "quality": "strong",
+          "quality_reason_nl": "Via de omtrek van het amfitheater en de breedte van een boog is de schaal te benaderen; geen specialistische hoofdstuktelling.",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.turismoroma.it/it/node/1155",
+            "evidence_nl": "De officiële toerismesite van Rome beschrijft de drie onderste gevelniveaus met elk tachtig boogopeningen; bedoeld is de oorspronkelijke complete gevel."
+          }
         },
         {
-          "id": "nr260",
-          "question_nl": "Hoeveel deelstaten telt Duitsland?",
-          "question_en": "How many federal states are in Germany?",
+          "id": "nr583",
+          "question_nl": "Hoeveel rijtuigen vormen een Eurostar e320-trein?",
+          "question_en": "How many carriages make up a Eurostar e320 train?",
           "answer": 16,
-          "category": "Geografie",
-          "source_url": "https://nl.wikipedia.org/wiki/Duitsland",
-          "evidence_nl": "De Bondsrepubliek Duitsland is een federatie van zestien deelstaten, in het Duits Bundesländer of Länder (enkelvoud Land) geheten.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "hoog",
-          "quality": "normal",
-          "quality_reason_nl": "Toegankelijk alledaags, sportief, cultureel of schoolkennis-anker; geen specialistische hoofdstuk- of atoomnummervulling.",
+          "category": "Vervoer",
+          "source_url": "https://press.siemens.com/global/en/feature/eurostar-e320-high-speed-trains-eurostar-international-limited",
+          "evidence_nl": "Een Eurostar e320 bestaat uit zestien rijtuigen; dit is niet de oudere e300.",
+          "source_status": "verified",
+          "recorded_bank_control": "2026-11-13",
+          "recorded_source_confidence": "handmatig",
           "semantic_keys": [
-            "nr:260",
-            "text:hoeveel deelstaten telt duitsland?",
-            "sourcevalue:nl.wikipedia.org/wiki/duitsland:16"
+            "nr:583",
+            "sourcevalue:https://press.siemens.com/global/en/feature/eurostar-e320-high-speed-trains-eurostar-international-limited:16"
           ],
-          "bank_question_nl": "Hoeveel deelstaten telt Duitsland?"
+          "replaces_question_id": "nr260",
+          "bank_question_nl": "Hoeveel rijtuigen vormen een Eurostar e320-trein?",
+          "quality": "strong",
+          "quality_reason_nl": "Een voorstelbare treinlengte en rijtuiglengte geven houvast voor het aantal.",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://press.siemens.com/global/en/feature/eurostar-e320-high-speed-trains-eurostar-international-limited",
+            "evidence_nl": "Fabrikant Siemens beschrijft de Eurostar e320 als een 16-rijtuigentrein; de oudere e300 is niet bedoeld."
+          }
         },
         {
           "id": "nr778",
@@ -2495,7 +2241,7 @@
           "category": "Gebouwen en infrastructuur",
           "source_url": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
           "evidence_nl": "De hoofdoverspanning van de Golden Gate Bridge is 4200 voet lang: 1280 meter.",
-          "source_status": "requires_external_review",
+          "source_status": "verified_rounded",
           "recorded_bank_control": "Wikidata: WIJKT AF",
           "recorded_source_confidence": "hoog",
           "quality": "strong",
@@ -2506,7 +2252,13 @@
             "sourcevalue:en.wikipedia.org/wiki/golden_gate_bridge:1280",
             "reviewfamily:question-7b9cdd457dcd8f48:1280"
           ],
-          "bank_question_nl": "Hoeveel meter lang is de hoofdoverspanning van de Golden Gate Bridge?"
+          "bank_question_nl": "Hoeveel meter lang is de hoofdoverspanning van de Golden Gate Bridge?",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+            "evidence_nl": "De brugbeheerder geeft 4200 voet of 1280 meter voor de hoofdoverspanning tussen de torens; de totale bruglengte is iets anders."
+          }
         }
       ],
       "operator": "×",
@@ -2514,14 +2266,18 @@
       "agents": {
         "a-tier": {
           "score": 3,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
+          "reason_nl": "3 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
         }
       },
       "risks": [
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "normal"
+      "original_tier": "normal",
+      "play_review": {
+        "decision": "verbeterd",
+        "reason_nl": "D-Day vervangen door 80 boogopeningen in een onderste gevelring van het Colosseum; deelstaten door 16 rijtuigen van de Eurostar e320. De brugoverspanning blijft."
+      }
     },
     {
       "id": "legendary-5c0d8751793f",
@@ -2594,172 +2350,6 @@
       ],
       "operator": "÷",
       "calculation": "2500 ÷ 250 = 10",
-      "agents": {
-        "a-tier": {
-          "score": 3,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
-        }
-      },
-      "risks": [
-        "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
-        "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
-      ],
-      "original_tier": "normal"
-    },
-    {
-      "id": "legendary-fbf30f6fc02a",
-      "number": 73,
-      "tier": "normal",
-      "status": "editorial_candidate",
-      "questions": [
-        {
-          "id": "nr335",
-          "question_nl": "Hoeveel strepen staan er op de vlag van de Verenigde Staten?",
-          "question_en": "How many stripes are on the US flag?",
-          "answer": 13,
-          "category": "Geschiedenis",
-          "source_url": "https://nl.wikipedia.org/wiki/Verenigde_Staten",
-          "evidence_nl": "Geografie\n\n\nBestuurlijke indeling\n\nSinds de Onafhankelijkheidsverklaring in 1776, waarbij de VS bestond uit 13 staten, groeide het land uit tot vijftig staten:\nAlabama - Alaska - Arizona - Arkansas - Californië - Colorado - Connecticut - Delaware - Florida - Georgia - Hawaï - Idaho - Illinois - Indi",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "hoog",
-          "quality": "normal",
-          "quality_reason_nl": "Toegankelijk alledaags, sportief, cultureel of schoolkennis-anker; geen specialistische hoofdstuk- of atoomnummervulling.",
-          "semantic_keys": [
-            "nr:335",
-            "text:hoeveel strepen staan er op de vlag van de verenigde staten?",
-            "sourcevalue:nl.wikipedia.org/wiki/verenigde_staten:13"
-          ],
-          "bank_question_nl": "Hoeveel strepen staan er op de vlag van de Verenigde Staten?"
-        },
-        {
-          "id": "nr437",
-          "question_nl": "Hoeveel centimeter schofthoogte had het paard Sampson op vierjarige leeftijd?",
-          "question_en": "How tall was Sampson the horse at the shoulder at age four, in centimetres?",
-          "answer": 219,
-          "category": "Records en vergelijkingen",
-          "source_url": "https://www.guinnessworldrecords.com/news/2019/2/prodigious-pets-five-of-the-worlds-biggest-domestic-animals-558800",
-          "evidence_nl": "Guinness noemt voor Sampson, geboren in 1846, een schofthoogte van 219 centimeter op vierjarige leeftijd.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Een benoemd recordpaard is een individuele recordmeting, geen breed schaalfeit.",
-          "semantic_keys": [
-            "nr:437",
-            "text:hoeveel centimeter schofthoogte had het paard sampson op vierjarige leeftijd?",
-            "sourcevalue:guinnessworldrecords.com/news/2019/2/prodigious-pets-five-of-the-worlds-biggest-domestic-animals-558800:219",
-            "reviewfamily:question-c72bde5eb184bb9b:219"
-          ],
-          "bank_question_nl": "Hoeveel centimeter schofthoogte had het paard Sampson op vierjarige leeftijd?"
-        },
-        {
-          "id": "nr468",
-          "question_nl": "Bij hoeveel graden Celsius smelt zuiver tin?",
-          "question_en": "At what temperature does pure tin melt, in degrees Celsius?",
-          "answer": 232,
-          "category": "Scheikunde",
-          "source_url": "https://en.wikipedia.org/wiki/Tin",
-          "evidence_nl": "Zuiver tin smelt bij ongeveer 231,9 graden Celsius, afgerond 232.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "strong",
-          "quality_reason_nl": "Herkenbaar onderwerp met een onzekere maar voorstelbare grootte; een nauwkeurige schatting kan voldoening geven, na bronafbakening.",
-          "semantic_keys": [
-            "nr:468",
-            "text:bij hoeveel graden celsius smelt zuiver tin?",
-            "sourcevalue:en.wikipedia.org/wiki/tin:232",
-            "reviewfamily:question-036ef1270fc5b595:232"
-          ],
-          "bank_question_nl": "Bij hoeveel graden Celsius smelt zuiver tin?"
-        }
-      ],
-      "operator": "+",
-      "calculation": "13 + 219 = 232",
-      "agents": {
-        "a-tier": {
-          "score": 3,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
-        }
-      },
-      "risks": [
-        "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
-        "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
-      ],
-      "original_tier": "normal"
-    },
-    {
-      "id": "legendary-fa0b83923252",
-      "number": 74,
-      "tier": "normal",
-      "status": "editorial_candidate",
-      "questions": [
-        {
-          "id": "nr774",
-          "question_nl": "Hoeveel jaar duurde de bouw van de Dom van Keulen?",
-          "question_en": "How many years did Cologne Cathedral take to build?",
-          "answer": 632,
-          "category": "Gebouwen en infrastructuur",
-          "source_url": "https://en.wikipedia.org/wiki/Cologne_Cathedral",
-          "evidence_nl": "Begonnen in 1248, voltooid in 1880: 632 jaar.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "strong",
-          "quality_reason_nl": "Herkenbaar onderwerp met een onzekere maar voorstelbare grootte; een nauwkeurige schatting kan voldoening geven, na bronafbakening.",
-          "semantic_keys": [
-            "nr:774",
-            "text:hoeveel jaar duurde de bouw van de dom van keulen?",
-            "sourcevalue:en.wikipedia.org/wiki/cologne_cathedral:632",
-            "reviewfamily:question-1e8877f4b9ebf71c:632"
-          ],
-          "bank_question_nl": "Hoeveel jaar duurde de bouw van de Dom van Keulen?"
-        },
-        {
-          "id": "nr350",
-          "question_nl": "Hoeveel graden heeft een volledige cirkel?",
-          "question_en": "How many degrees are in a full circle?",
-          "answer": 360,
-          "category": "Wiskunde",
-          "source_url": "https://en.wikipedia.org/wiki/Degree_(angle)",
-          "evidence_nl": "Een volledige cirkel meet per definitie 360 graden.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Toegankelijk alledaags, sportief, cultureel of schoolkennis-anker; geen specialistische hoofdstuk- of atoomnummervulling.",
-          "semantic_keys": [
-            "nr:350",
-            "text:hoeveel graden heeft een volledige cirkel?",
-            "sourcevalue:en.wikipedia.org/wiki/degree_(angle):360"
-          ],
-          "bank_question_nl": "Hoeveel graden heeft een volledige cirkel?"
-        },
-        {
-          "id": "nr1300",
-          "question_nl": "Hoeveel centimeter lang was Robert Wadlow?",
-          "question_en": "How tall was Robert Wadlow, in centimetres?",
-          "answer": 272,
-          "category": "Records en vergelijkingen",
-          "source_url": "https://www.guinnessworldrecords.com/world-records/tallest-man-ever",
-          "evidence_nl": "Guinness vermeldt 272 centimeter bij zijn laatste meting op 27 juni 1940.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Lengte van de langste persoon is begrensd en meer recordkennis dan brede schaalonzekerheid.",
-          "semantic_keys": [
-            "nr:1300",
-            "text:hoeveel centimeter lang was robert wadlow?",
-            "sourcevalue:guinnessworldrecords.com/world-records/tallest-man-ever:272",
-            "reviewfamily:question-44ce3bb0c7831d1e:272"
-          ],
-          "bank_question_nl": "Hoeveel centimeter lang was Robert Wadlow?"
-        }
-      ],
-      "operator": "−",
-      "calculation": "632 − 360 = 272",
       "agents": {
         "a-tier": {
           "score": 3,
@@ -2881,13 +2471,13 @@
       "questions": [
         {
           "id": "nr651",
-          "question_nl": "Hoeveel kilogram weegt een mannelijke jaguar in de Pantanal gemiddeld?",
-          "question_en": "How much does a male jaguar in the Pantanal weigh, in kilograms?",
+          "question_nl": "Hoeveel kilogram weegt een mannelijke jaguar in de Braziliaanse Pantanal gemiddeld?",
+          "question_en": "What is the average weight of a male jaguar in the Brazilian Pantanal, in kilograms?",
           "answer": 100,
           "category": "Dieren",
           "source_url": "https://animaldiversity.org/accounts/Panthera_onca/",
           "evidence_nl": "Animal Diversity Web noemt gemiddeld 100 kilogram voor mannelijke jaguars in de Braziliaanse Pantanal.",
-          "source_status": "requires_external_review",
+          "source_status": "verified_rounded",
           "recorded_bank_control": null,
           "recorded_source_confidence": "handmatig",
           "quality": "strong",
@@ -2898,7 +2488,13 @@
             "sourcevalue:animaldiversity.org/accounts/panthera_onca:100",
             "reviewfamily:question-6e0a7a2364ecb9f5:100"
           ],
-          "bank_question_nl": "Hoeveel kilogram weegt een mannelijke jaguar in de Pantanal gemiddeld?"
+          "bank_question_nl": "Hoeveel kilogram weegt een mannelijke jaguar in de Pantanal gemiddeld?",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.sciencedirect.com/science/article/pii/S0006320707000900",
+            "evidence_nl": "De veldstudie in de zuidelijke Braziliaanse Pantanal rapporteert gemiddeld 99,7 kg voor zes volwassen mannelijke jaguars. Het bestaande bankantwoord 100 kg is benaderd; geen maximum of wereldwijd gemiddelde."
+          }
         },
         {
           "id": "nr433",
@@ -2954,108 +2550,11 @@
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "normal"
-    },
-    {
-      "id": "legendary-2d1f08227281",
-      "number": 81,
-      "tier": "near-legendary",
-      "status": "editorial_candidate",
-      "questions": [
-        {
-          "id": "nr793",
-          "question_nl": "Hoeveel meter hoog is de Petronas Twin Tower?",
-          "question_en": "How tall are the Petronas Towers, in metres?",
-          "answer": 452,
-          "category": "Gebouwen en infrastructuur",
-          "source_url": "https://en.wikipedia.org/wiki/Petronas_Towers",
-          "evidence_nl": "De torens zijn 451,9 meter hoog tot de top van de spits.",
-          "source_status": "verified_rounded",
-          "recorded_bank_control": "Wikidata: klopt",
-          "recorded_source_confidence": "handmatig",
-          "quality": "strong",
-          "quality_reason_nl": "Breed voorstelbare fysieke of astronomische schaal met plausibele grote onzekerheid; geef de bedoelde definitie en eenheid duidelijk.",
-          "semantic_keys": [
-            "nr:793",
-            "text:hoeveel meter hoog is de petronas twin tower?",
-            "sourcevalue:en.wikipedia.org/wiki/petronas_towers:452",
-            "reviewfamily:question-c8cf64e8385c10c9:452"
-          ],
-          "bank_question_nl": "Hoeveel meter hoog is de Petronas Twin Tower?",
-          "source_review": {
-            "source_status": "verified_rounded",
-            "checked_on": "2026-11-15",
-            "source_url": "https://en.wikipedia.org/wiki/Petronas_Towers",
-            "evidence_nl": "De architectonische hoogte van de Petronas Towers is 451,9 m; op hele meters 452."
-          }
-        },
-        {
-          "id": "nr436",
-          "question_nl": "Hoeveel meter hoog was het hoogste zandkasteel ooit?",
-          "question_en": "How tall was the tallest sandcastle on record, in metres?",
-          "answer": 21,
-          "category": "Records en vergelijkingen",
-          "source_url": "https://www.guinnessworldrecords.com/world-records/tallest-sandcastle",
-          "evidence_nl": "De hoogste zandsculptuur mat 21,16 meter (Denemarken, 2021).",
-          "source_status": "verified_rounded",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "strong",
-          "quality_reason_nl": "Fysieke/schaalvraag met een voorstelbaar onderwerp en onzeker antwoord.",
-          "semantic_keys": [
-            "nr:436",
-            "text:hoe hoog was de hoogste zandsculptuur ooit in meters?",
-            "sourcevalue:guinnessworldrecords.com/world-records/tallest-sandcastle:21"
-          ],
-          "bank_question_nl": "Hoe hoog was de hoogste zandsculptuur ooit in meters?",
-          "source_review": {
-            "source_status": "verified_rounded",
-            "checked_on": "2026-11-15",
-            "source_url": "https://www.guinnessworldrecords.com/world-records/tallest-sandcastle",
-            "evidence_nl": "Guinness registreert het zandkasteel in Blokhus op 2 juli 2021 met 21,16 m; op hele meters 21."
-          }
-        },
-        {
-          "id": "nr1455",
-          "question_nl": "Hoeveel kilometer per uur haalde de Shanghai Maglev in de reguliere dienst tot 2021?",
-          "question_en": "How fast did the Shanghai Maglev run in regular service before 2021, in kilometres per hour?",
-          "answer": 431,
-          "category": "Vervoer",
-          "source_url": "https://en.wikipedia.org/wiki/Shanghai_maglev_train",
-          "evidence_nl": "Tot 2021 reed de Shanghai Maglev in dienst tot 431 km/u; sindsdien is dat 300 km/u.",
-          "source_status": "verified",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "hoog",
-          "quality": "normal",
-          "quality_reason_nl": "Bekend anker of tel-/historisch weetje; geen zelfstandige sterke schaalvraag.",
-          "semantic_keys": [
-            "nr:1455",
-            "text:hoeveel kilometer per uur haalde de shanghai maglev in de reguliere dienst tot 2021?",
-            "sourcevalue:en.wikipedia.org/wiki/shanghai_maglev_train:431",
-            "reviewfamily:question-09c21bbff1026431:431"
-          ],
-          "bank_question_nl": "Hoeveel kilometer per uur haalde de Shanghai Maglev in de reguliere dienst tot 2021?",
-          "source_review": {
-            "source_status": "verified",
-            "checked_on": "2026-11-15",
-            "source_url": "https://en.wikipedia.org/wiki/Shanghai_maglev_train",
-            "evidence_nl": "De bron geeft een historische maximale operationele snelheid van 431 km/u voor de Shanghai Maglev."
-          }
-        }
-      ],
-      "operator": "−",
-      "calculation": "452 − 21 = 431",
-      "agents": {
-        "a-tier": {
-          "score": 5,
-          "reason_nl": "2 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
-        }
-      },
-      "risks": [
-        "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
-        "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
-      ],
-      "original_tier": "legendary"
+      "original_tier": "normal",
+      "play_review": {
+        "decision": "verbeterd",
+        "reason_nl": "Engelse vraag vraagt nu expliciet naar gemiddeld gewicht van mannelijke jaguars in de Braziliaanse Pantanal. Eén bekend anker is toegestaan; 15 is 15% van 100 en dus betekenisvol."
+      }
     },
     {
       "id": "legendary-ee5772dd72a9",
@@ -3144,7 +2643,7 @@
     {
       "id": "legendary-4ba22f4a212c",
       "number": 83,
-      "tier": "normal",
+      "tier": "near-legendary",
       "status": "editorial_candidate",
       "questions": [
         {
@@ -3155,7 +2654,7 @@
           "category": "Gebouwen en infrastructuur",
           "source_url": "https://en.wikipedia.org/wiki/El_Castillo,_Chichen_Itza",
           "evidence_nl": "Vier trappen van 91 treden plus het platform: 365.",
-          "source_status": "requires_external_review",
+          "source_status": "verified",
           "recorded_bank_control": null,
           "recorded_source_confidence": "handmatig",
           "quality": "normal",
@@ -3166,38 +2665,49 @@
             "sourcevalue:en.wikipedia.org/wiki/el_castillo,_chichen_itza:365",
             "reviewfamily:question-bda0d87ffa4b3aac:365"
           ],
-          "bank_question_nl": "Hoeveel stappen telt El Castillo van Chichen Itza in totaal inclusief de top?"
+          "bank_question_nl": "Hoeveel stappen telt El Castillo van Chichen Itza in totaal inclusief de top?",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.inah.gob.mx/foto-del-dia/el-castillo-de-chichen-itza-arquitectura-astronomia-y-tiempo",
+            "evidence_nl": "INAH beschrijft vier trappen met elk 91 treden: 364 samen. Inclusief het bovenplatform geeft de expliciet gevraagde telling 365."
+          }
         },
         {
-          "id": "nr441",
-          "question_nl": "Hoeveel centimeter lang was Rumeysa Gelgi in 2021?",
-          "question_en": "How tall was Rumeysa Gelgi in 2021, in centimetres?",
+          "id": "nr1215",
+          "question_nl": "Hoe hoog is Zalmhaven I in Rotterdam, in meters?",
+          "question_en": "How tall is Zalmhaven I in Rotterdam, in metres?",
           "answer": 215,
-          "category": "Records en vergelijkingen",
-          "source_url": "https://www.guinnessworldrecords.com/world-records/tallest-woman-living",
-          "evidence_nl": "Guinness vermeldt 215,16 centimeter op 23 mei 2021: afgerond 215.",
-          "source_status": "requires_external_review",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "normal",
-          "quality_reason_nl": "Specifieke persoonslengte is recordtrivia met een smalle plausibele schaal.",
+          "category": "Gebouwen en infrastructuur",
+          "source_url": "https://nl.wikipedia.org/wiki/De_Zalmhaven",
+          "evidence_nl": "De hoogste toren, Zalmhaven I, is ontworpen door Dam & Partners Architecten en is het hoogste gebouw van Nederland, namelijk 215 meter.",
+          "source_status": "verified",
+          "recorded_bank_control": "Wikidata: geen waarde",
+          "recorded_source_confidence": "hoog",
           "semantic_keys": [
-            "nr:441",
-            "text:hoeveel centimeter lang was rumeysa gelgi in 2021?",
-            "sourcevalue:guinnessworldrecords.com/world-records/tallest-woman-living:215",
-            "reviewfamily:question-3465819139af5d99:215"
+            "nr:1215",
+            "sourcevalue:https://nl.wikipedia.org/wiki/De_Zalmhaven:215"
           ],
-          "bank_question_nl": "Hoeveel centimeter lang was Rumeysa Gelgi in 2021?"
+          "replaces_question_id": "nr441",
+          "bank_question_nl": "Hoeveel meter hoog is De Zalmhaven in Rotterdam?",
+          "quality": "strong",
+          "quality_reason_nl": "Een voorstelbare woontoren vervangt een specifiek persoonsrecord.",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-15",
+            "source_url": "https://amvest.nl/projecten/de-zalmhaven/",
+            "evidence_nl": "Ontwikkelaar Amvest noemt de hoge toren van het Zalmhavenproject 215 meter en de twee lagere gebouwen 70 meter."
+          }
         },
         {
           "id": "nr1074",
-          "question_nl": "Hoeveel dagen duurt de zwangerschap van een geit?",
-          "question_en": "How many days is a goat pregnant?",
+          "question_nl": "Hoeveel dagen duurt de zwangerschap van een geit gemiddeld?",
+          "question_en": "How many days is a goat pregnant on average?",
           "answer": 150,
           "category": "Landbouw en industrie",
           "source_url": "https://en.wikipedia.org/wiki/Goat",
           "evidence_nl": "De draagtijd van een geit is ongeveer 150 dagen.",
-          "source_status": "requires_external_review",
+          "source_status": "verified_rounded",
           "recorded_bank_control": null,
           "recorded_source_confidence": "handmatig",
           "quality": "strong",
@@ -3208,7 +2718,13 @@
             "sourcevalue:en.wikipedia.org/wiki/goat:150",
             "reviewfamily:question-a684eaab6d441759:150"
           ],
-          "bank_question_nl": "Hoeveel dagen duurt de zwangerschap van een geit?"
+          "bank_question_nl": "Hoeveel dagen duurt de zwangerschap van een geit?",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-15",
+            "source_url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-reproduction-goats/pregnancy-in-goats",
+            "evidence_nl": "Merck Veterinary Manual geeft een draagtijd van 145?155 dagen en gemiddeld 150; de vraag vraagt expliciet dat gemiddelde."
+          }
         }
       ],
       "operator": "−",
@@ -3216,14 +2732,18 @@
       "agents": {
         "a-tier": {
           "score": 3,
-          "reason_nl": "1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
+          "reason_nl": "2 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
         }
       },
       "risks": [
         "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
         "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
       ],
-      "original_tier": "normal"
+      "original_tier": "normal",
+      "play_review": {
+        "decision": "verbeterd",
+        "reason_nl": "Lengte van Rumeysa vervangen door Zalmhaven I (215 m). De expliciete trappentelling en gemiddelde geitendracht zijn extern bevestigd."
+      }
     },
     {
       "id": "legendary-a670609451ad",
@@ -3430,6 +2950,151 @@
       "original_tier": "legendary"
     }
   ],
+  "player_review": {
+    "baseline_commit": "14ce987",
+    "consensus_kept": [
+      4,
+      6,
+      8,
+      10,
+      11,
+      18,
+      23,
+      24,
+      26,
+      33,
+      40,
+      51,
+      54,
+      55,
+      57,
+      62,
+      75,
+      82,
+      89,
+      96
+    ],
+    "consensus_rejected": [
+      5,
+      17,
+      19,
+      20,
+      21,
+      31,
+      34,
+      43,
+      44,
+      45,
+      46,
+      47,
+      50,
+      60,
+      61,
+      70,
+      72,
+      78,
+      84,
+      86,
+      87,
+      90,
+      94,
+      95,
+      97,
+      98,
+      99,
+      100
+    ],
+    "reconsidered": {
+      "3": {
+        "decision": "verbeterd",
+        "reason_nl": "EU-lidstaten vervangen door de bevolking van Australië (27 miljoen). Het treinrecord is afgebakend tot de Zwitserse recordrit van 2022."
+      },
+      "7": {
+        "decision": "behouden",
+        "reason_nl": "De 88 pianotoetsen blijven als toegestaan bekend anker; paleiskamers en het Marsjaar bieden twee onzekere schattingen."
+      },
+      "9": {
+        "decision": "behouden",
+        "reason_nl": "De 160 verdiepingen geven houvast voor de trappenschatting. Het kleine verschil is gevoelig, maar de voorstelbare klifsprong begrenst beide grote getallen."
+      },
+      "14": {
+        "decision": "geschrapt",
+        "reason_nl": "De overtochtduur draagt nauwelijks bij; voor het willekeurige hamburgerrecord is geen betere vraag met hetzelfde antwoord gevonden."
+      },
+      "15": {
+        "decision": "verbeterd",
+        "reason_nl": "Chromosomen vervangen door de bevolking van Argentinië (46 miljoen); toren, bevolking en robot geven twee brede schalen naast een kleine fysieke maat."
+      },
+      "22": {
+        "decision": "geschrapt",
+        "reason_nl": "Sahara-oppervlak is een mogelijke vervanger voor negen spelers, maar de kleine optelterm biedt nog steeds te weinig afweging."
+      },
+      "27": {
+        "decision": "verbeterd",
+        "reason_nl": "Kookpunt vervangen door de hoogte van de Kármánlijn (100 km). De standaardtelling van handbotten blijft het telanker naast gebouw- en hoogteschaal."
+      },
+      "28": {
+        "decision": "geschrapt",
+        "reason_nl": "Een A380-landingsgestel met 22 wielen is beter dan schedelbotten, maar bevolking 46 wordt al gebruikt in de sterkere puzzel 15."
+      },
+      "36": {
+        "decision": "geschrapt",
+        "reason_nl": "De aftrekterm acht beïnvloedt 195 en 187 nauwelijks. De kandidaat-slang van acht meter mist passend bewijs voor het genoemde record."
+      },
+      "37": {
+        "decision": "geschrapt",
+        "reason_nl": "Geen overtuigende vervanger voor hondentanden; betere kandidaten voor 80 overlappen met de sterkere puzzel 58."
+      },
+      "38": {
+        "decision": "geschrapt",
+        "reason_nl": "Kolibriesoort/activiteit en lichaamswatergemiddelde zijn onvoldoende bepaald. Betere bankmatches overlappen met puzzels 48 en 58."
+      },
+      "48": {
+        "decision": "verbeterd",
+        "reason_nl": "Zeus vervangen door de Utrechtse Domtoren (112 m), leeuwenrust door Chili (20 miljoen). Drie afgebakende gebouw- en bevolkingsschalen."
+      },
+      "53": {
+        "decision": "verbeterd",
+        "reason_nl": "Stewie gemeten van neus tot staartpunt; tijgergewicht als typisch gewicht omschreven. De drie fysieke schalen blijven intact."
+      },
+      "56": {
+        "decision": "geschrapt",
+        "reason_nl": "Windkrachtgrens en historisch CO2 vragen samen veel tabelkennis; geen sterkere vraag voor 74 of 280 gevonden."
+      },
+      "58": {
+        "decision": "verbeterd",
+        "reason_nl": "D-Day vervangen door 80 boogopeningen in een onderste gevelring van het Colosseum; deelstaten door 16 rijtuigen van de Eurostar e320. De brugoverspanning blijft."
+      },
+      "64": {
+        "decision": "geschrapt",
+        "reason_nl": "Voor het willekeurige oude Vaticaanse inwonertal 800 is geen beter afgebakende bankmatch gevonden."
+      },
+      "73": {
+        "decision": "geschrapt",
+        "reason_nl": "13 km stroomkabel in het ISS is bevestigd als alternatief, maar de kleine term en moeilijk benaderbare tintemperatuur maken de combinatie niet overtuigend."
+      },
+      "74": {
+        "decision": "geschrapt",
+        "reason_nl": "Geen betere bankmatch voor 360. Bouwduur blijft vooral historische kennis; de alternatieve hoogte 632 dupliceert puzzel 18."
+      },
+      "80": {
+        "decision": "verbeterd",
+        "reason_nl": "Engelse vraag vraagt nu expliciet naar gemiddeld gewicht van mannelijke jaguars in de Braziliaanse Pantanal. Eén bekend anker is toegestaan; 15 is 15% van 100 en dus betekenisvol."
+      },
+      "81": {
+        "decision": "geschrapt",
+        "reason_nl": "Een precieze peildatum helpt de zandkasteelvraag, maar de kleine term 21 biedt nog steeds te weinig steun naast 452 en 431."
+      },
+      "83": {
+        "decision": "verbeterd",
+        "reason_nl": "Lengte van Rumeysa vervangen door Zalmhaven I (215 m). De expliciete trappentelling en gemiddelde geitendracht zijn extern bevestigd."
+      },
+      "92": {
+        "decision": "geschrapt",
+        "reason_nl": "Jupiterrotatie kan de bergentelling vervangen, maar het algemene olifantenvoedselgetal blijft onvoldoende afgebakend; geen betrouwbare verbetering voor beide zwakke schakels."
+      }
+    }
+  },
   "editorial_audit": {
     "review_date": "2026-11-15",
     "before_tiers": {
@@ -3440,67 +3105,74 @@
     "excluded_puzzles": {
       "1": "Het neuronengetal is een steekproefgemiddelde met aanzienlijke biologische variatie en recente wetenschappelijke discussie; geen eenduidige 5%-schatting.",
       "2": "Penguingewicht wisselt sterk met broedseizoen (10–15 kg, later 8–11 kg); 15 kg is geen algemeen gemiddeld gewicht.",
-      "5": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Sprint en krabben te makkelijk; sprintvraag vaag.",
+      "5": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "12": "Een middelgroot ei is niet naar gewicht of bereidingswijze gedefinieerd; 70 kcal niet eenduidig bevestigd.",
       "13": "Verdun duurde van 21 februari tot 18 december 1916; 300 is een populaire benadering, geen exact aantal dagen. Geen antwoord gewijzigd.",
+      "14": "De overtochtduur draagt nauwelijks bij; voor het willekeurige hamburgerrecord is geen betere vraag met hetzelfde antwoord gevonden.",
       "16": "Goudproductie 2020 niet uit de aangehaalde USGS-PDF te bevestigen (403); olifantgemiddelde vereist bovendien optimale groei.",
-      "17": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Pianotoetsen en chromosomenparen overheersen; hondenleeftijd wordt afgeleid.",
-      "19": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Marsdag bijna bekend; slakkensnelheid onvoldoende afgebakend.",
-      "20": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Bekende ankers bepalen een onvoldoende afgebakende jaguarsnelheid.",
-      "21": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Rechte hoek en kaartspel geven de kattenleeftijd weg.",
+      "17": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "19": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "20": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "21": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "22": "Sahara-oppervlak is een mogelijke vervanger voor negen spelers, maar de kleine optelterm biedt nog steeds te weinig afweging.",
       "25": "Dagelijks zuurstofverbruik hangt van activiteit en lichaamsgrootte af; brondefinitie voor 550 liter ontbreekt.",
-      "27": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Kookpunt en handbotten maken dit vooral kenniswerk.",
+      "28": "Een A380-landingsgestel met 22 wielen is beter dan schedelbotten, maar bevolking 46 wordt al gebruikt in de sterkere puzzel 15.",
       "29": "Darmlengte heeft geen uniform meetprotocol; Dode Zee verandert jaarlijks. Geen voldoende eenduidig totaal.",
       "30": "Gemiddeld olifantgewicht en jaarlijks plasticvolume zijn onvoldoende afgebakend; bron-PDF kon niet worden geraadpleegd.",
-      "31": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Twee tellingen naast slechts een schatbare afstand.",
+      "31": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "32": "1200 ml speeksel is geen uniform daggemiddelde; onvoldoende specifieke bronwaarde voor een 5%-vraag.",
-      "34": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Tanden en Bijbelboeken laten weinig schatspel over.",
+      "34": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "35": "Sterkte van invasieleger varieert per definitie (600.000–685.000); FAOSTAT-pagina levert geen controleerbare maïswaarde.",
-      "37": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Rugbyduur bekend; hondentanden vooral een telweetje.",
+      "36": "De aftrekterm acht beïnvloedt 195 en 187 nauwelijks. De kandidaat-slang van acht meter mist passend bewijs voor het genoemde record.",
+      "37": "Geen overtuigende vervanger voor hondentanden; betere kandidaten voor 80 overlappen met de sterkere puzzel 58.",
+      "38": "Kolibriesoort/activiteit en lichaamswatergemiddelde zijn onvoldoende bepaald. Betere bankmatches overlappen met puzzels 48 en 58.",
       "39": "337 km is in de geraadpleegde bron de breedte van het Victoriameer, niet de lengte (359 km). Puzzel geschrapt, antwoord niet aangepast.",
       "41": "Koolhydraatwaarde 31 g aannemelijk, maar niet zichtbaar in de geraadpleegde primaire productpagina. Niet als geverifieerd geaccepteerd.",
       "42": "99.000 Google-zoekopdrachten per seconde in 2024 is een secundaire schatting zonder controleerbaar primair jaarcijfer.",
-      "43": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Eieren en vlag maken de tunnel een invuloefening.",
-      "44": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Seconden en filmprijzen laten alleen aluminium over.",
-      "45": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Jubileum en Oscars vooral weetjes; weinig spannende combinatie.",
-      "46": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Dobbelsteen gratis; leeuwensnelheid en afleveringen weinig samenhang.",
-      "47": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Golf en islam bepalen het kangoeroegewicht.",
+      "43": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "44": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "45": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "46": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "47": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "49": "Huidoppervlak varieert met lichaamsgrootte; bron noemt ook 1,9 m². 18.000 cm² te specifiek voor deze algemene vraag.",
-      "50": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Klinknagels en wereldproductie moeilijk voorstelbaar; veel blind gokken.",
+      "50": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "52": "CBS 2025 onderscheidt 503 kg gemeentelijk afval en 449 kg huishoudelijk afval. Daarnaast is 6 m geen hard maximum voor zoutwaterkrokodillen; recordmetingen zijn hoger.",
-      "57": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Vermenigvuldigen met tien geeft nauwelijks afweging.",
+      "56": "Windkrachtgrens en historisch CO2 vragen samen veel tabelkennis; geen sterkere vraag voor 74 of 280 gevonden.",
       "59": "104 miljoen Atlanta-passagiers is een afkapping van 104.653.451, geen gewone afronding op miljoenen. Geen getal veranderd om de som te behouden.",
-      "60": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Regeerduur en voetbal geven de rivierlengte weg.",
-      "61": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Grotinventaris en lokaal frietrecord willekeurig en moeilijk schatbaar.",
+      "60": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "61": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "63": "Bron noemt 81 m voor maximale diepte Victoriameer, niet 84 m; meetdefinitie en bronverschil onopgelost.",
-      "64": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Bevolkingsdefinitie Vaticaan onduidelijk; schaakstukken gratis anker.",
+      "64": "Voor het willekeurige oude Vaticaanse inwonertal 800 is geen beter afgebakende bankmatch gevonden.",
       "65": "Twee miljoen bij Verdun betreft Franse transporten langs de Voie Sacrée, niet het totaal aantal deelnemers aan beide kanten.",
       "66": "Aluminium in een gemiddelde auto mist bouwjaar, voertuigtype en populatie. 200 kg niet specifiek bevestigd.",
       "67": "Franse legersterkte Waterloo is een historisch telweetje met verschillende afbakeningen; 73.000 niet voldoende eenduidig bevestigd.",
       "68": "18.000 ton bommen op Londen niet bevestigd in het geraadpleegde bronfragment; periode/gebied onvoldoende scherp.",
       "69": "Amazonelengte is expliciet onderwerp van meetdiscussie (6400 tot circa 6992 km); afwijking groter dan 5%.",
-      "70": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Alfabet en filmtempo bepalen de rundvleesconsumptie.",
+      "70": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "71": "190.000 deelnemers Waterloo en gemiddeld giraffegewicht niet specifiek bevestigd; geen zuivere, goed voorstelbare 5%-vragen.",
-      "72": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Troepentelling en hotelbestand moeilijk voorstelbaar; voetbal gratis.",
+      "72": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "73": "13 km stroomkabel in het ISS is bevestigd als alternatief, maar de kleine term en moeilijk benaderbare tintemperatuur maken de combinatie niet overtuigend.",
+      "74": "Geen betere bankmatch voor 360. Bouwduur blijft vooral historische kennis; de alternatieve hoogte 632 dupliceert puzzel 18.",
       "76": "Watervoetafdruk rundvlees hangt af van land en groene/blauwe/grijze waterdefinitie; algemene vraag ondersteunt geen uniek getal.",
       "77": "Staalmassa van een gemiddelde auto mist jaargang, voertuigtype en referentiepopulatie.",
-      "78": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Kleine term verandert de grote waarde nauwelijks; som voegt weinig toe.",
+      "78": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "79": "Watergebruikbron is alleen een homepage; 129 liter en peiljaar niet extern bevestigd. Nijlmetingen verschillen bovendien per bron.",
-      "84": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Genoemd hotdogrecord vooral gokken; schaakbord bekend.",
+      "81": "Een precieze peildatum helpt de zandkasteelvraag, maar de kleine term 21 biedt nog steeds te weinig steun naast 452 en 431.",
+      "84": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "85": "Congolengte 4700 km botst met andere gangbare metingen; hartdebiet is een rustwaarde, geen algemeen daggemiddelde.",
-      "86": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Obscuur record plus verklappend geformuleerde oorlogsvraag.",
-      "87": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Dartbord en gouden huwelijk bepalen de walvislengte.",
+      "86": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "87": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "88": "CO₂-getal 425 ppm mist maand en meetstation; NASA-pagina bevestigt geen unieke waarde voor 2024.",
-      "90": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Schoolkennis en dobbelsteen overheersen; emoehoogte varieert.",
+      "90": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "91": "Olijfolieconsumptie verwijst naar een niet nader benoemd overzicht uit 2023; populatie en meetmethode ontbreken.",
-      "92": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Bergentelling specialistisch, rugby bekend; slechts een sterke schatvraag.",
+      "92": "Jupiterrotatie kan de bergentelling vervangen, maar het algemene olifantenvoedselgetal blijft onvoldoende afgebakend; geen betrouwbare verbetering voor beide zwakke schakels.",
       "93": "Victoriameeroppervlak is in de geraadpleegde bron 59.947 km², niet 69.500; bron-/meetverschil groter dan 5%.",
-      "94": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Twee bekende tijdsduren bepalen het wombatgewicht.",
-      "95": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Jubileum is weetkennis; hoeveelheid water in een keer onduidelijk.",
-      "97": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Twee bekende maten geven het walvisgewicht weg.",
-      "98": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Vooral tellen en herkennen; weinig echte schatting.",
-      "99": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Marathon en eeuw geven de rivierlengte weg; afronding ontbreekt.",
-      "100": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Vooral jaartallenkennis; ijshockeyvraag mist wedstrijdsituatie."
+      "94": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "95": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "97": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "98": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "99": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "100": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden."
     },
     "fact_reviews": {
       "nr655": {
@@ -3835,7 +3507,7 @@
         "source_status": "verified_rounded",
         "checked_on": "2026-11-15",
         "source_url": "https://data.un.org/legacy/en/iso/cl.html",
-        "evidence_nl": "UNData geeft een projectie van 19.860.000 inwoners voor Chili in 2025; op miljoenen 20."
+        "evidence_nl": "UNData geeft 19.860 duizend inwoners voor Chili in 2025; op hele miljoenen is het bestaande bankantwoord 20."
       },
       "nr168": {
         "source_status": "checked_unresolved",
@@ -4186,7 +3858,7 @@
         "source_status": "verified_rounded",
         "checked_on": "2026-11-15",
         "source_url": "https://www.abs.gov.au/media-centre/media-releases/australias-population-grows-21-cent",
-        "evidence_nl": "ABS geeft 27,2 miljoen inwoners op 30 juni 2024; op miljoenen 27."
+        "evidence_nl": "ABS noemt 27,2 miljoen inwoners op 30 juni 2024; het bestaande bankantwoord op hele miljoenen is 27."
       },
       "nr986": {
         "source_status": "checked_unresolved",
@@ -4423,10 +4095,166 @@
         "checked_on": "2026-11-15",
         "evidence_nl": null,
         "review_note_nl": "Google bevestigde een jaarlijks minimum van twee biljoen voor 2016–2024; dat bewijst geen 99.000 zoekopdrachten per seconde in 2024."
+      },
+      "nr945": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-15",
+        "source_url": "https://data.un.org/legacy/en/iso/ar.html",
+        "evidence_nl": "UNData noemt 45.851 duizend inwoners voor Argentinië in 2025; op hele miljoenen is het bestaande bankantwoord 46."
+      },
+      "nr1137": {
+        "source_status": "verified",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.fai.org/news/statement-about-karman-line",
+        "evidence_nl": "FAI gebruikt de Kármánlijn op 100 km hoogte als conventionele ruimtegrens; geen universele natuurlijke of juridische grens."
+      },
+      "nr1213": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.domtoren.nl/het-verhaal/",
+        "evidence_nl": "De officiële Domtorensite geeft 112,32 meter; het bestaande bankantwoord op hele meters is 112."
+      },
+      "nr772": {
+        "source_status": "verified",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.turismoroma.it/it/node/1155",
+        "evidence_nl": "De officiële toerismesite van Rome beschrijft de drie onderste gevelniveaus met elk tachtig boogopeningen; bedoeld is de oorspronkelijke complete gevel."
+      },
+      "nr583": {
+        "source_status": "verified",
+        "checked_on": "2026-11-15",
+        "source_url": "https://press.siemens.com/global/en/feature/eurostar-e320-high-speed-trains-eurostar-international-limited",
+        "evidence_nl": "Fabrikant Siemens beschrijft de Eurostar e320 als een 16-rijtuigentrein; de oudere e300 is niet bedoeld."
+      },
+      "nr1215": {
+        "source_status": "verified",
+        "checked_on": "2026-11-15",
+        "source_url": "https://amvest.nl/projecten/de-zalmhaven/",
+        "evidence_nl": "Ontwikkelaar Amvest noemt de hoge toren van het Zalmhavenproject 215 meter en de twee lagere gebouwen 70 meter."
+      },
+      "nr8": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-15",
+        "source_url": "https://nammco.no/blue-whale/",
+        "evidence_nl": "NAMMCO noemt ongeveer 2,7 metrische ton voor een blauwe-vinvistong: het bestaande bankantwoord 2700 kg is een benaderde massa, geen exact uniform diergewicht."
+      },
+      "nr1315": {
+        "source_status": "verified",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.rhb.ch/en/projects-and-dossiers/world-record/",
+        "evidence_nl": "Rhätische Bahn beschrijft de recordrit van 29 oktober 2022 met 25 treinstellen en in totaal 100 rijtuigen; de vraag gaat expliciet over die rit."
+      },
+      "nr43": {
+        "source_status": "verified",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.burjkhalifa.ae/en/assets/FACT-SHEET.pdf",
+        "evidence_nl": "De officiële factsheet geeft een totale hoogte van 828 meter voor Burj Khalifa."
+      },
+      "nr1298": {
+        "source_status": "verified",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.guinnessworldrecords.jp/world-records/635613-largest-humanoid-robot",
+        "evidence_nl": "Guinness registreert de mobiele humanoïde Gundamrobot in Yokohama op 3 december 2020 als 18 meter hoog."
+      },
+      "nr224": {
+        "source_status": "verified",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.whitehouse.gov/About-the-white-house/The-white-house/",
+        "evidence_nl": "Het Witte Huis noemt 132 kamers voor de Executive Residence, inclusief 35 badkamers en verdeeld over zes niveaus; niet alle gebouwen van het complex."
+      },
+      "nr778": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+        "evidence_nl": "De brugbeheerder geeft 4200 voet of 1280 meter voor de hoofdoverspanning tussen de torens; de totale bruglengte is iets anders."
+      },
+      "nr812": {
+        "source_status": "verified",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.inah.gob.mx/foto-del-dia/el-castillo-de-chichen-itza-arquitectura-astronomia-y-tiempo",
+        "evidence_nl": "INAH beschrijft vier trappen met elk 91 treden: 364 samen. Inclusief het bovenplatform geeft de expliciet gevraagde telling 365."
+      },
+      "nr1074": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-reproduction-goats/pregnancy-in-goats",
+        "evidence_nl": "Merck Veterinary Manual geeft een draagtijd van 145?155 dagen en gemiddeld 150; de vraag vraagt expliciet dat gemiddelde."
+      },
+      "nr651": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-15",
+        "source_url": "https://www.sciencedirect.com/science/article/pii/S0006320707000900",
+        "evidence_nl": "De veldstudie in de zuidelijke Braziliaanse Pantanal rapporteert gemiddeld 99,7 kg voor zes volwassen mannelijke jaguars. Het bestaande bankantwoord 100 kg is benaderd; geen maximum of wereldwijd gemiddelde."
       }
     },
-    "review_attempts": 147,
-    "confirmed_facts": 95,
+    "question_replacements": {
+      "nr177": {
+        "replacement_id": "nr946",
+        "question_nl": "Hoeveel miljoen inwoners had Australië op 30 juni 2024?",
+        "question_en": "How many million people lived in Australia on 30 June 2024?",
+        "quality": "strong",
+        "quality_reason_nl": "Een landbevolking biedt herkenbare maar onzekere schaal in plaats van een bekend lidstatenaantal.",
+        "reason_nl": "Een landbevolking biedt herkenbare maar onzekere schaal in plaats van een bekend lidstatenaantal."
+      },
+      "nr311": {
+        "replacement_id": "nr945",
+        "question_nl": "Hoeveel miljoen inwoners had Argentinië in 2025?",
+        "question_en": "What was Argentina's population in 2025, in millions?",
+        "quality": "strong",
+        "quality_reason_nl": "Een voorstelbare landbevolking vervangt een exact schoolkennisanker.",
+        "reason_nl": "Een voorstelbare landbevolking vervangt een exact schoolkennisanker."
+      },
+      "nr1136": {
+        "replacement_id": "nr1137",
+        "question_nl": "Hoeveel kilometer boven zeeniveau ligt de Kármánlijn?",
+        "question_en": "How high above sea level is the Kármán line, in kilometres?",
+        "quality": "normal",
+        "quality_reason_nl": "Een vastgelegde conventie, geen gemeten natuurlijke grens; bruikbaar hoogteanker zonder te doen alsof de waarde biologisch of fysisch varieert.",
+        "reason_nl": "Een vastgelegde conventie, geen gemeten natuurlijke grens; bruikbaar hoogteanker zonder te doen alsof de waarde biologisch of fysisch varieert."
+      },
+      "nr435": {
+        "replacement_id": "nr1213",
+        "question_nl": "Hoe hoog is de Domtoren in Utrecht, in meters?",
+        "question_en": "How tall is Utrecht's Dom Tower, in metres?",
+        "quality": "strong",
+        "quality_reason_nl": "Een herkenbare toren met een beredeneerbare maar onzekere hoogte.",
+        "reason_nl": "Een herkenbare toren met een beredeneerbare maar onzekere hoogte."
+      },
+      "nr687": {
+        "replacement_id": "nr948",
+        "question_nl": "Hoeveel miljoen inwoners had Chili in 2025?",
+        "question_en": "What was Chile's population in 2025, in millions?",
+        "quality": "strong",
+        "quality_reason_nl": "Een landbevolking met peiljaar vervangt een onbepaald dierlijk daggemiddelde.",
+        "reason_nl": "Een landbevolking met peiljaar vervangt een onbepaald dierlijk daggemiddelde."
+      },
+      "nr991": {
+        "replacement_id": "nr772",
+        "question_nl": "Hoeveel boogopeningen telde elk van de onderste drie gevelringen van het Colosseum oorspronkelijk?",
+        "question_en": "How many arches originally formed each of the Colosseum's three lower facade tiers?",
+        "quality": "strong",
+        "quality_reason_nl": "Via de omtrek van het amfitheater en de breedte van een boog is de schaal te benaderen; geen specialistische hoofdstuktelling.",
+        "reason_nl": "Via de omtrek van het amfitheater en de breedte van een boog is de schaal te benaderen; geen specialistische hoofdstuktelling."
+      },
+      "nr260": {
+        "replacement_id": "nr583",
+        "question_nl": "Hoeveel rijtuigen vormen een Eurostar e320-trein?",
+        "question_en": "How many carriages make up a Eurostar e320 train?",
+        "quality": "strong",
+        "quality_reason_nl": "Een voorstelbare treinlengte en rijtuiglengte geven houvast voor het aantal.",
+        "reason_nl": "Een voorstelbare treinlengte en rijtuiglengte geven houvast voor het aantal."
+      },
+      "nr441": {
+        "replacement_id": "nr1215",
+        "question_nl": "Hoe hoog is Zalmhaven I in Rotterdam, in meters?",
+        "question_en": "How tall is Zalmhaven I in Rotterdam, in metres?",
+        "quality": "strong",
+        "quality_reason_nl": "Een voorstelbare woontoren vervangt een specifiek persoonsrecord.",
+        "reason_nl": "Een voorstelbare woontoren vervangt een specifiek persoonsrecord."
+      }
+    },
+    "review_attempts": 162,
+    "confirmed_facts": 110,
     "unresolved_facts": 39,
     "rejected_facts": 13
   }

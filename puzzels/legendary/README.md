@@ -10,6 +10,8 @@
 - Sterk betekent een voorstelbare maar onzekere schaal waarbij nauwkeurig schatten voldoening geeft. Een obscuur telweetje is niet automatisch sterk.
 - Eerst de beste legendary combinaties zoeken; resterende vragen gebruiken voor de andere klassen.
 - Antwoorden worden niet gewijzigd of speciaal afgerond om een rekensom passend te maken.
+- De spelersselectie behoudt de twintig combinaties die minstens twee van drie reviewers leuk vonden. De 22 twijfelgevallen worden per volledige combinatie herbeoordeeld; een bekend antwoord mag een bruikbaar anker zijn. De 88 pianotoetsen in puzzel 7 blijven daarom staan.
+- Een vervangvraag moet al hetzelfde antwoord in de bank hebben, extern bevestigd zijn en mag geen vraag of bronfeit uit een andere behouden puzzel herhalen. De som en de drie speelantwoorden blijven gelijk.
 
 ## Bestanden en herkomst
 
@@ -21,7 +23,9 @@
 
 `selectie.json` is de uiteindelijke redactionele set. De begrijpelijke weergave staat in `docs/audit/legendary_selectie.md`. Het bestand vermeldt eerlijk wanneer een tussenselectie het doel van 100 nog niet haalt.
 
-`redactie.json` bewaart de 300 NL/EN-redacties, de oorspronkelijke combinaties van commit `376e308`, beoordelingen per vraag en redenen om puzzels te schrappen. Het oudere solverbestand `tier_selectie_a.json` reproduceert die opgeslagen selectie niet; daarom heeft de vastgelegde oorspronkelijke selectie voorrang. Bankantwoorden, IDs en oorspronkelijke bronlinks blijven intact. Een nieuwe controlebron staat apart onder `source_review`.
+`redactie.json` bewaart de 300 oorspronkelijke NL/EN-redacties, de oorspronkelijke combinaties van commit `376e308`, beoordelingen per vraag en redenen om puzzels te schrappen. Het oudere solverbestand `tier_selectie_a.json` reproduceert die opgeslagen selectie niet; daarom heeft de vastgelegde oorspronkelijke selectie voorrang. Bankantwoorden, IDs en oorspronkelijke bronlinks blijven intact. Een vervangvraag neemt haar eigen bank-ID en bron mee; `question_replacements` koppelt die aan het oorspronkelijke vraag-ID. Een nieuwe controlebron staat apart onder `source_review`.
+
+`player_review` legt de twintig vaste puzzelnummers en het besluit over elk van de 22 twijfelgevallen vast. `question_replacements` bevat de vervangende bankvragen, korte NL/EN-teksten en de reden. Genereren past deze besluiten opnieuw toe; controles bewaken gelijke antwoorden, uniciteit, bronbevestiging en het behoud van de twintig vaste combinaties. De tiers blijven een afzonderlijke redactionele indeling en zijn geen cijfer voor speelplezier.
 
 ## Bronnen en publicatie
 

@@ -1,5 +1,5 @@
 {
-  "edition": "legendary-redactie-2026-11-15",
+  "edition": "legendary-spelersselectie-2026-11-15",
   "base_commit": "376e308",
   "review_date": "2026-11-15",
   "before_tiers": {
@@ -41,8 +41,8 @@
       "question_nl": "Hoeveel lidstaten telt de Europese Unie?"
     },
     "nr1315": {
-      "question_en": "How many carriages did the longest passenger train have?",
-      "question_nl": "Hoeveel wagons had de langste passagierstrein ooit?"
+      "question_en": "How many carriages made up the Swiss record passenger train on 29 October 2022?",
+      "question_nl": "Hoeveel rijtuigen telde de Zwitserse recordpassagierstrein op 29 oktober 2022?"
     },
     "nr123": {
       "question_en": "How many vertebrae are in the human spine?",
@@ -591,8 +591,8 @@
       "question_nl": "Hoeveel kilogram weegt een volwassen mannelijke rode reuzenkangoeroe maximaal?"
     },
     "nr224": {
-      "question_en": "How many rooms are in the White House?",
-      "question_nl": "Hoeveel kamers heeft het Witte Huis?"
+      "question_en": "How many rooms are in the White House Executive Residence?",
+      "question_nl": "Hoeveel kamers telt het woongebouw van het Witte Huis?"
     },
     "nr435": {
       "question_en": "How tall was Zeus the Great Dane at the shoulder in 2011, in centimetres?",
@@ -659,12 +659,12 @@
       "question_nl": "Hoeveel meter hoog is het hoogste punt van het Millauviaduct?"
     },
     "nr445": {
-      "question_en": "How long was Stewie the cat at his 2010 record, in centimetres?",
-      "question_nl": "Hoeveel centimeter lang was de kat Stewie bij zijn record in 2010?"
+      "question_en": "How long was Stewie the cat from nose to tail tip at his 2010 record, in centimetres?",
+      "question_nl": "Hoeveel centimeter mat de kat Stewie van neus tot staartpunt bij zijn record in 2010?"
     },
     "nr647": {
-      "question_en": "How much does an adult male Bengal tiger weigh, in kilograms?",
-      "question_nl": "Hoeveel kilogram weegt een volwassen mannelijke Bengaalse tijger?"
+      "question_en": "What is the typical weight of an adult male Bengal tiger, in kilograms?",
+      "question_nl": "Wat is het typische gewicht van een volwassen mannelijke Bengaalse tijger, in kilogram?"
     },
     "nr509": {
       "question_en": "How many Earth days does Jupiter take to orbit the Sun?",
@@ -985,8 +985,8 @@
       "question_nl": "Hoeveel kilometer is de diameter van Mars?"
     },
     "nr651": {
-      "question_en": "How much does a male jaguar in the Pantanal weigh, in kilograms?",
-      "question_nl": "Hoeveel kilogram weegt een mannelijke jaguar in de Pantanal gemiddeld?"
+      "question_en": "What is the average weight of a male jaguar in the Brazilian Pantanal, in kilograms?",
+      "question_nl": "Hoeveel kilogram weegt een mannelijke jaguar in de Braziliaanse Pantanal gemiddeld?"
     },
     "nr433": {
       "question_en": "How many countries are on the UN Security Council?",
@@ -1031,8 +1031,8 @@
       "question_nl": "Hoeveel centimeter lang was Rumeysa Gelgi in 2021?"
     },
     "nr1074": {
-      "question_en": "How many days is a goat pregnant?",
-      "question_nl": "Hoeveel dagen duurt de zwangerschap van een geit?"
+      "question_en": "How many days is a goat pregnant on average?",
+      "question_nl": "Hoeveel dagen duurt de zwangerschap van een geit gemiddeld?"
     },
     "nr444": {
       "question_en": "How long was Novex's record hot dog made in Paraguay in 2011, in metres?",
@@ -1244,67 +1244,74 @@
   "excluded_puzzles": {
     "1": "Het neuronengetal is een steekproefgemiddelde met aanzienlijke biologische variatie en recente wetenschappelijke discussie; geen eenduidige 5%-schatting.",
     "2": "Penguingewicht wisselt sterk met broedseizoen (10–15 kg, later 8–11 kg); 15 kg is geen algemeen gemiddeld gewicht.",
-    "5": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Sprint en krabben te makkelijk; sprintvraag vaag.",
+    "5": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "12": "Een middelgroot ei is niet naar gewicht of bereidingswijze gedefinieerd; 70 kcal niet eenduidig bevestigd.",
     "13": "Verdun duurde van 21 februari tot 18 december 1916; 300 is een populaire benadering, geen exact aantal dagen. Geen antwoord gewijzigd.",
+    "14": "De overtochtduur draagt nauwelijks bij; voor het willekeurige hamburgerrecord is geen betere vraag met hetzelfde antwoord gevonden.",
     "16": "Goudproductie 2020 niet uit de aangehaalde USGS-PDF te bevestigen (403); olifantgemiddelde vereist bovendien optimale groei.",
-    "17": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Pianotoetsen en chromosomenparen overheersen; hondenleeftijd wordt afgeleid.",
-    "19": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Marsdag bijna bekend; slakkensnelheid onvoldoende afgebakend.",
-    "20": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Bekende ankers bepalen een onvoldoende afgebakende jaguarsnelheid.",
-    "21": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Rechte hoek en kaartspel geven de kattenleeftijd weg.",
+    "17": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "19": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "20": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "21": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "22": "Sahara-oppervlak is een mogelijke vervanger voor negen spelers, maar de kleine optelterm biedt nog steeds te weinig afweging.",
     "25": "Dagelijks zuurstofverbruik hangt van activiteit en lichaamsgrootte af; brondefinitie voor 550 liter ontbreekt.",
-    "27": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Kookpunt en handbotten maken dit vooral kenniswerk.",
+    "28": "Een A380-landingsgestel met 22 wielen is beter dan schedelbotten, maar bevolking 46 wordt al gebruikt in de sterkere puzzel 15.",
     "29": "Darmlengte heeft geen uniform meetprotocol; Dode Zee verandert jaarlijks. Geen voldoende eenduidig totaal.",
     "30": "Gemiddeld olifantgewicht en jaarlijks plasticvolume zijn onvoldoende afgebakend; bron-PDF kon niet worden geraadpleegd.",
-    "31": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Twee tellingen naast slechts een schatbare afstand.",
+    "31": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "32": "1200 ml speeksel is geen uniform daggemiddelde; onvoldoende specifieke bronwaarde voor een 5%-vraag.",
-    "34": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Tanden en Bijbelboeken laten weinig schatspel over.",
+    "34": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "35": "Sterkte van invasieleger varieert per definitie (600.000–685.000); FAOSTAT-pagina levert geen controleerbare maïswaarde.",
-    "37": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Rugbyduur bekend; hondentanden vooral een telweetje.",
+    "36": "De aftrekterm acht beïnvloedt 195 en 187 nauwelijks. De kandidaat-slang van acht meter mist passend bewijs voor het genoemde record.",
+    "37": "Geen overtuigende vervanger voor hondentanden; betere kandidaten voor 80 overlappen met de sterkere puzzel 58.",
+    "38": "Kolibriesoort/activiteit en lichaamswatergemiddelde zijn onvoldoende bepaald. Betere bankmatches overlappen met puzzels 48 en 58.",
     "39": "337 km is in de geraadpleegde bron de breedte van het Victoriameer, niet de lengte (359 km). Puzzel geschrapt, antwoord niet aangepast.",
     "41": "Koolhydraatwaarde 31 g aannemelijk, maar niet zichtbaar in de geraadpleegde primaire productpagina. Niet als geverifieerd geaccepteerd.",
     "42": "99.000 Google-zoekopdrachten per seconde in 2024 is een secundaire schatting zonder controleerbaar primair jaarcijfer.",
-    "43": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Eieren en vlag maken de tunnel een invuloefening.",
-    "44": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Seconden en filmprijzen laten alleen aluminium over.",
-    "45": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Jubileum en Oscars vooral weetjes; weinig spannende combinatie.",
-    "46": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Dobbelsteen gratis; leeuwensnelheid en afleveringen weinig samenhang.",
-    "47": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Golf en islam bepalen het kangoeroegewicht.",
+    "43": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "44": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "45": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "46": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "47": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "49": "Huidoppervlak varieert met lichaamsgrootte; bron noemt ook 1,9 m². 18.000 cm² te specifiek voor deze algemene vraag.",
-    "50": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Klinknagels en wereldproductie moeilijk voorstelbaar; veel blind gokken.",
+    "50": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "52": "CBS 2025 onderscheidt 503 kg gemeentelijk afval en 449 kg huishoudelijk afval. Daarnaast is 6 m geen hard maximum voor zoutwaterkrokodillen; recordmetingen zijn hoger.",
-    "57": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Vermenigvuldigen met tien geeft nauwelijks afweging.",
+    "56": "Windkrachtgrens en historisch CO2 vragen samen veel tabelkennis; geen sterkere vraag voor 74 of 280 gevonden.",
     "59": "104 miljoen Atlanta-passagiers is een afkapping van 104.653.451, geen gewone afronding op miljoenen. Geen getal veranderd om de som te behouden.",
-    "60": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Regeerduur en voetbal geven de rivierlengte weg.",
-    "61": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Grotinventaris en lokaal frietrecord willekeurig en moeilijk schatbaar.",
+    "60": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "61": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "63": "Bron noemt 81 m voor maximale diepte Victoriameer, niet 84 m; meetdefinitie en bronverschil onopgelost.",
-    "64": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Bevolkingsdefinitie Vaticaan onduidelijk; schaakstukken gratis anker.",
+    "64": "Voor het willekeurige oude Vaticaanse inwonertal 800 is geen beter afgebakende bankmatch gevonden.",
     "65": "Twee miljoen bij Verdun betreft Franse transporten langs de Voie Sacrée, niet het totaal aantal deelnemers aan beide kanten.",
     "66": "Aluminium in een gemiddelde auto mist bouwjaar, voertuigtype en populatie. 200 kg niet specifiek bevestigd.",
     "67": "Franse legersterkte Waterloo is een historisch telweetje met verschillende afbakeningen; 73.000 niet voldoende eenduidig bevestigd.",
     "68": "18.000 ton bommen op Londen niet bevestigd in het geraadpleegde bronfragment; periode/gebied onvoldoende scherp.",
     "69": "Amazonelengte is expliciet onderwerp van meetdiscussie (6400 tot circa 6992 km); afwijking groter dan 5%.",
-    "70": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Alfabet en filmtempo bepalen de rundvleesconsumptie.",
+    "70": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "71": "190.000 deelnemers Waterloo en gemiddeld giraffegewicht niet specifiek bevestigd; geen zuivere, goed voorstelbare 5%-vragen.",
-    "72": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Troepentelling en hotelbestand moeilijk voorstelbaar; voetbal gratis.",
+    "72": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "73": "13 km stroomkabel in het ISS is bevestigd als alternatief, maar de kleine term en moeilijk benaderbare tintemperatuur maken de combinatie niet overtuigend.",
+    "74": "Geen betere bankmatch voor 360. Bouwduur blijft vooral historische kennis; de alternatieve hoogte 632 dupliceert puzzel 18.",
     "76": "Watervoetafdruk rundvlees hangt af van land en groene/blauwe/grijze waterdefinitie; algemene vraag ondersteunt geen uniek getal.",
     "77": "Staalmassa van een gemiddelde auto mist jaargang, voertuigtype en referentiepopulatie.",
-    "78": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Kleine term verandert de grote waarde nauwelijks; som voegt weinig toe.",
+    "78": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "79": "Watergebruikbron is alleen een homepage; 129 liter en peiljaar niet extern bevestigd. Nijlmetingen verschillen bovendien per bron.",
-    "84": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Genoemd hotdogrecord vooral gokken; schaakbord bekend.",
+    "81": "Een precieze peildatum helpt de zandkasteelvraag, maar de kleine term 21 biedt nog steeds te weinig steun naast 452 en 431.",
+    "84": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "85": "Congolengte 4700 km botst met andere gangbare metingen; hartdebiet is een rustwaarde, geen algemeen daggemiddelde.",
-    "86": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Obscuur record plus verklappend geformuleerde oorlogsvraag.",
-    "87": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Dartbord en gouden huwelijk bepalen de walvislengte.",
+    "86": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "87": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "88": "CO₂-getal 425 ppm mist maand en meetstation; NASA-pagina bevestigt geen unieke waarde voor 2024.",
-    "90": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Schoolkennis en dobbelsteen overheersen; emoehoogte varieert.",
+    "90": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "91": "Olijfolieconsumptie verwijst naar een niet nader benoemd overzicht uit 2023; populatie en meetmethode ontbreken.",
-    "92": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Bergentelling specialistisch, rugby bekend; slechts een sterke schatvraag.",
+    "92": "Jupiterrotatie kan de bergentelling vervangen, maar het algemene olifantenvoedselgetal blijft onvoldoende afgebakend; geen betrouwbare verbetering voor beide zwakke schakels.",
     "93": "Victoriameeroppervlak is in de geraadpleegde bron 59.947 km², niet 69.500; bron-/meetverschil groter dan 5%.",
-    "94": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Twee bekende tijdsduren bepalen het wombatgewicht.",
-    "95": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Jubileum is weetkennis; hoeveelheid water in een keer onduidelijk.",
-    "97": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Twee bekende maten geven het walvisgewicht weg.",
-    "98": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Vooral tellen en herkennen; weinig echte schatting.",
-    "99": "Spelersreview 1/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Marathon en eeuw geven de rivierlengte weg; afronding ontbreekt.",
-    "100": "Spelersreview 2/5; op verzoek alleen puzzels met 3, 4 of 5 behouden. Vooral jaartallenkennis; ijshockeyvraag mist wedstrijdsituatie."
+    "94": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "95": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "97": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "98": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "99": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "100": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden."
   },
   "fact_reviews": {
     "nr655": {
@@ -1639,7 +1646,7 @@
       "source_status": "verified_rounded",
       "checked_on": "2026-11-15",
       "source_url": "https://data.un.org/legacy/en/iso/cl.html",
-      "evidence_nl": "UNData geeft een projectie van 19.860.000 inwoners voor Chili in 2025; op miljoenen 20."
+      "evidence_nl": "UNData geeft 19.860 duizend inwoners voor Chili in 2025; op hele miljoenen is het bestaande bankantwoord 20."
     },
     "nr168": {
       "source_status": "checked_unresolved",
@@ -1990,7 +1997,7 @@
       "source_status": "verified_rounded",
       "checked_on": "2026-11-15",
       "source_url": "https://www.abs.gov.au/media-centre/media-releases/australias-population-grows-21-cent",
-      "evidence_nl": "ABS geeft 27,2 miljoen inwoners op 30 juni 2024; op miljoenen 27."
+      "evidence_nl": "ABS noemt 27,2 miljoen inwoners op 30 juni 2024; het bestaande bankantwoord op hele miljoenen is 27."
     },
     "nr986": {
       "source_status": "checked_unresolved",
@@ -2227,6 +2234,96 @@
       "checked_on": "2026-11-15",
       "evidence_nl": null,
       "review_note_nl": "Google bevestigde een jaarlijks minimum van twee biljoen voor 2016–2024; dat bewijst geen 99.000 zoekopdrachten per seconde in 2024."
+    },
+    "nr945": {
+      "source_status": "verified_rounded",
+      "checked_on": "2026-11-15",
+      "source_url": "https://data.un.org/legacy/en/iso/ar.html",
+      "evidence_nl": "UNData noemt 45.851 duizend inwoners voor Argentinië in 2025; op hele miljoenen is het bestaande bankantwoord 46."
+    },
+    "nr1137": {
+      "source_status": "verified",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.fai.org/news/statement-about-karman-line",
+      "evidence_nl": "FAI gebruikt de Kármánlijn op 100 km hoogte als conventionele ruimtegrens; geen universele natuurlijke of juridische grens."
+    },
+    "nr1213": {
+      "source_status": "verified_rounded",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.domtoren.nl/het-verhaal/",
+      "evidence_nl": "De officiële Domtorensite geeft 112,32 meter; het bestaande bankantwoord op hele meters is 112."
+    },
+    "nr772": {
+      "source_status": "verified",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.turismoroma.it/it/node/1155",
+      "evidence_nl": "De officiële toerismesite van Rome beschrijft de drie onderste gevelniveaus met elk tachtig boogopeningen; bedoeld is de oorspronkelijke complete gevel."
+    },
+    "nr583": {
+      "source_status": "verified",
+      "checked_on": "2026-11-15",
+      "source_url": "https://press.siemens.com/global/en/feature/eurostar-e320-high-speed-trains-eurostar-international-limited",
+      "evidence_nl": "Fabrikant Siemens beschrijft de Eurostar e320 als een 16-rijtuigentrein; de oudere e300 is niet bedoeld."
+    },
+    "nr1215": {
+      "source_status": "verified",
+      "checked_on": "2026-11-15",
+      "source_url": "https://amvest.nl/projecten/de-zalmhaven/",
+      "evidence_nl": "Ontwikkelaar Amvest noemt de hoge toren van het Zalmhavenproject 215 meter en de twee lagere gebouwen 70 meter."
+    },
+    "nr8": {
+      "source_status": "verified_rounded",
+      "checked_on": "2026-11-15",
+      "source_url": "https://nammco.no/blue-whale/",
+      "evidence_nl": "NAMMCO noemt ongeveer 2,7 metrische ton voor een blauwe-vinvistong: het bestaande bankantwoord 2700 kg is een benaderde massa, geen exact uniform diergewicht."
+    },
+    "nr1315": {
+      "source_status": "verified",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.rhb.ch/en/projects-and-dossiers/world-record/",
+      "evidence_nl": "Rhätische Bahn beschrijft de recordrit van 29 oktober 2022 met 25 treinstellen en in totaal 100 rijtuigen; de vraag gaat expliciet over die rit."
+    },
+    "nr43": {
+      "source_status": "verified",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.burjkhalifa.ae/en/assets/FACT-SHEET.pdf",
+      "evidence_nl": "De officiële factsheet geeft een totale hoogte van 828 meter voor Burj Khalifa."
+    },
+    "nr1298": {
+      "source_status": "verified",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.guinnessworldrecords.jp/world-records/635613-largest-humanoid-robot",
+      "evidence_nl": "Guinness registreert de mobiele humanoïde Gundamrobot in Yokohama op 3 december 2020 als 18 meter hoog."
+    },
+    "nr224": {
+      "source_status": "verified",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.whitehouse.gov/About-the-white-house/The-white-house/",
+      "evidence_nl": "Het Witte Huis noemt 132 kamers voor de Executive Residence, inclusief 35 badkamers en verdeeld over zes niveaus; niet alle gebouwen van het complex."
+    },
+    "nr778": {
+      "source_status": "verified_rounded",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+      "evidence_nl": "De brugbeheerder geeft 4200 voet of 1280 meter voor de hoofdoverspanning tussen de torens; de totale bruglengte is iets anders."
+    },
+    "nr812": {
+      "source_status": "verified",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.inah.gob.mx/foto-del-dia/el-castillo-de-chichen-itza-arquitectura-astronomia-y-tiempo",
+      "evidence_nl": "INAH beschrijft vier trappen met elk 91 treden: 364 samen. Inclusief het bovenplatform geeft de expliciet gevraagde telling 365."
+    },
+    "nr1074": {
+      "source_status": "verified_rounded",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-reproduction-goats/pregnancy-in-goats",
+      "evidence_nl": "Merck Veterinary Manual geeft een draagtijd van 145?155 dagen en gemiddeld 150; de vraag vraagt expliciet dat gemiddelde."
+    },
+    "nr651": {
+      "source_status": "verified_rounded",
+      "checked_on": "2026-11-15",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0006320707000900",
+      "evidence_nl": "De veldstudie in de zuidelijke Braziliaanse Pantanal rapporteert gemiddeld 99,7 kg voor zes volwassen mannelijke jaguars. Het bestaande bankantwoord 100 kg is benaderd; geen maximum of wereldwijd gemiddelde."
     }
   },
   "original_selection": {
@@ -7760,5 +7857,216 @@
         ]
       }
     ]
+  },
+  "player_review": {
+    "baseline_commit": "14ce987",
+    "consensus_kept": [
+      4,
+      6,
+      8,
+      10,
+      11,
+      18,
+      23,
+      24,
+      26,
+      33,
+      40,
+      51,
+      54,
+      55,
+      57,
+      62,
+      75,
+      82,
+      89,
+      96
+    ],
+    "consensus_rejected": [
+      5,
+      17,
+      19,
+      20,
+      21,
+      31,
+      34,
+      43,
+      44,
+      45,
+      46,
+      47,
+      50,
+      60,
+      61,
+      70,
+      72,
+      78,
+      84,
+      86,
+      87,
+      90,
+      94,
+      95,
+      97,
+      98,
+      99,
+      100
+    ],
+    "reconsidered": {
+      "3": {
+        "decision": "verbeterd",
+        "reason_nl": "EU-lidstaten vervangen door de bevolking van Australië (27 miljoen). Het treinrecord is afgebakend tot de Zwitserse recordrit van 2022."
+      },
+      "7": {
+        "decision": "behouden",
+        "reason_nl": "De 88 pianotoetsen blijven als toegestaan bekend anker; paleiskamers en het Marsjaar bieden twee onzekere schattingen."
+      },
+      "9": {
+        "decision": "behouden",
+        "reason_nl": "De 160 verdiepingen geven houvast voor de trappenschatting. Het kleine verschil is gevoelig, maar de voorstelbare klifsprong begrenst beide grote getallen."
+      },
+      "14": {
+        "decision": "geschrapt",
+        "reason_nl": "De overtochtduur draagt nauwelijks bij; voor het willekeurige hamburgerrecord is geen betere vraag met hetzelfde antwoord gevonden."
+      },
+      "15": {
+        "decision": "verbeterd",
+        "reason_nl": "Chromosomen vervangen door de bevolking van Argentinië (46 miljoen); toren, bevolking en robot geven twee brede schalen naast een kleine fysieke maat."
+      },
+      "22": {
+        "decision": "geschrapt",
+        "reason_nl": "Sahara-oppervlak is een mogelijke vervanger voor negen spelers, maar de kleine optelterm biedt nog steeds te weinig afweging."
+      },
+      "27": {
+        "decision": "verbeterd",
+        "reason_nl": "Kookpunt vervangen door de hoogte van de Kármánlijn (100 km). De standaardtelling van handbotten blijft het telanker naast gebouw- en hoogteschaal."
+      },
+      "28": {
+        "decision": "geschrapt",
+        "reason_nl": "Een A380-landingsgestel met 22 wielen is beter dan schedelbotten, maar bevolking 46 wordt al gebruikt in de sterkere puzzel 15."
+      },
+      "36": {
+        "decision": "geschrapt",
+        "reason_nl": "De aftrekterm acht beïnvloedt 195 en 187 nauwelijks. De kandidaat-slang van acht meter mist passend bewijs voor het genoemde record."
+      },
+      "37": {
+        "decision": "geschrapt",
+        "reason_nl": "Geen overtuigende vervanger voor hondentanden; betere kandidaten voor 80 overlappen met de sterkere puzzel 58."
+      },
+      "38": {
+        "decision": "geschrapt",
+        "reason_nl": "Kolibriesoort/activiteit en lichaamswatergemiddelde zijn onvoldoende bepaald. Betere bankmatches overlappen met puzzels 48 en 58."
+      },
+      "48": {
+        "decision": "verbeterd",
+        "reason_nl": "Zeus vervangen door de Utrechtse Domtoren (112 m), leeuwenrust door Chili (20 miljoen). Drie afgebakende gebouw- en bevolkingsschalen."
+      },
+      "53": {
+        "decision": "verbeterd",
+        "reason_nl": "Stewie gemeten van neus tot staartpunt; tijgergewicht als typisch gewicht omschreven. De drie fysieke schalen blijven intact."
+      },
+      "56": {
+        "decision": "geschrapt",
+        "reason_nl": "Windkrachtgrens en historisch CO2 vragen samen veel tabelkennis; geen sterkere vraag voor 74 of 280 gevonden."
+      },
+      "58": {
+        "decision": "verbeterd",
+        "reason_nl": "D-Day vervangen door 80 boogopeningen in een onderste gevelring van het Colosseum; deelstaten door 16 rijtuigen van de Eurostar e320. De brugoverspanning blijft."
+      },
+      "64": {
+        "decision": "geschrapt",
+        "reason_nl": "Voor het willekeurige oude Vaticaanse inwonertal 800 is geen beter afgebakende bankmatch gevonden."
+      },
+      "73": {
+        "decision": "geschrapt",
+        "reason_nl": "13 km stroomkabel in het ISS is bevestigd als alternatief, maar de kleine term en moeilijk benaderbare tintemperatuur maken de combinatie niet overtuigend."
+      },
+      "74": {
+        "decision": "geschrapt",
+        "reason_nl": "Geen betere bankmatch voor 360. Bouwduur blijft vooral historische kennis; de alternatieve hoogte 632 dupliceert puzzel 18."
+      },
+      "80": {
+        "decision": "verbeterd",
+        "reason_nl": "Engelse vraag vraagt nu expliciet naar gemiddeld gewicht van mannelijke jaguars in de Braziliaanse Pantanal. Eén bekend anker is toegestaan; 15 is 15% van 100 en dus betekenisvol."
+      },
+      "81": {
+        "decision": "geschrapt",
+        "reason_nl": "Een precieze peildatum helpt de zandkasteelvraag, maar de kleine term 21 biedt nog steeds te weinig steun naast 452 en 431."
+      },
+      "83": {
+        "decision": "verbeterd",
+        "reason_nl": "Lengte van Rumeysa vervangen door Zalmhaven I (215 m). De expliciete trappentelling en gemiddelde geitendracht zijn extern bevestigd."
+      },
+      "92": {
+        "decision": "geschrapt",
+        "reason_nl": "Jupiterrotatie kan de bergentelling vervangen, maar het algemene olifantenvoedselgetal blijft onvoldoende afgebakend; geen betrouwbare verbetering voor beide zwakke schakels."
+      }
+    }
+  },
+  "question_replacements": {
+    "nr177": {
+      "replacement_id": "nr946",
+      "question_nl": "Hoeveel miljoen inwoners had Australië op 30 juni 2024?",
+      "question_en": "How many million people lived in Australia on 30 June 2024?",
+      "quality": "strong",
+      "quality_reason_nl": "Een landbevolking biedt herkenbare maar onzekere schaal in plaats van een bekend lidstatenaantal.",
+      "reason_nl": "Een landbevolking biedt herkenbare maar onzekere schaal in plaats van een bekend lidstatenaantal."
+    },
+    "nr311": {
+      "replacement_id": "nr945",
+      "question_nl": "Hoeveel miljoen inwoners had Argentinië in 2025?",
+      "question_en": "What was Argentina's population in 2025, in millions?",
+      "quality": "strong",
+      "quality_reason_nl": "Een voorstelbare landbevolking vervangt een exact schoolkennisanker.",
+      "reason_nl": "Een voorstelbare landbevolking vervangt een exact schoolkennisanker."
+    },
+    "nr1136": {
+      "replacement_id": "nr1137",
+      "question_nl": "Hoeveel kilometer boven zeeniveau ligt de Kármánlijn?",
+      "question_en": "How high above sea level is the Kármán line, in kilometres?",
+      "quality": "normal",
+      "quality_reason_nl": "Een vastgelegde conventie, geen gemeten natuurlijke grens; bruikbaar hoogteanker zonder te doen alsof de waarde biologisch of fysisch varieert.",
+      "reason_nl": "Een vastgelegde conventie, geen gemeten natuurlijke grens; bruikbaar hoogteanker zonder te doen alsof de waarde biologisch of fysisch varieert."
+    },
+    "nr435": {
+      "replacement_id": "nr1213",
+      "question_nl": "Hoe hoog is de Domtoren in Utrecht, in meters?",
+      "question_en": "How tall is Utrecht's Dom Tower, in metres?",
+      "quality": "strong",
+      "quality_reason_nl": "Een herkenbare toren met een beredeneerbare maar onzekere hoogte.",
+      "reason_nl": "Een herkenbare toren met een beredeneerbare maar onzekere hoogte."
+    },
+    "nr687": {
+      "replacement_id": "nr948",
+      "question_nl": "Hoeveel miljoen inwoners had Chili in 2025?",
+      "question_en": "What was Chile's population in 2025, in millions?",
+      "quality": "strong",
+      "quality_reason_nl": "Een landbevolking met peiljaar vervangt een onbepaald dierlijk daggemiddelde.",
+      "reason_nl": "Een landbevolking met peiljaar vervangt een onbepaald dierlijk daggemiddelde."
+    },
+    "nr991": {
+      "replacement_id": "nr772",
+      "question_nl": "Hoeveel boogopeningen telde elk van de onderste drie gevelringen van het Colosseum oorspronkelijk?",
+      "question_en": "How many arches originally formed each of the Colosseum's three lower facade tiers?",
+      "quality": "strong",
+      "quality_reason_nl": "Via de omtrek van het amfitheater en de breedte van een boog is de schaal te benaderen; geen specialistische hoofdstuktelling.",
+      "reason_nl": "Via de omtrek van het amfitheater en de breedte van een boog is de schaal te benaderen; geen specialistische hoofdstuktelling."
+    },
+    "nr260": {
+      "replacement_id": "nr583",
+      "question_nl": "Hoeveel rijtuigen vormen een Eurostar e320-trein?",
+      "question_en": "How many carriages make up a Eurostar e320 train?",
+      "quality": "strong",
+      "quality_reason_nl": "Een voorstelbare treinlengte en rijtuiglengte geven houvast voor het aantal.",
+      "reason_nl": "Een voorstelbare treinlengte en rijtuiglengte geven houvast voor het aantal."
+    },
+    "nr441": {
+      "replacement_id": "nr1215",
+      "question_nl": "Hoe hoog is Zalmhaven I in Rotterdam, in meters?",
+      "question_en": "How tall is Zalmhaven I in Rotterdam, in metres?",
+      "quality": "strong",
+      "quality_reason_nl": "Een voorstelbare woontoren vervangt een specifiek persoonsrecord.",
+      "reason_nl": "Een voorstelbare woontoren vervangt een specifiek persoonsrecord."
+    }
   }
 }
