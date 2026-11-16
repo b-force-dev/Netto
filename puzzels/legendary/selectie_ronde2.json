@@ -1,0 +1,3447 @@
+{
+  "edition": "legendary-ronde2-2026-11-16",
+  "status": "editorial_candidates_not_published",
+  "requested_count": 30,
+  "shortfall": 0,
+  "selection_policy": "30 nieuwe combinaties; geen vraag uit ronde 1; onafhankelijke onderwerpen en hoogstens één bekend anker per puzzel.",
+  "source_policy": "Alle 90 feiten op 16 november 2026 bij controleerbare bronnen bevestigd. Benaderingen expliciet; antwoorden vooraf gekozen, niet aangepast om sommen te maken.",
+  "quality_policy": "3 strong = legendary; 2 = near-legendary; 1 = normal. Nooit drie normal.",
+  "tier_counts": {
+    "legendary": 8,
+    "near-legendary": 12,
+    "normal": 10
+  },
+  "suggested_daily_window": {
+    "start": "2026-12-16",
+    "end": "2027-01-14",
+    "scheduled": false
+  },
+  "puzzles": [
+    {
+      "questions": [
+        {
+          "id": "nr936",
+          "question_nl": "Hoeveel meter steekt Uluru boven de vlakte uit?",
+          "question_en": "How high does Uluru rise above the plain, in metres?",
+          "answer": 348,
+          "category": "Geografie",
+          "source_url": "https://uluru.gov.au/discover/highlights/amazing-facts/",
+          "evidence_nl": "Parks Australia: Uluru steekt 348 m boven de omringende vlakte uit.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://uluru.gov.au/discover/highlights/amazing-facts/",
+            "evidence_nl": "Parks Australia: Uluru steekt 348 m boven de omringende vlakte uit."
+          },
+          "quality": "strong",
+          "topic": "nr936",
+          "semantic_keys": [
+            "nr936:how high does uluru rise above the plain, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr936-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-034",
+          "question_en": "About how thick is a Golden Gate Bridge main cable, in centimetres?",
+          "question_nl": "Ongeveer hoeveel centimeter dik is een hoofdkabel van de Golden Gate Bridge?",
+          "answer": 92,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+          "evidence_nl": "Diameter inclusief omwikkeling 0,92 m = 92 cm.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+            "evidence_nl": "Diameter inclusief omwikkeling 0,92 m = 92 cm.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "golden-gate",
+          "semantic_keys": [
+            "golden-gate:about how thick is a golden gate bridge main cable, in centimetres?"
+          ],
+          "quality_reason_nl": "Voorstelbare golden-gate-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-106",
+          "question_en": "About how long is the Great Clock's pendulum, in centimetres?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is de slinger van de Great Clock in Londen?",
+          "answer": 440,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+          "evidence_nl": "Brits parlement: 4,4 m = 440 cm.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+            "evidence_nl": "Brits parlement: 4,4 m = 440 cm.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "big-ben",
+          "semantic_keys": [
+            "big-ben:about how long is the great clock's pendulum, in centimetres?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare big-ben-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        }
+      ],
+      "operator": "+",
+      "tier": "legendary",
+      "id": "legendary-r2-670bd48c22b6",
+      "number": 1,
+      "status": "editorial_candidate",
+      "original_tier": "legendary",
+      "suggested_daily_date": "2026-12-16",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "348 + 92 = 440",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "nr38",
+          "question_nl": "Hoeveel dagen duurde de Atlantische overtocht van de Mayflower in 1620?",
+          "question_en": "How many days did the Mayflower's Atlantic crossing take in 1620?",
+          "answer": 66,
+          "category": "Geschiedenis",
+          "source_url": "https://plimoth.org/for-students/homework-help/mayflower-and-mayflower-compact",
+          "evidence_nl": "Plimoth Patuxet beschrijft de Atlantische overtocht als een reis van 66 dagen.",
+          "source_status": "verified",
+          "quality": "normal",
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://plimoth.org/for-students/homework-help/mayflower-and-mayflower-compact",
+            "evidence_nl": "Plimoth Patuxet beschrijft de Atlantische overtocht als een reis van 66 dagen."
+          },
+          "topic": "nr38",
+          "semantic_keys": [
+            "nr38:how many days did the mayflower's atlantic crossing take in 1620?"
+          ],
+          "known_anchor": false
+        },
+        {
+          "id": "nr70",
+          "question_nl": "Ongeveer hoeveel kilogram woog de recordhamburger in Pilsting in 2017?",
+          "question_en": "About how much did the record hamburger made in Pilsting in 2017 weigh, in kilograms?",
+          "answer": 1164,
+          "category": "Records en vergelijkingen",
+          "source_url": "https://www.guinnessworldrecords.com/world-records/largest-hamburger",
+          "evidence_nl": "Guinness registreert de Pilsting-hamburger op 9 juli 2017 met 1164,2 kg; op hele kilogrammen 1164.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.guinnessworldrecords.com/world-records/largest-hamburger",
+            "evidence_nl": "Guinness registreert de Pilsting-hamburger op 9 juli 2017 met 1164,2 kg; op hele kilogrammen 1164.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr70",
+          "semantic_keys": [
+            "nr70:about how much did the record hamburger made in pilsting in 2017 weigh, in kilograms?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr70-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "nr865",
+          "question_nl": "Ongeveer hoeveel kilometer lang is de Rijn?",
+          "question_en": "About how long is the Rhine, in kilometres?",
+          "answer": 1230,
+          "category": "Geografie",
+          "source_url": "https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf",
+          "evidence_nl": "ICPR stroomgebiedbeheerplan 2022–2027, hoofdstuk 1: 1233 km; als globale lengte op tientallen 1230 km.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf",
+            "evidence_nl": "ICPR stroomgebiedbeheerplan 2022–2027, hoofdstuk 1: 1233 km; als globale lengte op tientallen 1230 km.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr865",
+          "semantic_keys": [
+            "nr865:about how long is the rhine, in kilometres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr865-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "near-legendary",
+      "id": "legendary-r2-e2fc54673c60",
+      "number": 2,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2026-12-17",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "66 + 1164 = 1230",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "nr230",
+          "question_nl": "Ongeveer hoeveel meter hoog is One World Trade Center?",
+          "question_en": "About how tall is One World Trade Center, in metres?",
+          "answer": 541,
+          "category": "Gebouwen en infrastructuur",
+          "source_url": "https://dashboard.durst.org/onewtc/wp-content/uploads/sites/10/2026/03/OneWTC_Glossy_2026-02-05.pdf",
+          "evidence_nl": "Eigenaar Durst geeft 1776 voet; maal 0,3048 = 541,3248 m, afgerond 541 m.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://dashboard.durst.org/onewtc/wp-content/uploads/sites/10/2026/03/OneWTC_Glossy_2026-02-05.pdf",
+            "evidence_nl": "Eigenaar Durst geeft 1776 voet; maal 0,3048 = 541,3248 m, afgerond 541 m.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr230",
+          "semantic_keys": [
+            "nr230:about how tall is one world trade center, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr230-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-113",
+          "question_en": "How many different people flew on NASA's Space Shuttles?",
+          "question_nl": "Hoeveel verschillende mensen vlogen in NASA's spaceshuttles?",
+          "answer": 355,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-was-the-space-shuttle-grades-5-8/",
+          "evidence_nl": "NASA: in totaal 355 personen; geen telling van herhaalvluchten.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-was-the-space-shuttle-grades-5-8/",
+            "evidence_nl": "NASA: in totaal 355 personen; geen telling van herhaalvluchten."
+          },
+          "quality": "strong",
+          "topic": "shuttle",
+          "semantic_keys": [
+            "shuttle:how many different people flew on nasa's space shuttles?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare shuttle-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        },
+        {
+          "id": "r2-114",
+          "question_en": "How many steps does the Washington Monument have?",
+          "question_nl": "Hoeveel traptreden heeft het Washington Monument?",
+          "answer": 896,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.nps.gov/places/000/information-panel-washington-the-man-the-monument-the-city.htm",
+          "evidence_nl": "NPS-informatiepaneel: 896 treden.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nps.gov/places/000/information-panel-washington-the-man-the-monument-the-city.htm",
+            "evidence_nl": "NPS-informatiepaneel: 896 treden."
+          },
+          "quality": "strong",
+          "topic": "washington",
+          "semantic_keys": [
+            "washington:how many steps does the washington monument have?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare washington-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        }
+      ],
+      "operator": "+",
+      "tier": "legendary",
+      "id": "legendary-r2-45a8dc2ecc1e",
+      "number": 3,
+      "status": "editorial_candidate",
+      "original_tier": "legendary",
+      "suggested_daily_date": "2026-12-18",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "541 + 355 = 896",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "nr232",
+          "question_nl": "Ongeveer hoeveel meter hoog is het Empire State Building inclusief antenne?",
+          "question_en": "About how tall is the Empire State Building including its antenna, in metres?",
+          "answer": 443,
+          "category": "Gebouwen en infrastructuur",
+          "source_url": "https://www.esbnyc.com/about/facts-figures",
+          "evidence_nl": "De exploitant geeft 1454 voet / 443 meter inclusief antenne.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.esbnyc.com/about/facts-figures",
+            "evidence_nl": "De exploitant geeft 1454 voet / 443 meter inclusief antenne.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr232",
+          "semantic_keys": [
+            "nr232:about how tall is the empire state building including its antenna, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr232-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-032",
+          "question_en": "What is the clearance under the Golden Gate Bridge at high water, in metres?",
+          "question_nl": "Hoeveel meter doorvaarthoogte heeft de Golden Gate Bridge bij hoogwater?",
+          "answer": 67,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+          "evidence_nl": "Vrije doorvaarthoogte boven mean higher high water: 67 m.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+            "evidence_nl": "Vrije doorvaarthoogte boven mean higher high water: 67 m."
+          },
+          "quality": "strong",
+          "topic": "golden-gate",
+          "semantic_keys": [
+            "golden-gate:what is the clearance under the golden gate bridge at high water, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare golden-gate-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "nr344",
+          "question_nl": "Ongeveer hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen?",
+          "question_en": "About how many million square kilometres is Earth's surface area?",
+          "answer": 510,
+          "category": "Geografie",
+          "source_url": "https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf",
+          "evidence_nl": "CIA Physical World 2024: 510,072 miljoen km²; op hele miljoenen 510.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf",
+            "evidence_nl": "CIA Physical World 2024: 510,072 miljoen km²; op hele miljoenen 510.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr344",
+          "semantic_keys": [
+            "nr344:about how many million square kilometres is earth's surface area?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr344-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "legendary",
+      "id": "legendary-r2-08363a79b651",
+      "number": 4,
+      "status": "editorial_candidate",
+      "original_tier": "legendary",
+      "suggested_daily_date": "2026-12-19",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "443 + 67 = 510",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "nr510",
+          "question_nl": "Ongeveer hoeveel aardse dagen duurt een jaar op Venus?",
+          "question_en": "About how many Earth days does Venus take to orbit the Sun?",
+          "answer": 225,
+          "category": "Sterrenkunde & ruimte",
+          "source_url": "https://science.nasa.gov/venus/venus-facts/",
+          "evidence_nl": "NASA beschrijft 225 aardse dagen per omloop van Venus.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/venus/venus-facts/",
+            "evidence_nl": "NASA beschrijft 225 aardse dagen per omloop van Venus.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "nr510",
+          "semantic_keys": [
+            "nr510:about how many earth days does venus take to orbit the sun?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-084",
+          "question_en": "About how long is an ostrich egg, in centimetres?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is een struisvogelei?",
+          "answer": 15,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+          "evidence_nl": "San Diego Zoo: gemiddeld 15 cm lang.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+            "evidence_nl": "San Diego Zoo: gemiddeld 15 cm lang.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "ostrich",
+          "semantic_keys": [
+            "ostrich:about how long is an ostrich egg, in centimetres?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-064",
+          "question_en": "About how many minutes does sunlight take to reach Neptune?",
+          "question_nl": "Ongeveer hoeveel minuten doet zonlicht erover om Neptunus te bereiken?",
+          "answer": 240,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+          "evidence_nl": "NASA: vier uur = 240 minuten bij de gemiddelde afstand.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+            "evidence_nl": "NASA: vier uur = 240 minuten bij de gemiddelde afstand.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "neptune",
+          "semantic_keys": [
+            "neptune:about how many minutes does sunlight take to reach neptune?"
+          ],
+          "quality_reason_nl": "Voorstelbare neptune-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "normal",
+      "id": "legendary-r2-a766b18b1a78",
+      "number": 5,
+      "status": "editorial_candidate",
+      "original_tier": "normal",
+      "suggested_daily_date": "2026-12-20",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "225 + 15 = 240",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "nr796",
+          "question_nl": "Hoeveel meter hoog is de Sydney Tower?",
+          "question_en": "How tall is Sydney Tower, in metres?",
+          "answer": 309,
+          "category": "Gebouwen en infrastructuur",
+          "source_url": "https://www.sydneytowereye.com.au/explore/explore/about-sydney-tower/",
+          "evidence_nl": "De exploitant geeft 309 meter van de voet tot de spits.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.sydneytowereye.com.au/explore/explore/about-sydney-tower/",
+            "evidence_nl": "De exploitant geeft 309 meter van de voet tot de spits."
+          },
+          "quality": "strong",
+          "topic": "nr796",
+          "semantic_keys": [
+            "nr796:how tall is sydney tower, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr796-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-045",
+          "question_en": "About how long is the Statue of Liberty's nose, in centimetres?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is de neus van het Vrijheidsbeeld?",
+          "answer": 137,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+          "evidence_nl": "NPS geeft 1,37 m: 137 cm.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+            "evidence_nl": "NPS geeft 1,37 m: 137 cm.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "liberty",
+          "semantic_keys": [
+            "liberty:about how long is the statue of liberty's nose, in centimetres?"
+          ],
+          "quality_reason_nl": "Voorstelbare liberty-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "nr266",
+          "question_nl": "Ongeveer hoeveel kilometer lang is de Grand Canyon?",
+          "question_en": "About how long is the Grand Canyon, in kilometres?",
+          "answer": 446,
+          "category": "Geografie",
+          "source_url": "https://www.nps.gov/grca/faqs.htm",
+          "evidence_nl": "NPS: van Lees Ferry tot Grand Wash Cliffs 277 mijl / 446 km langs de rivier.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nps.gov/grca/faqs.htm",
+            "evidence_nl": "NPS: van Lees Ferry tot Grand Wash Cliffs 277 mijl / 446 km langs de rivier.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr266",
+          "semantic_keys": [
+            "nr266:about how long is the grand canyon, in kilometres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr266-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "legendary",
+      "id": "legendary-r2-710b8ed752e4",
+      "number": 6,
+      "status": "editorial_candidate",
+      "original_tier": "legendary",
+      "suggested_daily_date": "2026-12-21",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "309 + 137 = 446",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "nr686",
+          "question_nl": "Ongeveer hoeveel uur per dag kan een koala slapen?",
+          "question_en": "About how many hours can a koala sleep each day?",
+          "answer": 20,
+          "category": "Dieren",
+          "source_url": "https://animals.sandiegozoo.org/animals/koala",
+          "evidence_nl": "San Diego Zoo beschrijft dat koala’s tot twintig uur per dag slapen.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/koala",
+            "evidence_nl": "San Diego Zoo beschrijft dat koala’s tot twintig uur per dag slapen.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "nr686",
+          "semantic_keys": [
+            "nr686:about how many hours can a koala sleep each day?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-098",
+          "question_en": "About how many litres can a thirsty camel drink in one session?",
+          "question_nl": "Ongeveer hoeveel liter kan een dorstige kameel in één keer drinken?",
+          "answer": 145,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/camel",
+          "evidence_nl": "San Diego Zoo: tot 145 liter per drinkbeurt.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/camel",
+            "evidence_nl": "San Diego Zoo: tot 145 liter per drinkbeurt.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "camel",
+          "semantic_keys": [
+            "camel:about how many litres can a thirsty camel drink in one session?"
+          ],
+          "quality_reason_nl": "Voorstelbare camel-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-063",
+          "question_en": "About how many Earth years does Neptune take to orbit the Sun?",
+          "question_nl": "Ongeveer hoeveel aardse jaren duurt een jaar op Neptunus?",
+          "answer": 165,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+          "evidence_nl": "NASA: ongeveer 165 aardse jaren.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+            "evidence_nl": "NASA: ongeveer 165 aardse jaren.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "neptune",
+          "semantic_keys": [
+            "neptune:about how many earth years does neptune take to orbit the sun?"
+          ],
+          "quality_reason_nl": "Voorstelbare neptune-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "near-legendary",
+      "id": "legendary-r2-41a91393d3fd",
+      "number": 7,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2026-12-22",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "20 + 145 = 165",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "nr436",
+          "question_nl": "Ongeveer hoeveel meter hoog was het zandkasteel in Blokhus in 2021?",
+          "question_en": "About how tall was the Blokhus sandcastle in 2021, in metres?",
+          "answer": 21,
+          "category": "Records en vergelijkingen",
+          "source_url": "https://www.guinnessworldrecords.com/world-records/tallest-sandcastle",
+          "evidence_nl": "Guinness registreert het zandkasteel in Blokhus op 2 juli 2021 met 21,16 m; op hele meters 21.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.guinnessworldrecords.com/world-records/tallest-sandcastle",
+            "evidence_nl": "Guinness registreert het zandkasteel in Blokhus op 2 juli 2021 met 21,16 m; op hele meters 21.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr436",
+          "semantic_keys": [
+            "nr436:about how tall was the blokhus sandcastle in 2021, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr436-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-091",
+          "question_en": "About how many kilograms can a male lion eat in one meal?",
+          "question_nl": "Ongeveer hoeveel kilogram kan een mannetjesleeuw in één maaltijd eten?",
+          "answer": 63,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/lion",
+          "evidence_nl": "San Diego Zoo noemt tot circa 63 kg per maaltijd.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/lion",
+            "evidence_nl": "San Diego Zoo noemt tot circa 63 kg per maaltijd.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "lion",
+          "semantic_keys": [
+            "lion:about how many kilograms can a male lion eat in one meal?"
+          ],
+          "quality_reason_nl": "Voorstelbare lion-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-059",
+          "question_en": "About how many Earth years does Uranus take to orbit the Sun?",
+          "question_nl": "Ongeveer hoeveel aardse jaren duurt een jaar op Uranus?",
+          "answer": 84,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/uranus/facts/",
+          "evidence_nl": "NASA: ongeveer 84 aardse jaren.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/uranus/facts/",
+            "evidence_nl": "NASA: ongeveer 84 aardse jaren.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "uranus",
+          "semantic_keys": [
+            "uranus:about how many earth years does uranus take to orbit the sun?"
+          ],
+          "quality_reason_nl": "Voorstelbare uranus-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "legendary",
+      "id": "legendary-r2-cca7a8defb5e",
+      "number": 8,
+      "status": "editorial_candidate",
+      "original_tier": "legendary",
+      "suggested_daily_date": "2026-12-23",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "21 + 63 = 84",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "nr855",
+          "question_nl": "Ongeveer hoeveel kilometer lang is de Ganges?",
+          "question_en": "About how long is the Ganges, in kilometres?",
+          "answer": 2525,
+          "category": "Geografie",
+          "source_url": "https://nmcg.nic.in/courseofganga.aspx",
+          "evidence_nl": "National Mission for Clean Ganga: een loop van 2525 km tot de Golf van Bengalen.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://nmcg.nic.in/courseofganga.aspx",
+            "evidence_nl": "National Mission for Clean Ganga: een loop van 2525 km tot de Golf van Bengalen.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr855",
+          "semantic_keys": [
+            "nr855:about how long is the ganges, in kilometres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr855-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-094",
+          "question_en": "About how many months is a lioness pregnant?",
+          "question_nl": "Ongeveer hoeveel maanden is een leeuwin drachtig?",
+          "answer": 4,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/lion",
+          "evidence_nl": "San Diego Zoo noemt bijna vier maanden.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/lion",
+            "evidence_nl": "San Diego Zoo noemt bijna vier maanden.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "lion",
+          "semantic_keys": [
+            "lion:about how many months is a lioness pregnant?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-039",
+          "question_en": "How many tonnes does the Eiffel Tower weigh in total?",
+          "question_nl": "Hoeveel ton weegt de Eiffeltoren in totaal?",
+          "answer": 10100,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+          "evidence_nl": "Exploitant: totaalgewicht 10100 ton.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+            "evidence_nl": "Exploitant: totaalgewicht 10100 ton."
+          },
+          "quality": "strong",
+          "topic": "eiffel",
+          "semantic_keys": [
+            "eiffel:how many tonnes does the eiffel tower weigh in total?"
+          ],
+          "quality_reason_nl": "Voorstelbare eiffel-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "×",
+      "tier": "near-legendary",
+      "id": "legendary-r2-5803c713480a",
+      "number": 9,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2026-12-24",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "2525 × 4 = 10100",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-031",
+          "question_en": "How wide is the Golden Gate Bridge, in metres?",
+          "question_nl": "Hoeveel meter breed is de Golden Gate Bridge?",
+          "answer": 27,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+          "evidence_nl": "De beheerder geeft 27 m totale breedte.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+            "evidence_nl": "De beheerder geeft 27 m totale breedte."
+          },
+          "quality": "normal",
+          "topic": "golden-gate",
+          "semantic_keys": [
+            "golden-gate:how wide is the golden gate bridge, in metres?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-050",
+          "question_en": "About how many Earth days does Mercury take to spin once?",
+          "question_nl": "Ongeveer hoeveel aardse dagen duurt één draai van Mercurius?",
+          "answer": 59,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/mercury/facts/",
+          "evidence_nl": "NASA: één aswenteling duurt 59 aardse dagen.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/mercury/facts/",
+            "evidence_nl": "NASA: één aswenteling duurt 59 aardse dagen.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "mercury",
+          "semantic_keys": [
+            "mercury:about how many earth days does mercury take to spin once?"
+          ],
+          "quality_reason_nl": "Voorstelbare mercury-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "nr3",
+          "question_nl": "Ongeveer hoeveel miljard zenuwcellen bevat het menselijk brein?",
+          "question_en": "About how many billion neurons are in the human brain?",
+          "answer": 86,
+          "category": "Biologie & gezondheid",
+          "source_url": "https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain",
+          "evidence_nl": "NIH beschrijft circa 86 miljard zenuwcellen; dit is een biologisch gemiddelde, geen vast aantal per persoon.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain",
+            "evidence_nl": "NIH beschrijft circa 86 miljard zenuwcellen; dit is een biologisch gemiddelde, geen vast aantal per persoon.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr3",
+          "semantic_keys": [
+            "nr3:about how many billion neurons are in the human brain?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr3-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "near-legendary",
+      "id": "legendary-r2-377c54ea65e2",
+      "number": 10,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2026-12-25",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "27 + 59 = 86",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-033",
+          "question_en": "How high above the water are the Golden Gate Bridge's towers, in metres?",
+          "question_nl": "Hoeveel meter boven het water zijn de torens van de Golden Gate Bridge?",
+          "answer": 227,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+          "evidence_nl": "Torens boven water: 227 m.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+            "evidence_nl": "Torens boven water: 227 m."
+          },
+          "quality": "strong",
+          "topic": "golden-gate",
+          "semantic_keys": [
+            "golden-gate:how high above the water are the golden gate bridge's towers, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare golden-gate-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-058",
+          "question_en": "About how many hours does Uranus take to spin once?",
+          "question_nl": "Ongeveer hoeveel uur duurt één draai van Uranus?",
+          "answer": 17,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/uranus/facts/",
+          "evidence_nl": "NASA: ongeveer 17 uur.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/uranus/facts/",
+            "evidence_nl": "NASA: ongeveer 17 uur.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "uranus",
+          "semantic_keys": [
+            "uranus:about how many hours does uranus take to spin once?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-044",
+          "question_en": "About how long is the Statue of Liberty's index finger, in centimetres?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is de wijsvinger van het Vrijheidsbeeld?",
+          "answer": 244,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+          "evidence_nl": "NPS geeft 2,44 m: 244 cm.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+            "evidence_nl": "NPS geeft 2,44 m: 244 cm.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "liberty",
+          "semantic_keys": [
+            "liberty:about how long is the statue of liberty's index finger, in centimetres?"
+          ],
+          "quality_reason_nl": "Voorstelbare liberty-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "near-legendary",
+      "id": "legendary-r2-f9ce7359e236",
+      "number": 11,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2026-12-26",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "227 + 17 = 244",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-036",
+          "question_en": "How many wire bundles form one Golden Gate Bridge main cable?",
+          "question_nl": "Hoeveel draadbundels vormen één hoofdkabel van de Golden Gate Bridge?",
+          "answer": 61,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+          "evidence_nl": "Eén hoofdkabel bestaat uit 61 bundels.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+            "evidence_nl": "Eén hoofdkabel bestaat uit 61 bundels."
+          },
+          "quality": "normal",
+          "topic": "golden-gate",
+          "semantic_keys": [
+            "golden-gate:how many wire bundles form one golden gate bridge main cable?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-071",
+          "question_en": "About how much does a giraffe's neck weigh, in kilograms?",
+          "question_nl": "Ongeveer hoeveel kilogram weegt de nek van een giraffe?",
+          "answer": 272,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+          "evidence_nl": "San Diego Zoo: circa 272 kg.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+            "evidence_nl": "San Diego Zoo: circa 272 kg.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "giraffe",
+          "semantic_keys": [
+            "giraffe:about how much does a giraffe's neck weigh, in kilograms?"
+          ],
+          "quality_reason_nl": "Voorstelbare giraffe-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "nr798",
+          "question_nl": "Hoeveel meter hoog is de Tokyo Tower?",
+          "question_en": "How tall is Tokyo Tower, in metres?",
+          "answer": 333,
+          "category": "Gebouwen en infrastructuur",
+          "source_url": "https://www.tokyotower.co.jp/plan/towerpedia/",
+          "evidence_nl": "Tokyo Tower noemt op zijn eigen site een hoogte van 333 m.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.tokyotower.co.jp/plan/towerpedia/",
+            "evidence_nl": "Tokyo Tower noemt op zijn eigen site een hoogte van 333 m."
+          },
+          "quality": "strong",
+          "topic": "nr798",
+          "semantic_keys": [
+            "nr798:how tall is tokyo tower, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr798-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "near-legendary",
+      "id": "legendary-r2-0c83a7aaea22",
+      "number": 12,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2026-12-27",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "61 + 272 = 333",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-037",
+          "question_en": "How many pairs of vertical suspender ropes does the Golden Gate Bridge have?",
+          "question_nl": "Hoeveel paren verticale hangkabels heeft de Golden Gate Bridge?",
+          "answer": 250,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+          "evidence_nl": "De beheerder telt 250 paren.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+            "evidence_nl": "De beheerder telt 250 paren."
+          },
+          "quality": "strong",
+          "topic": "golden-gate",
+          "semantic_keys": [
+            "golden-gate:how many pairs of vertical suspender ropes does the golden gate bridge have?"
+          ],
+          "quality_reason_nl": "Voorstelbare golden-gate-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-066",
+          "question_en": "About how tall is the General Sherman tree, in metres?",
+          "question_nl": "Ongeveer hoeveel meter hoog is de General Sherman-boom?",
+          "answer": 84,
+          "category": "Schaal en wereld",
+          "source_url": "https://home.nps.gov/seki/learn/nature/sherman.htm",
+          "evidence_nl": "NPS: 83,8 m, afgerond 84.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://home.nps.gov/seki/learn/nature/sherman.htm",
+            "evidence_nl": "NPS: 83,8 m, afgerond 84.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "sherman",
+          "semantic_keys": [
+            "sherman:about how tall is the general sherman tree, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare sherman-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-102",
+          "question_en": "How many steps lead to Big Ben's belfry?",
+          "question_nl": "Hoeveel treden leiden naar de klokkenkamer van Big Ben?",
+          "answer": 334,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+          "evidence_nl": "Brits parlement: 334 treden tot de belfry.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+            "evidence_nl": "Brits parlement: 334 treden tot de belfry."
+          },
+          "quality": "strong",
+          "topic": "big-ben",
+          "semantic_keys": [
+            "big-ben:how many steps lead to big ben's belfry?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare big-ben-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        }
+      ],
+      "operator": "+",
+      "tier": "legendary",
+      "id": "legendary-r2-a5f18963443a",
+      "number": 13,
+      "status": "editorial_candidate",
+      "original_tier": "legendary",
+      "suggested_daily_date": "2026-12-28",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "250 + 84 = 334",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-043",
+          "question_en": "About how long is the Statue of Liberty's hand, in centimetres?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is de hand van het Vrijheidsbeeld?",
+          "answer": 500,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+          "evidence_nl": "NPS geeft 5,00 m: 500 cm.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+            "evidence_nl": "NPS geeft 5,00 m: 500 cm.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "liberty",
+          "semantic_keys": [
+            "liberty:about how long is the statue of liberty's hand, in centimetres?"
+          ],
+          "quality_reason_nl": "Voorstelbare liberty-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-070",
+          "question_en": "How many tunnels make up the Channel Fixed Link, including the service tunnel?",
+          "question_nl": "Hoeveel tunnels vormen de Kanaalverbinding, inclusief de diensttunnel?",
+          "answer": 3,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel",
+          "evidence_nl": "ORR: twee spoortunnels en één diensttunnel.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel",
+            "evidence_nl": "ORR: twee spoortunnels en één diensttunnel."
+          },
+          "quality": "normal",
+          "topic": "channel",
+          "semantic_keys": [
+            "channel:how many tunnels make up the channel fixed link, including the service tunnel?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-080",
+          "question_en": "About how much does an ostrich egg weigh, in grams?",
+          "question_nl": "Ongeveer hoeveel gram weegt een struisvogelei?",
+          "answer": 1500,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+          "evidence_nl": "San Diego Zoo: circa 1500 gram.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+            "evidence_nl": "San Diego Zoo: circa 1500 gram.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "ostrich",
+          "semantic_keys": [
+            "ostrich:about how much does an ostrich egg weigh, in grams?"
+          ],
+          "quality_reason_nl": "Voorstelbare ostrich-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "×",
+      "tier": "near-legendary",
+      "id": "legendary-r2-be8818175a30",
+      "number": 14,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2026-12-29",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "500 × 3 = 1500",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-046",
+          "question_en": "How many windows are in the Statue of Liberty's crown?",
+          "question_nl": "Hoeveel ramen zitten in de kroon van het Vrijheidsbeeld?",
+          "answer": 25,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+          "evidence_nl": "NPS telt 25 ramen.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+            "evidence_nl": "NPS telt 25 ramen."
+          },
+          "quality": "normal",
+          "topic": "liberty",
+          "semantic_keys": [
+            "liberty:how many windows are in the statue of liberty's crown?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-075",
+          "question_en": "About how fast has a giraffe been recorded running, in kilometres per hour?",
+          "question_nl": "Ongeveer hoeveel kilometer per uur is de gemeten hardloopsnelheid van een giraffe?",
+          "answer": 56,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+          "evidence_nl": "San Diego Zoo noemt een gemeten record van 56 km/u.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+            "evidence_nl": "San Diego Zoo noemt een gemeten record van 56 km/u.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "giraffe",
+          "semantic_keys": [
+            "giraffe:about how fast has a giraffe been recorded running, in kilometres per hour?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-077",
+          "question_en": "About how much does an adult female hippo weigh on average, in kilograms?",
+          "question_nl": "Ongeveer hoeveel kilogram weegt een volwassen vrouwelijk nijlpaard gemiddeld?",
+          "answer": 1400,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/hippo",
+          "evidence_nl": "San Diego Zoo: gemiddeld 1400 kg voor vrouwtjes.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/hippo",
+            "evidence_nl": "San Diego Zoo: gemiddeld 1400 kg voor vrouwtjes.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "hippo",
+          "semantic_keys": [
+            "hippo:about how much does an adult female hippo weigh on average, in kilograms?"
+          ],
+          "quality_reason_nl": "Voorstelbare hippo-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "×",
+      "tier": "normal",
+      "id": "legendary-r2-2cfcd77ebd91",
+      "number": 15,
+      "status": "editorial_candidate",
+      "original_tier": "normal",
+      "suggested_daily_date": "2026-12-30",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "25 × 56 = 1400",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-053",
+          "question_en": "About how fast does Mercury orbit the Sun, in kilometres per second?",
+          "question_nl": "Ongeveer hoeveel kilometer per seconde beweegt Mercurius om de zon?",
+          "answer": 47,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/mercury/facts/",
+          "evidence_nl": "NASA geeft bijna 47 km/s.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/mercury/facts/",
+            "evidence_nl": "NASA geeft bijna 47 km/s.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "mercury",
+          "semantic_keys": [
+            "mercury:about how fast does mercury orbit the sun, in kilometres per second?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-055",
+          "question_en": "About how many hours does Saturn take to spin once?",
+          "question_nl": "Ongeveer hoeveel uur duurt één draai van Saturnus?",
+          "answer": 11,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/saturn/facts/",
+          "evidence_nl": "NASA: 10,7 uur, afgerond 11.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/saturn/facts/",
+            "evidence_nl": "NASA: 10,7 uur, afgerond 11.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "saturn",
+          "semantic_keys": [
+            "saturn:about how many hours does saturn take to spin once?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "nr345",
+          "question_nl": "Hoeveel centimeter hoog is Michelangelo’s David inclusief gebeeldhouwde basis?",
+          "question_en": "How tall is Michelangelo's David including its carved base, in centimetres?",
+          "answer": 517,
+          "category": "Kunst en cultuur",
+          "source_url": "https://www.galleriaaccademiafirenze.it/en/artworks/david-michelangelo/",
+          "evidence_nl": "Het museum geeft 517 cm inclusief de gebeeldhouwde basis.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.galleriaaccademiafirenze.it/en/artworks/david-michelangelo/",
+            "evidence_nl": "Het museum geeft 517 cm inclusief de gebeeldhouwde basis."
+          },
+          "quality": "strong",
+          "topic": "nr345",
+          "semantic_keys": [
+            "nr345:how tall is michelangelo's david including its carved base, in centimetres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr345-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "×",
+      "tier": "normal",
+      "id": "legendary-r2-d635081b0158",
+      "number": 16,
+      "status": "editorial_candidate",
+      "original_tier": "normal",
+      "suggested_daily_date": "2026-12-31",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "47 × 11 = 517",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-054",
+          "question_en": "About how many minutes does sunlight take to reach Saturn?",
+          "question_nl": "Ongeveer hoeveel minuten doet zonlicht erover om Saturnus te bereiken?",
+          "answer": 80,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/saturn/facts/",
+          "evidence_nl": "NASA: 80 minuten bij de gemiddelde afstand.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/saturn/facts/",
+            "evidence_nl": "NASA: 80 minuten bij de gemiddelde afstand.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "saturn",
+          "semantic_keys": [
+            "saturn:about how many minutes does sunlight take to reach saturn?"
+          ],
+          "quality_reason_nl": "Voorstelbare saturn-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-110",
+          "question_en": "About how thick is the Gateway Arch's observation-window glass, in millimetres?",
+          "question_nl": "Ongeveer hoeveel millimeter dik is het glas van de uitkijkramen van de Gateway Arch?",
+          "answer": 19,
+          "category": "Schaal en wereld",
+          "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+          "evidence_nl": "NPS: 19 mm plaatglas.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+            "evidence_nl": "NPS: 19 mm plaatglas.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "arch",
+          "semantic_keys": [
+            "arch:about how thick is the gateway arch's observation-window glass, in millimetres?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
+        },
+        {
+          "id": "r2-095",
+          "question_en": "About what percentage of a giant panda's diet is bamboo?",
+          "question_nl": "Ongeveer hoeveel procent van het voedsel van een reuzenpanda is bamboe?",
+          "answer": 99,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/giant-panda",
+          "evidence_nl": "San Diego Zoo: circa 99 procent.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/giant-panda",
+            "evidence_nl": "San Diego Zoo: circa 99 procent.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "panda",
+          "semantic_keys": [
+            "panda:about what percentage of a giant panda's diet is bamboo?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "normal",
+      "id": "legendary-r2-0c662d2c12e5",
+      "number": 17,
+      "status": "editorial_candidate",
+      "original_tier": "normal",
+      "suggested_daily_date": "2027-01-01",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "80 + 19 = 99",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-056",
+          "question_en": "About how thick are Saturn's main rings typically, in metres?",
+          "question_nl": "Ongeveer hoeveel meter dik zijn de hoofdringen van Saturnus doorgaans?",
+          "answer": 10,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/saturn/facts/",
+          "evidence_nl": "NASA: typisch circa 10 m verticale dikte.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/saturn/facts/",
+            "evidence_nl": "NASA: typisch circa 10 m verticale dikte.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "saturn",
+          "semantic_keys": [
+            "saturn:about how thick are saturn's main rings typically, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare saturn-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-074",
+          "question_en": "How many months is a giraffe pregnant?",
+          "question_nl": "Hoeveel maanden is een giraffe drachtig?",
+          "answer": 14,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+          "evidence_nl": "San Diego Zoo: 14 maanden.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+            "evidence_nl": "San Diego Zoo: 14 maanden."
+          },
+          "quality": "normal",
+          "topic": "giraffe",
+          "semantic_keys": [
+            "giraffe:how many months is a giraffe pregnant?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-048",
+          "question_en": "What is the gold purity on the Statue of Liberty's torch, in karats?",
+          "question_nl": "Hoeveel karaat is het bladgoud op de fakkel van het Vrijheidsbeeld?",
+          "answer": 24,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+          "evidence_nl": "De fakkel uit 1986 is bekleed met 24-karaats bladgoud.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+            "evidence_nl": "De fakkel uit 1986 is bekleed met 24-karaats bladgoud."
+          },
+          "quality": "normal",
+          "topic": "liberty",
+          "semantic_keys": [
+            "liberty:what is the gold purity on the statue of liberty's torch, in karats?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": true
+        }
+      ],
+      "operator": "+",
+      "tier": "normal",
+      "id": "legendary-r2-8a5b35addb1a",
+      "number": 18,
+      "status": "editorial_candidate",
+      "original_tier": "normal",
+      "suggested_daily_date": "2027-01-02",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "10 + 14 = 24",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-060",
+          "question_en": "About how many minutes does sunlight take to reach Uranus?",
+          "question_nl": "Ongeveer hoeveel minuten doet zonlicht erover om Uranus te bereiken?",
+          "answer": 160,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/uranus/facts/",
+          "evidence_nl": "NASA: 2 uur 40 minuten = 160 minuten bij gemiddelde afstand.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/uranus/facts/",
+            "evidence_nl": "NASA: 2 uur 40 minuten = 160 minuten bij gemiddelde afstand.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "uranus",
+          "semantic_keys": [
+            "uranus:about how many minutes does sunlight take to reach uranus?"
+          ],
+          "quality_reason_nl": "Voorstelbare uranus-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-085",
+          "question_en": "How many eggs does an African penguin usually lay per clutch?",
+          "question_nl": "Hoeveel eieren legt een Afrikaanse pinguïn gewoonlijk per legsel?",
+          "answer": 2,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/african-penguin",
+          "evidence_nl": "San Diego Zoo: twee eieren per legsel.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/african-penguin",
+            "evidence_nl": "San Diego Zoo: twee eieren per legsel."
+          },
+          "quality": "normal",
+          "topic": "penguin",
+          "semantic_keys": [
+            "penguin:how many eggs does an african penguin usually lay per clutch?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "nr572",
+          "question_nl": "Hoeveel kilometer per uur rijdt een hogesnelheidstrein zoals de TGV maximaal in reguliere dienst?",
+          "question_en": "How fast does a TGV run in regular service, in kilometres per hour?",
+          "answer": 320,
+          "category": "Vervoer",
+          "source_url": "https://www.sncf-connect.com/tgv-inoui",
+          "evidence_nl": "SNCF: TGV haalt in de Franse hogesnelheidsdienst 320 km/u.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.sncf-connect.com/tgv-inoui",
+            "evidence_nl": "SNCF: TGV haalt in de Franse hogesnelheidsdienst 320 km/u."
+          },
+          "quality": "strong",
+          "topic": "nr572",
+          "semantic_keys": [
+            "nr572:how fast does a tgv run in regular service, in kilometres per hour?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr572-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "×",
+      "tier": "near-legendary",
+      "id": "legendary-r2-eed66e319331",
+      "number": 19,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2027-01-03",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "160 × 2 = 320",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-061",
+          "question_en": "How many rings does Uranus have?",
+          "question_nl": "Hoeveel ringen heeft Uranus?",
+          "answer": 13,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/uranus/facts/",
+          "evidence_nl": "NASA beschrijft 13 ringen; controle 16 november 2026.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/uranus/facts/",
+            "evidence_nl": "NASA beschrijft 13 ringen; controle 16 november 2026."
+          },
+          "quality": "normal",
+          "topic": "uranus",
+          "semantic_keys": [
+            "uranus:how many rings does uranus have?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "nr438",
+          "question_nl": "Hoeveel centimeter was Thumbelina ongeveer op schofthoogte?",
+          "question_en": "About how tall was Thumbelina at the shoulder, in centimetres?",
+          "answer": 45,
+          "category": "Records en vergelijkingen",
+          "source_url": "https://www.guinnessworldrecords.com/news/2019/9/meet-the-smallest-horse-in-the-world-thats-shorter-than-a-greyhound-588674",
+          "evidence_nl": "Guinness geeft 44,5 cm schofthoogte voor Thumbelina; op hele centimeters 45.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.guinnessworldrecords.com/news/2019/9/meet-the-smallest-horse-in-the-world-thats-shorter-than-a-greyhound-588674",
+            "evidence_nl": "Guinness geeft 44,5 cm schofthoogte voor Thumbelina; op hele centimeters 45.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr438",
+          "semantic_keys": [
+            "nr438:about how tall was thumbelina at the shoulder, in centimetres?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare nr438-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        },
+        {
+          "id": "r2-052",
+          "question_en": "About how many million kilometres is Mercury's average distance from the Sun?",
+          "question_nl": "Ongeveer hoeveel miljoen kilometer is Mercurius gemiddeld van de zon verwijderd?",
+          "answer": 58,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/mercury/facts/",
+          "evidence_nl": "NASA: gemiddelde afstand 58 miljoen km.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/mercury/facts/",
+            "evidence_nl": "NASA: gemiddelde afstand 58 miljoen km.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "mercury",
+          "semantic_keys": [
+            "mercury:about how many million kilometres is mercury's average distance from the sun?"
+          ],
+          "quality_reason_nl": "Voorstelbare mercury-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "near-legendary",
+      "id": "legendary-r2-327222ce48c0",
+      "number": 20,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2027-01-04",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "13 + 45 = 58",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-062",
+          "question_en": "About how many hours does Neptune take to spin once?",
+          "question_nl": "Ongeveer hoeveel uur duurt één draai van Neptunus?",
+          "answer": 16,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+          "evidence_nl": "NASA: ongeveer 16 uur.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+            "evidence_nl": "NASA: ongeveer 16 uur.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "neptune",
+          "semantic_keys": [
+            "neptune:about how many hours does neptune take to spin once?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-072",
+          "question_en": "About how much does a giraffe's heart weigh, in kilograms?",
+          "question_nl": "Ongeveer hoeveel kilogram weegt het hart van een giraffe?",
+          "answer": 11,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+          "evidence_nl": "San Diego Zoo: circa 11 kg.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+            "evidence_nl": "San Diego Zoo: circa 11 kg.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "giraffe",
+          "semantic_keys": [
+            "giraffe:about how much does a giraffe's heart weigh, in kilograms?"
+          ],
+          "quality_reason_nl": "Voorstelbare giraffe-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-051",
+          "question_en": "About how many Earth days pass between sunrises on Mercury?",
+          "question_nl": "Ongeveer hoeveel aardse dagen zitten tussen twee zonsopkomsten op Mercurius?",
+          "answer": 176,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/mercury/facts/",
+          "evidence_nl": "NASA: zonnedag van 176 aardse dagen.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/mercury/facts/",
+            "evidence_nl": "NASA: zonnedag van 176 aardse dagen.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "mercury",
+          "semantic_keys": [
+            "mercury:about how many earth days pass between sunrises on mercury?"
+          ],
+          "quality_reason_nl": "Voorstelbare mercury-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "×",
+      "tier": "near-legendary",
+      "id": "legendary-r2-c3a5511d194e",
+      "number": 21,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2027-01-05",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "16 × 11 = 176",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-065",
+          "question_en": "How many days after Neptune was discovered was Triton found?",
+          "question_nl": "Hoeveel dagen na de ontdekking van Neptunus werd Triton ontdekt?",
+          "answer": 17,
+          "category": "Schaal en wereld",
+          "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+          "evidence_nl": "NASA beschrijft een tussenpoos van 17 dagen in 1846.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+            "evidence_nl": "NASA beschrijft een tussenpoos van 17 dagen in 1846."
+          },
+          "quality": "normal",
+          "topic": "neptune",
+          "semantic_keys": [
+            "neptune:how many days after neptune was discovered was triton found?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-082",
+          "question_en": "About how long are an ostrich's intestines, in metres?",
+          "question_nl": "Ongeveer hoeveel meter lang zijn de darmen van een struisvogel?",
+          "answer": 14,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+          "evidence_nl": "San Diego Zoo: uitgestrekt 14 m.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+            "evidence_nl": "San Diego Zoo: uitgestrekt 14 m.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "ostrich",
+          "semantic_keys": [
+            "ostrich:about how long are an ostrich's intestines, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare ostrich-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-068",
+          "question_en": "About how many metres around is the General Sherman tree at ground level?",
+          "question_nl": "Ongeveer hoeveel meter is de omtrek van de General Sherman-boom op grondniveau?",
+          "answer": 31,
+          "category": "Schaal en wereld",
+          "source_url": "https://home.nps.gov/seki/learn/nature/sherman.htm",
+          "evidence_nl": "NPS: 31,1 m, afgerond 31.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://home.nps.gov/seki/learn/nature/sherman.htm",
+            "evidence_nl": "NPS: 31,1 m, afgerond 31.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "sherman",
+          "semantic_keys": [
+            "sherman:about how many metres around is the general sherman tree at ground level?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "normal",
+      "id": "legendary-r2-0fafd7e49822",
+      "number": 22,
+      "status": "editorial_candidate",
+      "original_tier": "normal",
+      "suggested_daily_date": "2027-01-06",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "17 + 14 = 31",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-069",
+          "question_en": "About how long is the Channel Tunnel, in kilometres?",
+          "question_nl": "Ongeveer hoeveel kilometer lang is de Kanaaltunnel?",
+          "answer": 50,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel",
+          "evidence_nl": "De Britse spoorwegtoezichthouder geeft 50 km.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel",
+            "evidence_nl": "De Britse spoorwegtoezichthouder geeft 50 km.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "channel",
+          "semantic_keys": [
+            "channel:about how long is the channel tunnel, in kilometres?"
+          ],
+          "quality_reason_nl": "Voorstelbare channel-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-073",
+          "question_en": "About how long is a giraffe's tongue, in centimetres?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is de tong van een giraffe?",
+          "answer": 46,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+          "evidence_nl": "San Diego Zoo: 46 cm.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+            "evidence_nl": "San Diego Zoo: 46 cm.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "giraffe",
+          "semantic_keys": [
+            "giraffe:about how long is a giraffe's tongue, in centimetres?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-088",
+          "question_en": "About how much does one elephant molar weigh, in grams?",
+          "question_nl": "Ongeveer hoeveel gram weegt één kies van een olifant?",
+          "answer": 2300,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/elephant",
+          "evidence_nl": "San Diego Zoo: circa 2,3 kg = 2300 g.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/elephant",
+            "evidence_nl": "San Diego Zoo: circa 2,3 kg = 2300 g.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "elephant",
+          "semantic_keys": [
+            "elephant:about how much does one elephant molar weigh, in grams?"
+          ],
+          "quality_reason_nl": "Voorstelbare elephant-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "×",
+      "tier": "near-legendary",
+      "id": "legendary-r2-a76084e1bac3",
+      "number": 23,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2027-01-07",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "50 × 46 = 2300",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-076",
+          "question_en": "How many months is a hippo pregnant?",
+          "question_nl": "Hoeveel maanden is een nijlpaard drachtig?",
+          "answer": 8,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/hippo",
+          "evidence_nl": "San Diego Zoo: acht maanden.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/hippo",
+            "evidence_nl": "San Diego Zoo: acht maanden."
+          },
+          "quality": "normal",
+          "topic": "hippo",
+          "semantic_keys": [
+            "hippo:how many months is a hippo pregnant?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-083",
+          "question_en": "About how many chicken eggs weigh as much as one ostrich egg?",
+          "question_nl": "Hoeveel kippeneieren wegen samen ongeveer evenveel als één struisvogelei?",
+          "answer": 24,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+          "evidence_nl": "San Diego Zoo vergelijkt met het gewicht van circa 24 kippeneieren.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+            "evidence_nl": "San Diego Zoo vergelijkt met het gewicht van circa 24 kippeneieren.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "ostrich",
+          "semantic_keys": [
+            "ostrich:about how many chicken eggs weigh as much as one ostrich egg?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-107",
+          "question_en": "How tall is the Gateway Arch, in metres?",
+          "question_nl": "Hoeveel meter hoog is de Gateway Arch?",
+          "answer": 192,
+          "category": "Schaal en wereld",
+          "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+          "evidence_nl": "NPS: 192 m.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+            "evidence_nl": "NPS: 192 m."
+          },
+          "quality": "strong",
+          "topic": "arch",
+          "semantic_keys": [
+            "arch:how tall is the gateway arch, in metres?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare arch-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        }
+      ],
+      "operator": "×",
+      "tier": "normal",
+      "id": "legendary-r2-433f2934a53e",
+      "number": 24,
+      "status": "editorial_candidate",
+      "original_tier": "normal",
+      "suggested_daily_date": "2027-01-08",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "8 × 24 = 192",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-078",
+          "question_en": "About how much can a newborn hippo weigh, in kilograms?",
+          "question_nl": "Ongeveer hoeveel kilogram kan een pasgeboren nijlpaard wegen?",
+          "answer": 45,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/hippo",
+          "evidence_nl": "San Diego Zoo geeft een geboortegewicht van 25 tot 45 kg; bovengrens 45.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/hippo",
+            "evidence_nl": "San Diego Zoo geeft een geboortegewicht van 25 tot 45 kg; bovengrens 45.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "hippo",
+          "semantic_keys": [
+            "hippo:about how much can a newborn hippo weigh, in kilograms?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-099",
+          "question_en": "About how many extra kilograms can a camel easily carry?",
+          "question_nl": "Ongeveer hoeveel extra kilogram kan een kameel gemakkelijk dragen?",
+          "answer": 90,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/camel",
+          "evidence_nl": "San Diego Zoo: 90 kg extra draaglast.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/camel",
+            "evidence_nl": "San Diego Zoo: 90 kg extra draaglast.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "camel",
+          "semantic_keys": [
+            "camel:about how many extra kilograms can a camel easily carry?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-111",
+          "question_en": "How many missions did NASA's Space Shuttles fly from 1981 to 2011?",
+          "question_nl": "Hoeveel missies vlogen NASA's spaceshuttles van 1981 tot 2011?",
+          "answer": 135,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.nasa.gov/space-shuttle/",
+          "evidence_nl": "NASA telt 135 missies.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nasa.gov/space-shuttle/",
+            "evidence_nl": "NASA telt 135 missies."
+          },
+          "quality": "strong",
+          "topic": "shuttle",
+          "semantic_keys": [
+            "shuttle:how many missions did nasa's space shuttles fly from 1981 to 2011?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare shuttle-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        }
+      ],
+      "operator": "+",
+      "tier": "normal",
+      "id": "legendary-r2-e3a351ddda18",
+      "number": 25,
+      "status": "editorial_candidate",
+      "original_tier": "normal",
+      "suggested_daily_date": "2027-01-09",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "45 + 90 = 135",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-081",
+          "question_en": "About how fast can an ostrich sprint, in kilometres per hour?",
+          "question_nl": "Ongeveer hoeveel kilometer per uur kan een struisvogel sprinten?",
+          "answer": 70,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+          "evidence_nl": "San Diego Zoo: tot 70 km/u.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+            "evidence_nl": "San Diego Zoo: tot 70 km/u.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "ostrich",
+          "semantic_keys": [
+            "ostrich:about how fast can an ostrich sprint, in kilometres per hour?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-100",
+          "question_en": "About how many minutes after birth can a camel calf walk?",
+          "question_nl": "Ongeveer hoeveel minuten na de geboorte kan een kamelenjong lopen?",
+          "answer": 30,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/camel",
+          "evidence_nl": "San Diego Zoo: binnen een halfuur = 30 minuten.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/camel",
+            "evidence_nl": "San Diego Zoo: binnen een halfuur = 30 minuten.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "camel",
+          "semantic_keys": [
+            "camel:about how many minutes after birth can a camel calf walk?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "nr523",
+          "question_nl": "Ongeveer hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?",
+          "question_en": "About how fast can Neptune's strongest winds blow, in kilometres per hour?",
+          "answer": 2100,
+          "category": "Sterrenkunde & ruimte",
+          "source_url": "https://cnes.fr/en/folders/planet-neptune",
+          "evidence_nl": "CNES beschrijft windsnelheden tot 2100 km/u op Neptunus.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://cnes.fr/en/folders/planet-neptune",
+            "evidence_nl": "CNES beschrijft windsnelheden tot 2100 km/u op Neptunus.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr523",
+          "semantic_keys": [
+            "nr523:about how fast can neptune's strongest winds blow, in kilometres per hour?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr523-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "×",
+      "tier": "normal",
+      "id": "legendary-r2-2876e14608bb",
+      "number": 26,
+      "status": "editorial_candidate",
+      "original_tier": "normal",
+      "suggested_daily_date": "2027-01-10",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "70 × 30 = 2100",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-086",
+          "question_en": "About what percentage of its body weight can an African penguin eat in a day?",
+          "question_nl": "Ongeveer hoeveel procent van zijn lichaamsgewicht kan een Afrikaanse pinguïn per dag eten?",
+          "answer": 14,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/african-penguin",
+          "evidence_nl": "San Diego Zoo: tot 14 procent per dag.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/african-penguin",
+            "evidence_nl": "San Diego Zoo: tot 14 procent per dag.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "penguin",
+          "semantic_keys": [
+            "penguin:about what percentage of its body weight can an african penguin eat in a day?"
+          ],
+          "quality_reason_nl": "Voorstelbare penguin-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-090",
+          "question_en": "About how many hours a day does an elephant spend eating on average?",
+          "question_nl": "Ongeveer hoeveel uur per dag eet een olifant gemiddeld?",
+          "answer": 16,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/elephant",
+          "evidence_nl": "San Diego Zoo: gemiddeld 16 uur.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/elephant",
+            "evidence_nl": "San Diego Zoo: gemiddeld 16 uur.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "normal",
+          "topic": "elephant",
+          "semantic_keys": [
+            "elephant:about how many hours a day does an elephant spend eating on average?"
+          ],
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
+          "known_anchor": false
+        },
+        {
+          "id": "r2-112",
+          "question_en": "For how many years did NASA's Space Shuttle missions run?",
+          "question_nl": "Hoeveel jaar liep NASA's spaceshuttleprogramma met vluchten?",
+          "answer": 30,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.nasa.gov/space-shuttle/",
+          "evidence_nl": "NASA beschrijft 30 jaar vluchten, 1981–2011.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.nasa.gov/space-shuttle/",
+            "evidence_nl": "NASA beschrijft 30 jaar vluchten, 1981–2011."
+          },
+          "quality": "normal",
+          "topic": "shuttle",
+          "semantic_keys": [
+            "shuttle:for how many years did nasa's space shuttle missions run?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
+        }
+      ],
+      "operator": "+",
+      "tier": "normal",
+      "id": "legendary-r2-7f6938c0a768",
+      "number": 27,
+      "status": "editorial_candidate",
+      "original_tier": "normal",
+      "suggested_daily_date": "2027-01-11",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "14 + 16 = 30",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-103",
+          "question_en": "How many glass pieces make up one Elizabeth Tower clock dial?",
+          "question_nl": "Hoeveel stukken glas vormen één wijzerplaat van de Elizabeth Tower?",
+          "answer": 324,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+          "evidence_nl": "Brits parlement: 324 stukken opaalglas per wijzerplaat.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+            "evidence_nl": "Brits parlement: 324 stukken opaalglas per wijzerplaat."
+          },
+          "quality": "strong",
+          "topic": "big-ben",
+          "semantic_keys": [
+            "big-ben:how many glass pieces make up one elizabeth tower clock dial?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare big-ben-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        },
+        {
+          "id": "r2-108",
+          "question_en": "How many stairs are in each leg of the Gateway Arch?",
+          "question_nl": "Hoeveel traptreden zitten in elke poot van de Gateway Arch?",
+          "answer": 1076,
+          "category": "Schaal en wereld",
+          "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+          "evidence_nl": "NPS: 1076 treden per poot.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+            "evidence_nl": "NPS: 1076 treden per poot."
+          },
+          "quality": "strong",
+          "topic": "arch",
+          "semantic_keys": [
+            "arch:how many stairs are in each leg of the gateway arch?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare arch-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        },
+        {
+          "id": "r2-093",
+          "question_en": "About how much does a newborn lion cub weigh, in grams?",
+          "question_nl": "Ongeveer hoeveel gram weegt een pasgeboren leeuwenwelp?",
+          "answer": 1400,
+          "category": "Schaal en wereld",
+          "source_url": "https://animals.sandiegozoo.org/animals/lion",
+          "evidence_nl": "San Diego Zoo: circa 1,4 kg = 1400 gram.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://animals.sandiegozoo.org/animals/lion",
+            "evidence_nl": "San Diego Zoo: circa 1,4 kg = 1400 gram.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "lion",
+          "semantic_keys": [
+            "lion:about how much does a newborn lion cub weigh, in grams?"
+          ],
+          "quality_reason_nl": "Voorstelbare lion-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "legendary",
+      "id": "legendary-r2-ef6e824d26f6",
+      "number": 28,
+      "status": "editorial_candidate",
+      "original_tier": "legendary",
+      "suggested_daily_date": "2027-01-12",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "324 + 1076 = 1400",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-104",
+          "question_en": "How much does Big Ben's hammer weigh, in kilograms?",
+          "question_nl": "Hoeveel kilogram weegt de hamer van Big Ben?",
+          "answer": 200,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+          "evidence_nl": "Brits parlement: hamer van 200 kg.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+            "evidence_nl": "Brits parlement: hamer van 200 kg."
+          },
+          "quality": "strong",
+          "topic": "big-ben",
+          "semantic_keys": [
+            "big-ben:how much does big ben's hammer weigh, in kilograms?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare big-ben-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        },
+        {
+          "id": "nr1314",
+          "question_nl": "Hoeveel push-ups deed Charles Servizio ongeveer in 24 uur in april 1993?",
+          "question_en": "About how many push-ups did Charles Servizio do in 24 hours in April 1993?",
+          "answer": 46000,
+          "category": "Records en vergelijkingen",
+          "source_url": "https://www.guinnessworldrecords.com/world-records/most-push-ups-in-24-hours",
+          "evidence_nl": "Guinness registreert 46.001 push-ups voor Servizio op 24–25 april 1993; op duizendtallen 46.000.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.guinnessworldrecords.com/world-records/most-push-ups-in-24-hours",
+            "evidence_nl": "Guinness registreert 46.001 push-ups voor Servizio op 24–25 april 1993; op duizendtallen 46.000.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr1314",
+          "semantic_keys": [
+            "nr1314:about how many push-ups did charles servizio do in 24 hours in april 1993?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare nr1314-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        },
+        {
+          "id": "nr299",
+          "question_nl": "Hoeveel vierkante kilometer besloeg de Sahara ongeveer in NASA’s overzicht van 2024?",
+          "question_en": "About how large was the Sahara in NASA’s 2024 overview, in square kilometres?",
+          "answer": 9200000,
+          "category": "Geografie",
+          "source_url": "https://svs.gsfc.nasa.gov/31321",
+          "evidence_nl": "NASA Goddard geeft 9,2 miljoen km² als globale oppervlakte; woestijngrenzen variëren.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://svs.gsfc.nasa.gov/31321",
+            "evidence_nl": "NASA Goddard geeft 9,2 miljoen km² als globale oppervlakte; woestijngrenzen variëren.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr299",
+          "semantic_keys": [
+            "nr299:about how large was the sahara in nasa’s 2024 overview, in square kilometres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr299-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "×",
+      "tier": "legendary",
+      "id": "legendary-r2-efb3a70c0e7d",
+      "number": 29,
+      "status": "editorial_candidate",
+      "original_tier": "legendary",
+      "suggested_daily_date": "2027-01-13",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "200 × 46000 = 9200000",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    },
+    {
+      "questions": [
+        {
+          "id": "r2-105",
+          "question_en": "How much does the Great Clock's pendulum weigh, in kilograms?",
+          "question_nl": "Hoeveel kilogram weegt de slinger van de Great Clock in Londen?",
+          "answer": 310,
+          "category": "Schaal en wereld",
+          "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+          "evidence_nl": "Brits parlement: slinger van 310 kg.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+            "evidence_nl": "Brits parlement: slinger van 310 kg."
+          },
+          "quality": "strong",
+          "topic": "big-ben",
+          "semantic_keys": [
+            "big-ben:how much does the great clock's pendulum weigh, in kilograms?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Voorstelbare big-ben-schaal; de omvang is zonder specialistische kennis breed onzeker."
+        },
+        {
+          "id": "r2-109",
+          "question_en": "How many sections make up the Gateway Arch?",
+          "question_nl": "Hoeveel secties vormen de Gateway Arch?",
+          "answer": 142,
+          "category": "Schaal en wereld",
+          "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+          "evidence_nl": "NPS: 142 secties.",
+          "source_status": "verified",
+          "source_review": {
+            "source_status": "verified",
+            "checked_on": "2026-11-16",
+            "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+            "evidence_nl": "NPS: 142 secties."
+          },
+          "quality": "normal",
+          "topic": "arch",
+          "semantic_keys": [
+            "arch:how many sections make up the gateway arch?"
+          ],
+          "known_anchor": false,
+          "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
+        },
+        {
+          "id": "nr793",
+          "question_nl": "Ongeveer hoeveel meter hoog is de Petronas Twin Tower?",
+          "question_en": "About how tall are the Petronas Towers, in metres?",
+          "answer": 452,
+          "category": "Gebouwen en infrastructuur",
+          "source_url": "https://www.petronastwintowers.com.my/the-towers/the-stories/",
+          "evidence_nl": "De exploitant geeft 451,9 meter; op hele meters 452.",
+          "source_status": "verified_rounded",
+          "source_review": {
+            "source_status": "verified_rounded",
+            "checked_on": "2026-11-16",
+            "source_url": "https://www.petronastwintowers.com.my/the-towers/the-stories/",
+            "evidence_nl": "De exploitant geeft 451,9 meter; op hele meters 452.",
+            "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+          },
+          "quality": "strong",
+          "topic": "nr793",
+          "semantic_keys": [
+            "nr793:about how tall are the petronas towers, in metres?"
+          ],
+          "quality_reason_nl": "Voorstelbare nr793-schaal; de omvang is zonder specialistische kennis breed onzeker.",
+          "known_anchor": false
+        }
+      ],
+      "operator": "+",
+      "tier": "near-legendary",
+      "id": "legendary-r2-8569cf61b8fd",
+      "number": 30,
+      "status": "editorial_candidate",
+      "original_tier": "near-legendary",
+      "suggested_daily_date": "2027-01-14",
+      "risks": [
+        "Benaderde bronwaarden leveren gehele speelantwoorden; de rekensom is exact."
+      ],
+      "calculation": "310 + 142 = 452",
+      "play_review": {
+        "decision": "behouden",
+        "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+      }
+    }
+  ],
+  "editorial_audit": {
+    "review_date": "2026-11-16",
+    "fact_reviews": {
+      "nr936": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://uluru.gov.au/discover/highlights/amazing-facts/",
+        "evidence_nl": "Parks Australia: Uluru steekt 348 m boven de omringende vlakte uit."
+      },
+      "r2-034": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+        "evidence_nl": "Diameter inclusief omwikkeling 0,92 m = 92 cm.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-106": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+        "evidence_nl": "Brits parlement: 4,4 m = 440 cm.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr38": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://plimoth.org/for-students/homework-help/mayflower-and-mayflower-compact",
+        "evidence_nl": "Plimoth Patuxet beschrijft de Atlantische overtocht als een reis van 66 dagen."
+      },
+      "nr70": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/largest-hamburger",
+        "evidence_nl": "Guinness registreert de Pilsting-hamburger op 9 juli 2017 met 1164,2 kg; op hele kilogrammen 1164.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr865": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf",
+        "evidence_nl": "ICPR stroomgebiedbeheerplan 2022–2027, hoofdstuk 1: 1233 km; als globale lengte op tientallen 1230 km.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr230": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://dashboard.durst.org/onewtc/wp-content/uploads/sites/10/2026/03/OneWTC_Glossy_2026-02-05.pdf",
+        "evidence_nl": "Eigenaar Durst geeft 1776 voet; maal 0,3048 = 541,3248 m, afgerond 541 m.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-113": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-was-the-space-shuttle-grades-5-8/",
+        "evidence_nl": "NASA: in totaal 355 personen; geen telling van herhaalvluchten."
+      },
+      "r2-114": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nps.gov/places/000/information-panel-washington-the-man-the-monument-the-city.htm",
+        "evidence_nl": "NPS-informatiepaneel: 896 treden."
+      },
+      "nr232": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.esbnyc.com/about/facts-figures",
+        "evidence_nl": "De exploitant geeft 1454 voet / 443 meter inclusief antenne.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-032": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+        "evidence_nl": "Vrije doorvaarthoogte boven mean higher high water: 67 m."
+      },
+      "nr344": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf",
+        "evidence_nl": "CIA Physical World 2024: 510,072 miljoen km²; op hele miljoenen 510.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr510": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/venus/venus-facts/",
+        "evidence_nl": "NASA beschrijft 225 aardse dagen per omloop van Venus.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-084": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+        "evidence_nl": "San Diego Zoo: gemiddeld 15 cm lang.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-064": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+        "evidence_nl": "NASA: vier uur = 240 minuten bij de gemiddelde afstand.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr796": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.sydneytowereye.com.au/explore/explore/about-sydney-tower/",
+        "evidence_nl": "De exploitant geeft 309 meter van de voet tot de spits."
+      },
+      "r2-045": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+        "evidence_nl": "NPS geeft 1,37 m: 137 cm.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr266": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nps.gov/grca/faqs.htm",
+        "evidence_nl": "NPS: van Lees Ferry tot Grand Wash Cliffs 277 mijl / 446 km langs de rivier.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr686": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/koala",
+        "evidence_nl": "San Diego Zoo beschrijft dat koala’s tot twintig uur per dag slapen.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-098": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/camel",
+        "evidence_nl": "San Diego Zoo: tot 145 liter per drinkbeurt.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-063": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+        "evidence_nl": "NASA: ongeveer 165 aardse jaren.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr436": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/tallest-sandcastle",
+        "evidence_nl": "Guinness registreert het zandkasteel in Blokhus op 2 juli 2021 met 21,16 m; op hele meters 21.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-091": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/lion",
+        "evidence_nl": "San Diego Zoo noemt tot circa 63 kg per maaltijd.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-059": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/uranus/facts/",
+        "evidence_nl": "NASA: ongeveer 84 aardse jaren.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr855": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://nmcg.nic.in/courseofganga.aspx",
+        "evidence_nl": "National Mission for Clean Ganga: een loop van 2525 km tot de Golf van Bengalen.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-094": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/lion",
+        "evidence_nl": "San Diego Zoo noemt bijna vier maanden.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-039": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+        "evidence_nl": "Exploitant: totaalgewicht 10100 ton."
+      },
+      "r2-031": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+        "evidence_nl": "De beheerder geeft 27 m totale breedte."
+      },
+      "r2-050": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/mercury/facts/",
+        "evidence_nl": "NASA: één aswenteling duurt 59 aardse dagen.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr3": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain",
+        "evidence_nl": "NIH beschrijft circa 86 miljard zenuwcellen; dit is een biologisch gemiddelde, geen vast aantal per persoon.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-033": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+        "evidence_nl": "Torens boven water: 227 m."
+      },
+      "r2-058": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/uranus/facts/",
+        "evidence_nl": "NASA: ongeveer 17 uur.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-044": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+        "evidence_nl": "NPS geeft 2,44 m: 244 cm.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-036": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+        "evidence_nl": "Eén hoofdkabel bestaat uit 61 bundels."
+      },
+      "r2-071": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+        "evidence_nl": "San Diego Zoo: circa 272 kg.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr798": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.tokyotower.co.jp/plan/towerpedia/",
+        "evidence_nl": "Tokyo Tower noemt op zijn eigen site een hoogte van 333 m."
+      },
+      "r2-037": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+        "evidence_nl": "De beheerder telt 250 paren."
+      },
+      "r2-066": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://home.nps.gov/seki/learn/nature/sherman.htm",
+        "evidence_nl": "NPS: 83,8 m, afgerond 84.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-102": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+        "evidence_nl": "Brits parlement: 334 treden tot de belfry."
+      },
+      "r2-043": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+        "evidence_nl": "NPS geeft 5,00 m: 500 cm.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-070": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel",
+        "evidence_nl": "ORR: twee spoortunnels en één diensttunnel."
+      },
+      "r2-080": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+        "evidence_nl": "San Diego Zoo: circa 1500 gram.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-046": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+        "evidence_nl": "NPS telt 25 ramen."
+      },
+      "r2-075": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+        "evidence_nl": "San Diego Zoo noemt een gemeten record van 56 km/u.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-077": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/hippo",
+        "evidence_nl": "San Diego Zoo: gemiddeld 1400 kg voor vrouwtjes.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-053": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/mercury/facts/",
+        "evidence_nl": "NASA geeft bijna 47 km/s.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-055": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/saturn/facts/",
+        "evidence_nl": "NASA: 10,7 uur, afgerond 11.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr345": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.galleriaaccademiafirenze.it/en/artworks/david-michelangelo/",
+        "evidence_nl": "Het museum geeft 517 cm inclusief de gebeeldhouwde basis."
+      },
+      "r2-054": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/saturn/facts/",
+        "evidence_nl": "NASA: 80 minuten bij de gemiddelde afstand.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-110": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+        "evidence_nl": "NPS: 19 mm plaatglas.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-095": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/giant-panda",
+        "evidence_nl": "San Diego Zoo: circa 99 procent.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-056": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/saturn/facts/",
+        "evidence_nl": "NASA: typisch circa 10 m verticale dikte.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-074": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+        "evidence_nl": "San Diego Zoo: 14 maanden."
+      },
+      "r2-048": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+        "evidence_nl": "De fakkel uit 1986 is bekleed met 24-karaats bladgoud."
+      },
+      "r2-060": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/uranus/facts/",
+        "evidence_nl": "NASA: 2 uur 40 minuten = 160 minuten bij gemiddelde afstand.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-085": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/african-penguin",
+        "evidence_nl": "San Diego Zoo: twee eieren per legsel."
+      },
+      "nr572": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.sncf-connect.com/tgv-inoui",
+        "evidence_nl": "SNCF: TGV haalt in de Franse hogesnelheidsdienst 320 km/u."
+      },
+      "r2-061": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/uranus/facts/",
+        "evidence_nl": "NASA beschrijft 13 ringen; controle 16 november 2026."
+      },
+      "nr438": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.guinnessworldrecords.com/news/2019/9/meet-the-smallest-horse-in-the-world-thats-shorter-than-a-greyhound-588674",
+        "evidence_nl": "Guinness geeft 44,5 cm schofthoogte voor Thumbelina; op hele centimeters 45.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-052": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/mercury/facts/",
+        "evidence_nl": "NASA: gemiddelde afstand 58 miljoen km.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-062": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+        "evidence_nl": "NASA: ongeveer 16 uur.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-072": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+        "evidence_nl": "San Diego Zoo: circa 11 kg.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-051": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/mercury/facts/",
+        "evidence_nl": "NASA: zonnedag van 176 aardse dagen.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-065": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+        "evidence_nl": "NASA beschrijft een tussenpoos van 17 dagen in 1846."
+      },
+      "r2-082": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+        "evidence_nl": "San Diego Zoo: uitgestrekt 14 m.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-068": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://home.nps.gov/seki/learn/nature/sherman.htm",
+        "evidence_nl": "NPS: 31,1 m, afgerond 31.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-069": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel",
+        "evidence_nl": "De Britse spoorwegtoezichthouder geeft 50 km.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-073": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
+        "evidence_nl": "San Diego Zoo: 46 cm.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-088": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/elephant",
+        "evidence_nl": "San Diego Zoo: circa 2,3 kg = 2300 g.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-076": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/hippo",
+        "evidence_nl": "San Diego Zoo: acht maanden."
+      },
+      "r2-083": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+        "evidence_nl": "San Diego Zoo vergelijkt met het gewicht van circa 24 kippeneieren.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-107": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+        "evidence_nl": "NPS: 192 m."
+      },
+      "r2-078": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/hippo",
+        "evidence_nl": "San Diego Zoo geeft een geboortegewicht van 25 tot 45 kg; bovengrens 45.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-099": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/camel",
+        "evidence_nl": "San Diego Zoo: 90 kg extra draaglast.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-111": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nasa.gov/space-shuttle/",
+        "evidence_nl": "NASA telt 135 missies."
+      },
+      "r2-081": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
+        "evidence_nl": "San Diego Zoo: tot 70 km/u.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-100": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/camel",
+        "evidence_nl": "San Diego Zoo: binnen een halfuur = 30 minuten.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr523": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://cnes.fr/en/folders/planet-neptune",
+        "evidence_nl": "CNES beschrijft windsnelheden tot 2100 km/u op Neptunus.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-086": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/african-penguin",
+        "evidence_nl": "San Diego Zoo: tot 14 procent per dag.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-090": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/elephant",
+        "evidence_nl": "San Diego Zoo: gemiddeld 16 uur.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-112": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nasa.gov/space-shuttle/",
+        "evidence_nl": "NASA beschrijft 30 jaar vluchten, 1981–2011."
+      },
+      "r2-103": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+        "evidence_nl": "Brits parlement: 324 stukken opaalglas per wijzerplaat."
+      },
+      "r2-108": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+        "evidence_nl": "NPS: 1076 treden per poot."
+      },
+      "r2-093": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://animals.sandiegozoo.org/animals/lion",
+        "evidence_nl": "San Diego Zoo: circa 1,4 kg = 1400 gram.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-104": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+        "evidence_nl": "Brits parlement: hamer van 200 kg."
+      },
+      "nr1314": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/most-push-ups-in-24-hours",
+        "evidence_nl": "Guinness registreert 46.001 push-ups voor Servizio op 24–25 april 1993; op duizendtallen 46.000.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "nr299": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://svs.gsfc.nasa.gov/31321",
+        "evidence_nl": "NASA Goddard geeft 9,2 miljoen km² als globale oppervlakte; woestijngrenzen variëren.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      },
+      "r2-105": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+        "evidence_nl": "Brits parlement: slinger van 310 kg."
+      },
+      "r2-109": {
+        "source_status": "verified",
+        "checked_on": "2026-11-16",
+        "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+        "evidence_nl": "NPS: 142 secties."
+      },
+      "nr793": {
+        "source_status": "verified_rounded",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.petronastwintowers.com.my/the-towers/the-stories/",
+        "evidence_nl": "De exploitant geeft 451,9 meter; op hele meters 452.",
+        "rounding_nl": "Geheel speelantwoord; bronwaarde en omrekening staan in evidence_nl. About/ongeveer geeft de benadering aan."
+      }
+    },
+    "confirmed_facts": 90
+  },
+  "player_review": {
+    "1": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "2": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "3": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "4": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "5": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "6": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "7": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "8": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "9": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "10": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "11": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "12": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "13": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "14": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "15": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "16": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "17": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "18": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "19": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "20": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "21": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "22": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "23": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "24": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "25": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "26": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "27": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "28": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "29": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    },
+    "30": {
+      "decision": "behouden",
+      "reason_nl": "Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over."
+    }
+  }
+}

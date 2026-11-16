@@ -1,6 +1,6 @@
 # Legendary — redactionele selectie
 
-30 concrete puzzels; doel 100; tekort 70; 29614 unieke voorgestelde combinaties.
+29 concrete puzzels; doel 100; tekort 71; 29614 unieke voorgestelde combinaties.
 
 Alle 300 oorspronkelijke Engelse teksten zijn geredigeerd, inclusief 14 ontbrekende teksten. Ook Nederlandse vragen zijn ingekort en verduidelijkt.
 Elke vraag maximaal eenmaal; varianten van hetzelfde onderwerp (bijvoorbeeld chromosomen en chromosomenparen) mogen naast elkaar bestaan.
@@ -17,7 +17,6 @@ Speelantwoorden en sommen zijn ongewijzigd. Vervangvragen behouden hun eigen ban
 | 10 (near-legendary) | [Hoeveel treden leiden naar het hoofdplatform van de CN Tower?](https://secure.e2rm.com/registrant/cms.aspx?EventID=166338&LanguageCode=en-CA&UrlSegment=training)<br>[Hoeveel meter hoog is Mount Cook (Aoraki)?](https://nl.wikipedia.org/wiki/Mount_Cook)<br>[Hoeveel graden Celsius is het aan het oppervlak van de zon?](https://science.nasa.gov/sun/facts/) | 1776 + 3724 = 5500 | a-tier | 2 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld. |
 | 11 (normal) | [Hoeveel kilometer lang is het Baikalmeer?](https://en.wikipedia.org/wiki/Lake_Baikal)<br>[Hoeveel centimeter breed is de Mona Lisa?](https://nl.wikipedia.org/wiki/Mona_Lisa)<br>[Hoeveel halve tonen telt een gelijkzwevend octaaf?](https://nl.wikipedia.org/wiki/Octaaf_%28muziek%29) | 636 ÷ 53 = 12 | a-tier | 1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld. |
 | 15 (near-legendary) | [Wat is de hoogte van de Burj Khalifa in Dubai in meters?](https://www.burjkhalifa.ae/en/assets/FACT-SHEET.pdf)<br>[Hoeveel miljoen inwoners had Argentinië in 2025?](https://data.un.org/legacy/en/iso/ar.html)<br>[Hoeveel meter hoog was de mobiele Gundam-robot in Yokohama in 2020?](https://www.guinnessworldrecords.jp/world-records/635613-largest-humanoid-robot) | 828 ÷ 46 = 18 | a-tier | Chromosomen vervangen door de bevolking van Argentinië (46 miljoen); toren, bevolking en robot geven twee brede schalen naast een kleine fysieke maat. |
-| 18 (legendary) | [Hoeveel kilometer per uur reist geluid door lucht van 15 °C?](https://www.nasa.gov/wp-content/uploads/2023/02/speed_of_sound_9-12.pdf)<br>[Hoeveel meter hoog is de Shanghai Tower?](https://en.wikipedia.org/wiki/Shanghai_Tower)<br>[Hoeveel meter diep is de Grand Canyon op het diepste punt?](https://en.wikipedia.org/wiki/Grand_Canyon) | 1225 + 632 = 1857 | a-tier | 3 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld. |
 | 23 (legendary) | [Hoeveel aardse dagen duurt één volledige draai van Venus?](https://nl.wikipedia.org/wiki/Venus_%28planeet%29)<br>[Hoeveel kilogram kan een emoe wegen?](https://perthzoo.wa.gov.au/animal/emu)<br>[Hoeveel meter diep is de Challengerdiepte in de Marianentrog?](https://en.wikipedia.org/wiki/Challenger_Deep) | 243 × 45 = 10935 | a-tier | 3 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld. |
 | 24 (near-legendary) | [Wat is de geschatte leeftijd van de planeet Aarde in miljoenen jaren?](https://en.wikipedia.org/wiki/Age_of_the_Earth)<br>[Hoeveel meter lang is het Millauviaduct in Frankrijk?](https://en.wikipedia.org/wiki/Millau_Viaduct)<br>[Hoeveel kilometer lang is de Andes?](https://en.wikipedia.org/wiki/Andes) | 4540 + 2460 = 7000 | a-tier | 2 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld. |
 | 26 (normal) | [Hoeveel meter hoog sprong Felix Baumgartner in 2012?](https://www.fai.org/news/baumgartner%E2%80%99s-records-ratified-fai)<br>[Hoeveel bloedgroepen kent het ABO-systeem?](https://www.nhs.uk/conditions/blood-groups/)<br>[Hoeveel soldaten namen deel aan de landing in Normandië op D-Day?](https://en.wikipedia.org/wiki/Normandy_landings) | 39000 × 4 = 156000 | a-tier | 1 sterke schaalvraag; overige vragen zijn normale ankers. Redactioneel herbeoordeeld. |
@@ -43,15 +42,15 @@ Speelantwoorden en sommen zijn ongewijzigd. Vervangvragen behouden hun eigen ban
 
 | Tier | Voor | Na |
 |---|---:|---:|
-| legendary | 37 | 7 |
+| legendary | 37 | 6 |
 | near-legendary | 9 | 12 |
 | normal | 54 | 11 |
 
-70 oorspronkelijke combinaties geschrapt; 8 vragen vervangen door bankvragen met hetzelfde antwoord. Oorspronkelijke teksten blijven in `puzzels/legendary/redactie.json`.
-162 vragen extern onderzocht; 110 bevestigd (inclusief expliciet beschreven afrondingen); 13 afgewezen; 39 niet voldoende bevestigd.
+71 oorspronkelijke combinaties geschrapt; 8 vragen vervangen door bankvragen met hetzelfde antwoord. Oorspronkelijke teksten blijven in `puzzels/legendary/redactie.json`.
+162 vragen extern onderzocht; 109 bevestigd (inclusief expliciet beschreven afrondingen); 14 afgewezen; 39 niet voldoende bevestigd.
 Alle vragen uit de oorspronkelijke legendary- en bijna-legendary-puzzels zijn onderzocht, ook wanneer de puzzel afviel. Een bronopvraag zonder passende bewijszin telt niet als bevestiging.
 Normale vragen zonder nieuwe controle behouden requires_external_review. De banknotities zijn geen nieuwe feitencontrole.
-In de overgebleven reeks: 65 bevestigde vragen en 25 normale vragen zonder nieuwe externe bevestiging.
+In de overgebleven reeks: 62 bevestigde vragen en 25 normale vragen zonder nieuwe externe bevestiging.
 Een schatting blijft een schatting: de bewijszin vermeldt de bronwaarde, omrekening en afronding. De rekensom met de bestaande speelgetallen is wel exact.
 Sterkte is opnieuw beoordeeld: eenvoudige telvragen, bekende ankers en historische telweetjes zijn normaal. Daardoor zijn ook bevestigde puzzels naar een lagere tier verplaatst.
 
@@ -129,6 +128,7 @@ Sterkte is opnieuw beoordeeld: eenvoudige telvragen, bekende ankers en historisc
 | 98 | Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden. |
 | 99 | Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden. |
 | 100 | Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden. |
+| 18 | Ingetrokken op 2026-11-16: NPS noemt 1829 m van rand tot rivier. Het eerdere 1857 m is niet bruikbaar met deze bron; 1225 + 632 is niet 1829. Supabase is niet gewijzigd. |
 
 ### Feitencontrole per vraag
 
@@ -162,7 +162,7 @@ Bewijszinnen zijn Nederlandse parafrases van de geraadpleegde webbronnen. Een le
 | nr645 | verified_rounded | 2026-11-15 | [Bron](https://en.wikipedia.org/wiki/African_bush_elephant) — Bij optimale groei noemt de bron 6,0 ton gemiddeld voor volwassen mannetjes, met 90% tussen 5,2 en 6,9 ton. |
 | nr59 | verified_rounded | 2026-11-15 | [Bron](https://www.nasa.gov/wp-content/uploads/2023/02/speed_of_sound_9-12.pdf) — NASA geeft voor lucht op zeeniveau bij 15 °C een geluidssnelheid van 1225 km/u. |
 | nr794 | verified | 2026-11-15 | [Bron](https://en.wikipedia.org/wiki/Shanghai_Tower) — De architectonische hoogte van Shanghai Tower is 632 m. |
-| nr930 | verified_rounded | 2026-11-15 | [Bron](https://en.wikipedia.org/wiki/Grand_Canyon) — De bron geeft 6093 voet of 1857 m voor de maximale diepte van de Grand Canyon. |
+| nr930 | rejected_incorrect | 2026-11-16 | [Bron](https://www.nps.gov/grca/faqs.htm) — NPS geeft circa 6000 verticale voet / 1829 meter van rand tot rivier op het diepste punt. Wikipedia vermeldt 6093 voet / 1857 m; voor Daily kiezen we NPS. Het oude antwoord 1857 wordt ingetrokken. |
 | nr80 | verified_rounded | 2026-11-15 | [Bron](https://nl.wikipedia.org/wiki/Venus_%28planeet%29) — De rotatieperiode is circa 243 aardse dagen; de bron noemt nauwkeuriger 243,0185 dagen. |
 | nr649 | verified_rounded | 2026-11-15 | [Bron](https://perthzoo.wa.gov.au/animal/emu) — Perth Zoo geeft een gewichtsbereik van 30–45 kg; 45 is de genoemde bovengrens. |
 | nr1138 | verified | 2026-11-15 | [Bron](https://en.wikipedia.org/wiki/Challenger_Deep) — De bron geeft 10.935 ± 6 m op basis van een onderzoek uit 2021. |
@@ -302,7 +302,7 @@ Bewijszinnen zijn Nederlandse parafrases van de geraadpleegde webbronnen. Een le
 ## Spelersselectie
 
 Drie onafhankelijke spelersreviews van de oorspronkelijke 70: LEUK / TWIJFEL / NIET LEUK. Dit is een speelplezierselectie, geen nieuwe feitencontrole van alle behouden vragen.
-Vast behouden op verzoek: 4, 6, 8, 10, 11, 18, 23, 24, 26, 33, 40, 51, 54, 55, 57, 62, 75, 82, 89, 96.
+Vast behouden op verzoek: 4, 6, 8, 10, 11, 23, 24, 26, 33, 40, 51, 54, 55, 57, 62, 75, 82, 89, 96.
 De 22 twijfelgevallen zijn opnieuw beoordeeld; alleen overtuigende verbeteringen zijn opgenomen.
 
 | Nr. | Besluit | Reden |
