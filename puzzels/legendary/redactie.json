@@ -1311,7 +1311,8 @@
     "97": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "98": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
     "99": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
-    "100": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden."
+    "100": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+    "18": "Ingetrokken op 2026-11-16: NPS noemt 1829 m van rand tot rivier. Het eerdere 1857 m is niet bruikbaar met deze bron; 1225 + 632 is niet 1829. Supabase is niet gewijzigd."
   },
   "fact_reviews": {
     "nr655": {
@@ -1473,10 +1474,11 @@
       "evidence_nl": "De architectonische hoogte van Shanghai Tower is 632 m."
     },
     "nr930": {
-      "source_status": "verified_rounded",
-      "checked_on": "2026-11-15",
-      "source_url": "https://en.wikipedia.org/wiki/Grand_Canyon",
-      "evidence_nl": "De bron geeft 6093 voet of 1857 m voor de maximale diepte van de Grand Canyon."
+      "source_status": "rejected_incorrect",
+      "checked_on": "2026-11-16",
+      "source_url": "https://www.nps.gov/grca/faqs.htm",
+      "evidence_nl": "NPS geeft circa 6000 verticale voet / 1829 meter van rand tot rivier op het diepste punt. Wikipedia vermeldt 6093 voet / 1857 m; voor Daily kiezen we NPS. Het oude antwoord 1857 wordt ingetrokken.",
+      "corrected_answer": 1829
     },
     "nr80": {
       "source_status": "verified_rounded",
@@ -7866,7 +7868,6 @@
       8,
       10,
       11,
-      18,
       23,
       24,
       26,
@@ -8067,6 +8068,17 @@
       "quality": "strong",
       "quality_reason_nl": "Een voorstelbare woontoren vervangt een specifiek persoonsrecord.",
       "reason_nl": "Een voorstelbare woontoren vervangt een specifiek persoonsrecord."
+    }
+  },
+  "fact_corrections": {
+    "nr930": {
+      "question_en": "How deep is the Grand Canyon from rim to river at its deepest point, in metres?",
+      "question_nl": "Hoeveel meter diep is de Grand Canyon op het diepste punt, van rand tot rivier?",
+      "answer": 1829,
+      "source_url": "https://www.nps.gov/grca/faqs.htm",
+      "checked_on": "2026-11-16",
+      "withdrawn_puzzle_number": 18,
+      "database_action": "Niet uitgevoerd; bestaande databasewaarde afzonderlijk corrigeren en som opnieuw samenstellen."
     }
   }
 }

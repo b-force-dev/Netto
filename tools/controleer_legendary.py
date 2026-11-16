@@ -125,7 +125,12 @@ def validate(data):
         review = editorial['player_review']
         assert data['player_review'] == review
         fixed = set(review['consensus_kept'])
-        assert len(fixed) == 20 and len(review['reconsidered']) == 22
+        withdrawn = {c['withdrawn_puzzle_number'] for c in editorial.get('fact_corrections', {}).values()}
+        assert len(fixed) == 20 - len(withdrawn) and len(review['reconsidered']) == 22
+        assert not fixed.intersection(withdrawn)
+        for correction in editorial.get('fact_corrections', {}).values():
+            assert type(correction['answer']) is int and correction['answer'] > 0
+            assert str(correction['withdrawn_puzzle_number']) in editorial['excluded_puzzles']
         accepted = {int(number) for number, decision in review['reconsidered'].items()
                     if decision['decision'] in ('behouden', 'verbeterd')}
         assert {p['number'] for p in puzzles} == fixed | accepted
@@ -143,6 +148,85 @@ def validate(data):
     return tiers
 
 
+def validate_round_two(first, second, editorial):
+    """Validate standalone reviewed facts without requiring entries in the old bank."""
+    def normalized(text):
+        return re.sub(r'[^\w]+', ' ', text.casefold()).strip()
+
+    puzzles = second['puzzles']
+    assert len(puzzles) == second['requested_count'] == 30
+    assert second['shortfall'] == 0
+    assert second['status'] == 'editorial_candidates_not_published'
+    ids = {p['id'] for p in first['puzzles']}
+    qids = {q['id'] for p in first['puzzles'] for q in p['questions']}
+    labels = {lang: {normalized(q[lang]) for p in first['puzzles'] for q in p['questions']}
+              for lang in ('question_en', 'question_nl')}
+    semantic = {key for p in first['puzzles'] for q in p['questions']
+                for key in q.get('semantic_keys', [])}
+    facts = {(q.get('source_review', {}).get('source_url', q['source_url']).rstrip('/'), q['answer'])
+             for p in first['puzzles'] for q in p['questions']}
+    tiers, dates, selected_ids = Counter(), [], set()
+    assert second['edition'] == editorial['edition']
+    for number, puzzle in enumerate(puzzles, 1):
+        assert puzzle['number'] == number and puzzle['id'] not in ids
+        ids.add(puzzle['id'])
+        assert puzzle['status'] == 'editorial_candidate'
+        questions = puzzle['questions']
+        assert len(questions) == 3
+        assert len({q['topic'] for q in questions}) == 3, 'Dependent subjects'
+        assert all(type(q['known_anchor']) is bool for q in questions)
+        assert sum(q['known_anchor'] for q in questions) <= 1, 'Two known answers'
+        for q in questions:
+            assert q['id'] not in qids, f'Duplicate ID: {q["id"]}'
+            qids.add(q['id'])
+            selected_ids.add(q['id'])
+            assert type(q['answer']) is int and q['answer'] > 0, 'Positive integer required'
+            for lang in labels:
+                assert isinstance(q[lang], str) and q[lang].strip()
+                label = normalized(q[lang])
+                assert label not in labels[lang], f'Duplicate question: {q[lang]}'
+                labels[lang].add(label)
+            assert not BAD_ENGLISH.search(q['question_en'])
+            assert q['category'] and q['quality_reason_nl']
+            assert q['quality'] in ('strong', 'normal')
+            assert q['source_status'] in CONFIRMED
+            review = editorial['fact_reviews'][q['id']]
+            assert review == q['source_review']
+            assert review['source_status'] == q['source_status']
+            assert review['source_url'] == q['source_url']
+            assert review['evidence_nl'] == q['evidence_nl'] and q['evidence_nl'].strip()
+            assert q['source_url'].startswith('https://')
+            assert date.fromisoformat(review['checked_on']) <= date.today()
+            if q['source_status'] == 'verified_rounded':
+                assert review['rounding_nl'] and q['question_en'].startswith('About ')
+            for key, value in editorial['question_edits'][q['id']].items():
+                assert q[key] == value, f'Editorial drift: {q["id"]}'
+            assert q['semantic_keys'] and not semantic.intersection(q['semantic_keys'])
+            semantic.update(q['semantic_keys'])
+            fact = (q['source_url'].rstrip('/'), q['answer'])
+            assert fact not in facts, f'Repeated sourced fact: {q["id"]}'
+            facts.add(fact)
+        values = [q['answer'] for q in questions]
+        assert matches(puzzle['operator'], values), f'Invalid equation: {puzzle["id"]}'
+        assert puzzle['calculation'] == f'{values[0]} {puzzle["operator"]} {values[1]} = {values[2]}'
+        assert not (puzzle['operator'] in ('×', '÷') and 1 in values)
+        tier = {3: 'legendary', 2: 'near-legendary', 1: 'normal'}.get(
+            sum(q['quality'] == 'strong' for q in questions))
+        assert tier and puzzle['tier'] == tier, 'Tier rule violated'
+        tiers[tier] += 1
+        assert puzzle['play_review'] == editorial['player_review'][str(number)]
+        dates.append(date.fromisoformat(puzzle['suggested_daily_date']))
+    assert set(editorial['fact_reviews']) == set(editorial['question_edits']) == selected_ids
+    assert second['editorial_audit']['fact_reviews'] == editorial['fact_reviews']
+    assert second['editorial_audit']['confirmed_facts'] == len(selected_ids) == 90
+    assert second['player_review'] == editorial['player_review']
+    assert dict(tiers) == second['tier_counts'] == {'legendary': 8, 'near-legendary': 12, 'normal': 10}
+    from datetime import timedelta
+    assert dates == [date(2026, 12, 16) + timedelta(days=i) for i in range(30)]
+    assert second['suggested_daily_window'] == {'start': '2026-12-16', 'end': '2027-01-14', 'scheduled': False}
+    return tiers
+
+
 if __name__ == '__main__':
     data = json.loads((ROOT / 'puzzels/legendary/selectie.json').read_text(encoding='utf8'))
     tiers = validate(data)
@@ -150,3 +234,6 @@ if __name__ == '__main__':
     print(f'{count} puzzles, {count * 3} unique questions, exact equations and source provenance: OK. Tiers: {dict(tiers)}')
     audit = data['editorial_audit']
     print(f"300 English texts: OK. External reviews: {audit['review_attempts']}; confirmed: {audit['confirmed_facts']}; rejected: {audit['rejected_facts']}; unresolved: {audit['unresolved_facts']}.")
+    second = json.loads((ROOT / 'puzzels/legendary/selectie_ronde2.json').read_text(encoding='utf8'))
+    editorial = json.loads((ROOT / 'puzzels/legendary/redactie_ronde2.json').read_text(encoding='utf8'))
+    print(f'Round 2: 30 puzzles, 90 confirmed unique questions, including cross-round checks: OK. Tiers: {dict(validate_round_two(data, second, editorial))}')

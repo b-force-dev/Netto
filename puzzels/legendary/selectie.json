@@ -2,7 +2,7 @@
   "edition": "legendary-spelersselectie-2026-11-15",
   "status": "editorial_candidates_not_published",
   "requested_count": 100,
-  "shortfall": 70,
+  "shortfall": 71,
   "selection_policy": "At most 100; quality and confirmed facts take precedence. Each question once; related facts with distinct answers allowed. No all-normal puzzles.",
   "source_policy": "Bank answers unchanged. Per-question web reviews distinguish confirmed, rounded, rejected and unresolved facts. Normal questions may still require external review.",
   "quality_policy": "Strong whitelist is a broad editorial scale filter, not independently reviewed legendary approval. Normal whitelist deliberately uses accessible knowledge; no zero-strong triples. Source-value and text aliases enforce conservative semantic uniqueness.",
@@ -22,7 +22,7 @@
   "tier_counts": {
     "near-legendary": 12,
     "normal": 11,
-    "legendary": 7
+    "legendary": 6
   },
   "unique_proposed_triples": 29614,
   "rejected_proposals": [],
@@ -890,107 +890,6 @@
         "decision": "verbeterd",
         "reason_nl": "Chromosomen vervangen door de bevolking van Argentinië (46 miljoen); toren, bevolking en robot geven twee brede schalen naast een kleine fysieke maat."
       }
-    },
-    {
-      "id": "legendary-1de456b9aaf9",
-      "number": 18,
-      "tier": "legendary",
-      "status": "editorial_candidate",
-      "questions": [
-        {
-          "id": "nr59",
-          "question_nl": "Hoeveel kilometer per uur reist geluid door lucht van 15 °C?",
-          "question_en": "How fast does sound travel in air at 15°C, in kilometres per hour?",
-          "answer": 1225,
-          "category": "Natuurkunde",
-          "source_url": "https://nl.wikipedia.org/wiki/Geluidssnelheid",
-          "evidence_nl": "Bij 15 °C op zeeniveau is de geluidssnelheid 340,3 m/s, oftewel 1225 km/u. De eerder opgegeven 1234 km/u hoort bij 20 °C.",
-          "source_status": "verified_rounded",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "handmatig",
-          "quality": "strong",
-          "quality_reason_nl": "Breed voorstelbare fysieke of astronomische schaal met plausibele grote onzekerheid; geef de bedoelde definitie en eenheid duidelijk.",
-          "semantic_keys": [
-            "nr:59",
-            "text:hoeveel kilometer per uur is de geluidssnelheid op zeeniveau afgerond?",
-            "sourcevalue:nl.wikipedia.org/wiki/geluidssnelheid:1225",
-            "reviewfamily:question-66c4a0cb16e42412:1225"
-          ],
-          "bank_question_nl": "Hoeveel kilometer per uur is de geluidssnelheid op zeeniveau afgerond?",
-          "source_review": {
-            "source_status": "verified_rounded",
-            "checked_on": "2026-11-15",
-            "source_url": "https://www.nasa.gov/wp-content/uploads/2023/02/speed_of_sound_9-12.pdf",
-            "evidence_nl": "NASA geeft voor lucht op zeeniveau bij 15 °C een geluidssnelheid van 1225 km/u."
-          }
-        },
-        {
-          "id": "nr794",
-          "question_nl": "Hoeveel meter hoog is de Shanghai Tower?",
-          "question_en": "How tall is Shanghai Tower, in metres?",
-          "answer": 632,
-          "category": "Gebouwen en infrastructuur",
-          "source_url": "https://en.wikipedia.org/wiki/Shanghai_Tower",
-          "evidence_nl": "The Shanghai Tower is a 128-story, 632-meter-tall (2,073-foot) megatall skyscraper located in Lujiazui, Pudong, Shanghai.",
-          "source_status": "verified",
-          "recorded_bank_control": "Wikidata: klopt",
-          "recorded_source_confidence": "hoog",
-          "quality": "strong",
-          "quality_reason_nl": "Fysieke/schaalvraag met een voorstelbaar onderwerp en onzeker antwoord.",
-          "semantic_keys": [
-            "nr:794",
-            "text:hoeveel meter hoog is de shanghai tower?",
-            "sourcevalue:en.wikipedia.org/wiki/shanghai_tower:632"
-          ],
-          "bank_question_nl": "Hoeveel meter hoog is de Shanghai Tower?",
-          "source_review": {
-            "source_status": "verified",
-            "checked_on": "2026-11-15",
-            "source_url": "https://en.wikipedia.org/wiki/Shanghai_Tower",
-            "evidence_nl": "De architectonische hoogte van Shanghai Tower is 632 m."
-          }
-        },
-        {
-          "id": "nr930",
-          "question_nl": "Hoeveel meter diep is de Grand Canyon op het diepste punt?",
-          "question_en": "How deep is the Grand Canyon at its deepest point, in metres?",
-          "answer": 1857,
-          "category": "Geografie",
-          "source_url": "https://en.wikipedia.org/wiki/Grand_Canyon",
-          "evidence_nl": "The Grand Canyon is 277 miles (446 km) long, up to 18 miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857 meters).",
-          "source_status": "verified_rounded",
-          "recorded_bank_control": null,
-          "recorded_source_confidence": "hoog",
-          "quality": "strong",
-          "quality_reason_nl": "Breed voorstelbare fysieke of astronomische schaal met plausibele grote onzekerheid; geef de bedoelde definitie en eenheid duidelijk.",
-          "semantic_keys": [
-            "nr:930",
-            "text:hoeveel meter diep is de grand canyon op het diepste punt?",
-            "sourcevalue:en.wikipedia.org/wiki/grand_canyon:1857",
-            "reviewfamily:question-a78e2606c3d8ed80:1857"
-          ],
-          "bank_question_nl": "Hoeveel meter diep is de Grand Canyon op het diepste punt?",
-          "source_review": {
-            "source_status": "verified_rounded",
-            "checked_on": "2026-11-15",
-            "source_url": "https://en.wikipedia.org/wiki/Grand_Canyon",
-            "evidence_nl": "De bron geeft 6093 voet of 1857 m voor de maximale diepte van de Grand Canyon."
-          }
-        }
-      ],
-      "operator": "+",
-      "calculation": "1225 + 632 = 1857",
-      "agents": {
-        "a-tier": {
-          "score": 5,
-          "reason_nl": "3 sterke schaalvragen; overige vragen zijn normale ankers. Redactioneel herbeoordeeld."
-        }
-      },
-      "risks": [
-        "Bestaande bronnen zijn niet opnieuw extern geverifieerd in deze zoekronde.",
-        "Bronwaarde, afronding en vraagafbakening blijven inhoudelijke reviewpunten."
-      ],
-      "original_tier": "legendary"
     },
     {
       "id": "legendary-8e9c36e3b6f8",
@@ -2958,7 +2857,6 @@
       8,
       10,
       11,
-      18,
       23,
       24,
       26,
@@ -3172,7 +3070,8 @@
       "97": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "98": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
       "99": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
-      "100": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden."
+      "100": "Spelersselectie: minstens twee van drie onafhankelijke reviewers vinden deze combinatie niet leuk; op verzoek alleen de twintig positief beoordeelde en overtuigend herstelde twijfelgevallen behouden.",
+      "18": "Ingetrokken op 2026-11-16: NPS noemt 1829 m van rand tot rivier. Het eerdere 1857 m is niet bruikbaar met deze bron; 1225 + 632 is niet 1829. Supabase is niet gewijzigd."
     },
     "fact_reviews": {
       "nr655": {
@@ -3334,10 +3233,11 @@
         "evidence_nl": "De architectonische hoogte van Shanghai Tower is 632 m."
       },
       "nr930": {
-        "source_status": "verified_rounded",
-        "checked_on": "2026-11-15",
-        "source_url": "https://en.wikipedia.org/wiki/Grand_Canyon",
-        "evidence_nl": "De bron geeft 6093 voet of 1857 m voor de maximale diepte van de Grand Canyon."
+        "source_status": "rejected_incorrect",
+        "checked_on": "2026-11-16",
+        "source_url": "https://www.nps.gov/grca/faqs.htm",
+        "evidence_nl": "NPS geeft circa 6000 verticale voet / 1829 meter van rand tot rivier op het diepste punt. Wikipedia vermeldt 6093 voet / 1857 m; voor Daily kiezen we NPS. Het oude antwoord 1857 wordt ingetrokken.",
+        "corrected_answer": 1829
       },
       "nr80": {
         "source_status": "verified_rounded",
@@ -4254,8 +4154,8 @@
       }
     },
     "review_attempts": 162,
-    "confirmed_facts": 110,
+    "confirmed_facts": 109,
     "unresolved_facts": 39,
-    "rejected_facts": 13
+    "rejected_facts": 14
   }
 }

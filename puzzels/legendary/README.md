@@ -47,3 +47,11 @@ python tools/maak_legendary_selectie.py --check
 Zonder `--check` genereert `maak_legendary_selectie.py` de selectie en het auditverslag opnieuw uit de vastgelegde redactie. Het wijzigt geen antwoorden en publiceert niets. De controles toetsen ook lege Engelse teksten, bekende vertaalfouten, uniciteit per ID en bronfeit, exacte sommen, tiers en bewijsmetadata. De nummering bewaart de oorspronkelijke puzzelnummers, inclusief gaten na schrappen.
 
 De zoekruimte kan opnieuw worden onderzocht met de `legendary_search_*.py`-scripts. Een tijdbegrensde solver levert niet altijd exact dezelfde selectie of een bewezen optimum; solverstatus en beperkingen horen daarom bij het resultaat.
+
+## Ronde 2 en correctie van 16 november 2026
+
+`selectie_ronde2.json` en `redactie_ronde2.json` bevatten 30 nieuwe combinaties (8 legendary, 12 near-legendary, 10 normaal), met 90 bevestigde feiten en voorgestelde datums van 16 december 2026 tot en met 14 januari 2027. Het verslag staat in `docs/audit/legendary_selectie_ronde2.md`. Niets is ingepland. Deze nieuwe feiten worden zelfstandig gecontroleerd; de oude generator blijft alleen ronde 1 opbouwen.
+
+Uitzondering op het historische behoud van twintig puzzels: puzzel 18 is ingetrokken na controle bij NPS. De gecorrigeerde Grand Canyon-diepte is 1829 m; de oude som met 1857 klopt dan niet meer. `redactie.json` bewaart de correctie onder `fact_corrections` en de oude waarden uitsluitend als historische herkomst. Ronde 1 telt nu 29 combinaties. Supabase is niet gewijzigd.
+
+`python tools/controleer_legendary.py` controleert beide reeksen, ook onderlinge vraag-ID’s, EN/NL-teksten en bronfeiten. Niveaus en bekende ankers blijven redactionele oordelen; de controle bewaakt hun vastgelegde regels.
