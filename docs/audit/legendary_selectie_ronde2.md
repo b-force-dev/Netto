@@ -33,12 +33,12 @@ Alle 30 opnieuw als speler gelezen. Geen twee bekende antwoorden in één puzzel
   **Bron:** [https://uluru.gov.au/discover/highlights/amazing-facts/](https://uluru.gov.au/discover/highlights/amazing-facts/) — 2026-11-16.
   **Bewijs:** Parks Australia: Uluru steekt 348 m boven de omringende vlakte uit.
 - **EN:** About how thick is a Golden Gate Bridge main cable, in centimetres?
-  **NL:** Hoeveel centimeter dik is een hoofdkabel van de Golden Gate Bridge ongeveer?
+  **NL:** Ongeveer hoeveel centimeter dik is een hoofdkabel van de Golden Gate Bridge?
   **Antwoord:** 92 — strong.
   **Bron:** [https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/](https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/) — 2026-11-16.
   **Bewijs:** Diameter inclusief omwikkeling 0,92 m = 92 cm.
 - **EN:** About how long is the Great Clock's pendulum, in centimetres?
-  **NL:** Hoeveel centimeter lang is de slinger van de Great Clock in Londen ongeveer?
+  **NL:** Ongeveer hoeveel centimeter lang is de slinger van de Great Clock in Londen?
   **Antwoord:** 440 — strong.
   **Bron:** [https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/](https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/) — 2026-11-16.
   **Bewijs:** Brits parlement: 4,4 m = 440 cm.
@@ -49,18 +49,18 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 
 66 + 1164 = 1230
 
-- **EN:** How many days did the Mayflower cross the Atlantic in 1620?
+- **EN:** How many days did the Mayflower's Atlantic crossing take in 1620?
   **NL:** Hoeveel dagen duurde de Atlantische overtocht van de Mayflower in 1620?
   **Antwoord:** 66 — normal.
   **Bron:** [https://plimoth.org/for-students/homework-help/mayflower-and-mayflower-compact](https://plimoth.org/for-students/homework-help/mayflower-and-mayflower-compact) — 2026-11-16.
   **Bewijs:** Plimoth Patuxet beschrijft de Atlantische overtocht als een reis van 66 dagen.
 - **EN:** About how much did the record hamburger made in Pilsting in 2017 weigh, in kilograms?
-  **NL:** Hoeveel kilogram woog de recordhamburger in Pilsting in 2017 ongeveer?
+  **NL:** Ongeveer hoeveel kilogram woog de recordhamburger in Pilsting in 2017?
   **Antwoord:** 1164 — strong.
   **Bron:** [https://www.guinnessworldrecords.com/world-records/largest-hamburger](https://www.guinnessworldrecords.com/world-records/largest-hamburger) — 2026-11-16.
   **Bewijs:** Guinness registreert de Pilsting-hamburger op 9 juli 2017 met 1164,2 kg; op hele kilogrammen 1164.
 - **EN:** About how long is the Rhine, in kilometres?
-  **NL:** Hoeveel kilometer lang is de Rijn ongeveer?
+  **NL:** Ongeveer hoeveel kilometer lang is de Rijn?
   **Antwoord:** 1230 — strong.
   **Bron:** [https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf](https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf) — 2026-11-16.
   **Bewijs:** ICPR stroomgebiedbeheerplan 2022–2027, hoofdstuk 1: 1233 km; als globale lengte op tientallen 1230 km.
@@ -72,7 +72,7 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 541 + 355 = 896
 
 - **EN:** About how tall is One World Trade Center, in metres?
-  **NL:** Hoeveel meter hoog is One World Trade Center ongeveer?
+  **NL:** Ongeveer hoeveel meter hoog is One World Trade Center?
   **Antwoord:** 541 — strong.
   **Bron:** [https://dashboard.durst.org/onewtc/wp-content/uploads/sites/10/2026/03/OneWTC_Glossy_2026-02-05.pdf](https://dashboard.durst.org/onewtc/wp-content/uploads/sites/10/2026/03/OneWTC_Glossy_2026-02-05.pdf) — 2026-11-16.
   **Bewijs:** Eigenaar Durst geeft 1776 voet; maal 0,3048 = 541,3248 m, afgerond 541 m.
@@ -94,17 +94,17 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 443 + 67 = 510
 
 - **EN:** About how tall is the Empire State Building including its antenna, in metres?
-  **NL:** Hoeveel meter hoog is het Empire State Building inclusief antenne ongeveer?
+  **NL:** Ongeveer hoeveel meter hoog is het Empire State Building inclusief antenne?
   **Antwoord:** 443 — strong.
   **Bron:** [https://www.esbnyc.com/about/facts-figures](https://www.esbnyc.com/about/facts-figures) — 2026-11-16.
   **Bewijs:** De exploitant geeft 1454 voet / 443 meter inclusief antenne.
-- **EN:** How many metres above high water is the Golden Gate Bridge's roadway?
-  **NL:** Hoeveel meter boven hoogwater ligt het wegdek van de Golden Gate Bridge?
+- **EN:** What is the clearance under the Golden Gate Bridge at high water, in metres?
+  **NL:** Hoeveel meter doorvaarthoogte heeft de Golden Gate Bridge bij hoogwater?
   **Antwoord:** 67 — strong.
   **Bron:** [https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/](https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/) — 2026-11-16.
   **Bewijs:** Vrije doorvaarthoogte boven mean higher high water: 67 m.
 - **EN:** About how many million square kilometres is Earth's surface area?
-  **NL:** Hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen ongeveer?
+  **NL:** Ongeveer hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen?
   **Antwoord:** 510 — strong.
   **Bron:** [https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf](https://www.cia.gov/the-world-factbook/about/archives/2024/static/6c4d9b9a41b27707b6720720df7161d6/Physical_World.pdf) — 2026-11-16.
   **Bewijs:** CIA Physical World 2024: 510,072 miljoen km²; op hele miljoenen 510.
@@ -116,17 +116,17 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 225 + 15 = 240
 
 - **EN:** About how many Earth days does Venus take to orbit the Sun?
-  **NL:** Hoeveel aardse dagen duurt een jaar op Venus ongeveer?
+  **NL:** Ongeveer hoeveel aardse dagen duurt een jaar op Venus?
   **Antwoord:** 225 — normal.
   **Bron:** [https://science.nasa.gov/venus/venus-facts/](https://science.nasa.gov/venus/venus-facts/) — 2026-11-16.
   **Bewijs:** NASA beschrijft 225 aardse dagen per omloop van Venus.
 - **EN:** About how long is an ostrich egg, in centimetres?
-  **NL:** Hoeveel centimeter lang is een struisvogelei ongeveer?
+  **NL:** Ongeveer hoeveel centimeter lang is een struisvogelei?
   **Antwoord:** 15 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/ostrich](https://animals.sandiegozoo.org/animals/ostrich) — 2026-11-16.
   **Bewijs:** San Diego Zoo: gemiddeld 15 cm lang.
 - **EN:** About how many minutes does sunlight take to reach Neptune?
-  **NL:** Hoeveel minuten doet zonlicht erover om Neptunus te bereiken ongeveer?
+  **NL:** Ongeveer hoeveel minuten doet zonlicht erover om Neptunus te bereiken?
   **Antwoord:** 240 — strong.
   **Bron:** [https://science.nasa.gov/neptune/neptune-facts/](https://science.nasa.gov/neptune/neptune-facts/) — 2026-11-16.
   **Bewijs:** NASA: vier uur = 240 minuten bij de gemiddelde afstand.
@@ -143,12 +143,12 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://www.sydneytowereye.com.au/explore/explore/about-sydney-tower/](https://www.sydneytowereye.com.au/explore/explore/about-sydney-tower/) — 2026-11-16.
   **Bewijs:** De exploitant geeft 309 meter van de voet tot de spits.
 - **EN:** About how long is the Statue of Liberty's nose, in centimetres?
-  **NL:** Hoeveel centimeter lang is de neus van het Vrijheidsbeeld ongeveer?
+  **NL:** Ongeveer hoeveel centimeter lang is de neus van het Vrijheidsbeeld?
   **Antwoord:** 137 — strong.
   **Bron:** [https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm](https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm) — 2026-11-16.
   **Bewijs:** NPS geeft 1,37 m: 137 cm.
 - **EN:** About how long is the Grand Canyon, in kilometres?
-  **NL:** Hoeveel kilometer lang is de Grand Canyon ongeveer?
+  **NL:** Ongeveer hoeveel kilometer lang is de Grand Canyon?
   **Antwoord:** 446 — strong.
   **Bron:** [https://www.nps.gov/grca/faqs.htm](https://www.nps.gov/grca/faqs.htm) — 2026-11-16.
   **Bewijs:** NPS: van Lees Ferry tot Grand Wash Cliffs 277 mijl / 446 km langs de rivier.
@@ -160,17 +160,17 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 20 + 145 = 165
 
 - **EN:** About how many hours can a koala sleep each day?
-  **NL:** Hoeveel uur per dag kan een koala slapen ongeveer?
+  **NL:** Ongeveer hoeveel uur per dag kan een koala slapen?
   **Antwoord:** 20 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/koala](https://animals.sandiegozoo.org/animals/koala) — 2026-11-16.
   **Bewijs:** San Diego Zoo beschrijft dat koala’s tot twintig uur per dag slapen.
 - **EN:** About how many litres can a thirsty camel drink in one session?
-  **NL:** Hoeveel liter kan een dorstige kameel in één keer drinken ongeveer?
+  **NL:** Ongeveer hoeveel liter kan een dorstige kameel in één keer drinken?
   **Antwoord:** 145 — strong.
   **Bron:** [https://animals.sandiegozoo.org/animals/camel](https://animals.sandiegozoo.org/animals/camel) — 2026-11-16.
   **Bewijs:** San Diego Zoo: tot 145 liter per drinkbeurt.
 - **EN:** About how many Earth years does Neptune take to orbit the Sun?
-  **NL:** Hoeveel aardse jaren duurt een jaar op Neptunus ongeveer?
+  **NL:** Ongeveer hoeveel aardse jaren duurt een jaar op Neptunus?
   **Antwoord:** 165 — strong.
   **Bron:** [https://science.nasa.gov/neptune/neptune-facts/](https://science.nasa.gov/neptune/neptune-facts/) — 2026-11-16.
   **Bewijs:** NASA: ongeveer 165 aardse jaren.
@@ -182,17 +182,17 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 21 + 63 = 84
 
 - **EN:** About how tall was the Blokhus sandcastle in 2021, in metres?
-  **NL:** Hoeveel meter hoog was het zandkasteel in Blokhus in 2021 ongeveer?
+  **NL:** Ongeveer hoeveel meter hoog was het zandkasteel in Blokhus in 2021?
   **Antwoord:** 21 — strong.
   **Bron:** [https://www.guinnessworldrecords.com/world-records/tallest-sandcastle](https://www.guinnessworldrecords.com/world-records/tallest-sandcastle) — 2026-11-16.
   **Bewijs:** Guinness registreert het zandkasteel in Blokhus op 2 juli 2021 met 21,16 m; op hele meters 21.
 - **EN:** About how many kilograms can a male lion eat in one meal?
-  **NL:** Hoeveel kilogram kan een mannetjesleeuw in één maaltijd eten ongeveer?
+  **NL:** Ongeveer hoeveel kilogram kan een mannetjesleeuw in één maaltijd eten?
   **Antwoord:** 63 — strong.
   **Bron:** [https://animals.sandiegozoo.org/animals/lion](https://animals.sandiegozoo.org/animals/lion) — 2026-11-16.
   **Bewijs:** San Diego Zoo noemt tot circa 63 kg per maaltijd.
 - **EN:** About how many Earth years does Uranus take to orbit the Sun?
-  **NL:** Hoeveel aardse jaren duurt een jaar op Uranus ongeveer?
+  **NL:** Ongeveer hoeveel aardse jaren duurt een jaar op Uranus?
   **Antwoord:** 84 — strong.
   **Bron:** [https://science.nasa.gov/uranus/facts/](https://science.nasa.gov/uranus/facts/) — 2026-11-16.
   **Bewijs:** NASA: ongeveer 84 aardse jaren.
@@ -204,12 +204,12 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 2525 × 4 = 10100
 
 - **EN:** About how long is the Ganges, in kilometres?
-  **NL:** Hoeveel kilometer lang is de Ganges ongeveer?
+  **NL:** Ongeveer hoeveel kilometer lang is de Ganges?
   **Antwoord:** 2525 — strong.
   **Bron:** [https://nmcg.nic.in/courseofganga.aspx](https://nmcg.nic.in/courseofganga.aspx) — 2026-11-16.
   **Bewijs:** National Mission for Clean Ganga: een loop van 2525 km tot de Golf van Bengalen.
 - **EN:** About how many months is a lioness pregnant?
-  **NL:** Hoeveel maanden is een leeuwin drachtig ongeveer?
+  **NL:** Ongeveer hoeveel maanden is een leeuwin drachtig?
   **Antwoord:** 4 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/lion](https://animals.sandiegozoo.org/animals/lion) — 2026-11-16.
   **Bewijs:** San Diego Zoo noemt bijna vier maanden.
@@ -231,12 +231,12 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/](https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/) — 2026-11-16.
   **Bewijs:** De beheerder geeft 27 m totale breedte.
 - **EN:** About how many Earth days does Mercury take to spin once?
-  **NL:** Hoeveel aardse dagen duurt één draai van Mercurius ongeveer?
+  **NL:** Ongeveer hoeveel aardse dagen duurt één draai van Mercurius?
   **Antwoord:** 59 — strong.
   **Bron:** [https://science.nasa.gov/mercury/facts/](https://science.nasa.gov/mercury/facts/) — 2026-11-16.
   **Bewijs:** NASA: één aswenteling duurt 59 aardse dagen.
 - **EN:** About how many billion neurons are in the human brain?
-  **NL:** Hoeveel miljard zenuwcellen bevat het menselijk brein ongeveer?
+  **NL:** Ongeveer hoeveel miljard zenuwcellen bevat het menselijk brein?
   **Antwoord:** 86 — strong.
   **Bron:** [https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain](https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain) — 2026-11-16.
   **Bewijs:** NIH beschrijft circa 86 miljard zenuwcellen; dit is een biologisch gemiddelde, geen vast aantal per persoon.
@@ -253,12 +253,12 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/](https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/) — 2026-11-16.
   **Bewijs:** Torens boven water: 227 m.
 - **EN:** About how many hours does Uranus take to spin once?
-  **NL:** Hoeveel uur duurt één draai van Uranus ongeveer?
+  **NL:** Ongeveer hoeveel uur duurt één draai van Uranus?
   **Antwoord:** 17 — normal.
   **Bron:** [https://science.nasa.gov/uranus/facts/](https://science.nasa.gov/uranus/facts/) — 2026-11-16.
   **Bewijs:** NASA: ongeveer 17 uur.
 - **EN:** About how long is the Statue of Liberty's index finger, in centimetres?
-  **NL:** Hoeveel centimeter lang is de wijsvinger van het Vrijheidsbeeld ongeveer?
+  **NL:** Ongeveer hoeveel centimeter lang is de wijsvinger van het Vrijheidsbeeld?
   **Antwoord:** 244 — strong.
   **Bron:** [https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm](https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm) — 2026-11-16.
   **Bewijs:** NPS geeft 2,44 m: 244 cm.
@@ -275,7 +275,7 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/](https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/) — 2026-11-16.
   **Bewijs:** Eén hoofdkabel bestaat uit 61 bundels.
 - **EN:** About how much does a giraffe's neck weigh, in kilograms?
-  **NL:** Hoeveel kilogram weegt de nek van een giraffe ongeveer?
+  **NL:** Ongeveer hoeveel kilogram weegt de nek van een giraffe?
   **Antwoord:** 272 — strong.
   **Bron:** [https://animals.sandiegozoo.org/animals/giraffe](https://animals.sandiegozoo.org/animals/giraffe) — 2026-11-16.
   **Bewijs:** San Diego Zoo: circa 272 kg.
@@ -297,7 +297,7 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/](https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/) — 2026-11-16.
   **Bewijs:** De beheerder telt 250 paren.
 - **EN:** About how tall is the General Sherman tree, in metres?
-  **NL:** Hoeveel meter hoog is de General Sherman-boom ongeveer?
+  **NL:** Ongeveer hoeveel meter hoog is de General Sherman-boom?
   **Antwoord:** 84 — strong.
   **Bron:** [https://home.nps.gov/seki/learn/nature/sherman.htm](https://home.nps.gov/seki/learn/nature/sherman.htm) — 2026-11-16.
   **Bewijs:** NPS: 83,8 m, afgerond 84.
@@ -314,7 +314,7 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 500 × 3 = 1500
 
 - **EN:** About how long is the Statue of Liberty's hand, in centimetres?
-  **NL:** Hoeveel centimeter lang is de hand van het Vrijheidsbeeld ongeveer?
+  **NL:** Ongeveer hoeveel centimeter lang is de hand van het Vrijheidsbeeld?
   **Antwoord:** 500 — strong.
   **Bron:** [https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm](https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm) — 2026-11-16.
   **Bewijs:** NPS geeft 5,00 m: 500 cm.
@@ -324,7 +324,7 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel](https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel) — 2026-11-16.
   **Bewijs:** ORR: twee spoortunnels en één diensttunnel.
 - **EN:** About how much does an ostrich egg weigh, in grams?
-  **NL:** Hoeveel gram weegt een struisvogelei ongeveer?
+  **NL:** Ongeveer hoeveel gram weegt een struisvogelei?
   **Antwoord:** 1500 — strong.
   **Bron:** [https://animals.sandiegozoo.org/animals/ostrich](https://animals.sandiegozoo.org/animals/ostrich) — 2026-11-16.
   **Bewijs:** San Diego Zoo: circa 1500 gram.
@@ -341,12 +341,12 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm](https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm) — 2026-11-16.
   **Bewijs:** NPS telt 25 ramen.
 - **EN:** About how fast has a giraffe been recorded running, in kilometres per hour?
-  **NL:** Hoeveel kilometer per uur is de gemeten hardloopsnelheid van een giraffe ongeveer?
+  **NL:** Ongeveer hoeveel kilometer per uur is de gemeten hardloopsnelheid van een giraffe?
   **Antwoord:** 56 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/giraffe](https://animals.sandiegozoo.org/animals/giraffe) — 2026-11-16.
   **Bewijs:** San Diego Zoo noemt een gemeten record van 56 km/u.
 - **EN:** About how much does an adult female hippo weigh on average, in kilograms?
-  **NL:** Hoeveel kilogram weegt een volwassen vrouwelijk nijlpaard gemiddeld ongeveer?
+  **NL:** Ongeveer hoeveel kilogram weegt een volwassen vrouwelijk nijlpaard gemiddeld?
   **Antwoord:** 1400 — strong.
   **Bron:** [https://animals.sandiegozoo.org/animals/hippo](https://animals.sandiegozoo.org/animals/hippo) — 2026-11-16.
   **Bewijs:** San Diego Zoo: gemiddeld 1400 kg voor vrouwtjes.
@@ -358,12 +358,12 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 47 × 11 = 517
 
 - **EN:** About how fast does Mercury orbit the Sun, in kilometres per second?
-  **NL:** Hoeveel kilometer per seconde beweegt Mercurius om de zon ongeveer?
+  **NL:** Ongeveer hoeveel kilometer per seconde beweegt Mercurius om de zon?
   **Antwoord:** 47 — normal.
   **Bron:** [https://science.nasa.gov/mercury/facts/](https://science.nasa.gov/mercury/facts/) — 2026-11-16.
   **Bewijs:** NASA geeft bijna 47 km/s.
 - **EN:** About how many hours does Saturn take to spin once?
-  **NL:** Hoeveel uur duurt één draai van Saturnus ongeveer?
+  **NL:** Ongeveer hoeveel uur duurt één draai van Saturnus?
   **Antwoord:** 11 — normal.
   **Bron:** [https://science.nasa.gov/saturn/facts/](https://science.nasa.gov/saturn/facts/) — 2026-11-16.
   **Bewijs:** NASA: 10,7 uur, afgerond 11.
@@ -380,17 +380,17 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 80 + 19 = 99
 
 - **EN:** About how many minutes does sunlight take to reach Saturn?
-  **NL:** Hoeveel minuten doet zonlicht erover om Saturnus te bereiken ongeveer?
+  **NL:** Ongeveer hoeveel minuten doet zonlicht erover om Saturnus te bereiken?
   **Antwoord:** 80 — strong.
   **Bron:** [https://science.nasa.gov/saturn/facts/](https://science.nasa.gov/saturn/facts/) — 2026-11-16.
   **Bewijs:** NASA: 80 minuten bij de gemiddelde afstand.
 - **EN:** About how thick is the Gateway Arch's observation-window glass, in millimetres?
-  **NL:** Hoeveel millimeter dik is het glas van de uitkijkramen van de Gateway Arch ongeveer?
+  **NL:** Ongeveer hoeveel millimeter dik is het glas van de uitkijkramen van de Gateway Arch?
   **Antwoord:** 19 — normal.
   **Bron:** [https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm](https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm) — 2026-11-16.
   **Bewijs:** NPS: 19 mm plaatglas.
 - **EN:** About what percentage of a giant panda's diet is bamboo?
-  **NL:** Hoeveel procent van het voedsel van een reuzenpanda is bamboe ongeveer?
+  **NL:** Ongeveer hoeveel procent van het voedsel van een reuzenpanda is bamboe?
   **Antwoord:** 99 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/giant-panda](https://animals.sandiegozoo.org/animals/giant-panda) — 2026-11-16.
   **Bewijs:** San Diego Zoo: circa 99 procent.
@@ -402,7 +402,7 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 10 + 14 = 24
 
 - **EN:** About how thick are Saturn's main rings typically, in metres?
-  **NL:** Hoeveel meter dik zijn de hoofdringen van Saturnus doorgaans ongeveer?
+  **NL:** Ongeveer hoeveel meter dik zijn de hoofdringen van Saturnus doorgaans?
   **Antwoord:** 10 — strong.
   **Bron:** [https://science.nasa.gov/saturn/facts/](https://science.nasa.gov/saturn/facts/) — 2026-11-16.
   **Bewijs:** NASA: typisch circa 10 m verticale dikte.
@@ -424,7 +424,7 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 160 × 2 = 320
 
 - **EN:** About how many minutes does sunlight take to reach Uranus?
-  **NL:** Hoeveel minuten doet zonlicht erover om Uranus te bereiken ongeveer?
+  **NL:** Ongeveer hoeveel minuten doet zonlicht erover om Uranus te bereiken?
   **Antwoord:** 160 — strong.
   **Bron:** [https://science.nasa.gov/uranus/facts/](https://science.nasa.gov/uranus/facts/) — 2026-11-16.
   **Bewijs:** NASA: 2 uur 40 minuten = 160 minuten bij gemiddelde afstand.
@@ -456,7 +456,7 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://www.guinnessworldrecords.com/news/2019/9/meet-the-smallest-horse-in-the-world-thats-shorter-than-a-greyhound-588674](https://www.guinnessworldrecords.com/news/2019/9/meet-the-smallest-horse-in-the-world-thats-shorter-than-a-greyhound-588674) — 2026-11-16.
   **Bewijs:** Guinness geeft 44,5 cm schofthoogte voor Thumbelina; op hele centimeters 45.
 - **EN:** About how many million kilometres is Mercury's average distance from the Sun?
-  **NL:** Hoeveel miljoen kilometer is Mercurius gemiddeld van de zon verwijderd ongeveer?
+  **NL:** Ongeveer hoeveel miljoen kilometer is Mercurius gemiddeld van de zon verwijderd?
   **Antwoord:** 58 — strong.
   **Bron:** [https://science.nasa.gov/mercury/facts/](https://science.nasa.gov/mercury/facts/) — 2026-11-16.
   **Bewijs:** NASA: gemiddelde afstand 58 miljoen km.
@@ -468,17 +468,17 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 16 × 11 = 176
 
 - **EN:** About how many hours does Neptune take to spin once?
-  **NL:** Hoeveel uur duurt één draai van Neptunus ongeveer?
+  **NL:** Ongeveer hoeveel uur duurt één draai van Neptunus?
   **Antwoord:** 16 — normal.
   **Bron:** [https://science.nasa.gov/neptune/neptune-facts/](https://science.nasa.gov/neptune/neptune-facts/) — 2026-11-16.
   **Bewijs:** NASA: ongeveer 16 uur.
 - **EN:** About how much does a giraffe's heart weigh, in kilograms?
-  **NL:** Hoeveel kilogram weegt het hart van een giraffe ongeveer?
+  **NL:** Ongeveer hoeveel kilogram weegt het hart van een giraffe?
   **Antwoord:** 11 — strong.
   **Bron:** [https://animals.sandiegozoo.org/animals/giraffe](https://animals.sandiegozoo.org/animals/giraffe) — 2026-11-16.
   **Bewijs:** San Diego Zoo: circa 11 kg.
 - **EN:** About how many Earth days pass between sunrises on Mercury?
-  **NL:** Hoeveel aardse dagen zitten tussen twee zonsopkomsten op Mercurius ongeveer?
+  **NL:** Ongeveer hoeveel aardse dagen zitten tussen twee zonsopkomsten op Mercurius?
   **Antwoord:** 176 — strong.
   **Bron:** [https://science.nasa.gov/mercury/facts/](https://science.nasa.gov/mercury/facts/) — 2026-11-16.
   **Bewijs:** NASA: zonnedag van 176 aardse dagen.
@@ -495,12 +495,12 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://science.nasa.gov/neptune/neptune-facts/](https://science.nasa.gov/neptune/neptune-facts/) — 2026-11-16.
   **Bewijs:** NASA beschrijft een tussenpoos van 17 dagen in 1846.
 - **EN:** About how long are an ostrich's intestines, in metres?
-  **NL:** Hoeveel meter lang zijn de darmen van een struisvogel ongeveer?
+  **NL:** Ongeveer hoeveel meter lang zijn de darmen van een struisvogel?
   **Antwoord:** 14 — strong.
   **Bron:** [https://animals.sandiegozoo.org/animals/ostrich](https://animals.sandiegozoo.org/animals/ostrich) — 2026-11-16.
   **Bewijs:** San Diego Zoo: uitgestrekt 14 m.
-- **EN:** About what is the General Sherman tree's circumference at ground level, in metres?
-  **NL:** Hoeveel meter is de omtrek van de General Sherman-boom op grondniveau ongeveer?
+- **EN:** About how many metres around is the General Sherman tree at ground level?
+  **NL:** Ongeveer hoeveel meter is de omtrek van de General Sherman-boom op grondniveau?
   **Antwoord:** 31 — normal.
   **Bron:** [https://home.nps.gov/seki/learn/nature/sherman.htm](https://home.nps.gov/seki/learn/nature/sherman.htm) — 2026-11-16.
   **Bewijs:** NPS: 31,1 m, afgerond 31.
@@ -512,17 +512,17 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 50 × 46 = 2300
 
 - **EN:** About how long is the Channel Tunnel, in kilometres?
-  **NL:** Hoeveel kilometer lang is de Kanaaltunnel ongeveer?
+  **NL:** Ongeveer hoeveel kilometer lang is de Kanaaltunnel?
   **Antwoord:** 50 — strong.
   **Bron:** [https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel](https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel) — 2026-11-16.
   **Bewijs:** De Britse spoorwegtoezichthouder geeft 50 km.
 - **EN:** About how long is a giraffe's tongue, in centimetres?
-  **NL:** Hoeveel centimeter lang is de tong van een giraffe ongeveer?
+  **NL:** Ongeveer hoeveel centimeter lang is de tong van een giraffe?
   **Antwoord:** 46 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/giraffe](https://animals.sandiegozoo.org/animals/giraffe) — 2026-11-16.
   **Bewijs:** San Diego Zoo: 46 cm.
 - **EN:** About how much does one elephant molar weigh, in grams?
-  **NL:** Hoeveel gram weegt één kies van een olifant ongeveer?
+  **NL:** Ongeveer hoeveel gram weegt één kies van een olifant?
   **Antwoord:** 2300 — strong.
   **Bron:** [https://animals.sandiegozoo.org/animals/elephant](https://animals.sandiegozoo.org/animals/elephant) — 2026-11-16.
   **Bewijs:** San Diego Zoo: circa 2,3 kg = 2300 g.
@@ -556,12 +556,12 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 45 + 90 = 135
 
 - **EN:** About how much can a newborn hippo weigh, in kilograms?
-  **NL:** Hoeveel kilogram kan een pasgeboren nijlpaard wegen ongeveer?
+  **NL:** Ongeveer hoeveel kilogram kan een pasgeboren nijlpaard wegen?
   **Antwoord:** 45 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/hippo](https://animals.sandiegozoo.org/animals/hippo) — 2026-11-16.
   **Bewijs:** San Diego Zoo geeft een geboortegewicht van 25 tot 45 kg; bovengrens 45.
 - **EN:** About how many extra kilograms can a camel easily carry?
-  **NL:** Hoeveel extra kilogram kan een kameel gemakkelijk dragen ongeveer?
+  **NL:** Ongeveer hoeveel extra kilogram kan een kameel gemakkelijk dragen?
   **Antwoord:** 90 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/camel](https://animals.sandiegozoo.org/animals/camel) — 2026-11-16.
   **Bewijs:** San Diego Zoo: 90 kg extra draaglast.
@@ -578,17 +578,17 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 70 × 30 = 2100
 
 - **EN:** About how fast can an ostrich sprint, in kilometres per hour?
-  **NL:** Hoeveel kilometer per uur kan een struisvogel sprinten ongeveer?
+  **NL:** Ongeveer hoeveel kilometer per uur kan een struisvogel sprinten?
   **Antwoord:** 70 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/ostrich](https://animals.sandiegozoo.org/animals/ostrich) — 2026-11-16.
   **Bewijs:** San Diego Zoo: tot 70 km/u.
 - **EN:** About how many minutes after birth can a camel calf walk?
-  **NL:** Hoeveel minuten na de geboorte kan een kamelenjong lopen ongeveer?
+  **NL:** Ongeveer hoeveel minuten na de geboorte kan een kamelenjong lopen?
   **Antwoord:** 30 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/camel](https://animals.sandiegozoo.org/animals/camel) — 2026-11-16.
   **Bewijs:** San Diego Zoo: binnen een halfuur = 30 minuten.
 - **EN:** About how fast can Neptune's strongest winds blow, in kilometres per hour?
-  **NL:** Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken ongeveer?
+  **NL:** Ongeveer hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?
   **Antwoord:** 2100 — strong.
   **Bron:** [https://cnes.fr/en/folders/planet-neptune](https://cnes.fr/en/folders/planet-neptune) — 2026-11-16.
   **Bewijs:** CNES beschrijft windsnelheden tot 2100 km/u op Neptunus.
@@ -600,12 +600,12 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
 14 + 16 = 30
 
 - **EN:** About what percentage of its body weight can an African penguin eat in a day?
-  **NL:** Hoeveel procent van zijn lichaamsgewicht kan een Afrikaanse pinguïn per dag eten ongeveer?
+  **NL:** Ongeveer hoeveel procent van zijn lichaamsgewicht kan een Afrikaanse pinguïn per dag eten?
   **Antwoord:** 14 — strong.
   **Bron:** [https://animals.sandiegozoo.org/animals/african-penguin](https://animals.sandiegozoo.org/animals/african-penguin) — 2026-11-16.
   **Bewijs:** San Diego Zoo: tot 14 procent per dag.
 - **EN:** About how many hours a day does an elephant spend eating on average?
-  **NL:** Hoeveel uur per dag eet een olifant gemiddeld ongeveer?
+  **NL:** Ongeveer hoeveel uur per dag eet een olifant gemiddeld?
   **Antwoord:** 16 — normal.
   **Bron:** [https://animals.sandiegozoo.org/animals/elephant](https://animals.sandiegozoo.org/animals/elephant) — 2026-11-16.
   **Bewijs:** San Diego Zoo: gemiddeld 16 uur.
@@ -632,7 +632,7 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm](https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm) — 2026-11-16.
   **Bewijs:** NPS: 1076 treden per poot.
 - **EN:** About how much does a newborn lion cub weigh, in grams?
-  **NL:** Hoeveel gram weegt een pasgeboren leeuwenwelp ongeveer?
+  **NL:** Ongeveer hoeveel gram weegt een pasgeboren leeuwenwelp?
   **Antwoord:** 1400 — strong.
   **Bron:** [https://animals.sandiegozoo.org/animals/lion](https://animals.sandiegozoo.org/animals/lion) — 2026-11-16.
   **Bewijs:** San Diego Zoo: circa 1,4 kg = 1400 gram.
@@ -676,10 +676,18 @@ Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelf
   **Bron:** [https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm](https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm) — 2026-11-16.
   **Bewijs:** NPS: 142 secties.
 - **EN:** About how tall are the Petronas Towers, in metres?
-  **NL:** Hoeveel meter hoog is de Petronas Twin Tower ongeveer?
+  **NL:** Ongeveer hoeveel meter hoog is de Petronas Twin Tower?
   **Antwoord:** 452 — strong.
   **Bron:** [https://www.petronastwintowers.com.my/the-towers/the-stories/](https://www.petronastwintowers.com.my/the-towers/the-stories/) — 2026-11-16.
   **Bewijs:** De exploitant geeft 451,9 meter; op hele meters 452.
 
 Drie afzonderlijke feiten; geen twee algemene weetjes. Elke vraag biedt een zelfstandig beeld. Ook met één anker blijven twee schattingen over.
 
+
+## Herlezing na openen PR
+
+Alle 30 puzzels opnieuw gelezen op 16-11-2026. De Golden Gate-vraag vraagt nu naar doorvaarthoogte onder de brug; wegdekhoogte was een onnauwkeurige meetdefinitie. De Engelse Mayflower- en omtrekvraag zijn vereenvoudigd en Nederlandse benaderingen staan natuurlijker in de zin. Alle combinaties blijven behouden. Dit is een eigen spelerscontrole, geen onafhankelijke review.
+
+## Validatie
+
+Geslaagd: `python tools/controleer_legendary.py` (beide reeksen), `python tools/maak_legendary_selectie.py --check` (reproduceerbare ronde 1), `node tests/daily-reliability.cjs`, `node tests/daily-server.cjs` en `git diff --check`. Tien tijdelijke negatieve controles wezen breuken, booleans, dubbele IDs/teksten, verkeerd niveau, ontbrekende bron, twee bekende ankers, afhankelijke onderwerpen en verkeerde datums correct af. Geen tijdelijke scripts of uitvoer gecommit.

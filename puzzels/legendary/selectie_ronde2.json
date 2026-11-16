@@ -45,7 +45,7 @@
         {
           "id": "r2-034",
           "question_en": "About how thick is a Golden Gate Bridge main cable, in centimetres?",
-          "question_nl": "Hoeveel centimeter dik is een hoofdkabel van de Golden Gate Bridge ongeveer?",
+          "question_nl": "Ongeveer hoeveel centimeter dik is een hoofdkabel van de Golden Gate Bridge?",
           "answer": 92,
           "category": "Schaal en wereld",
           "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
@@ -69,7 +69,7 @@
         {
           "id": "r2-106",
           "question_en": "About how long is the Great Clock's pendulum, in centimetres?",
-          "question_nl": "Hoeveel centimeter lang is de slinger van de Great Clock in Londen ongeveer?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is de slinger van de Great Clock in Londen?",
           "answer": 440,
           "category": "Schaal en wereld",
           "source_url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
@@ -112,7 +112,7 @@
         {
           "id": "nr38",
           "question_nl": "Hoeveel dagen duurde de Atlantische overtocht van de Mayflower in 1620?",
-          "question_en": "How many days did the Mayflower cross the Atlantic in 1620?",
+          "question_en": "How many days did the Mayflower's Atlantic crossing take in 1620?",
           "answer": 66,
           "category": "Geschiedenis",
           "source_url": "https://plimoth.org/for-students/homework-help/mayflower-and-mayflower-compact",
@@ -128,13 +128,13 @@
           },
           "topic": "nr38",
           "semantic_keys": [
-            "nr38:how many days did the mayflower cross the atlantic in 1620?"
+            "nr38:how many days did the mayflower's atlantic crossing take in 1620?"
           ],
           "known_anchor": false
         },
         {
           "id": "nr70",
-          "question_nl": "Hoeveel kilogram woog de recordhamburger in Pilsting in 2017 ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilogram woog de recordhamburger in Pilsting in 2017?",
           "question_en": "About how much did the record hamburger made in Pilsting in 2017 weigh, in kilograms?",
           "answer": 1164,
           "category": "Records en vergelijkingen",
@@ -158,7 +158,7 @@
         },
         {
           "id": "nr865",
-          "question_nl": "Hoeveel kilometer lang is de Rijn ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilometer lang is de Rijn?",
           "question_en": "About how long is the Rhine, in kilometres?",
           "answer": 1230,
           "category": "Geografie",
@@ -201,7 +201,7 @@
       "questions": [
         {
           "id": "nr230",
-          "question_nl": "Hoeveel meter hoog is One World Trade Center ongeveer?",
+          "question_nl": "Ongeveer hoeveel meter hoog is One World Trade Center?",
           "question_en": "About how tall is One World Trade Center, in metres?",
           "answer": 541,
           "category": "Gebouwen en infrastructuur",
@@ -290,7 +290,7 @@
       "questions": [
         {
           "id": "nr232",
-          "question_nl": "Hoeveel meter hoog is het Empire State Building inclusief antenne ongeveer?",
+          "question_nl": "Ongeveer hoeveel meter hoog is het Empire State Building inclusief antenne?",
           "question_en": "About how tall is the Empire State Building including its antenna, in metres?",
           "answer": 443,
           "category": "Gebouwen en infrastructuur",
@@ -314,8 +314,8 @@
         },
         {
           "id": "r2-032",
-          "question_en": "How many metres above high water is the Golden Gate Bridge's roadway?",
-          "question_nl": "Hoeveel meter boven hoogwater ligt het wegdek van de Golden Gate Bridge?",
+          "question_en": "What is the clearance under the Golden Gate Bridge at high water, in metres?",
+          "question_nl": "Hoeveel meter doorvaarthoogte heeft de Golden Gate Bridge bij hoogwater?",
           "answer": 67,
           "category": "Schaal en wereld",
           "source_url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
@@ -330,14 +330,14 @@
           "quality": "strong",
           "topic": "golden-gate",
           "semantic_keys": [
-            "golden-gate:how many metres above high water is the golden gate bridge's roadway?"
+            "golden-gate:what is the clearance under the golden gate bridge at high water, in metres?"
           ],
           "quality_reason_nl": "Voorstelbare golden-gate-schaal; de omvang is zonder specialistische kennis breed onzeker.",
           "known_anchor": false
         },
         {
           "id": "nr344",
-          "question_nl": "Hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen ongeveer?",
+          "question_nl": "Ongeveer hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen?",
           "question_en": "About how many million square kilometres is Earth's surface area?",
           "answer": 510,
           "category": "Geografie",
@@ -380,7 +380,7 @@
       "questions": [
         {
           "id": "nr510",
-          "question_nl": "Hoeveel aardse dagen duurt een jaar op Venus ongeveer?",
+          "question_nl": "Ongeveer hoeveel aardse dagen duurt een jaar op Venus?",
           "question_en": "About how many Earth days does Venus take to orbit the Sun?",
           "answer": 225,
           "category": "Sterrenkunde & ruimte",
@@ -405,7 +405,7 @@
         {
           "id": "r2-084",
           "question_en": "About how long is an ostrich egg, in centimetres?",
-          "question_nl": "Hoeveel centimeter lang is een struisvogelei ongeveer?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is een struisvogelei?",
           "answer": 15,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
@@ -429,7 +429,7 @@
         {
           "id": "r2-064",
           "question_en": "About how many minutes does sunlight take to reach Neptune?",
-          "question_nl": "Hoeveel minuten doet zonlicht erover om Neptunus te bereiken ongeveer?",
+          "question_nl": "Ongeveer hoeveel minuten doet zonlicht erover om Neptunus te bereiken?",
           "answer": 240,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
@@ -495,7 +495,7 @@
         {
           "id": "r2-045",
           "question_en": "About how long is the Statue of Liberty's nose, in centimetres?",
-          "question_nl": "Hoeveel centimeter lang is de neus van het Vrijheidsbeeld ongeveer?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is de neus van het Vrijheidsbeeld?",
           "answer": 137,
           "category": "Schaal en wereld",
           "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
@@ -518,7 +518,7 @@
         },
         {
           "id": "nr266",
-          "question_nl": "Hoeveel kilometer lang is de Grand Canyon ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilometer lang is de Grand Canyon?",
           "question_en": "About how long is the Grand Canyon, in kilometres?",
           "answer": 446,
           "category": "Geografie",
@@ -561,7 +561,7 @@
       "questions": [
         {
           "id": "nr686",
-          "question_nl": "Hoeveel uur per dag kan een koala slapen ongeveer?",
+          "question_nl": "Ongeveer hoeveel uur per dag kan een koala slapen?",
           "question_en": "About how many hours can a koala sleep each day?",
           "answer": 20,
           "category": "Dieren",
@@ -586,7 +586,7 @@
         {
           "id": "r2-098",
           "question_en": "About how many litres can a thirsty camel drink in one session?",
-          "question_nl": "Hoeveel liter kan een dorstige kameel in één keer drinken ongeveer?",
+          "question_nl": "Ongeveer hoeveel liter kan een dorstige kameel in één keer drinken?",
           "answer": 145,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/camel",
@@ -610,7 +610,7 @@
         {
           "id": "r2-063",
           "question_en": "About how many Earth years does Neptune take to orbit the Sun?",
-          "question_nl": "Hoeveel aardse jaren duurt een jaar op Neptunus ongeveer?",
+          "question_nl": "Ongeveer hoeveel aardse jaren duurt een jaar op Neptunus?",
           "answer": 165,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
@@ -652,7 +652,7 @@
       "questions": [
         {
           "id": "nr436",
-          "question_nl": "Hoeveel meter hoog was het zandkasteel in Blokhus in 2021 ongeveer?",
+          "question_nl": "Ongeveer hoeveel meter hoog was het zandkasteel in Blokhus in 2021?",
           "question_en": "About how tall was the Blokhus sandcastle in 2021, in metres?",
           "answer": 21,
           "category": "Records en vergelijkingen",
@@ -677,7 +677,7 @@
         {
           "id": "r2-091",
           "question_en": "About how many kilograms can a male lion eat in one meal?",
-          "question_nl": "Hoeveel kilogram kan een mannetjesleeuw in één maaltijd eten ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilogram kan een mannetjesleeuw in één maaltijd eten?",
           "answer": 63,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/lion",
@@ -701,7 +701,7 @@
         {
           "id": "r2-059",
           "question_en": "About how many Earth years does Uranus take to orbit the Sun?",
-          "question_nl": "Hoeveel aardse jaren duurt een jaar op Uranus ongeveer?",
+          "question_nl": "Ongeveer hoeveel aardse jaren duurt een jaar op Uranus?",
           "answer": 84,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/uranus/facts/",
@@ -743,7 +743,7 @@
       "questions": [
         {
           "id": "nr855",
-          "question_nl": "Hoeveel kilometer lang is de Ganges ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilometer lang is de Ganges?",
           "question_en": "About how long is the Ganges, in kilometres?",
           "answer": 2525,
           "category": "Geografie",
@@ -768,7 +768,7 @@
         {
           "id": "r2-094",
           "question_en": "About how many months is a lioness pregnant?",
-          "question_nl": "Hoeveel maanden is een leeuwin drachtig ongeveer?",
+          "question_nl": "Ongeveer hoeveel maanden is een leeuwin drachtig?",
           "answer": 4,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/lion",
@@ -857,7 +857,7 @@
         {
           "id": "r2-050",
           "question_en": "About how many Earth days does Mercury take to spin once?",
-          "question_nl": "Hoeveel aardse dagen duurt één draai van Mercurius ongeveer?",
+          "question_nl": "Ongeveer hoeveel aardse dagen duurt één draai van Mercurius?",
           "answer": 59,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/mercury/facts/",
@@ -880,7 +880,7 @@
         },
         {
           "id": "nr3",
-          "question_nl": "Hoeveel miljard zenuwcellen bevat het menselijk brein ongeveer?",
+          "question_nl": "Ongeveer hoeveel miljard zenuwcellen bevat het menselijk brein?",
           "question_en": "About how many billion neurons are in the human brain?",
           "answer": 86,
           "category": "Biologie & gezondheid",
@@ -947,7 +947,7 @@
         {
           "id": "r2-058",
           "question_en": "About how many hours does Uranus take to spin once?",
-          "question_nl": "Hoeveel uur duurt één draai van Uranus ongeveer?",
+          "question_nl": "Ongeveer hoeveel uur duurt één draai van Uranus?",
           "answer": 17,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/uranus/facts/",
@@ -971,7 +971,7 @@
         {
           "id": "r2-044",
           "question_en": "About how long is the Statue of Liberty's index finger, in centimetres?",
-          "question_nl": "Hoeveel centimeter lang is de wijsvinger van het Vrijheidsbeeld ongeveer?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is de wijsvinger van het Vrijheidsbeeld?",
           "answer": 244,
           "category": "Schaal en wereld",
           "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
@@ -1037,7 +1037,7 @@
         {
           "id": "r2-071",
           "question_en": "About how much does a giraffe's neck weigh, in kilograms?",
-          "question_nl": "Hoeveel kilogram weegt de nek van een giraffe ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilogram weegt de nek van een giraffe?",
           "answer": 272,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
@@ -1126,7 +1126,7 @@
         {
           "id": "r2-066",
           "question_en": "About how tall is the General Sherman tree, in metres?",
-          "question_nl": "Hoeveel meter hoog is de General Sherman-boom ongeveer?",
+          "question_nl": "Ongeveer hoeveel meter hoog is de General Sherman-boom?",
           "answer": 84,
           "category": "Schaal en wereld",
           "source_url": "https://home.nps.gov/seki/learn/nature/sherman.htm",
@@ -1192,7 +1192,7 @@
         {
           "id": "r2-043",
           "question_en": "About how long is the Statue of Liberty's hand, in centimetres?",
-          "question_nl": "Hoeveel centimeter lang is de hand van het Vrijheidsbeeld ongeveer?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is de hand van het Vrijheidsbeeld?",
           "answer": 500,
           "category": "Schaal en wereld",
           "source_url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
@@ -1239,7 +1239,7 @@
         {
           "id": "r2-080",
           "question_en": "About how much does an ostrich egg weigh, in grams?",
-          "question_nl": "Hoeveel gram weegt een struisvogelei ongeveer?",
+          "question_nl": "Ongeveer hoeveel gram weegt een struisvogelei?",
           "answer": 1500,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
@@ -1305,7 +1305,7 @@
         {
           "id": "r2-075",
           "question_en": "About how fast has a giraffe been recorded running, in kilometres per hour?",
-          "question_nl": "Hoeveel kilometer per uur is de gemeten hardloopsnelheid van een giraffe ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilometer per uur is de gemeten hardloopsnelheid van een giraffe?",
           "answer": 56,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
@@ -1329,7 +1329,7 @@
         {
           "id": "r2-077",
           "question_en": "About how much does an adult female hippo weigh on average, in kilograms?",
-          "question_nl": "Hoeveel kilogram weegt een volwassen vrouwelijk nijlpaard gemiddeld ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilogram weegt een volwassen vrouwelijk nijlpaard gemiddeld?",
           "answer": 1400,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/hippo",
@@ -1372,7 +1372,7 @@
         {
           "id": "r2-053",
           "question_en": "About how fast does Mercury orbit the Sun, in kilometres per second?",
-          "question_nl": "Hoeveel kilometer per seconde beweegt Mercurius om de zon ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilometer per seconde beweegt Mercurius om de zon?",
           "answer": 47,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/mercury/facts/",
@@ -1396,7 +1396,7 @@
         {
           "id": "r2-055",
           "question_en": "About how many hours does Saturn take to spin once?",
-          "question_nl": "Hoeveel uur duurt één draai van Saturnus ongeveer?",
+          "question_nl": "Ongeveer hoeveel uur duurt één draai van Saturnus?",
           "answer": 11,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/saturn/facts/",
@@ -1462,7 +1462,7 @@
         {
           "id": "r2-054",
           "question_en": "About how many minutes does sunlight take to reach Saturn?",
-          "question_nl": "Hoeveel minuten doet zonlicht erover om Saturnus te bereiken ongeveer?",
+          "question_nl": "Ongeveer hoeveel minuten doet zonlicht erover om Saturnus te bereiken?",
           "answer": 80,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/saturn/facts/",
@@ -1486,7 +1486,7 @@
         {
           "id": "r2-110",
           "question_en": "About how thick is the Gateway Arch's observation-window glass, in millimetres?",
-          "question_nl": "Hoeveel millimeter dik is het glas van de uitkijkramen van de Gateway Arch ongeveer?",
+          "question_nl": "Ongeveer hoeveel millimeter dik is het glas van de uitkijkramen van de Gateway Arch?",
           "answer": 19,
           "category": "Schaal en wereld",
           "source_url": "https://home.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
@@ -1510,7 +1510,7 @@
         {
           "id": "r2-095",
           "question_en": "About what percentage of a giant panda's diet is bamboo?",
-          "question_nl": "Hoeveel procent van het voedsel van een reuzenpanda is bamboe ongeveer?",
+          "question_nl": "Ongeveer hoeveel procent van het voedsel van een reuzenpanda is bamboe?",
           "answer": 99,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/giant-panda",
@@ -1553,7 +1553,7 @@
         {
           "id": "r2-056",
           "question_en": "About how thick are Saturn's main rings typically, in metres?",
-          "question_nl": "Hoeveel meter dik zijn de hoofdringen van Saturnus doorgaans ongeveer?",
+          "question_nl": "Ongeveer hoeveel meter dik zijn de hoofdringen van Saturnus doorgaans?",
           "answer": 10,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/saturn/facts/",
@@ -1642,7 +1642,7 @@
         {
           "id": "r2-060",
           "question_en": "About how many minutes does sunlight take to reach Uranus?",
-          "question_nl": "Hoeveel minuten doet zonlicht erover om Uranus te bereiken ongeveer?",
+          "question_nl": "Ongeveer hoeveel minuten doet zonlicht erover om Uranus te bereiken?",
           "answer": 160,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/uranus/facts/",
@@ -1778,7 +1778,7 @@
         {
           "id": "r2-052",
           "question_en": "About how many million kilometres is Mercury's average distance from the Sun?",
-          "question_nl": "Hoeveel miljoen kilometer is Mercurius gemiddeld van de zon verwijderd ongeveer?",
+          "question_nl": "Ongeveer hoeveel miljoen kilometer is Mercurius gemiddeld van de zon verwijderd?",
           "answer": 58,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/mercury/facts/",
@@ -1821,7 +1821,7 @@
         {
           "id": "r2-062",
           "question_en": "About how many hours does Neptune take to spin once?",
-          "question_nl": "Hoeveel uur duurt één draai van Neptunus ongeveer?",
+          "question_nl": "Ongeveer hoeveel uur duurt één draai van Neptunus?",
           "answer": 16,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
@@ -1845,7 +1845,7 @@
         {
           "id": "r2-072",
           "question_en": "About how much does a giraffe's heart weigh, in kilograms?",
-          "question_nl": "Hoeveel kilogram weegt het hart van een giraffe ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilogram weegt het hart van een giraffe?",
           "answer": 11,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
@@ -1869,7 +1869,7 @@
         {
           "id": "r2-051",
           "question_en": "About how many Earth days pass between sunrises on Mercury?",
-          "question_nl": "Hoeveel aardse dagen zitten tussen twee zonsopkomsten op Mercurius ongeveer?",
+          "question_nl": "Ongeveer hoeveel aardse dagen zitten tussen twee zonsopkomsten op Mercurius?",
           "answer": 176,
           "category": "Schaal en wereld",
           "source_url": "https://science.nasa.gov/mercury/facts/",
@@ -1935,7 +1935,7 @@
         {
           "id": "r2-082",
           "question_en": "About how long are an ostrich's intestines, in metres?",
-          "question_nl": "Hoeveel meter lang zijn de darmen van een struisvogel ongeveer?",
+          "question_nl": "Ongeveer hoeveel meter lang zijn de darmen van een struisvogel?",
           "answer": 14,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
@@ -1958,8 +1958,8 @@
         },
         {
           "id": "r2-068",
-          "question_en": "About what is the General Sherman tree's circumference at ground level, in metres?",
-          "question_nl": "Hoeveel meter is de omtrek van de General Sherman-boom op grondniveau ongeveer?",
+          "question_en": "About how many metres around is the General Sherman tree at ground level?",
+          "question_nl": "Ongeveer hoeveel meter is de omtrek van de General Sherman-boom op grondniveau?",
           "answer": 31,
           "category": "Schaal en wereld",
           "source_url": "https://home.nps.gov/seki/learn/nature/sherman.htm",
@@ -1975,7 +1975,7 @@
           "quality": "normal",
           "topic": "sherman",
           "semantic_keys": [
-            "sherman:about what is the general sherman tree's circumference at ground level, in metres?"
+            "sherman:about how many metres around is the general sherman tree at ground level?"
           ],
           "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld.",
           "known_anchor": false
@@ -2002,7 +2002,7 @@
         {
           "id": "r2-069",
           "question_en": "About how long is the Channel Tunnel, in kilometres?",
-          "question_nl": "Hoeveel kilometer lang is de Kanaaltunnel ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilometer lang is de Kanaaltunnel?",
           "answer": 50,
           "category": "Schaal en wereld",
           "source_url": "https://www.orr.gov.uk/monitoring-regulation/rail/networks/channel-tunnel",
@@ -2026,7 +2026,7 @@
         {
           "id": "r2-073",
           "question_en": "About how long is a giraffe's tongue, in centimetres?",
-          "question_nl": "Hoeveel centimeter lang is de tong van een giraffe ongeveer?",
+          "question_nl": "Ongeveer hoeveel centimeter lang is de tong van een giraffe?",
           "answer": 46,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/giraffe",
@@ -2050,7 +2050,7 @@
         {
           "id": "r2-088",
           "question_en": "About how much does one elephant molar weigh, in grams?",
-          "question_nl": "Hoeveel gram weegt één kies van een olifant ongeveer?",
+          "question_nl": "Ongeveer hoeveel gram weegt één kies van een olifant?",
           "answer": 2300,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/elephant",
@@ -2182,7 +2182,7 @@
         {
           "id": "r2-078",
           "question_en": "About how much can a newborn hippo weigh, in kilograms?",
-          "question_nl": "Hoeveel kilogram kan een pasgeboren nijlpaard wegen ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilogram kan een pasgeboren nijlpaard wegen?",
           "answer": 45,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/hippo",
@@ -2206,7 +2206,7 @@
         {
           "id": "r2-099",
           "question_en": "About how many extra kilograms can a camel easily carry?",
-          "question_nl": "Hoeveel extra kilogram kan een kameel gemakkelijk dragen ongeveer?",
+          "question_nl": "Ongeveer hoeveel extra kilogram kan een kameel gemakkelijk dragen?",
           "answer": 90,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/camel",
@@ -2272,7 +2272,7 @@
         {
           "id": "r2-081",
           "question_en": "About how fast can an ostrich sprint, in kilometres per hour?",
-          "question_nl": "Hoeveel kilometer per uur kan een struisvogel sprinten ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilometer per uur kan een struisvogel sprinten?",
           "answer": 70,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/ostrich",
@@ -2296,7 +2296,7 @@
         {
           "id": "r2-100",
           "question_en": "About how many minutes after birth can a camel calf walk?",
-          "question_nl": "Hoeveel minuten na de geboorte kan een kamelenjong lopen ongeveer?",
+          "question_nl": "Ongeveer hoeveel minuten na de geboorte kan een kamelenjong lopen?",
           "answer": 30,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/camel",
@@ -2319,7 +2319,7 @@
         },
         {
           "id": "nr523",
-          "question_nl": "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken ongeveer?",
+          "question_nl": "Ongeveer hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?",
           "question_en": "About how fast can Neptune's strongest winds blow, in kilometres per hour?",
           "answer": 2100,
           "category": "Sterrenkunde & ruimte",
@@ -2363,7 +2363,7 @@
         {
           "id": "r2-086",
           "question_en": "About what percentage of its body weight can an African penguin eat in a day?",
-          "question_nl": "Hoeveel procent van zijn lichaamsgewicht kan een Afrikaanse pinguïn per dag eten ongeveer?",
+          "question_nl": "Ongeveer hoeveel procent van zijn lichaamsgewicht kan een Afrikaanse pinguïn per dag eten?",
           "answer": 14,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/african-penguin",
@@ -2387,7 +2387,7 @@
         {
           "id": "r2-090",
           "question_en": "About how many hours a day does an elephant spend eating on average?",
-          "question_nl": "Hoeveel uur per dag eet een olifant gemiddeld ongeveer?",
+          "question_nl": "Ongeveer hoeveel uur per dag eet een olifant gemiddeld?",
           "answer": 16,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/elephant",
@@ -2499,7 +2499,7 @@
         {
           "id": "r2-093",
           "question_en": "About how much does a newborn lion cub weigh, in grams?",
-          "question_nl": "Hoeveel gram weegt een pasgeboren leeuwenwelp ongeveer?",
+          "question_nl": "Ongeveer hoeveel gram weegt een pasgeboren leeuwenwelp?",
           "answer": 1400,
           "category": "Schaal en wereld",
           "source_url": "https://animals.sandiegozoo.org/animals/lion",
@@ -2677,7 +2677,7 @@
         },
         {
           "id": "nr793",
-          "question_nl": "Hoeveel meter hoog is de Petronas Twin Tower ongeveer?",
+          "question_nl": "Ongeveer hoeveel meter hoog is de Petronas Twin Tower?",
           "question_en": "About how tall are the Petronas Towers, in metres?",
           "answer": 452,
           "category": "Gebouwen en infrastructuur",

@@ -10,37 +10,37 @@
     },
     "r2-034": {
       "question_en": "About how thick is a Golden Gate Bridge main cable, in centimetres?",
-      "question_nl": "Hoeveel centimeter dik is een hoofdkabel van de Golden Gate Bridge ongeveer?",
+      "question_nl": "Ongeveer hoeveel centimeter dik is een hoofdkabel van de Golden Gate Bridge?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare golden-gate-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-106": {
       "question_en": "About how long is the Great Clock's pendulum, in centimetres?",
-      "question_nl": "Hoeveel centimeter lang is de slinger van de Great Clock in Londen ongeveer?",
+      "question_nl": "Ongeveer hoeveel centimeter lang is de slinger van de Great Clock in Londen?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare big-ben-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "nr38": {
-      "question_en": "How many days did the Mayflower cross the Atlantic in 1620?",
+      "question_en": "How many days did the Mayflower's Atlantic crossing take in 1620?",
       "question_nl": "Hoeveel dagen duurde de Atlantische overtocht van de Mayflower in 1620?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "nr70": {
       "question_en": "About how much did the record hamburger made in Pilsting in 2017 weigh, in kilograms?",
-      "question_nl": "Hoeveel kilogram woog de recordhamburger in Pilsting in 2017 ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilogram woog de recordhamburger in Pilsting in 2017?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr70-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "nr865": {
       "question_en": "About how long is the Rhine, in kilometres?",
-      "question_nl": "Hoeveel kilometer lang is de Rijn ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilometer lang is de Rijn?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr865-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "nr230": {
       "question_en": "About how tall is One World Trade Center, in metres?",
-      "question_nl": "Hoeveel meter hoog is One World Trade Center ongeveer?",
+      "question_nl": "Ongeveer hoeveel meter hoog is One World Trade Center?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr230-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -58,37 +58,37 @@
     },
     "nr232": {
       "question_en": "About how tall is the Empire State Building including its antenna, in metres?",
-      "question_nl": "Hoeveel meter hoog is het Empire State Building inclusief antenne ongeveer?",
+      "question_nl": "Ongeveer hoeveel meter hoog is het Empire State Building inclusief antenne?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr232-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-032": {
-      "question_en": "How many metres above high water is the Golden Gate Bridge's roadway?",
-      "question_nl": "Hoeveel meter boven hoogwater ligt het wegdek van de Golden Gate Bridge?",
+      "question_en": "What is the clearance under the Golden Gate Bridge at high water, in metres?",
+      "question_nl": "Hoeveel meter doorvaarthoogte heeft de Golden Gate Bridge bij hoogwater?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare golden-gate-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "nr344": {
       "question_en": "About how many million square kilometres is Earth's surface area?",
-      "question_nl": "Hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen ongeveer?",
+      "question_nl": "Ongeveer hoeveel miljoen vierkante kilometer bedraagt het totale aardoppervlak, inclusief oceanen?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr344-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "nr510": {
       "question_en": "About how many Earth days does Venus take to orbit the Sun?",
-      "question_nl": "Hoeveel aardse dagen duurt een jaar op Venus ongeveer?",
+      "question_nl": "Ongeveer hoeveel aardse dagen duurt een jaar op Venus?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-084": {
       "question_en": "About how long is an ostrich egg, in centimetres?",
-      "question_nl": "Hoeveel centimeter lang is een struisvogelei ongeveer?",
+      "question_nl": "Ongeveer hoeveel centimeter lang is een struisvogelei?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-064": {
       "question_en": "About how many minutes does sunlight take to reach Neptune?",
-      "question_nl": "Hoeveel minuten doet zonlicht erover om Neptunus te bereiken ongeveer?",
+      "question_nl": "Ongeveer hoeveel minuten doet zonlicht erover om Neptunus te bereiken?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare neptune-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -100,61 +100,61 @@
     },
     "r2-045": {
       "question_en": "About how long is the Statue of Liberty's nose, in centimetres?",
-      "question_nl": "Hoeveel centimeter lang is de neus van het Vrijheidsbeeld ongeveer?",
+      "question_nl": "Ongeveer hoeveel centimeter lang is de neus van het Vrijheidsbeeld?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare liberty-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "nr266": {
       "question_en": "About how long is the Grand Canyon, in kilometres?",
-      "question_nl": "Hoeveel kilometer lang is de Grand Canyon ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilometer lang is de Grand Canyon?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr266-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "nr686": {
       "question_en": "About how many hours can a koala sleep each day?",
-      "question_nl": "Hoeveel uur per dag kan een koala slapen ongeveer?",
+      "question_nl": "Ongeveer hoeveel uur per dag kan een koala slapen?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-098": {
       "question_en": "About how many litres can a thirsty camel drink in one session?",
-      "question_nl": "Hoeveel liter kan een dorstige kameel in één keer drinken ongeveer?",
+      "question_nl": "Ongeveer hoeveel liter kan een dorstige kameel in één keer drinken?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare camel-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-063": {
       "question_en": "About how many Earth years does Neptune take to orbit the Sun?",
-      "question_nl": "Hoeveel aardse jaren duurt een jaar op Neptunus ongeveer?",
+      "question_nl": "Ongeveer hoeveel aardse jaren duurt een jaar op Neptunus?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare neptune-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "nr436": {
       "question_en": "About how tall was the Blokhus sandcastle in 2021, in metres?",
-      "question_nl": "Hoeveel meter hoog was het zandkasteel in Blokhus in 2021 ongeveer?",
+      "question_nl": "Ongeveer hoeveel meter hoog was het zandkasteel in Blokhus in 2021?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr436-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-091": {
       "question_en": "About how many kilograms can a male lion eat in one meal?",
-      "question_nl": "Hoeveel kilogram kan een mannetjesleeuw in één maaltijd eten ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilogram kan een mannetjesleeuw in één maaltijd eten?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare lion-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-059": {
       "question_en": "About how many Earth years does Uranus take to orbit the Sun?",
-      "question_nl": "Hoeveel aardse jaren duurt een jaar op Uranus ongeveer?",
+      "question_nl": "Ongeveer hoeveel aardse jaren duurt een jaar op Uranus?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare uranus-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "nr855": {
       "question_en": "About how long is the Ganges, in kilometres?",
-      "question_nl": "Hoeveel kilometer lang is de Ganges ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilometer lang is de Ganges?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr855-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-094": {
       "question_en": "About how many months is a lioness pregnant?",
-      "question_nl": "Hoeveel maanden is een leeuwin drachtig ongeveer?",
+      "question_nl": "Ongeveer hoeveel maanden is een leeuwin drachtig?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
@@ -172,13 +172,13 @@
     },
     "r2-050": {
       "question_en": "About how many Earth days does Mercury take to spin once?",
-      "question_nl": "Hoeveel aardse dagen duurt één draai van Mercurius ongeveer?",
+      "question_nl": "Ongeveer hoeveel aardse dagen duurt één draai van Mercurius?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare mercury-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "nr3": {
       "question_en": "About how many billion neurons are in the human brain?",
-      "question_nl": "Hoeveel miljard zenuwcellen bevat het menselijk brein ongeveer?",
+      "question_nl": "Ongeveer hoeveel miljard zenuwcellen bevat het menselijk brein?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr3-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -190,13 +190,13 @@
     },
     "r2-058": {
       "question_en": "About how many hours does Uranus take to spin once?",
-      "question_nl": "Hoeveel uur duurt één draai van Uranus ongeveer?",
+      "question_nl": "Ongeveer hoeveel uur duurt één draai van Uranus?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-044": {
       "question_en": "About how long is the Statue of Liberty's index finger, in centimetres?",
-      "question_nl": "Hoeveel centimeter lang is de wijsvinger van het Vrijheidsbeeld ongeveer?",
+      "question_nl": "Ongeveer hoeveel centimeter lang is de wijsvinger van het Vrijheidsbeeld?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare liberty-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -208,7 +208,7 @@
     },
     "r2-071": {
       "question_en": "About how much does a giraffe's neck weigh, in kilograms?",
-      "question_nl": "Hoeveel kilogram weegt de nek van een giraffe ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilogram weegt de nek van een giraffe?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare giraffe-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -226,7 +226,7 @@
     },
     "r2-066": {
       "question_en": "About how tall is the General Sherman tree, in metres?",
-      "question_nl": "Hoeveel meter hoog is de General Sherman-boom ongeveer?",
+      "question_nl": "Ongeveer hoeveel meter hoog is de General Sherman-boom?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare sherman-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -238,7 +238,7 @@
     },
     "r2-043": {
       "question_en": "About how long is the Statue of Liberty's hand, in centimetres?",
-      "question_nl": "Hoeveel centimeter lang is de hand van het Vrijheidsbeeld ongeveer?",
+      "question_nl": "Ongeveer hoeveel centimeter lang is de hand van het Vrijheidsbeeld?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare liberty-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -250,7 +250,7 @@
     },
     "r2-080": {
       "question_en": "About how much does an ostrich egg weigh, in grams?",
-      "question_nl": "Hoeveel gram weegt een struisvogelei ongeveer?",
+      "question_nl": "Ongeveer hoeveel gram weegt een struisvogelei?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare ostrich-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -262,25 +262,25 @@
     },
     "r2-075": {
       "question_en": "About how fast has a giraffe been recorded running, in kilometres per hour?",
-      "question_nl": "Hoeveel kilometer per uur is de gemeten hardloopsnelheid van een giraffe ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilometer per uur is de gemeten hardloopsnelheid van een giraffe?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-077": {
       "question_en": "About how much does an adult female hippo weigh on average, in kilograms?",
-      "question_nl": "Hoeveel kilogram weegt een volwassen vrouwelijk nijlpaard gemiddeld ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilogram weegt een volwassen vrouwelijk nijlpaard gemiddeld?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare hippo-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-053": {
       "question_en": "About how fast does Mercury orbit the Sun, in kilometres per second?",
-      "question_nl": "Hoeveel kilometer per seconde beweegt Mercurius om de zon ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilometer per seconde beweegt Mercurius om de zon?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-055": {
       "question_en": "About how many hours does Saturn take to spin once?",
-      "question_nl": "Hoeveel uur duurt één draai van Saturnus ongeveer?",
+      "question_nl": "Ongeveer hoeveel uur duurt één draai van Saturnus?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
@@ -292,25 +292,25 @@
     },
     "r2-054": {
       "question_en": "About how many minutes does sunlight take to reach Saturn?",
-      "question_nl": "Hoeveel minuten doet zonlicht erover om Saturnus te bereiken ongeveer?",
+      "question_nl": "Ongeveer hoeveel minuten doet zonlicht erover om Saturnus te bereiken?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare saturn-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-110": {
       "question_en": "About how thick is the Gateway Arch's observation-window glass, in millimetres?",
-      "question_nl": "Hoeveel millimeter dik is het glas van de uitkijkramen van de Gateway Arch ongeveer?",
+      "question_nl": "Ongeveer hoeveel millimeter dik is het glas van de uitkijkramen van de Gateway Arch?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-095": {
       "question_en": "About what percentage of a giant panda's diet is bamboo?",
-      "question_nl": "Hoeveel procent van het voedsel van een reuzenpanda is bamboe ongeveer?",
+      "question_nl": "Ongeveer hoeveel procent van het voedsel van een reuzenpanda is bamboe?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-056": {
       "question_en": "About how thick are Saturn's main rings typically, in metres?",
-      "question_nl": "Hoeveel meter dik zijn de hoofdringen van Saturnus doorgaans ongeveer?",
+      "question_nl": "Ongeveer hoeveel meter dik zijn de hoofdringen van Saturnus doorgaans?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare saturn-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -328,7 +328,7 @@
     },
     "r2-060": {
       "question_en": "About how many minutes does sunlight take to reach Uranus?",
-      "question_nl": "Hoeveel minuten doet zonlicht erover om Uranus te bereiken ongeveer?",
+      "question_nl": "Ongeveer hoeveel minuten doet zonlicht erover om Uranus te bereiken?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare uranus-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -358,25 +358,25 @@
     },
     "r2-052": {
       "question_en": "About how many million kilometres is Mercury's average distance from the Sun?",
-      "question_nl": "Hoeveel miljoen kilometer is Mercurius gemiddeld van de zon verwijderd ongeveer?",
+      "question_nl": "Ongeveer hoeveel miljoen kilometer is Mercurius gemiddeld van de zon verwijderd?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare mercury-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-062": {
       "question_en": "About how many hours does Neptune take to spin once?",
-      "question_nl": "Hoeveel uur duurt één draai van Neptunus ongeveer?",
+      "question_nl": "Ongeveer hoeveel uur duurt één draai van Neptunus?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-072": {
       "question_en": "About how much does a giraffe's heart weigh, in kilograms?",
-      "question_nl": "Hoeveel kilogram weegt het hart van een giraffe ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilogram weegt het hart van een giraffe?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare giraffe-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-051": {
       "question_en": "About how many Earth days pass between sunrises on Mercury?",
-      "question_nl": "Hoeveel aardse dagen zitten tussen twee zonsopkomsten op Mercurius ongeveer?",
+      "question_nl": "Ongeveer hoeveel aardse dagen zitten tussen twee zonsopkomsten op Mercurius?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare mercury-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -388,31 +388,31 @@
     },
     "r2-082": {
       "question_en": "About how long are an ostrich's intestines, in metres?",
-      "question_nl": "Hoeveel meter lang zijn de darmen van een struisvogel ongeveer?",
+      "question_nl": "Ongeveer hoeveel meter lang zijn de darmen van een struisvogel?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare ostrich-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-068": {
-      "question_en": "About what is the General Sherman tree's circumference at ground level, in metres?",
-      "question_nl": "Hoeveel meter is de omtrek van de General Sherman-boom op grondniveau ongeveer?",
+      "question_en": "About how many metres around is the General Sherman tree at ground level?",
+      "question_nl": "Ongeveer hoeveel meter is de omtrek van de General Sherman-boom op grondniveau?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-069": {
       "question_en": "About how long is the Channel Tunnel, in kilometres?",
-      "question_nl": "Hoeveel kilometer lang is de Kanaaltunnel ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilometer lang is de Kanaaltunnel?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare channel-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-073": {
       "question_en": "About how long is a giraffe's tongue, in centimetres?",
-      "question_nl": "Hoeveel centimeter lang is de tong van een giraffe ongeveer?",
+      "question_nl": "Ongeveer hoeveel centimeter lang is de tong van een giraffe?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-088": {
       "question_en": "About how much does one elephant molar weigh, in grams?",
-      "question_nl": "Hoeveel gram weegt één kies van een olifant ongeveer?",
+      "question_nl": "Ongeveer hoeveel gram weegt één kies van een olifant?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare elephant-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -436,13 +436,13 @@
     },
     "r2-078": {
       "question_en": "About how much can a newborn hippo weigh, in kilograms?",
-      "question_nl": "Hoeveel kilogram kan een pasgeboren nijlpaard wegen ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilogram kan een pasgeboren nijlpaard wegen?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-099": {
       "question_en": "About how many extra kilograms can a camel easily carry?",
-      "question_nl": "Hoeveel extra kilogram kan een kameel gemakkelijk dragen ongeveer?",
+      "question_nl": "Ongeveer hoeveel extra kilogram kan een kameel gemakkelijk dragen?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
@@ -454,31 +454,31 @@
     },
     "r2-081": {
       "question_en": "About how fast can an ostrich sprint, in kilometres per hour?",
-      "question_nl": "Hoeveel kilometer per uur kan een struisvogel sprinten ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilometer per uur kan een struisvogel sprinten?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "r2-100": {
       "question_en": "About how many minutes after birth can a camel calf walk?",
-      "question_nl": "Hoeveel minuten na de geboorte kan een kamelenjong lopen ongeveer?",
+      "question_nl": "Ongeveer hoeveel minuten na de geboorte kan een kamelenjong lopen?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
     "nr523": {
       "question_en": "About how fast can Neptune's strongest winds blow, in kilometres per hour?",
-      "question_nl": "Hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken ongeveer?",
+      "question_nl": "Ongeveer hoeveel kilometer per uur kunnen de sterkste winden op Neptunus bereiken?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr523-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-086": {
       "question_en": "About what percentage of its body weight can an African penguin eat in a day?",
-      "question_nl": "Hoeveel procent van zijn lichaamsgewicht kan een Afrikaanse pinguïn per dag eten ongeveer?",
+      "question_nl": "Ongeveer hoeveel procent van zijn lichaamsgewicht kan een Afrikaanse pinguïn per dag eten?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare penguin-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
     "r2-090": {
       "question_en": "About how many hours a day does an elephant spend eating on average?",
-      "question_nl": "Hoeveel uur per dag eet een olifant gemiddeld ongeveer?",
+      "question_nl": "Ongeveer hoeveel uur per dag eet een olifant gemiddeld?",
       "quality": "normal",
       "quality_reason_nl": "Begrensde schatting of specifiek telanker; conservatief normaal beoordeeld."
     },
@@ -502,7 +502,7 @@
     },
     "r2-093": {
       "question_en": "About how much does a newborn lion cub weigh, in grams?",
-      "question_nl": "Hoeveel gram weegt een pasgeboren leeuwenwelp ongeveer?",
+      "question_nl": "Ongeveer hoeveel gram weegt een pasgeboren leeuwenwelp?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare lion-schaal; de omvang is zonder specialistische kennis breed onzeker."
     },
@@ -538,7 +538,7 @@
     },
     "nr793": {
       "question_en": "About how tall are the Petronas Towers, in metres?",
-      "question_nl": "Hoeveel meter hoog is de Petronas Twin Tower ongeveer?",
+      "question_nl": "Ongeveer hoeveel meter hoog is de Petronas Twin Tower?",
       "quality": "strong",
       "quality_reason_nl": "Voorstelbare nr793-schaal; de omvang is zonder specialistische kennis breed onzeker."
     }
@@ -1290,5 +1290,48 @@
       "reason_nl": "Geven via de som de derde vraag weg; geen dergelijke combinatie opgenomen."
     }
   ],
-  "round1_correction": "Puzzel 18 ingetrokken; NPS-antwoord 1829 m vastgelegd in redactie.json. Supabase niet gewijzigd."
+  "round1_correction": "Puzzel 18 ingetrokken; NPS-antwoord 1829 m vastgelegd in redactie.json. Supabase niet gewijzigd.",
+  "post_pr_player_review": {
+    "checked_on": "2026-11-16",
+    "puzzles_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "decision": "Alle 30 behouden na herlezing; onduidelijke meetdefinitie en onnatuurlijke zinnen aangescherpt.",
+    "changes_nl": [
+      "Golden Gate: doorvaarthoogte onder de brug in plaats van hoogte van het wegdek.",
+      "Mayflower: Engelse vraag grammaticaal verbeterd.",
+      "General Sherman: omtrekvraag korter geformuleerd.",
+      "Benaderingen in de Nederlandse vragen natuurlijker geplaatst."
+    ],
+    "independent_review": false
+  }
 }

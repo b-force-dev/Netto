@@ -52,6 +52,7 @@ def validate(data):
         questions = puzzle['questions']
         assert len(questions) == 3
         for question in questions:
+            assert type(question['answer']) is int and question['answer'] > 0, 'Positive integer required'
             label = question['question_nl']
             normalized = ' '.join(label.casefold().split())
             en = question.get('question_en')
