@@ -338,3 +338,9 @@ body:has(#screen-puzzle.active.is-review) .calculator-toggle { display:none; }
 .answer-reveal-inline .answer-reveal-connector { height:44px; }
 @media(max-width:649px) { .answer-reveal-inline .answer-reveal-connector { height:40px; } }
 .answer-reveal-inline .answer-reveal-questions { margin-bottom:16px; }
+/* Deelknop in het uitkomstblok: vlak geel, geen gloed, geen wiebel. */
+#results .daily-result-summary .daily-result-hero .daily-result-actions .btn-share { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; min-height:52px; padding:0 18px; border:0; border-radius:12px; background:#ffd84a; color:#14163b; box-shadow:none; font:600 16px/1 'Space Grotesk',sans-serif; letter-spacing:-.01em; animation:none; transition:background-color .15s ease, transform .1s ease; }
+#results .daily-result-summary .daily-result-hero .daily-result-actions .btn-share svg { width:18px; height:18px; stroke-width:2; }
+#results .daily-result-summary .daily-result-hero .daily-result-actions .btn-share:hover { background:#ffe27a; opacity:1; }
+#results .daily-result-summary .daily-result-hero .daily-result-actions .btn-share:active { transform:translateY(1px); }
+#results .daily-result-summary .daily-result-hero .daily-result-actions .btn-share:focus-visible { outline:2px solid #fff; outline-offset:3px; }
