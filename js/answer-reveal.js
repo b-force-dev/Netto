@@ -196,7 +196,7 @@
       payoff.append(element('span', 'answer-reveal-payoff-label', copy('De som', 'The equation')));
       const truth = element('p', 'answer-reveal-equation');
       truth.setAttribute('aria-hidden', 'true');
-      truth.append(...equationParts(['?', '?', '?'], operator));
+      truth.append(element('span', '', copy('Juist', 'Actual')), ...equationParts(['?', '?', '?'], operator));
       slots.push(...truth.querySelectorAll('b'));
       slots.forEach((slot, index) => {
         slot.style.minWidth = 'min(' + (formatValue(answers[index], questions[index]).length * .64) + 'em, 100%)';

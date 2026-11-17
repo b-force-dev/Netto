@@ -2589,6 +2589,13 @@
         });
       }
     });
+    // De som hoort in het uitkomstblok, tussen de score en de deelknop.
+    const hero = document.querySelector('#results .daily-result-hero');
+    const payoff = document.querySelector('#results .answer-reveal-inline .answer-reveal-payoff');
+    if (hero && payoff) {
+      hero.querySelectorAll('.answer-reveal-payoff').forEach(old => old.remove());
+      hero.querySelector('.daily-score-row')?.after(payoff);
+    }
   }
 
   // Eén regel onder de score. Goed geschat voelt als een beloning; ver ernaast
@@ -2650,6 +2657,17 @@
     }
     const streak = today ? getLocalStreak() : 0;
     streakEl.hidden = streak < 1;
+    // Eén donker blok als uitkomst: score, som en delen horen bij elkaar.
+    let hero = summary.querySelector('.daily-result-hero');
+    if (!hero) {
+      hero = document.createElement('div');
+      hero.className = 'daily-result-hero';
+      summary.prepend(hero);
+      const row = summary.querySelector('.daily-score-row');
+      const actions = summary.querySelector('.daily-result-actions');
+      if (row) hero.append(row);
+      if (actions) hero.append(actions);
+    }
     streakEl.textContent = streak === 1
       ? statsCopy('🔥 Reeks gestart. Morgen dag 2.', '🔥 Streak started. Day 2 tomorrow.')
       : statsCopy(`🔥 ${streak} dagen op rij`, `🔥 ${streak} days in a row`);
@@ -2668,16 +2686,15 @@
     // Archief gespeeld terwijl de daily van vandaag nog openstaat: die eerst.
     const todayOpen = !today && !getLocalPlays()[TODAY_STR]
       && DAILY_PUZZLES.some(puzzle => puzzle.date === TODAY_STR) && window.NettoRoutes?.openToday;
-    next.textContent = todayOpen ? statsCopy('Speel de Daily van vandaag →', 'Play today’s Daily →')
-      : statsCopy('Meer puzzels →', 'More puzzles →');
+    next.textContent = todayOpen ? statsCopy('Speel de Daily van vandaag', 'Play today’s Daily')
+      : statsCopy('Meer puzzels', 'More puzzles');
     next.onclick = () => (todayOpen ? window.NettoRoutes.openToday() : openPuzzles());
     // Eén rij met twee rustige knoppen in plaats van een stapel: verder spelen
     // en de ranglijst. Het archief wordt een tekstlink naast de afteller.
     const ranglijst = summary.querySelector('.btn-leaderboard-open');
     if (ranglijst && ranglijst.parentElement !== navigation) next.after(ranglijst);
     const archief = summary.querySelector('.daily-archive-link');
-    const afteller = document.getElementById('dailyResultCountdown');
-    if (archief && afteller && archief.previousElementSibling !== afteller) afteller.after(archief);
+    if (archief && navigation.lastElementChild !== archief) navigation.append(archief);
   }
 
   // Nauwkeurigheid per vraag naast de totaalscore, in de volgorde van de kaarten.

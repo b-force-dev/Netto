@@ -274,17 +274,67 @@ body:has(#screen-puzzle.active.is-review) .calculator-toggle { display:none; }
 .answer-reveal-inline.is-complete:not(.is-instant) ~ .puzzle-review-summary { animation:answer-reveal-rest .45s ease both; }
 .answer-reveal-inline ~ .puzzle-review-summary { margin:0 0 8px; }
 
-/* Rustige afsluiting: de som als één regel zonder kader, daaronder alleen
-   score, delen en verder. Geen herhaling van wat de kaarten al tonen. */
-.answer-reveal-payoff { padding:14px 4px 4px; border:0; background:none; text-align:center; }
+/* ===== Uitkomst =====
+   De som als twee uitgelijnde regels (juist / jij), zonder kader. */
+.answer-reveal-payoff, .answer-reveal-payoff.is-landed, [data-theme="dark"] .answer-reveal-payoff, [data-theme="dark"] .answer-reveal-payoff.is-landed { display:grid; grid-template-columns:minmax(0,1fr) repeat(5,auto); gap:8px 10px; align-items:baseline; margin-top:14px; padding:14px 4px 4px; border:0; border-radius:0; background:none; box-shadow:none; }
 .answer-reveal-payoff-label { display:none; }
-.answer-reveal-equation, .answer-reveal-yours { justify-content:center; }
-.answer-reveal-equation i, .answer-reveal-equation i.is-equals { width:auto; height:auto; background:none; color:#8a8fa6; font-style:normal; font-weight:500; }
-.answer-reveal-yours { margin-top:4px; }
-[data-theme="dark"] .answer-reveal-payoff { background:none; border:0; }
-[data-theme="dark"] .answer-reveal-equation i, [data-theme="dark"] .answer-reveal-equation i.is-equals { background:none; color:#9aa0c4; }
-#results .daily-score-breakdown { display:none; }
-#results .daily-result-summary .daily-result-actions { margin-top:18px; padding-top:0; border-top:0; }
-#results .daily-result-summary .daily-result-footer { margin-top:10px; padding-top:0; border-top:0; }
-.answer-reveal-payoff.is-landed, [data-theme="dark"] .answer-reveal-payoff.is-landed { border:0; background:none; box-shadow:none; }
+.answer-reveal-payoff > .answer-reveal-equation, .answer-reveal-payoff > .answer-reveal-yours { display:grid; grid-column:1 / -1; grid-template-columns:subgrid; gap:0 10px; align-items:baseline; margin:0; font:500 17px/1.3 'JetBrains Mono',ui-monospace,monospace; letter-spacing:0; }
+.answer-reveal-payoff > .answer-reveal-announcement { grid-column:1 / -1; }
+.answer-reveal-payoff p > span:first-child { margin:0; text-align:left; font:500 11px/1.4 'JetBrains Mono',ui-monospace,monospace; letter-spacing:.14em; text-transform:uppercase; color:#656b7d; }
+.answer-reveal-payoff p > b { min-width:0 !important; text-align:right; font-weight:500; }
+.answer-reveal-payoff p > i, .answer-reveal-payoff .answer-reveal-equation i.is-equals { display:inline; width:auto; height:auto; background:none; color:#8a8fa6; font-style:normal; font-weight:400; }
+.answer-reveal-payoff .answer-reveal-computed, .answer-reveal-payoff p > em { grid-column:1 / -1; text-align:right; }
+[data-theme="dark"] .answer-reveal-payoff p > i { background:none; color:#9aa0c4; }
 @media(max-width:649px) { .answer-reveal-payoff, .answer-reveal-sheet .answer-reveal-payoff { padding:14px 4px 4px; } }
+
+/* Daily: één donker blok met score, som en delen; daaronder een rustige lijst. */
+#results .daily-score-breakdown, #results .daily-result-summary #scoreBadgeMsg, #results .daily-result-streak, #results .answer-reveal-inline .answer-reveal-score-pill { display:none !important; }
+#results .daily-result-summary { display:flex; flex-direction:column; padding:0; border:0; background:none; }
+#results .daily-result-hero { padding:22px 20px 20px; border-radius:14px; background:#14163b; color:#fff; }
+[data-theme="dark"] #results .daily-result-hero { background:#0c0e2a; border:1px solid #ffffff1f; }
+#results .daily-result-hero .daily-score-row { display:block; }
+#screen-puzzle #results .daily-result-hero .score-badge-container { display:grid; grid-template-columns:1fr auto; align-items:end; gap:2px 16px; margin:0; padding:0; border:0; background:none; }
+#screen-puzzle #results .daily-result-hero .score-badge-title { grid-column:1 / -1; color:#b9bfe0; font:500 11px/1.4 'JetBrains Mono',ui-monospace,monospace; letter-spacing:.14em; text-transform:uppercase; }
+#screen-puzzle #results .daily-result-hero #scoreBadge { grid-column:1; margin:0; color:#fff; font:700 64px/1 'JetBrains Mono',ui-monospace,monospace; letter-spacing:-.04em; }
+#screen-puzzle #results .daily-result-hero .score-badge-factor { grid-column:2; order:0; padding-bottom:8px; color:#b9bfe0; font:500 13px/1.4 'JetBrains Mono',ui-monospace,monospace; text-align:right; }
+#results .daily-result-hero .answer-reveal-payoff { margin-top:18px; padding:16px 0 0; border-top:1px solid #ffffff24; border-radius:0; color:#fff; }
+#results .daily-result-hero .answer-reveal-payoff p > span:first-child { color:#b9bfe0; }
+#results .daily-result-hero .answer-reveal-payoff p > i { color:#8f95bd; }
+#results .daily-result-hero .answer-reveal-equation b { color:#6f76c9; }
+#results .daily-result-hero .answer-reveal-equation b.is-known { color:#aab3ff; }
+#results .daily-result-hero .answer-reveal-yours, #results .daily-result-hero .answer-reveal-yours b { color:#fff; }
+#results .daily-result-summary .daily-result-hero .daily-result-actions { display:block; margin:20px 0 0; padding:0; border:0; }
+#results .daily-result-summary .daily-result-hero .btn-share { width:100%; }
+#results .daily-result-summary #dailyResultStatus { order:1; padding:0 4px; }
+#results .daily-result-summary .cloud-sync-banner { order:1; }
+#results .daily-result-summary .daily-result-footer { display:contents; }
+#results .daily-result-summary .daily-result-navigation { order:2; display:block; width:100%; margin:14px 0 0; }
+#results .daily-result-summary .daily-result-navigation > button,
+#screen-puzzle #results .daily-result-summary .daily-result-navigation .btn-leaderboard-open,
+#results .daily-result-summary .daily-result-navigation .daily-archive-link { display:flex; align-items:center; justify-content:space-between; width:100%; min-height:52px; margin:0; padding:8px 4px; border:0; border-top:1px solid var(--surface-border); border-radius:0; background:none; color:var(--ink); font:600 16px 'Space Grotesk',sans-serif; text-decoration:none; text-align:left; cursor:pointer; }
+#results .daily-result-summary .daily-result-navigation > button::after { content:'→'; color:var(--text-muted); font-weight:400; }
+#results .daily-result-summary .daily-result-navigation > button:hover { background:none; color:#252fb6; }
+#results .daily-result-summary .daily-result-navigation svg { display:none; }
+#results .daily-result-summary #dailyResultCountdown { order:3; margin:0; padding:14px 4px 0; border-top:1px solid var(--surface-border); }
+#results .daily-result-summary .pwa-return { order:4; margin-top:10px; }
+/* De herinnering is in rust één tekstlink, rechts op de regel van de afteller. */
+#results .daily-result-summary .pwa-return:has(> .pwa-reminder.is-compact) { margin-top:-26px; justify-items:end; pointer-events:none; }
+#results .pwa-reminder.is-compact { padding:0; border:0; background:none; pointer-events:auto; }
+#results .pwa-reminder.is-compact .pwa-copy, #results .pwa-reminder.is-compact .pwa-dismiss { display:none; }
+#results .pwa-reminder.is-compact .pwa-btn { min-height:24px; padding:0; border:0; background:none; color:var(--ink); font:600 14px 'Space Grotesk',sans-serif; text-decoration:underline; text-underline-offset:3px; }
+#screen-puzzle #results .daily-result-hero .score-badge-title, #screen-puzzle #results .daily-result-hero #scoreBadge, #screen-puzzle #results .daily-result-hero .score-badge-factor { grid-row:auto; }
+#screen-puzzle #results .daily-result-hero .score-badge-factor { white-space:nowrap; }
+#results .daily-result-summary .daily-result-navigation > button,
+#screen-puzzle #results .daily-result-summary .daily-result-navigation .btn-leaderboard-open,
+#results .daily-result-summary .daily-result-navigation .daily-archive-link { justify-content:space-between !important; font:600 16px 'Space Grotesk',sans-serif !important; color:var(--ink) !important; }
+#results .daily-result-summary #dailyResultCountdown .countdown-card { display:flex; justify-content:flex-start; align-items:baseline; gap:10px; margin:0; padding:0; border:0; background:none; }
+#results .daily-result-summary .pwa-live:empty { display:none; }
+#screen-puzzle #results .daily-result-hero .score-badge-container { width:100%; max-width:100%; min-width:0; box-sizing:border-box; grid-template-columns:minmax(0,1fr) auto; }
+#screen-puzzle #results .daily-result-hero .score-badge-factor { font-size:12px !important; margin:0; }
+#results .daily-result-hero .answer-reveal-payoff p, #results .daily-result-hero .answer-reveal-payoff p > b { font-size:17px !important; }
+#results .daily-result-summary .daily-result-navigation #btnLeaderboardLabel { font:inherit !important; }
+#results .daily-result-summary .pwa-return:has(> .pwa-reminder.is-compact) { margin-top:-27px; }
+/* Lucht tussen de vraagkaarten en het teken ertussen. */
+.answer-reveal-inline .answer-reveal-connector { height:44px; }
+@media(max-width:649px) { .answer-reveal-inline .answer-reveal-connector { height:40px; } }
+.answer-reveal-inline .answer-reveal-questions { margin-bottom:16px; }
