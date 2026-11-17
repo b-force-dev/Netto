@@ -2540,8 +2540,8 @@
       const factorText = value => window.NettoReveal?.factorText(value) || `${value.toFixed(2)}×`;
       factorEl.textContent = exactCount === 3
         ? statsCopy(`Elk antwoord exact: ${factorText(1)}`, `Every answer exact: ${factorText(1)}`)
-        : statsCopy(`Gemiddeld ${factorText(avgFactor)} ernaast · 2× = dubbel of half`,
-          `Average miss: ${factorText(avgFactor)} · 2× = double or half`);
+        : statsCopy(`Gemiddeld ${factorText(avgFactor)} ernaast`,
+          `Average miss: ${factorText(avgFactor)}`);
       factorEl.title = statsCopy('De factor is hoeveel keer je te hoog of te laag zat. 2× is het dubbele of de helft.',
         'The factor is how many times too high or too low you were. 2× means double or half.');
     }

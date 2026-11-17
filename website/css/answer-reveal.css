@@ -273,3 +273,18 @@ body:has(#screen-puzzle.active.is-review) .calculator-toggle { display:none; }
 .is-answer-revealing > .puzzle-review-summary { display:none !important; }
 .answer-reveal-inline.is-complete:not(.is-instant) ~ .puzzle-review-summary { animation:answer-reveal-rest .45s ease both; }
 .answer-reveal-inline ~ .puzzle-review-summary { margin:0 0 8px; }
+
+/* Rustige afsluiting: de som als één regel zonder kader, daaronder alleen
+   score, delen en verder. Geen herhaling van wat de kaarten al tonen. */
+.answer-reveal-payoff { padding:14px 4px 4px; border:0; background:none; text-align:center; }
+.answer-reveal-payoff-label { display:none; }
+.answer-reveal-equation, .answer-reveal-yours { justify-content:center; }
+.answer-reveal-equation i, .answer-reveal-equation i.is-equals { width:auto; height:auto; background:none; color:#8a8fa6; font-style:normal; font-weight:500; }
+.answer-reveal-yours { margin-top:4px; }
+[data-theme="dark"] .answer-reveal-payoff { background:none; border:0; }
+[data-theme="dark"] .answer-reveal-equation i, [data-theme="dark"] .answer-reveal-equation i.is-equals { background:none; color:#9aa0c4; }
+#results .daily-score-breakdown { display:none; }
+#results .daily-result-summary .daily-result-actions { margin-top:18px; padding-top:0; border-top:0; }
+#results .daily-result-summary .daily-result-footer { margin-top:10px; padding-top:0; border-top:0; }
+.answer-reveal-payoff.is-landed, [data-theme="dark"] .answer-reveal-payoff.is-landed { border:0; background:none; box-shadow:none; }
+@media(max-width:649px) { .answer-reveal-payoff, .answer-reveal-sheet .answer-reveal-payoff { padding:14px 4px 4px; } }
